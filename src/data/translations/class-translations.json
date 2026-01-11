@@ -1,0 +1,898 @@
+{
+	"_instructions": "Bu dosyayı düzenleyerek çevirileri yapabilirsiniz. Her özellik için 'nameTr' (Türkçe isim) ve 'descriptionTr' (Türkçe açıklama) alanlarını doldurun.",
+	"classes": {
+		"Fighter": {
+			"nameTr": "Savaşçı",
+			"features": {
+				"Fighting Style": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Second Wind": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Action Surge": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Extra Attack": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Indomitable": {
+					"nameTr": "",
+					"descriptionTr": ""
+				}
+			},
+			"subclasses": {
+				"Champion": {
+					"nameTr": "Şampiyon",
+					"descriptionTr": "",
+					"features": {
+						"Improved Critical": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 3
+						},
+						"Remarkable Athlete": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 7
+						},
+						"Additional Fighting Style": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 10
+						},
+						"Superior Critical": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 15
+						},
+						"Survivor": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 18
+						}
+					}
+				},
+				"Battle Master": {
+					"nameTr": "Savaş Ustası",
+					"descriptionTr": "",
+					"features": {
+						"Combat Superiority": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 3
+						}
+					}
+				},
+				"Eldritch Knight": {
+					"nameTr": "Esrarengiz Şövalye",
+					"descriptionTr": "",
+					"features": {
+						"Spellcasting": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 3
+						}
+					}
+				},
+				"Psi Warrior": {
+					"nameTr": "Psionik Savaşçı",
+					"descriptionTr": "",
+					"features": {
+						"Psionic Power": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 3
+						}
+					}
+				}
+			}
+		},
+		"Cleric": {
+			"nameTr": "Rahip",
+			"features": {
+				"Spellcasting": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Divine Domain": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Channel Divinity": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Channel Divinity: Turn Undead": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Destroy Undead": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Divine Intervention": {
+					"nameTr": "",
+					"descriptionTr": ""
+				}
+			},
+			"subclasses": {
+				"Life Domain": {
+					"nameTr": "Yaşam Alanı",
+					"descriptionTr": "",
+					"features": {
+						"Bonus Proficiency": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 1
+						},
+						"Disciple of Life": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 1
+						},
+						"Channel Divinity: Preserve Life": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 2
+						},
+						"Blessed Healer": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 6
+						},
+						"Divine Strike": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 8
+						},
+						"Supreme Healing": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 17
+						}
+					}
+				},
+				"Light Domain": {
+					"nameTr": "Işık Alanı",
+					"descriptionTr": "",
+					"features": {
+						"Warding Flare": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 1
+						},
+						"Radiance of the Dawn": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 2
+						},
+						"Improved Flare": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 6
+						},
+						"Potent Spellcasting": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 8
+						},
+						"Corona of Light": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 17
+						}
+					}
+				}
+			}
+		},
+		"Barbarian": {
+			"nameTr": "Barbar",
+			"features": {
+				"Rage": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Unarmored Defense": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Reckless Attack": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Danger Sense": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Extra Attack": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Fast Movement": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Feral Instinct": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Brutal Critical": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Relentless Rage": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Persistent Rage": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Indomitable Might": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Primal Champion": {
+					"nameTr": "",
+					"descriptionTr": ""
+				}
+			},
+			"subclasses": {
+				"Path of the Berserker": {
+					"nameTr": "Çılgın Yolu",
+					"descriptionTr": "",
+					"features": {
+						"Frenzy": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 3
+						},
+						"Mindless Rage": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 6
+						},
+						"Intimidating Presence": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 10
+						},
+						"Retaliation": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 14
+						}
+					}
+				},
+				"Path of the Totem Warrior": {
+					"nameTr": "Totem Savaşçısı Yolu",
+					"descriptionTr": "",
+					"features": {
+						"Spirit Seeker": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 3
+						},
+						"Totem Spirit": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 3
+						},
+						"Aspect of the Beast": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 6
+						},
+						"Spirit Walker": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 10
+						},
+						"Totemic Attunement": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 14
+						}
+					}
+				},
+				"Path of the Ancestral Guardian": {
+					"nameTr": "Ata Koruyucu Yolu",
+					"descriptionTr": "",
+					"features": {
+						"Ancestral Protectors": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 3
+						},
+						"Spirit Shield": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 6
+						}
+					}
+				},
+				"Path of the Wild Heart": {
+					"nameTr": "Vahşi Kalp Yolu",
+					"descriptionTr": "",
+					"features": {}
+				},
+				"Path of the World Tree": {
+					"nameTr": "Dünya Ağacı Yolu",
+					"descriptionTr": "",
+					"features": {}
+				},
+				"Path of the Zealot": {
+					"nameTr": "Fanatik Yolu",
+					"descriptionTr": "",
+					"features": {}
+				}
+			}
+		},
+		"Bard": {
+			"nameTr": "Bard",
+			"features": {
+				"Spellcasting": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Bardic Inspiration": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Jack of All Trades": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Song of Rest": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Expertise": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Font of Inspiration": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Countercharm": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Magical Secrets": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Superior Inspiration": {
+					"nameTr": "",
+					"descriptionTr": ""
+				}
+			},
+			"subclasses": {
+				"College of Lore": {
+					"nameTr": "Bilgi Koleji",
+					"descriptionTr": "",
+					"features": {
+						"Cutting Words": {
+							"nameTr": "",
+							"descriptionTr": "",
+							"level": 3
+						}
+					}
+				},
+				"College of Valor": {
+					"nameTr": "Cesaret Koleji",
+					"descriptionTr": "",
+					"features": {}
+				},
+				"College of Dance": {
+					"nameTr": "Dans Koleji",
+					"descriptionTr": "",
+					"features": {}
+				},
+				"College of Glamour": {
+					"nameTr": "Cazibe Koleji",
+					"descriptionTr": "",
+					"features": {}
+				}
+			}
+		},
+		"Druid": {
+			"nameTr": "Druid",
+			"features": {
+				"Spellcasting": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Druidic": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Wild Shape": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Timeless Body": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Beast Spells": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Archdruid": {
+					"nameTr": "",
+					"descriptionTr": ""
+				}
+			},
+			"subclasses": {
+				"Circle of the Land": {
+					"nameTr": "Toprak Çemberi",
+					"descriptionTr": "",
+					"features": {}
+				},
+				"Circle of the Moon": {
+					"nameTr": "Ay Çemberi",
+					"descriptionTr": "",
+					"features": {}
+				},
+				"Circle of the Sea": {
+					"nameTr": "Deniz Çemberi",
+					"descriptionTr": "",
+					"features": {}
+				},
+				"Circle of the Stars": {
+					"nameTr": "Yıldız Çemberi",
+					"descriptionTr": "",
+					"features": {}
+				}
+			}
+		},
+		"Monk": {
+			"nameTr": "Keşiş",
+			"features": {
+				"Unarmored Defense": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Martial Arts": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Ki": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Unarmored Movement": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Deflect Missiles": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Slow Fall": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Extra Attack": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Stunning Strike": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Ki-Empowered Strikes": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Evasion": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Stillness of Mind": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Purity of Body": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Tongue of the Sun and Moon": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Diamond Soul": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Timeless Body": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Empty Body": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Perfect Self": {
+					"nameTr": "",
+					"descriptionTr": ""
+				}
+			},
+			"subclasses": {
+				"Way of the Open Hand": {
+					"nameTr": "Açık El Yolu",
+					"descriptionTr": "",
+					"features": {}
+				},
+				"Warrior of the Elements": {
+					"nameTr": "Element Savaşçısı",
+					"descriptionTr": "",
+					"features": {}
+				},
+				"Warrior of Mercy": {
+					"nameTr": "Merhamet Savaşçısı",
+					"descriptionTr": "",
+					"features": {}
+				},
+				"Warrior of Shadow": {
+					"nameTr": "Gölge Savaşçısı",
+					"descriptionTr": "",
+					"features": {}
+				}
+			}
+		},
+		"Paladin": {
+			"nameTr": "Paladin",
+			"features": {
+				"Divine Sense": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Lay on Hands": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Fighting Style": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Spellcasting": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Divine Smite": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Divine Health": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Extra Attack": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Aura of Protection": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Aura of Courage": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Improved Divine Smite": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Cleansing Touch": {
+					"nameTr": "",
+					"descriptionTr": ""
+				}
+			},
+			"subclasses": {
+				"Oath of Devotion": {
+					"nameTr": "Bağlılık Yemini",
+					"descriptionTr": "",
+					"features": {}
+				},
+				"Oath of the Ancients": {
+					"nameTr": "Kadimler Yemini",
+					"descriptionTr": "",
+					"features": {}
+				},
+				"Oath of Glory": {
+					"nameTr": "Zafer Yemini",
+					"descriptionTr": "",
+					"features": {}
+				},
+				"Oath of Vengeance": {
+					"nameTr": "İntikam Yemini",
+					"descriptionTr": "",
+					"features": {}
+				}
+			}
+		},
+		"Ranger": {
+			"nameTr": "Ranger",
+			"features": {
+				"Favored Enemy": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Natural Explorer": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Fighting Style": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Spellcasting": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Primeval Awareness": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Extra Attack": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Land's Stride": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Hide in Plain Sight": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Vanish": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Feral Senses": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Foe Slayer": {
+					"nameTr": "",
+					"descriptionTr": ""
+				}
+			},
+			"subclasses": {
+				"Hunter": {
+					"nameTr": "Avcı",
+					"descriptionTr": "",
+					"features": {}
+				},
+				"Beast Master": {
+					"nameTr": "Canavar Ustası",
+					"descriptionTr": "",
+					"features": {}
+				},
+				"Fey Wanderer": {
+					"nameTr": "Peri Gezgini",
+					"descriptionTr": "",
+					"features": {}
+				},
+				"Gloom Stalker": {
+					"nameTr": "Kasvet Avcısı",
+					"descriptionTr": "",
+					"features": {}
+				}
+			}
+		},
+		"Rogue": {
+			"nameTr": "Rogue",
+			"features": {
+				"Expertise": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Sneak Attack": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Thieves' Cant": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Cunning Action": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Uncanny Dodge": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Evasion": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Reliable Talent": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Blindsense": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Slippery Mind": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Elusive": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Stroke of Luck": {
+					"nameTr": "",
+					"descriptionTr": ""
+				}
+			},
+			"subclasses": {
+				"Thief": {
+					"nameTr": "Hırsız",
+					"descriptionTr": "",
+					"features": {}
+				},
+				"Arcane Trickster": {
+					"nameTr": "Büyülü Düzenbaz",
+					"descriptionTr": "",
+					"features": {}
+				},
+				"Assassin": {
+					"nameTr": "Suikastçı",
+					"descriptionTr": "",
+					"features": {}
+				},
+				"Soulknife": {
+					"nameTr": "Ruh Bıçağı",
+					"descriptionTr": "",
+					"features": {}
+				}
+			}
+		},
+		"Sorcerer": {
+			"nameTr": "Sorcerer",
+			"features": {
+				"Spellcasting": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Font of Magic": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Metamagic": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Sorcerous Restoration": {
+					"nameTr": "",
+					"descriptionTr": ""
+				}
+			},
+			"subclasses": {
+				"Draconic Bloodline": {
+					"nameTr": "Ejderha Soyu",
+					"descriptionTr": "",
+					"features": {}
+				},
+				"Aberrant Sorcery": {
+					"nameTr": "Anormal Büyücülük",
+					"descriptionTr": "",
+					"features": {}
+				},
+				"Clockwork Sorcery": {
+					"nameTr": "Çark Büyücülüğü",
+					"descriptionTr": "",
+					"features": {}
+				},
+				"Wild Magic Sorcery": {
+					"nameTr": "Vahşi Büyü",
+					"descriptionTr": "",
+					"features": {}
+				}
+			}
+		},
+		"Warlock": {
+			"nameTr": "Warlock",
+			"features": {
+				"Pact Magic": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Eldritch Invocations": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Pact Boon": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Mystic Arcanum": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Eldritch Master": {
+					"nameTr": "",
+					"descriptionTr": ""
+				}
+			},
+			"subclasses": {
+				"The Fiend": {
+					"nameTr": "İblis Hamisi",
+					"descriptionTr": "",
+					"features": {}
+				},
+				"Archfey Patron": {
+					"nameTr": "Archfey Hamisi",
+					"descriptionTr": "",
+					"features": {}
+				},
+				"Celestial Patron": {
+					"nameTr": "Göksel Hami",
+					"descriptionTr": "",
+					"features": {}
+				},
+				"Great Old One Patron": {
+					"nameTr": "Yüce Eskiler Hamisi",
+					"descriptionTr": "",
+					"features": {}
+				}
+			}
+		},
+		"Wizard": {
+			"nameTr": "Büyücü",
+			"features": {
+				"Spellcasting": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Arcane Recovery": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Spell Mastery": {
+					"nameTr": "",
+					"descriptionTr": ""
+				},
+				"Signature Spells": {
+					"nameTr": "",
+					"descriptionTr": ""
+				}
+			},
+			"subclasses": {
+				"School of Evocation": {
+					"nameTr": "Evokasyon Okulu",
+					"descriptionTr": "",
+					"features": {}
+				},
+				"School of Abjuration": {
+					"nameTr": "Koruma Okulu",
+					"descriptionTr": "",
+					"features": {}
+				},
+				"School of Divination": {
+					"nameTr": "Kehanet Okulu",
+					"descriptionTr": "",
+					"features": {}
+				},
+				"School of Illusion": {
+					"nameTr": "İllüzyon Okulu",
+					"descriptionTr": "",
+					"features": {}
+				}
+			}
+		}
+	}
+}

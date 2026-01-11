@@ -1,0 +1,36 @@
+Selam! Background adımındaki +1/+1/+1 seçimi düzeltmesi için:
+
+CharacterBuilderView.ts dosyasında 566-578. satırları bulun.
+
+Şu kodu:
+```
+select.onchange = () => {
+    const newAssignments = [...currentBgAssignments];
+    if (newAssignments[i]) {
+        newAssignments[i] = { ability: select.value as AbilityName, bonus: 1 };
+    } else if (select.value) {
+        newAssignments.push({ ability: select.value as AbilityName, bonus: 1 });
+    }
+    
+    // Remove empty selections
+    const filtered = newAssignments.filter(a => a.ability);
+    useGameStore.getState().updateCharacterCreation({ backgroundAbilityAssignments: filtered });
+    this.render();
+};
+```
+
+Şununla değiştirin:
+```
+select.onchange = () => {
+    // Bu slot'un önceki seçimini çıkar
+    let newAssignments = currentBgAssignments.filter((_, idx) => idx !== i);
+    
+    // Yeni seçim varsa ekle
+    if (select.value) {
+        newAssignments.push({ ability: select.value as AbilityName, bonus: 1 });
+    }
+    
+    useGameStore.getState().updateCharacterCreation({ backgroundAbilityAssignments: newAssignments });
+    this.render();
+};
+```

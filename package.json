@@ -1,0 +1,40 @@
+{
+	"name": "dnd-learning-platform",
+	"version": "0.1.0",
+	"description": "D&D 5E Experiential Learning Platform - SRD Compatible",
+	"main": "src/index.ts",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"test": "vitest",
+		"test:run": "vitest run",
+		"lint": "eslint src --ext .ts,.tsx",
+		"typecheck": "tsc --noEmit"
+	},
+	"keywords": [
+		"dnd",
+		"dungeons-and-dragons",
+		"5e",
+		"srd",
+		"education",
+		"learning",
+		"rpg"
+	],
+	"author": "",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "^20.10.0",
+		"@typescript-eslint/eslint-plugin": "^6.13.0",
+		"@typescript-eslint/parser": "^6.13.0",
+		"eslint": "^8.55.0",
+		"typescript": "^5.3.0",
+		"vite": "^5.0.0",
+		"vitest": "^1.0.0"
+	},
+	"dependencies": {
+		"pdf-parse": "^2.4.5",
+		"zustand": "^4.4.0"
+	}
+}

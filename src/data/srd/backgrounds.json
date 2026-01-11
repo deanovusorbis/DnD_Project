@@ -1,0 +1,445 @@
+{
+	"version": "1.0.0",
+	"source": "2024 PHB",
+	"lastUpdated": "2026-01-10",
+	"backgrounds": [
+		{
+			"id": "acolyte",
+			"name": "Keşiş (Acolyte)",
+			"source": "2024",
+			"description": "Hayatını bir tapınakta, bir tanrıya veya tanrılar topluluğuna hizmet etmeye adadın. Kutsal törenleri gerçekleştirdin ve ibadet edenleri ilahinin huzuruna çıkarmak için adaklar sundun.",
+			"abilityScores": [
+				"INT",
+				"WIS",
+				"CHA"
+			],
+			"feat": {
+				"id": "magic-initiate-cleric",
+				"name": "Büyü Başlangıcı (Cleric)"
+			},
+			"skills": [
+				"insight",
+				"religion"
+			],
+			"toolProficiency": "Hattat Malzemeleri (Calligrapher's Supplies)",
+			"equipment": [
+				"Kutsal Sembol",
+				"Dua Kitabı",
+				"Cübbe (Vestments)",
+				"Parşömen (5 sayfa)",
+				"Hattat Malzemeleri",
+				"Sıradan Cübbe",
+				"10 GP"
+			]
+		},
+		{
+			"id": "artisan",
+			"name": "Zanaatkar (Artisan)",
+			"source": "2024",
+			"description": "Bir lonca ustasının yanında çırak olarak başladın ve bir zanaatın temellerini öğrendin.",
+			"abilityScores": [
+				"STR",
+				"DEX",
+				"INT"
+			],
+			"feat": {
+				"id": "crafter",
+				"name": "Zanaatkar (Crafter)"
+			},
+			"skills": [
+				"investigation",
+				"persuasion"
+			],
+			"toolProficiency": "Zanaatkar Aletleri (bir tür)",
+			"equipment": [
+				"Zanaatkar Aletleri",
+				"Yolcu Kıyafetleri",
+				"Kese",
+				"25 GP"
+			]
+		},
+		{
+			"id": "charlatan",
+			"name": "Şarlatan (Charlatan)",
+			"source": "2024",
+			"description": "İnsanlarla aran her zaman iyiydi. Onları neyin harekete geçirdiğini biliyorsun, birkaç dakikalık sohbetten sonra kalplerindeki arzuları çözebilir ve birkaç yönlendirici soruyla onları çocuk kitabı gibi okuyabilirsin.",
+			"abilityScores": [
+				"DEX",
+				"CON",
+				"CHA"
+			],
+			"feat": {
+				"id": "skilled",
+				"name": "Hünerli (Skilled)"
+			},
+			"skills": [
+				"deception",
+				"sleight_of_hand"
+			],
+			"toolProficiency": "Sahtecilik Seti (Forgery Kit)",
+			"equipment": [
+				"Şık Kıyafetler",
+				"Kılık Değiştirme Seti",
+				"Sahtecilik Seti",
+				"15 GP"
+			]
+		},
+		{
+			"id": "criminal",
+			"name": "Suçlu (Criminal)",
+			"source": "2024",
+			"description": "Yasaları çiğneme geçmişine sahip deneyimli bir suçlusun. Diğer suçluların arasında çok zaman geçirdin ve hala yeraltı dünyasındakilerle bağlantıların var.",
+			"abilityScores": [
+				"DEX",
+				"CON",
+				"INT"
+			],
+			"feat": {
+				"id": "alert",
+				"name": "Tetikte (Alert)"
+			},
+			"skills": [
+				"sleight_of_hand",
+				"stealth"
+			],
+			"toolProficiency": "Hırsız Aletleri (Thieves' Tools)",
+			"equipment": [
+				"Levye (Crowbar)",
+				"Koyu Renk Sıradan Kıyafetler",
+				"Hırsız Aletleri",
+				"16 GP"
+			]
+		},
+		{
+			"id": "entertainer",
+			"name": "Eğlendirici (Entertainer)",
+			"source": "2024",
+			"description": "Kalabalık önünde parlıyorsun. Onları nasıl büyüleyeceğini, eğlendireceğini ve hatta onlara nasıl ilham vereceğini biliyorsun.",
+			"abilityScores": [
+				"STR",
+				"DEX",
+				"CHA"
+			],
+			"feat": {
+				"id": "musician",
+				"name": "Müzisyen (Musician)"
+			},
+			"skills": [
+				"acrobatics",
+				"performance"
+			],
+			"toolProficiency": "Müzik Enstrümanı",
+			"equipment": [
+				"Müzik Enstrümanı",
+				"Kostüm",
+				"Sıradan Kıyafetler",
+				"Ayna",
+				"8 GP"
+			]
+		},
+		{
+			"id": "farmer",
+			"name": "Çiftçi (Farmer)",
+			"source": "2024",
+			"description": "Toprağa yakın büyüdün, tarlada çalıştın ve hayvanlara baktın.",
+			"abilityScores": [
+				"STR",
+				"CON",
+				"WIS"
+			],
+			"feat": {
+				"id": "tough",
+				"name": "Dayanıklı (Tough)"
+			},
+			"skills": [
+				"animal_handling",
+				"nature"
+			],
+			"toolProficiency": "Marangoz Aletleri",
+			"equipment": [
+				"Marangoz Aletleri",
+				"Demir Tencere",
+				"Kürek",
+				"Sıradan Kıyafetler",
+				"20 GP"
+			]
+		},
+		{
+			"id": "guard",
+			"name": "Muhafız (Guard)",
+			"source": "2024",
+			"description": "Bir yerleşimin nöbetçilerinden biri olarak hizmet ettin, topluluğu suçlulardan ve canavarlardan korudun.",
+			"abilityScores": [
+				"STR",
+				"INT",
+				"WIS"
+			],
+			"feat": {
+				"id": "alert",
+				"name": "Tetikte (Alert)"
+			},
+			"skills": [
+				"athletics",
+				"perception"
+			],
+			"toolProficiency": "Oyun Seti (Gaming Set)",
+			"equipment": [
+				"Mızrak",
+				"Kapalı Fener",
+				"Sıradan Kıyafetler",
+				"Oyun Seti",
+				"12 GP"
+			]
+		},
+		{
+			"id": "guide",
+			"name": "Rehber (Guide)",
+			"source": "2024",
+			"description": "Yerleşik topraklardan uzakta, açık havada büyüdün ve geliştin.",
+			"abilityScores": [
+				"DEX",
+				"CON",
+				"WIS"
+			],
+			"feat": {
+				"id": "magic-initiate-druid",
+				"name": "Büyü Başlangıcı (Druid)"
+			},
+			"skills": [
+				"stealth",
+				"survival"
+			],
+			"toolProficiency": "Haritacı Aletleri",
+			"equipment": [
+				"Kısa Yay",
+				"Oklar (20)",
+				"Çadır",
+				"Haritacı Aletleri",
+				"Yolcu Kıyafetleri",
+				"2 GP"
+			]
+		},
+		{
+			"id": "hermit",
+			"name": "Münzevi (Hermit)",
+			"source": "2024",
+			"description": "Hayatının biçimlendirici bir dönemini inzivada geçirdin - ya bir manastır gibi korunaklı bir toplulukta ya da tamamen yalnız başına.",
+			"abilityScores": [
+				"CON",
+				"WIS",
+				"CHA"
+			],
+			"feat": {
+				"id": "healer",
+				"name": "Şifacı (Healer)"
+			},
+			"skills": [
+				"medicine",
+				"religion"
+			],
+			"toolProficiency": "Bitkibilim Seti (Herbalism Kit)",
+			"equipment": [
+				"Parşömen Kutusu",
+				"Kışlık Battaniye",
+				"Bitkibilim Seti",
+				"Sıradan Kıyafetler",
+				"Yağ (şişe)",
+				"15 GP"
+			]
+		},
+		{
+			"id": "merchant",
+			"name": "Tüccar (Merchant)",
+			"source": "2024",
+			"description": "Bir tüccarın yanında çıraklık yaptın, ticareti öğrendin ve bağlantılar kurdun.",
+			"abilityScores": [
+				"CON",
+				"INT",
+				"CHA"
+			],
+			"feat": {
+				"id": "lucky",
+				"name": "Şanslı (Lucky)"
+			},
+			"skills": [
+				"animal_handling",
+				"persuasion"
+			],
+			"toolProficiency": "Seyrüsefer Aletleri (Navigator's Tools)",
+			"equipment": [
+				"Katır",
+				"Araba",
+				"Seyrüsefer Aletleri",
+				"Şık Kıyafetler",
+				"20 GP"
+			]
+		},
+		{
+			"id": "noble",
+			"name": "Soylu (Noble)",
+			"source": "2024",
+			"description": "Zengin, güçlü ve ayrıcalıklı bir ailede büyüdün.",
+			"abilityScores": [
+				"STR",
+				"INT",
+				"CHA"
+			],
+			"feat": {
+				"id": "skilled",
+				"name": "Hünerli (Skilled)"
+			},
+			"skills": [
+				"history",
+				"persuasion"
+			],
+			"toolProficiency": "Oyun Seti",
+			"equipment": [
+				"Şık Kıyafetler",
+				"Mühür Yüzüğü",
+				"Oyun Seti",
+				"Parfüm",
+				"24 GP"
+			]
+		},
+		{
+			"id": "sage",
+			"name": "Bilge (Sage)",
+			"source": "2024",
+			"description": "Yıllarını çoklu evrenin irfanını öğrenmeye harcadın. El yazmalarını didik didik ettin, parşömenleri inceledin ve ilgilendiğin konularda en büyük uzmanları dinledin.",
+			"abilityScores": [
+				"CON",
+				"INT",
+				"WIS"
+			],
+			"feat": {
+				"id": "magic-initiate-wizard",
+				"name": "Büyü Başlangıcı (Wizard)"
+			},
+			"skills": [
+				"arcana",
+				"history"
+			],
+			"toolProficiency": "Hattat Malzemeleri",
+			"equipment": [
+				"Sopa (Quarterstaff)",
+				"Hattat Malzemeleri",
+				"Bilgi Kitabı",
+				"Parşömen (8 sayfa)",
+				"Cübbe",
+				"8 GP"
+			]
+		},
+		{
+			"id": "sailor",
+			"name": "Denizci (Sailor)",
+			"source": "2024",
+			"description": "Yıllarca açık denizlerdeki gemilerde yol aldın. Bu süre zarfında güçlü fırtınalara, derinlerin canavarlarına ve gemini batırmak isteyenlere karşı durdun.",
+			"abilityScores": [
+				"STR",
+				"DEX",
+				"WIS"
+			],
+			"feat": {
+				"id": "tavern-brawler",
+				"name": "Meyhane Kavgacısı (Tavern Brawler)"
+			},
+			"skills": [
+				"acrobatics",
+				"perception"
+			],
+			"toolProficiency": "Seyrüsefer Aletleri (Navigator's Tools)",
+			"equipment": [
+				"Halat Çivisi (Belaying Pin - Club)",
+				"İpek Halat (50 ft)",
+				"Seyrüsefer Aletleri",
+				"Yolcu Kıyafetleri",
+				"Hançer",
+				"10 GP"
+			]
+		},
+		{
+			"id": "scribe",
+			"name": "Yazman (Scribe)",
+			"source": "2024",
+			"description": "Yetişme çağını belgeler yazarak ve kopyalayarak geçirdin.",
+			"abilityScores": [
+				"DEX",
+				"INT",
+				"WIS"
+			],
+			"feat": {
+				"id": "skilled",
+				"name": "Hünerli (Skilled)"
+			},
+			"skills": [
+				"investigation",
+				"perception"
+			],
+			"toolProficiency": "Hattat Malzemeleri",
+			"equipment": [
+				"Hattat Malzemeleri",
+				"Lamba",
+				"Yağ (şişe)",
+				"Parşömen (10 sayfa)",
+				"Cübbe",
+				"10 GP"
+			]
+		},
+		{
+			"id": "soldier",
+			"name": "Asker (Soldier)",
+			"source": "2024",
+			"description": "Savaş, hatırlayabildiğin kadarıyla hayatının parçası oldu. Gençken eğitildin, silah ve zırh kullanımını öğrendin, savaş alanında hayatta kalmak da dahil olmak üzere temel hayatta kalma tekniklerini edindin.",
+			"abilityScores": [
+				"STR",
+				"DEX",
+				"CON"
+			],
+			"feat": {
+				"id": "savage-attacker",
+				"name": "Vahşi Saldırgan (Savage Attacker)"
+			},
+			"skills": [
+				"athletics",
+				"intimidation"
+			],
+			"toolProficiency": "Oyun Seti",
+			"equipment": [
+				"Mızrak",
+				"Kısa Yay",
+				"Oklar (20)",
+				"Şifacı Çantası",
+				"Oyun Seti",
+				"Yolcu Kıyafetleri",
+				"14 GP"
+			]
+		},
+		{
+			"id": "wayfarer",
+			"name": "Gezgin (Wayfarer)",
+			"source": "2024",
+			"description": "Yollarda büyüdün, yerleşimden yerleşime seyahat ettin.",
+			"abilityScores": [
+				"DEX",
+				"WIS",
+				"CHA"
+			],
+			"feat": {
+				"id": "lucky",
+				"name": "Şanslı (Lucky)"
+			},
+			"skills": [
+				"insight",
+				"stealth"
+			],
+			"toolProficiency": "Hırsız Aletleri (Thieves' Tools)",
+			"equipment": [
+				"Kısa Kılıç",
+				"Hırsız Aletleri",
+				"Uyku Tulumu",
+				"Yolcu Kıyafetleri",
+				"16 GP"
+			]
+		}
+	]
+}

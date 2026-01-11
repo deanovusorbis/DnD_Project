@@ -1,0 +1,566 @@
+{
+	"version": "1.0.0",
+	"lastUpdated": "2026-01-10",
+	"concepts": [
+		{
+			"id": "ability-scores",
+			"name": "Ability Scores",
+			"source": "srd",
+			"description": "The six abilities that define a character's physical and mental characteristics.",
+			"category": "core",
+			"prerequisites": [],
+			"masteryLevels": [
+				{
+					"level": "introduced",
+					"criteria": "Heard of the six ability scores"
+				},
+				{
+					"level": "practiced",
+					"criteria": "Assigned ability scores to a character"
+				},
+				{
+					"level": "applied",
+					"criteria": "Used ability modifiers in checks"
+				},
+				{
+					"level": "mastered",
+					"criteria": "Can explain when each ability applies"
+				}
+			],
+			"explanation": "Every creature has six abilities: Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma. These scores range from 3 to 20 for most adventurers, with 10-11 being the human average.",
+			"examples": [
+				"A Fighter with high Strength hits harder with melee weapons",
+				"A Rogue with high Dexterity is better at sneaking and dodging",
+				"A Wizard with high Intelligence has more powerful spells"
+			],
+			"commonMistakes": [
+				"Confusing ability scores with ability modifiers",
+				"Thinking you need high scores in all abilities"
+			]
+		},
+		{
+			"id": "ability-modifiers",
+			"name": "Ability Modifiers",
+			"source": "srd",
+			"description": "The bonus or penalty derived from an ability score, used in most dice rolls.",
+			"category": "core",
+			"prerequisites": [
+				"ability-scores"
+			],
+			"masteryLevels": [
+				{
+					"level": "introduced",
+					"criteria": "Understands modifiers exist"
+				},
+				{
+					"level": "practiced",
+					"criteria": "Can calculate modifier from score"
+				},
+				{
+					"level": "applied",
+					"criteria": "Applies modifiers to rolls correctly"
+				},
+				{
+					"level": "mastered",
+					"criteria": "Automatically knows common modifiers"
+				}
+			],
+			"explanation": "Your modifier = (ability score - 10) ÷ 2, rounded down. A score of 10-11 gives +0, 14-15 gives +2, 18-19 gives +4.",
+			"examples": [
+				"STR 16 → +3 modifier, added to melee attack and damage",
+				"DEX 8 → -1 modifier, subtracted from AC and initiative"
+			],
+			"commonMistakes": [
+				"Adding the full ability score instead of the modifier",
+				"Forgetting to round down when calculating"
+			]
+		},
+		{
+			"id": "d20-roll",
+			"name": "The d20 Roll",
+			"source": "srd",
+			"description": "The core mechanic of D&D: roll a d20, add modifiers, compare to a target number.",
+			"category": "core",
+			"prerequisites": [],
+			"masteryLevels": [
+				{
+					"level": "introduced",
+					"criteria": "Rolled a d20 once"
+				},
+				{
+					"level": "practiced",
+					"criteria": "Added a modifier to a d20 roll"
+				},
+				{
+					"level": "applied",
+					"criteria": "Understands what beats a DC/AC"
+				},
+				{
+					"level": "mastered",
+					"criteria": "Can estimate success chances mentally"
+				}
+			],
+			"explanation": "Roll a d20, add your relevant modifier. If the total equals or exceeds the target number (DC for checks, AC for attacks), you succeed.",
+			"examples": [
+				"Attack roll: d20 + 5 = 18 vs AC 15 → Hit!",
+				"Saving throw: d20 + 2 = 11 vs DC 13 → Failed"
+			],
+			"commonMistakes": [
+				"Thinking natural 20 always succeeds on ability checks",
+				"Forgetting that you need to meet OR beat the target"
+			]
+		},
+		{
+			"id": "advantage-disadvantage",
+			"name": "Advantage & Disadvantage",
+			"source": "srd",
+			"description": "Roll two d20s and take the higher (advantage) or lower (disadvantage) result.",
+			"category": "core",
+			"prerequisites": [
+				"d20-roll"
+			],
+			"masteryLevels": [
+				{
+					"level": "introduced",
+					"criteria": "Heard of advantage/disadvantage"
+				},
+				{
+					"level": "practiced",
+					"criteria": "Rolled with advantage once"
+				},
+				{
+					"level": "applied",
+					"criteria": "Recognizes situations granting advantage"
+				},
+				{
+					"level": "mastered",
+					"criteria": "Seeks to create advantage tactically"
+				}
+			],
+			"explanation": "Advantage: roll 2d20, use the higher. Disadvantage: roll 2d20, use the lower. They cancel each other out regardless of how many sources.",
+			"examples": [
+				"Attacking a prone enemy in melee: advantage",
+				"Attacking while blinded: disadvantage",
+				"Hidden attacker: advantage on first attack"
+			],
+			"commonMistakes": [
+				"Thinking multiple advantages stack",
+				"Forgetting that any disadvantage cancels any advantage"
+			]
+		},
+		{
+			"id": "proficiency-bonus",
+			"name": "Proficiency Bonus",
+			"source": "srd",
+			"description": "A bonus added when using skills, weapons, or saves you're proficient in.",
+			"category": "core",
+			"prerequisites": [
+				"ability-modifiers"
+			],
+			"masteryLevels": [
+				{
+					"level": "introduced",
+					"criteria": "Knows proficiency bonus exists"
+				},
+				{
+					"level": "practiced",
+					"criteria": "Added proficiency to a roll"
+				},
+				{
+					"level": "applied",
+					"criteria": "Knows what they're proficient in"
+				},
+				{
+					"level": "mastered",
+					"criteria": "Tracks proficiency scaling by level"
+				}
+			],
+			"explanation": "Proficiency bonus starts at +2 at level 1 and increases as you level up. You add it to attack rolls with weapons you're proficient in, saving throws you're proficient in, and skill checks for skills you're proficient in.",
+			"examples": [
+				"Level 1 Fighter with longsword: d20 + STR + 2 (proficiency)",
+				"Level 5 character: proficiency bonus is now +3"
+			],
+			"commonMistakes": [
+				"Adding proficiency to damage rolls",
+				"Double-adding proficiency (it's already in spell save DC)"
+			]
+		},
+		{
+			"id": "attack-roll",
+			"name": "Attack Rolls",
+			"source": "srd",
+			"description": "Rolling to hit a target in combat using d20 + modifiers vs AC.",
+			"category": "combat",
+			"prerequisites": [
+				"d20-roll",
+				"proficiency-bonus"
+			],
+			"masteryLevels": [
+				{
+					"level": "introduced",
+					"criteria": "Made an attack roll"
+				},
+				{
+					"level": "practiced",
+					"criteria": "Calculated attack bonus correctly"
+				},
+				{
+					"level": "applied",
+					"criteria": "Understands melee vs ranged attacks"
+				},
+				{
+					"level": "mastered",
+					"criteria": "Can explain all attack modifiers"
+				}
+			],
+			"explanation": "Attack roll = d20 + ability modifier + proficiency bonus (if proficient). Compare to target's AC. Natural 20 is a critical hit (auto-hit, double damage dice). Natural 1 is an auto-miss.",
+			"examples": [
+				"Melee with sword: d20 + STR mod + proficiency",
+				"Ranged with bow: d20 + DEX mod + proficiency",
+				"Finesse weapon: choose STR or DEX"
+			],
+			"commonMistakes": [
+				"Forgetting proficiency with weapons",
+				"Using wrong ability for weapon type"
+			]
+		},
+		{
+			"id": "damage-roll",
+			"name": "Damage Rolls",
+			"source": "srd",
+			"description": "Rolling weapon or spell dice to determine damage dealt on a hit.",
+			"category": "combat",
+			"prerequisites": [
+				"attack-roll"
+			],
+			"masteryLevels": [
+				{
+					"level": "introduced",
+					"criteria": "Rolled damage once"
+				},
+				{
+					"level": "practiced",
+					"criteria": "Added ability modifier to damage"
+				},
+				{
+					"level": "applied",
+					"criteria": "Understands damage dice by weapon"
+				},
+				{
+					"level": "mastered",
+					"criteria": "Can calculate critical hit damage"
+				}
+			],
+			"explanation": "Damage = weapon dice + ability modifier (same as attack). Critical hits: roll damage dice twice, then add modifier once. Proficiency is NOT added to damage.",
+			"examples": [
+				"Longsword hit: 1d8 + 3 (STR) = 7 damage",
+				"Critical with longsword: 2d8 + 3 = 12 damage"
+			],
+			"commonMistakes": [
+				"Adding proficiency to damage",
+				"Doubling modifier on critical hits"
+			]
+		},
+		{
+			"id": "initiative",
+			"name": "Initiative",
+			"source": "srd",
+			"description": "Determining turn order at the start of combat.",
+			"category": "combat",
+			"prerequisites": [
+				"d20-roll"
+			],
+			"masteryLevels": [
+				{
+					"level": "introduced",
+					"criteria": "Rolled initiative once"
+				},
+				{
+					"level": "practiced",
+					"criteria": "Understands turn order"
+				},
+				{
+					"level": "applied",
+					"criteria": "Knows initiative = DEX check"
+				},
+				{
+					"level": "mastered",
+					"criteria": "Can track initiative for a group"
+				}
+			],
+			"explanation": "When combat starts, everyone rolls d20 + DEX modifier. Higher results go first. If tied, players choose who goes first among themselves (or DM decides for monsters).",
+			"examples": [
+				"Rogue with DEX 18 (+4): often acts early",
+				"DM: 'Roll initiative! Combat has begun!'"
+			],
+			"commonMistakes": [
+				"Forgetting initiative is a DEX check",
+				"Re-rolling initiative every round (it's once per combat)"
+			]
+		},
+		{
+			"id": "action-economy",
+			"name": "Action Economy",
+			"source": "srd",
+			"description": "Understanding what you can do on your turn: Action, Bonus Action, Movement, Reaction.",
+			"category": "combat",
+			"prerequisites": [
+				"initiative"
+			],
+			"masteryLevels": [
+				{
+					"level": "introduced",
+					"criteria": "Knows turns exist"
+				},
+				{
+					"level": "practiced",
+					"criteria": "Used action + movement in a turn"
+				},
+				{
+					"level": "applied",
+					"criteria": "Distinguishes action types"
+				},
+				{
+					"level": "mastered",
+					"criteria": "Optimizes action usage tactically"
+				}
+			],
+			"explanation": "Each turn you get: 1 Action (attack, cast spell, etc.), 1 Bonus Action (if you have abilities that use it), Movement (up to your speed), 1 Reaction (between turns, like opportunity attack), and free object interaction.",
+			"examples": [
+				"Move 30 feet, Attack (action), Second Wind (bonus action)",
+				"Cast Healing Word (bonus action), then Attack (action)"
+			],
+			"commonMistakes": [
+				"Trying to take two actions",
+				"Not using movement",
+				"Forgetting you have a bonus action"
+			]
+		},
+		{
+			"id": "hit-points",
+			"name": "Hit Points",
+			"source": "srd",
+			"description": "Your character's health and ability to withstand damage.",
+			"category": "combat",
+			"prerequisites": [
+				"ability-scores"
+			],
+			"masteryLevels": [
+				{
+					"level": "introduced",
+					"criteria": "Understands HP as health"
+				},
+				{
+					"level": "practiced",
+					"criteria": "Tracked HP during combat"
+				},
+				{
+					"level": "applied",
+					"criteria": "Knows how max HP is calculated"
+				},
+				{
+					"level": "mastered",
+					"criteria": "Manages HP strategically"
+				}
+			],
+			"explanation": "Max HP = hit die max at level 1, then roll (or take average) each level, adding CON modifier each time. Current HP tracks damage taken. At 0 HP, you fall unconscious and make death saves.",
+			"examples": [
+				"Level 1 Fighter: 10 (d10) + 3 (CON mod) = 13 HP",
+				"Taking 8 damage: 13 → 5 HP remaining"
+			],
+			"commonMistakes": [
+				"Forgetting CON modifier at each level",
+				"Thinking 0 HP means instant death"
+			]
+		},
+		{
+			"id": "saving-throws",
+			"name": "Saving Throws",
+			"source": "srd",
+			"description": "Rolls to resist or avoid harmful effects like spells and traps.",
+			"category": "combat",
+			"prerequisites": [
+				"d20-roll",
+				"proficiency-bonus"
+			],
+			"masteryLevels": [
+				{
+					"level": "introduced",
+					"criteria": "Made a saving throw"
+				},
+				{
+					"level": "practiced",
+					"criteria": "Calculated save bonus correctly"
+				},
+				{
+					"level": "applied",
+					"criteria": "Knows which saves they're proficient in"
+				},
+				{
+					"level": "mastered",
+					"criteria": "Understands common save situations"
+				}
+			],
+			"explanation": "Saving throw = d20 + ability modifier + proficiency (if proficient). Classes grant proficiency in two saves. DEX saves avoid damage, CON saves resist poison/concentration, WIS saves resist mind control.",
+			"examples": [
+				"Fireball: DEX save for half damage",
+				"Hold Person: WIS save or be paralyzed"
+			],
+			"commonMistakes": [
+				"Confusing saving throws with ability checks",
+				"Forgetting you only have proficiency in 2 saves"
+			]
+		},
+		{
+			"id": "spell-slots",
+			"name": "Spell Slots",
+			"source": "srd",
+			"description": "The resource that limits how many spells a caster can cast.",
+			"category": "character",
+			"prerequisites": [
+				"ability-modifiers"
+			],
+			"masteryLevels": [
+				{
+					"level": "introduced",
+					"criteria": "Knows spells use slots"
+				},
+				{
+					"level": "practiced",
+					"criteria": "Cast a spell using a slot"
+				},
+				{
+					"level": "applied",
+					"criteria": "Tracks slots and their levels"
+				},
+				{
+					"level": "mastered",
+					"criteria": "Strategically allocates slots"
+				}
+			],
+			"explanation": "Leveled spells require a spell slot of that level or higher. Slots are finite and recover on long rests (or short rests for some classes). Cantrips don't use slots.",
+			"examples": [
+				"Casting Cure Wounds (1st level) uses a 1st-level slot",
+				"Casting Cure Wounds with a 2nd-level slot heals more"
+			],
+			"commonMistakes": [
+				"Thinking each spell has its own slots",
+				"Forgetting cantrips don't use slots"
+			]
+		},
+		{
+			"id": "concentration",
+			"name": "Concentration",
+			"source": "srd",
+			"description": "Some spells require concentration to maintain their effects.",
+			"category": "character",
+			"prerequisites": [
+				"spell-slots",
+				"saving-throws"
+			],
+			"masteryLevels": [
+				{
+					"level": "introduced",
+					"criteria": "Knows concentration exists"
+				},
+				{
+					"level": "practiced",
+					"criteria": "Maintained concentration in combat"
+				},
+				{
+					"level": "applied",
+					"criteria": "Made concentration saves"
+				},
+				{
+					"level": "mastered",
+					"criteria": "Plans around concentration limits"
+				}
+			],
+			"explanation": "You can only concentrate on one spell at a time. Taking damage requires a CON save (DC 10 or half damage, whichever is higher) to maintain concentration. Casting another concentration spell ends the first.",
+			"examples": [
+				"Bless requires concentration for 1 minute",
+				"Taking 20 damage: CON save DC 10 to keep Bless"
+			],
+			"commonMistakes": [
+				"Stacking concentration spells",
+				"Forgetting to make concentration saves when damaged"
+			]
+		},
+		{
+			"id": "conditions",
+			"name": "Conditions",
+			"source": "srd",
+			"description": "Status effects that alter creature capabilities (Prone, Stunned, etc.).",
+			"category": "combat",
+			"prerequisites": [
+				"action-economy"
+			],
+			"masteryLevels": [
+				{
+					"level": "introduced",
+					"criteria": "Encountered a condition"
+				},
+				{
+					"level": "practiced",
+					"criteria": "Applied a condition's effects"
+				},
+				{
+					"level": "applied",
+					"criteria": "Knows common conditions"
+				},
+				{
+					"level": "mastered",
+					"criteria": "Uses conditions tactically"
+				}
+			],
+			"explanation": "Conditions modify what a creature can do. Common ones: Prone (melee advantage/ranged disadvantage against you), Grappled (speed = 0), Restrained (disadvantage on attacks), Incapacitated (can't take actions).",
+			"examples": [
+				"Prone: melee has advantage, ranged has disadvantage",
+				"Paralyzed: auto-crit if hit within 5 feet"
+			],
+			"commonMistakes": [
+				"Forgetting conditions end at certain times",
+				"Not applying all effects of a condition"
+			]
+		},
+		{
+			"id": "skill-checks",
+			"name": "Skill Checks",
+			"source": "srd",
+			"description": "Using abilities + skills to overcome non-combat challenges.",
+			"category": "exploration",
+			"prerequisites": [
+				"d20-roll",
+				"proficiency-bonus"
+			],
+			"masteryLevels": [
+				{
+					"level": "introduced",
+					"criteria": "Made a skill check"
+				},
+				{
+					"level": "practiced",
+					"criteria": "Used proficient skill"
+				},
+				{
+					"level": "applied",
+					"criteria": "Knows which skill to use when"
+				},
+				{
+					"level": "mastered",
+					"criteria": "Creatively applies skills"
+				}
+			],
+			"explanation": "Skill check = d20 + ability modifier + proficiency (if proficient in that skill). DC set by DM based on difficulty. Some skills can have expertise (double proficiency).",
+			"examples": [
+				"Climb a wall: Athletics (STR) check",
+				"Detect a lie: Insight (WIS) check",
+				"Pick a lock: Dexterity (Sleight of Hand) or Thieves' Tools"
+			],
+			"commonMistakes": [
+				"Asking to 'roll Perception' instead of describing intent",
+				"Thinking you can retry failed checks infinitely"
+			]
+		}
+	]
+}

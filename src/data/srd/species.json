@@ -1,0 +1,1312 @@
+{
+  "version": "1.0.0",
+  "source": "SRD 5.2.1",
+  "lastUpdated": "2026-01-10",
+  "species": [
+    {
+      "id": "human",
+      "name": "Human",
+      "source": "srd",
+      "description": "Humans are the most adaptable and ambitious people among the common races. Whatever drives them, humans are the innovators, the achievers, and the pioneers of the worlds.",
+      "size": "medium",
+      "speed": 30,
+      "ageMaturity": 18,
+      "ageLifespan": 80,
+      "abilityScoreIncreases": [
+        {
+          "ability": "STR",
+          "bonus": 1
+        },
+        {
+          "ability": "DEX",
+          "bonus": 1
+        },
+        {
+          "ability": "CON",
+          "bonus": 1
+        },
+        {
+          "ability": "INT",
+          "bonus": 1
+        },
+        {
+          "ability": "WIS",
+          "bonus": 1
+        },
+        {
+          "ability": "CHA",
+          "bonus": 1
+        }
+      ],
+      "languages": [
+        "Common"
+      ],
+      "extraLanguages": 1,
+      "traits": [],
+      "creatureType": "humanoid",
+      "teachingNotes": {
+        "complexity": "beginner",
+        "recommendedForNewPlayers": true,
+        "keyMechanics": [
+          "Versatility",
+          "Extra Language"
+        ],
+        "flavorHooks": [
+          "Adaptable",
+          "Ambitious",
+          "Diverse cultures"
+        ]
+      }
+    },
+    {
+      "id": "elf",
+      "name": "Elf",
+      "source": "srd",
+      "description": "Elves are a magical people of otherworldly grace, living in places of ethereal beauty, in the midst of ancient forests or in silvery spires glittering with faerie light.",
+      "size": "medium",
+      "speed": 30,
+      "abilityScoreIncreases": [
+        {
+          "ability": "DEX",
+          "bonus": 2
+        }
+      ],
+      "ageMaturity": 100,
+      "ageLifespan": 750,
+      "languages": [
+        "Common",
+        "Elvish"
+      ],
+      "traits": [
+        {
+          "id": "darkvision-elf",
+          "name": "Darkvision",
+          "source": "srd",
+          "description": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light.",
+          "mechanicType": "passive",
+          "grantsDarkvision": 60
+        },
+        {
+          "id": "keen-senses",
+          "name": "Keen Senses",
+          "source": "srd",
+          "description": "You have proficiency in the Perception skill.",
+          "mechanicType": "passive",
+          "grantsProficiency": {
+            "skills": [
+              "perception"
+            ]
+          }
+        },
+        {
+          "id": "fey-ancestry",
+          "name": "Fey Ancestry",
+          "source": "srd",
+          "description": "You have advantage on saving throws against being charmed, and magic can't put you to sleep.",
+          "mechanicType": "passive",
+          "grantsAdvantage": {
+            "conditions": [
+              "charmed"
+            ]
+          },
+          "grantsImmunity": [
+            "sleep"
+          ]
+        },
+        {
+          "id": "trance",
+          "name": "Trance",
+          "source": "srd",
+          "description": "Elves don't need to sleep. Instead, they meditate deeply for 4 hours a day. After resting this way, you gain the same benefit that a human does from 8 hours of sleep.",
+          "mechanicType": "passive"
+        }
+      ],
+      "subraces": [
+        {
+          "id": "high-elf",
+          "name": "High Elf",
+          "source": "srd",
+          "description": "As a high elf, you have a keen mind and a mastery of at least the basics of magic.",
+          "parentSpeciesId": "elf",
+          "additionalASI": [
+            {
+              "ability": "INT",
+              "bonus": 1
+            }
+          ],
+          "additionalTraits": [
+            {
+              "id": "elf-weapon-training",
+              "name": "Elf Weapon Training",
+              "source": "srd",
+              "description": "You have proficiency with the longsword, shortsword, shortbow, and longbow.",
+              "mechanicType": "passive",
+              "grantsProficiency": {
+                "weapons": [
+                  "longsword",
+                  "shortsword",
+                  "shortbow",
+                  "longbow"
+                ]
+              }
+            },
+            {
+              "id": "cantrip-high-elf",
+              "name": "Cantrip",
+              "source": "srd",
+              "description": "You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it.",
+              "mechanicType": "active",
+              "grantsSpells": [
+                {
+                  "spellId": "choice-wizard-cantrip",
+                  "atLevel": 1,
+                  "castingAbility": "INT"
+                }
+              ]
+            },
+            {
+              "id": "extra-language-high-elf",
+              "name": "Extra Language",
+              "source": "srd",
+              "description": "You can speak, read, and write one extra language of your choice.",
+              "mechanicType": "passive",
+              "grantsLanguages": [
+                "choice"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "wood-elf",
+          "name": "Wood Elf",
+          "source": "srd",
+          "description": "As a wood elf, you have keen senses and intuition, and your fleet feet carry you quickly and stealthily through your native forests.",
+          "parentSpeciesId": "elf",
+          "additionalASI": [
+            {
+              "ability": "WIS",
+              "bonus": 1
+            }
+          ],
+          "additionalTraits": [
+            {
+              "id": "elf-weapon-training-wood",
+              "name": "Elf Weapon Training",
+              "source": "srd",
+              "description": "You have proficiency with the longsword, shortsword, shortbow, and longbow.",
+              "mechanicType": "passive",
+              "grantsProficiency": {
+                "weapons": [
+                  "longsword",
+                  "shortsword",
+                  "shortbow",
+                  "longbow"
+                ]
+              }
+            },
+            {
+              "id": "fleet-of-foot",
+              "name": "Fleet of Foot",
+              "source": "srd",
+              "description": "Your base walking speed increases to 35 feet.",
+              "mechanicType": "passive"
+            },
+            {
+              "id": "mask-of-the-wild",
+              "name": "Mask of the Wild",
+              "source": "srd",
+              "description": "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.",
+              "mechanicType": "passive"
+            }
+          ]
+        },
+        {
+          "id": "dark-elf",
+          "name": "Dark Elf (Drow)",
+          "source": "srd",
+          "description": "Descended from an earlier subrace of dark-skinned elves, the drow were banished from the surface world for following the goddess Lolth down the path to evil.",
+          "parentSpeciesId": "elf",
+          "additionalASI": [
+            {
+              "ability": "CHA",
+              "bonus": 1
+            }
+          ],
+          "additionalTraits": [
+            {
+              "id": "superior-darkvision",
+              "name": "Superior Darkvision",
+              "source": "srd",
+              "description": "Your darkvision has a radius of 120 feet.",
+              "mechanicType": "passive",
+              "grantsDarkvision": 120
+            },
+            {
+              "id": "sunlight-sensitivity",
+              "name": "Sunlight Sensitivity",
+              "source": "srd",
+              "description": "You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.",
+              "mechanicType": "passive"
+            },
+            {
+              "id": "drow-magic",
+              "name": "Drow Magic",
+              "source": "srd",
+              "description": "You know the dancing lights cantrip. When you reach 3rd level, you can cast the faerie fire spell once. When you reach 5th level, you can also cast the darkness spell once. Charisma is your spellcasting ability for these spells.",
+              "mechanicType": "active",
+              "grantsSpells": [
+                {
+                  "spellId": "dancing-lights",
+                  "atLevel": 1,
+                  "castingAbility": "CHA"
+                },
+                {
+                  "spellId": "faerie-fire",
+                  "atLevel": 3,
+                  "castingAbility": "CHA"
+                },
+                {
+                  "spellId": "darkness",
+                  "atLevel": 5,
+                  "castingAbility": "CHA"
+                }
+              ]
+            },
+            {
+              "id": "drow-weapon-training",
+              "name": "Drow Weapon Training",
+              "source": "srd",
+              "description": "You have proficiency with rapiers, shortswords, and hand crossbows.",
+              "mechanicType": "passive",
+              "grantsProficiency": {
+                "weapons": [
+                  "rapier",
+                  "shortsword",
+                  "hand_crossbow"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "creatureType": "humanoid",
+      "teachingNotes": {
+        "complexity": "beginner",
+        "recommendedForNewPlayers": true,
+        "keyMechanics": [
+          "Darkvision",
+          "Fey Ancestry",
+          "Trance"
+        ],
+        "flavorHooks": [
+          "Ancient",
+          "Graceful",
+          "Connected to nature and magic"
+        ]
+      }
+    },
+    {
+      "id": "dwarf",
+      "name": "Dwarf",
+      "source": "srd",
+      "description": "Bold and hardy, dwarves are known as skilled warriors, miners, and workers of stone and metal.",
+      "size": "medium",
+      "speed": 25,
+      "abilityScoreIncreases": [
+        {
+          "ability": "CON",
+          "bonus": 2
+        }
+      ],
+      "ageMaturity": 50,
+      "ageLifespan": 350,
+      "languages": [
+        "Common",
+        "Dwarvish"
+      ],
+      "traits": [
+        {
+          "id": "darkvision-dwarf",
+          "name": "Darkvision",
+          "source": "srd",
+          "description": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light.",
+          "mechanicType": "passive",
+          "grantsDarkvision": 60
+        },
+        {
+          "id": "dwarven-resilience",
+          "name": "Dwarven Resilience",
+          "source": "srd",
+          "description": "You have advantage on saving throws against poison, and you have resistance against poison damage.",
+          "mechanicType": "passive",
+          "grantsAdvantage": {
+            "savingThrows": [
+              "poison"
+            ]
+          },
+          "grantsResistance": [
+            "poison"
+          ]
+        },
+        {
+          "id": "dwarven-combat-training",
+          "name": "Dwarven Combat Training",
+          "source": "srd",
+          "description": "You have proficiency with the battleaxe, handaxe, light hammer, and warhammer.",
+          "mechanicType": "passive",
+          "grantsProficiency": {
+            "weapons": [
+              "battleaxe",
+              "handaxe",
+              "light_hammer",
+              "warhammer"
+            ]
+          }
+        },
+        {
+          "id": "tool-proficiency-dwarf",
+          "name": "Tool Proficiency",
+          "source": "srd",
+          "description": "You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools.",
+          "mechanicType": "passive",
+          "grantsProficiency": {
+            "tools": [
+              "choice:smiths_tools,brewers_supplies,masons_tools"
+            ]
+          }
+        },
+        {
+          "id": "stonecunning",
+          "name": "Stonecunning",
+          "source": "srd",
+          "description": "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check.",
+          "mechanicType": "passive"
+        },
+        {
+          "id": "dwarven-toughness-core",
+          "name": "Dwarven Toughness",
+          "source": "2024",
+          "description": "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.",
+          "mechanicType": "passive"
+        }
+      ],
+      "creatureType": "humanoid",
+      "teachingNotes": {
+        "complexity": "beginner",
+        "recommendedForNewPlayers": true,
+        "keyMechanics": [
+          "Darkvision",
+          "Poison Resistance",
+          "Dwarven Toughness"
+        ],
+        "flavorHooks": [
+          "Sturdy",
+          "Craftsmen",
+          "Underground kingdoms"
+        ]
+      }
+    },
+    {
+      "id": "halfling",
+      "name": "Halfling",
+      "source": "srd",
+      "description": "The diminutive halflings survive in a world full of larger creatures by avoiding notice or, barring that, avoiding offense.",
+      "size": "small",
+      "speed": 25,
+      "abilityScoreIncreases": [
+        {
+          "ability": "DEX",
+          "bonus": 2
+        }
+      ],
+      "ageMaturity": 20,
+      "ageLifespan": 150,
+      "languages": [
+        "Common",
+        "Halfling"
+      ],
+      "traits": [
+        {
+          "id": "lucky-halfling",
+          "name": "Lucky",
+          "source": "srd",
+          "description": "When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.",
+          "mechanicType": "passive"
+        },
+        {
+          "id": "brave",
+          "name": "Brave",
+          "source": "srd",
+          "description": "You have advantage on saving throws against being frightened.",
+          "mechanicType": "passive",
+          "grantsAdvantage": {
+            "conditions": [
+              "frightened"
+            ]
+          }
+        },
+        {
+          "id": "halfling-nimbleness",
+          "name": "Halfling Nimbleness",
+          "source": "srd",
+          "description": "You can move through the space of any creature that is of a size larger than yours.",
+          "mechanicType": "passive"
+        },
+        {
+          "id": "naturally-stealthy-core",
+          "name": "Naturally Stealthy",
+          "source": "2024",
+          "description": "You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you.",
+          "mechanicType": "passive"
+        }
+      ],
+      "creatureType": "humanoid",
+      "teachingNotes": {
+        "complexity": "beginner",
+        "recommendedForNewPlayers": true,
+        "keyMechanics": [
+          "Lucky (reroll 1s)",
+          "Brave",
+          "Small size"
+        ],
+        "flavorHooks": [
+          "Cheerful",
+          "Resourceful",
+          "Comfort-loving"
+        ]
+      }
+    },
+    {
+      "id": "dragonborn",
+      "name": "Dragonborn",
+      "source": "srd",
+      "description": "Born of dragons, dragonborn walk proudly through a world that greets them with fearful incomprehension. Shaped by draconic gods or the dragons themselves, dragonborn originally hatched from dragon eggs.",
+      "size": "medium",
+      "speed": 30,
+      "abilityScoreIncreases": [
+        {
+          "ability": "STR",
+          "bonus": 2
+        },
+        {
+          "ability": "CHA",
+          "bonus": 1
+        }
+      ],
+      "ageMaturity": 15,
+      "ageLifespan": 80,
+      "languages": [
+        "Common",
+        "Draconic"
+      ],
+      "traits": [
+        {
+          "id": "draconic-ancestry",
+          "name": "Draconic Ancestry",
+          "source": "srd",
+          "description": "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type.",
+          "mechanicType": "choice"
+        },
+        {
+          "id": "breath-weapon",
+          "name": "Breath Weapon",
+          "source": "srd",
+          "description": "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.",
+          "mechanicType": "active"
+        },
+        {
+          "id": "damage-resistance-dragonborn",
+          "name": "Damage Resistance",
+          "source": "srd",
+          "description": "You have resistance to the damage type associated with your draconic ancestry.",
+          "mechanicType": "passive"
+        }
+      ],
+      "subraces": [
+        {
+          "id": "black-dragonborn",
+          "name": "Black Dragonborn",
+          "source": "2024",
+          "description": "Ancestry: Acid damage, 5 by 30 ft. Line (Dex. save).",
+          "parentSpeciesId": "dragonborn",
+          "additionalTraits": [
+            {
+              "id": "acid-breath-line",
+              "name": "Acid Breath",
+              "source": "2024",
+              "description": "5 by 30 ft. line (Dex. save), 1d10 acid damage.",
+              "mechanicType": "active"
+            }
+          ]
+        },
+        {
+          "id": "blue-dragonborn",
+          "name": "Blue Dragonborn",
+          "source": "2024",
+          "description": "Ancestry: Lightning damage, 5 by 30 ft. Line (Dex. save).",
+          "parentSpeciesId": "dragonborn",
+          "additionalTraits": [
+            {
+              "id": "lightning-breath-line",
+              "name": "Lightning Breath",
+              "source": "2024",
+              "description": "5 by 30 ft. line (Dex. save), 1d10 lightning damage.",
+              "mechanicType": "active"
+            }
+          ]
+        },
+        {
+          "id": "brass-dragonborn",
+          "name": "Brass Dragonborn",
+          "source": "2024",
+          "description": "Ancestry: Fire damage, 5 by 30 ft. Line (Dex. save).",
+          "parentSpeciesId": "dragonborn",
+          "additionalTraits": [
+            {
+              "id": "fire-breath-line",
+              "name": "Fire Breath",
+              "source": "2024",
+              "description": "5 by 30 ft. line (Dex. save), 1d10 fire damage.",
+              "mechanicType": "active"
+            }
+          ]
+        },
+        {
+          "id": "bronze-dragonborn",
+          "name": "Bronze Dragonborn",
+          "source": "2024",
+          "description": "Ancestry: Lightning damage, 5 by 30 ft. Line (Dex. save).",
+          "parentSpeciesId": "dragonborn",
+          "additionalTraits": [
+            {
+              "id": "lightning-breath-line-bronze",
+              "name": "Lightning Breath",
+              "source": "2024",
+              "description": "5 by 30 ft. line (Dex. save), 1d10 lightning damage.",
+              "mechanicType": "active"
+            }
+          ]
+        },
+        {
+          "id": "copper-dragonborn",
+          "name": "Copper Dragonborn",
+          "source": "2024",
+          "description": "Ancestry: Acid damage, 5 by 30 ft. Line (Dex. save).",
+          "parentSpeciesId": "dragonborn",
+          "additionalTraits": [
+            {
+              "id": "acid-breath-line-copper",
+              "name": "Acid Breath",
+              "source": "2024",
+              "description": "5 by 30 ft. line (Dex. save), 1d10 acid damage.",
+              "mechanicType": "active"
+            }
+          ]
+        },
+        {
+          "id": "gold-dragonborn",
+          "name": "Gold Dragonborn",
+          "source": "2024",
+          "description": "Ancestry: Fire damage, 15 ft. Cone (Dex. save).",
+          "parentSpeciesId": "dragonborn",
+          "additionalTraits": [
+            {
+              "id": "fire-breath-cone-gold",
+              "name": "Fire Breath",
+              "source": "2024",
+              "description": "15 ft. cone (Dex. save), 1d10 fire damage.",
+              "mechanicType": "active"
+            }
+          ]
+        },
+        {
+          "id": "green-dragonborn",
+          "name": "Green Dragonborn",
+          "source": "2024",
+          "description": "Ancestry: Poison damage, 15 ft. Cone (Con. save).",
+          "parentSpeciesId": "dragonborn",
+          "additionalTraits": [
+            {
+              "id": "poison-breath-cone",
+              "name": "Poison Breath",
+              "source": "2024",
+              "description": "15 ft. cone (Con. save), 1d10 poison damage.",
+              "mechanicType": "active"
+            }
+          ]
+        },
+        {
+          "id": "red-dragonborn",
+          "name": "Red Dragonborn",
+          "source": "2024",
+          "description": "Ancestry: Fire damage, 15 ft. Cone (Dex. save).",
+          "parentSpeciesId": "dragonborn",
+          "additionalTraits": [
+            {
+              "id": "fire-breath-cone-red",
+              "name": "Fire Breath",
+              "source": "2024",
+              "description": "15 ft. cone (Dex. save), 1d10 fire damage.",
+              "mechanicType": "active"
+            }
+          ]
+        },
+        {
+          "id": "silver-dragonborn",
+          "name": "Silver Dragonborn",
+          "source": "2024",
+          "description": "Ancestry: Cold damage, 15 ft. Cone (Con. save).",
+          "parentSpeciesId": "dragonborn",
+          "additionalTraits": [
+            {
+              "id": "cold-breath-cone-silver",
+              "name": "Cold Breath",
+              "source": "2024",
+              "description": "15 ft. cone (Con. save), 1d10 cold damage.",
+              "mechanicType": "active"
+            }
+          ]
+        },
+        {
+          "id": "white-dragonborn",
+          "name": "White Dragonborn",
+          "source": "2024",
+          "description": "Ancestry: Cold damage, 15 ft. Cone (Con. save).",
+          "parentSpeciesId": "dragonborn",
+          "additionalTraits": [
+            {
+              "id": "cold-breath-cone-white",
+              "name": "Cold Breath",
+              "source": "2024",
+              "description": "15 ft. cone (Con. save), 1d10 cold damage.",
+              "mechanicType": "active"
+            }
+          ]
+        }
+      ],
+      "creatureType": "humanoid",
+      "teachingNotes": {
+        "complexity": "beginner",
+        "recommendedForNewPlayers": true,
+        "keyMechanics": [
+          "Breath Weapon",
+          "Damage Resistance",
+          "Draconic Ancestry"
+        ],
+        "flavorHooks": [
+          "Proud",
+          "Honorable",
+          "Dragon heritage"
+        ]
+      }
+    },
+    {
+      "id": "gnome",
+      "name": "Gnome",
+      "source": "2024",
+      "description": "A gnome's energy and enthusiasm for living shines through every inch of his or her tiny body. Gnomes average slightly over 3 feet tall and weigh 40 to 45 pounds.",
+      "size": "small",
+      "speed": 25,
+      "abilityScoreIncreases": [
+        {
+          "ability": "INT",
+          "bonus": 2
+        },
+        {
+          "ability": "choice",
+          "bonus": 1
+        }
+      ],
+      "ageMaturity": 40,
+      "ageLifespan": 500,
+      "languages": [
+        "Common",
+        "Gnomish"
+      ],
+      "traits": [
+        {
+          "id": "darkvision-gnome",
+          "name": "Darkvision",
+          "source": "2024",
+          "description": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light.",
+          "mechanicType": "passive",
+          "grantsDarkvision": 60
+        },
+        {
+          "id": "gnome-cunning",
+          "name": "Gnome Cunning",
+          "source": "2024",
+          "description": "You have advantage on Intelligence, Wisdom, and Charisma saving throws.",
+          "mechanicType": "passive",
+          "grantsAdvantage": {
+            "savingThrows": [
+              "INT",
+              "WIS",
+              "CHA"
+            ]
+          }
+        }
+      ],
+      "subraces": [
+        {
+          "id": "forest-gnome",
+          "name": "Forest Gnome",
+          "source": "2024",
+          "description": "Gnomish Lineage: You have a natural knack for illusion and inherent quickness and stealth.",
+          "parentSpeciesId": "gnome",
+          "additionalTraits": [
+            {
+              "id": "gnomish-lineage-forest",
+              "name": "Gnomish Lineage (Forest)",
+              "source": "2024",
+              "description": "You know the Minor Illusion cantrip. You can also cast Speak with Animals (targeting Small or smaller beasts) at will. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this species).",
+              "mechanicType": "active",
+              "grantsSpells": [
+                {
+                  "spellId": "minor-illusion",
+                  "atLevel": 1,
+                  "castingAbility": "choice:INT,WIS,CHA"
+                },
+                {
+                  "spellId": "speak-with-animals",
+                  "atLevel": 1,
+                  "castingAbility": "choice:INT,WIS,CHA"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "rock-gnome",
+          "name": "Rock Gnome",
+          "source": "2024",
+          "description": "Gnomish Lineage: You have a natural inventiveness and hardiness beyond that of other gnomes.",
+          "parentSpeciesId": "gnome",
+          "additionalTraits": [
+            {
+              "id": "gnomish-lineage-rock",
+              "name": "Gnomish Lineage (Rock)",
+              "source": "2024",
+              "description": "You know the Mending and Prestidigitation cantrips. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this species).",
+              "mechanicType": "active",
+              "grantsSpells": [
+                {
+                  "spellId": "mending",
+                  "atLevel": 1,
+                  "castingAbility": "choice:INT,WIS,CHA"
+                },
+                {
+                  "spellId": "prestidigitation",
+                  "atLevel": 1,
+                  "castingAbility": "choice:INT,WIS,CHA"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "creatureType": "humanoid",
+      "teachingNotes": {
+        "complexity": "beginner",
+        "recommendedForNewPlayers": true,
+        "keyMechanics": [
+          "Darkvision",
+          "Gnome Cunning",
+          "Lineage Spells"
+        ],
+        "flavorHooks": [
+          "Curious",
+          "Inventive",
+          "Mischievous"
+        ]
+      }
+    },
+    {
+      "id": "tiefling",
+      "name": "Tiefling",
+      "source": "srd",
+      "description": "Tieflings are derived from human bloodlines, and in the broadest possible sense, they still look human. However, their infernal heritage has left a clear imprint on their appearance.",
+      "size": "medium",
+      "speed": 30,
+      "abilityScoreIncreases": [
+        {
+          "ability": "INT",
+          "bonus": 1
+        },
+        {
+          "ability": "CHA",
+          "bonus": 2
+        }
+      ],
+      "ageMaturity": 18,
+      "ageLifespan": 100,
+      "languages": [
+        "Common",
+        "Infernal"
+      ],
+      "traits": [
+        {
+          "id": "darkvision-tiefling",
+          "name": "Darkvision",
+          "source": "srd",
+          "description": "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light.",
+          "mechanicType": "passive",
+          "grantsDarkvision": 60
+        },
+        {
+          "id": "otherworldly-presence",
+          "name": "Otherworldly Presence",
+          "source": "2024",
+          "description": "You know the Thaumaturgy cantrip. Charisma is your spellcasting ability for it.",
+          "mechanicType": "active",
+          "grantsSpells": [
+            {
+              "spellId": "thaumaturgy",
+              "atLevel": 1,
+              "castingAbility": "CHA"
+            }
+          ]
+        }
+      ],
+      "subraces": [
+        {
+          "id": "abyssal-tiefling",
+          "name": "Abyssal Tiefling",
+          "source": "2024",
+          "description": "Lineage linked to the Abyss. You have resistance to Poison damage. You know the Poison Spray cantrip. At 3rd level, you learn Ray of Sickness. At 5th level, you learn Hold Person.",
+          "parentSpeciesId": "tiefling",
+          "additionalTraits": [
+            {
+              "id": "abyssal-legacy",
+              "name": "Abyssal Legacy",
+              "source": "2024",
+              "description": "You have resistance to Poison damage. You know spells.",
+              "mechanicType": "active",
+              "grantsResistance": [
+                "poison"
+              ],
+              "grantsSpells": [
+                {
+                  "spellId": "poison-spray",
+                  "atLevel": 1,
+                  "castingAbility": "CHA"
+                },
+                {
+                  "spellId": "ray-of-sickness",
+                  "atLevel": 3,
+                  "castingAbility": "CHA"
+                },
+                {
+                  "spellId": "hold-person",
+                  "atLevel": 5,
+                  "castingAbility": "CHA"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chthonic-tiefling",
+          "name": "Chthonic Tiefling",
+          "source": "2024",
+          "description": "Lineage linked to Carceri or the Underworld. You have resistance to Necrotic damage. You know the Chill Touch cantrip. At 3rd level, you learn False Life. At 5th level, you learn Ray of Enfeeblement.",
+          "parentSpeciesId": "tiefling",
+          "additionalTraits": [
+            {
+              "id": "chthonic-legacy",
+              "name": "Chthonic Legacy",
+              "source": "2024",
+              "description": "You have resistance to Necrotic damage. You know spells.",
+              "mechanicType": "active",
+              "grantsResistance": [
+                "necrotic"
+              ],
+              "grantsSpells": [
+                {
+                  "spellId": "chill-touch",
+                  "atLevel": 1,
+                  "castingAbility": "CHA"
+                },
+                {
+                  "spellId": "false-life",
+                  "atLevel": 3,
+                  "castingAbility": "CHA"
+                },
+                {
+                  "spellId": "ray-of-enfeeblement",
+                  "atLevel": 5,
+                  "castingAbility": "CHA"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "infernal-tiefling",
+          "name": "Infernal Tiefling",
+          "source": "2024",
+          "description": "Lineage linked to the Nine Hells. You have resistance to Fire damage. You know the Fire Bolt cantrip. At 3rd level, you learn Hellish Rebuke. At 5th level, you learn Darkness.",
+          "parentSpeciesId": "tiefling",
+          "additionalTraits": [
+            {
+              "id": "infernal-legacy",
+              "name": "Infernal Legacy",
+              "source": "2024",
+              "description": "You have resistance to Fire damage. You know spells.",
+              "mechanicType": "active",
+              "grantsResistance": [
+                "fire"
+              ],
+              "grantsSpells": [
+                {
+                  "spellId": "fire-bolt",
+                  "atLevel": 1,
+                  "castingAbility": "CHA"
+                },
+                {
+                  "spellId": "hellish-rebuke",
+                  "atLevel": 3,
+                  "castingAbility": "CHA"
+                },
+                {
+                  "spellId": "darkness",
+                  "atLevel": 5,
+                  "castingAbility": "CHA"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "creatureType": "humanoid",
+      "teachingNotes": {
+        "complexity": "beginner",
+        "recommendedForNewPlayers": true,
+        "keyMechanics": [
+          "Darkvision",
+          "Resistances",
+          "Legacy Spells"
+        ],
+        "flavorHooks": [
+          "Mysterious",
+          "Distrusted",
+          "Planar heritage"
+        ]
+      }
+    },
+    {
+      "id": "aasimar",
+      "name": "Aasimar",
+      "source": "2024",
+      "description": "Aasimar are mortals who carry a spark of the Upper Planes within their souls. They can fan that spark to bring light, ease wounds, and unleash the fury of the heavens.",
+      "size": "medium",
+      "speed": 30,
+      "abilityScoreIncreases": [
+        {
+          "ability": "CHA",
+          "bonus": 2
+        },
+        {
+          "ability": "WIS",
+          "bonus": 1
+        }
+      ],
+      "ageMaturity": 18,
+      "ageLifespan": 160,
+      "languages": [
+        "Common",
+        "Celestial"
+      ],
+      "traits": [
+        {
+          "id": "darkvision-aasimar",
+          "name": "Darkvision",
+          "source": "2024",
+          "description": "You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light.",
+          "mechanicType": "passive",
+          "grantsDarkvision": 60
+        },
+        {
+          "id": "celestial-resistance",
+          "name": "Celestial Resistance",
+          "source": "2024",
+          "description": "You have resistance to necrotic damage and radiant damage.",
+          "mechanicType": "passive",
+          "grantsResistance": [
+            "necrotic",
+            "radiant"
+          ]
+        },
+        {
+          "id": "healing-hands",
+          "name": "Healing Hands",
+          "source": "2024",
+          "description": "As an action, you can touch a creature and cause it to regain a number of hit points equal to your level. Once you use this trait, you can't use it again until you finish a long rest.",
+          "mechanicType": "active"
+        },
+        {
+          "id": "light-bearer",
+          "name": "Light Bearer",
+          "source": "2024",
+          "description": "You know the Light cantrip. Charisma is your spellcasting ability for it.",
+          "mechanicType": "active",
+          "grantsSpells": [
+            {
+              "spellId": "light",
+              "atLevel": 1,
+              "castingAbility": "CHA"
+            }
+          ]
+        },
+        {
+          "id": "celestial-revelation",
+          "name": "Celestial Revelation",
+          "source": "2024",
+          "description": "At 3rd level, choose one revelation option (Necrotic Shroud, Radiant Consumption, or Radiant Soul). You can use it as a bonus action.",
+          "mechanicType": "choice"
+        }
+      ],
+      "creatureType": "humanoid",
+      "teachingNotes": {
+        "complexity": "intermediate",
+        "recommendedForNewPlayers": true,
+        "keyMechanics": [
+          "Healing Hands",
+          "Celestial Resistance",
+          "Transformation"
+        ],
+        "flavorHooks": [
+          "Divine spark",
+          "Chosen duty",
+          "Inner light"
+        ]
+      }
+    },
+    {
+      "id": "goliath",
+      "name": "Goliath",
+      "source": "2024",
+      "description": "Goliaths are distant descendants of giants. Each goliath bears the stamp of a specific kind of giant in their nature.",
+      "size": "medium",
+      "speed": 30,
+      "abilityScoreIncreases": [
+        {
+          "ability": "STR",
+          "bonus": 2
+        },
+        {
+          "ability": "CON",
+          "bonus": 1
+        }
+      ],
+      "ageMaturity": 18,
+      "ageLifespan": 100,
+      "languages": [
+        "Common",
+        "Giant"
+      ],
+      "traits": [
+        {
+          "id": "powerful-build-goliath",
+          "name": "Powerful Build",
+          "source": "2024",
+          "description": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.",
+          "mechanicType": "passive"
+        },
+        {
+          "id": "mountain-born",
+          "name": "Mountain Born",
+          "source": "2024",
+          "description": "You have resistance to cold damage.",
+          "mechanicType": "passive",
+          "grantsResistance": [
+            "cold"
+          ]
+        }
+      ],
+      "subraces": [
+        {
+          "id": "goliath-cloud",
+          "name": "Cloud Giant Ancestry",
+          "source": "2024",
+          "description": "You trace your heritage to Cloud Giants, the high-flying tricksters of giantkind.",
+          "parentSpeciesId": "goliath",
+          "additionalTraits": [
+            {
+              "id": "cloud-jaunt",
+              "name": "Cloud Jaunt",
+              "source": "2024",
+              "description": "As a Bonus Action, you magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.",
+              "mechanicType": "active"
+            }
+          ]
+        },
+        {
+          "id": "goliath-fire",
+          "name": "Fire Giant Ancestry",
+          "source": "2024",
+          "description": "You trace your heritage to Fire Giants, the master artisans and militarists of giantkind.",
+          "parentSpeciesId": "goliath",
+          "additionalTraits": [
+            {
+              "id": "fires-burn",
+              "name": "Fire's Burn",
+              "source": "2024",
+              "description": "When you hit a target with an Attack Roll and deal damage to it, you can also deal 1d10 Fire damage to that target. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.",
+              "mechanicType": "active"
+            }
+          ]
+        },
+        {
+          "id": "goliath-frost",
+          "name": "Frost Giant Ancestry",
+          "source": "2024",
+          "description": "You trace your heritage to Frost Giants, the mighty reavers of the frozen lands.",
+          "parentSpeciesId": "goliath",
+          "additionalTraits": [
+            {
+              "id": "frosts-chill",
+              "name": "Frost's Chill",
+              "source": "2024",
+              "description": "When you hit a target with an Attack Roll and deal damage to it, you can also deal 1d6 Cold damage and reduce the target's Speed by 10 feet until the start of your next turn. You can use this trait a number of times equal to your Proficiency Bonus.",
+              "mechanicType": "active"
+            }
+          ]
+        },
+        {
+          "id": "goliath-hill",
+          "name": "Hill Giant Ancestry",
+          "source": "2024",
+          "description": "You trace your heritage to Hill Giants, the gluttonous scavengers of the hills.",
+          "parentSpeciesId": "goliath",
+          "additionalTraits": [
+            {
+              "id": "hills-tumble",
+              "name": "Hill's Tumble",
+              "source": "2024",
+              "description": "When you hit a Large or smaller creature with an Attack Roll and deal damage to it, you can knock the target Prone. You can use this trait a number of times equal to your Proficiency Bonus.",
+              "mechanicType": "active"
+            }
+          ]
+        },
+        {
+          "id": "goliath-stone",
+          "name": "Stone Giant Ancestry",
+          "source": "2024",
+          "description": "You trace your heritage to Stone Giants, the reclusive seers and carvers of rock.",
+          "parentSpeciesId": "goliath",
+          "additionalTraits": [
+            {
+              "id": "stones-endurance",
+              "name": "Stone's Endurance",
+              "source": "2024",
+              "description": "When you take damage, you can use your Reaction to roll 1d12. Add your Constitution modifier to the number rolled and reduce the damage by that total. You can use this trait a number of times equal to your Proficiency Bonus.",
+              "mechanicType": "active"
+            }
+          ]
+        },
+        {
+          "id": "goliath-storm",
+          "name": "Storm Giant Ancestry",
+          "source": "2024",
+          "description": "You trace your heritage to Storm Giants, the prophetic monarchs of giantkind.",
+          "parentSpeciesId": "goliath",
+          "additionalTraits": [
+            {
+              "id": "storms-thunder",
+              "name": "Storm's Thunder",
+              "source": "2024",
+              "description": "When you take damage from a creature within 60 feet of you, you can use your Reaction to deal 1d8 Thunder damage to that creature. You can use this trait a number of times equal to your Proficiency Bonus.",
+              "mechanicType": "active"
+            }
+          ]
+        }
+      ],
+      "creatureType": "humanoid",
+      "teachingNotes": {
+        "complexity": "beginner",
+        "recommendedForNewPlayers": true,
+        "keyMechanics": [
+          "Damage Reduction",
+          "Powerful Build",
+          "Giant Ancestry"
+        ],
+        "flavorHooks": [
+          "Competitive",
+          "Strong",
+          "Giantkin"
+        ]
+      }
+    },
+    {
+      "id": "orc",
+      "name": "Orc",
+      "source": "2024",
+      "description": "Orcs are people who trace their origin to the one-eyed god Gruumsh. They are known for their tirelessness in battle and their devotion to their allies.",
+      "size": "medium",
+      "speed": 30,
+      "abilityScoreIncreases": [
+        {
+          "ability": "STR",
+          "bonus": 2
+        },
+        {
+          "ability": "CON",
+          "bonus": 1
+        }
+      ],
+      "ageMaturity": 12,
+      "ageLifespan": 50,
+      "languages": [
+        "Common",
+        "Orc"
+      ],
+      "traits": [
+        {
+          "id": "darkvision-orc",
+          "name": "Darkvision",
+          "source": "2024",
+          "description": "You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light.",
+          "mechanicType": "passive",
+          "grantsDarkvision": 120
+        },
+        {
+          "id": "adrenaline-rush",
+          "name": "Adrenaline Rush",
+          "source": "2024",
+          "description": "You can take the Dash action as a Bonus Action. When you do so, you gain Temporary Hit Points equal to your Proficiency Bonus.",
+          "mechanicType": "active"
+        },
+        {
+          "id": "relentless-endurance-orc",
+          "name": "Relentless Endurance",
+          "source": "2024",
+          "description": "When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit Point instead. You can't use this trait again until you finish a Long Rest.",
+          "mechanicType": "active"
+        },
+        {
+          "id": "powerful-build-orc",
+          "name": "Powerful Build",
+          "source": "2024",
+          "description": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.",
+          "mechanicType": "passive"
+        }
+      ],
+      "creatureType": "humanoid",
+      "teachingNotes": {
+        "complexity": "beginner",
+        "recommendedForNewPlayers": true,
+        "keyMechanics": [
+          "Adrenaline Rush",
+          "Relentless Endurance",
+          "Darkvision"
+        ],
+        "flavorHooks": [
+          "Relentless",
+          "Loyal",
+          "Survivor"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,322 @@
+{
+	"npcs": [
+		{
+			"id": "innkeeper_marta",
+			"name": "Marta the Innkeeper",
+			"role": "merchant",
+			"location": "Rusty Dragon Inn",
+			"description": "A stout, middle-aged woman with graying hair and a warm smile. She knows everyone's business.",
+			"personality": [
+				"friendly",
+				"gossip",
+				"protective"
+			],
+			"knowledge": [
+				"local_rumors",
+				"travelers",
+				"town_history"
+			],
+			"services": [
+				"lodging",
+				"food",
+				"information"
+			],
+			"dialogue": {
+				"greeting": "Welcome to the Rusty Dragon! Sit, sit! You look like you could use a warm meal.",
+				"farewell": "Safe travels, friend. May the road rise to meet you.",
+				"topics": {
+					"rumors": "Well, they say there's been goblin activity on the old forest road. Travelers have gone missing...",
+					"lodging": "A room for the night? Five silver, includes breakfast. Best beds in town!",
+					"town": "Greenvalley's a quiet place, mostly farmers and craftsmen. We don't get much trouble... usually."
+				}
+			},
+			"quests": [
+				"goblin_investigation"
+			]
+		},
+		{
+			"id": "blacksmith_torvin",
+			"name": "Torvin Ironforge",
+			"role": "merchant",
+			"location": "Ironforge Smithy",
+			"description": "A muscular dwarf with a magnificent braided beard and burn scars on his forearms.",
+			"personality": [
+				"gruff",
+				"honest",
+				"perfectionist"
+			],
+			"knowledge": [
+				"weapons",
+				"armor",
+				"dwarf_culture",
+				"monster_weaknesses"
+			],
+			"services": [
+				"weapons",
+				"armor",
+				"repairs"
+			],
+			"dialogue": {
+				"greeting": "Hmph. Another adventurer. What do ye need? Make it quick, I've orders to fill.",
+				"farewell": "Don't get yerself killed, eh? Bad for repeat business.",
+				"topics": {
+					"weapons": "Swords, axes, hammers - I make 'em all. Finest steel this side of the mountains.",
+					"monsters": "Fighting undead? Bludgeoning weapons. Skeletons hate 'em. Wolves? Fire does the trick.",
+					"craft": "A blade's not just metal, it's art. Takes years to learn, decades to master."
+				}
+			},
+			"inventory": [
+				"longsword",
+				"shortsword",
+				"battleaxe",
+				"warhammer",
+				"chain_mail",
+				"shield"
+			]
+		},
+		{
+			"id": "wizard_elindra",
+			"name": "Elindra Starweaver",
+			"role": "sage",
+			"location": "Tower of Stars",
+			"description": "An elderly elf woman with silver hair and eyes that seem to see beyond the veil.",
+			"personality": [
+				"mysterious",
+				"wise",
+				"cryptic"
+			],
+			"knowledge": [
+				"magic",
+				"history",
+				"prophecies",
+				"planes"
+			],
+			"services": [
+				"spell_scrolls",
+				"magic_items",
+				"lore"
+			],
+			"dialogue": {
+				"greeting": "Ah, young one. The threads of fate have brought you to my doorstep. Interesting.",
+				"farewell": "Remember: not all paths are visible to mortal eyes. Trust your instincts.",
+				"topics": {
+					"magic": "Magic is the language of creation itself. Learn to listen, and the universe speaks.",
+					"undead": "The walking dead are symptoms, not the disease. Seek the necromancer who commands them.",
+					"prophecy": "I have seen... fragments. Fire in the north. A blade reforged. A choice that echoes through time."
+				}
+			},
+			"quests": [
+				"find_ancient_tome",
+				"cleanse_corruption"
+			]
+		},
+		{
+			"id": "guard_captain_marcus",
+			"name": "Captain Marcus Steele",
+			"role": "authority",
+			"location": "Town Barracks",
+			"description": "A scarred human veteran with a commanding presence and tired eyes that have seen too much.",
+			"personality": [
+				"stern",
+				"just",
+				"overworked"
+			],
+			"knowledge": [
+				"law",
+				"combat_tactics",
+				"local_threats",
+				"military_history"
+			],
+			"services": [
+				"bounties",
+				"information",
+				"safe_passage"
+			],
+			"dialogue": {
+				"greeting": "State your business. I've got a town to protect and not enough guards to do it.",
+				"farewell": "Keep your nose clean and your blade ready. Dangerous times.",
+				"topics": {
+					"bounties": "Got a few open contracts. Goblins on the road, bandits in the hills, and something... worse in the old ruins.",
+					"threats": "Been quiet lately. Too quiet. The monsters are organized - that means something's commanding them.",
+					"help": "You want to help? Good. I'm stretched thin. Handle those goblins and there's coin in it for you."
+				}
+			},
+			"quests": [
+				"goblin_bounty",
+				"bandit_camp",
+				"investigate_ruins"
+			]
+		},
+		{
+			"id": "priest_aldric",
+			"name": "Father Aldric",
+			"role": "healer",
+			"location": "Temple of Light",
+			"description": "A kindly human cleric with gentle hands and a serene aura that puts the wounded at ease.",
+			"personality": [
+				"compassionate",
+				"faithful",
+				"pacifist"
+			],
+			"knowledge": [
+				"healing",
+				"religion",
+				"undead",
+				"blessings"
+			],
+			"services": [
+				"healing",
+				"blessings",
+				"holy_water",
+				"cure_disease"
+			],
+			"dialogue": {
+				"greeting": "Peace be upon you, traveler. The Light welcomes all who seek its warmth.",
+				"farewell": "Go with the Light's blessing. May it guide your path through darkness.",
+				"topics": {
+					"healing": "The body heals, given time and care. But wounds of the spirit - those require faith.",
+					"undead": "The undead are souls trapped between worlds. Some can be freed. Others... must be sent to rest.",
+					"blessing": "A blessing? Of course. May the Light shield you from harm and illuminate your way."
+				}
+			},
+			"quests": [
+				"retrieve_holy_relic",
+				"cleanse_graveyard"
+			]
+		},
+		{
+			"id": "thief_shadow",
+			"name": "Shadow",
+			"role": "informant",
+			"location": "Back Alleys",
+			"description": "A hooded figure whose face is never fully seen. Gender and race unknown.",
+			"personality": [
+				"secretive",
+				"pragmatic",
+				"information_broker"
+			],
+			"knowledge": [
+				"criminal_underworld",
+				"secrets",
+				"hidden_passages",
+				"blackmail"
+			],
+			"services": [
+				"information",
+				"lockpicks",
+				"contacts",
+				"fencing"
+			],
+			"dialogue": {
+				"greeting": "You shouldn't be talking to me. But since you are... what do you need?",
+				"farewell": "We never met. Understood?",
+				"topics": {
+					"information": "Information costs. Gold, favors, or secrets of your own. Nothing's free.",
+					"underground": "There's a whole network beneath this city. Thieves' guild, smugglers, worse. I know the way.",
+					"secrets": "Everyone has secrets. The mayor's gambling debts. The blacksmith's hidden past. Even you, I suspect."
+				}
+			},
+			"quests": [
+				"steal_documents",
+				"find_missing_person"
+			]
+		},
+		{
+			"id": "farmer_otto",
+			"name": "Otto Greenfield",
+			"role": "commoner",
+			"location": "Greenfield Farm",
+			"description": "A weathered farmer with calloused hands and a worried expression.",
+			"personality": [
+				"simple",
+				"worried",
+				"honest"
+			],
+			"knowledge": [
+				"farming",
+				"local_wildlife",
+				"weather_signs"
+			],
+			"services": [
+				"food",
+				"shelter",
+				"local_directions"
+			],
+			"dialogue": {
+				"greeting": "Travelers? Out here? Must be adventurer types. Mind the crops, will ya?",
+				"farewell": "Stay off the old road after dark. Trust me on that.",
+				"topics": {
+					"problem": "Something's been killing my livestock. Wolves, I thought, but the wounds... they ain't right.",
+					"farm": "Been farming this land forty years, like my father before me. Never seen times this bad.",
+					"help": "If you could look into those killings... I ain't got much, but I'd share what I have."
+				}
+			},
+			"quests": [
+				"investigate_livestock_deaths"
+			]
+		},
+		{
+			"id": "bard_lyra",
+			"name": "Lyra Songwind",
+			"role": "entertainer",
+			"location": "Various Taverns",
+			"description": "A charismatic half-elf with a lute slung over her back and a mischievous twinkle in her eye.",
+			"personality": [
+				"charming",
+				"curious",
+				"adventurous"
+			],
+			"knowledge": [
+				"legends",
+				"songs",
+				"court_gossip",
+				"monster_lore"
+			],
+			"services": [
+				"entertainment",
+				"bardic_knowledge",
+				"inspiration"
+			],
+			"dialogue": {
+				"greeting": "Well met, fellow travelers! You look like you have stories to tell - and I'm always listening.",
+				"farewell": "May your adventures make for songs worth singing!",
+				"topics": {
+					"legends": "Every land has its legends. The dragon beneath the mountain. The cursed sword. The lost kingdom...",
+					"monsters": "I've collected tales from a hundred taverns. Trolls fear fire. Vampires, sunlight. Mimics? Trust nothing.",
+					"inspiration": "Need courage? Let me play you a song of heroes who faced worse odds and triumphed!"
+				}
+			},
+			"quests": [
+				"find_lost_ballad",
+				"investigate_haunted_manor"
+			]
+		}
+	],
+	"dialogueTemplates": {
+		"shop_greeting": [
+			"Welcome! Take a look around.",
+			"Ah, a customer! How can I help you today?",
+			"Browse freely, friend. Quality goods at fair prices."
+		],
+		"quest_accept": [
+			"You'll help? Bless you!",
+			"Excellent. Here's what you need to know...",
+			"Good. I knew I could count on adventurers like you."
+		],
+		"quest_decline": [
+			"I understand. Perhaps another time.",
+			"Hmm. A shame, but I won't force you.",
+			"Very well. The offer stands if you change your mind."
+		],
+		"quest_complete": [
+			"You did it! I can't thank you enough.",
+			"Remarkable! You've earned every coin of this reward.",
+			"The town owes you a great debt. Here, as promised."
+		],
+		"combat_warning": [
+			"Careful out there. The roads aren't safe.",
+			"You're going to fight those things? Brave souls.",
+			"If you see trouble, run first. Fight only if you must."
+		]
+	}
+}

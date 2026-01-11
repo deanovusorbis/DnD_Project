@@ -1,0 +1,83 @@
+{
+	"compilerOptions": {
+		"target": "ES2022",
+		"lib": [
+			"ES2022",
+			"DOM",
+			"DOM.Iterable"
+		],
+		"module": "ESNext",
+		"moduleResolution": "bundler",
+		"resolveJsonModule": true,
+		"allowImportingTsExtensions": true,
+		"isolatedModules": true,
+		"noEmit": true,
+		"jsx": "react-jsx",
+		/* Strict Type Checking */
+		"strict": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"strictFunctionTypes": true,
+		"strictBindCallApply": true,
+		"strictPropertyInitialization": true,
+		"noImplicitThis": true,
+		"alwaysStrict": true,
+		/* Additional Checks */
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+		"noUncheckedIndexedAccess": true,
+		/* Module Resolution */
+		"baseUrl": ".",
+		"paths": {
+			"@/*": [
+				"src/*"
+			],
+			"@core/*": [
+				"src/core/*"
+			],
+			"@entities/*": [
+				"src/entities/*"
+			],
+			"@dnd/types/*": [
+				"src/types/*"
+			],
+			"@data/*": [
+				"src/data/*"
+			],
+			"@pedagogy/*": [
+				"src/pedagogy/*"
+			],
+			"@narrative/*": [
+				"src/narrative/*"
+			],
+			"@ui/*": [
+				"src/ui/*"
+			],
+			"@utils/*": [
+				"src/utils/*"
+			],
+			"@engine/*": [
+				"src/engine/*"
+			]
+		},
+		/* Output */
+		"declaration": true,
+		"declarationMap": true,
+		"sourceMap": true,
+		/* Interop */
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true
+	},
+	"include": [
+		"src/**/*",
+		"tests/**/*"
+	],
+	"exclude": [
+		"node_modules",
+		"dist"
+	]
+}

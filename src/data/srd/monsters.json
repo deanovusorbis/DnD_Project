@@ -1,0 +1,893 @@
+{
+	"monsters": [
+		{
+			"id": "goblin",
+			"name": "Goblin",
+			"size": "small",
+			"type": "humanoid",
+			"alignment": "neutral_evil",
+			"challengeRating": 0.25,
+			"armorClass": 15,
+			"hitPoints": {
+				"average": 7,
+				"formula": "2d6"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"abilityScores": {
+				"STR": 8,
+				"DEX": 14,
+				"CON": 10,
+				"INT": 10,
+				"WIS": 8,
+				"CHA": 8
+			},
+			"skills": [
+				"stealth"
+			],
+			"senses": {
+				"darkvision": 60,
+				"passivePerception": 9
+			},
+			"languages": [
+				"common",
+				"goblin"
+			],
+			"traits": [
+				{
+					"name": "Nimble Escape",
+					"description": "The goblin can take the Disengage or Hide action as a bonus action."
+				}
+			],
+			"actions": [
+				{
+					"name": "Scimitar",
+					"type": "melee_weapon",
+					"toHit": 4,
+					"reach": 5,
+					"damage": {
+						"dice": "1d6+2",
+						"type": "slashing"
+					}
+				},
+				{
+					"name": "Shortbow",
+					"type": "ranged_weapon",
+					"toHit": 4,
+					"range": {
+						"normal": 80,
+						"long": 320
+					},
+					"damage": {
+						"dice": "1d6+2",
+						"type": "piercing"
+					}
+				}
+			],
+			"description": "Goblins are small, black-hearted humanoids that lair in despoiled dungeons and caves."
+		},
+		{
+			"id": "skeleton",
+			"name": "Skeleton",
+			"size": "medium",
+			"type": "undead",
+			"alignment": "lawful_evil",
+			"challengeRating": 0.25,
+			"armorClass": 13,
+			"hitPoints": {
+				"average": 13,
+				"formula": "2d8+4"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"abilityScores": {
+				"STR": 10,
+				"DEX": 14,
+				"CON": 15,
+				"INT": 6,
+				"WIS": 8,
+				"CHA": 5
+			},
+			"damageVulnerabilities": [
+				"bludgeoning"
+			],
+			"damageImmunities": [
+				"poison"
+			],
+			"conditionImmunities": [
+				"exhaustion",
+				"poisoned"
+			],
+			"senses": {
+				"darkvision": 60,
+				"passivePerception": 9
+			},
+			"languages": [
+				"understands_common"
+			],
+			"actions": [
+				{
+					"name": "Shortsword",
+					"type": "melee_weapon",
+					"toHit": 4,
+					"reach": 5,
+					"damage": {
+						"dice": "1d6+2",
+						"type": "piercing"
+					}
+				},
+				{
+					"name": "Shortbow",
+					"type": "ranged_weapon",
+					"toHit": 4,
+					"range": {
+						"normal": 80,
+						"long": 320
+					},
+					"damage": {
+						"dice": "1d6+2",
+						"type": "piercing"
+					}
+				}
+			],
+			"description": "Skeletons arise when the dead are animated by dark magic."
+		},
+		{
+			"id": "zombie",
+			"name": "Zombie",
+			"size": "medium",
+			"type": "undead",
+			"alignment": "neutral_evil",
+			"challengeRating": 0.25,
+			"armorClass": 8,
+			"hitPoints": {
+				"average": 22,
+				"formula": "3d8+9"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"abilityScores": {
+				"STR": 13,
+				"DEX": 6,
+				"CON": 16,
+				"INT": 3,
+				"WIS": 6,
+				"CHA": 5
+			},
+			"savingThrows": {
+				"WIS": 0
+			},
+			"damageImmunities": [
+				"poison"
+			],
+			"conditionImmunities": [
+				"poisoned"
+			],
+			"senses": {
+				"darkvision": 60,
+				"passivePerception": 8
+			},
+			"languages": [
+				"understands_common"
+			],
+			"traits": [
+				{
+					"name": "Undead Fortitude",
+					"description": "If damage reduces the zombie to 0 HP, it must make a CON save DC 5 + damage. On success, it drops to 1 HP instead. Radiant or critical hits bypass this."
+				}
+			],
+			"actions": [
+				{
+					"name": "Slam",
+					"type": "melee_weapon",
+					"toHit": 3,
+					"reach": 5,
+					"damage": {
+						"dice": "1d6+1",
+						"type": "bludgeoning"
+					}
+				}
+			],
+			"description": "Zombies shamble with a tireless, relentless hunger."
+		},
+		{
+			"id": "wolf",
+			"name": "Wolf",
+			"size": "medium",
+			"type": "beast",
+			"alignment": "unaligned",
+			"challengeRating": 0.25,
+			"armorClass": 13,
+			"hitPoints": {
+				"average": 11,
+				"formula": "2d8+2"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"abilityScores": {
+				"STR": 12,
+				"DEX": 15,
+				"CON": 12,
+				"INT": 3,
+				"WIS": 12,
+				"CHA": 6
+			},
+			"skills": [
+				"perception",
+				"stealth"
+			],
+			"senses": {
+				"passivePerception": 13
+			},
+			"traits": [
+				{
+					"name": "Keen Hearing and Smell",
+					"description": "Advantage on Perception checks using hearing or smell."
+				},
+				{
+					"name": "Pack Tactics",
+					"description": "Advantage on attack if ally is within 5 ft of target."
+				}
+			],
+			"actions": [
+				{
+					"name": "Bite",
+					"type": "melee_weapon",
+					"toHit": 4,
+					"reach": 5,
+					"damage": {
+						"dice": "2d4+2",
+						"type": "piercing"
+					},
+					"special": "Target must succeed DC 11 STR save or be knocked prone."
+				}
+			],
+			"description": "Wolves hunt in packs and use coordinated tactics."
+		},
+		{
+			"id": "orc",
+			"name": "Orc",
+			"size": "medium",
+			"type": "humanoid",
+			"alignment": "chaotic_evil",
+			"challengeRating": 0.5,
+			"armorClass": 13,
+			"hitPoints": {
+				"average": 15,
+				"formula": "2d8+6"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"abilityScores": {
+				"STR": 16,
+				"DEX": 12,
+				"CON": 16,
+				"INT": 7,
+				"WIS": 11,
+				"CHA": 10
+			},
+			"skills": [
+				"intimidation"
+			],
+			"senses": {
+				"darkvision": 60,
+				"passivePerception": 10
+			},
+			"languages": [
+				"common",
+				"orc"
+			],
+			"traits": [
+				{
+					"name": "Aggressive",
+					"description": "As a bonus action, the orc can move up to its speed toward a hostile creature it can see."
+				}
+			],
+			"actions": [
+				{
+					"name": "Greataxe",
+					"type": "melee_weapon",
+					"toHit": 5,
+					"reach": 5,
+					"damage": {
+						"dice": "1d12+3",
+						"type": "slashing"
+					}
+				},
+				{
+					"name": "Javelin",
+					"type": "ranged_weapon",
+					"toHit": 5,
+					"range": {
+						"normal": 30,
+						"long": 120
+					},
+					"damage": {
+						"dice": "1d6+3",
+						"type": "piercing"
+					}
+				}
+			],
+			"description": "Orcs are savage raiders driven by their god Gruumsh."
+		},
+		{
+			"id": "giant_spider",
+			"name": "Giant Spider",
+			"size": "large",
+			"type": "beast",
+			"alignment": "unaligned",
+			"challengeRating": 1,
+			"armorClass": 14,
+			"hitPoints": {
+				"average": 26,
+				"formula": "4d10+4"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"abilityScores": {
+				"STR": 14,
+				"DEX": 16,
+				"CON": 12,
+				"INT": 2,
+				"WIS": 11,
+				"CHA": 4
+			},
+			"skills": [
+				"stealth"
+			],
+			"senses": {
+				"blindsight": 10,
+				"darkvision": 60,
+				"passivePerception": 10
+			},
+			"traits": [
+				{
+					"name": "Spider Climb",
+					"description": "Can climb difficult surfaces including ceilings without checks."
+				},
+				{
+					"name": "Web Sense",
+					"description": "Knows location of any creature touching its web."
+				},
+				{
+					"name": "Web Walker",
+					"description": "Ignores movement restrictions caused by webs."
+				}
+			],
+			"actions": [
+				{
+					"name": "Bite",
+					"type": "melee_weapon",
+					"toHit": 5,
+					"reach": 5,
+					"damage": {
+						"dice": "1d8+3",
+						"type": "piercing"
+					},
+					"special": "DC 11 CON save or 2d8 poison damage (half on success)."
+				},
+				{
+					"name": "Web",
+					"type": "ranged_weapon",
+					"toHit": 5,
+					"range": {
+						"normal": 30,
+						"long": 60
+					},
+					"special": "Target is restrained by webbing. Escape DC 12."
+				}
+			],
+			"description": "Giant spiders lurk in dark places, waiting for prey."
+		},
+		{
+			"id": "bugbear",
+			"name": "Bugbear",
+			"size": "medium",
+			"type": "humanoid",
+			"alignment": "chaotic_evil",
+			"challengeRating": 1,
+			"armorClass": 16,
+			"hitPoints": {
+				"average": 27,
+				"formula": "5d8+5"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"abilityScores": {
+				"STR": 15,
+				"DEX": 14,
+				"CON": 13,
+				"INT": 8,
+				"WIS": 11,
+				"CHA": 9
+			},
+			"skills": [
+				"stealth",
+				"survival"
+			],
+			"senses": {
+				"darkvision": 60,
+				"passivePerception": 10
+			},
+			"languages": [
+				"common",
+				"goblin"
+			],
+			"traits": [
+				{
+					"name": "Brute",
+					"description": "Extra 1d8 damage on melee weapon hits."
+				},
+				{
+					"name": "Surprise Attack",
+					"description": "If hits creature surprised, +2d6 damage."
+				}
+			],
+			"actions": [
+				{
+					"name": "Morningstar",
+					"type": "melee_weapon",
+					"toHit": 4,
+					"reach": 5,
+					"damage": {
+						"dice": "2d8+2",
+						"type": "piercing"
+					}
+				},
+				{
+					"name": "Javelin",
+					"type": "ranged_weapon",
+					"toHit": 4,
+					"range": {
+						"normal": 30,
+						"long": 120
+					},
+					"damage": {
+						"dice": "1d6+2",
+						"type": "piercing"
+					}
+				}
+			],
+			"description": "Bugbears are hairy goblinoids born for battle."
+		},
+		{
+			"id": "ogre",
+			"name": "Ogre",
+			"size": "large",
+			"type": "giant",
+			"alignment": "chaotic_evil",
+			"challengeRating": 2,
+			"armorClass": 11,
+			"hitPoints": {
+				"average": 59,
+				"formula": "7d10+21"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"abilityScores": {
+				"STR": 19,
+				"DEX": 8,
+				"CON": 16,
+				"INT": 5,
+				"WIS": 7,
+				"CHA": 7
+			},
+			"senses": {
+				"darkvision": 60,
+				"passivePerception": 8
+			},
+			"languages": [
+				"common",
+				"giant"
+			],
+			"actions": [
+				{
+					"name": "Greatclub",
+					"type": "melee_weapon",
+					"toHit": 6,
+					"reach": 5,
+					"damage": {
+						"dice": "2d8+4",
+						"type": "bludgeoning"
+					}
+				},
+				{
+					"name": "Javelin",
+					"type": "ranged_weapon",
+					"toHit": 6,
+					"range": {
+						"normal": 30,
+						"long": 120
+					},
+					"damage": {
+						"dice": "2d6+4",
+						"type": "piercing"
+					}
+				}
+			],
+			"description": "Ogres are as lazy and vicious as they are big."
+		},
+		{
+			"id": "owlbear",
+			"name": "Owlbear",
+			"size": "large",
+			"type": "monstrosity",
+			"alignment": "unaligned",
+			"challengeRating": 3,
+			"armorClass": 13,
+			"hitPoints": {
+				"average": 59,
+				"formula": "7d10+21"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"abilityScores": {
+				"STR": 20,
+				"DEX": 12,
+				"CON": 17,
+				"INT": 3,
+				"WIS": 12,
+				"CHA": 7
+			},
+			"skills": [
+				"perception"
+			],
+			"senses": {
+				"darkvision": 60,
+				"passivePerception": 13
+			},
+			"traits": [
+				{
+					"name": "Keen Sight and Smell",
+					"description": "Advantage on Perception checks using sight or smell."
+				}
+			],
+			"actions": [
+				{
+					"name": "Multiattack",
+					"description": "Makes two attacks: one beak, one claws."
+				},
+				{
+					"name": "Beak",
+					"type": "melee_weapon",
+					"toHit": 7,
+					"reach": 5,
+					"damage": {
+						"dice": "1d10+5",
+						"type": "piercing"
+					}
+				},
+				{
+					"name": "Claws",
+					"type": "melee_weapon",
+					"toHit": 7,
+					"reach": 5,
+					"damage": {
+						"dice": "2d8+5",
+						"type": "slashing"
+					}
+				}
+			],
+			"description": "An owlbear's screech echoes through dark forests."
+		},
+		{
+			"id": "mimic",
+			"name": "Mimic",
+			"size": "medium",
+			"type": "monstrosity",
+			"alignment": "neutral",
+			"challengeRating": 2,
+			"armorClass": 12,
+			"hitPoints": {
+				"average": 58,
+				"formula": "9d8+18"
+			},
+			"speed": {
+				"walk": 15
+			},
+			"abilityScores": {
+				"STR": 17,
+				"DEX": 12,
+				"CON": 15,
+				"INT": 5,
+				"WIS": 13,
+				"CHA": 8
+			},
+			"skills": [
+				"stealth"
+			],
+			"damageImmunities": [
+				"acid"
+			],
+			"conditionImmunities": [
+				"prone"
+			],
+			"senses": {
+				"darkvision": 60,
+				"passivePerception": 11
+			},
+			"traits": [
+				{
+					"name": "Shapechanger",
+					"description": "Can polymorph into an object or back to its true amorphous form."
+				},
+				{
+					"name": "Adhesive",
+					"description": "Adheres to anything that touches it. Escape DC 13."
+				},
+				{
+					"name": "False Appearance",
+					"description": "While motionless, indistinguishable from ordinary object."
+				},
+				{
+					"name": "Grappler",
+					"description": "Advantage on attack rolls against grappled creatures."
+				}
+			],
+			"actions": [
+				{
+					"name": "Pseudopod",
+					"type": "melee_weapon",
+					"toHit": 5,
+					"reach": 5,
+					"damage": {
+						"dice": "1d8+3",
+						"type": "bludgeoning"
+					}
+				},
+				{
+					"name": "Bite",
+					"type": "melee_weapon",
+					"toHit": 5,
+					"reach": 5,
+					"damage": {
+						"dice": "1d8+3",
+						"type": "piercing"
+					},
+					"special": "+1d8 acid damage."
+				}
+			],
+			"description": "Mimics are shapeshifting predators that take the form of chests and doors."
+		}
+	],
+	"encounterTemplates": [
+		{
+			"id": "goblin_ambush",
+			"name": "Goblin Ambush",
+			"difficulty": "easy",
+			"environment": "forest",
+			"monsters": [
+				{
+					"monsterId": "goblin",
+					"count": {
+						"min": 3,
+						"max": 6
+					}
+				}
+			],
+			"description": "A group of goblins lies in wait along the forest path.",
+			"tactics": "Goblins use ranged attacks first, then flee using Nimble Escape if outnumbered.",
+			"treasure": {
+				"gold": {
+					"min": 10,
+					"max": 30
+				},
+				"items": [
+					"shortbow",
+					"scimitar"
+				]
+			}
+		},
+		{
+			"id": "undead_crypt",
+			"name": "Undead Crypt",
+			"difficulty": "medium",
+			"environment": "dungeon",
+			"monsters": [
+				{
+					"monsterId": "skeleton",
+					"count": {
+						"min": 2,
+						"max": 4
+					}
+				},
+				{
+					"monsterId": "zombie",
+					"count": {
+						"min": 1,
+						"max": 3
+					}
+				}
+			],
+			"description": "Ancient burial chambers where the dead refuse to rest.",
+			"tactics": "Skeletons engage at range while zombies push forward.",
+			"treasure": {
+				"gold": {
+					"min": 20,
+					"max": 50
+				},
+				"items": [
+					"potion_of_healing"
+				]
+			}
+		},
+		{
+			"id": "wolf_pack",
+			"name": "Wolf Pack Hunt",
+			"difficulty": "easy",
+			"environment": "wilderness",
+			"monsters": [
+				{
+					"monsterId": "wolf",
+					"count": {
+						"min": 4,
+						"max": 8
+					}
+				}
+			],
+			"description": "A hungry wolf pack stalks the party.",
+			"tactics": "Wolves use Pack Tactics and try to knock targets prone.",
+			"treasure": {
+				"gold": {
+					"min": 0,
+					"max": 0
+				},
+				"items": [
+					"wolf_pelt"
+				]
+			}
+		},
+		{
+			"id": "orc_raiders",
+			"name": "Orc Raiders",
+			"difficulty": "medium",
+			"environment": "any",
+			"monsters": [
+				{
+					"monsterId": "orc",
+					"count": {
+						"min": 3,
+						"max": 5
+					}
+				}
+			],
+			"description": "Orc raiders seeking plunder and glory.",
+			"tactics": "Orcs use Aggressive to close distance, then attack relentlessly.",
+			"treasure": {
+				"gold": {
+					"min": 30,
+					"max": 80
+				},
+				"items": [
+					"greataxe",
+					"javelin"
+				]
+			}
+		},
+		{
+			"id": "spider_nest",
+			"name": "Spider Nest",
+			"difficulty": "hard",
+			"environment": "cave",
+			"monsters": [
+				{
+					"monsterId": "giant_spider",
+					"count": {
+						"min": 2,
+						"max": 3
+					}
+				}
+			],
+			"description": "Massive webs cover the cavern ceiling, and shapes move within.",
+			"tactics": "Spiders web targets first, then bite restrained prey.",
+			"treasure": {
+				"gold": {
+					"min": 50,
+					"max": 100
+				},
+				"items": [
+					"spider_silk",
+					"antitoxin"
+				]
+			}
+		},
+		{
+			"id": "bugbear_lair",
+			"name": "Bugbear Lair",
+			"difficulty": "hard",
+			"environment": "dungeon",
+			"monsters": [
+				{
+					"monsterId": "bugbear",
+					"count": {
+						"min": 1,
+						"max": 2
+					}
+				},
+				{
+					"monsterId": "goblin",
+					"count": {
+						"min": 4,
+						"max": 6
+					}
+				}
+			],
+			"description": "Bugbears command goblin lackeys from their cave fortress.",
+			"tactics": "Bugbears hide for Surprise Attack while goblins distract.",
+			"treasure": {
+				"gold": {
+					"min": 80,
+					"max": 150
+				},
+				"items": [
+					"morningstar",
+					"chain_shirt"
+				]
+			}
+		},
+		{
+			"id": "ogre_toll",
+			"name": "Ogre's Toll Bridge",
+			"difficulty": "hard",
+			"environment": "road",
+			"monsters": [
+				{
+					"monsterId": "ogre",
+					"count": {
+						"min": 1,
+						"max": 1
+					}
+				}
+			],
+			"description": "An ogre demands payment to cross its bridge.",
+			"tactics": "Ogre attacks anyone who refuses to pay or tries to sneak past.",
+			"treasure": {
+				"gold": {
+					"min": 100,
+					"max": 200
+				},
+				"items": [
+					"greatclub"
+				]
+			},
+			"roleplayOption": "Can be bribed with food or 50+ gold."
+		},
+		{
+			"id": "mimic_trap",
+			"name": "Treasure Mimic",
+			"difficulty": "medium",
+			"environment": "dungeon",
+			"monsters": [
+				{
+					"monsterId": "mimic",
+					"count": {
+						"min": 1,
+						"max": 1
+					}
+				}
+			],
+			"description": "That treasure chest looks very inviting...",
+			"tactics": "Mimic waits until touched, then attacks with adhesive.",
+			"treasure": {
+				"gold": {
+					"min": 150,
+					"max": 300
+				},
+				"items": [
+					"potion_of_healing",
+					"scroll_of_shield"
+				]
+			}
+		}
+	]
+}

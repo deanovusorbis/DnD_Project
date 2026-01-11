@@ -1,0 +1,410 @@
+{
+	"version": "1.0.0",
+	"lastUpdated": "2026-01-10",
+	"modules": [
+		{
+			"id": "first-steps",
+			"name": "İlk Adımlar: D&D'ye Giriş",
+			"source": "srd",
+			"description": "Dungeons & Dragons'ın temel kavramlarını öğreten ilk eğitim modülü. Önceden hazırlanmış bir karakterle basit bir maceraya atılacaksınız.",
+			"type": "tutorial",
+			"scenes": [
+				"tavern-intro",
+				"tavern-conversation",
+				"tavern-challenge",
+				"cellar-entrance"
+			],
+			"startScene": "tavern-intro",
+			"targetConcepts": [
+				"d20-roll",
+				"ability-scores",
+				"skill-checks",
+				"ability-modifiers"
+			],
+			"prerequisiteConcepts": [],
+			"recommendedLevel": {
+				"min": 1,
+				"max": 1
+			},
+			"pregenCharacters": [
+				"pregen-fighter-1",
+				"pregen-rogue-1",
+				"pregen-cleric-1"
+			],
+			"allowCustomCharacter": false,
+			"checkpoints": [
+				"tavern-challenge",
+				"cellar-entrance"
+			],
+			"completionCriteria": {
+				"requiredScenes": [
+					"tavern-intro",
+					"tavern-conversation",
+					"tavern-challenge"
+				],
+				"conceptMastery": [
+					{
+						"conceptId": "d20-roll",
+						"level": "practiced"
+					},
+					{
+						"conceptId": "skill-checks",
+						"level": "introduced"
+					}
+				]
+			},
+			"estimatedDuration": 20,
+			"difficulty": "tutorial",
+			"tags": [
+				"beginner",
+				"introduction",
+				"roleplay",
+				"skill-checks"
+			]
+		}
+	],
+	"scenes": [
+		{
+			"id": "tavern-intro",
+			"name": "Altın Ejderha Hanı",
+			"source": "srd",
+			"description": "Oyuncunun D&D dünyasına ilk adımını attığı sahne. Temel narration ve atmosfer kurulumu.",
+			"narrativeType": "exploration",
+			"setting": "Sıcak bir akşam, kalabalık bir han",
+			"atmosphere": "Şömine ışığı, kahkahalar, bira kokusu",
+			"openingNarration": "Kapıyı iterek içeri girdiğinde, sıcak hava ve gürültü seni karşılıyor. Altın Ejderha Hanı bu akşam her zamanki gibi kalabalık. Şöminenin önündeki masalarda çeşitli yaratıklar - insanlar, elfler, cüceler - yemeklerini yiyor, hikayelerini paylaşıyor.\n\nBu senin ilk gerçek maceran. Şehrin dışındaki bir köyden gelen haberler tüccar birliğinin dikkatini çekmiş ve onlar da seni göndermeye karar vermiş. Ama önce, burada buluşman gereken biriyle tanışman gerekiyor.",
+			"npcs": [
+				{
+					"npcId": "innkeeper-martha",
+					"attitude": "friendly",
+					"dialogue": "innkeeper-intro"
+				},
+				{
+					"npcId": "mysterious-hooded",
+					"attitude": "unknown",
+					"dialogue": "hooded-intro"
+				}
+			],
+			"interactables": [
+				{
+					"id": "bar-counter",
+					"name": "Bar Tezgahı",
+					"type": "location",
+					"description": "Meşe ağacından yapılmış, yılların izini taşıyan uzun bir tezgah. Arkasında orta yaşlı, güler yüzlü bir kadın bardakları siliyor.",
+					"defaultAction": "approach",
+					"actions": [
+						{
+							"name": "Yaklaş ve konuş",
+							"result": {
+								"type": "dialogue",
+								"dialogueNodeId": "innkeeper-intro"
+							}
+						}
+					]
+				},
+				{
+					"id": "corner-table",
+					"name": "Köşedeki Masa",
+					"type": "location",
+					"description": "Gölgelerin arasında, kapüşonlu bir figür tek başına oturuyor. Ara sıra kapıya bakıyor.",
+					"defaultAction": "observe",
+					"actions": [
+						{
+							"name": "Yaklaş",
+							"result": {
+								"type": "dialogue",
+								"dialogueNodeId": "hooded-intro"
+							}
+						},
+						{
+							"name": "Uzaktan gözlemle",
+							"skillCheck": {
+								"skill": "perception",
+								"dc": 12
+							},
+							"result": {
+								"type": "teaching_moment",
+								"teachingContent": {
+									"id": "first-perception-check",
+									"conceptId": "skill-checks",
+									"timing": "before_action",
+									"headline": "Yetenek Kontrolü (Skill Check)",
+									"explanation": "D&D'de bir şeyi başarmaya çalıştığında, DM senden bir yetenek kontrolü yapmanı isteyebilir. Bu durumda Algı (Perception) kontrolü yapacaksın.\n\nNasıl çalışır:\n1. Bir d20 at\n2. İlgili yetenek modifiyerini ekle (Perception için Wisdom/WIS)\n3. Eğer bu yetenekte uzmansan, proficiency bonusunu da ekle\n4. Sonucu DC (Difficulty Class - Zorluk Derecesi) ile karşılaştır\n\nDC 12 orta zorlukta bir hedeftir.",
+									"practiceAction": {
+										"type": "dice_roll",
+										"prompt": "Perception kontrolü için d20 at!",
+										"feedback": {
+											"correct": "Harika! Zarını attın. Şimdi WIS modifiyerini ekleyelim.",
+											"incorrect": "Tekrar dene - d20 atman gerekiyor."
+										}
+									},
+									"dismissible": false,
+									"showOnlyOnce": true,
+									"priority": "high"
+								}
+							}
+						}
+					]
+				}
+			],
+			"conceptsIntroduced": [
+				"d20-roll"
+			],
+			"transitions": [
+				{
+					"id": "to-conversation",
+					"targetSceneId": "tavern-conversation",
+					"condition": "talked_to_hooded",
+					"transitionText": "Kapüşonlu figür seninle konuşmaya başlıyor..."
+				}
+			],
+			"estimatedDuration": 5,
+			"difficulty": "tutorial"
+		},
+		{
+			"id": "tavern-conversation",
+			"name": "Gizemli Buluşma",
+			"source": "srd",
+			"description": "Bilgi toplama ve diyalog mekaniğinin öğretildiği sahne.",
+			"narrativeType": "social",
+			"setting": "Hanın köşesindeki karanlık masa",
+			"atmosphere": "Fısıltılı konuşma, gizem",
+			"openingNarration": "Kapüşonlu figür seni görünce hafifçe başını sallıyor ve karşısındaki sandalyeyi işaret ediyor. Yakından bakınca bunun yaşlı bir elf olduğunu görüyorsun - gümüş saçları ve keskin gözleri yüzyılların bilgeliğini taşıyor.",
+			"dialogueRoot": "elf-sage-start",
+			"npcs": [
+				{
+					"npcId": "elf-sage",
+					"attitude": "neutral",
+					"dialogue": "elf-sage-start"
+				}
+			],
+			"conceptsIntroduced": [
+				"ability-modifiers"
+			],
+			"conceptsReinforced": [
+				"d20-roll",
+				"skill-checks"
+			],
+			"transitions": [
+				{
+					"id": "to-challenge",
+					"targetSceneId": "tavern-challenge",
+					"condition": "quest_accepted",
+					"transitionText": "Elfi bilge görevini kabul ettiğini duyunca gülümsüyor..."
+				}
+			],
+			"estimatedDuration": 8,
+			"difficulty": "tutorial"
+		},
+		{
+			"id": "tavern-challenge",
+			"name": "Beklenmedik Sorun",
+			"source": "srd",
+			"description": "İlk pratik skill check ve karar verme deneyimi.",
+			"narrativeType": "exploration",
+			"setting": "Hanın ana salonu",
+			"atmosphere": "Aniden sessizleşen han, gerginlik",
+			"openingNarration": "Tam konuşmanız bitmek üzereyken, hanın kapısı şiddetle açılıyor. İçeri giren iki silahlı adam etrafına bakınıyor. Biri hancıya doğru yürürken, 'Vergini ödemek için son şansın Martha!' diye bağırıyor.\n\nHan müşterileri tedirgin bir şekilde kımıldanıyor. Yaşlı elf sana anlamlı bir bakış atıyor.",
+			"interactables": [
+				{
+					"id": "confront-thugs",
+					"name": "Haydutlarla Yüzleş",
+					"type": "npc",
+					"description": "İki silahlı adam hancıyı tehdit ediyor.",
+					"actions": [
+						{
+							"name": "Araya gir ve onları korkut",
+							"skillCheck": {
+								"skill": "intimidation",
+								"dc": 13
+							},
+							"result": {
+								"type": "state_change",
+								"stateChanges": [
+									{
+										"key": "thugs_intimidated",
+										"value": true
+									}
+								]
+							}
+						},
+						{
+							"name": "Sakinleştirmeye çalış",
+							"skillCheck": {
+								"skill": "persuasion",
+								"dc": 15
+							},
+							"result": {
+								"type": "state_change",
+								"stateChanges": [
+									{
+										"key": "thugs_calmed",
+										"value": true
+									}
+								]
+							}
+						},
+						{
+							"name": "Arkadan yaklaş (gizlice)",
+							"skillCheck": {
+								"skill": "stealth",
+								"dc": 14
+							},
+							"result": {
+								"type": "state_change",
+								"stateChanges": [
+									{
+										"key": "thugs_flanked",
+										"value": true
+									}
+								]
+							}
+						}
+					]
+				}
+			],
+			"teachingMoments": [
+				{
+					"id": "choice-matters",
+					"conceptId": "skill-checks",
+					"timing": "before_action",
+					"headline": "Farklı Yaklaşımlar",
+					"explanation": "D&D'de çoğu durumun birden fazla çözümü vardır. Hangi yaklaşımı seçersen seç, farklı bir yetenek kontrolü yaparsın:\n\n• Intimidation (Gözdağı) - Charisma kullanır\n• Persuasion (İkna) - Charisma kullanır\n• Stealth (Gizlilik) - Dexterity kullanır\n\nHangi yeteneğin daha yüksekse, o yaklaşım sana avantaj sağlayabilir!",
+					"dismissible": true,
+					"showOnlyOnce": true,
+					"priority": "medium"
+				}
+			],
+			"conceptsReinforced": [
+				"skill-checks",
+				"ability-modifiers"
+			],
+			"transitions": [
+				{
+					"id": "to-cellar",
+					"targetSceneId": "cellar-entrance",
+					"condition": "thugs_dealt_with",
+					"transitionText": "Durum sakinleştikten sonra Martha sana teşekkür ediyor ve bir sır paylaşıyor..."
+				}
+			],
+			"estimatedDuration": 7,
+			"difficulty": "tutorial"
+		}
+	],
+	"dialogues": [
+		{
+			"id": "innkeeper-intro",
+			"speaker": "npc",
+			"speakerName": "Martha (Hancı)",
+			"text": "Hoş geldin yolcu! Bugün ne ikram edebilirim? Bir bira mı, yoksa sıcak bir yemek mi?",
+			"emotion": "happy",
+			"responses": [
+				{
+					"id": "ask-about-meeting",
+					"text": "Teşekkürler, ama aslında burada biriyle buluşmam gerekiyor. Beni bekleyen biri var mı?",
+					"leadsTo": "innkeeper-points"
+				},
+				{
+					"id": "order-drink",
+					"text": "Bir bira harika olur. Ve belki biraz bilgi de?",
+					"leadsTo": "innkeeper-gossip"
+				}
+			]
+		},
+		{
+			"id": "innkeeper-points",
+			"speaker": "npc",
+			"speakerName": "Martha (Hancı)",
+			"text": "Ah, sen o olmalısın! Köşedeki kapüşonlu beyefendi seni sordu. Biraz garip biri ama iyi bir müşteri. Orada, gölgelerin içinde oturuyor.",
+			"emotion": "neutral",
+			"responses": [
+				{
+					"id": "thank-innkeeper",
+					"text": "Teşekkür ederim, Martha.",
+					"leadsTo": "end-conversation",
+					"consequences": [
+						{
+							"type": "state",
+							"target": "knows_hooded_location",
+							"value": true
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "elf-sage-start",
+			"speaker": "npc",
+			"speakerName": "Elven Bilge",
+			"text": "Otur, genç maceracı. Seni bekliyordum. Tüccar birliği seni gönderdi, değil mi? İyi... çünkü kuzey köylerinden gelen haberler hiç iç açıcı değil.",
+			"emotion": "neutral",
+			"voiceNote": "Yavaş, ölçülü konuşma. Yüzyılların verdiği sabır.",
+			"responses": [
+				{
+					"id": "ask-about-news",
+					"text": "Ne tür haberler? Bana anlatır mısınız?",
+					"leadsTo": "elf-explains-quest"
+				},
+				{
+					"id": "ask-about-elf",
+					"text": "Önce sizi tanıyabilir miyim? Neden benimle buluşmak istediniz?",
+					"leadsTo": "elf-introduces"
+				}
+			]
+		},
+		{
+			"id": "elf-explains-quest",
+			"speaker": "npc",
+			"speakerName": "Elven Bilge",
+			"text": "Üç hafta önce, Çam Vadisi köyünden kervanlar gelmeyi kesti. Gönderdiğimiz haberciler geri dönmedi. Köylüler... kayboldu. Sadece bir tanık var - yarı deli bir çiftçi. 'Yeraltından gelen gölgeler' diyor.",
+			"emotion": "scared",
+			"responses": [
+				{
+					"id": "accept-quest",
+					"text": "Araştıracağım. Daha fazla bilgiye ihtiyacım var ama bu işe ben bakarım.",
+					"leadsTo": "elf-grateful",
+					"consequences": [
+						{
+							"type": "state",
+							"target": "quest_accepted",
+							"value": true
+						}
+					]
+				},
+				{
+					"id": "ask-more-info",
+					"text": "Büyü mü? Yaratıklar mı? Ne beklemeliyim?",
+					"leadsTo": "elf-speculates"
+				}
+			]
+		},
+		{
+			"id": "elf-grateful",
+			"speaker": "npc",
+			"speakerName": "Elven Bilge",
+			"text": "Cesaretin takdire şayan. Al, bu harita seni köye götürecek. Ve şunu da al...",
+			"emotion": "happy",
+			"nextNodeId": "elf-gives-reward",
+			"onExit": [
+				{
+					"type": "interaction",
+					"action": {
+						"type": "reward",
+						"rewards": [
+							{
+								"type": "item",
+								"value": "healing_potion",
+								"itemId": "potion_of_healing"
+							},
+							{
+								"type": "gold",
+								"value": 10
+							}
+						]
+					}
+				}
+			]
+		}
+	],
+	"encounters": []
+}
