@@ -72,12 +72,10 @@ export const classNames: Record<string, string> = {
 // Subclass Names
 export const subclassNames: Record<string, string> = {
 	// Barbarian
-	'Path of the Berserker': 'Çılgın Yolu',
-	'Path of the Totem Warrior': 'Totem Savaşçısı Yolu',
-	'Path of the Ancestral Guardian': 'Ata Koruyucu Yolu',
-	'Path of the Wild Heart': 'Vahşi Kalp Yolu',
+	'Path of the Berserker': 'Berserker Yolu',
+	'Path of the Wild Heart': 'Yaban Kalp Yolu',
 	'Path of the World Tree': 'Dünya Ağacı Yolu',
-	'Path of the Zealot': 'Fanatik Yolu',
+	'Path of the Zealot': 'Bağnazın Yolu',
 	// Bard
 	'College of Lore': 'Bilgi Koleji',
 	'College of Valor': 'Cesaret Koleji',
@@ -86,17 +84,19 @@ export const subclassNames: Record<string, string> = {
 	// Cleric
 	'Life Domain': 'Yaşam Alanı',
 	'Light Domain': 'Işık Alanı',
+	'Trickery Domain': 'Düzenbazlık Alanı',
 	'War Domain': 'Savaş Alanı',
 	// Druid
 	'Circle of the Land': 'Toprak Çemberi',
 	'Circle of the Moon': 'Ay Çemberi',
 	'Circle of the Sea': 'Deniz Çemberi',
 	'Circle of the Stars': 'Yıldız Çemberi',
+	// Sorcerer
 	// Fighter
 	'Champion': 'Şampiyon',
 	'Battle Master': 'Savaş Ustası',
 	'Eldritch Knight': 'Esrarengiz Şövalye',
-	'Psi Warrior': 'Psionik Savaşçı',
+	'Psi Warrior': 'Psi Savaşçısı',
 	// Monk
 	'Way of the Open Hand': 'Açık El Yolu',
 	'Warrior of the Elements': 'Element Savaşçısı',

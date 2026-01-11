@@ -9,6 +9,7 @@ import {
 	translateSpeciesName,
 	translateSubspeciesName,
 	translateClassName,
+	translateSubclassName,
 	translateTrait
 } from '../../utils/translations/index.ts';
 
@@ -243,11 +244,11 @@ export class TraitsView {
 						subclassTitle.style.fontSize = '0.85rem';
 						subclassTitle.style.marginTop = 'var(--space-md)';
 						subclassTitle.style.marginBottom = 'var(--space-sm)';
-						subclassTitle.innerText = `${subclass.name} Özellikleri`;
+						subclassTitle.innerText = `${translateSubclassName(subclass.name)} Özellikleri`;
 						classSection.appendChild(subclassTitle);
 
 						if (subclass.features) {
-							subclass.features.filter(f => f.level === 1).forEach(feature => { // Filter Level 1 subclass features too? Usually standard start level
+							subclass.features.forEach(feature => {
 								const translated = translateTrait(feature.name, feature.description);
 								const card = this.createTraitCard(translated.name, translated.description);
 								classSection.appendChild(card);

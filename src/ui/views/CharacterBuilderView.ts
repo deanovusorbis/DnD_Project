@@ -17,7 +17,6 @@ import {
 	translateClassName,
 	translateSubclassName,
 	translateSize,
-	translateEquipmentChoiceId,
 	getStepLabel,
 	translateAbilityName,
 	translateDescription
@@ -1423,7 +1422,10 @@ export class CharacterBuilderView {
 		// CLASS EQUIPMENT SELECTION
 		if (selectedClassId && CLASS_EQUIPMENT[selectedClassId]) {
 			const classEq = CLASS_EQUIPMENT[selectedClassId];
-			const classCard = createCard({ title: `Sınıf Ekipmanı (${selectedClassId.charAt(0).toUpperCase() + selectedClassId.slice(1)})` });
+			const classCard = createCard({
+				title: `Sınıf Ekipmanı (${selectedClassId.charAt(0).toUpperCase() + selectedClassId.slice(1)})`,
+				content: '' // To be populated via appendChild for complex interactive content
+			});
 
 			const selectionForm = document.createElement('div');
 			selectionForm.style.display = 'flex';
@@ -1434,8 +1436,12 @@ export class CharacterBuilderView {
 			const renderItemList = (items: string[]) => {
 				return items.map(item => {
 					// Check if item is a pack to add tooltip/details
-					const packKey = Object.keys(PACK_CONTENTS).find(k => item.includes(k.split('(')[0].trim()));
-					if (packKey) {
+					const packKey = Object.keys(PACK_CONTENTS).find(k => {
+						const parts = k.split('(');
+						const base = parts[0] ? parts[0].trim() : '';
+						return item && base && item.includes(base);
+					});
+					if (packKey && PACK_CONTENTS[packKey]) {
 						return `<li style="margin-bottom: 4px;">
 							<span style="color: var(--color-text-primary); font-weight: 500;">${item}</span>
 							<div style="font-size: 0.8rem; color: var(--color-text-dim); margin-left: 10px; font-style: italic;">
@@ -1597,17 +1603,19 @@ export class CharacterBuilderView {
 
 			const items = BG_ITEMS_MAP[selectedBackgroundId] || ['Sivil kıyafetler', 'Bir miktar altın', 'Geçmişe özel bir eşya'];
 
-			const bgCard = createCard({ title: `Geçmiş Ekipmanı (${selectedBackgroundId})` });
-			bgCard.innerHTML += `
-				<div style="padding: 10px;">
-					<p style="color: var(--color-text-secondary); margin-bottom: 10px; font-style: italic;">
-						Seçtiğiniz geçmişten gelen bu eşyalar envanterinize otomatik olarak eklenir.
-					</p>
-					<ul style="list-style: disc; padding-left: 20px;">
-						${items.map(i => `<li style="color: var(--color-text-primary); margin-bottom: 4px;">${i}</li>`).join('')}
-					</ul>
-				</div>
-			`;
+			const bgCard = createCard({
+				title: `Geçmiş Ekipmanı (${selectedBackgroundId})`,
+				content: `
+					<div style="padding: 10px;">
+						<p style="color: var(--color-text-secondary); margin-bottom: 10px; font-style: italic;">
+							Seçtiğiniz geçmişten gelen bu eşyalar envanterinize otomatik olarak eklenir.
+						</p>
+						<ul style="list-style: disc; padding-left: 20px;">
+							${items.map(i => `<li style="color: var(--color-text-primary); margin-bottom: 4px;">${i}</li>`).join('')}
+						</ul>
+					</div>
+				`
+			});
 			container.appendChild(bgCard);
 		}
 

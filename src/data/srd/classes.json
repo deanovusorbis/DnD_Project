@@ -6,7 +6,7 @@
 		{
 			"id": "fighter",
 			"name": "Fighter",
-			"source": "srd",
+			"source": "phb24",
 			"description": "A master of martial combat, skilled with a variety of weapons and armor.",
 			"hitDie": "d10",
 			"primaryAbility": [
@@ -159,7 +159,7 @@
 				{
 					"id": "fighting-style-fighter",
 					"name": "Fighting Style",
-					"source": "srd",
+					"source": "phb24",
 					"description": "You adopt a particular style of fighting as your specialty.",
 					"level": 1,
 					"featureType": "choice",
@@ -200,45 +200,30 @@
 							"description": "When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.",
 							"effect": "twf_damage_mod:add"
 						}
-					],
-					"teachingNotes": {
-						"conceptsTaught": [
-							"fighting_style",
-							"character_customization"
-						],
-						"practiceScenario": "fighting-style-demo"
-					}
+					]
 				},
 				{
 					"id": "second-wind",
 					"name": "Second Wind",
-					"source": "srd",
+					"source": "phb24",
 					"description": "You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level.",
 					"level": 1,
 					"featureType": "resource",
 					"resource": {
 						"name": "Second Wind",
-						"maxCount": 1,
+						"maxCount": 2,
 						"recoversOn": "short"
 					},
 					"grantsAction": {
 						"name": "Second Wind",
 						"actionType": "bonus_action",
 						"effect": "heal:1d10+level"
-					},
-					"teachingNotes": {
-						"conceptsTaught": [
-							"bonus_action",
-							"short_rest_recovery",
-							"self_healing"
-						],
-						"practiceScenario": "second-wind-tutorial"
 					}
 				},
 				{
 					"id": "action-surge",
 					"name": "Action Surge",
-					"source": "srd",
+					"source": "phb24",
 					"description": "You can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action.",
 					"level": 2,
 					"featureType": "resource",
@@ -251,30 +236,15 @@
 						"name": "Action Surge",
 						"actionType": "free",
 						"effect": "grant_additional_action"
-					},
-					"teachingNotes": {
-						"conceptsTaught": [
-							"action_economy",
-							"resource_management",
-							"burst_damage"
-						],
-						"practiceScenario": "action-surge-tutorial"
 					}
 				},
 				{
 					"id": "extra-attack-fighter",
 					"name": "Extra Attack",
-					"source": "srd",
+					"source": "phb24",
 					"description": "You can attack twice, instead of once, whenever you take the Attack action on your turn.",
 					"level": 5,
-					"featureType": "passive",
-					"teachingNotes": {
-						"conceptsTaught": [
-							"multiple_attacks",
-							"martial_scaling"
-						],
-						"practiceScenario": "extra-attack-demo"
-					}
+					"featureType": "passive"
 				},
 				{
 					"id": "extra-attack-fighter-2",
@@ -297,7 +267,7 @@
 				{
 					"id": "indomitable",
 					"name": "Indomitable",
-					"source": "srd",
+					"source": "phb24",
 					"description": "You can reroll a saving throw that you fail. If you do so, you must use the new roll.",
 					"level": 9,
 					"featureType": "resource",
@@ -330,47 +300,48 @@
 				{
 					"id": "champion",
 					"name": "Champion",
-					"source": "srd",
-					"description": "The archetypal Champion focuses on the development of raw physical power honed to deadly perfection.",
+					"source": "phb24",
+					"description": "A Champion focuses on the development of martial prowess in a relentless pursuit of victory.",
 					"parentClassId": "fighter",
 					"subclassFeatureLevel": 3,
 					"features": [
 						{
 							"id": "improved-critical",
 							"name": "Improved Critical",
-							"source": "srd",
-							"description": "Your weapon attacks score a critical hit on a roll of 19 or 20.",
+							"source": "phb24",
+							"description": "Your attack rolls with weapons and Unarmed Strikes can score a Critical Hit on a roll of 19 or 20.",
 							"level": 3,
-							"featureType": "passive",
-							"teachingNotes": {
-								"conceptsTaught": [
-									"critical_hits",
-									"expanded_crit_range"
-								],
-								"practiceScenario": "improved-critical-demo"
-							}
+							"featureType": "passive"
 						},
 						{
 							"id": "remarkable-athlete",
 							"name": "Remarkable Athlete",
-							"source": "srd",
-							"description": "You can add half your proficiency bonus (round up) to any Strength, Dexterity, or Constitution check you make that doesn't already use your proficiency bonus. In addition, when you make a running long jump, the distance you can cover increases by a number of feet equal to your Strength modifier.",
-							"level": 7,
+							"source": "phb24",
+							"description": "Advantage on Initiative rolls and Strength (Athletics) checks. After a Critical Hit, move up to half your Speed without provoking Opportunity Attacks.",
+							"level": 3,
 							"featureType": "passive"
 						},
 						{
 							"id": "additional-fighting-style",
 							"name": "Additional Fighting Style",
-							"source": "srd",
-							"description": "You can choose a second option from the Fighting Style class feature.",
-							"level": 10,
+							"source": "phb24",
+							"description": "You gain another Fighting Style feat of your choice.",
+							"level": 7,
 							"featureType": "choice"
+						},
+						{
+							"id": "heroic-warrior",
+							"name": "Heroic Warrior",
+							"source": "phb24",
+							"description": "Give yourself Heroic Inspiration whenever you start your turn without it during combat.",
+							"level": 10,
+							"featureType": "passive"
 						},
 						{
 							"id": "superior-critical",
 							"name": "Superior Critical",
-							"source": "srd",
-							"description": "Your weapon attacks score a critical hit on a roll of 18-20.",
+							"source": "phb24",
+							"description": "Your weapon and Unarmed Strike attacks score a critical hit on a roll of 18-20.",
 							"level": 15,
 							"featureType": "passive",
 							"improvesFeature": "improved-critical"
@@ -378,69 +349,189 @@
 						{
 							"id": "survivor",
 							"name": "Survivor",
-							"source": "srd",
-							"description": "You attain the pinnacle of resilience in battle. At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier if you have no more than half of your hit points left.",
+							"source": "phb24",
+							"description": "Advantage on Death Saving Throws (18-20 = 20). If Bloodied, regain 5 + CON modifier HP at start of your turn.",
 							"level": 18,
 							"featureType": "passive"
 						}
-					],
-					"teachingNotes": {
-						"playstyle": "Simple, reliable damage dealer focused on landing critical hits",
-						"complexity": "beginner",
-						"synergies": [
-							"Great weapons",
-							"High strength builds"
-						]
-					}
+					]
 				},
 				{
 					"id": "battle-master",
 					"name": "Battle Master",
-					"source": "srd",
-					"description": "You study combat as an academic discipline, using maneuvers to outsmart your foes.",
+					"source": "phb24",
+					"description": "Battle Masters study the art of combat, using maneuvers to outsmart and outmaneuver their foes.",
 					"parentClassId": "fighter",
 					"subclassFeatureLevel": 3,
 					"features": [
 						{
 							"id": "combat-superiority",
 							"name": "Combat Superiority",
-							"description": "You learn maneuvers that are fueled by special dice called superiority dice.",
+							"source": "phb24",
+							"description": "You learn 3 maneuvers fueled by 4 Superiority Dice (d8). Regain on Short/Long Rest. Gain more dice/maneuvers at 7, 10, and 15.",
 							"level": 3,
-							"featureType": "resource"
+							"featureType": "resource",
+							"resource": {
+								"name": "Superiority Dice",
+								"maxCount": 4,
+								"recoversOn": "short"
+							}
+						},
+						{
+							"id": "student-of-war",
+							"name": "Student of War",
+							"source": "phb24",
+							"description": "Gain proficiency with one type of Artisan's Tools and one skill from the Fighter list.",
+							"level": 3,
+							"featureType": "passive"
+						},
+						{
+							"id": "know-your-enemy",
+							"name": "Know Your Enemy",
+							"source": "phb24",
+							"description": "Bonus Action: discern Immunities, Resistances, or Vulnerabilities of a creature within 30ft. Once per Long Rest, or expend a Superiority Die to reuse.",
+							"level": 7,
+							"featureType": "action"
+						},
+						{
+							"id": "improved-combat-superiority",
+							"name": "Improved Combat Superiority",
+							"source": "phb24",
+							"description": "Your Superiority Die becomes a d10.",
+							"level": 10,
+							"featureType": "passive",
+							"improvesFeature": "combat-superiority"
+						},
+						{
+							"id": "relentless-fighter",
+							"name": "Relentless",
+							"source": "phb24",
+							"description": "Once per turn, use a maneuver by rolling 1d8 instead of expending a Superiority Die.",
+							"level": 15,
+							"featureType": "passive"
+						},
+						{
+							"id": "ultimate-combat-superiority",
+							"name": "Ultimate Combat Superiority",
+							"source": "phb24",
+							"description": "Your Superiority Die becomes a d12.",
+							"level": 18,
+							"featureType": "passive",
+							"improvesFeature": "improved-combat-superiority"
 						}
 					]
 				},
 				{
 					"id": "eldritch-knight",
 					"name": "Eldritch Knight",
-					"source": "srd",
-					"description": "You combine the martial mastery common to all fighters with a careful study of magic.",
+					"source": "phb24",
+					"description": "Eldritch Knights combine martial mastery with Wizard spells to augment their combat skills.",
 					"parentClassId": "fighter",
 					"subclassFeatureLevel": 3,
 					"features": [
 						{
 							"id": "spellcasting-eldritch-knight",
 							"name": "Spellcasting",
-							"description": "You learn to cast spells giving you versatility in combat.",
+							"source": "phb24",
+							"description": "Cast Wizard spells using Intelligence. Gain cantrips and prepared spells.",
 							"level": 3,
 							"featureType": "passive"
+						},
+						{
+							"id": "war-bond",
+							"name": "War Bond",
+							"source": "phb24",
+							"description": "Bond with up to 2 weapons. Can't be disarmed, and can summon one to your hand as a Bonus Action.",
+							"level": 3,
+							"featureType": "passive"
+						},
+						{
+							"id": "war-magic",
+							"name": "War Magic",
+							"source": "phb24",
+							"description": "Replace one attack with a Wizard cantrip (Action cast time) during an Attack action.",
+							"level": 7,
+							"featureType": "passive"
+						},
+						{
+							"id": "eldritch-strike",
+							"name": "Eldritch Strike",
+							"source": "phb24",
+							"description": "Weapon hit imposes Disadvantage on the target's next saving throw against your spell before the end of your next turn.",
+							"level": 10,
+							"featureType": "passive"
+						},
+						{
+							"id": "arcane-charge",
+							"name": "Arcane Charge",
+							"source": "phb24",
+							"description": "Teleport up to 30ft when using Action Surge (before or after the extra action).",
+							"level": 15,
+							"featureType": "passive"
+						},
+						{
+							"id": "improved-war-magic",
+							"name": "Improved War Magic",
+							"source": "phb24",
+							"description": "Replace two attacks with a Level 1 or 2 Wizard spell during an Attack action.",
+							"level": 18,
+							"featureType": "passive",
+							"improvesFeature": "war-magic"
 						}
 					]
 				},
 				{
 					"id": "psi-warrior",
 					"name": "Psi Warrior",
-					"source": "user",
-					"description": "You augment your physical might with psi-infused weapon strikes and telekinetic lashes.",
+					"source": "phb24",
+					"description": "Psi Warriors harness psionic energy to infuse strikes, create barriers, and move objects.",
 					"parentClassId": "fighter",
 					"subclassFeatureLevel": 3,
 					"features": [
 						{
 							"id": "psionic-power",
 							"name": "Psionic Power",
-							"description": "You harbor a wellspring of psionic energy within yourself.",
+							"source": "phb24",
+							"description": "Harbor Psionic Energy Dice. Features: Protective Field (reduce damage), Psionic Strike (extra Force damage), Telekinetic Movement.",
 							"level": 3,
-							"featureType": "resource"
+							"featureType": "resource",
+							"resource": {
+								"name": "Psionic Energy Dice",
+								"maxCount": 4,
+								"recoversOn": "long"
+							}
+						},
+						{
+							"id": "telekinetic-adept",
+							"name": "Telekinetic Adept",
+							"source": "phb24",
+							"description": "Psi-Powered Leap (Bonus Action Fly speed) and Telekinetic Thrust (force Prone or move 10ft on Psionic Strike).",
+							"level": 7,
+							"featureType": "passive"
+						},
+						{
+							"id": "guarded-mind",
+							"name": "Guarded Mind",
+							"source": "phb24",
+							"description": "Resistance to Psychic damage. Expend a die to end Charmed or Frightened conditions.",
+							"level": 10,
+							"featureType": "passive"
+						},
+						{
+							"id": "bulwark-of-force",
+							"name": "Bulwark of Force",
+							"source": "phb24",
+							"description": "Bonus Action: give Half Cover to yourself and allies (up to Int mod) within 30ft for 1 minute.",
+							"level": 15,
+							"featureType": "action"
+						},
+						{
+							"id": "telekinetic-master",
+							"name": "Telekinetic Master",
+							"source": "phb24",
+							"description": "Cast Telekinesis (Int) without slot. Attack as Bonus Action while maintaining Concentration.",
+							"level": 18,
+							"featureType": "action"
 						}
 					]
 				}
@@ -679,9 +770,9 @@
 				{
 					"id": "divine-domain",
 					"name": "Divine Domain",
-					"source": "srd",
+					"source": "phb24",
 					"description": "Choose one domain related to your deity. Your choice grants you domain spells and other features.",
-					"level": 1,
+					"level": 3,
 					"featureType": "choice",
 					"teachingNotes": {
 						"conceptsTaught": [
@@ -754,63 +845,47 @@
 				{
 					"id": "life-domain",
 					"name": "Life Domain",
-					"source": "srd",
+					"source": "phb24",
 					"description": "The Life domain focuses on the vibrant positive energy that sustains all life.",
 					"parentClassId": "cleric",
-					"subclassFeatureLevel": 1,
+					"subclassFeatureLevel": 3,
 					"features": [
 						{
-							"id": "bonus-proficiency-life",
-							"name": "Bonus Proficiency",
-							"source": "srd",
-							"description": "You gain proficiency with heavy armor.",
-							"level": 1,
+							"id": "life-domain-spells",
+							"name": "Life Domain Spells",
+							"description": "You always have certain spells prepared: Aid, Bless, Cure Wounds, Lesser Restoration at level 3, etc.",
+							"level": 3,
 							"featureType": "passive"
 						},
 						{
 							"id": "disciple-of-life",
 							"name": "Disciple of Life",
-							"source": "srd",
-							"description": "Your healing spells are more effective. Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell's level.",
-							"level": 1,
-							"featureType": "passive",
-							"teachingNotes": {
-								"conceptsTaught": [
-									"healing_bonus",
-									"spell_level_scaling"
-								],
-								"practiceScenario": "disciple-of-life-demo"
-							}
+							"source": "phb24",
+							"description": "When a spell you cast with a spell slot restores Hit Points, the creature regains additional HP equal to 2 plus the spell slot's level.",
+							"level": 3,
+							"featureType": "passive"
 						},
 						{
-							"id": "channel-divinity-preserve-life",
-							"name": "Channel Divinity: Preserve Life",
-							"source": "srd",
-							"description": "You can use your Channel Divinity to heal the badly injured. As an action, you present your holy symbol and evoke healing energy that can restore a number of hit points equal to five times your cleric level.",
-							"level": 2,
+							"id": "preserve-life",
+							"name": "Preserve Life",
+							"source": "phb24",
+							"description": "As a Magic action, you expend Channel Divinity to heal bloodied creatures within 30 feet.",
+							"level": 3,
 							"featureType": "active"
 						},
 						{
 							"id": "blessed-healer",
 							"name": "Blessed Healer",
-							"source": "srd",
-							"description": "When you cast a spell of 1st level or higher that restores hit points to a creature other than you, you regain hit points equal to 2 + the spell's level.",
+							"source": "phb24",
+							"description": "Healing spells you cast on others heal you as well.",
 							"level": 6,
-							"featureType": "passive"
-						},
-						{
-							"id": "divine-strike-life",
-							"name": "Divine Strike",
-							"source": "srd",
-							"description": "You gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage.",
-							"level": 8,
 							"featureType": "passive"
 						},
 						{
 							"id": "supreme-healing",
 							"name": "Supreme Healing",
-							"source": "srd",
-							"description": "When you would normally roll one or more dice to restore hit points with a spell, you instead use the highest number possible for each die.",
+							"source": "phb24",
+							"description": "When you restore Hit Points with a spell or Channel Divinity, use the highest number possible for each die.",
 							"level": 17,
 							"featureType": "passive"
 						}
@@ -819,30 +894,53 @@
 						"spellList": "life-domain",
 						"spellcastingAbility": "WIS",
 						"progression": "full"
-					},
-					"teachingNotes": {
-						"playstyle": "Primary healer with good durability and support capabilities",
-						"complexity": "beginner",
-						"synergies": [
-							"Healing spells",
-							"Tanking",
-							"Support"
-						]
 					}
 				},
 				{
 					"id": "light-domain",
 					"name": "Light Domain",
-					"source": "srd",
-					"description": "The Light domain focuses on the ideals of rebirth and renewal, truth, vigilance, and beauty.",
+					"source": "phb24",
+					"description": "The Light domain emphasizes the divine power to bring about blazing fire and revelation.",
 					"parentClassId": "cleric",
-					"subclassFeatureLevel": 1,
+					"subclassFeatureLevel": 3,
 					"features": [
+						{
+							"id": "light-domain-spells",
+							"name": "Light Domain Spells",
+							"description": "You always have certain spells prepared: Burning Hands, Faerie Fire, Scorching Ray, See Invisibility at level 3, etc.",
+							"level": 3,
+							"featureType": "passive"
+						},
+						{
+							"id": "radiance-of-the-dawn",
+							"name": "Radiance of the Dawn",
+							"source": "phb24",
+							"description": "As a Magic action, you expend Channel Divinity to emit a flash of light that dispels darkness and deals radiant damage.",
+							"level": 3,
+							"featureType": "active"
+						},
 						{
 							"id": "warding-flare",
 							"name": "Warding Flare",
-							"description": "You can interpose divine light between yourself and an attacking enemy.",
-							"level": 1,
+							"source": "phb24",
+							"description": "When a creature within 30 feet attacks, you can use a Reaction to impose Disadvantage.",
+							"level": 3,
+							"featureType": "active"
+						},
+						{
+							"id": "improved-warding-flare",
+							"name": "Improved Warding Flare",
+							"source": "phb24",
+							"description": "You regain uses of Warding Flare on a Short Rest and grant temporary HP when using it.",
+							"level": 6,
+							"featureType": "active"
+						},
+						{
+							"id": "corona-of-light",
+							"name": "Corona of Light",
+							"source": "phb24",
+							"description": "As a Magic action, you emit an aura of sunlight that imposes Disadvantage on saves against your fire/radiant effects.",
+							"level": 17,
 							"featureType": "active"
 						}
 					]
@@ -850,16 +948,48 @@
 				{
 					"id": "trickery-domain",
 					"name": "Trickery Domain",
-					"source": "srd",
-					"description": "Gods of trickery are mischief-makers who care for those who live outside the law.",
+					"source": "phb24",
+					"description": "The Trickery Domain offers magic of deception, illusion, and stealth.",
 					"parentClassId": "cleric",
-					"subclassFeatureLevel": 1,
+					"subclassFeatureLevel": 3,
 					"features": [
+						{
+							"id": "trickery-domain-spells",
+							"name": "Trickery Domain Spells",
+							"description": "You always have certain spells prepared: Charm Person, Disguise Self, Invisibility, Pass without Trace at level 3, etc.",
+							"level": 3,
+							"featureType": "passive"
+						},
 						{
 							"id": "blessing-of-the-trickster",
 							"name": "Blessing of the Trickster",
-							"description": "You can use your action to touch a willing creature other than yourself to give it advantage on Dexterity (Stealth) checks.",
-							"level": 1,
+							"source": "phb24",
+							"description": "As a Magic action, you grant Advantage on Dexterity (Stealth) checks to yourself or a willing creature.",
+							"level": 3,
+							"featureType": "active"
+						},
+						{
+							"id": "invoke-duplicity",
+							"name": "Invoke Duplicity",
+							"source": "phb24",
+							"description": "As a Bonus Action, you expend Channel Divinity to create an illusion of yourself.",
+							"level": 3,
+							"featureType": "active"
+						},
+						{
+							"id": "tricksters-transposition",
+							"name": "Trickster's Transposition",
+							"source": "phb24",
+							"description": "You can teleport and swap places with your illusion.",
+							"level": 6,
+							"featureType": "active"
+						},
+						{
+							"id": "improved-duplicity",
+							"name": "Improved Duplicity",
+							"source": "phb24",
+							"description": "Your illusion grants shared distraction and heals when it ends.",
+							"level": 17,
 							"featureType": "active"
 						}
 					]
@@ -867,23 +997,55 @@
 				{
 					"id": "war-domain",
 					"name": "War Domain",
-					"source": "srd",
-					"description": "The War domain focuses on battle and the glory of combat.",
+					"source": "phb24",
+					"description": "Clerics of the War Domain excel in battle, inspiring others to fight the good fight.",
 					"parentClassId": "cleric",
-					"subclassFeatureLevel": 1,
+					"subclassFeatureLevel": 3,
 					"features": [
+						{
+							"id": "war-domain-spells",
+							"name": "War Domain Spells",
+							"description": "You always have certain spells prepared: Guiding Bolt, Magic Weapon, Shield of Faith, Spiritual Weapon at level 3, etc.",
+							"level": 3,
+							"featureType": "passive"
+						},
 						{
 							"id": "war-priest",
 							"name": "War Priest",
-							"description": "Your god delivers bolts of inspiration to you while you are engaged in battle.",
-							"level": 1,
+							"source": "phb24",
+							"description": "As a Bonus Action, you can make one attack with a weapon or an Unarmed Strike.",
+							"level": 3,
 							"featureType": "active"
+						},
+						{
+							"id": "guided-strike",
+							"name": "Guided Strike",
+							"source": "phb24",
+							"description": "You can expend Channel Divinity to gain a +10 bonus to an attack roll.",
+							"level": 3,
+							"featureType": "active"
+						},
+						{
+							"id": "war-gods-blessing",
+							"name": "War God's Blessing",
+							"source": "phb24",
+							"description": "You can expend Channel Divinity to cast Shield of Faith or Spiritual Weapon without concentration.",
+							"level": 6,
+							"featureType": "active"
+						},
+						{
+							"id": "avatar-of-battle",
+							"name": "Avatar of Battle",
+							"source": "phb24",
+							"description": "You gain Resistance to Bludgeoning, Piercing, and Slashing damage.",
+							"level": 17,
+							"featureType": "passive"
 						}
 					]
 				}
 			],
 			"subclassName": "Divine Domain",
-			"subclassLevel": 1,
+			"subclassLevel": 3,
 			"asiLevels": [
 				4,
 				8,
@@ -907,7 +1069,7 @@
 				],
 				"keyDecisionPoints": [
 					{
-						"level": 1,
+						"level": 3,
 						"decision": "Divine Domain - shapes your entire playstyle"
 					},
 					{
@@ -1481,17 +1643,37 @@
 				{
 					"id": "berserker",
 					"name": "Path of the Berserker",
-					"source": "srd",
-					"description": "A path of untrammeled fury, slick with blood.",
+					"source": "phb24",
+					"description": "Barbarians who walk the Path of the Berserker direct their Rage primarily toward violence.",
 					"parentClassId": "barbarian",
 					"subclassFeatureLevel": 3,
 					"features": [
 						{
 							"id": "frenzy",
 							"name": "Frenzy",
-							"source": "srd",
-							"description": "You can go into a frenzy when you rage, making a bonus action melee attack each turn.",
+							"description": "If you use Reckless Attack while your Rage is active, you deal extra damage to the first target you hit on your turn with a Strength-based attack.",
 							"level": 3,
+							"featureType": "passive"
+						},
+						{
+							"id": "mindless-rage",
+							"name": "Mindless Rage",
+							"description": "You have Immunity to the Charmed and Frightened conditions while your Rage is active.",
+							"level": 6,
+							"featureType": "passive"
+						},
+						{
+							"id": "retaliation",
+							"name": "Retaliation",
+							"description": "When you take damage from a creature that is within 5 feet of you, you can take a Reaction to make one melee attack against that creature.",
+							"level": 10,
+							"featureType": "active"
+						},
+						{
+							"id": "intimidating-presence",
+							"name": "Intimidating Presence",
+							"description": "As a Bonus Action, you can strike terror into others with your menacing presence and primal power.",
+							"level": 14,
 							"featureType": "active"
 						}
 					]
@@ -1499,16 +1681,44 @@
 				{
 					"id": "wild-heart",
 					"name": "Path of the Wild Heart",
-					"source": "user",
-					"description": "You have a supernatural connection to the natural world and its creatures.",
+					"source": "phb24",
+					"description": "Barbarians who follow the Path of the Wild Heart view themselves as kin to animals.",
 					"parentClassId": "barbarian",
 					"subclassFeatureLevel": 3,
 					"features": [
 						{
-							"id": "animal-aspect",
-							"name": "Animal Aspect",
-							"description": "You gain a magical kinship with a specific animal, granting you special abilities.",
+							"id": "animal-speaker",
+							"name": "Animal Speaker",
+							"description": "You can cast the Beast Sense and Speak with Animals spells but only as Rituals.",
 							"level": 3,
+							"featureType": "passive"
+						},
+						{
+							"id": "rage-of-the-wilds",
+							"name": "Rage of the Wilds",
+							"description": "Whenever you activate your Rage, you gain one of the following options: Bear, Eagle, or Wolf.",
+							"level": 3,
+							"featureType": "choice"
+						},
+						{
+							"id": "aspect-of-the-wilds",
+							"name": "Aspect of the Wilds",
+							"description": "You gain one of the following options: Owl, Panther, or Salmon.",
+							"level": 6,
+							"featureType": "choice"
+						},
+						{
+							"id": "nature-speaker",
+							"name": "Nature Speaker",
+							"description": "You can cast the Commune with Nature spell but only as a Ritual.",
+							"level": 10,
+							"featureType": "passive"
+						},
+						{
+							"id": "power-of-the-wilds",
+							"name": "Power of the Wilds",
+							"description": "Whenever you activate your Rage, you gain one of the following options: Falcon, Lion, or Ram.",
+							"level": 14,
 							"featureType": "choice"
 						}
 					]
@@ -1516,16 +1726,37 @@
 				{
 					"id": "world-tree",
 					"name": "Path of the World Tree",
-					"source": "user",
-					"description": "You draw strength from the World Tree, Yggdrasil, which connects the planes of existence.",
+					"source": "phb24",
+					"description": "Barbarians who follow the Path of the World Tree connect with the cosmic tree Yggdrasil through their Rage.",
 					"parentClassId": "barbarian",
 					"subclassFeatureLevel": 3,
 					"features": [
 						{
 							"id": "vitality-of-the-tree",
 							"name": "Vitality of the Tree",
-							"description": "You gain vitality from the World Tree to heal yourself or others.",
+							"description": "Your Rage taps into the life force of the World Tree, granting Temporary Hit Points.",
 							"level": 3,
+							"featureType": "active"
+						},
+						{
+							"id": "branches-of-the-tree",
+							"name": "Branches of the Tree",
+							"description": "You can summon spectral branches to teleport creatures within 30 feet.",
+							"level": 6,
+							"featureType": "active"
+						},
+						{
+							"id": "battering-roots",
+							"name": "Battering Roots",
+							"description": "Your reach is 10 feet greater with Heavy or Versatile Melee weapons.",
+							"level": 10,
+							"featureType": "passive"
+						},
+						{
+							"id": "travel-along-the-tree",
+							"name": "Travel Along the Tree",
+							"description": "You can teleport up to 60 feet (or 150 feet) through the World Tree.",
+							"level": 14,
 							"featureType": "active"
 						}
 					]
@@ -1533,17 +1764,45 @@
 				{
 					"id": "zealot",
 					"name": "Path of the Zealot",
-					"source": "user",
-					"description": "You are a warrior who channels divine fury into your rage.",
+					"source": "phb24",
+					"description": "Barbarians who walk the Path of the Zealot receive boons from a god or pantheon.",
 					"parentClassId": "barbarian",
 					"subclassFeatureLevel": 3,
 					"features": [
 						{
 							"id": "divine-fury",
 							"name": "Divine Fury",
-							"description": "While you're raging, your first creature hit on each of your turns takes extra damage.",
+							"description": "You can channel divine power into your strikes.",
 							"level": 3,
 							"featureType": "passive"
+						},
+						{
+							"id": "warrior-of-the-gods",
+							"name": "Warrior of the Gods",
+							"description": "A divine entity helps ensure you can continue the fight, providing a healing pool.",
+							"level": 3,
+							"featureType": "resource"
+						},
+						{
+							"id": "fanatical-focus",
+							"name": "Fanatical Focus",
+							"description": "You can reroll a failed saving throw with a bonus while raging.",
+							"level": 6,
+							"featureType": "passive"
+						},
+						{
+							"id": "zealous-presence",
+							"name": "Zealous Presence",
+							"description": "You unleash a battle cry that grants advantage to allies.",
+							"level": 10,
+							"featureType": "active"
+						},
+						{
+							"id": "rage-of-the-gods",
+							"name": "Rage of the Gods",
+							"description": "You assume the form of a divine warrior, gaining flight and resistances.",
+							"level": 14,
+							"featureType": "active"
 						}
 					]
 				}
@@ -1725,12 +1984,36 @@
 					"subclassFeatureLevel": 3,
 					"features": [
 						{
+							"id": "bonus-proficiencies-lore",
+							"name": "Bonus Proficiencies",
+							"source": "phb24",
+							"description": "You gain proficiency with three skills of your choice.",
+							"level": 3,
+							"featureType": "passive"
+						},
+						{
 							"id": "cutting-words",
 							"name": "Cutting Words",
-							"source": "srd",
-							"description": "You learn how to use your wit to distract, confuse, and otherwise sap the confidence and competence of others.",
+							"source": "phb24",
+							"description": "You learn to use your wit to supernaturally distract, confuse, and otherwise sap the confidence and competence of others.",
 							"level": 3,
 							"featureType": "active"
+						},
+						{
+							"id": "magical-discoveries",
+							"name": "Magical Discoveries",
+							"source": "phb24",
+							"description": "You learn two spells from the Cleric, Druid, or Wizard spell list. These spells are always prepared.",
+							"level": 6,
+							"featureType": "choice"
+						},
+						{
+							"id": "peerless-skill",
+							"name": "Peerless Skill",
+							"source": "phb24",
+							"description": "When you fail an ability check or attack roll, you can add a Bardic Inspiration die to the roll. The die isn't expended on a failure.",
+							"level": 14,
+							"featureType": "passive"
 						}
 					]
 				},
@@ -1745,8 +2028,33 @@
 						{
 							"id": "dazzling-footwork",
 							"name": "Dazzling Footwork",
-							"description": "While you aren't wearing armor or wielding a shield, your AC equals 10 + your Dexterity modifier + your Charisma modifier.",
+							"source": "phb24",
+							"description": "While you aren't wearing armor or wielding a shield, you gain advantages in Performance, Unarmored Defense, and Agile Strikes.",
 							"level": 3,
+							"featureType": "passive"
+						},
+						{
+							"id": "inspiring-movement",
+							"name": "Inspiring Movement",
+							"source": "phb24",
+							"description": "As a Reaction, you can expend Bardic Inspiration to move yourself and an ally without provoking Opportunity Attacks.",
+							"level": 6,
+							"featureType": "active"
+						},
+						{
+							"id": "tandem-footwork",
+							"name": "Tandem Footwork",
+							"source": "phb24",
+							"description": "You can expend Bardic Inspiration to grant an initiative bonus to yourself and nearby allies.",
+							"level": 6,
+							"featureType": "active"
+						},
+						{
+							"id": "leading-evasion",
+							"name": "Leading Evasion",
+							"source": "phb24",
+							"description": "You and nearby allies gain benefits to Dexterity saving throws, potentially taking no damage on a success.",
+							"level": 14,
 							"featureType": "passive"
 						}
 					]
@@ -1760,10 +2068,35 @@
 					"subclassFeatureLevel": 3,
 					"features": [
 						{
+							"id": "beguiling-magic",
+							"name": "Beguiling Magic",
+							"source": "phb24",
+							"description": "You always have Charm Person and Mirror Image prepared. You can Charm or Frighten creatures after casting Enchantment/Illusion spells.",
+							"level": 3,
+							"featureType": "passive"
+						},
+						{
 							"id": "mantle-of-inspiration",
 							"name": "Mantle of Inspiration",
-							"description": "As a bonus action, you can spend one use of your Bardic Inspiration to grant temporary HP to allies.",
+							"source": "phb24",
+							"description": "As a Bonus Action, you can spend one use of your Bardic Inspiration to grant temporary HP and movement to allies.",
 							"level": 3,
+							"featureType": "active"
+						},
+						{
+							"id": "mantle-of-majesty",
+							"name": "Mantle of Majesty",
+							"source": "phb24",
+							"description": "You always have Command prepared. You can cast it as a Bonus Action for 1 minute.",
+							"level": 6,
+							"featureType": "active"
+						},
+						{
+							"id": "unbreakable-majesty",
+							"name": "Unbreakable Majesty",
+							"source": "phb24",
+							"description": "As a Bonus Action, you assume a majestic presence that can cause attacks against you to miss.",
+							"level": 14,
 							"featureType": "active"
 						}
 					]
@@ -1779,8 +2112,33 @@
 						{
 							"id": "combat-inspiration",
 							"name": "Combat Inspiration",
-							"description": "A creature that has a Bardic Inspiration die from you can roll that die and add the number rolled to a weapon damage roll it just made.",
+							"source": "phb24",
+							"description": "Allies can use your Bardic Inspiration for Defense (AC bonus) or Offense (Damage bonus).",
 							"level": 3,
+							"featureType": "active"
+						},
+						{
+							"id": "martial-training-valor",
+							"name": "Martial Training",
+							"source": "phb24",
+							"description": "You gain proficiency with Martial weapons, Medium armor, and Shields. You can use weapons as a spellcasting focus.",
+							"level": 3,
+							"featureType": "passive"
+						},
+						{
+							"id": "extra-attack-valor",
+							"name": "Extra Attack",
+							"source": "phb24",
+							"description": "You can attack twice, or replace one attack with a cantrip.",
+							"level": 6,
+							"featureType": "passive"
+						},
+						{
+							"id": "battle-magic",
+							"name": "Battle Magic",
+							"source": "phb24",
+							"description": "After casting a spell, you can make one weapon attack as a Bonus Action.",
+							"level": 14,
 							"featureType": "active"
 						}
 					]
@@ -1941,34 +2299,89 @@
 				{
 					"id": "circle-of-the-land",
 					"name": "Circle of the Land",
-					"source": "srd",
+					"source": "phb24",
 					"description": "The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites.",
 					"parentClassId": "druid",
-					"subclassFeatureLevel": 2,
+					"subclassFeatureLevel": 3,
 					"features": [
 						{
-							"id": "natural-recovery",
+							"id": "circle-of-the-land-spells",
+							"name": "Circle of the Land Spells",
+							"description": "Whenever you finish a Long Rest, choose one type of land: arid, polar, temperate, or tropical. You have the spells listed for your Druid level and lower prepared.",
+							"level": 3,
+							"featureType": "passive"
+						},
+						{
+							"id": "lands-aid",
+							"name": "Land's Aid",
+							"description": "As a Magic action, you can expend a use of your Wild Shape and choose a point within 60 feet. 10-foot-radius Sphere: creatures make CON save or take 2d6 Necrotic damage (half on success). One creature regains 2d6 HP.",
+							"level": 3,
+							"featureType": "action"
+						},
+						{
+							"id": "natural-recovery-enhanced",
 							"name": "Natural Recovery",
-							"source": "srd",
-							"description": "You can regain some of your magical energy by sitting in meditation.",
-							"level": 2,
-							"featureType": "resource"
+							"description": "Cast one level 1+ Circle Spell without a slot once per Long Rest. Also, recover spell slots on a Short Rest (combined level <= half druid level).",
+							"level": 6,
+							"featureType": "passive"
+						},
+						{
+							"id": "natures-ward",
+							"name": "Nature's Ward",
+							"description": "Immune to Poisoned condition. Resistance to a damage type based on your land choice: Arid (Fire), Polar (Cold), Temperate (Lightning), Tropical (Poison).",
+							"level": 10,
+							"featureType": "passive"
+						},
+						{
+							"id": "natures-sanctuary",
+							"name": "Nature's Sanctuary",
+							"description": "As a Magic action, expend Wild Shape to create a 15-foot Cube of spectral trees within 120 feet (1 minute). Allies have Half Cover and your Nature's Ward resistance while inside.",
+							"level": 14,
+							"featureType": "action"
 						}
 					]
 				},
 				{
 					"id": "circle-of-the-moon",
 					"name": "Circle of the Moon",
-					"source": "user",
+					"source": "phb24",
 					"description": "Druids of the Circle of the Moon are fierce guardians of the wilds and masters of Wild Shape.",
 					"parentClassId": "druid",
-					"subclassFeatureLevel": 2,
+					"subclassFeatureLevel": 3,
 					"features": [
+						{
+							"id": "circle-of-the-moon-spells",
+							"name": "Circle of the Moon Spells",
+							"description": "Always have certain spells prepared (Cure Wounds, Moonbeam, etc.). You can cast them while in Wild Shape.",
+							"level": 3,
+							"featureType": "passive"
+						},
 						{
 							"id": "circle-forms",
 							"name": "Circle Forms",
-							"description": "You can use your Wild Shape to transform into a beast with a challenge rating as high as 1.",
-							"level": 2,
+							"description": "Improved Wild Shape: Max CR = Level/3. AC = 13 + Wis modifier (if higher). Gain Temp HP = 3x Druid level.",
+							"level": 3,
+							"featureType": "passive"
+						},
+						{
+							"id": "improved-circle-forms",
+							"name": "Improved Circle Forms",
+							"description": "In Wild Shape: Attacks can deal Radiant damage. Add Wisdom modifier to Constitution saving throws.",
+							"level": 6,
+							"featureType": "passive"
+						},
+						{
+							"id": "moonlight-step",
+							"name": "Moonlight Step",
+							"description": "As a Bonus Action, teleport up to 30 feet. Advantage on next attack roll this turn. Uses = Wis modifier.",
+							"level": 10,
+							"featureType": "bonus_action"
+						},
+						{
+							"id": "lunar-form",
+							"name": "Lunar Form",
+							"description": "Extra 2d10 Radiant damage once per turn in Wild Shape. Can teleport one willing creature with Moonlight Step.",
+							"level": 14,
 							"featureType": "passive"
 						}
 					]
@@ -1976,40 +2389,96 @@
 				{
 					"id": "circle-of-the-sea",
 					"name": "Circle of the Sea",
-					"source": "user",
+					"source": "phb24",
 					"description": "Druids of the Circle of the Sea draw on the tempestuous power of the oceans.",
 					"parentClassId": "druid",
-					"subclassFeatureLevel": 2,
+					"subclassFeatureLevel": 3,
 					"features": [
 						{
-							"id": "wrath-of-the-waves",
-							"name": "Wrath of the Waves",
-							"description": "You can conjure ocean spray to batter your enemies.",
-							"level": 2,
-							"featureType": "active"
+							"id": "circle-of-the-sea-spells",
+							"name": "Circle of the Sea Spells",
+							"description": "Always have certain spells prepared (Fog Cloud, Gust of Wind, Ray of Frost, Shatter, Thunderwave at Level 3, etc.).",
+							"level": 3,
+							"featureType": "passive"
+						},
+						{
+							"id": "wrath-of-the-sea",
+							"name": "Wrath of the Sea",
+							"description": "As a Bonus Action, spend Wild Shape to manifest a 5-foot (10ft at lvl 6) Emanation for 10 minutes. As a Bonus Action, target takes Cold damage (Wis mod d6) and Large or smaller creatures are pushed 15ft.",
+							"level": 3,
+							"featureType": "bonus_action"
+						},
+						{
+							"id": "aquatic-affinity",
+							"name": "Aquatic Affinity",
+							"description": "Wrath of the Sea emanation size increases to 10 feet. Gain Swim Speed equal to your Speed.",
+							"level": 6,
+							"featureType": "passive"
+						},
+						{
+							"id": "stormborn",
+							"name": "Stormborn",
+							"description": "While Wrath of the Sea is active: Gain Fly Speed. Resistance to Cold, Lightning, and Thunder damage.",
+							"level": 10,
+							"featureType": "passive"
+						},
+						{
+							"id": "oceanic-gift",
+							"name": "Oceanic Gift",
+							"description": "Manifest Wrath of the Sea around a willing creature within 60 feet. Spend two Wild Shape uses to manifest it around both yourself and the creature.",
+							"level": 14,
+							"featureType": "passive"
 						}
 					]
 				},
 				{
 					"id": "circle-of-the-stars",
 					"name": "Circle of the Stars",
-					"source": "user",
+					"source": "phb24",
 					"description": "The Circle of the Stars allows druids to draw on the power of starlight.",
 					"parentClassId": "druid",
-					"subclassFeatureLevel": 2,
+					"subclassFeatureLevel": 3,
 					"features": [
+						{
+							"id": "star-map",
+							"name": "Star Map",
+							"description": "Gain a star chart (spellcasting focus). Guidance and Guiding Bolt prepared. Cast Guiding Bolt without a slot (Wis mod times/Long Rest).",
+							"level": 3,
+							"featureType": "passive"
+						},
 						{
 							"id": "starry-form",
 							"name": "Starry Form",
-							"description": "You can expend a use of your Wild Shape feature to take on a starry form.",
-							"level": 2,
-							"featureType": "active"
+							"description": "Bonus Action: spend Wild Shape to take a luminous form (10 mins). Choose Archer (Bonus Action ranged spell attack), Chalice (extra healing), or Dragon (better concentration/INT/WIS checks).",
+							"level": 3,
+							"featureType": "bonus_action"
+						},
+						{
+							"id": "cosmic-omen",
+							"name": "Cosmic Omen",
+							"description": "After a Long Rest, roll a die. Even (Weal): reaction to add 1d6 to a d20 test. Odd (Woe): reaction to subtract 1d6 from a d20 test. Uses = Wis mod.",
+							"level": 6,
+							"featureType": "reaction"
+						},
+						{
+							"id": "twinkling-constellations",
+							"name": "Twinkling Constellations",
+							"description": "Starry Form improves: Archer/Chalice (2d8), Dragon (Fly speed 20ft, hover). Change constellation at start of turn.",
+							"level": 10,
+							"featureType": "passive"
+						},
+						{
+							"id": "full-of-stars",
+							"name": "Full of Stars",
+							"description": "While in Starry Form, gain Resistance to Bludgeoning, Piercing, and Slashing damage.",
+							"level": 14,
+							"featureType": "passive"
 						}
 					]
 				}
 			],
 			"subclassName": "Druid Circle",
-			"subclassLevel": 2,
+			"subclassLevel": 3,
 			"asiLevels": [
 				4,
 				8,
@@ -2030,6 +2499,16 @@
 					"Caster",
 					"Healer",
 					"Utility"
+				],
+				"keyDecisionPoints": [
+					{
+						"level": 3,
+						"decision": "Druid Circle - defines your focus and power source"
+					},
+					{
+						"level": 1,
+						"decision": "Prepared spells - daily adaptation to nature"
+					}
 				]
 			}
 		},
