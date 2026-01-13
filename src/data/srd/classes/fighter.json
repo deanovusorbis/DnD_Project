@@ -1,0 +1,574 @@
+{
+  "id": "fighter",
+  "name": "Fighter",
+  "source": "phb24",
+  "description": "A master of martial combat, skilled with a variety of weapons and armor.",
+  "hitDie": "d10",
+  "primaryAbility": [
+    "STR",
+    "DEX"
+  ],
+  "abilityPriority": {
+    "primary": [
+      "STR",
+      "CON"
+    ],
+    "secondary": [
+      "DEX",
+      "WIS"
+    ],
+    "dump": [
+      "INT",
+      "CHA"
+    ]
+  },
+  "proficiencies": {
+    "armor": [
+      "light",
+      "medium",
+      "heavy",
+      "shield"
+    ],
+    "weapons": [
+      "simple",
+      "martial"
+    ],
+    "tools": [],
+    "savingThrows": [
+      "STR",
+      "CON"
+    ],
+    "skills": {
+      "choices": [
+        "acrobatics",
+        "animal_handling",
+        "athletics",
+        "history",
+        "insight",
+        "intimidation",
+        "perception",
+        "survival"
+      ],
+      "count": 2
+    }
+  },
+  "startingEquipment": {
+    "guaranteed": [
+      {
+        "itemId": "dungeoneers_pack",
+        "quantity": 1
+      }
+    ],
+    "choices": [
+      {
+        "id": "armor-choice",
+        "options": [
+          {
+            "description": "Chain mail",
+            "items": [
+              {
+                "itemId": "chain_mail",
+                "quantity": 1
+              }
+            ]
+          },
+          {
+            "description": "Leather armor, longbow, and 20 arrows",
+            "items": [
+              {
+                "itemId": "leather_armor",
+                "quantity": 1
+              },
+              {
+                "itemId": "longbow",
+                "quantity": 1
+              },
+              {
+                "itemId": "arrow",
+                "quantity": 20
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "weapon-choice",
+        "options": [
+          {
+            "description": "A martial weapon and a shield",
+            "items": [
+              {
+                "itemId": "martial_weapon_choice",
+                "quantity": 1
+              },
+              {
+                "itemId": "shield",
+                "quantity": 1
+              }
+            ]
+          },
+          {
+            "description": "Two martial weapons",
+            "items": [
+              {
+                "itemId": "martial_weapon_choice",
+                "quantity": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ranged-choice",
+        "options": [
+          {
+            "description": "A light crossbow and 20 bolts",
+            "items": [
+              {
+                "itemId": "light_crossbow",
+                "quantity": 1
+              },
+              {
+                "itemId": "bolt",
+                "quantity": 20
+              }
+            ]
+          },
+          {
+            "description": "Two handaxes",
+            "items": [
+              {
+                "itemId": "handaxe",
+                "quantity": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "spellcasting": {
+    "hasSpellcasting": false
+  },
+  "features": [
+    {
+      "id": "fighting-style-fighter",
+      "name": "Fighting Style",
+      "source": "phb24",
+      "description": "You adopt a particular style of fighting as your specialty.",
+      "level": 1,
+      "featureType": "choice",
+      "choices": [
+        {
+          "id": "archery",
+          "name": "Archery",
+          "description": "You gain a +2 bonus to attack rolls you make with ranged weapons.",
+          "effect": "ranged_attack_bonus:+2"
+        },
+        {
+          "id": "defense",
+          "name": "Defense",
+          "description": "While you are wearing armor, you gain a +1 bonus to AC.",
+          "effect": "ac_bonus:+1:when_armored"
+        },
+        {
+          "id": "dueling",
+          "name": "Dueling",
+          "description": "When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.",
+          "effect": "damage_bonus:+2:one_handed_melee"
+        },
+        {
+          "id": "great-weapon-fighting",
+          "name": "Great Weapon Fighting",
+          "description": "When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die.",
+          "effect": "reroll_damage:1-2:two_handed"
+        },
+        {
+          "id": "protection",
+          "name": "Protection",
+          "description": "When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll.",
+          "effect": "reaction:impose_disadvantage:ally_attacked"
+        },
+        {
+          "id": "two-weapon-fighting",
+          "name": "Two-Weapon Fighting",
+          "description": "When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.",
+          "effect": "twf_damage_mod:add"
+        }
+      ]
+    },
+    {
+      "id": "second-wind",
+      "name": "Second Wind",
+      "source": "phb24",
+      "description": "You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level.",
+      "level": 1,
+      "featureType": "resource",
+      "resource": {
+        "name": "Second Wind",
+        "maxCount": 2,
+        "recoversOn": "short"
+      },
+      "grantsAction": {
+        "name": "Second Wind",
+        "actionType": "bonus_action",
+        "effect": "heal:1d10+level"
+      }
+    },
+    {
+      "id": "action-surge",
+      "name": "Action Surge",
+      "source": "phb24",
+      "description": "You can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action.",
+      "level": 2,
+      "featureType": "resource",
+      "resource": {
+        "name": "Action Surge",
+        "maxCount": 1,
+        "recoversOn": "short"
+      },
+      "grantsAction": {
+        "name": "Action Surge",
+        "actionType": "free",
+        "effect": "grant_additional_action"
+      }
+    },
+    {
+      "id": "extra-attack-fighter",
+      "name": "Extra Attack",
+      "source": "phb24",
+      "description": "You can attack twice, instead of once, whenever you take the Attack action on your turn.",
+      "level": 5,
+      "featureType": "passive"
+    },
+    {
+      "id": "extra-attack-fighter-2",
+      "name": "Extra Attack (2)",
+      "source": "srd",
+      "description": "You can attack three times whenever you take the Attack action on your turn.",
+      "level": 11,
+      "featureType": "passive",
+      "improvesFeature": "extra-attack-fighter"
+    },
+    {
+      "id": "extra-attack-fighter-3",
+      "name": "Extra Attack (3)",
+      "source": "srd",
+      "description": "You can attack four times whenever you take the Attack action on your turn.",
+      "level": 20,
+      "featureType": "passive",
+      "improvesFeature": "extra-attack-fighter-2"
+    },
+    {
+      "id": "indomitable",
+      "name": "Indomitable",
+      "source": "phb24",
+      "description": "You can reroll a saving throw that you fail. If you do so, you must use the new roll.",
+      "level": 9,
+      "featureType": "resource",
+      "resource": {
+        "name": "Indomitable",
+        "maxCount": 1,
+        "recoversOn": "long"
+      }
+    },
+    {
+      "id": "indomitable-2",
+      "name": "Indomitable (2 uses)",
+      "source": "srd",
+      "description": "You can use Indomitable twice between long rests.",
+      "level": 13,
+      "featureType": "passive",
+      "improvesFeature": "indomitable"
+    },
+    {
+      "id": "indomitable-3",
+      "name": "Indomitable (3 uses)",
+      "source": "srd",
+      "description": "You can use Indomitable three times between long rests.",
+      "level": 17,
+      "featureType": "passive",
+      "improvesFeature": "indomitable-2"
+    }
+  ],
+  "subclasses": [
+    {
+      "id": "champion",
+      "name": "Champion",
+      "source": "phb24",
+      "description": "A Champion focuses on the development of martial prowess in a relentless pursuit of victory.",
+      "parentClassId": "fighter",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "improved-critical",
+          "name": "Improved Critical",
+          "source": "phb24",
+          "description": "Your attack rolls with weapons and Unarmed Strikes can score a Critical Hit on a roll of 19 or 20.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "remarkable-athlete",
+          "name": "Remarkable Athlete",
+          "source": "phb24",
+          "description": "Advantage on Initiative rolls and Strength (Athletics) checks. After a Critical Hit, move up to half your Speed without provoking Opportunity Attacks.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "additional-fighting-style",
+          "name": "Additional Fighting Style",
+          "source": "phb24",
+          "description": "You gain another Fighting Style feat of your choice.",
+          "level": 7,
+          "featureType": "choice"
+        },
+        {
+          "id": "heroic-warrior",
+          "name": "Heroic Warrior",
+          "source": "phb24",
+          "description": "Give yourself Heroic Inspiration whenever you start your turn without it during combat.",
+          "level": 10,
+          "featureType": "passive"
+        },
+        {
+          "id": "superior-critical",
+          "name": "Superior Critical",
+          "source": "phb24",
+          "description": "Your weapon and Unarmed Strike attacks score a critical hit on a roll of 18-20.",
+          "level": 15,
+          "featureType": "passive",
+          "improvesFeature": "improved-critical"
+        },
+        {
+          "id": "survivor",
+          "name": "Survivor",
+          "source": "phb24",
+          "description": "Advantage on Death Saving Throws (18-20 = 20). If Bloodied, regain 5 + CON modifier HP at start of your turn.",
+          "level": 18,
+          "featureType": "passive"
+        }
+      ]
+    },
+    {
+      "id": "battle-master",
+      "name": "Battle Master",
+      "source": "phb24",
+      "description": "Battle Masters study the art of combat, using maneuvers to outsmart and outmaneuver their foes.",
+      "parentClassId": "fighter",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "combat-superiority",
+          "name": "Combat Superiority",
+          "source": "phb24",
+          "description": "You learn 3 maneuvers fueled by 4 Superiority Dice (d8). Regain on Short/Long Rest. Gain more dice/maneuvers at 7, 10, and 15.",
+          "level": 3,
+          "featureType": "resource",
+          "resource": {
+            "name": "Superiority Dice",
+            "maxCount": 4,
+            "recoversOn": "short"
+          }
+        },
+        {
+          "id": "student-of-war",
+          "name": "Student of War",
+          "source": "phb24",
+          "description": "Gain proficiency with one type of Artisan's Tools and one skill from the Fighter list.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "know-your-enemy",
+          "name": "Know Your Enemy",
+          "source": "phb24",
+          "description": "Bonus Action: discern Immunities, Resistances, or Vulnerabilities of a creature within 30ft. Once per Long Rest, or expend a Superiority Die to reuse.",
+          "level": 7,
+          "featureType": "action"
+        },
+        {
+          "id": "improved-combat-superiority",
+          "name": "Improved Combat Superiority",
+          "source": "phb24",
+          "description": "Your Superiority Die becomes a d10.",
+          "level": 10,
+          "featureType": "passive",
+          "improvesFeature": "combat-superiority"
+        },
+        {
+          "id": "relentless-fighter",
+          "name": "Relentless",
+          "source": "phb24",
+          "description": "Once per turn, use a maneuver by rolling 1d8 instead of expending a Superiority Die.",
+          "level": 15,
+          "featureType": "passive"
+        },
+        {
+          "id": "ultimate-combat-superiority",
+          "name": "Ultimate Combat Superiority",
+          "source": "phb24",
+          "description": "Your Superiority Die becomes a d12.",
+          "level": 18,
+          "featureType": "passive",
+          "improvesFeature": "improved-combat-superiority"
+        }
+      ]
+    },
+    {
+      "id": "eldritch-knight",
+      "name": "Eldritch Knight",
+      "source": "phb24",
+      "description": "Eldritch Knights combine martial mastery with Wizard spells to augment their combat skills.",
+      "parentClassId": "fighter",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "spellcasting-eldritch-knight",
+          "name": "Spellcasting",
+          "source": "phb24",
+          "description": "Cast Wizard spells using Intelligence. Gain cantrips and prepared spells.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "war-bond",
+          "name": "War Bond",
+          "source": "phb24",
+          "description": "Bond with up to 2 weapons. Can't be disarmed, and can summon one to your hand as a Bonus Action.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "war-magic",
+          "name": "War Magic",
+          "source": "phb24",
+          "description": "Replace one attack with a Wizard cantrip (Action cast time) during an Attack action.",
+          "level": 7,
+          "featureType": "passive"
+        },
+        {
+          "id": "eldritch-strike",
+          "name": "Eldritch Strike",
+          "source": "phb24",
+          "description": "Weapon hit imposes Disadvantage on the target's next saving throw against your spell before the end of your next turn.",
+          "level": 10,
+          "featureType": "passive"
+        },
+        {
+          "id": "arcane-charge",
+          "name": "Arcane Charge",
+          "source": "phb24",
+          "description": "Teleport up to 30ft when using Action Surge (before or after the extra action).",
+          "level": 15,
+          "featureType": "passive"
+        },
+        {
+          "id": "improved-war-magic",
+          "name": "Improved War Magic",
+          "source": "phb24",
+          "description": "Replace two attacks with a Level 1 or 2 Wizard spell during an Attack action.",
+          "level": 18,
+          "featureType": "passive",
+          "improvesFeature": "war-magic"
+        }
+      ]
+    },
+    {
+      "id": "psi-warrior",
+      "name": "Psi Warrior",
+      "source": "phb24",
+      "description": "Psi Warriors harness psionic energy to infuse strikes, create barriers, and move objects.",
+      "parentClassId": "fighter",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "psionic-power",
+          "name": "Psionic Power",
+          "source": "phb24",
+          "description": "Harbor Psionic Energy Dice. Features: Protective Field (reduce damage), Psionic Strike (extra Force damage), Telekinetic Movement.",
+          "level": 3,
+          "featureType": "resource",
+          "resource": {
+            "name": "Psionic Energy Dice",
+            "maxCount": 4,
+            "recoversOn": "long"
+          }
+        },
+        {
+          "id": "telekinetic-adept",
+          "name": "Telekinetic Adept",
+          "source": "phb24",
+          "description": "Psi-Powered Leap (Bonus Action Fly speed) and Telekinetic Thrust (force Prone or move 10ft on Psionic Strike).",
+          "level": 7,
+          "featureType": "passive"
+        },
+        {
+          "id": "guarded-mind",
+          "name": "Guarded Mind",
+          "source": "phb24",
+          "description": "Resistance to Psychic damage. Expend a die to end Charmed or Frightened conditions.",
+          "level": 10,
+          "featureType": "passive"
+        },
+        {
+          "id": "bulwark-of-force",
+          "name": "Bulwark of Force",
+          "source": "phb24",
+          "description": "Bonus Action: give Half Cover to yourself and allies (up to Int mod) within 30ft for 1 minute.",
+          "level": 15,
+          "featureType": "action"
+        },
+        {
+          "id": "telekinetic-master",
+          "name": "Telekinetic Master",
+          "source": "phb24",
+          "description": "Cast Telekinesis (Int) without slot. Attack as Bonus Action while maintaining Concentration.",
+          "level": 18,
+          "featureType": "action"
+        }
+      ]
+    }
+  ],
+  "subclassName": "Martial Archetype",
+  "subclassLevel": 3,
+  "asiLevels": [
+    4,
+    6,
+    8,
+    12,
+    14,
+    16,
+    19
+  ],
+  "teachingNotes": {
+    "complexity": "beginner",
+    "recommendedForNewPlayers": true,
+    "playstyleKeywords": [
+      "Martial",
+      "Versatile",
+      "Durable",
+      "Weapon Master"
+    ],
+    "roleInParty": [
+      "Front-line combatant",
+      "Damage dealer",
+      "Tank"
+    ],
+    "keyDecisionPoints": [
+      {
+        "level": 1,
+        "decision": "Fighting Style - defines your combat approach"
+      },
+      {
+        "level": 3,
+        "decision": "Martial Archetype - your specialization"
+      },
+      {
+        "level": 4,
+        "decision": "ASI or Feat - improve abilities or gain new capabilities"
+      }
+    ]
+  }
+}

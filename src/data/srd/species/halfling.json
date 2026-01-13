@@ -1,0 +1,70 @@
+{
+  "id": "halfling",
+  "name": "Buçukluk (Halfling)",
+  "source": "srd",
+  "description": "Küçük boyutlu Buçukluklar, dikkat çekmekten ve tehlikeden kaçınarak büyük yaratıklarla dolu bir dünyada hayatta kalırlar.",
+  "size": "small",
+  "speed": 30,
+  "abilityScoreIncreases": [],
+  "ageMaturity": 20,
+  "ageLifespan": 150,
+  "languages": [
+    "Common",
+    "Halfling"
+  ],
+  "traits": [
+    {
+      "id": "lucky-halfling",
+      "name": "Şanslı (Lucky)",
+      "source": "srd",
+      "description": "Saldırı, yetenek veya kurtarma zarında 1 attığınızda, zarı tekrar atabilirsiniz. Yeni sonucu kullanmak zorundasınız.",
+      "mechanicType": "passive",
+      "level": 1
+    },
+    {
+      "id": "brave",
+      "name": "Cesur (Brave)",
+      "source": "srd",
+      "description": "Korkutulmaya (Frightened) karşı kurtarma atışlarında avantaja sahipsiniz.",
+      "mechanicType": "passive",
+      "level": 1,
+      "grantsAdvantage": {
+        "conditions": [
+          "frightened"
+        ]
+      }
+    },
+    {
+      "id": "halfling-nimbleness",
+      "name": "Buçukluk Çevikliği (Halfling Nimbleness)",
+      "source": "srd",
+      "description": "Sizden daha büyük boyuttaki herhangi bir yaratığın alanından geçip gidebilirsiniz.",
+      "mechanicType": "passive",
+      "level": 1
+    },
+    {
+      "id": "naturally-stealthy-core",
+      "name": "Doğuştan Gizli (Naturally Stealthy)",
+      "source": "2024",
+      "description": "Sizden en az bir boy büyük bir yaratık tarafından gizlendiğinizde bile Saklanma (Hide) aksiyonu alabilirsiniz.",
+      "mechanicType": "passive",
+      "level": 1
+    }
+  ],
+  "subraces": [],
+  "creatureType": "humanoid",
+  "teachingNotes": {
+    "complexity": "beginner",
+    "recommendedForNewPlayers": true,
+    "keyMechanics": [
+      "Şanslı (1'leri tekrar at)",
+      "Cesur",
+      "Küçük Boyut"
+    ],
+    "flavorHooks": [
+      "Neşeli",
+      "Becerikli",
+      "Konforuna Düşkün"
+    ]
+  }
+}

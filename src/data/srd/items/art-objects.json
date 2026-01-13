@@ -1,0 +1,564 @@
+[
+  {
+    "id": "bejeweled-gold-bracelet",
+    "name": "Bejeweled gold bracelet",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "black-sapphire",
+    "name": "Black Sapphire",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A lustrous black with glowing highlights gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "black-velvet-mask-stitched-with-silver-thread",
+    "name": "Black velvet mask stitched with silver thread",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 25,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "blue-sapphire",
+    "name": "Blue Sapphire",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A medium blue gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "bronze-crown",
+    "name": "Bronze crown",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "carved-bone-statuette",
+    "name": "Carved bone statuette",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 25,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "carved-ivory-statuette",
+    "name": "Carved ivory statuette",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "carved-wooden-harp-with-ivory-inlay-and-zircon-gems",
+    "name": "Carved wooden harp with ivory inlay and zircon gems",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 750,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "ceremonial-gold-armor-with-black-pearls",
+    "name": "Ceremonial gold armor with black pearls",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 500,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "cloth-of-gold-vestments",
+    "name": "Cloth-of-gold vestments",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 25,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "copper-chalice-with-silver-filigree",
+    "name": "Copper chalice with silver filigree",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 25,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "diamond",
+    "name": "Diamond",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A blue white, canary, pink, brown, or blue gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "embroidered-silk-handkerchief",
+    "name": "Embroidered silk handkerchief",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 25,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "emerald",
+    "name": "Emerald",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A deep bright green gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "eye-patch-decorated-with-tiny-blue-sapphires-and-moonstones",
+    "name": "Eye patch decorated with tiny blue sapphires and moonstones",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 500,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "gold-bar-5-pound",
+    "name": "Gold Bar (5-pound)",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 5,
+    "description": "Because large numbers of coins can be difficult to transport and account for, many merchants prefer to use trade bars—ingots of precious metals and alloys (usually silver). These bars are valued by weight.",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "gold-birdcage-with-electrum-filigree",
+    "name": "Gold birdcage with electrum filigree",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "gold-bracelet",
+    "name": "Gold bracelet",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 25,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "gold-comb-shaped-like-a-dragon-with-red-garnets-as-eyes",
+    "name": "Gold comb shaped like a dragon with red garnets as eyes",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 750,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "gold-dragon-scale-mail",
+    "name": "Gold Dragon Scale Mail",
+    "type": "Zırh",
+    "rarity": "Çok Nadir",
+    "weight": 45,
+    "description": "Dragon Scale Mail is made of the scales of one kind of dragon. Sometimes dragons collect their cast-off scales and gift them. Other times, hunters carefully preserve the hide of a dead dragon. In either case, Dragon Scale Mail is highly valued.While wearing this armor, you gain a +1 bonus to Armor Class, you have Advantage on saving throws against the breath weapons of Dragons, and you have Resistance to Fire damage.Additionally, you can focus your senses as a Magic action to discern the distance and direction to the closest gold dragon within 30 miles of yourself. This action can't be used again until the next dawn.The wearer has Disadvantage on Dexterity (Stealth) checks.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "armor": {
+      "type": "medium",
+      "ac": 14,
+      "dexBonus": true
+    }
+  },
+  {
+    "id": "gold-idol",
+    "name": "Gold idol",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 750,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "gold-jewelry-box-with-platinum-filigree",
+    "name": "Gold jewelry box with platinum filigree",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 500,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "gold-locket-with-a-painted-portrait-inside",
+    "name": "Gold locket with a painted portrait inside",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 25,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "gold-music-box",
+    "name": "Gold music box",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 500,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "gold",
+    "name": "Gold",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "Merchants commonly exchange trade goods without using currency.",
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "jade-game-board-with-gold-playing-pieces",
+    "name": "Jade game board with gold playing pieces",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 500,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "jeweled-anklet",
+    "name": "Jeweled anklet",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 500,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "jeweled-gold-crown",
+    "name": "Jeweled gold crown",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 500,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "jeweled-platinum-ring",
+    "name": "Jeweled platinum ring",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 500,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "necklace-string-of-small-pink-pearls",
+    "name": "Necklace string of small pink pearls",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 500,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "obsidian-statuette-with-gold-fittings-and-inlay",
+    "name": "Obsidian statuette with gold fittings and inlay",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 750,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "painted-gold-war-mask",
+    "name": "Painted gold war mask",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 750,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "platinum",
+    "name": "Platinum",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "Merchants commonly exchange trade goods without using currency.",
+    "cost": {
+      "quantity": 500,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "ruby",
+    "name": "Ruby",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A clear red to deep crimson gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "silk-vestments-with-gold-embroidery",
+    "name": "Silk vestments with gold embroidery",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "silver-and-gold-brooch",
+    "name": "Silver and gold brooch",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 750,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "silver-bar-2-pound",
+    "name": "Silver Bar (2-pound)",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 2,
+    "description": "Because large numbers of coins can be difficult to transport and account for, many merchants prefer to use trade bars—ingots of precious metals and alloys (usually silver). These bars are valued by weight.",
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "silver-bar-5-pound",
+    "name": "Silver Bar (5-pound)",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 5,
+    "description": "Because large numbers of coins can be difficult to transport and account for, many merchants prefer to use trade bars—ingots of precious metals and alloys (usually silver). These bars are valued by weight.",
+    "cost": {
+      "quantity": 25,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "silver-dragon-scale-mail",
+    "name": "Silver Dragon Scale Mail",
+    "type": "Zırh",
+    "rarity": "Çok Nadir",
+    "weight": 45,
+    "description": "Dragon Scale Mail is made of the scales of one kind of dragon. Sometimes dragons collect their cast-off scales and gift them. Other times, hunters carefully preserve the hide of a dead dragon. In either case, Dragon Scale Mail is highly valued.While wearing this armor, you gain a +1 bonus to Armor Class, you have Advantage on saving throws against the breath weapons of Dragons, and you have Resistance to Cold damage.Additionally, you can focus your senses as a Magic action to discern the distance and direction to the closest silver dragon within 30 miles of yourself. This action can't be used again until the next dawn.The wearer has Disadvantage on Dexterity (Stealth) checks.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "armor": {
+      "type": "medium",
+      "ac": 14,
+      "dexBonus": true
+    }
+  },
+  {
+    "id": "silver-ewer",
+    "name": "Silver ewer",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 25,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "silver-necklace-with-a-gemstone-pendant",
+    "name": "Silver necklace with a gemstone pendant",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "silver",
+    "name": "Silver",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "Merchants commonly exchange trade goods without using currency.",
+    "cost": {
+      "quantity": 5,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "silvered-weapon",
+    "name": "Gümüşlenmiş Silah",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "An alchemical process has bonded silver to this magic weapon. When you score a Critical Hit with it against a creature that is shape-shifted, the weapon deals one additional die of damage. Base items. This item variant can be applied to the following base items:Antimatter Rifle (Silvered Antimatter Rifle)Automatic Rifle (Silvered Automatic Rifle)Battleaxe (Silvered Battleaxe)Blowgun (Silvered Blowgun)Club (Silvered Club)Dagger (Silvered Dagger)Dart (Silvered Dart)Double-Bladed Scimitar (Silvered Double-Bladed Scimitar)Flail (Silvered Flail)Glaive (Silvered Glaive)Greataxe (Silvered Greataxe)Greatclub (Silvered Greatclub)Greatsword (Silvered Greatsword)Halberd (Silvered Halberd)Hand Crossbow (Silvered Hand Crossbow)Handaxe (Silvered Handaxe)Heavy Crossbow (Silvered Heavy Crossbow)Hooked Shortspear (Silvered Hooked Shortspear)Hoopak (Silvered Hoopak)Hunting Rifle (Silvered Hunting Rifle)Javelin (Silvered Javelin)Lance (Silvered Lance)Laser Pistol (Silvered Laser Pistol)Laser Rifle (Silvered Laser Rifle)Light Crossbow (Silvered Light Crossbow)Light Hammer (Silvered Light Hammer)Light Repeating Crossbow (Silvered Light Repeating Crossbow)Longbow (Silvered Longbow)Longsword (Silvered Longsword)Mace (Silvered Mace)Maul (Silvered Maul)Morningstar (Silvered Morningstar)Musket (Silvered Musket)Pike (Silvered Pike)Pistol (Silvered Pistol)Quarterstaff (Silvered Quarterstaff)Rapier (Silvered Rapier)Revolver (Silvered Revolver)Scimitar (Silvered Scimitar)Semiautomatic Pistol (Silvered Semiautomatic Pistol)Shortbow (Silvered Shortbow)Shortsword (Silvered Shortsword)Shotgun (Silvered Shotgun)Sickle (Silvered Sickle)Sling (Silvered Sling)Spear (Silvered Spear)Staff (Silvered Staff)Trident (Silvered Trident)War Pick (Silvered War Pick)Warhammer (Silvered Warhammer)Whip (Silvered Whip)Wooden Staff (Silvered Wooden Staff)Yklwa (Silvered Yklwa)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "star-ruby",
+    "name": "Star Ruby",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A ruby with white star-shaped center gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "star-sapphire",
+    "name": "Star Sapphire",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A blue sapphire with white star-shaped center gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "yellow-sapphire",
+    "name": "Yellow Sapphire",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A fiery yellow or yellow green gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  }
+]

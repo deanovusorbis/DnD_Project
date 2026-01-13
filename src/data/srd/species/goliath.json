@@ -1,0 +1,172 @@
+{
+  "id": "goliath",
+  "name": "Goliath",
+  "source": "2024",
+  "description": "Goliaths are distant descendants of giants. Each goliath bears the stamp of a specific kind of giant in their nature.",
+  "size": "medium",
+  "speed": 35,
+  "abilityScoreIncreases": [
+    {
+      "ability": "STR",
+      "bonus": 2
+    },
+    {
+      "ability": "CON",
+      "bonus": 1
+    }
+  ],
+  "ageMaturity": 18,
+  "ageLifespan": 100,
+  "languages": [
+    "Common",
+    "Giant"
+  ],
+  "traits": [
+    {
+      "id": "large-form",
+      "name": "İri Form (Large Form)",
+      "source": "2024",
+      "description": "5. seviyeden itibaren, bir Bonus Aksiyon olarak 10 dakikalığına İri (Large) boyuta geçebilirsiniz. Bu sürede Güç (Strength) testlerinde avantaj kazanırsınız ve Hızınız 10 feet artar. Bu özelliği Uzun Dinlenme bitirene kadar tekrar kullanamazsınız.",
+      "mechanicType": "active",
+      "level": 1
+    },
+    {
+      "id": "powerful-build-goliath",
+      "name": "Güçlü Yapı (Powerful Build)",
+      "source": "2024",
+      "description": "Grappled (Kavraşmış) durumundan kurtulmak için yaptığınız yetenek testlerinde avantaja sahipsiniz. Ayrıca taşıma kapasitesi hesaplanırken bir boy büyük sayılırsınız.",
+      "mechanicType": "passive",
+      "level": 1
+    },
+    {
+      "id": "mountain-born",
+      "name": "Dağ Doğumlu (Mountain Born)",
+      "source": "2024",
+      "description": "Soğuk hasarına karşı direnciniz vardır.",
+      "mechanicType": "passive",
+      "level": 1,
+      "grantsResistance": [
+        "cold"
+      ]
+    }
+  ],
+  "subraces": [
+    {
+      "id": "goliath-cloud",
+      "name": "Cloud Giant Ancestry",
+      "source": "2024",
+      "description": "You trace your heritage to Cloud Giants, the high-flying tricksters of giantkind.",
+      "parentSpeciesId": "goliath",
+      "additionalTraits": [
+        {
+          "id": "cloud-jaunt",
+          "name": "Cloud Jaunt",
+          "source": "2024",
+          "description": "As a Bonus Action, you magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.",
+          "mechanicType": "active",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "goliath-fire",
+      "name": "Fire Giant Ancestry",
+      "source": "2024",
+      "description": "You trace your heritage to Fire Giants, the master artisans and militarists of giantkind.",
+      "parentSpeciesId": "goliath",
+      "additionalTraits": [
+        {
+          "id": "fires-burn",
+          "name": "Fire's Burn",
+          "source": "2024",
+          "description": "When you hit a target with an Attack Roll and deal damage to it, you can also deal 1d10 Fire damage to that target. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.",
+          "mechanicType": "active",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "goliath-frost",
+      "name": "Frost Giant Ancestry",
+      "source": "2024",
+      "description": "You trace your heritage to Frost Giants, the mighty reavers of the frozen lands.",
+      "parentSpeciesId": "goliath",
+      "additionalTraits": [
+        {
+          "id": "frosts-chill",
+          "name": "Frost's Chill",
+          "source": "2024",
+          "description": "When you hit a target with an Attack Roll and deal damage to it, you can also deal 1d6 Cold damage and reduce the target's Speed by 10 feet until the start of your next turn. You can use this trait a number of times equal to your Proficiency Bonus.",
+          "mechanicType": "active",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "goliath-hill",
+      "name": "Hill Giant Ancestry",
+      "source": "2024",
+      "description": "You trace your heritage to Hill Giants, the gluttonous scavengers of the hills.",
+      "parentSpeciesId": "goliath",
+      "additionalTraits": [
+        {
+          "id": "hills-tumble",
+          "name": "Hill's Tumble",
+          "source": "2024",
+          "description": "When you hit a Large or smaller creature with an Attack Roll and deal damage to it, you can knock the target Prone. You can use this trait a number of times equal to your Proficiency Bonus.",
+          "mechanicType": "active",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "goliath-stone",
+      "name": "Stone Giant Ancestry",
+      "source": "2024",
+      "description": "You trace your heritage to Stone Giants, the reclusive seers and carvers of rock.",
+      "parentSpeciesId": "goliath",
+      "additionalTraits": [
+        {
+          "id": "stones-endurance",
+          "name": "Stone's Endurance",
+          "source": "2024",
+          "description": "When you take damage, you can use your Reaction to roll 1d12. Add your Constitution modifier to the number rolled and reduce the damage by that total. You can use this trait a number of times equal to your Proficiency Bonus.",
+          "mechanicType": "active",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "goliath-storm",
+      "name": "Storm Giant Ancestry",
+      "source": "2024",
+      "description": "You trace your heritage to Storm Giants, the prophetic monarchs of giantkind.",
+      "parentSpeciesId": "goliath",
+      "additionalTraits": [
+        {
+          "id": "storms-thunder",
+          "name": "Storm's Thunder",
+          "source": "2024",
+          "description": "When you take damage from a creature within 60 feet of you, you can use your Reaction to deal 1d8 Thunder damage to that creature. You can use this trait a number of times equal to your Proficiency Bonus.",
+          "mechanicType": "active",
+          "level": 1
+        }
+      ]
+    }
+  ],
+  "creatureType": "humanoid",
+  "teachingNotes": {
+    "complexity": "beginner",
+    "recommendedForNewPlayers": true,
+    "keyMechanics": [
+      "Damage Reduction",
+      "Powerful Build",
+      "Giant Ancestry"
+    ],
+    "flavorHooks": [
+      "Competitive",
+      "Strong",
+      "Giantkin"
+    ]
+  }
+}

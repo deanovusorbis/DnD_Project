@@ -1,0 +1,83 @@
+{
+  "id": "aasimar",
+  "name": "Aasimar",
+  "source": "2024",
+  "description": "Aasimarlar, Üst Düzlemler'den gelen bir ilahi kıvılcım taşıyan ölümlülerdir. İsimleri 'göksel' anlamına gelse de, her zaman iyilik meleği değildirler.",
+  "size": "medium",
+  "speed": 30,
+  "abilityScoreIncreases": [],
+  "ageMaturity": 18,
+  "ageLifespan": 160,
+  "languages": [
+    "Common"
+  ],
+  "traits": [
+    {
+      "id": "darkvision-aasimar",
+      "name": "Karanlık Görüş (Darkvision)",
+      "source": "2024",
+      "description": "60 feet menzilinde loş ışığı parlak ışık gibi, karanlığı ise loş ışık gibi görebilirsiniz.",
+      "mechanicType": "passive",
+      "level": 1,
+      "grantsDarkvision": 60
+    },
+    {
+      "id": "celestial-resistance",
+      "name": "İlahi Direnç (Celestial Resistance)",
+      "source": "2024",
+      "description": "Nekrotik (Necrotic) ve Radyant (Radiant) hasara karşı direnciniz vardır.",
+      "mechanicType": "passive",
+      "level": 1,
+      "grantsResistance": [
+        "necrotic",
+        "radiant"
+      ]
+    },
+    {
+      "id": "healing-hands",
+      "name": "Şifalı Eller (Healing Hands)",
+      "source": "2024",
+      "description": "Aksiyon olarak, dokunduğunuz bir yaratığı seviyeniz kadar d4 zarı atarak (örneğin 3. seviyede 3d4) iyileştirebilirsiniz. Uzun Dinlenme ile yenilenir.",
+      "mechanicType": "active",
+      "level": 1
+    },
+    {
+      "id": "light-bearer",
+      "name": "Işık Taşıyıcısı (Light Bearer)",
+      "source": "2024",
+      "description": "Light (Işık) hünerini (cantrip) bilirsiniz. Büyü yapma yeteneğiniz Karizma'dır.",
+      "mechanicType": "active",
+      "level": 1,
+      "grantsSpells": [
+        {
+          "spellId": "light",
+          "atLevel": 1,
+          "castingAbility": "CHA"
+        }
+      ]
+    },
+    {
+      "id": "celestial-revelation",
+      "name": "Göksel Vahiy (Celestial Revelation)",
+      "source": "2024",
+      "description": "3. seviyeye ulaştığınızda, Bonus Aksiyon olarak içinizdeki ilahi enerjiyi serbest bırakarak bir dönüşüm seçebilirsiniz: Heavenly Wings (Uçuş), Inner Radiance (Radyant hasar) veya Necrotic Shroud (Korkutma ve Nekrotik hasar). Bu dönüşüm 1 dakika sürer. Uzun Dinlenme ile yenilenir.",
+      "mechanicType": "choice",
+      "level": 3
+    }
+  ],
+  "creatureType": "humanoid",
+  "teachingNotes": {
+    "complexity": "intermediate",
+    "recommendedForNewPlayers": true,
+    "keyMechanics": [
+      "Healing Hands",
+      "Resistances",
+      "Transformation"
+    ],
+    "flavorHooks": [
+      "Divine Guide",
+      "Fallen Angel",
+      "Chosen One"
+    ]
+  }
+}

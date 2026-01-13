@@ -1,0 +1,201 @@
+{
+  "id": "elf",
+  "name": "Elf",
+  "source": "srd",
+  "description": "Elfler, uhrevi bir zarafete sahip büyülü bir halktır. Antik ormanların ortasında veya peri ışıklarıyla parlayan gümüş kulelerde yaşarlar.",
+  "size": "medium",
+  "speed": 30,
+  "abilityScoreIncreases": [],
+  "ageMaturity": 100,
+  "ageLifespan": 750,
+  "languages": [
+    "Common",
+    "Elvish"
+  ],
+  "traits": [
+    {
+      "id": "darkvision-elf",
+      "name": "Karanlık Görüş (Darkvision)",
+      "source": "srd",
+      "description": "Alacakaranlık ormanlara ve gece gökyüzüne alışkın olduğunuz için, karanlık ve loş ışıkta üstün bir görüşe sahipsiniz. 60 feet menzilinde loş ışığı parlak ışık gibi, karanlığı ise loş ışık gibi görebilirsiniz.",
+      "mechanicType": "passive",
+      "level": 1,
+      "grantsDarkvision": 60
+    },
+    {
+      "id": "keen-senses",
+      "name": "Keskin Duyular (Keen Senses)",
+      "source": "srd",
+      "description": "Algı (Perception) becerisinde ustalığınız vardır.",
+      "mechanicType": "passive",
+      "level": 1,
+      "grantsProficiency": {
+        "skills": [
+          "perception"
+        ]
+      }
+    },
+    {
+      "id": "fey-ancestry",
+      "name": "Peri Soyu (Fey Ancestry)",
+      "source": "srd",
+      "description": "Büyülenmeye (Charmed) karşı kurtarma atışlarında avantaja sahipsiniz ve büyü sizi uyutamaz.",
+      "mechanicType": "passive",
+      "level": 1,
+      "grantsAdvantage": {
+        "conditions": [
+          "charmed"
+        ]
+      },
+      "grantsImmunity": [
+        "sleep"
+      ]
+    },
+    {
+      "id": "trance",
+      "name": "Trans (Trance)",
+      "source": "srd",
+      "description": "Elflerin uyumaya ihtiyacı yoktur. Bunun yerine günde 4 saat derin bir meditasyon yaparlar. Bu dinlenmeden sonra, bir insanın 8 saatlik uykudan aldığı faydayı kazanırsınız.",
+      "mechanicType": "passive",
+      "level": 1
+    }
+  ],
+  "subraces": [
+    {
+      "id": "high-elf",
+      "name": "Yüce Elf (High Elf)",
+      "source": "srd",
+      "description": "Bir Yüce Elf olarak keskin bir zihne ve en azından temel büyü bilgisine sahipsiniz.",
+      "parentSpeciesId": "elf",
+      "additionalTraits": [
+        {
+          "id": "cantrip-high-elf",
+          "name": "Hüner (Cantrip)",
+          "source": "2024",
+          "description": "Prestidigitation hünerini (cantrip) bilirsiniz. Her Uzun Dinlenmeyi (Long Rest) tamamladığınızda, bu hüneri Büyücü (Wizard) büyü listesinden başka bir hünerle değiştirebilirsiniz. Büyü yapma yeteneğiniz Zeka'dır (Intelligence).",
+          "mechanicType": "active",
+          "level": 1,
+          "grantsSpells": [
+            {
+              "spellId": "prestidigitation",
+              "atLevel": 1,
+              "castingAbility": "INT"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wood-elf",
+      "name": "Orman Elfi (Wood Elf)",
+      "source": "srd",
+      "description": "Bir Orman Elfi olarak keskin duyulara ve sezgilere sahipsiniz, hızlı ayaklarınız sizi ormanlarda sessizce taşır.",
+      "parentSpeciesId": "elf",
+      "additionalTraits": [
+        {
+          "id": "fleet-of-foot",
+          "name": "Hızlı Ayaklar (Fleet of Foot)",
+          "source": "srd",
+          "description": "Temel yürüme hızınız 35 feet'e çıkar.",
+          "mechanicType": "passive",
+          "level": 1
+        },
+        {
+          "id": "mask-of-the-wild",
+          "name": "Vahşi Doğa Maskesi (Mask of the Wild)",
+          "source": "srd",
+          "description": "Sadece yapraklar, şiddetli yağmur, kar yağışı veya sis gibi doğal olaylar tarafından hafifçe gizlendiğinizde bile saklanmaya çalışabilirsiniz.",
+          "mechanicType": "passive",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "dark-elf",
+      "name": "Karanlık Elf (Drow)",
+      "source": "srd",
+      "description": "Karanlık tenli elflerin soyundan gelen Drowlar, yeraltında yaşarlar.",
+      "parentSpeciesId": "elf",
+      "additionalTraits": [
+        {
+          "id": "superior-darkvision",
+          "name": "Üstün Karanlık Görüş",
+          "source": "srd",
+          "description": "Karanlık görüşünüzün menzili 120 feet'tir.",
+          "mechanicType": "passive",
+          "level": 1,
+          "grantsDarkvision": 120
+        },
+        {
+          "id": "sunlight-sensitivity",
+          "name": "Güneş Işığı Hassasiyeti",
+          "source": "srd",
+          "description": "Siz veya hedefiniz doğrudan güneş ışığı altındayken saldırı zarlarında ve görmeye dayalı Algı (Perception) testlerinde dezavantaja sahipsiniz.",
+          "mechanicType": "passive",
+          "level": 1
+        },
+        {
+          "id": "drow-magic-1",
+          "name": "Drow Büyüsü (Seviye 1)",
+          "source": "srd",
+          "description": "Dancing Lights hünerini (cantrip) bilirsiniz. Büyü yapma yeteneğiniz Karizma'dır.",
+          "mechanicType": "active",
+          "level": 1,
+          "requiredLevel": 1,
+          "grantsSpells": [
+            {
+              "spellId": "dancing-lights",
+              "atLevel": 1,
+              "castingAbility": "CHA"
+            }
+          ]
+        },
+        {
+          "id": "drow-magic-3",
+          "name": "Drow Büyüsü (Seviye 3)",
+          "source": "srd",
+          "description": "Faerie Fire büyüsünü günde bir kez yapabilirsiniz.",
+          "mechanicType": "active",
+          "level": 3,
+          "grantsSpells": [
+            {
+              "spellId": "faerie-fire",
+              "atLevel": 3,
+              "castingAbility": "CHA"
+            }
+          ]
+        },
+        {
+          "id": "drow-magic-5",
+          "name": "Drow Büyüsü (Seviye 5)",
+          "source": "srd",
+          "description": "Darkness büyüsünü günde bir kez yapabilirsiniz.",
+          "mechanicType": "active",
+          "level": 5,
+          "grantsSpells": [
+            {
+              "spellId": "darkness",
+              "atLevel": 5,
+              "castingAbility": "CHA"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "creatureType": "humanoid",
+  "teachingNotes": {
+    "complexity": "beginner",
+    "recommendedForNewPlayers": true,
+    "keyMechanics": [
+      "Karanlık Görüş",
+      "Peri Soyu",
+      "Trans"
+    ],
+    "flavorHooks": [
+      "Kadim",
+      "Zarif",
+      "Büyülü Doğa"
+    ]
+  }
+}

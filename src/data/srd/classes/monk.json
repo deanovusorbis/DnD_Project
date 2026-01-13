@@ -1,0 +1,257 @@
+{
+  "id": "monk",
+  "name": "Monk",
+  "source": "srd",
+  "description": "A master of martial arts, harnessing the power of the body in pursuit of physical and spiritual perfection.",
+  "hitDie": "d8",
+  "primaryAbility": [
+    "DEX",
+    "WIS"
+  ],
+  "abilityPriority": {
+    "primary": [
+      "DEX",
+      "WIS"
+    ],
+    "secondary": [
+      "CON",
+      "STR"
+    ],
+    "dump": [
+      "INT",
+      "CHA"
+    ]
+  },
+  "proficiencies": {
+    "armor": [],
+    "weapons": [
+      "simple",
+      "shortsword"
+    ],
+    "tools": {
+      "choices": [
+        "alchemists_supplies",
+        "brewers_supplies",
+        "calligraphers_supplies",
+        "carpenters_tools",
+        "cartographers_tools",
+        "cobblers_tools",
+        "cooks_utensils",
+        "glassblowers_tools",
+        "jewelers_tools",
+        "leatherworkers_tools",
+        "masons_tools",
+        "painters_supplies",
+        "potters_tools",
+        "smiths_tools",
+        "tinkers_tools",
+        "weavers_tools",
+        "woodcarvers_tools",
+        "bagpipes",
+        "drum",
+        "dulcimer",
+        "flute",
+        "horn",
+        "lute",
+        "lyre",
+        "pan_flute",
+        "shawm",
+        "viol"
+      ],
+      "count": 1
+    },
+    "savingThrows": [
+      "STR",
+      "DEX"
+    ],
+    "skills": {
+      "choices": [
+        "acrobatics",
+        "athletics",
+        "history",
+        "insight",
+        "religion",
+        "stealth"
+      ],
+      "count": 2
+    }
+  },
+  "startingEquipment": {
+    "guaranteed": [
+      {
+        "itemId": "explorers_pack",
+        "quantity": 1
+      }
+    ],
+    "choices": []
+  },
+  "spellcasting": {
+    "hasSpellcasting": false
+  },
+  "features": [
+    {
+      "id": "unarmored-defense-monk",
+      "name": "Unarmored Defense",
+      "source": "srd",
+      "description": "While not wearing armor, your AC equals 10 + DEX modifier + WIS modifier.",
+      "level": 1,
+      "featureType": "passive"
+    },
+    {
+      "id": "martial-arts",
+      "name": "Martial Arts",
+      "source": "srd",
+      "description": "Your practice of martial arts gives you mastery of combat styles that use unarmed strikes and monk weapons.",
+      "level": 1,
+      "featureType": "passive"
+    },
+    {
+      "id": "ki",
+      "name": "Ki",
+      "source": "srd",
+      "description": "Your training allows you to harness the mystic energy of ki.",
+      "level": 2,
+      "featureType": "resource",
+      "resource": {
+        "name": "Ki",
+        "maxCount": 2,
+        "recoversOn": "short"
+      }
+    },
+    {
+      "id": "flurry-of-blows",
+      "name": "Flurry of Blows",
+      "source": "srd",
+      "description": "You can spend 1 ki point to make two unarmed strikes as a bonus action.",
+      "level": 2,
+      "featureType": "active"
+    },
+    {
+      "id": "unarmored-movement",
+      "name": "Unarmored Movement",
+      "source": "srd",
+      "description": "Your speed increases by 10 feet while you are not wearing armor or wielding a shield.",
+      "level": 2,
+      "featureType": "passive"
+    },
+    {
+      "id": "deflect-missiles",
+      "name": "Deflect Missiles",
+      "source": "srd",
+      "description": "You can use your reaction to deflect or catch the missile when you are hit by a ranged weapon attack.",
+      "level": 3,
+      "featureType": "active"
+    },
+    {
+      "id": "extra-attack-monk",
+      "name": "Extra Attack",
+      "source": "srd",
+      "description": "You can attack twice when you take the Attack action.",
+      "level": 5,
+      "featureType": "passive"
+    },
+    {
+      "id": "stunning-strike",
+      "name": "Stunning Strike",
+      "source": "srd",
+      "description": "You can spend 1 ki point to attempt to stun a creature you hit with a melee weapon attack.",
+      "level": 5,
+      "featureType": "active"
+    }
+  ],
+  "subclasses": [
+    {
+      "id": "way-of-the-open-hand",
+      "name": "Way of the Open Hand",
+      "source": "srd",
+      "description": "Monks of the Way of the Open Hand are the ultimate masters of martial arts combat.",
+      "parentClassId": "monk",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "open-hand-technique",
+          "name": "Open Hand Technique",
+          "source": "srd",
+          "description": "You can manipulate your enemy's ki when you harness your own.",
+          "level": 3,
+          "featureType": "active"
+        }
+      ]
+    },
+    {
+      "id": "warrior-of-the-elements",
+      "name": "Warrior of the Elements",
+      "source": "user",
+      "description": "You channel the elemental power of the multiverse into your attacks.",
+      "parentClassId": "monk",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "elemental-attunement",
+          "name": "Elemental Attunement",
+          "description": "You can use your reaction to reduce acid, cold, fire, lightning, or thunder damage you take.",
+          "level": 3,
+          "featureType": "active"
+        }
+      ]
+    },
+    {
+      "id": "warrior-of-mercy",
+      "name": "Warrior of Mercy",
+      "source": "user",
+      "description": "You manipulate the life force of others to bring aid to those in need or an end to your enemies.",
+      "parentClassId": "monk",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "hand-of-healing",
+          "name": "Hand of Healing",
+          "description": "You can touch a creature and spend 1 ki point to restore hit points.",
+          "level": 3,
+          "featureType": "active"
+        }
+      ]
+    },
+    {
+      "id": "warrior-of-shadow",
+      "name": "Warrior of Shadow",
+      "source": "user",
+      "description": "You practice the arts of stealth and subterfuge, bending the shadows to your will.",
+      "parentClassId": "monk",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "shadow-arts",
+          "name": "Shadow Arts",
+          "description": "You can use your ki to duplicate the effects of certain spells like Darkness or Silence.",
+          "level": 3,
+          "featureType": "active"
+        }
+      ]
+    }
+  ],
+  "subclassName": "Monastic Tradition",
+  "subclassLevel": 3,
+  "asiLevels": [
+    4,
+    8,
+    12,
+    16,
+    19
+  ],
+  "teachingNotes": {
+    "complexity": "intermediate",
+    "recommendedForNewPlayers": false,
+    "playstyleKeywords": [
+      "Martial",
+      "Mobile",
+      "Ki user",
+      "Striker"
+    ],
+    "roleInParty": [
+      "Striker",
+      "Skirmisher",
+      "Controller"
+    ]
+  }
+}

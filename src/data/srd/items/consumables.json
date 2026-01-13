@@ -1,0 +1,1706 @@
+[
+  {
+    "id": "ammunition-of-slaying",
+    "name": "Ammunition of Slaying",
+    "type": "Tüketilebilir",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "This magic ammunition is meant to slay creatures of a particular type, which the DM chooses or determines randomly by rolling on the table below. If a creature of that type takes damage from the ammunition, the creature makes a DC 17 Constitution saving throw, taking an extra 6d10 Force damage on a failed save or half as much extra damage on a successful one.After dealing its extra damage to a creature, the ammunition becomes nonmagical.1d100Creature Type01-10Aberrations11-15Beasts16-20Celestials21-25Constructs26-35Dragons36-45Elementals46-50Humanoids51-60Fey61-70Fiends71-75Giants76-80Monstrosities81-85Oozes86-90Plants91-00Undead Base items. This item variant can be applied to the following base items:Arrow (Arrow of Slaying)Bolt (Bolt of Slaying)Energy Cell (Energy Cell of Slaying)Firearm Bullet (Firearm Bullet of Slaying)Needle (Needle of Slaying)Sling Bullet (Sling Bullet of Slaying)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "armor-of-acid-resistance",
+    "name": "Armor of Acid Resistance",
+    "type": "other",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "You have Resistance to Acid damage while you wear this armor. Base items. This item variant can be applied to the following base items:Breastplate (Breastplate of Acid Resistance)Chain Mail (Chain Mail of Acid Resistance)Chain Shirt (Chain Shirt of Acid Resistance)Half Plate Armor (Half Plate Armor of Acid Resistance)Hide Armor (Hide Armor of Acid Resistance)Leather Armor (Leather Armor of Acid Resistance)Padded Armor (Padded Armor of Acid Resistance)Plate Armor (Plate Armor of Acid Resistance)Ring Mail (Ring Mail of Acid Resistance)Scale Mail (Scale Mail of Acid Resistance)Splint Armor (Splint Armor of Acid Resistance)Studded Leather Armor (Studded Leather Armor of Acid Resistance)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "armor-of-poison-resistance",
+    "name": "Armor of Poison Resistance",
+    "type": "other",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "You have Resistance to Poison damage while you wear this armor. Base items. This item variant can be applied to the following base items:Breastplate (Breastplate of Poison Resistance)Chain Mail (Chain Mail of Poison Resistance)Chain Shirt (Chain Shirt of Poison Resistance)Half Plate Armor (Half Plate Armor of Poison Resistance)Hide Armor (Hide Armor of Poison Resistance)Leather Armor (Leather Armor of Poison Resistance)Padded Armor (Padded Armor of Poison Resistance)Plate Armor (Plate Armor of Poison Resistance)Ring Mail (Ring Mail of Poison Resistance)Scale Mail (Scale Mail of Poison Resistance)Splint Armor (Splint Armor of Poison Resistance)Studded Leather Armor (Studded Leather Armor of Poison Resistance)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "breastplate-of-acid-resistance",
+    "name": "Breastplate of Acid Resistance",
+    "type": "Zırh",
+    "rarity": "Nadir",
+    "weight": 20,
+    "description": "You have Resistance to Acid damage while you wear this armor.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "armor": {
+      "type": "medium",
+      "ac": 14,
+      "dexBonus": true
+    }
+  },
+  {
+    "id": "breastplate-of-poison-resistance",
+    "name": "Breastplate of Poison Resistance",
+    "type": "Zırh",
+    "rarity": "Nadir",
+    "weight": 20,
+    "description": "You have Resistance to Poison damage while you wear this armor.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "armor": {
+      "type": "medium",
+      "ac": 14,
+      "dexBonus": true
+    }
+  },
+  {
+    "id": "chain-mail-of-acid-resistance",
+    "name": "Chain Mail of Acid Resistance",
+    "type": "Zırh",
+    "rarity": "Nadir",
+    "weight": 55,
+    "description": "You have Resistance to Acid damage while you wear this armor.The wearer has Disadvantage on Dexterity (Stealth) checks.If the wearer has a Strength score lower than 13, their speed is reduced by 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "armor": {
+      "type": "heavy",
+      "ac": 16,
+      "dexBonus": false
+    }
+  },
+  {
+    "id": "chain-mail-of-poison-resistance",
+    "name": "Chain Mail of Poison Resistance",
+    "type": "Zırh",
+    "rarity": "Nadir",
+    "weight": 55,
+    "description": "You have Resistance to Poison damage while you wear this armor.The wearer has Disadvantage on Dexterity (Stealth) checks.If the wearer has a Strength score lower than 13, their speed is reduced by 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "armor": {
+      "type": "heavy",
+      "ac": 16,
+      "dexBonus": false
+    }
+  },
+  {
+    "id": "chain-shirt-of-acid-resistance",
+    "name": "Chain Shirt of Acid Resistance",
+    "type": "Zırh",
+    "rarity": "Nadir",
+    "weight": 20,
+    "description": "You have Resistance to Acid damage while you wear this armor.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "armor": {
+      "type": "medium",
+      "ac": 13,
+      "dexBonus": true
+    }
+  },
+  {
+    "id": "chain-shirt-of-poison-resistance",
+    "name": "Chain Shirt of Poison Resistance",
+    "type": "Zırh",
+    "rarity": "Nadir",
+    "weight": 20,
+    "description": "You have Resistance to Poison damage while you wear this armor.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "armor": {
+      "type": "medium",
+      "ac": 13,
+      "dexBonus": true
+    }
+  },
+  {
+    "id": "elixir-of-health",
+    "name": "Elixir of Health",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0.5,
+    "description": "When you drink this potion, you are cured of all magical contagions. In addition, the following conditions end on you: Blinded, Deafened, Paralyzed, and Poisoned.The clear, red liquid has tiny bubbles of light in it.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "half-plate-armor-of-acid-resistance",
+    "name": "Half Plate Armor of Acid Resistance",
+    "type": "Zırh",
+    "rarity": "Nadir",
+    "weight": 40,
+    "description": "You have Resistance to Acid damage while you wear this armor.The wearer has Disadvantage on Dexterity (Stealth) checks.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "armor": {
+      "type": "medium",
+      "ac": 15,
+      "dexBonus": true
+    }
+  },
+  {
+    "id": "half-plate-armor-of-poison-resistance",
+    "name": "Half Plate Armor of Poison Resistance",
+    "type": "Zırh",
+    "rarity": "Nadir",
+    "weight": 40,
+    "description": "You have Resistance to Poison damage while you wear this armor.The wearer has Disadvantage on Dexterity (Stealth) checks.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "armor": {
+      "type": "medium",
+      "ac": 15,
+      "dexBonus": true
+    }
+  },
+  {
+    "id": "hide-armor-of-acid-resistance",
+    "name": "Hide Armor of Acid Resistance",
+    "type": "Zırh",
+    "rarity": "Nadir",
+    "weight": 12,
+    "description": "You have Resistance to Acid damage while you wear this armor.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "armor": {
+      "type": "medium",
+      "ac": 12,
+      "dexBonus": true
+    }
+  },
+  {
+    "id": "hide-armor-of-poison-resistance",
+    "name": "Hide Armor of Poison Resistance",
+    "type": "Zırh",
+    "rarity": "Nadir",
+    "weight": 12,
+    "description": "You have Resistance to Poison damage while you wear this armor.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "armor": {
+      "type": "medium",
+      "ac": 12,
+      "dexBonus": true
+    }
+  },
+  {
+    "id": "leather-armor-of-acid-resistance",
+    "name": "Leather Armor of Acid Resistance",
+    "type": "Zırh",
+    "rarity": "Nadir",
+    "weight": 10,
+    "description": "You have Resistance to Acid damage while you wear this armor.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "armor": {
+      "type": "light",
+      "ac": 11,
+      "dexBonus": true
+    }
+  },
+  {
+    "id": "leather-armor-of-poison-resistance",
+    "name": "Leather Armor of Poison Resistance",
+    "type": "Zırh",
+    "rarity": "Nadir",
+    "weight": 10,
+    "description": "You have Resistance to Poison damage while you wear this armor.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "armor": {
+      "type": "light",
+      "ac": 11,
+      "dexBonus": true
+    }
+  },
+  {
+    "id": "oil-of-etherealness",
+    "name": "Oil of Etherealness",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0.5,
+    "description": "One vial of this oil can cover one Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature then gains the effect of the Etherealness spell for 1 hour.Beads of this cloudy, gray oil form on the outside of its container and quickly evaporate.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "oil-of-sharpness",
+    "name": "Oil of Sharpness",
+    "type": "Tüketilebilir",
+    "rarity": "Çok Nadir",
+    "weight": 0.5,
+    "description": "One vial of this oil can coat one Melee weapon or twenty pieces of ammunition, but only ammunition and Melee weapons that are nonmagical and deal Slashing or Piercing damage are affected. Applying the oil takes 1 minute, after which the oil magically seeps into whatever it coats, turning the coated weapon into a +3 Weapon or the coated ammunition into +3 Ammunition.This clear, gelatinous oil sparkles with tiny, ultrathin silver shards.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "oil-of-slipperiness",
+    "name": "Oil of Slipperiness",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.5,
+    "description": "One vial of this oil can cover one Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature then gains the effect of the Freedom of Movement spell for 8 hours.Alternatively, the oil can be poured on the ground as a Magic action, where it covers a 10-foot square, duplicating the effect of the Grease spell in that area for 8 hours.This sticky, black unguent is thick and heavy, but it flows quickly when poured.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "padded-armor-of-acid-resistance",
+    "name": "Padded Armor of Acid Resistance",
+    "type": "Zırh",
+    "rarity": "Nadir",
+    "weight": 8,
+    "description": "You have Resistance to Acid damage while you wear this armor.The wearer has Disadvantage on Dexterity (Stealth) checks.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "armor": {
+      "type": "light",
+      "ac": 11,
+      "dexBonus": true
+    }
+  },
+  {
+    "id": "padded-armor-of-poison-resistance",
+    "name": "Padded Armor of Poison Resistance",
+    "type": "Zırh",
+    "rarity": "Nadir",
+    "weight": 8,
+    "description": "You have Resistance to Poison damage while you wear this armor.The wearer has Disadvantage on Dexterity (Stealth) checks.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "armor": {
+      "type": "light",
+      "ac": 11,
+      "dexBonus": true
+    }
+  },
+  {
+    "id": "philter-of-love",
+    "name": "Philter of Love",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.5,
+    "description": "The next time you see a creature within 10 minutes after drinking this philter, you are charmed by that creature and have the Charmed condition for 1 hour.This rose-hued, effervescent liquid contains one easy-to-miss bubble shaped like a heart.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "plate-armor-of-acid-resistance",
+    "name": "Plate Armor of Acid Resistance",
+    "type": "Zırh",
+    "rarity": "Nadir",
+    "weight": 65,
+    "description": "You have Resistance to Acid damage while you wear this armor.The wearer has Disadvantage on Dexterity (Stealth) checks.If the wearer has a Strength score lower than 15, their speed is reduced by 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "armor": {
+      "type": "heavy",
+      "ac": 18,
+      "dexBonus": false
+    }
+  },
+  {
+    "id": "plate-armor-of-poison-resistance",
+    "name": "Plate Armor of Poison Resistance",
+    "type": "Zırh",
+    "rarity": "Nadir",
+    "weight": 65,
+    "description": "You have Resistance to Poison damage while you wear this armor.The wearer has Disadvantage on Dexterity (Stealth) checks.If the wearer has a Strength score lower than 15, their speed is reduced by 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "armor": {
+      "type": "heavy",
+      "ac": 18,
+      "dexBonus": false
+    }
+  },
+  {
+    "id": "plus-1-ammunition",
+    "name": "+1 Ammunition",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "You have a +1 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.This ammunition is typically found or sold in quantities of ten or twenty pieces. Ten pieces of this ammunition are equivalent in value to a potion of the same rarity (200 GP). Base items. This item variant can be applied to the following base items:Arrow (+1 Arrow)Bolt (+1 Bolt)Energy Cell (+1 Energy Cell)Firearm Bullet (+1 Firearm Bullet)Needle (+1 Needle)Sling Bullet (+1 Sling Bullet)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "plus-2-ammunition",
+    "name": "+2 Ammunition",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "You have a +2 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.This ammunition is typically found or sold in quantities of ten or twenty pieces. Ten pieces of this ammunition are equivalent in value to a potion of the same rarity (2,000 GP). Base items. This item variant can be applied to the following base items:Arrow (+2 Arrow)Bolt (+2 Bolt)Energy Cell (+2 Energy Cell)Firearm Bullet (+2 Firearm Bullet)Needle (+2 Needle)Sling Bullet (+2 Sling Bullet)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "plus-3-ammunition",
+    "name": "+3 Ammunition",
+    "type": "Tüketilebilir",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "You have a +3 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.This ammunition is typically found or sold in quantities of ten or twenty pieces. Ten pieces of this ammunition are equivalent in value to a potion of the same rarity (20,000 GP). Base items. This item variant can be applied to the following base items:Arrow (+3 Arrow)Bolt (+3 Bolt)Energy Cell (+3 Energy Cell)Firearm Bullet (+3 Firearm Bullet)Needle (+3 Needle)Sling Bullet (+3 Sling Bullet)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-acid-resistance",
+    "name": "Potion of Acid Resistance",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.5,
+    "description": "When you drink this potion, you have Resistance to Acid damage for 1 hour.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-animal-friendship",
+    "name": "Potion of Animal Friendship",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.5,
+    "description": "When you drink this potion, you can cast the level 3 version of the Animal Friendship spell (save DC 13).Agitating this potion's muddy liquid brings little bits into view: a fish scale, a hummingbird feather, a cat claw, or a squirrel hair.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-clairvoyance",
+    "name": "Potion of Clairvoyance",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0.5,
+    "description": "When you drink this potion, you gain the effect of the Clairvoyance spell (no Concentration required).An eyeball bobs in this potion's yellowish liquid but vanishes when the potion is opened.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-climbing",
+    "name": "Potion of Climbing",
+    "type": "Tüketilebilir",
+    "rarity": "Yaygın",
+    "weight": 0.5,
+    "description": "When you drink this potion, you gain a Climb Speed equal to your Speed for 1 hour. During this time, you have Advantage on Strength (Athletics) checks to climb.This potion is separated into brown, silver, and gray layers resembling bands of stone. Shaking the bottle fails to mix the colors.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-cloud-giant-strength",
+    "name": "Potion of Cloud Giant Strength",
+    "type": "Tüketilebilir",
+    "rarity": "Çok Nadir",
+    "weight": 0.5,
+    "description": "When you drink this potion, your Strength score changes to 27 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score.This potion's transparent liquid has floating in it a sliver of fingernail from a cloud giant.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-cold-resistance",
+    "name": "Potion of Cold Resistance",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.5,
+    "description": "When you drink this potion, you have Resistance to Cold damage for 1 hour.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-comprehension",
+    "name": "Potion of Comprehension",
+    "type": "Tüketilebilir",
+    "rarity": "Yaygın",
+    "weight": 0.5,
+    "description": "When you drink this potion, you gain the effect of the Comprehend Languages spell for 1 hour.This potion's liquid is a clear concoction with bits of salt and soot swirling in it.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-diminution",
+    "name": "Potion of Diminution",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0.5,
+    "description": "When you drink this potion, you gain the \"reduce\" effect of the Enlarge/Reduce spell for 1d4 hours (no Concentration required).The red in the potion's liquid continuously contracts to a tiny bead and then expands to color the clear liquid around it. Shaking the bottle fails to interrupt this process.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-fire-breath",
+    "name": "Potion of Fire Breath",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.5,
+    "description": "After drinking this potion, you can take a Bonus Action to exhale fire at a target within 30 feet of yourself. The target makes a DC 13 Dexterity saving throw, taking 4d6 Fire damage on a failed save or half as much damage on a successful one. The effect ends after you exhale the fire three times or when 1 hour has passed.This potion's orange liquid flickers, and smoke fills the top of the container and wafts out whenever it is opened.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-fire-giant-strength",
+    "name": "Potion of Fire Giant Strength",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0.5,
+    "description": "When you drink this potion, your Strength score changes to 25 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score.This potion's transparent liquid has floating in it a sliver of fingernail from a fire giant.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-fire-resistance",
+    "name": "Potion of Fire Resistance",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.5,
+    "description": "When you drink this potion, you have Resistance to Fire damage for 1 hour.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-flying",
+    "name": "Potion of Flying",
+    "type": "Tüketilebilir",
+    "rarity": "Çok Nadir",
+    "weight": 0.5,
+    "description": "When you drink this potion, you gain a Fly Speed equal to your Speed for 1 hour and can hover. If you're in the air when the potion wears off, you fall unless you have some other means of staying aloft.This potion's clear liquid floats at the top of its container and has cloudy white impurities drifting in it.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-force-resistance",
+    "name": "Potion of Force Resistance",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.5,
+    "description": "When you drink this potion, you have Resistance to Force damage for 1 hour.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-frost-giant-strength",
+    "name": "Potion of Frost Giant Strength",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0.5,
+    "description": "When you drink this potion, your Strength score changes to 23 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score.This potion's transparent liquid has floating in it a sliver of fingernail from a frost giant.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-gaseous-form",
+    "name": "Potion of Gaseous Form",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0.5,
+    "description": "When you drink this potion, you gain the effect of the Gaseous Form spell for 1 hour (no Concentration required) or until you end the effect as a Bonus Action.This potion's container seems to hold fog that moves and pours like water.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-giant-strength",
+    "name": "Potion of Giant Strength",
+    "type": "Tüketilebilir",
+    "rarity": "varies",
+    "weight": 0.5,
+    "description": "Multiple variations of this item exist, as listed below:Potion of Hill Giant StrengthPotion of Frost Giant StrengthPotion of Stone Giant StrengthPotion of Fire Giant StrengthPotion of Cloud Giant StrengthPotion of Storm Giant Strength",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-greater-healing",
+    "name": "Potion of Greater Healing",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.5,
+    "description": "You regain 4d4 + 4 Hit Points when you drink this potion. The potion's red liquid glimmers when agitated.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-greater-invisibility",
+    "name": "Potion of Greater Invisibility",
+    "type": "Tüketilebilir",
+    "rarity": "Çok Nadir",
+    "weight": 0.5,
+    "description": "This potion's container looks empty but feels as though it holds liquid. When you drink the potion, you have the Invisible condition for 1 hour.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-growth",
+    "name": "Potion of Growth",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.5,
+    "description": "When you drink this potion, you gain the \"enlarge\" effect of the Enlarge/Reduce spell for 10 minutes (no Concentration required).The red in the potion's liquid continuously expands from a tiny bead to color the clear liquid around it and then contracts. Shaking the bottle fails to interrupt this process.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-healing",
+    "name": "İyileştirme İksiri",
+    "type": "Tüketilebilir",
+    "rarity": "Yaygın",
+    "weight": 0.5,
+    "description": "This potion is a magic item. As a Bonus Action, you can drink it or administer it to another creature within 5 feet of yourself. The creature that drinks the magical red fluid in this vial regains 2d4 + 2 Hit Points. The potion's red liquid glimmers when agitated.",
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-heroism",
+    "name": "Potion of Heroism",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0.5,
+    "description": "When you drink this potion, you gain 10 Temporary Hit Points that last for 1 hour. For the same duration, you are under the effect of the Bless spell (no Concentration required).This potion's blue liquid bubbles and steams as if boiling.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-hill-giant-strength",
+    "name": "Potion of Hill Giant Strength",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.5,
+    "description": "When you drink this potion, your Strength score changes to 21 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score.This potion's transparent liquid has floating in it a sliver of fingernail from a hill giant.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-invisibility",
+    "name": "Potion of Invisibility",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0.5,
+    "description": "This potion's container looks empty but feels as though it holds liquid. When you drink the potion, you have the Invisible condition for 1 hour. The effect ends early if you make an attack roll, deal damage, or cast a spell.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-invulnerability",
+    "name": "Potion of Invulnerability",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0.5,
+    "description": "For 1 minute after you drink this potion, you have Resistance to all damage.This potion's syrupy liquid looks like liquefied iron.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-lightning-resistance",
+    "name": "Potion of Lightning Resistance",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.5,
+    "description": "When you drink this potion, you have Resistance to Lightning damage for 1 hour.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-longevity",
+    "name": "Potion of Longevity",
+    "type": "Tüketilebilir",
+    "rarity": "Çok Nadir",
+    "weight": 0.5,
+    "description": "When you drink this potion, your physical age is reduced by 1d6 + 6 years, to a minimum of 13 years. Each time you subsequently drink a Potion of Longevity, there is 10 percent cumulative chance that you instead age by 1d6 + 6 years.Suspended in this amber liquid is a tiny heart that, against all reason, is still beating. These ingredients vanish when the potion is opened.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-mind-reading",
+    "name": "Potion of Mind Reading",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0.5,
+    "description": "When you drink this potion, you gain the effect of the Detect Thoughts spell (save DC 13) for 10 minutes (no Concentration required).This potion's dense, purple liquid has an ovoid cloud of pink floating in it.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-necrotic-resistance",
+    "name": "Potion of Necrotic Resistance",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.5,
+    "description": "When you drink this potion, you have Resistance to Necrotic damage for 1 hour.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-poison-resistance",
+    "name": "Potion of Poison Resistance",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.5,
+    "description": "When you drink this potion, you have Resistance to Poison damage for 1 hour.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-poison",
+    "name": "Potion of Poison",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.5,
+    "description": "This concoction looks, smells, and tastes like a Potion of Healing or another beneficial potion. However, it is actually poison masked by illusion magic. Identify reveals its true nature.If you drink this potion, you take 4d6 Poison damage and must succeed on a DC 13 Constitution saving throw or have the Poisoned condition for 1 hour.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-psychic-resistance",
+    "name": "Potion of Psychic Resistance",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.5,
+    "description": "When you drink this potion, you have Resistance to Psychic damage for 1 hour.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-pugilism",
+    "name": "Potion of Pugilism",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.5,
+    "description": "After you drink this potion, each Unarmed Strike you make deals an extra 1d6 Force damage on a hit. This effect lasts 10 minutes.This potion is a thick green fluid that tastes like spinach.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-radiant-resistance",
+    "name": "Potion of Radiant Resistance",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.5,
+    "description": "When you drink this potion, you have Resistance to Radiant damage for 1 hour.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-resistance",
+    "name": "Potion of Resistance",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.5,
+    "description": "When you drink this potion, you have Resistance to one type of damage for 1 hour. The DM chooses the type or determines it randomly by rolling on the following table.d10Damage Type1Acid2Cold3Fire4Force5Lightning6Necrotic7Poison8Psychic9Radiant10Thunder",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-speed",
+    "name": "Potion of Speed",
+    "type": "Tüketilebilir",
+    "rarity": "Çok Nadir",
+    "weight": 0.5,
+    "description": "When you drink this potion, you gain the effect of the Haste spell for 1 minute (no Concentration required) without suffering the wave of lethargy that typically occurs when the effect ends.This potion's yellow fluid is streaked with black and swirls on its own.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-stone-giant-strength",
+    "name": "Potion of Stone Giant Strength",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0.5,
+    "description": "When you drink this potion, your Strength score changes to 23 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score.This potion's transparent liquid has floating in it a sliver of fingernail from a stone giant.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-storm-giant-strength",
+    "name": "Potion of Storm Giant Strength",
+    "type": "Tüketilebilir",
+    "rarity": "Efsanevi",
+    "weight": 0.5,
+    "description": "When you drink this potion, your Strength score changes to 29 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score.This potion's transparent liquid has floating in it a sliver of fingernail from a storm giant.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-superior-healing",
+    "name": "Potion of Superior Healing",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0.5,
+    "description": "You regain 8d4 + 8 Hit Points when you drink this potion. The potion's red liquid glimmers when agitated.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-supreme-healing",
+    "name": "Potion of Supreme Healing",
+    "type": "Tüketilebilir",
+    "rarity": "Çok Nadir",
+    "weight": 0.5,
+    "description": "You regain 10d4 + 20 Hit Points when you drink this potion. The potion's red liquid glimmers when agitated.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-thunder-resistance",
+    "name": "Potion of Thunder Resistance",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.5,
+    "description": "When you drink this potion, you have Resistance to Thunder damage for 1 hour.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-vitality",
+    "name": "Potion of Vitality",
+    "type": "Tüketilebilir",
+    "rarity": "Çok Nadir",
+    "weight": 0.5,
+    "description": "When you drink this potion, it removes any Exhaustion levels you have and ends the Poisoned condition on you. For the next 24 hours, you regain the maximum number of Hit Points for any Hit Point Die you spend.This potion's crimson liquid regularly pulses with dull light, calling to mind a heartbeat.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potion-of-water-breathing",
+    "name": "Potion of Water Breathing",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.5,
+    "description": "You can breathe underwater for 24 hours after drinking this potion.This potion's cloudy green fluid smells of the sea and has a jellyfish-like bubble floating in it.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "potions-of-healing",
+    "name": "Potions of Healing",
+    "type": "Tüketilebilir",
+    "rarity": "varies",
+    "weight": 0.5,
+    "description": "Multiple variations of this item exist, as listed below:Potion of HealingPotion of Greater HealingPotion of Superior HealingPotion of Supreme Healing",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "ring-mail-of-acid-resistance",
+    "name": "Ring Mail of Acid Resistance",
+    "type": "Zırh",
+    "rarity": "Nadir",
+    "weight": 40,
+    "description": "You have Resistance to Acid damage while you wear this armor.The wearer has Disadvantage on Dexterity (Stealth) checks.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "armor": {
+      "type": "heavy",
+      "ac": 14,
+      "dexBonus": false
+    }
+  },
+  {
+    "id": "ring-mail-of-poison-resistance",
+    "name": "Ring Mail of Poison Resistance",
+    "type": "Zırh",
+    "rarity": "Nadir",
+    "weight": 40,
+    "description": "You have Resistance to Poison damage while you wear this armor.The wearer has Disadvantage on Dexterity (Stealth) checks.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "armor": {
+      "type": "heavy",
+      "ac": 14,
+      "dexBonus": false
+    }
+  },
+  {
+    "id": "scale-mail-of-acid-resistance",
+    "name": "Scale Mail of Acid Resistance",
+    "type": "Zırh",
+    "rarity": "Nadir",
+    "weight": 45,
+    "description": "You have Resistance to Acid damage while you wear this armor.The wearer has Disadvantage on Dexterity (Stealth) checks.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "armor": {
+      "type": "medium",
+      "ac": 14,
+      "dexBonus": true
+    }
+  },
+  {
+    "id": "scale-mail-of-poison-resistance",
+    "name": "Scale Mail of Poison Resistance",
+    "type": "Zırh",
+    "rarity": "Nadir",
+    "weight": 45,
+    "description": "You have Resistance to Poison damage while you wear this armor.The wearer has Disadvantage on Dexterity (Stealth) checks.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "armor": {
+      "type": "medium",
+      "ac": 14,
+      "dexBonus": true
+    }
+  },
+  {
+    "id": "scroll-of-protection-aberrations",
+    "name": "Scroll of Protection (Aberrations)",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "Using a Magic action to read the scroll creates a 5-foot Emanation originating from you. For 5 minutes, Aberrations can't enter or affect anything in the area. However, if you move in such a way that an Aberration would be inside the area, the effect ends.As a Magic action, a creature within 5 feet of the Emanation can attempt to overcome it, which forces the creature to make a DC 15 Charisma saving throw. On a successful save, the creature ceases to be affected by the Emanation.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "scroll-of-protection-beasts",
+    "name": "Scroll of Protection (Beasts)",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "Using a Magic action to read the scroll creates a 5-foot Emanation originating from you. For 5 minutes, Beasts can't enter or affect anything in the area. However, if you move in such a way that an Beast would be inside the area, the effect ends.As a Magic action, a creature within 5 feet of the Emanation can attempt to overcome it, which forces the creature to make a DC 15 Charisma saving throw. On a successful save, the creature ceases to be affected by the Emanation.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "scroll-of-protection-celestials",
+    "name": "Scroll of Protection (Celestials)",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "Using a Magic action to read the scroll creates a 5-foot Emanation originating from you. For 5 minutes, Celestials can't enter or affect anything in the area. However, if you move in such a way that an Celestial would be inside the area, the effect ends.As a Magic action, a creature within 5 feet of the Emanation can attempt to overcome it, which forces the creature to make a DC 15 Charisma saving throw. On a successful save, the creature ceases to be affected by the Emanation.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "scroll-of-protection-constructs",
+    "name": "Scroll of Protection (Constructs)",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "Using a Magic action to read the scroll creates a 5-foot Emanation originating from you. For 5 minutes, Constructs can't enter or affect anything in the area. However, if you move in such a way that an Construct would be inside the area, the effect ends.As a Magic action, a creature within 5 feet of the Emanation can attempt to overcome it, which forces the creature to make a DC 15 Charisma saving throw. On a successful save, the creature ceases to be affected by the Emanation.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "scroll-of-protection-dragons",
+    "name": "Scroll of Protection (Dragons)",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "Using a Magic action to read the scroll creates a 5-foot Emanation originating from you. For 5 minutes, Dragons can't enter or affect anything in the area. However, if you move in such a way that an Dragon would be inside the area, the effect ends.As a Magic action, a creature within 5 feet of the Emanation can attempt to overcome it, which forces the creature to make a DC 15 Charisma saving throw. On a successful save, the creature ceases to be affected by the Emanation.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "scroll-of-protection-elementals",
+    "name": "Scroll of Protection (Elementals)",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "Using a Magic action to read the scroll creates a 5-foot Emanation originating from you. For 5 minutes, Elementals can't enter or affect anything in the area. However, if you move in such a way that an Elemental would be inside the area, the effect ends.As a Magic action, a creature within 5 feet of the Emanation can attempt to overcome it, which forces the creature to make a DC 15 Charisma saving throw. On a successful save, the creature ceases to be affected by the Emanation.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "scroll-of-protection-fey",
+    "name": "Scroll of Protection (Fey)",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "Using a Magic action to read the scroll creates a 5-foot Emanation originating from you. For 5 minutes, Fey can't enter or affect anything in the area. However, if you move in such a way that an Fey would be inside the area, the effect ends.As a Magic action, a creature within 5 feet of the Emanation can attempt to overcome it, which forces the creature to make a DC 15 Charisma saving throw. On a successful save, the creature ceases to be affected by the Emanation.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "scroll-of-protection-fiends",
+    "name": "Scroll of Protection (Fiends)",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "Using a Magic action to read the scroll creates a 5-foot Emanation originating from you. For 5 minutes, Fiends can't enter or affect anything in the area. However, if you move in such a way that an Fiend would be inside the area, the effect ends.As a Magic action, a creature within 5 feet of the Emanation can attempt to overcome it, which forces the creature to make a DC 15 Charisma saving throw. On a successful save, the creature ceases to be affected by the Emanation.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "scroll-of-protection-giants",
+    "name": "Scroll of Protection (Giants)",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "Using a Magic action to read the scroll creates a 5-foot Emanation originating from you. For 5 minutes, Giants can't enter or affect anything in the area. However, if you move in such a way that an Giant would be inside the area, the effect ends.As a Magic action, a creature within 5 feet of the Emanation can attempt to overcome it, which forces the creature to make a DC 15 Charisma saving throw. On a successful save, the creature ceases to be affected by the Emanation.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "scroll-of-protection-humanoids",
+    "name": "Scroll of Protection (Humanoids)",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "Using a Magic action to read the scroll creates a 5-foot Emanation originating from you. For 5 minutes, Humanoids can't enter or affect anything in the area. However, if you move in such a way that an Humanoid would be inside the area, the effect ends.As a Magic action, a creature within 5 feet of the Emanation can attempt to overcome it, which forces the creature to make a DC 15 Charisma saving throw. On a successful save, the creature ceases to be affected by the Emanation.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "scroll-of-protection-monstrosities",
+    "name": "Scroll of Protection (Monstrosities)",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "Using a Magic action to read the scroll creates a 5-foot Emanation originating from you. For 5 minutes, Monstrosities can't enter or affect anything in the area. However, if you move in such a way that an Monstrosity would be inside the area, the effect ends.As a Magic action, a creature within 5 feet of the Emanation can attempt to overcome it, which forces the creature to make a DC 15 Charisma saving throw. On a successful save, the creature ceases to be affected by the Emanation.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "scroll-of-protection-oozes",
+    "name": "Scroll of Protection (Oozes)",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "Using a Magic action to read the scroll creates a 5-foot Emanation originating from you. For 5 minutes, Oozes can't enter or affect anything in the area. However, if you move in such a way that an Ooze would be inside the area, the effect ends.As a Magic action, a creature within 5 feet of the Emanation can attempt to overcome it, which forces the creature to make a DC 15 Charisma saving throw. On a successful save, the creature ceases to be affected by the Emanation.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "scroll-of-protection-plants",
+    "name": "Scroll of Protection (Plants)",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "Using a Magic action to read the scroll creates a 5-foot Emanation originating from you. For 5 minutes, Plants can't enter or affect anything in the area. However, if you move in such a way that an Plant would be inside the area, the effect ends.As a Magic action, a creature within 5 feet of the Emanation can attempt to overcome it, which forces the creature to make a DC 15 Charisma saving throw. On a successful save, the creature ceases to be affected by the Emanation.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "scroll-of-protection-undead",
+    "name": "Scroll of Protection (Undead)",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "Using a Magic action to read the scroll creates a 5-foot Emanation originating from you. For 5 minutes, Undead can't enter or affect anything in the area. However, if you move in such a way that an Undead would be inside the area, the effect ends.As a Magic action, a creature within 5 feet of the Emanation can attempt to overcome it, which forces the creature to make a DC 15 Charisma saving throw. On a successful save, the creature ceases to be affected by the Emanation.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "scroll-of-protection",
+    "name": "Scroll of Protection",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "Each Scroll of Protection works against creatures of a specific creature type chosen by the DM or determined by rolling on the following table.1d100Creature Type01-10Aberrations11-15Beasts16-20Celestials21-25Constructs26-35Dragons36-45Elementals46-50Humanoids51-60Fey61-70Fiends71-75Giants76-80Monstrosities81-85Oozes86-90Plants91-00UndeadUsing a Magic action to read the scroll creates a 5-foot Emanation originating from you. For 5 minutes, creatures of the specified type can't enter or affect anything in the area. However, if you move in such a way that a creature of the specified type would be inside the area, the effect ends.As a Magic action, a creature within 5 feet of the Emanation can attempt to overcome it, which forces the creature to make a DC 15 Charisma saving throw. On a successful save, the creature ceases to be affected by the Emanation.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "scroll-of-titan-summoning-animal-lord",
+    "name": "Scroll of Titan Summoning (Animal Lord)",
+    "type": "Tüketilebilir",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "When you take a Magic action to read this scroll, an Animal Lord appears in an unoccupied space on the ground or in water that you can see within 1 mile of yourself.The Animal Lord is Hostile toward all other creatures and disappears when it drops to 0 Hit Points. If the Animal Lord is summoned into a space that isn't large enough to contain it, the summoning fails, and the scroll is wasted.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "scroll-of-titan-summoning-blob-of-annihilation",
+    "name": "Scroll of Titan Summoning (Blob of Annihilation)",
+    "type": "Tüketilebilir",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "When you take a Magic action to read this scroll, a Blob of Annihilation appears in an unoccupied space on the ground or in water that you can see within 1 mile of yourself.The Blob of Annihilation is Hostile toward all other creatures and disappears when it drops to 0 Hit Points. If the Blob of Annihilation is summoned into a space that isn't large enough to contain it, the summoning fails, and the scroll is wasted.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "scroll-of-titan-summoning-colossus",
+    "name": "Scroll of Titan Summoning (Colossus)",
+    "type": "Tüketilebilir",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "When you take a Magic action to read this scroll, a Colossus appears in an unoccupied space on the ground or in water that you can see within 1 mile of yourself.The Colossus is Hostile toward all other creatures and disappears when it drops to 0 Hit Points. If the Colossus is summoned into a space that isn't large enough to contain it, the summoning fails, and the scroll is wasted.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "scroll-of-titan-summoning-elemental-cataclysm",
+    "name": "Scroll of Titan Summoning (Elemental Cataclysm)",
+    "type": "Tüketilebilir",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "When you take a Magic action to read this scroll, an Elemental Cataclysm appears in an unoccupied space on the ground or in water that you can see within 1 mile of yourself.The Elemental Cataclysm is Hostile toward all other creatures and disappears when it drops to 0 Hit Points. If the Elemental Cataclysm is summoned into a space that isn't large enough to contain it, the summoning fails, and the scroll is wasted.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "scroll-of-titan-summoning-empyrean",
+    "name": "Scroll of Titan Summoning (Empyrean)",
+    "type": "Tüketilebilir",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "When you take a Magic action to read this scroll, an Empyrean appears in an unoccupied space on the ground or in water that you can see within 1 mile of yourself.The Empyrean is Hostile toward all other creatures and disappears when it drops to 0 Hit Points. If the Empyrean is summoned into a space that isn't large enough to contain it, the summoning fails, and the scroll is wasted.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "scroll-of-titan-summoning-kraken",
+    "name": "Scroll of Titan Summoning (Kraken)",
+    "type": "Tüketilebilir",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "When you take a Magic action to read this scroll, a Kraken appears in an unoccupied space in water that you can see within 1 mile of yourself. A kraken requires a body of water large enough to contain it, or the summoning fails and the scroll is wastedThe Kraken is Hostile toward all other creatures and disappears when it drops to 0 Hit Points. If the Kraken is summoned into a space that isn't large enough to contain it, the summoning fails, and the scroll is wasted.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "scroll-of-titan-summoning-tarrasque",
+    "name": "Scroll of Titan Summoning (Tarrasque)",
+    "type": "Tüketilebilir",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "When you take a Magic action to read this scroll, a Tarrasque appears in an unoccupied space on the ground or in water that you can see within 1 mile of yourself.The Tarrasque is Hostile toward all other creatures and disappears when it drops to 0 Hit Points. If the Tarrasque is summoned into a space that isn't large enough to contain it, the summoning fails, and the scroll is wasted.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "scroll-of-titan-summoning",
+    "name": "Scroll of Titan Summoning",
+    "type": "Tüketilebilir",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "When you take a Magic action to read this scroll, a particular titan named in the scroll appears in an unoccupied space on the ground or in water that you can see within 1 mile of yourself. The DM picks a suitable titan or determines it randomly by rolling on the table below.The titan is Hostile toward all other creatures and disappears when it drops to 0 Hit Points. If the titan is summoned into a space that isn't large enough to contain it, the summoning fails, and the scroll is wasted.1d100Titan01-15Animal Lord16-30Blob of Annihilation31-45Colossus46-60Elemental Cataclysm61-75Empyrean76-90Kraken (a kraken requires a body of water large enough to contain it, or the summoning fails and the scroll is wasted)91-100Tarrasque",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "spell-scroll-cantrip",
+    "name": "Spell Scroll (Cantrip)",
+    "type": "Tüketilebilir",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A Spell Scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your spell list, you can read the scroll and cast its spell without Material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the scroll crumbles to dust. If the casting is interrupted, the scroll isn't lost.If the spell is on your spell list but of a higher level than you can normally cast, you make a DC 10 ability check using your spellcasting ability to determine whether you cast the spell. On a failed check, the spell disappears from the scroll with no other effect.If the spell requires a saving throw or an attack roll, the spell save DC is 13, and the attack bonus is +5.",
+    "cost": {
+      "quantity": 30,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "spell-scroll-level-1",
+    "name": "Spell Scroll (Level 1)",
+    "type": "Tüketilebilir",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A Spell Scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your spell list, you can read the scroll and cast its spell without Material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the scroll crumbles to dust. If the casting is interrupted, the scroll isn't lost.If the spell is on your spell list but of a higher level than you can normally cast, you make a DC 11 ability check using your spellcasting ability to determine whether you cast the spell. On a failed check, the spell disappears from the scroll with no other effect.If the spell requires a saving throw or an attack roll, the spell save DC is 13, and the attack bonus is +5. Copying a Scroll into a Spellbook. A Wizard spell on a Spell Scroll can be copied into a spellbook. When a level 1 spell is copied in this way, the copier must succeed on a DC 11 Intelligence (Arcana). On a successful check, the spell is copied. Whether the check succeeds or fails, the Spell Scroll is destroyed.",
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "spell-scroll-level-2",
+    "name": "Spell Scroll (Level 2)",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "A Spell Scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your spell list, you can read the scroll and cast its spell without Material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the scroll crumbles to dust. If the casting is interrupted, the scroll isn't lost.If the spell is on your spell list but of a higher level than you can normally cast, you make a DC 12 ability check using your spellcasting ability to determine whether you cast the spell. On a failed check, the spell disappears from the scroll with no other effect.If the spell requires a saving throw or an attack roll, the spell save DC is 13, and the attack bonus is +5. Copying a Scroll into a Spellbook. A Wizard spell on a Spell Scroll can be copied into a spellbook. When a level 2 spell is copied in this way, the copier must succeed on a DC 12 Intelligence (Arcana). On a successful check, the spell is copied. Whether the check succeeds or fails, the Spell Scroll is destroyed.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "spell-scroll-level-3",
+    "name": "Spell Scroll (Level 3)",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "A Spell Scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your spell list, you can read the scroll and cast its spell without Material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the scroll crumbles to dust. If the casting is interrupted, the scroll isn't lost.If the spell is on your spell list but of a higher level than you can normally cast, you make a DC 13 ability check using your spellcasting ability to determine whether you cast the spell. On a failed check, the spell disappears from the scroll with no other effect.If the spell requires a saving throw or an attack roll, the spell save DC is 15, and the attack bonus is +7. Copying a Scroll into a Spellbook. A Wizard spell on a Spell Scroll can be copied into a spellbook. When a level 3 spell is copied in this way, the copier must succeed on a DC 13 Intelligence (Arcana). On a successful check, the spell is copied. Whether the check succeeds or fails, the Spell Scroll is destroyed.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "spell-scroll-level-4",
+    "name": "Spell Scroll (Level 4)",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "A Spell Scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your spell list, you can read the scroll and cast its spell without Material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the scroll crumbles to dust. If the casting is interrupted, the scroll isn't lost.If the spell is on your spell list but of a higher level than you can normally cast, you make a DC 14 ability check using your spellcasting ability to determine whether you cast the spell. On a failed check, the spell disappears from the scroll with no other effect.If the spell requires a saving throw or an attack roll, the spell save DC is 15, and the attack bonus is +7. Copying a Scroll into a Spellbook. A Wizard spell on a Spell Scroll can be copied into a spellbook. When a level 4 spell is copied in this way, the copier must succeed on a DC 14 Intelligence (Arcana). On a successful check, the spell is copied. Whether the check succeeds or fails, the Spell Scroll is destroyed.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "spell-scroll-level-5",
+    "name": "Spell Scroll (Level 5)",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "A Spell Scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your spell list, you can read the scroll and cast its spell without Material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the scroll crumbles to dust. If the casting is interrupted, the scroll isn't lost.If the spell is on your spell list but of a higher level than you can normally cast, you make a DC 15 ability check using your spellcasting ability to determine whether you cast the spell. On a failed check, the spell disappears from the scroll with no other effect.If the spell requires a saving throw or an attack roll, the spell save DC is 17, and the attack bonus is +9. Copying a Scroll into a Spellbook. A Wizard spell on a Spell Scroll can be copied into a spellbook. When a level 5 spell is copied in this way, the copier must succeed on a DC 15 Intelligence (Arcana). On a successful check, the spell is copied. Whether the check succeeds or fails, the Spell Scroll is destroyed.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "spell-scroll-level-6",
+    "name": "Spell Scroll (Level 6)",
+    "type": "Tüketilebilir",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "A Spell Scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your spell list, you can read the scroll and cast its spell without Material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the scroll crumbles to dust. If the casting is interrupted, the scroll isn't lost.If the spell is on your spell list but of a higher level than you can normally cast, you make a DC 16 ability check using your spellcasting ability to determine whether you cast the spell. On a failed check, the spell disappears from the scroll with no other effect.If the spell requires a saving throw or an attack roll, the spell save DC is 17, and the attack bonus is +9. Copying a Scroll into a Spellbook. A Wizard spell on a Spell Scroll can be copied into a spellbook. When a level 6 spell is copied in this way, the copier must succeed on a DC 16 Intelligence (Arcana). On a successful check, the spell is copied. Whether the check succeeds or fails, the Spell Scroll is destroyed.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "spell-scroll-level-7",
+    "name": "Spell Scroll (Level 7)",
+    "type": "Tüketilebilir",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "A Spell Scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your spell list, you can read the scroll and cast its spell without Material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the scroll crumbles to dust. If the casting is interrupted, the scroll isn't lost.If the spell is on your spell list but of a higher level than you can normally cast, you make a DC 17 ability check using your spellcasting ability to determine whether you cast the spell. On a failed check, the spell disappears from the scroll with no other effect.If the spell requires a saving throw or an attack roll, the spell save DC is 18, and the attack bonus is +10. Copying a Scroll into a Spellbook. A Wizard spell on a Spell Scroll can be copied into a spellbook. When a level 7 spell is copied in this way, the copier must succeed on a DC 17 Intelligence (Arcana). On a successful check, the spell is copied. Whether the check succeeds or fails, the Spell Scroll is destroyed.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "spell-scroll-level-8",
+    "name": "Spell Scroll (Level 8)",
+    "type": "Tüketilebilir",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "A Spell Scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your spell list, you can read the scroll and cast its spell without Material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the scroll crumbles to dust. If the casting is interrupted, the scroll isn't lost.If the spell is on your spell list but of a higher level than you can normally cast, you make a DC 18 ability check using your spellcasting ability to determine whether you cast the spell. On a failed check, the spell disappears from the scroll with no other effect.If the spell requires a saving throw or an attack roll, the spell save DC is 18, and the attack bonus is +10. Copying a Scroll into a Spellbook. A Wizard spell on a Spell Scroll can be copied into a spellbook. When a level 8 spell is copied in this way, the copier must succeed on a DC 18 Intelligence (Arcana). On a successful check, the spell is copied. Whether the check succeeds or fails, the Spell Scroll is destroyed.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "spell-scroll-level-9",
+    "name": "Spell Scroll (Level 9)",
+    "type": "Tüketilebilir",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "A Spell Scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your spell list, you can read the scroll and cast its spell without Material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the scroll crumbles to dust. If the casting is interrupted, the scroll isn't lost.If the spell is on your spell list but of a higher level than you can normally cast, you make a DC 19 ability check using your spellcasting ability to determine whether you cast the spell. On a failed check, the spell disappears from the scroll with no other effect.If the spell requires a saving throw or an attack roll, the spell save DC is 19, and the attack bonus is +11. Copying a Scroll into a Spellbook. A Wizard spell on a Spell Scroll can be copied into a spellbook. When a level 9 spell is copied in this way, the copier must succeed on a DC 19 Intelligence (Arcana). On a successful check, the spell is copied. Whether the check succeeds or fails, the Spell Scroll is destroyed.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "spell-scroll",
+    "name": "Spell Scroll",
+    "type": "Tüketilebilir",
+    "rarity": "varies",
+    "weight": 0,
+    "description": "Multiple variations of this item exist, as listed below:Spell Scroll (Cantrip)Spell Scroll (Level 1)Spell Scroll (Level 2)Spell Scroll (Level 3)Spell Scroll (Level 4)Spell Scroll (Level 5)Spell Scroll (Level 6)Spell Scroll (Level 7)Spell Scroll (Level 8)Spell Scroll (Level 9)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "splint-armor-of-acid-resistance",
+    "name": "Splint Armor of Acid Resistance",
+    "type": "Zırh",
+    "rarity": "Nadir",
+    "weight": 60,
+    "description": "You have Resistance to Acid damage while you wear this armor.The wearer has Disadvantage on Dexterity (Stealth) checks.If the wearer has a Strength score lower than 15, their speed is reduced by 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "armor": {
+      "type": "heavy",
+      "ac": 17,
+      "dexBonus": false
+    }
+  },
+  {
+    "id": "splint-armor-of-poison-resistance",
+    "name": "Splint Armor of Poison Resistance",
+    "type": "Zırh",
+    "rarity": "Nadir",
+    "weight": 60,
+    "description": "You have Resistance to Poison damage while you wear this armor.The wearer has Disadvantage on Dexterity (Stealth) checks.If the wearer has a Strength score lower than 15, their speed is reduced by 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "armor": {
+      "type": "heavy",
+      "ac": 17,
+      "dexBonus": false
+    }
+  },
+  {
+    "id": "studded-leather-armor-of-acid-resistance",
+    "name": "Studded Leather Armor of Acid Resistance",
+    "type": "Zırh",
+    "rarity": "Nadir",
+    "weight": 13,
+    "description": "You have Resistance to Acid damage while you wear this armor.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "armor": {
+      "type": "light",
+      "ac": 12,
+      "dexBonus": true
+    }
+  },
+  {
+    "id": "studded-leather-armor-of-poison-resistance",
+    "name": "Studded Leather Armor of Poison Resistance",
+    "type": "Zırh",
+    "rarity": "Nadir",
+    "weight": 13,
+    "description": "You have Resistance to Poison damage while you wear this armor.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "armor": {
+      "type": "light",
+      "ac": 12,
+      "dexBonus": true
+    }
+  },
+  {
+    "id": "walloping-ammunition",
+    "name": "Walloping Ammunition",
+    "type": "Tüketilebilir",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A creature hit by this ammunition must succeed on a DC 10 Strength saving throw or have the Prone condition. Base items. This item variant can be applied to the following base items:Arrow (Walloping Arrow)Bolt (Walloping Bolt)Energy Cell (Walloping Energy Cell)Firearm Bullet (Walloping Firearm Bullet)Needle (Walloping Needle)Sling Bullet (Walloping Sling Bullet)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "acid",
+    "name": "Acid",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "When you take the Attack action, you can replace one of your attacks with throwing a vial of Acid. Target one creature or object you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or take 2d6 Acid damage.",
+    "cost": {
+      "quantity": 25,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "alchemist-s-fire",
+    "name": "Alchemist's Fire",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "When you take the Attack action, you can replace one of your attacks with throwing a flask of Alchemist's Fire. Target one creature or object you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or take 1d4 Fire damage and start burning.",
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "antitoxin",
+    "name": "Antitoxin",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "As a Bonus Action, you can drink a vial of Antitoxin to gain Advantage on saving throws to avoid or end the Poisoned condition for 1 hour.",
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "basic-poison",
+    "name": "Basic Poison",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "As a Bonus Action, you can use a vial of Basic Poison to coat one weapon or up to three pieces of ammunition. A creature that takes Piercing or Slashing damage from the poisoned weapon or ammunition takes an extra 1d4 Poison damage. Once applied, the poison retains potency for 1 minute or until its damage is dealt, whichever comes first.",
+    "cost": {
+      "quantity": 100,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "bead-of-force",
+    "name": "Bead of Force",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0.5,
+    "description": "This small black sphere measures 3/4 of an inch in diameter and weighs an ounce. Typically, 1d4 + 4 Beads of Force are found together.You can take a Magic action to throw the bead up to 60 feet. The bead explodes in a 10-foot-radius Sphere on impact and is destroyed. Each creature in the Sphere must succeed on a DC 15 Dexterity saving throw or take 5d4 Force damage. A sphere of transparent force then encloses the area for 1 minute. Any creature that failed the save and is completely within the area is trapped inside this sphere. Creatures that succeeded on the save or are partially within the area are pushed away from the center of the sphere until they are no longer inside it. Only breathable air can pass through the sphere's wall. No attack or other effect can pass through.An enclosed creature can take a Utilize action to push against the sphere's wall, moving the sphere up to half the creature's Speed. The sphere can be picked up, and its magic causes it to weigh only 1 pound, regardless of the weight of creatures inside.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "bead-of-nourishment",
+    "name": "Bead of Nourishment",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "This flavorless, gelatinous bead dissolves on your tongue and provides as much nourishment as 1 day of Rations.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "bead-of-refreshment",
+    "name": "Bead of Refreshment",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "This flavorless, gelatinous bead dissolves in liquid, transforming up to a pint of the liquid into fresh, cold drinking water. The bead has no effect on magical liquids or harmful substances such as poison.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "dust-of-disappearance",
+    "name": "Dust of Disappearance",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "This powder resembles fine sand. There is enough of it for one use. When you take a Utilize action to throw the dust into the air, you and each creature and object within a 10-foot Emanation originating from you have the Invisible condition for 2d4 minutes. The duration is the same for all subjects, and the dust is consumed when its magic takes effect. Immediately after an affected creature makes an attack roll, deals damage, or casts a spell, the Invisible condition ends for that creature.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "dust-of-dryness",
+    "name": "Dust of Dryness",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "This small packet contains 1d6 + 4 pinches of dust. As a Utilize action, you can sprinkle a pinch of the dust over water, turning up to a 15-foot Cube of water into one marble-sized pellet, which floats or rests near where the dust was sprinkled. The pellet's weight is negligible. A creature can take a Utilize action to smash the pellet against a hard surface, causing the pellet to shatter and release the water the dust absorbed. Doing so destroys the pellet and ends its magic.As a Utilize action, you can sprinkle a pinch of the dust on an Elemental within 5 feet of yourself that is composed mostly of water (such as a Water Elemental or a Water Weird). Such a creature exposed to a pinch of the dust makes a DC 13 Constitution saving throw, taking 10d6 Necrotic damage on a failed save or half as much damage on a successful one.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "dust-of-sneezing-and-choking",
+    "name": "Dust of Sneezing and Choking",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "Found in a small container, this powder resembles Dust of Disappearance, and Identify reveals it to be such. There is enough of it for one use.As a Utilize action, you can throw the dust into the air, forcing yourself and every creature in a 30-foot Emanation originating from you to make a DC 15 Constitution saving throw. Constructs, Elementals, Oozes, Plants, and Undead succeed on the save automatically.On a failed save, a creature begins sneezing uncontrollably; it has the Incapacitated condition and is suffocating. The creature repeats the save at the end of each of its turns, ending the effect on itself on a success. The effect also ends on any creature targeted by a Lesser Restoration spell.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "keoghtom-s-ointment",
+    "name": "Keoghtom's Ointment",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "This glass jar, 3 inches in diameter, contains 1d4 + 1 doses of a thick mixture that smells faintly of aloe. The jar and its contents weigh 1/2 pound.As a Utilize action, you can swallow one dose of the ointment or apply it to a creature within 5 feet of yourself. The creature that receives it regains 2d8 + 2 Hit Points and ceases to have the Poisoned condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "necklace-of-prayer-beads",
+    "name": "Necklace of Prayer Beads",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 1,
+    "description": "This necklace has 1d4 + 2 magic beads made from aquamarine, black pearl, or topaz. It also has many nonmagical beads made from stones such as amber, bloodstone, citrine, coral, jade, pearl, or quartz. If a magic bead is removed from the necklace, that bead loses its magic.Six types of magic beads exist. The DM decides the type of each bead on the necklace or determines it randomly by rolling on the table below. A necklace can have more than one bead of the same type. To use one, you must be wearing the necklace. Each bead contains a spell that you can cast from it as a Bonus Action (using your spell save DC if a save is necessary). Once a magic bead's spell is cast, that bead can't be used again until the next dawn.1d20BeadSpell1-6Bead of BlessingBless7-12Bead of CuringCure Wounds (level 2 version)13-16Bead of FavorGreater Restoration17-18Bead of SmitingShining Smite19Bead of SummonsGuardian of Faith20Bead of Wind WalkingWind Walk",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "nolzur-s-marvelous-pigments",
+    "name": "Nolzur's Marvelous Pigments",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "This fine wooden box contains 1d4 pots of pigment and a brush (weighing 1 pound in total). Using the brush and expending 1 pot of pigment, you can paint any number of three-dimensional objects and terrain features (such as walls, doors, trees, flowers, weapons, webs, and pits), provided these elements are all confined to a 20-foot Cube. The effort takes 10 minutes (regardless of the number of elements you create), during which time you must remain in the Cube, and requires Concentration. If your Concentration is broken or you leave the Cube before the work is done, all the painted elements vanish, and the pot of pigment is wasted.When the work is done, all the painted objects and terrain features become real. Thus, painting a door on a wall creates an actual door, which can be opened to whatever is beyond. Painting a pit creates a real pit, the entire depth of which must lie within the 20-foot Cube.No object created by a pot of pigment can have a value greater than 25 GP, and the total value of all objects created by a pot of pigment can't exceed 500 GP. If you paint objects of greater value (such as a large pile of gold), they look authentic, but close inspection reveals they're made from paste, cookies, or some other worthless material.If you paint a form of energy such as fire or lightning, the energy dissipates as soon as you complete the painting, doing no harm.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "oil-of-taggit",
+    "name": "Oil of Taggit",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A creature subjected to Oil of Taggit must succeed on a DC 13 Constitution saving throw or have the Poisoned condition for 24 hours. The creature also has the Unconscious condition while Poisoned in this way. It wakes up if it takes damage.",
+    "cost": {
+      "quantity": 400,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "oil",
+    "name": "Oil",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "You can douse a creature, object, or space with Oil or use it as fuel, as detailed below. Dousing a Creature or an Object. When you take the Attack action, you can replace one of your attacks with throwing an Oil flask. Target one creature or object within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or be covered in oil. If the target takes Fire damage before the oil dries (after 1 minute), the target takes an extra 5 Fire damage from burning oil. Dousing a Space. You can take the Utilize action to pour an Oil flask on level ground to cover a 5-foot-square area within 5 feet of yourself. If lit, the oil burns until the end of the turn 2 rounds from when the oil was lit (or 12 seconds) and deals 5 Fire damage to any creature that enters the area or ends its turn there. A creature can take this damage only once per turn. Fuel. Oil serves as fuel for Lamps and Lanterns. Once lit, a flask of Oil burns for 6 hours in a Lamp or Lantern. That duration doesn't need to be consecutive; you can extinguish the burning Oil (as a Utilize action) and rekindle it again until it has burned for a total of 6 hours.",
+    "cost": {
+      "quantity": 1,
+      "unit": "sp"
+    }
+  },
+  {
+    "id": "purple-worm-poison",
+    "name": "Purple Worm Poison",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A creature subjected to Purple Worm Poison makes a DC 21 Constitution saving throw, taking 35 (10d6) Poison damage on a failed save or half as much damage on a successful one.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "sovereign-glue",
+    "name": "Sovereign Glue",
+    "type": "wondrous",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "This viscous, milky-white substance can form a permanent adhesive bond between any two objects. It must be stored in a jar or flask that has been coated inside with Oil of Slipperiness. When found, a container contains 1d6 + 1 ounces.One ounce of the glue can cover a 1-foot square surface. Applying an ounce of Sovereign Glue takes a Utilize action, and the applied glue takes 1 minute to set. Once it has done so, the bond it creates can be broken only by the application of Universal Solvent or Oil of Etherealness, or with a Wish spell.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "universal-solvent",
+    "name": "Universal Solvent",
+    "type": "wondrous",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "This tube holds milky liquid with a strong alcohol smell. When found, a tube contains 1d6 + 1 ounces.You can take a Utilize action to pour 1 or more ounces of solvent from the tube onto a surface within reach. Each ounce instantly dissolves up to 1 square foot of adhesive it touches, including Sovereign Glue.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "wyvern-poison",
+    "name": "Wyvern Poison",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A creature subjected to Wyvern Poison makes a DC 14 Constitution saving throw, taking 24 (7d6) Poison damage on a failed save or half as much damage on a successful one.",
+    "cost": {
+      "quantity": 200,
+      "unit": "gp"
+    }
+  }
+]

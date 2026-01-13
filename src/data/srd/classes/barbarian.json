@@ -1,0 +1,453 @@
+{
+  "id": "barbarian",
+  "name": "Barbarian",
+  "source": "phb24",
+  "description": "A fierce warrior who can enter a battle rage.",
+  "hitDie": "d12",
+  "primaryAbility": [
+    "STR"
+  ],
+  "abilityPriority": {
+    "primary": [
+      "STR",
+      "CON"
+    ],
+    "secondary": [
+      "DEX",
+      "WIS"
+    ],
+    "dump": [
+      "INT",
+      "CHA"
+    ]
+  },
+  "proficiencies": {
+    "armor": [
+      "light",
+      "medium",
+      "shield"
+    ],
+    "weapons": [
+      "simple",
+      "martial"
+    ],
+    "tools": [],
+    "savingThrows": [
+      "STR",
+      "CON"
+    ],
+    "skills": {
+      "choices": [
+        "animal_handling",
+        "athletics",
+        "intimidation",
+        "nature",
+        "perception",
+        "survival"
+      ],
+      "count": 2
+    }
+  },
+  "startingEquipment": {
+    "choices": [
+      {
+        "id": "starting-pack",
+        "options": [
+          {
+            "description": "(A) Greataxe, 4 Handaxes, Explorer’s Pack, and 15 GP",
+            "items": [
+              {
+                "itemId": "greataxe",
+                "quantity": 1
+              },
+              {
+                "itemId": "handaxe",
+                "quantity": 4
+              },
+              {
+                "itemId": "explorers_pack",
+                "quantity": 1
+              }
+            ],
+            "gold": 15
+          },
+          {
+            "description": "(B) 75 GP",
+            "items": [],
+            "gold": 75
+          }
+        ]
+      }
+    ]
+  },
+  "spellcasting": {
+    "hasSpellcasting": false
+  },
+  "features": [
+    {
+      "id": "rage",
+      "name": "Hiddet (Rage)",
+      "source": "phb24",
+      "description": "Bonus Aksiyon olarak Hiddet'e girebilirsiniz (Ağır zırh giyilmediğinde). Avantajlar: Bludgeoning, Piercing, Slashing hasar direnci; Strength tabanlı hasar bonusu; Strength kontrolleri ve kurtarma atışlarında avantaj. Büyü yapılamaz ve konsantrasyon korunamaz. 10 dakika sürer veya şartlar sağlanmazsa biter. Kısa Dinlenmede 1 kullanım, Uzun Dinlenmede tüm kullanımlar yenilenir.",
+      "level": 1,
+      "featureType": "resource",
+      "resource": {
+        "name": "Hiddet",
+        "maxCount": 2,
+        "recoversOn": "short"
+      }
+    },
+    {
+      "id": "unarmored-defense-barbarian",
+      "name": "Zırhsız Savunma (Unarmored Defense)",
+      "source": "phb24",
+      "description": "Zırh giymediğinizde AC değeriniz 10 + Dexterity + Constitution modifikasyonlarınıza eşit olur. Kalkan kullanabilirsiniz.",
+      "level": 1,
+      "featureType": "passive"
+    },
+    {
+      "id": "weapon-mastery-barbarian",
+      "name": "Silah Uzmanlığı (Weapon Mastery)",
+      "source": "phb24",
+      "description": "Seçtiğiniz iki farklı Simple veya Martial silahın ustalık özelliklerini (mastery properties) kullanabilirsiniz.",
+      "level": 1,
+      "featureType": "choice",
+      "choicesCount": 2
+    },
+    {
+      "id": "danger-sense",
+      "name": "Tehlike Sezgisi (Danger Sense)",
+      "source": "phb24",
+      "description": "Görebildiğiniz etkilere karşı yapılan Dexterity kurtarma atışlarında avantaj kazanırsınız (Incapacitated değilseniz).",
+      "level": 2,
+      "featureType": "passive"
+    },
+    {
+      "id": "reckless-attack",
+      "name": "Pervasız Saldırı (Reckless Attack)",
+      "source": "phb24",
+      "description": "Sıranızın ilk saldırısında pervasızca saldırmaya karar verebilirsiniz. Bir sonraki turunuzun başına kadar Strength tabanlı saldırılarınız avantajlı olur, ancak size yapılan saldırılar da avantajlı olur.",
+      "level": 2,
+      "featureType": "active"
+    },
+    {
+      "id": "primal-knowledge",
+      "name": "Kadim Bilgi (Primal Knowledge)",
+      "source": "phb24",
+      "description": "Barbar beceri listesinden ek bir beceri uzmanlığı kazanırsınız. Ayrıca Hiddetiniz etkinken; Acrobatics, Intimidation, Perception, Stealth veya Survival kontrollerini Strength kullanarak yapabilirsiniz.",
+      "level": 3,
+      "featureType": "choice",
+      "choicesCount": 1
+    },
+    {
+      "id": "barbarian-subclass",
+      "name": "Barbar Alt Sınıfı",
+      "source": "phb24",
+      "description": "Seçtiğiniz bir Barbar yolunda (subclass) uzmanlaşırsınız.",
+      "level": 3,
+      "featureType": "choice"
+    },
+    {
+      "id": "asi-4",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 4,
+      "featureType": "choice"
+    },
+    {
+      "id": "extra-attack-barbarian",
+      "name": "Ek Saldırı (Extra Attack)",
+      "source": "phb24",
+      "description": "Saldırı (Attack) aksiyonu aldığınızda iki kez saldırabilirsiniz.",
+      "level": 5,
+      "featureType": "passive"
+    },
+    {
+      "id": "fast-movement",
+      "name": "Hızlı Hareket (Fast Movement)",
+      "source": "phb24",
+      "description": "Ağır zırh giyilmediğinde hızınız 10 feet artar.",
+      "level": 5,
+      "featureType": "passive"
+    },
+    {
+      "id": "feral-instinct",
+      "name": "Vahşi İçgüdü (Feral Instinct)",
+      "source": "phb24",
+      "description": "Girişim (Initiative) zarlarında avantaj kazanırsınız.",
+      "level": 7,
+      "featureType": "passive"
+    },
+    {
+      "id": "instinctive-pounce",
+      "name": "İçgüdüsel Atılım (Instinctive Pounce)",
+      "source": "phb24",
+      "description": "Hiddet'e girmek için kullandığınız Bonus Aksiyonun parçası olarak, hızınızın yarısı kadar hareket edebilirsiniz.",
+      "level": 7,
+      "featureType": "active"
+    },
+    {
+      "id": "brutal-strike",
+      "name": "Acımasız Darbe (Brutal Strike)",
+      "source": "phb24",
+      "description": "Reckless Attack kullanırken bir saldırıda avantajdan feragat ederek 1d10 ekstra hasar verebilir ve hedefi 15 fit itme (Forceful Blow) veya hızını 15 fit düşürme (Hamstring Blow) etkilerinden birini seçebilirsiniz.",
+      "level": 9,
+      "featureType": "active"
+    },
+    {
+      "id": "relentless-rage",
+      "name": "Yılmaz Hiddet (Relentless Rage)",
+      "source": "phb24",
+      "description": "Hiddet etkisindeyken 0 cana düşerseniz DC 10 Constitution kurtarma atışı yaparak karakter seviyenizin iki katı kadar canla ayakta kalabilirsiniz. Her kullanımda DC 5 artar, dinlenme ile sıfırlanır.",
+      "level": 11,
+      "featureType": "passive"
+    },
+    {
+      "id": "improved-brutal-strike-13",
+      "name": "Gelişmiş Acımasız Darbe (Improved Brutal Strike)",
+      "source": "phb24",
+      "description": "Acımasız Darbe seçeneklerinize Staggering Blow (dezavantaj ve reaksiyon engelleyici) ve Sundering Blow (+5 bir sonraki saldırı bonusu) eklenir.",
+      "level": 13,
+      "featureType": "passive",
+      "improvesFeature": "brutal-strike"
+    },
+    {
+      "id": "persistent-rage",
+      "name": "Kalıcı Hiddet (Persistent Rage)",
+      "source": "phb24",
+      "description": "Girişim (Initiative) zarı attığınızda Hiddet kullanımlarınızı yenileyebilirsiniz (Uzun Dinlenme başına bir kez). Hiddetiniz artık 10 dakika boyunca kendiligün sürmeye başlar.",
+      "level": 15,
+      "featureType": "passive",
+      "improvesFeature": "rage"
+    },
+    {
+      "id": "improved-brutal-strike-17",
+      "name": "Gelişmiş Acımasız Darbe (Seviye 17)",
+      "source": "phb24",
+      "description": "Acımasız Darbe hasarı 2d10 olur ve aynı anda iki farklı darbe etkisi seçebilirsiniz.",
+      "level": 17,
+      "featureType": "passive",
+      "improvesFeature": "improved-brutal-strike-13"
+    },
+    {
+      "id": "indomitable-might",
+      "name": "Boyun Eğmez Güç (Indomitable Might)",
+      "source": "phb24",
+      "description": "Bir Strength kontrolü veya kurtarma atışı toplamınız Strength skorunuzdan düşükse, skorunuzu sonuç olarak kullanabilirsiniz.",
+      "level": 18,
+      "featureType": "passive"
+    },
+    {
+      "id": "epic-boon-barbarian",
+      "name": "Epik Lütuf (Epic Boon)",
+      "source": "phb24",
+      "description": "Bir Epik Lütuf veya seçebileceğiniz başka bir hüner kazanırsınız. Boon of Irresistible Offense önerilir.",
+      "level": 19,
+      "featureType": "choice"
+    },
+    {
+      "id": "primal-champion",
+      "name": "Kadim Şampiyon (Primal Champion)",
+      "source": "phb24",
+      "description": "Strength ve Constitution skorlarınız 4 artar (Maksimum 25).",
+      "level": 20,
+      "featureType": "passive"
+    }
+  ],
+  "subclasses": [
+    {
+      "id": "berserker",
+      "name": "Berserker Yolu (Path of the Berserker)",
+      "source": "phb24",
+      "description": "Berserker yolunu izleyen barbarlar, hiddetlerini doğrudan şiddete ve yıkıma yönlendirirler.",
+      "parentClassId": "barbarian",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "frenzy",
+          "name": "Cinnet (Frenzy)",
+          "description": "Hiddetiniz etkinken Pervasız Saldırı (Reckless Attack) kullanırsanız, turunuzda vurduğunuz ilk hedefe ekstra hasar verirsiniz. Bu ekstra hasar, Hiddet Hasarı (Rage Damage) bonusunuza eşit sayıda d6 zarı ile belirlenir (Örneğin bonus +2 ise 2d6).",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "mindless-rage",
+          "name": "Akılsız Hiddet (Mindless Rage)",
+          "description": "Hiddetiniz etkinken Büyülenmiş (Charmed) ve Korkmuş (Frightened) durumlarına karşı bağışıklık kazanırsınız. Eğer hiddete girdiğinizde bu durumlardan birinin etkisundaysanız, hiddet süresince bu etki askıya alınır.",
+          "level": 6,
+          "featureType": "passive"
+        },
+        {
+          "id": "retaliation",
+          "name": "Misilleme (Retaliation)",
+          "description": "Sizin 5 fit yakınınızdaki bir yaratıktan hasar aldığınızda, o yaratığa karşı bir yakın dövüş saldırısı yapmak için Reaksiyonunuzu kullanabilirsiniz.",
+          "level": 10,
+          "featureType": "active"
+        },
+        {
+          "id": "intimidating-presence",
+          "name": "Ürkütücü Varlık (Intimidating Presence)",
+          "description": "Bonus Aksiyon olarak, 30 fit yakınınızdaki bir yaratığı korkutmaya çalışabilirsiniz. Hedef bir Wisdom kurtarma atışı (DC 8 + Strength + Proficiency) yapmalıdır, başarısız olursa bir sonraki turunuzun sonuna kadar Korkmuş (Frightened) olur.",
+          "level": 14,
+          "featureType": "active"
+        }
+      ]
+    },
+    {
+      "id": "wild-heart",
+      "name": "Vahşi Kalp Yolu (Path of the Wild Heart)",
+      "source": "phb24",
+      "description": "Vahşi Kalp yolunu izleyen barbarlar, kendilerini hayvanlar dünyasının bir parçası olarak görürler. Bu barbarlar hayvanlarla iletişim kurmanın büyülü yollarını öğrenirler ve hiddetleri, onları doğaüstü bir güçle doldururken hayvanlarla olan bağlarını güçlendirir.",
+      "parentClassId": "barbarian",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "animal-speaker",
+          "name": "Hayvan Konuşmacısı (Animal Speaker)",
+          "description": "Beast Sense ve Speak with Animals büyülerini sadece Ritüel olarak yapabilirsiniz. Bu büyüler için büyü yapma yeteneğiniz Wisdom'dır.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "rage-of-the-wilds",
+          "name": "Yabanın Hiddeti (Rage of the Wilds)",
+          "description": "Hiddetiniz hayvanların kadim gücüne bağlanır. Hiddetinizi her etkinleştirdiğinizde şu seçeneklerden birini kazanırsınız:\n\nAyı (Bear): Hiddetiniz etkinken Force, Necrotic, Psychic ve Radiant dışındaki tüm hasar türlerine karşı direnç kazanırsınız.\nKartal (Eagle): Hiddete girdiğinizde aynı Bonus Aksiyonun parçası olarak Disengage ve Dash aksiyonlarını alabilirsiniz. Hiddet süresince de Bonus Aksiyon ile her iki aksiyonu birden alabilirsiniz.\nKurt (Wolf): Hiddetiniz etkinken müttefikleriniz, sizin 5 fit yakınınızdaki düşmanlara karşı yapılan saldırı zarlarında avantaj kazanır.",
+          "level": 3,
+          "featureType": "choice",
+          "choicesCount": 1
+        },
+        {
+          "id": "aspect-of-the-wilds",
+          "name": "Yabanın Görünüşü (Aspect of the Wilds)",
+          "description": "Şu seçeneklerden birini kazanırsınız. Uzun Dinlenme bitirdiğinizde seçiminizi değiştirebilirsiniz:\n\nBaykuş (Owl): 60 fit görüş mesafesiyle Karanlık Görüş (Darkvision) kazanırsınız. Zaten Karanlık Görüşünüz varsa mesafesi 60 fit artar.\nPanter (Panther): Yürüme hızınıza eşit bir Tırmanma Hızı (Climb Speed) kazanırsınız.\nSomon (Salmon): Yürüme hızınıza eşit bir Yüzme Hızı (Swim Speed) kazanırsınız.",
+          "level": 6,
+          "featureType": "choice",
+          "choicesCount": 1
+        },
+        {
+          "id": "nature-speaker",
+          "name": "Doğa Konuşmacısı (Nature Speaker)",
+          "description": "Commune with Nature büyüsünü sadece Ritüel olarak yapabilirsiniz. Bu büyü için büyü yapma yeteneğiniz Wisdom'dır.",
+          "level": 10,
+          "featureType": "passive"
+        },
+        {
+          "id": "power-of-the-wilds",
+          "name": "Yabanın Gücü (Power of the Wilds)",
+          "description": "Hiddetinizi her etkinleştirdiğinizde şu seçeneklerden birini kazanırsınız:\n\nŞahin (Falcon): Zırh giymiyorsanız, hiddetiniz etkinken yürüme hızınıza eşit bir Uçma Hızı (Fly Speed) kazanırsınız.\nAslan (Lion): Hiddetiniz etkinken 5 fit yakınınızdaki düşmanlar, sizden veya bu özelliğe sahip başka bir barbardan başkasına saldırdıklarında saldırı zarlarında dezavantaj alırlar.\nKoç (Ram): Hiddetiniz etkinken bir yakın dövüş saldırısı isabet ettirdiğinizde, Large veya daha küçük bir yaratığı Yere Devrilmiş (Prone) durumuna sokabilirsiniz.",
+          "level": 14,
+          "featureType": "choice",
+          "choicesCount": 1
+        }
+      ]
+    },
+    {
+      "id": "world-tree",
+      "name": "Path of the World Tree",
+      "source": "phb24",
+      "description": "Barbarians who follow the Path of the World Tree connect with the cosmic tree Yggdrasil through their Rage.",
+      "parentClassId": "barbarian",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "vitality-of-the-tree",
+          "name": "Vitality of the Tree",
+          "description": "Your Rage taps into the life force of the World Tree, granting Temporary Hit Points.",
+          "level": 3,
+          "featureType": "active"
+        },
+        {
+          "id": "branches-of-the-tree",
+          "name": "Branches of the Tree",
+          "description": "You can summon spectral branches to teleport creatures within 30 feet.",
+          "level": 6,
+          "featureType": "active"
+        },
+        {
+          "id": "battering-roots",
+          "name": "Battering Roots",
+          "description": "Your reach is 10 feet greater with Heavy or Versatile Melee weapons.",
+          "level": 10,
+          "featureType": "passive"
+        },
+        {
+          "id": "travel-along-the-tree",
+          "name": "Travel Along the Tree",
+          "description": "You can teleport up to 60 feet (or 150 feet) through the World Tree.",
+          "level": 14,
+          "featureType": "active"
+        }
+      ]
+    },
+    {
+      "id": "zealot",
+      "name": "Path of the Zealot",
+      "source": "phb24",
+      "description": "Barbarians who walk the Path of the Zealot receive boons from a god or pantheon.",
+      "parentClassId": "barbarian",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "divine-fury",
+          "name": "Divine Fury",
+          "description": "You can channel divine power into your strikes.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "warrior-of-the-gods",
+          "name": "Warrior of the Gods",
+          "description": "A divine entity helps ensure you can continue the fight, providing a healing pool.",
+          "level": 3,
+          "featureType": "resource"
+        },
+        {
+          "id": "fanatical-focus",
+          "name": "Fanatical Focus",
+          "description": "You can reroll a failed saving throw with a bonus while raging.",
+          "level": 6,
+          "featureType": "passive"
+        },
+        {
+          "id": "zealous-presence",
+          "name": "Zealous Presence",
+          "description": "You unleash a battle cry that grants advantage to allies.",
+          "level": 10,
+          "featureType": "active"
+        },
+        {
+          "id": "rage-of-the-gods",
+          "name": "Rage of the Gods",
+          "description": "You assume the form of a divine warrior, gaining flight and resistances.",
+          "level": 14,
+          "featureType": "active"
+        }
+      ]
+    }
+  ],
+  "subclassName": "Primal Path",
+  "subclassLevel": 3,
+  "asiLevels": [
+    4,
+    8,
+    12,
+    16,
+    19
+  ],
+  "teachingNotes": {
+    "complexity": "beginner",
+    "recommendedForNewPlayers": true,
+    "playstyleKeywords": [
+      "Melee",
+      "Tank",
+      "High damage",
+      "Simple"
+    ],
+    "roleInParty": [
+      "Front-line",
+      "Damage dealer",
+      "Tank"
+    ]
+  }
+}

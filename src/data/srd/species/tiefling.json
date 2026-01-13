@@ -1,0 +1,232 @@
+{
+  "id": "tiefling",
+  "name": "Tiefling",
+  "source": "srd",
+  "description": "Tieflingler, insan soyundan gelir ancak cehennemi mirasları görünümlerinde belirgin bir iz bırakmıştır.",
+  "size": "medium",
+  "speed": 30,
+  "abilityScoreIncreases": [],
+  "ageMaturity": 18,
+  "ageLifespan": 100,
+  "languages": [
+    "Common",
+    "Infernal"
+  ],
+  "traits": [
+    {
+      "id": "darkvision-tiefling",
+      "name": "Karanlık Görüş (Darkvision)",
+      "source": "srd",
+      "description": "Cehennemi mirasınız sayesinde, karanlık ve loş ışıkta üstün bir görüşe sahipsiniz. 60 feet menzilinde loş ışığı parlak ışık gibi, karanlığı ise loş ışık gibi görebilirsiniz.",
+      "mechanicType": "passive",
+      "level": 1,
+      "grantsDarkvision": 60
+    },
+    {
+      "id": "otherworldly-presence",
+      "name": "Öteki Dünya Varlığı (Otherworldly Presence)",
+      "source": "2024",
+      "description": "Thaumaturgy hünerini (Cantrip) bilirsiniz. Büyü yapma yeteneğiniz Karizma'dır.",
+      "mechanicType": "active",
+      "level": 1,
+      "grantsSpells": [
+        {
+          "spellId": "thaumaturgy",
+          "atLevel": 1,
+          "castingAbility": "CHA"
+        }
+      ]
+    }
+  ],
+  "subraces": [
+    {
+      "id": "abyssal-tiefling",
+      "name": "Uçurum Tiefling'i (Abyssal Tiefling)",
+      "source": "2024",
+      "description": "Soyunuz Uçurum'a (Abyss) dayanır. Zehir hasarına direnciniz vardır. Poison Spray, Ray of Sickness (3. sv) ve Hold Person (5. sv) büyülerini bilirsiniz.",
+      "parentSpeciesId": "tiefling",
+      "additionalTraits": [
+        {
+          "id": "abyssal-legacy-1",
+          "name": "Uçurum Mirası (Seviye 1)",
+          "source": "2024",
+          "description": "Zehir hasarına direnciniz vardır. Poison Spray hünerini (cantrip) bilirsiniz.",
+          "mechanicType": "active",
+          "level": 1,
+          "requiredLevel": 1,
+          "grantsResistance": [
+            "poison"
+          ],
+          "grantsSpells": [
+            {
+              "spellId": "poison-spray",
+              "atLevel": 1,
+              "castingAbility": "CHA"
+            }
+          ]
+        },
+        {
+          "id": "abyssal-legacy-3",
+          "name": "Uçurum Mirası (Seviye 3)",
+          "source": "2024",
+          "description": "Ray of Sickness büyüsünü günde bir kez yapabilirsiniz.",
+          "mechanicType": "active",
+          "level": 3,
+          "grantsSpells": [
+            {
+              "spellId": "ray-of-sickness",
+              "atLevel": 3,
+              "castingAbility": "CHA"
+            }
+          ]
+        },
+        {
+          "id": "abyssal-legacy-5",
+          "name": "Uçurum Mirası (Seviye 5)",
+          "source": "2024",
+          "description": "Hold Person büyüsünü günde bir kez yapabilirsiniz.",
+          "mechanicType": "active",
+          "level": 5,
+          "grantsSpells": [
+            {
+              "spellId": "hold-person",
+              "atLevel": 5,
+              "castingAbility": "CHA"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chthonic-tiefling",
+      "name": "Yeraltı Tiefling'i (Chthonic Tiefling)",
+      "source": "2024",
+      "description": "Soyunuz Carceri veya Yeraltı Dünyası'na dayanır. Nekrotik hasara direnciniz vardır. Chill Touch, False Life (3. sv) ve Ray of Enfeeblement (5. sv) büyülerini bilirsiniz.",
+      "parentSpeciesId": "tiefling",
+      "additionalTraits": [
+        {
+          "id": "chthonic-legacy-1",
+          "name": "Yeraltı Mirası (Seviye 1)",
+          "source": "2024",
+          "description": "Nekrotik hasara direnciniz vardır. Chill Touch hünerini (cantrip) bilirsiniz.",
+          "mechanicType": "active",
+          "level": 1,
+          "requiredLevel": 1,
+          "grantsResistance": [
+            "necrotic"
+          ],
+          "grantsSpells": [
+            {
+              "spellId": "chill-touch",
+              "atLevel": 1,
+              "castingAbility": "CHA"
+            }
+          ]
+        },
+        {
+          "id": "chthonic-legacy-3",
+          "name": "Yeraltı Mirası (Seviye 3)",
+          "source": "2024",
+          "description": "False Life büyüsünü günde bir kez yapabilirsiniz.",
+          "mechanicType": "active",
+          "level": 3,
+          "grantsSpells": [
+            {
+              "spellId": "false-life",
+              "atLevel": 3,
+              "castingAbility": "CHA"
+            }
+          ]
+        },
+        {
+          "id": "chthonic-legacy-5",
+          "name": "Yeraltı Mirası (Seviye 5)",
+          "source": "2024",
+          "description": "Ray of Enfeeblement büyüsünü günde bir kez yapabilirsiniz.",
+          "mechanicType": "active",
+          "level": 5,
+          "grantsSpells": [
+            {
+              "spellId": "ray-of-enfeeblement",
+              "atLevel": 5,
+              "castingAbility": "CHA"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "infernal-tiefling",
+      "name": "Cehennem Tiefling'i (Infernal Tiefling)",
+      "source": "2024",
+      "description": "Soyunuz Dokuz Cehennem'e dayanır. Ateş hasarına direnciniz vardır. Fire Bolt, Hellish Rebuke (3. sv) ve Darkness (5. sv) büyülerini bilirsiniz.",
+      "parentSpeciesId": "tiefling",
+      "additionalTraits": [
+        {
+          "id": "infernal-legacy-1",
+          "name": "Cehennem Mirası (Seviye 1)",
+          "source": "2024",
+          "description": "Ateş hasarına direnciniz vardır. Fire Bolt hünerini (cantrip) bilirsiniz.",
+          "mechanicType": "active",
+          "level": 1,
+          "requiredLevel": 1,
+          "grantsResistance": [
+            "fire"
+          ],
+          "grantsSpells": [
+            {
+              "spellId": "fire-bolt",
+              "atLevel": 1,
+              "castingAbility": "CHA"
+            }
+          ]
+        },
+        {
+          "id": "infernal-legacy-3",
+          "name": "Cehennem Mirası (Seviye 3)",
+          "source": "2024",
+          "description": "Hellish Rebuke büyüsünü günde bir kez yapabilirsiniz.",
+          "mechanicType": "active",
+          "level": 3,
+          "grantsSpells": [
+            {
+              "spellId": "hellish-rebuke",
+              "atLevel": 3,
+              "castingAbility": "CHA"
+            }
+          ]
+        },
+        {
+          "id": "infernal-legacy-5",
+          "name": "Cehennem Mirası (Seviye 5)",
+          "source": "2024",
+          "description": "Darkness büyüsünü günde bir kez yapabilirsiniz.",
+          "mechanicType": "active",
+          "level": 5,
+          "grantsSpells": [
+            {
+              "spellId": "darkness",
+              "atLevel": 5,
+              "castingAbility": "CHA"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "creatureType": "humanoid",
+  "teachingNotes": {
+    "complexity": "beginner",
+    "recommendedForNewPlayers": true,
+    "keyMechanics": [
+      "Darkvision",
+      "Resistances",
+      "Legacy Spells"
+    ],
+    "flavorHooks": [
+      "Mysterious",
+      "Distrusted",
+      "Planar heritage"
+    ]
+  }
+}

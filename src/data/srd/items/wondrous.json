@@ -1,0 +1,2486 @@
+[
+  {
+    "id": "apparatus-of-kwalish",
+    "name": "Apparatus of Kwalish",
+    "type": "wondrous",
+    "rarity": "Efsanevi",
+    "weight": 500,
+    "description": "This item first appears to be a sealed iron barrel weighing 500 pounds. The barrel has a hidden catch, which can be found with a successful DC 20 Intelligence (Investigation) check. Releasing the catch unlocks a hatch at one end of the barrel, allowing two Medium or smaller creatures to crawl inside. Ten levers are set in a row at the far end, each in a neutral position, able to move up or down. When certain levers are used, the apparatus transforms to resemble a giant lobster.The Apparatus of Kwalish is a Large object with the following statistics: AC 20; HP 200; Speed 30 ft., Swim 30 ft. (or 0 ft. for both if the legs aren't extended); Immunity to Poison and Psychic damage.To be used as a vehicle, the apparatus requires one pilot. While the apparatus's hatch is closed, the compartment is airtight and watertight. The compartment holds enough air for 10 hours of breathing, divided by the number of breathing creatures inside.The apparatus floats on water. It can also go underwater to a depth of 900 feet. Below that, the vehicle takes 2d6 Bludgeoning damage each minute from pressure.A creature in the compartment can take a Utilize action to move as many as two of the apparatus's levers up or down. After each use, a lever goes back to its neutral position. Each lever, from left to right, functions as shown in the Apparatus of Kwalish Levers table.Apparatus of Kwalish LeversLeverUpDown1Legs extend, allowing the apparatus to walk and swim.Legs retract, reducing the apparatus's Speed and Swim Speed to 0 and making it unable to benefit from bonuses to speed.2Forward window shutter opens.Forward window shutter closes.3Side window shutters open (two per side).Side window shutters close (two per side).4Two claws extend from the front side of the apparatus.The claws retract.5Each extended claw makes the following melee attack: +8 to hit, reach 5 ft. Hit: 7 (2d6) Bludgeoning damage.Each extended claw makes the following melee attack: +8 to hit, reach 5 ft. Hit: The target has the Grappled condition (escape DC 15).6The apparatus walks or swims forward provided its legs are extended.The apparatus walks or swims backward provided its legs are extended.7The apparatus turns 90 degrees counterclockwise provided its legs are extended.The apparatus turns 90 degrees clockwise provided its legs are extended.8Eyelike fixtures emit Bright Light in a 30-foot radius and Dim Light for an additional 30 feet.The light turns off.9The apparatus sinks up to 20 feet if it's in liquid.The apparatus rises up to 20 feet if it's in liquid.10The rear hatch unseals and opens.The rear hatch closes and seals.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "assassin-s-blood",
+    "name": "Assassin's Blood",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A creature subjected to Assassin's Blood makes a DC 10 Constitution saving throw. On a failed save, the creature takes 6 (1d12) Poison damage and has the Poisoned condition for 24 hours. On a successful save, the creature takes half as much damage only.",
+    "cost": {
+      "quantity": 150,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "baba-yaga-s-dancing-broom",
+    "name": "Baba Yaga's Dancing Broom",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "The archfey Baba Yaga crafted many of these magic brooms. No two appear exactly alike. While holding the broom, you can take a Magic action to transform it into an Animated Broom under your control. The broom then moves into an unoccupied space as close to you as possible. The broom acts immediately after you on your Initiative count and remains animate until you take a Bonus Action and use a command word to render it inanimate.On your turn, you can mentally command the animated broom if it is within 30 feet of you and you don't have the Incapacitated condition (no action required). You decide what action the broom takes and where it moves during its next turn, or you can issue it a general command, such as to attack your enemies or guard a location.If the broom is reduced to 0 Hit Points, it shatters and is destroyed. If the broom reverts to its inanimate form before losing all its Hit Points it regains all of them.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "bedroll",
+    "name": "Uyku Tulumu",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 7,
+    "description": "A Bedroll sleeps one Small or Medium creature. While in a Bedroll, you automatically succeed on saving throws against extreme cold (see the Dungeon Master's Guide).",
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "bell",
+    "name": "Bell",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "When rung as a Utilize action, a Bell produces a sound that can be heard up to 60 feet away.",
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "blanket",
+    "name": "Blanket",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 3,
+    "description": "While wrapped in a blanket, you have Advantage on saving throws against extreme cold (see the Dungeon Master's Guide).",
+    "cost": {
+      "quantity": 5,
+      "unit": "sp"
+    }
+  },
+  {
+    "id": "block-and-tackle",
+    "name": "Block and Tackle",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 5,
+    "description": "A Block and Tackle allows you to hoist up to four times the weight you can normally lift.",
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "book-of-exalted-deeds",
+    "name": "Book of Exalted Deeds",
+    "type": "wondrous",
+    "rarity": "Yadigâr",
+    "weight": 5,
+    "description": "The definitive treatise on all that is good in the multiverse, the Book of Exalted Deeds figures prominently in many religions. Rather than being a scripture devoted to a particular faith, the book's authors filled the pages with their own visions of true virtue, providing guidance for defeating evil.The Book of Exalted Deeds rarely lingers in one place. As soon as the book is read, it vanishes to some other corner of the multiverse where its moral guidance can bring hope to an endangered world. Although attempts have been made to copy the work, efforts to do so fail to capture its magical nature or translate the benefits it offers to those pure of heart and firm of purpose.A heavy clasp, wrought to look like angel wings, keeps the book's contents secure. Only a creature that is attuned to the book can release the clasp that holds it shut. Once the book is opened, the attuned creature must spend 80 hours reading and studying the book to digest its contents and gain its benefits.Other creatures that peruse the book's open pages can read the text but glean no deeper meaning and reap no benefits. A Fiend, an Undead, or a servant of a god from the Lower Planes that tries to read from the book takes 24d6 Radiant damage. This damage ignores Resistance and Immunity, and it can't be reduced or avoided by any means. A creature reduced to 0 Hit Points by this damage disappears in a flash and is destroyed, leaving its possessions behind. The book then vanishes, and the creature's Attunement to it ends.Benefits granted by the Book of Exalted Deeds last only as long as you strive to do good. If you fail to perform at least one act of kindness or generosity within the span of 10 days, or if you willingly perform an evil act, you lose all the benefits granted by the book. Celestial Calm. While attuned to the book, you have Immunity to the Charmed and Frightened conditions and Resistance to Psychic damage. These benefits become permanent after you spend the requisite amount of time reading and studying the book. Divine Wisdom. After you spend the requisite amount of time reading and studying the book, your Wisdom increases by 2, to a maximum of 24. You can't gain this benefit from the book more than once. Enlightened Magic. After you spend the requisite amount of time reading and studying the book, any spell slot you expend to cast a spell counts as a spell slot of one level higher. Halo. After you spend the requisite amount of time reading and studying the book, you gain a protective halo. This halo sheds Bright Light in a 10-foot radius and Dim Light for an additional 10 feet. You can dismiss or manifest the halo as a Bonus Action. While present, the halo gives you Advantage on Charisma (Persuasion) checks. In addition, Fiends and Undead within the halo's Bright Light make attack rolls against you with Disadvantage. Random Properties. The Book of Exalted Deeds has the following random properties:2 minor beneficial properties2 major beneficial properties Destroying the Book. The Book of Exalted Deeds can't be destroyed. However, drowning the book in the River Styx removes all writing and imagery from its pages and renders the book powerless for 1d100 years.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "book-of-vile-darkness",
+    "name": "Book of Vile Darkness",
+    "type": "wondrous",
+    "rarity": "Yadigâr",
+    "weight": 5,
+    "description": "The contents of this foul manuscript are the meat and drink of the wicked. It contains knowledge so horrid that to even glimpse the scrawled pages invites doom.Most believe the lich-god Vecna authored the Book of Vile Darkness. He recorded in its pages every horrid idea, every corrupt thought, and every example of foul magic he came across or devised.Other practitioners of evil have added their own input to the book's catalog of vile knowledge. Their additions are clear, for the writers of later works stitched whatever they were writing into the tome or, in some cases, made notations and additions to existing text. There are places where pages are missing, torn, or covered so completely with ink, blood, and scratches that the original text can't be divined.Nature can't abide the book's presence. Ordinary plants wither in its presence, common animals are unwilling to approach it, and the book gradually destroys whatever it touches. Even stone cracks and turns to powder if the book rests on it long enough.Whenever a creature that isn't a Fiend or an Undead attunes to the Book of Vile Darkness, that creature makes a DC 17 Charisma saving throw. On a failed save, the creature is magically transformed into a Larva under the DM's control. Only a Wish spell can reverse this vile transformation.A creature attuned to the book must spend 80 hours reading and studying it to digest its contents and use its Adjusted Ability Scores, Tireless Form, Spells, Vile Lore, and Vile Speech properties.The Book of Vile Darkness remains with you only as long as you strive to work evil in the world. If you fail to perform at least one evil act within the span of 10 days, or if you willingly perform a good act, the book disappears, your Attunement to it ends immediately, and you lose all benefits granted by it. If you die while attuned to the book, an entity of great evil claims your soul. You can't be restored to life by any means while your soul remains imprisoned. Adjusted Ability Scores. One ability score of your choice increases by 2, to a maximum of 24. Another ability score of your choice decreases by 2, to a minimum of 3. The book can't adjust your ability scores again. Tireless Form. While the book is on your person, you have Immunity to the Exhaustion condition. Random Properties. The Book of Vile Darkness has the following random properties:3 minor beneficial properties1 major beneficial property3 minor detrimental properties2 major detrimental properties Spells. While holding the book and holding it, you can cast the following spells (save DC 18) from it:Animate DeadCircle of DeathDominate MonsterFinger of DeathOnce you use the book to cast a spell, you can't cast that spell again from it until the next dawn. Vile Lore. You can reference the Book of Vile Darkness whenever you make an Intelligence check to recall information about some aspect of evil, such as lore about demons. When you do so, you have Advantage on that check.At the DM's discretion, the book might reveal secrets no mortal should know, such as the true names of powerful Fiends, foul rites that allow one to transform into a death knight or lich, or long-lost spells crafted by beings so evil their names ought never to be spoken aloud. Vile Speech. While the book is on your person, you can take a Magic action to recite words from its pages in a foul, dead language. Each time you do so, you take 1d12 Psychic damage, and each creature within 15 feet of you takes 3d6 Psychic damage unless the creature is a Fiend or an Undead. Destroying the Book. The Book of Vile Darkness allows pages to be torn from it, but any evil lore contained on those pages finds its way back into the book eventually, usually when a new author adds pages to the tome.If a solar tears the book in two, the book is destroyed for 1d100 years, after which it re-forms in some far corner of the multiverse.A creature attuned to the book for 100 years can unearth a phrase hidden in the original text that, when translated to Celestial and spoken aloud, destroys both the speaker and the book in a flash of radiance. However, as long as evil exists in the multiverse, the book re-forms 1d10 × 100 years later.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "book",
+    "name": "Book",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 5,
+    "description": "A Book contains fiction or nonfiction. If you consult an accurate nonfiction Book about its topic, you gain a +5 bonus to Intelligence (Arcana, History, Nature, or Religion) checks you make about that topic.",
+    "cost": {
+      "quantity": 25,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "bowl-of-commanding-water-elementals",
+    "name": "Bowl of Commanding Water Elementals",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "While this bowl is filled with water and you are within 5 feet of it, you can take a Magic action to summon a Water Elemental. The elemental appears in an unoccupied space as close to the bowl as possible, understands your languages, obeys your commands, and takes its turn immediately after you on your Initiative count. The elemental disappears after 1 hour, when it dies, or when you dismiss it as a Bonus Action. The bowl can't be used this way again until the next dawn.The bowl is about 1 foot in diameter and half as deep. It holds about 3 gallons.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "brazier-of-commanding-fire-elementals",
+    "name": "Brazier of Commanding Fire Elementals",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "While you are within 5 feet of this brazier, you can take a Magic action to summon a Fire Elemental. The elemental appears in an unoccupied space as close to the brazier as possible, understands your languages, obeys your commands, and takes its turn immediately after you on your Initiative count. The elemental disappears after 1 hour, when it dies, or when you dismiss it as a Bonus Action. The brazier can't be used this way again until the next dawn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "broom-of-flying",
+    "name": "Broom of Flying",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "This wooden broom functions like a mundane broom until you stand astride it and take a Magic action to make it hover beneath you, at which time it can be ridden in the air. It has a Fly Speed of 50 feet. It can carry up to 400 pounds, but its Fly Speed becomes 30 feet while carrying over 200 pounds. The broom stops hovering when you land or when you're no longer riding it.As a Magic action, you can send the broom to travel alone to a destination within 1 mile of you if you name the location and are familiar with it. The broom comes back to you when you take a Magic action and use a command word if the broom is still within 1 mile of you.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "bucket",
+    "name": "Bucket",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 2,
+    "description": "A Bucket holds up to half a cubic foot of contents.",
+    "cost": {
+      "quantity": 5,
+      "unit": "cp"
+    }
+  },
+  {
+    "id": "burnt-othur-fumes",
+    "name": "Burnt Othur Fumes",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A creature subjected to Burnt Othur Fumes must succeed on a DC 13 Constitution saving throw or take 10 (3d6) Poison damage, and it must repeat the save at the start of each of its turns. On each successive failed save, the creature takes 3 (1d6) Poison damage. After three successful saves, the poison ends.",
+    "cost": {
+      "quantity": 500,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "caltrops",
+    "name": "Caltrops",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 2,
+    "description": "As a Utilize action, you can spread Caltrops from their bag to cover a 5-foot-square area within 5 feet of yourself. A creature that enters this area for the first time on a turn must succeed on a DC 15 Dexterity saving throw or take 1 Piercing damage and have its Speed reduced to 0 until the start of its next turn. It takes 10 minutes to recover the Caltrops.",
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "candle-of-invocation",
+    "name": "Candle of Invocation",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "This candle's magic is activated when the candle is lit, which requires a Magic action. After burning for 4 hours, the candle is destroyed. You can snuff it out early for use at a later time. Deduct the time it burned in increments of 1 minute from its total burn time.While lit, the candle sheds Dim Light in a 30-foot radius. While you are within that light, you have Advantage on D20 Tests. In addition, a Cleric or Druid in the light can cast level 1 spells they have prepared without expending spell slots.Alternatively, when you light the candle for the first time, you can cast Gate with it. Doing so destroys the candle. The portal created by the spell links to a particular Outer Plane chosen by the DM or determined by rolling on the following table.1d100Outer Plane01-05Abyss06-10Acheron11-17Arborea18-25Arcadia26-33Beastlands34-41Bytopia42-46Carceri47-54Elysium55-59Gehenna60-64Hades65-69Limbo70-77Mechanus78-85Mount Celestia86-90Nine Hells91-95Pandemonium96-00Ysgard",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "candle-of-the-deep",
+    "name": "Candle of the Deep",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "The flame of this candle isn't extinguished when immersed in water. It gives off light and heat like a normal candle.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "candle",
+    "name": "Candle",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "For 1 hour, a lit Candle sheds Bright Light in a 5-foot radius and Dim Light for an additional 5 feet.",
+    "cost": {
+      "quantity": 1,
+      "unit": "cp"
+    }
+  },
+  {
+    "id": "cap-of-water-breathing",
+    "name": "Cap of Water Breathing",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "While wearing this cap underwater, you can take a Magic action to create a bubble of air around your head. This bubble allows you to breathe normally underwater. This bubble stays with you until the cap is removed or you are no longer underwater.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "carpet-of-flying-3-ft-5-ft",
+    "name": "Carpet of Flying, 3 ft. × 5 ft.",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "You can make this carpet hover and fly by taking a Magic action and using the carpet's command word. It moves according to your directions if you are within 30 feet of it.A 3 ft. × 5 ft. carpet can carry up to 200 lb. at a fly speed of 80 feet. A carpet can carry up to twice the weight shown on the table, but its Fly Speed is halved if it carries more than its normal capacity.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "carpet-of-flying-4-ft-6-ft",
+    "name": "Carpet of Flying, 4 ft. × 6 ft.",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "You can make this carpet hover and fly by taking a Magic action and using the carpet's command word. It moves according to your directions if you are within 30 feet of it.A 4 ft. × 6 ft. carpet can carry up to 400 lb. at a fly speed of 60 feet. A carpet can carry up to twice the weight shown on the table, but its Fly Speed is halved if it carries more than its normal capacity.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "carpet-of-flying-5-ft-7-ft",
+    "name": "Carpet of Flying, 5 ft. × 7 ft.",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "You can make this carpet hover and fly by taking a Magic action and using the carpet's command word. It moves according to your directions if you are within 30 feet of it.A 5 ft. × 7 ft. carpet can carry up to 600 lb. at a fly speed of 40 feet. A carpet can carry up to twice the weight shown on the table, but its Fly Speed is halved if it carries more than its normal capacity.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "carpet-of-flying-6-ft-9-ft",
+    "name": "Carpet of Flying, 6 ft. × 9 ft.",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "You can make this carpet hover and fly by taking a Magic action and using the carpet's command word. It moves according to your directions if you are within 30 feet of it.A 6 ft. × 9 ft. carpet can carry up to 800 lb. at a fly speed of 30 feet. A carpet can carry up to twice the weight shown on the table, but its Fly Speed is halved if it carries more than its normal capacity.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "carpet-of-flying",
+    "name": "Carpet of Flying",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "You can make this carpet hover and fly by taking a Magic action and using the carpet's command word. It moves according to your directions if you are within 30 feet of it.Four sizes of Carpet of Flying exist. The DM chooses the size of a given carpet or determines it randomly by rolling on the following table. A carpet can carry up to twice the weight shown on the table, but its Fly Speed is halved if it carries more than its normal capacity.Applicable Carpet Sizes1d100SizeCapacityFly Speed01-20Carpet of Flying, 3 ft. × 5 ft.200 lb.80 feet21-55Carpet of Flying, 4 ft. × 6 ft.400 lb.60 feet56-80Carpet of Flying, 5 ft. × 7 ft.600 lb.40 feet81-00Carpet of Flying, 6 ft. × 9 ft.800 lb.30 feet",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "carrion-crawler-mucus",
+    "name": "Carrion Crawler Mucus",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A creature subjected to Carrion Crawler Mucus must succeed on a DC 13 Constitution saving throw or have the Poisoned condition for 1 minute. The creature also has the Paralyzed condition while Poisoned in this way. The creature repeats the save at the end of each of its turns, ending the effect on itself on a success.",
+    "cost": {
+      "quantity": 200,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "cauldron-of-rebirth",
+    "name": "Cauldron of Rebirth",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "This Tiny pot bears relief scenes of heroes on its cast-iron sides.You can use the cauldron as a Spellcasting Focus for your spells, and it functions as a suitable component for the Scrying spell. Brew Potion. When you finish a Long Rest, you can use the cauldron to create a Potion of Healing (greater), which takes 1 minute. The potion lasts for 24 hours, then loses its magic if not consumed. Raise Dead. As a Magic action, you can cause the cauldron to grow large enough for a Medium creature to crouch within. You can revert the cauldron to its normal size as a Magic action, harmlessly shunting anything that can't fit inside to the nearest unoccupied space.If you place the corpse of a Humanoid into the cauldron and cover the corpse with 200 pounds of salt (which costs 10 GP) for at least 8 hours, the salt is consumed and the creature returns to life as if by Raise Dead at the next dawn. Once used, this property can't be used again for 7 days.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "censer-of-controlling-air-elementals",
+    "name": "Censer of Controlling Air Elementals",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "While gently swinging this censer, you can take a Magic action to summon an Air Elemental. The elemental appears in an unoccupied space as close to the censer as possible, understands your languages, obeys your commands, and takes its turn immediately after you on your Initiative count. The elemental disappears after 1 hour, when it dies, or when you dismiss it as a Bonus Action. The censer can't be used this way again until the next dawn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "chain",
+    "name": "Chain",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 10,
+    "description": "As a Utilize action, you can wrap a Chain around an unwilling creature within 5 feet of yourself that has the Grappled, Incapacitated, or Restrained condition if you succeed on a DC 13 Strength (Athletics) check. If the creature's legs are bound, the creature has the Restrained condition until it escapes. Escaping the Chain requires the creature to make a successful DC 18 Dexterity (Acrobatics) check as an action. Bursting the Chain requires a successful DC 20 Strength (Athletics) check as an action.",
+    "cost": {
+      "quantity": 5,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "charlatan-s-die",
+    "name": "Charlatan's Die",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Whenever you roll this six-sided die, you can control which number it rolls.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "chime-of-opening",
+    "name": "Chime of Opening",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 1,
+    "description": "This hollow metal tube measures about 1 foot long and weighs 1 pound. As a Magic action, you can strike the chime to cast Knock. The spell's customary knocking sound is replaced by the clear, ringing tone of the chime, which is audible out to 300 feet. The chime can be used 10 times. After the tenth time, it cracks and becomes useless.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "costume",
+    "name": "Costume",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 4,
+    "description": "While wearing a Costume, you have Advantage on any ability check you make to impersonate the person or type of person it represents.",
+    "cost": {
+      "quantity": 5,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "crowbar",
+    "name": "Levye",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 5,
+    "description": "Using a Crowbar gives you Advantage on Strength checks where the Crowbar's leverage can be applied.",
+    "cost": {
+      "quantity": 2,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "crystal-ball-of-mind-reading",
+    "name": "Crystal Ball of Mind Reading",
+    "type": "wondrous",
+    "rarity": "Efsanevi",
+    "weight": 3,
+    "description": "While touching this crystal orb, you can cast Scrying (save DC 17) with it. In addition, you can cast Detect Thoughts (save DC 17) targeting creatures you can see within 30 feet of the spell's sensor. You don't need to concentrate on this Detect Thoughts spell to maintain it during its duration, but it ends if the Scrying spell ends.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "crystal-ball-of-telepathy",
+    "name": "Crystal Ball of Telepathy",
+    "type": "wondrous",
+    "rarity": "Efsanevi",
+    "weight": 3,
+    "description": "While touching this crystal orb, you can cast Scrying (save DC 17) with it. In addition, you can communicate telepathically with creatures you can see within 30 feet of the spell's sensor. You can also cast Suggestion (save DC 17) through the sensor on one of those creatures. You don't need to concentrate on this Suggestion to maintain it during its duration, but it ends if Scrying ends. You can't cast Suggestion in this way again until the next dawn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "crystal-ball-of-true-seeing",
+    "name": "Crystal Ball of True Seeing",
+    "type": "wondrous",
+    "rarity": "Efsanevi",
+    "weight": 3,
+    "description": "While touching this crystal orb, you can cast Scrying (save DC 17) with it. In addition, you have Truesight with a range of 120 feet centered on the spell's sensor.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "crystal-ball",
+    "name": "Crystal Ball",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 3,
+    "description": "The typical crystal ball, a very rare item, is about 6 inches in diameter. While touching it, you can cast the Scrying spell (save DC 17) with it.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "cube-of-force",
+    "name": "Cube of Force",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "This cube is about an inch across. Each face has a distinct marking on it. You can press one of those faces, expend the number of charges required for it, and thereby cast the spell associated with it (save DC 17), as shown in the Cube of Force Faces table.The cube starts with 10 charges, and it regains 1d6 expended charges daily at dawn.Cube of Force FacesSpellCharge CostMage Armor1Shield1Leomund's Tiny Hut3Mordenkainen's Private Sanctum4Otiluke's Resilient Sphere4Wall of Force5",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "cube-of-summoning",
+    "name": "Cube of Summoning",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "This Tiny cube looks like a jack-in-the-box. When you wind its crank as a Magic action, a merry tune emits from the box, the lid pops open, a creature appears in the nearest unoccupied space, and the lid closes. The lid can't otherwise be opened.Roll on the Cube of Summoning table to determine which spell the cube casts to summon the creature. The spell is cast at level 5 (save DC 17, +9 attack bonus) and doesn't require Concentration, but you otherwise function as the spell's caster.Once the cube summons a creature, the cube can't do so again until the next dawn.Cube of Summoning1d6Spell1Summon Aberration2Summon Beast3Summon Construct4Summon Dragon5Summon Elemental6Summon Fey",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "cubic-gate",
+    "name": "Cubic Gate",
+    "type": "wondrous",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "This cube is 3 inches across and radiates palpable magical energy. The six sides of the cube are each keyed to a different plane of existence, one of which is the Material Plane. The other sides are linked to planes determined by the DM.The cube has 3 charges and regains 1d3 expended charges daily at dawn. As a Magic action, you can expend 1 of the cube's charges to cast one of the following spells using the cube. Gate. Pressing one side of the cube, you cast Gate, opening a portal to the plane of existence keyed to that side. Plane Shift. Pressing one side of the cube twice, you cast Plane Shift, transporting the targets to the plane of existence keyed to that side.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "daern-s-instant-fortress",
+    "name": "Daern's Instant Fortress",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "As a Magic action, you can place this 1-inch adamantine statuette on the ground and, using a command word, cause it to grow rapidly into a square adamantine tower. Repeating the command word causes the tower to revert to statuette form, which works only if the tower is empty. Each creature in the area where the tower appears is pushed to an unoccupied space outside but next to the tower. Objects in the area that aren't being worn or carried are also pushed clear of the tower.The tower is 20 feet on a side and 30 feet high, with arrow slits on all sides and a battlement atop it. Its interior is divided into two floors, with a ladder, staircase, or ramp (your choice) connecting them. This ladder, staircase, or ramp ends at a trapdoor leading to the roof. When created, the tower has a single door at ground level on the side facing you. The door opens only at your command, which you can issue as a Bonus Action. It is immune to the Knock spell and similar magic.Magic prevents the tower from being tipped over. The roof, the door, and the walls each have AC 20; HP 100; Immunity to Bludgeoning, Piercing, and Slashing damage except that which is dealt by siege equipment; and Resistance to all other damage. Shrinking the tower back down to statuette form doesn't repair damage to the tower. Only a Wish spell can repair the tower (this use of the spell counts as replicating a spell of level 8 or lower). Each casting of Wish causes the tower to regain all its Hit Points.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "deck-of-illusions",
+    "name": "Deck of Illusions",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "This box contains a set of cards. A full deck has 34 cards: 32 depicting specific creatures and two with a mirrored surface. A deck found as treasure is usually missing 1d20 - 1 cards.The magic of the deck functions only if its cards are drawn at random. You can take a Magic action to draw a card at random from the deck and throw it to the ground at a point within 30 feet of yourself. An illusion of a creature, determined by rolling on the Deck of Illusions table, forms over the thrown card and remains until dispelled. The illusory creature created by the card looks and behaves like a real creature of its kind, except that it can do no harm. While you are within 120 feet of the illusory creature and can see it, you can take a Magic action to move it anywhere within 30 feet of its card.Any physical interaction with the illusory creature reveals it to be false, because objects pass through it. A creature that takes a Study action to visually inspect the illusory creature identifies it as an illusion with a successful DC 15 Intelligence (Investigation) check. The illusion lasts until its card is moved or the illusion is dispelled (using a Dispel Magic spell or a similar effect). When the illusion ends, the image on its card disappears, and that card can't be used again.Deck of Illusions1d100Illusion01-03Adult Red Dragon04-06Archmage07-09Assassin10-12Bandit Captain13-15Beholder16-18Berserker19-21Bugbear Warrior22-24Cloud Giant25-27Druid28-30Erinyes31-33Ettin34-36Fire Giant37-39Frost Giant40-42Gnoll Warrior43-45Goblin Warrior46-48Guardian Naga49-51Hill Giant52-54Hobgoblin Warrior55-57Incubus58-60Iron Golem61-63Knight64-66Kobold Warrior67-69Lich70-72Medusa73-75Night Hag76-78Ogre79-81Oni82-84Priest85-87Succubus88-90Troll91-93Warrior Veteran94-96Wyvern97-00The card drawer",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "deck-of-many-things",
+    "name": "Deck of Many Things",
+    "type": "wondrous",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "Usually found in a box or pouch, this deck contains a number of cards made of ivory or vellum. Most (75 percent) of these decks have thirteen cards, but some have twenty-two. Use the appropriate column of the Deck of Many Things table when randomly determining cards drawn from the deck.Before you draw a card, you must declare how many cards you intend to draw and then draw them randomly. Any cards drawn in excess of this number have no effect. Otherwise, as soon as you draw a card from the deck, its magic takes effect. You must draw each card no more than 1 hour after the previous draw. If you fail to draw the chosen number, the remaining number of cards fly from the deck on their own and take effect all at once.Once a card is drawn, it disappears. Unless the card is the Fool or Jester, the card reappears in the deck, making it possible to draw the same card twice. (Once the Fool or Jester has left the deck, reroll on the table if that card comes up again.)Deck of Many Things1d100 (13-Card Deck)1d100 (22-Card Deck)Card—01-05Balance—06-10Comet—11-14Donjon01-0815-18Euryale—19-23Fates09-1624-27Flames—28-31Fool—32-36Gem17-2437-41Jester25-3242-46Key33-4047-51Knight41-4852-56Moon—57-60Puzzle49-5661-64Rogue57-6465-68Ruin—69-73Sage65-7274-77Skull73-8078-82Star81-8883-87Sun—88-91Talons89-9692-96Throne97-0097-00VoidEach card's effect is described below. Balance. You can increase one of your ability scores by 2, to a maximum of 22, provided you also decrease another one of your ability scores by 2. You can't decrease an ability that has a score of 5 or lower. Alternatively, you can choose not to adjust your ability scores, in which case this card has no effect. Comet. The next time you enter combat against one or more Hostile creatures, you can select one of them as your foe when you roll Initiative. If you reduce your foe to 0 Hit Points during that combat, you have Advantage on Death Saving Throws for 1 year. If someone else reduces your chosen foe to 0 Hit Points or you don't choose a foe, this card has no effect. Donjon. You disappear and become entombed in a state of suspended animation in an extradimensional sphere. Everything you're wearing and carrying disappears with you except for Artifacts, which stay behind in the space you occupied when you disappeared. You remain imprisoned until you are found and removed from the sphere. You can't be located by any Divination magic, but a Wish spell can reveal the location of your prison. You draw no more cards. Euryale. The card's medusa-like visage curses you. You take a -2 penalty to saving throws while cursed in this way. Only a god or the magic of the Fates card can end this curse. Fates. Reality's fabric unravels and spins anew, allowing you to avoid or erase one event as if it never happened. You can use the card's magic as soon as you draw the card or at any other time before you die. Flames. A powerful devil becomes your enemy. The devil seeks your ruin and torments you, savoring your suffering before attempting to slay you. This enmity lasts until either you or the devil dies. A Question of Enmity[–] Two of the cards in the Deck of Many Things can earn a character the enmity of another being. With the Flames card, the enmity is overt. The character should experience the devil's malevolent efforts on multiple occasions. Seeking out the fiend shouldn't be a simple task, and the adventurer should clash with the devil's allies and followers a few times before being able to confront the devil.In the case of the Rogue card, the enmity is secret and should come from someone thought to be a friend or an ally. As Dungeon Master, you should wait for a dramatically appropriate moment to reveal this enmity, leaving the adventurer guessing who is likely to become a betrayer. Fool. You have Disadvantage on D20 Tests for the next 72 hours. Draw another card; this draw doesn't count as one of your declared draws. Gem. Twenty-five pieces of jewelry worth 2,000 GP each or fifty gems worth 1,000 GP each appear at your feet. Jester. You have Advantage on D20 Tests for the next 72 hours, or you can draw two additional cards beyond your declared draws. Key. A Rare or rarer magic weapon with which you are proficient appears on your person. The DM chooses the weapon. Knight. You gain the service of a Knight, who magically appears in an unoccupied space you choose within 30 feet of yourself. The knight has the same alignment as you and serves you loyally until death, believing the two of you have been drawn together by fate. Work with your DM to create a name and backstory for this NPC. The DM can use a different stat block to represent the knight, as desired. Moon. You gain the ability to cast Wish 1d3 times. Puzzle. Permanently reduce your Intelligence or Wisdom by 1d4 + 1 (to a minimum score of 1). You can draw one additional card beyond your declared draws. Rogue. An NPC of the DM's choice becomes Hostile toward you. You don't know the identity of this NPC until they or someone else reveals it. Nothing less than a Wish spell or divine intervention can end the NPC's hostility toward you. Ruin. All forms of wealth that you carry or own, other than magic items, are lost to you. Portable property vanishes. Businesses, buildings, and land you own are lost in a way that alters reality the least. If you have a Bastion (see the Dungeon Master's Guide), it is destroyed by some calamity beyond your control. Any documentation that proves you should own something lost to this card also disappears. Sage. At any time you choose within one year of drawing this card, you can ask a question in meditation and mentally receive a truthful answer to that question. Skull. An Avatar of Death appears in an unoccupied space as close to you as possible. The avatar targets only you with its attacks, appearing as a ghostly skeleton clad in a tattered black robe and carrying a spectral scythe. The avatar disappears when it drops to 0 Hit Points or you die. If an ally of yours deals damage to the avatar, that ally summons another Avatar of Death. The new avatar appears in an unoccupied space as close to that ally as possible and targets only that ally with its attacks. You and your allies can each summon only one avatar as a consequence of this draw. A creature slain by an avatar can't be restored to life. Star. Increase one of your ability scores by 2, to a maximum of 24. Sun. A magic item (chosen by the DM) appears on your person. In addition, you gain 10 Temporary Hit Points daily at dawn until you die. Talons. Every magic item you wear or carry disintegrates. Artifacts in your possession vanish instead. Throne. You gain proficiency and Expertise in your choice of History, Insight, Intimidation, or Persuasion. In addition, you gain rightful ownership of a small keep somewhere in the world. However, the keep is currently home to one or more monsters, which must be cleared out before you can claim the keep as yours. Void. Your soul is drawn from your body and contained in an object in a place of the DM's choice. One or more powerful beings guard the place. While your soul is trapped in this way, your body is inert, ceases aging, and requires no food, air, or water. A Wish spell can't return your soul to your body, but the spell reveals the location of the object that holds your soul. You draw no more cards.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "demonomicon-of-iggwilv",
+    "name": "Demonomicon of Iggwilv",
+    "type": "wondrous",
+    "rarity": "Yadigâr",
+    "weight": 0,
+    "description": "This treatise, composed by Iggwilv the archmage, documents the Abyss's layers and inhabitants and is widely regarded as the most thorough and blasphemous tome of demonology in the multiverse. The tome recounts both the oldest and most current profanities of the Abyss and demons. Demons have attempted to censor the text, and while sections have been ripped from the book's spine, the general chapters remain, ever revealing demonic secrets. Caged behind lines of script roils a secret piece of the Abyss itself, which keeps the book up-to-date, no matter how many pages are removed, and it longs to be more than mere reference material. Abyssal Lore. You can reference the Demonomicon whenever you make an Intelligence check to discern information about demons or a Wisdom (Survival) check related to the Abyss. When you do so, you gain Advantage on the check. Containment. The first ten pages of the Demonomicon are blank. As a Magic action while holding the book, you can target a Fiend that you can see that is trapped within the area of a Magic Circle spell. The Fiend must succeed on a DC 20 Charisma saving throw with Disadvantage or become trapped within one of the Demonomicon's blank pages, which fills with writing detailing the trapped creature's widely known name and depravities. Once used, this action can't be used again until the next dawn.When you finish a Long Rest, if you and the Demonomicon are on the same plane of existence, one trapped creature within the book can attempt to possess you. You make a DC 20 Charisma saving throw. On a failed save, you are possessed by the creature, which controls you like a puppet. As a Magic action, the possessing creature can release you and appear in the closest unoccupied space to you. On a successful save, the Fiend can't try to possess you again for 7 days (but another Fiend trapped in the book can certainly try).When the tome is discovered, it has 1d4 Fiends occupying its pages—typically an assortment of demons. Ensnarement. While carrying the book, whenever you cast Magic Circle naming only Fiends or cast Planar Binding targeting a Fiend, the spell is cast at level 9, regardless of what level spell slot you used, if any. Additionally, the Fiend has Disadvantage on its saving throw against the spell. Fiendish Scourging. While carrying the book, when you make a damage roll for a spell you cast against a Fiend, you use the maximum possible result instead of rolling. Random Properties. The Artifact has the following random properties:2 minor beneficial properties1 minor detrimental property1 major detrimental property Spells. The book has 8 charges and regains 1d8 expended charges daily at dawn. While holding the book, you can take a Magic action to cast one of the spells (save DC 20) on the following table. The table indicates how many charges you must expend to cast the spell.SpellCharge CostMagic Circle1Magic Jar3Planar Ally3Planar Binding2Plane Shift (to the Abyss only)3Summon Fiend3Tasha's Hideous Laughter0 Destroying the Demonomicon. To destroy the book, six different demon lords must each tear out a sixth of the book's pages. If this occurs, the pages reappear after 24 hours. Before all those hours pass, anyone who opens the book's remaining binding is transported to a nascent layer of the Abyss that lies hidden within the book. At the heart of this deadly, semi-sentient domain lies a long-lost Artifact, Fraz-Urb'luu's Staff. If the staff is dragged from the pocket plane, the tome is reduced to a mundane and out-of-date copy of the Tome of Zyx, the work that served as the foundation of the Demonomicon of Iggwilv. The Tome of Zyx can be destroyed like any ordinary book. Once the staff emerges, the demon lord Fraz-Urb'luu knows instantly.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "dimensional-shackles",
+    "name": "Dimensional Shackles",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "You can take a Utilize action to place these shackles on a creature that has the Incapacitated condition. The shackles adjust to fit a creature of Small to Large size. The shackles prevent a creature bound by them from using any method of extradimensional movement, including teleportation or travel to a different plane of existence. They don't prevent the creature from passing through an interdimensional portal.You and any creature you designate when you use the shackles can take a Utilize action to remove them. Once every 30 days, the bound creature can make a DC 30 Strength (Athletics) check. On a successful check, the creature breaks free and destroys the shackles.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "driftglobe",
+    "name": "Driftglobe",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 1,
+    "description": "This small sphere of thick glass weighs 1 pound. If you are within 60 feet of it, you can command it to emanate light equivalent to that of the Light or Daylight spell (your choice). Once used, the Daylight effect can't be used again until the next dawn.You can issue another command as a Magic action to make the illuminated globe rise into the air and float no more than 5 feet off the ground. The globe hovers in this way until you or another creature grasps it. If you move more than 60 feet from the hovering globe, it follows you until it is within 60 feet of you. It takes the shortest route to do so. If prevented from moving, the globe sinks gently to the ground and becomes inactive, and its light winks out.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "elemental-gem-blue-sapphire",
+    "name": "Elemental Gem, Blue Sapphire",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "This gem contains a mote of elemental energy. When you take a Utilize action to break the gem, an Air Elemental is summoned, and the gem ceases to be magical. The elemental appears in an unoccupied space as close to the broken gem as possible, understands your languages, obeys your commands, and takes its turn immediately after you on your Initiative count. The elemental disappears after 1 hour, when it dies, or when you dismiss it as a Bonus Action.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "elemental-gem-emerald",
+    "name": "Elemental Gem, Emerald",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "This gem contains a mote of elemental energy. When you take a Utilize action to break the gem, a Water Elemental is summoned, and the gem ceases to be magical. The elemental appears in an unoccupied space as close to the broken gem as possible, understands your languages, obeys your commands, and takes its turn immediately after you on your Initiative count. The elemental disappears after 1 hour, when it dies, or when you dismiss it as a Bonus Action.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "elemental-gem-red-corundum",
+    "name": "Elemental Gem, Red Corundum",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "This gem contains a mote of elemental energy. When you take a Utilize action to break the gem, a Fire Elemental is summoned, and the gem ceases to be magical. The elemental appears in an unoccupied space as close to the broken gem as possible, understands your languages, obeys your commands, and takes its turn immediately after you on your Initiative count. The elemental disappears after 1 hour, when it dies, or when you dismiss it as a Bonus Action.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "elemental-gem-yellow-diamond",
+    "name": "Elemental Gem, Yellow Diamond",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "This gem contains a mote of elemental energy. When you take a Utilize action to break the gem, an Earth Elemental is summoned, and the gem ceases to be magical. The elemental appears in an unoccupied space as close to the broken gem as possible, understands your languages, obeys your commands, and takes its turn immediately after you on your Initiative count. The elemental disappears after 1 hour, when it dies, or when you dismiss it as a Bonus Action.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "elemental-gem",
+    "name": "Elemental Gem",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "Multiple variations of this item exist, as listed below:Elemental Gem, Blue SapphireElemental Gem, EmeraldElemental Gem, Red CorundumElemental Gem, Yellow Diamond",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "ersatz-eye",
+    "name": "Ersatz Eye",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "This magical eye replaces a real one that was lost or removed. While the Ersatz Eye is embedded in your eye socket, you can see through the tiny orb as though it were your natural eye. You can insert or remove the Ersatz Eye as a Magic action, and it can't be removed against your will while you are alive.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "essence-of-ether",
+    "name": "Essence of Ether",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A creature subjected to Essence of Ether must succeed on a DC 15 Constitution saving throw or have the Poisoned condition for 8 hours. The creature also has the Unconscious condition while Poisoned in this way. The creature wakes up if it takes damage or if another creature takes an action to shake it awake.",
+    "cost": {
+      "quantity": 300,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "eye-and-hand-of-vecna",
+    "name": "Eye and Hand of Vecna",
+    "type": "wondrous",
+    "rarity": "Yadigâr",
+    "weight": 0,
+    "description": "Vecna was a mighty wizard who, through magic and conquest, forged a terrible empire. For all his power, however, Vecna feared death and took steps to prevent his demise by becoming a lich.A treacherous lieutenant named Kas brought Vecna's rule to an end in a terrible battle. Of Vecna, all that remained were one hand and one eye, grisly Artifacts that still seek to work Vecna's will in the world.The Eye of Vecna and the Hand of Vecna are separate Artifacts that might be found together or separately. The eye looks like a bloodshot organ torn free from the socket. The hand is a shriveled left extremity. Random Properties of the Eye and Hand. The Eye of Vecna and the Hand of Vecna each have the following random properties1 minor beneficial property1 major beneficial property1 minor detrimental property Attuning to the Eye. To attune to the eye, you must press it into your empty socket. The eye grafts itself to your head and remains there until you die. If the eye is ever removed, you die. Properties of the Eye. While you are attuned to the eye, your alignment is Neutral Evil, and you gain the following benefits:Truesight. You have Truesight out to 240 feet.Spellcasting. The eye has 8 charges and regains 1d4 + 4 expended charges daily at dawn. You can cast a spell on the Eye of Vecna Spells table from the eye (save DC 18). The table indicates how many charges you must expend to cast the spell. Each time you cast a spell from the eye, there is a 5 percent chance that Vecna tears your soul from your body, devours it, and then takes control of the body like a puppet. If that happens, you become an NPC under the DM's control.Eye of Vecna SpellsSpellCharge CostClairvoyance2Crown of Madness1Disintegrate4Dominate Monster5Eyebite4X-ray Vision. You can take a Magic action to gain X-ray vision with a range of 30 feet for 1 minute. To you, solid objects within that radius appear transparent and don't prevent light from passing through themselves. The vision can penetrate 1 foot of stone, 1 inch of common metal, or up to 3 feet of wood or dirt. Thicker substances block the vision, as does a thin sheet of lead. Attuning to the Hand. To attune to the hand, you must press it against the stump where your left hand was. The hand grafts itself to your arm and becomes a functioning appendage. If the hand is ever removed, you die. Properties of the Hand. When you are attuned to the hand, your alignment is Neutral Evil, and you gain the following benefits:Great Strength. Your Strength becomes 20 unless it is already 20 or higher.Icy Touch. Any melee spell attack you make with the hand and any melee attack made with a weapon held by it deals an extra 2d8 Cold damage on a hit.Spellcasting. The hand has 8 charges and regains 1d4 + 4 expended charges daily at dawn. You can cast a spell on the Hand of Vecna Spells table from the hand (save DC 18). The table indicates how many charges you must expend to cast the spell. Each time you cast a spell from it, the hand casts Suggestion on you (save DC 18; no Concentration required), demanding that you commit an evil act. The hand might have a specific act in mind or leave it up to you.Hand of Vecna SpellsSpellCharge CostFinger of Death5Sleep1Slow2Teleport3 Properties of the Eye and Hand. While attuned to both the hand and eye, you gain the following additional benefits:Danger Sense. You have Advantage on Initiative rolls.Necrotic Reduction. As a Magic action, you can target one creature you can see within 5 feet of yourself. The target makes a DC 18 Constitution saving throw, taking 7d6 Necrotic damage on a failed save or half as much damage on a successful one. A creature reduced to 0 Hit Points by this damage is transformed into green slime (see chapter 3) that covers the ground in its space, each 5-foot square of slime representing a separate patch. Nonmagical objects worn or carried by the target that are made of metal or organic material are destroyed by the slime.Poison Immunity. You have Immunity to Poison damage and the Poisoned condition.Regeneration. If you start your turn with at least 1 Hit Point, you regain 1d10 Hit Points.Wish. You can cast Wish. Once used, this property can't be used again until 30 days have passed. Destroying the Eye and Hand. If the Eye of Vecna and the Hand of Vecna are both attached to the same creature and that creature is slain by the Sword of Kas, both the eye and the hand burst into flame, turn to ash, and are destroyed. Any other attempt to destroy the eye or hand seems to work, but the Artifact reappears in one of Vecna's many hidden vaults, where it waits to be rediscovered.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "eye-of-vecna",
+    "name": "Eye of Vecna",
+    "type": "wondrous",
+    "rarity": "Yadigâr",
+    "weight": 0,
+    "description": "Vecna was a mighty wizard who, through magic and conquest, forged a terrible empire. For all his power, however, Vecna feared death and took steps to prevent his demise by becoming a lich.A treacherous lieutenant named Kas brought Vecna's rule to an end in a terrible battle. Of Vecna, all that remained were one hand and one eye, grisly Artifacts that still seek to work Vecna's will in the world.The Eye of Vecna and the Hand of Vecna are separate Artifacts that might be found together or separately. The eye looks like a bloodshot organ torn free from the socket. The hand is a shriveled left extremity. Random Properties of the Eye and Hand. The Eye of Vecna has the following random properties:1 minor beneficial property1 major beneficial property1 minor detrimental property Attuning to the Eye. To attune to the eye, you must press it into your empty socket. The eye grafts itself to your head and remains there until you die. If the eye is ever removed, you die. Properties of the Eye. While you are attuned to the eye, your alignment is Neutral Evil, and you gain the following benefits:Truesight. You have Truesight out to 240 feet.Spellcasting. The eye has 8 charges and regains 1d4 + 4 expended charges daily at dawn. You can cast a spell on the Eye of Vecna Spells table from the eye (save DC 18). The table indicates how many charges you must expend to cast the spell. Each time you cast a spell from the eye, there is a 5 percent chance that Vecna tears your soul from your body, devours it, and then takes control of the body like a puppet. If that happens, you become an NPC under the DM's control.Eye of Vecna SpellsSpellCharge CostClairvoyance2Crown of Madness1Disintegrate4Dominate Monster5Eyebite4X-ray Vision. You can take a Magic action to gain X-ray vision with a range of 30 feet for 1 minute. To you, solid objects within that radius appear transparent and don't prevent light from passing through themselves. The vision can penetrate 1 foot of stone, 1 inch of common metal, or up to 3 feet of wood or dirt. Thicker substances block the vision, as does a thin sheet of lead. Destroying the Eye and Hand. If the Eye of Vecna and the Hand of Vecna are both attached to the same creature and that creature is slain by the Sword of Kas, both the eye and the hand burst into flame, turn to ash, and are destroyed. Any other attempt to destroy the eye or hand seems to work, but the Artifact reappears in one of Vecna's many hidden vaults, where it waits to be rediscovered.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "eyes-of-charming",
+    "name": "Eyes of Charming",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "These crystal lenses fit over the eyes. They have 3 charges. While wearing them, you can expend 1 or more charges to cast Charm Person (save DC 13). For 1 charge, you cast the level 1 version of the spell. You increase the spell's level by one for each additional charge you expend. The lenses regain all expended charges daily at dawn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "eyes-of-minute-seeing",
+    "name": "Eyes of Minute Seeing",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "These crystal lenses fit over the eyes. While wearing them, your vision improves significantly out to a range of 1 foot, granting you Darkvision within that range and Advantage on Intelligence (Investigation) checks made to examine something within that range.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "eyes-of-the-eagle",
+    "name": "Eyes of the Eagle",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "These crystal lenses fit over the eyes. While wearing them, you have Advantage on Wisdom (Perception) checks that rely on sight. In conditions of clear visibility, you can make out details of even extremely distant creatures and objects as small as 2 feet across.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "figurine-of-wondrous-power-bronze-griffon",
+    "name": "Figurine of Wondrous Power, Bronze Griffon",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "A Figurine of Wondrous Power is a statuette small enough to fit in a pocket. If you take a Magic action to throw the figurine to a point on the ground within 60 feet of yourself, the figurine becomes a living creature specified in the figurine's description below. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.The creature is Friendly to you and your allies. It understands your languages, obeys your commands, and takes its turn immediately after you on your Initiative count. If you issue no commands, the creature defends itself but takes no other actions.The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if its creature form drops to 0 Hit Points or if you take a Magic action while touching the creature to make it revert to figurine form. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified below. Bronze Griffon (Rare). This bronze statuette is of a griffon rampant. It can become a Griffon for up to 6 hours. Once it has been used, it can't be used again until 5 days have passed.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "figurine-of-wondrous-power-ebony-fly",
+    "name": "Figurine of Wondrous Power, Ebony Fly",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "A Figurine of Wondrous Power is a statuette small enough to fit in a pocket. If you take a Magic action to throw the figurine to a point on the ground within 60 feet of yourself, the figurine becomes a living creature specified in the figurine's description below. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.The creature is Friendly to you and your allies. It understands your languages, obeys your commands, and takes its turn immediately after you on your Initiative count. If you issue no commands, the creature defends itself but takes no other actions.The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if its creature form drops to 0 Hit Points or if you take a Magic action while touching the creature to make it revert to figurine form. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified below. Ebony Fly (Rare). This ebony statuette, carved in the likeness of a horsefly, can become a Giant Fly for up to 12 hours and can be ridden as a mount. Once it has been used, it can't be used again until 2 days have passed.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "figurine-of-wondrous-power-golden-lions",
+    "name": "Figurine of Wondrous Power, Golden Lions",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "A Figurine of Wondrous Power is a statuette small enough to fit in a pocket. If you take a Magic action to throw the figurine to a point on the ground within 60 feet of yourself, the figurine becomes a living creature specified in the figurine's description below. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.The creature is Friendly to you and your allies. It understands your languages, obeys your commands, and takes its turn immediately after you on your Initiative count. If you issue no commands, the creature defends itself but takes no other actions.The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if its creature form drops to 0 Hit Points or if you take a Magic action while touching the creature to make it revert to figurine form. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified below. Golden Lions (Rare). These gold statuettes of lions are always created in pairs. You can use one figurine or both simultaneously. Each can become a Lion for up to 1 hour. Once a lion has been used, it can't be used again until 7 days have passed.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "figurine-of-wondrous-power-ivory-goats",
+    "name": "Figurine of Wondrous Power, Ivory Goats",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "A Figurine of Wondrous Power is a statuette small enough to fit in a pocket. If you take a Magic action to throw the figurine to a point on the ground within 60 feet of yourself, the figurine becomes a living creature specified in the figurine's description below. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.The creature is Friendly to you and your allies. It understands your languages, obeys your commands, and takes its turn immediately after you on your Initiative count. If you issue no commands, the creature defends itself but takes no other actions.The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if its creature form drops to 0 Hit Points or if you take a Magic action while touching the creature to make it revert to figurine form. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified below. Ivory Goats (Rare). These ivory statuettes of goats are always created in sets of three. Each goat looks unique and functions differently from the others. Their properties are as follows:Goat of Terror. This figurine can become a Giant Goat for up to 3 hours. The goat can't attack, but you can (harmlessly) remove its horns and use them as weapons. One horn becomes a +1 Lance, and the other becomes a +2 Longsword. Removing a horn requires a Magic action, and the weapons disappear and the horns return when the goat reverts to figurine form. While you ride the goat, any Hostile creature that starts its turn within a 30-foot Emanation originating from the goat must succeed on a DC 15 Wisdom saving throw or have the Frightened condition for 1 minute, until you are no longer riding the goat, or until the goat reverts to figurine form. The Frightened creature repeats the save at the end of each of its turns, ending the effect on itself on a success. Once it succeeds on the save, a creature is immune to this effect for the next 24 hours. Once the figurine has been used, it can't be used again until 15 days have passed.Goat of Traveling. This figurine can become a Large goat with the same statistics as a Riding Horse. It has 24 charges, and each hour or portion thereof it spends in goat form costs 1 charge. While it has charges, you can use it as often as you wish. When it runs out of charges, it reverts to a figurine and can't be used again until 7 days have passed, when it regains all expended charges.Goat of Travail. This figurine can become a Giant Goat for up to 3 hours. Once it has been used, it can't be used again until 30 days have passed.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "figurine-of-wondrous-power-marble-elephant",
+    "name": "Figurine of Wondrous Power, Marble Elephant",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "A Figurine of Wondrous Power is a statuette small enough to fit in a pocket. If you take a Magic action to throw the figurine to a point on the ground within 60 feet of yourself, the figurine becomes a living creature specified in the figurine's description below. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.The creature is Friendly to you and your allies. It understands your languages, obeys your commands, and takes its turn immediately after you on your Initiative count. If you issue no commands, the creature defends itself but takes no other actions.The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if its creature form drops to 0 Hit Points or if you take a Magic action while touching the creature to make it revert to figurine form. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified below. Marble Elephant (Rare). This marble statuette resembles a trumpeting elephant. It can become an Elephant for up to 24 hours. Once it has been used, it can't be used again until 7 days have passed.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "figurine-of-wondrous-power-obsidian-steed",
+    "name": "Figurine of Wondrous Power, Obsidian Steed",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "A Figurine of Wondrous Power is a statuette small enough to fit in a pocket. If you take a Magic action to throw the figurine to a point on the ground within 60 feet of yourself, the figurine becomes a living creature specified in the figurine's description below. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.The creature is Friendly to you and your allies. It understands your languages, obeys your commands, and takes its turn immediately after you on your Initiative count. If you issue no commands, the creature defends itself but takes no other actions.The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if its creature form drops to 0 Hit Points or if you take a Magic action while touching the creature to make it revert to figurine form. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified below. Obsidian Steed (Very Rare). This polished obsidian horse can become a Nightmare for up to 24 hours. The nightmare fights only to defend itself. Once it has been used, it can't be used again until 5 days have passed.The figurine has a 10 percent chance each time you use it to ignore your orders, including a command to revert to figurine form. If you mount the nightmare while it is ignoring your orders, you and the nightmare are instantly transported to a random location on the plane of Hades, where the nightmare reverts to figurine form.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "figurine-of-wondrous-power-onyx-dog",
+    "name": "Figurine of Wondrous Power, Onyx Dog",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "A Figurine of Wondrous Power is a statuette small enough to fit in a pocket. If you take a Magic action to throw the figurine to a point on the ground within 60 feet of yourself, the figurine becomes a living creature specified in the figurine's description below. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.The creature is Friendly to you and your allies. It understands your languages, obeys your commands, and takes its turn immediately after you on your Initiative count. If you issue no commands, the creature defends itself but takes no other actions.The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if its creature form drops to 0 Hit Points or if you take a Magic action while touching the creature to make it revert to figurine form. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified below. Onyx Dog (Rare). This onyx statuette of a dog can become a Mastiff for up to 6 hours. The mastiff has an Intelligence of 8 and can speak Common. It also has Blindsight with a range of 60 feet. Once it has been used, it can't be used again until 7 days have passed.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "figurine-of-wondrous-power-serpentine-owl",
+    "name": "Figurine of Wondrous Power, Serpentine Owl",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "A Figurine of Wondrous Power is a statuette small enough to fit in a pocket. If you take a Magic action to throw the figurine to a point on the ground within 60 feet of yourself, the figurine becomes a living creature specified in the figurine's description below. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.The creature is Friendly to you and your allies. It understands your languages, obeys your commands, and takes its turn immediately after you on your Initiative count. If you issue no commands, the creature defends itself but takes no other actions.The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if its creature form drops to 0 Hit Points or if you take a Magic action while touching the creature to make it revert to figurine form. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified below. Serpentine Owl (Rare). This serpentine statuette of an owl can become a Giant Owl for up to 8 hours. The owl can communicate telepathically with you at any range if you and it are on the same plane of existence. Once it has been used, it can't be used again until 2 days have passed.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "figurine-of-wondrous-power-silver-raven",
+    "name": "Figurine of Wondrous Power, Silver Raven",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "A Figurine of Wondrous Power is a statuette small enough to fit in a pocket. If you take a Magic action to throw the figurine to a point on the ground within 60 feet of yourself, the figurine becomes a living creature specified in the figurine's description below. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.The creature is Friendly to you and your allies. It understands your languages, obeys your commands, and takes its turn immediately after you on your Initiative count. If you issue no commands, the creature defends itself but takes no other actions.The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if its creature form drops to 0 Hit Points or if you take a Magic action while touching the creature to make it revert to figurine form. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified below. Silver Raven (Uncommon). This silver statuette of a raven can become a Raven for up to 12 hours. Once it has been used, it can't be used again until 2 days have passed. While in raven form, the figurine grants you the ability to cast Animal Messenger on it.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "figurine-of-wondrous-power",
+    "name": "Figurine of Wondrous Power",
+    "type": "wondrous",
+    "rarity": "varies",
+    "weight": 0,
+    "description": "Multiple variations of this item exist, as listed below:Figurine of Wondrous Power, Bronze GriffonFigurine of Wondrous Power, Ebony FlyFigurine of Wondrous Power, Golden LionsFigurine of Wondrous Power, Ivory GoatsFigurine of Wondrous Power, Marble ElephantFigurine of Wondrous Power, Obsidian SteedFigurine of Wondrous Power, Onyx DogFigurine of Wondrous Power, Serpentine OwlFigurine of Wondrous Power, Silver Raven",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "folding-boat",
+    "name": "Folding Boat",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 4,
+    "description": "This object appears as a wooden box that measures 12 inches long, 6 inches wide, and 6 inches deep. It weighs 4 pounds and floats. It can be opened to store items inside. This item also has three command words, each requiring a Magic action to use:First Command Word. The box unfolds into a Rowboat.Second Command Word. The box unfolds into a Keelboat.Third Command Word. The Folding Boat folds back into a box if no creatures are aboard. Any objects in the vessel that can't fit inside the box remain outside the box as it folds. Any objects in the vessel that can fit inside the box do so.When the box becomes a vessel, its weight becomes that of a normal vessel its size, and anything that was stored in the box remains in the boat.Statistics for the Rowboat and Keelboat appear in the Player's Handbook. If either vessel is reduced to 0 Hit Points, the Folding Boat is destroyed.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "gauntlets-of-ogre-power",
+    "name": "Gauntlets of Ogre Power",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "Your Strength score is 19 while you wear these gauntlets. They have no effect on you if your Strength is 19 or higher without them.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "gem-of-brightness",
+    "name": "Gem of Brightness",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "This prism has 50 charges. While you are holding it, you can take a Magic action and use one of three command words to cause one of the following effects:First Command Word. The gem sheds Bright Light in a 30-foot radius and Dim Light for an additional 30 feet. This effect doesn't expend a charge. It lasts until you take a Bonus Action to repeat the command word or until you use another function of the gem.Second Command Word. You expend 1 charge and cause the gem to fire a brilliant beam of light at one creature you can see within 60 feet of yourself. The creature must succeed on a DC 15 Constitution saving throw or have the Blinded condition for 1 minute. The creature repeats the save at the end of each of its turns, ending the effect on itself on a success.Third Command Word. You expend 5 charges and cause the gem to flare with intense light in a 30-foot Cone. Each creature in the Cone makes a saving throw as if struck by the beam created with the second command word.When all of the gem's charges are expended, the gem becomes a nonmagical jewel worth 50 GP.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "gem-of-seeing",
+    "name": "Gem of Seeing",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "This gem has 3 charges. As a Magic action, you can expend 1 charge. For the next 10 minutes, you have Truesight out to 120 feet when you peer through the gem.The gem regains 1d3 expended charges daily at dawn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "goggles-of-night",
+    "name": "Goggles of Night",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "While wearing these dark lenses, you have Darkvision out to 60 feet. If you already have Darkvision, wearing the goggles increases its range by 60 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "grappling-hook",
+    "name": "Kanca",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 4,
+    "description": "As a Utilize action, you can throw the Grappling Hook at a railing, a ledge, or another catch within 50 feet of yourself, and the hook catches on if you succeed on a DC 13 Dexterity (Acrobatics) check. If you tied a Rope to the hook, you can then climb it.",
+    "cost": {
+      "quantity": 2,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "grenade-launcher",
+    "name": "Bomba Atar",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 7,
+    "description": "As an action, you can either throw a grenade at a point up to 60 feet away or use a Grenade Launcher to propel the grenade to a point up to 1,000 feet away. The grenade explodes at that point, creating a particular effect in a 20-foot-radius Sphere.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "hag-eye",
+    "name": "Hag Eye",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "A Hag Eye has 3 charges. While wearing or holding this item, you can expend 1 charge to cast Darkvision (targeting yourself only) or See Invisibility. The Hag Eye regains all expended charges daily at dawn. Coven Sensor. The Hag Eye is usually entrusted to a hag's minion for safekeeping and transport. As a Magic action, a hag who belongs to the coven that created the Hag Eye can see what the Hag Eye sees if the hag and the Hag Eye are on the same plane of existence. This effect lasts as long as the hag maintains Concentration. Multiple hags in the coven can see through the Hag Eye simultaneously. Creating a Hag Eye. Only a hag coven can craft this item, which is made from a real eye coated in varnish and often fitted to a pendant or another wearable item. A hag coven can have only one Hag Eye at a time, and creating a new one requires all three members of the coven to perform a special rite. This rite takes 1 hour, and the hags can't perform it if one or more of them has the Incapacitated condition. If the hags take any other actions during this rite, the rite fails and ends.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "hand-of-vecna",
+    "name": "Hand of Vecna",
+    "type": "wondrous",
+    "rarity": "Yadigâr",
+    "weight": 0,
+    "description": "Vecna was a mighty wizard who, through magic and conquest, forged a terrible empire. For all his power, however, Vecna feared death and took steps to prevent his demise by becoming a lich.A treacherous lieutenant named Kas brought Vecna's rule to an end in a terrible battle. Of Vecna, all that remained were one hand and one eye, grisly Artifacts that still seek to work Vecna's will in the world.The Eye of Vecna and the Hand of Vecna are separate Artifacts that might be found together or separately. The eye looks like a bloodshot organ torn free from the socket. The hand is a shriveled left extremity. Random Properties of the Eye and Hand. The Hand of Vecna has the following random properties:1 minor beneficial property1 major beneficial property1 minor detrimental property Attuning to the Hand. To attune to the hand, you must press it against the stump where your left hand was. The hand grafts itself to your arm and becomes a functioning appendage. If the hand is ever removed, you die. Properties of the Hand. When you are attuned to the hand, your alignment is Neutral Evil, and you gain the following benefits:Great Strength. Your Strength becomes 20 unless it is already 20 or higher.Icy Touch. Any melee spell attack you make with the hand and any melee attack made with a weapon held by it deals an extra 2d8 Cold damage on a hit.Spellcasting. The hand has 8 charges and regains 1d4 + 4 expended charges daily at dawn. You can cast a spell on the Hand of Vecna Spells table from the hand (save DC 18). The table indicates how many charges you must expend to cast the spell. Each time you cast a spell from it, the hand casts Suggestion on you (save DC 18; no Concentration required), demanding that you commit an evil act. The hand might have a specific act in mind or leave it up to you.Hand of Vecna SpellsSpellCharge CostFinger of Death5Sleep1Slow2Teleport3 Destroying the Eye and Hand. If the Eye of Vecna and the Hand of Vecna are both attached to the same creature and that creature is slain by the Sword of Kas, both the eye and the hand burst into flame, turn to ash, and are destroyed. Any other attempt to destroy the eye or hand seems to work, but the Artifact reappears in one of Vecna's many hidden vaults, where it waits to be rediscovered.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "headband-of-intellect",
+    "name": "Headband of Intellect",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "Your Intelligence score is 19 while you wear this headband. It has no effect on you if your Intelligence is 19 or higher without it.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "holy-water",
+    "name": "Holy Water",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "When you take the Attack action, you can replace one of your attacks with throwing a flask of Holy Water. Target one creature you can see within 20 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or take 2d8 Radiant damage if it is a Fiend or an Undead.",
+    "cost": {
+      "quantity": 25,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "horseshoes-of-a-zephyr",
+    "name": "Horseshoes of a Zephyr",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "These horseshoes come in a set of four. As a Magic action, you can touch one of the horseshoes to the hoof of a horse or similar creature, whereupon the horseshoe affixes itself to the hoof. Removing a horseshoe also takes a Magic action.While all four shoes are affixed to the hooves of a horse or similar creature, they allow the creature to move normally while floating 4 inches above a surface. This effect means the creature can cross or stand above nonsolid or unstable surfaces, such as water or lava. The creature leaves no tracks and ignores Difficult Terrain. In addition, the creature can travel for up to 12 hours a day without gaining Exhaustion levels from extended travel.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "horseshoes-of-speed",
+    "name": "Horseshoes of Speed",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "These horseshoes come in a set of four. As a Magic action, you can touch one of the horseshoes to the hoof of a horse or similar creature, whereupon the horseshoe affixes itself to the hoof. Removing a horseshoe also takes a Magic action.While all four horseshoes are attached to the same creature, its Speed is increased by 30 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "hunting-trap",
+    "name": "Hunting Trap",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 25,
+    "description": "As a Utilize action, you can set a Hunting Trap, which is a sawtooth steel ring that snaps shut when a creature steps on a pressure plate in the center. The trap is affixed by a heavy chain to an immobile object, such as a tree or a spike driven into the ground. A creature that steps on the plate must succeed on a DC 13 Dexterity saving throw or take 1d4 Piercing damage and have its Speed reduced to 0 until the start of its next turn. Thereafter, until the creature breaks free of the trap, its movement is limited by the length of the chain (typically 3 feet). A creature can use its action to make a DC 13 Strength (Athletics) check, freeing itself or another creature within its reach on a success. Each failed check deals 1 Piercing damage to the trapped creature.",
+    "cost": {
+      "quantity": 5,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "ink-pen",
+    "name": "Ink Pen",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Using Ink, an Ink Pen is used to write or draw.",
+    "cost": {
+      "quantity": 2,
+      "unit": "cp"
+    }
+  },
+  {
+    "id": "ink",
+    "name": "Ink",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Ink comes in a 1-ounce bottle, which provides enough ink to write about 500 pages.",
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "instrument-of-illusions",
+    "name": "Instrument of Illusions",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "While you are playing this musical instrument, you can take a Magic action to create harmless, illusory visual effects within a 5-foot Emanation originating from the instrument. If you are a Bard, the size of the Emanation increases to 15 feet. Sample visual effects include luminous musical notes, a spectral dancer, butterflies, and gently falling snow. The magical effects have neither substance nor sound, and they are obviously illusory. The effects end when you stop playing.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "instrument-of-scribing",
+    "name": "Instrument of Scribing",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "This musical instrument has 3 charges and regains all expended charges daily at dawn. While you are playing it, you can take a Magic action to expend 1 charge and write a magical message on a nonmagical object or surface that you can see within 30 feet of yourself. The message can be up to six words long and is written in a language you know. If you are a Bard, you can scribe an additional seven words and make the message glow faintly, allowing it to be seen in nonmagical Darkness. Casting the Dispel Magic spell on the message erases it. Otherwise, the message fades away after 24 hours.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "instrument-of-the-bards-anstruth-harp",
+    "name": "Instrument of the Bards, Anstruth Harp",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "An Instrument of the Bards is superior to an ordinary instrument in every way. Seven types of these instruments exist, each named after a bard college. A creature that attempts to play the instrument without being attuned to it must succeed on a DC 15 Wisdom saving throw or take 2d4 Psychic damage.You can play Anstruth Harp to cast one of the following spells: Fly, Invisibility, Levitate, Protection from Evil and Good, Cure Wounds (level 5), Ice Storm, and Wall of Thorns. Once the Anstruth Harp has been used to cast a spell, it can't be used to cast that spell again until the next dawn. The spells use your spellcasting ability and spell save DC.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "instrument-of-the-bards-canaith-mandolin",
+    "name": "Instrument of the Bards, Canaith Mandolin",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "An Instrument of the Bards is superior to an ordinary instrument in every way. Seven types of these instruments exist, each named after a bard college. A creature that attempts to play the instrument without being attuned to it must succeed on a DC 15 Wisdom saving throw or take 2d4 Psychic damage.You can play the Canaith Mandolin to cast one of the following spells: Fly, Invisibility, Levitate, Protection from Evil and Good, Cure Wounds (level 3), Dispel Magic, and Protection from Energy (Lightning damage only). Once the Canaith Mandolin has been used to cast a spell, it can't be used to cast that spell again until the next dawn. The spells use your spellcasting ability and spell save DC.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "instrument-of-the-bards-fochlucan-bandore",
+    "name": "Instrument of the Bards, Fochlucan Bandore",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "An Instrument of the Bards is superior to an ordinary instrument in every way. Seven types of these instruments exist, each named after a bard college. A creature that attempts to play the instrument without being attuned to it must succeed on a DC 15 Wisdom saving throw or take 2d4 Psychic damage.You can play the Fochlucan Bandore to cast one of the following spells: Fly, Invisibility, Levitate, Protection from Evil and Good, Entangle, Faerie Fire, Shillelagh, and Speak with Animals. Once the Fochlucan Bandore has been used to cast a spell, it can't be used to cast that spell again until the next dawn. The spells use your spellcasting ability and spell save DC.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "instrument-of-the-bards-mac-fuirmidh-cittern",
+    "name": "Instrument of the Bards, Mac-Fuirmidh Cittern",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "An Instrument of the Bards is superior to an ordinary instrument in every way. Seven types of these instruments exist, each named after a bard college. A creature that attempts to play the instrument without being attuned to it must succeed on a DC 15 Wisdom saving throw or take 2d4 Psychic damage.You can play the Mac-Fuirmidh Cittern to cast one of the following spells: Fly, Invisibility, Levitate, Protection from Evil and Good, Barkskin, Cure Wounds, and Fog Cloud. Once the Mac-Fuirmidh Cittern has been used to cast a spell, it can't be used to cast that spell again until the next dawn. The spells use your spellcasting ability and spell save DC.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "instrument-of-the-bards-ollamh-harp",
+    "name": "Instrument of the Bards, Ollamh Harp",
+    "type": "wondrous",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "An Instrument of the Bards is superior to an ordinary instrument in every way. Seven types of these instruments exist, each named after a bard college. A creature that attempts to play the instrument without being attuned to it must succeed on a DC 15 Wisdom saving throw or take 2d4 Psychic damage.You can play the Ollamh Harp to cast one of the following spells: Fly, Invisibility, Levitate, Protection from Evil and Good, Confusion, Control Weather, and Fire Storm. Once the Ollamh Harp has been used to cast a spell, it can't be used to cast that spell again until the next dawn. The spells use your spellcasting ability and spell save DC.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "instrument-of-the-bards",
+    "name": "Instrument of the Bards",
+    "type": "wondrous",
+    "rarity": "varies",
+    "weight": 0,
+    "description": "An Instrument of the Bards is superior to an ordinary instrument in every way. Seven types of these instruments exist, each named after a bard college. A creature that attempts to play the instrument without being attuned to it must succeed on a DC 15 Wisdom saving throw or take 2d4 Psychic damage.You can play the instrument to cast one of its spells. Once the instrument has been used to cast a spell, it can't be used to cast that spell again until the next dawn. The spells use your spellcasting ability and spell save DC.All Instrument of the Bards can be used to cast the following spells: Fly, Invisibility, Levitate, Protection from Evil and GoodMultiple variations of this item exist, as listed below:Instrument of the Bards, Anstruth HarpInstrument of the Bards, Canaith MandolinInstrument of the Bards, Cli LyreInstrument of the Bards, Doss LuteInstrument of the Bards, Fochlucan BandoreInstrument of the Bards, Mac-Fuirmidh CitternInstrument of the Bards, Ollamh Harp",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "ioun-stone-absorption",
+    "name": "Ioun Stone, Absorption",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "Roughly marble sized, Ioun Stones are named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun Stones exist, each type a distinct combination of shape and color.When you take a Magic action to toss an Ioun Stone into the air, the stone orbits your head at a distance of 1d3 feet, conferring its benefit to you while doing so. You can have up to three Ioun Stones orbiting your head at the same time.Each Ioun Stone orbiting your head is considered to be an object you are wearing. The orbiting stone avoids contact with other creatures and objects, adjusting its orbit to avoid collisions and thwarting all attempts by other creatures to attack or snatch it.As a Utilize action, you can seize and stow any number of Ioun Stones orbiting your head. If your Attunement to an Ioun Stone ends while it's orbiting your head, the stone falls as though you had dropped it.While this pale lavender ellipsoid orbits your head, you can take a Reaction to cancel a spell of level 4 or lower cast by a creature you can see. A canceled spell has no effect, and any resources used to cast it are wasted. Once the stone has canceled 20 levels of spells, it burns out, turns dull gray, and loses its magic.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "ioun-stone-agility",
+    "name": "Ioun Stone, Agility",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "Roughly marble sized, Ioun Stones are named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun Stones exist, each type a distinct combination of shape and color.When you take a Magic action to toss an Ioun Stone into the air, the stone orbits your head at a distance of 1d3 feet, conferring its benefit to you while doing so. You can have up to three Ioun Stones orbiting your head at the same time.Each Ioun Stone orbiting your head is considered to be an object you are wearing. The orbiting stone avoids contact with other creatures and objects, adjusting its orbit to avoid collisions and thwarting all attempts by other creatures to attack or snatch it.As a Utilize action, you can seize and stow any number of Ioun Stones orbiting your head. If your Attunement to an Ioun Stone ends while it's orbiting your head, the stone falls as though you had dropped it.Your Dexterity increases by 2, to a maximum of 20, while this deep-red sphere orbits your head.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "ioun-stone-awareness",
+    "name": "Ioun Stone, Awareness",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "Roughly marble sized, Ioun Stones are named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun Stones exist, each type a distinct combination of shape and color.When you take a Magic action to toss an Ioun Stone into the air, the stone orbits your head at a distance of 1d3 feet, conferring its benefit to you while doing so. You can have up to three Ioun Stones orbiting your head at the same time.Each Ioun Stone orbiting your head is considered to be an object you are wearing. The orbiting stone avoids contact with other creatures and objects, adjusting its orbit to avoid collisions and thwarting all attempts by other creatures to attack or snatch it.As a Utilize action, you can seize and stow any number of Ioun Stones orbiting your head. If your Attunement to an Ioun Stone ends while it's orbiting your head, the stone falls as though you had dropped it.While this dark-blue rhomboid orbits your head, you have Advantage on Initiative rolls and Wisdom (Perception) checks.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "ioun-stone-fortitude",
+    "name": "Ioun Stone, Fortitude",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "Roughly marble sized, Ioun Stones are named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun Stones exist, each type a distinct combination of shape and color.When you take a Magic action to toss an Ioun Stone into the air, the stone orbits your head at a distance of 1d3 feet, conferring its benefit to you while doing so. You can have up to three Ioun Stones orbiting your head at the same time.Each Ioun Stone orbiting your head is considered to be an object you are wearing. The orbiting stone avoids contact with other creatures and objects, adjusting its orbit to avoid collisions and thwarting all attempts by other creatures to attack or snatch it.As a Utilize action, you can seize and stow any number of Ioun Stones orbiting your head. If your Attunement to an Ioun Stone ends while it's orbiting your head, the stone falls as though you had dropped it.Your Constitution increases by 2, to a maximum of 20, while this pink rhomboid orbits your head.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "ioun-stone-greater-absorption",
+    "name": "Ioun Stone, Greater Absorption",
+    "type": "wondrous",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "Roughly marble sized, Ioun Stones are named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun Stones exist, each type a distinct combination of shape and color.When you take a Magic action to toss an Ioun Stone into the air, the stone orbits your head at a distance of 1d3 feet, conferring its benefit to you while doing so. You can have up to three Ioun Stones orbiting your head at the same time.Each Ioun Stone orbiting your head is considered to be an object you are wearing. The orbiting stone avoids contact with other creatures and objects, adjusting its orbit to avoid collisions and thwarting all attempts by other creatures to attack or snatch it.As a Utilize action, you can seize and stow any number of Ioun Stones orbiting your head. If your Attunement to an Ioun Stone ends while it's orbiting your head, the stone falls as though you had dropped it.While this marbled lavender and green ellipsoid orbits your head, you can take a Reaction to cancel a spell of level 8 or lower cast by a creature you can see. A canceled spell has no effect, and any resources used to cast it are wasted. Once the stone has canceled 20 levels of spells, it burns out, turns dull gray, and loses its magic.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "ioun-stone-insight",
+    "name": "Ioun Stone, Insight",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "Roughly marble sized, Ioun Stones are named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun Stones exist, each type a distinct combination of shape and color.When you take a Magic action to toss an Ioun Stone into the air, the stone orbits your head at a distance of 1d3 feet, conferring its benefit to you while doing so. You can have up to three Ioun Stones orbiting your head at the same time.Each Ioun Stone orbiting your head is considered to be an object you are wearing. The orbiting stone avoids contact with other creatures and objects, adjusting its orbit to avoid collisions and thwarting all attempts by other creatures to attack or snatch it.As a Utilize action, you can seize and stow any number of Ioun Stones orbiting your head. If your Attunement to an Ioun Stone ends while it's orbiting your head, the stone falls as though you had dropped it.Your Wisdom increases by 2, to a maximum of 20, while this incandescent blue sphere orbits your head.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "ioun-stone-intellect",
+    "name": "Ioun Stone, Intellect",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "Roughly marble sized, Ioun Stones are named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun Stones exist, each type a distinct combination of shape and color.When you take a Magic action to toss an Ioun Stone into the air, the stone orbits your head at a distance of 1d3 feet, conferring its benefit to you while doing so. You can have up to three Ioun Stones orbiting your head at the same time.Each Ioun Stone orbiting your head is considered to be an object you are wearing. The orbiting stone avoids contact with other creatures and objects, adjusting its orbit to avoid collisions and thwarting all attempts by other creatures to attack or snatch it.As a Utilize action, you can seize and stow any number of Ioun Stones orbiting your head. If your Attunement to an Ioun Stone ends while it's orbiting your head, the stone falls as though you had dropped it.Your Intelligence increases by 2, to a maximum of 20, while this marbled scarlet and blue sphere orbits your head.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "ioun-stone-leadership",
+    "name": "Ioun Stone, Leadership",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "Roughly marble sized, Ioun Stones are named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun Stones exist, each type a distinct combination of shape and color.When you take a Magic action to toss an Ioun Stone into the air, the stone orbits your head at a distance of 1d3 feet, conferring its benefit to you while doing so. You can have up to three Ioun Stones orbiting your head at the same time.Each Ioun Stone orbiting your head is considered to be an object you are wearing. The orbiting stone avoids contact with other creatures and objects, adjusting its orbit to avoid collisions and thwarting all attempts by other creatures to attack or snatch it.As a Utilize action, you can seize and stow any number of Ioun Stones orbiting your head. If your Attunement to an Ioun Stone ends while it's orbiting your head, the stone falls as though you had dropped it.Your Charisma increases by 2, to a maximum of 20, while this marbled pink and green sphere orbits your head.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "ioun-stone-mastery",
+    "name": "Ioun Stone, Mastery",
+    "type": "wondrous",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "Roughly marble sized, Ioun Stones are named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun Stones exist, each type a distinct combination of shape and color.When you take a Magic action to toss an Ioun Stone into the air, the stone orbits your head at a distance of 1d3 feet, conferring its benefit to you while doing so. You can have up to three Ioun Stones orbiting your head at the same time.Each Ioun Stone orbiting your head is considered to be an object you are wearing. The orbiting stone avoids contact with other creatures and objects, adjusting its orbit to avoid collisions and thwarting all attempts by other creatures to attack or snatch it.As a Utilize action, you can seize and stow any number of Ioun Stones orbiting your head. If your Attunement to an Ioun Stone ends while it's orbiting your head, the stone falls as though you had dropped it.Your Proficiency Bonus increases by 1 while this pale green prism orbits your head.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "ioun-stone-protection",
+    "name": "Ioun Stone, Protection",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "Roughly marble sized, Ioun Stones are named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun Stones exist, each type a distinct combination of shape and color.When you take a Magic action to toss an Ioun Stone into the air, the stone orbits your head at a distance of 1d3 feet, conferring its benefit to you while doing so. You can have up to three Ioun Stones orbiting your head at the same time.Each Ioun Stone orbiting your head is considered to be an object you are wearing. The orbiting stone avoids contact with other creatures and objects, adjusting its orbit to avoid collisions and thwarting all attempts by other creatures to attack or snatch it.As a Utilize action, you can seize and stow any number of Ioun Stones orbiting your head. If your Attunement to an Ioun Stone ends while it's orbiting your head, the stone falls as though you had dropped it.You gain a +1 bonus to Armor Class while this dusty-rose prism orbits your head.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "ioun-stone-regeneration",
+    "name": "Ioun Stone, Regeneration",
+    "type": "wondrous",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "Roughly marble sized, Ioun Stones are named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun Stones exist, each type a distinct combination of shape and color.When you take a Magic action to toss an Ioun Stone into the air, the stone orbits your head at a distance of 1d3 feet, conferring its benefit to you while doing so. You can have up to three Ioun Stones orbiting your head at the same time.Each Ioun Stone orbiting your head is considered to be an object you are wearing. The orbiting stone avoids contact with other creatures and objects, adjusting its orbit to avoid collisions and thwarting all attempts by other creatures to attack or snatch it.As a Utilize action, you can seize and stow any number of Ioun Stones orbiting your head. If your Attunement to an Ioun Stone ends while it's orbiting your head, the stone falls as though you had dropped it.You regain 15 Hit Points at the end of each hour this pearly white spindle orbits your head if you have at least 1 Hit Point.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "ioun-stone-reserve",
+    "name": "Ioun Stone, Reserve",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "Roughly marble sized, Ioun Stones are named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun Stones exist, each type a distinct combination of shape and color.When you take a Magic action to toss an Ioun Stone into the air, the stone orbits your head at a distance of 1d3 feet, conferring its benefit to you while doing so. You can have up to three Ioun Stones orbiting your head at the same time.Each Ioun Stone orbiting your head is considered to be an object you are wearing. The orbiting stone avoids contact with other creatures and objects, adjusting its orbit to avoid collisions and thwarting all attempts by other creatures to attack or snatch it.As a Utilize action, you can seize and stow any number of Ioun Stones orbiting your head. If your Attunement to an Ioun Stone ends while it's orbiting your head, the stone falls as though you had dropped it.This vibrant purple prism stores spells cast into it, holding them until you use them. The stone can store up to 4 levels of spells at a time. When found, it contains 1d4 levels of stored spells chosen by the DM.Any creature can cast a spell of level 1 through 4 into the stone by touching it as the spell is cast. The spell has no effect, other than to be stored in the stone. If the stone can't hold the spell, the spell is expended without effect. The level of the slot used to cast the spell determines how much space it uses.While this stone orbits your head, you can cast any spell stored in it. The spell uses the slot level, spell save DC, spell attack bonus, and spellcasting ability of the original caster but is otherwise treated as if you cast the spell. The spell cast from the stone is no longer stored in it, freeing up space.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "ioun-stone-strength",
+    "name": "Ioun Stone, Strength",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "Roughly marble sized, Ioun Stones are named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun Stones exist, each type a distinct combination of shape and color.When you take a Magic action to toss an Ioun Stone into the air, the stone orbits your head at a distance of 1d3 feet, conferring its benefit to you while doing so. You can have up to three Ioun Stones orbiting your head at the same time.Each Ioun Stone orbiting your head is considered to be an object you are wearing. The orbiting stone avoids contact with other creatures and objects, adjusting its orbit to avoid collisions and thwarting all attempts by other creatures to attack or snatch it.As a Utilize action, you can seize and stow any number of Ioun Stones orbiting your head. If your Attunement to an Ioun Stone ends while it's orbiting your head, the stone falls as though you had dropped it.Your Strength increases by 2, to a maximum of 20, while this pale blue rhomboid orbits your head.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "ioun-stone-sustenance",
+    "name": "Ioun Stone, Sustenance",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "Roughly marble sized, Ioun Stones are named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun Stones exist, each type a distinct combination of shape and color.When you take a Magic action to toss an Ioun Stone into the air, the stone orbits your head at a distance of 1d3 feet, conferring its benefit to you while doing so. You can have up to three Ioun Stones orbiting your head at the same time.Each Ioun Stone orbiting your head is considered to be an object you are wearing. The orbiting stone avoids contact with other creatures and objects, adjusting its orbit to avoid collisions and thwarting all attempts by other creatures to attack or snatch it.As a Utilize action, you can seize and stow any number of Ioun Stones orbiting your head. If your Attunement to an Ioun Stone ends while it's orbiting your head, the stone falls as though you had dropped it.You don't need to eat or drink while this clear spindle orbits your head.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "ioun-stone",
+    "name": "Ioun Stone",
+    "type": "wondrous",
+    "rarity": "varies",
+    "weight": 0,
+    "description": "Roughly marble sized, Ioun Stones are named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun Stones exist, each type a distinct combination of shape and color.When you take a Magic action to toss an Ioun Stone into the air, the stone orbits your head at a distance of 1d3 feet, conferring its benefit to you while doing so. You can have up to three Ioun Stones orbiting your head at the same time.Each Ioun Stone orbiting your head is considered to be an object you are wearing. The orbiting stone avoids contact with other creatures and objects, adjusting its orbit to avoid collisions and thwarting all attempts by other creatures to attack or snatch it.As a Utilize action, you can seize and stow any number of Ioun Stones orbiting your head. If your Attunement to an Ioun Stone ends while it's orbiting your head, the stone falls as though you had dropped it.The type of stone determines its rarity and effects.Multiple variations of this item exist, as listed below:Ioun Stone, AbsorptionIoun Stone, AgilityIoun Stone, AwarenessIoun Stone, FortitudeIoun Stone, Greater AbsorptionIoun Stone, InsightIoun Stone, IntellectIoun Stone, LeadershipIoun Stone, MasteryIoun Stone, ProtectionIoun Stone, RegenerationIoun Stone, ReserveIoun Stone, StrengthIoun Stone, Sustenance",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "iron-bands-of-bilarro",
+    "name": "Iron Bands of Bilarro",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 1,
+    "description": "This rusty iron sphere measures 3 inches in diameter and weighs 1 pound. You can take a Magic action to throw the sphere at a Huge or smaller creature you can see within 60 feet of yourself. As the sphere moves through the air, it opens into a tangle of metal bands.Make a ranged attack roll with an attack bonus equal to your Dexterity modifier plus your Proficiency Bonus. On a hit, the target has the Restrained condition until you take a Bonus Action to issue a command that releases it. Doing so or missing with the attack causes the bands to contract and become a sphere once more.A creature that can touch the bands, including the one Restrained, can take an action to make a DC 20 Strength (Athletics) check to break the iron bands. On a successful check, the item is destroyed, and the Restrained creature is freed. On a failed check, any further attempts made by that creature automatically fail until 24 hours have elapsed.Once the bands are used, they can't be used again until the next dawn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "iron-pot",
+    "name": "Iron Pot",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 10,
+    "description": "An Iron Pot holds up to 1 gallon.",
+    "cost": {
+      "quantity": 2,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "iron-spike",
+    "name": "Iron Spike",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0.5,
+    "description": "Iron Spikes come in bundles of ten. As a Utilize action, you can use a blunt object, such as a Light Hammer, to hammer a spike into wood, earth, or a similar material. You can do so to jam a door shut or to then tie a Rope or Chain to the Spike.",
+    "cost": {
+      "quantity": 1,
+      "unit": "sp"
+    }
+  },
+  {
+    "id": "iron-spikes",
+    "name": "Iron Spikes",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 5,
+    "description": "Iron Spikes come in bundles of ten. As a Utilize action, you can use a blunt object, such as a Light Hammer, to hammer a spike into wood, earth, or a similar material. You can do so to jam a door shut or to then tie a Rope or Chain to the Spike.",
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "ladder",
+    "name": "Ladder",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 25,
+    "description": "A Ladder is 10 feet tall. You must climb to move up or down it.",
+    "cost": {
+      "quantity": 1,
+      "unit": "sp"
+    }
+  },
+  {
+    "id": "lamp",
+    "name": "Lamp",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "A Lamp burns Oil as fuel to cast Bright Light in a 15-foot radius and Dim Light for an additional 30 feet.",
+    "cost": {
+      "quantity": 5,
+      "unit": "sp"
+    }
+  },
+  {
+    "id": "lock-of-trickery",
+    "name": "Lock of Trickery",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "This lock appears to be an ordinary Lock (of the type described in chapter 6 of the Player's Handbook) and comes with a single key. The tumblers in this lock magically adjust to thwart burglars. Dexterity checks made to pick the lock have Disadvantage.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "lock",
+    "name": "Lock",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "A Lock comes with a key. Without the key, a creature can use Thieves' Tools to pick this Lock with a successful DC 15 Dexterity (Sleight of Hand) check.",
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "lolth-s-sting",
+    "name": "Lolth's Sting",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A creature subjected to Lolth's Sting must succeed on a DC 13 Constitution saving throw or have the Poisoned condition for 1 hour. If the creature fails the save by 5 or more, the creature also has the Unconscious condition while Poisoned in this way. The creature wakes up if it takes damage or if another creature takes an action to shake it awake.",
+    "cost": {
+      "quantity": 200,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "magnifying-glass",
+    "name": "Magnifying Glass",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A Magnifying Glass grants Advantage on any ability check made to appraise or inspect a highly detailed item. Lighting a fire with a Magnifying Glass requires light as bright as sunlight to focus, tinder to ignite, and about 5 minutes for the fire to ignite.",
+    "cost": {
+      "quantity": 100,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "malice",
+    "name": "Malice",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A creature subjected to Malice must succeed on a DC 15 Constitution saving throw or have the Poisoned condition for 1 hour. The creature also has the Blinded condition while Poisoned in this way.",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "manacles",
+    "name": "Manacles",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 6,
+    "description": "As a Utilize action, you can use Manacles to bind an unwilling Small or Medium creature within 5 feet of yourself that has the Grappled, Incapacitated, or Restrained condition if you succeed on a DC 13 Dexterity (Sleight of Hand) check. While bound, a creature has Disadvantage on attack rolls, and the creature is Restrained if the Manacles are attached to a chain or hook that is fixed in place. Escaping the Manacles requires a successful DC 20 Dexterity (Sleight of Hand) check as an action. Bursting them requires a successful DC 25 Strength (Athletics) check as an action.Each set of Manacles comes with a key. Without the key, a creature can use Thieves' Tools to pick the Manacles' lock with a successful DC 15 Dexterity (Sleight of Hand) check.",
+    "cost": {
+      "quantity": 2,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "mantle-of-spell-resistance",
+    "name": "Mantle of Spell Resistance",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "You have Advantage on saving throws against spells while you wear this cloak.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "manual-of-bodily-health",
+    "name": "Manual of Bodily Health",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 5,
+    "description": "This book contains health and diet tips, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Constitution increases by 2, to a maximum of 30. The manual then loses its magic, but regains it in a century.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "manual-of-clay-golems",
+    "name": "Manual of Clay Golems",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 5,
+    "description": "This tome contains information and incantations necessary to make a clay golem. To decipher and use the manual, you must be a spellcaster with at least two 5th-level spell slots. A creature that can't use a manual of golems and attempts to read it takes 6d6 psychic damage.To create a clay golem, you must spend 30 days, working without interruption with the manual at hand and resting no more than 8 hours per day. You must also pay 65,000 gp to purchase supplies.Once you finish creating the golem, the book is consumed in eldritch flames. The golem becomes animate when the ashes of the manual are sprinkled on it. It is under your control, and it understands and obeys your spoken commands.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "manual-of-flesh-golems",
+    "name": "Manual of Flesh Golems",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 5,
+    "description": "This tome contains information and incantations necessary to make a flesh golem. To decipher and use the manual, you must be a spellcaster with at least two 5th-level spell slots. A creature that can't use a manual of golems and attempts to read it takes 6d6 psychic damage.To create a flesh golem, you must spend 60 days, working without interruption with the manual at hand and resting no more than 8 hours per day. You must also pay 50,000 gp to purchase supplies.Once you finish creating the golem, the book is consumed in eldritch flames. The golem becomes animate when the ashes of the manual are sprinkled on it. It is under your control, and it understands and obeys your spoken commands.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "manual-of-gainful-exercise",
+    "name": "Manual of Gainful Exercise",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 5,
+    "description": "This book describes fitness exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Strength increases by 2, to a maximum of 30. The manual then loses its magic, but regains it in a century.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "manual-of-golems",
+    "name": "Manual of Golems",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 5,
+    "description": "This tome contains information and incantations necessary to make a particular type of golem. To decipher and use the manual, you must be a spellcaster with at least two 5th-level spell slots. A creature that can't use a manual of golems and attempts to read it takes 6d6 psychic damage.d20GolemTimeCost1-5Manual of Clay Golems30 days65,000 GP6-17Manual of Flesh Golems60 days50,000 GP18Manual of Iron Golems120 days100,000 GP19-20Manual of Stone Golems90 days80,000 GPTo create a golem, you must spend the time shown on the table, working without interruption with the manual at hand and resting no more than 8 hours per day. You must also pay the specified cost to purchase supplies.Once you finish creating the golem, the book is consumed in eldritch flames. The golem becomes animate when the ashes of the manual are sprinkled on it. It is under your control, and it understands and obeys your spoken commands.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "manual-of-iron-golems",
+    "name": "Manual of Iron Golems",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 5,
+    "description": "This tome contains information and incantations necessary to make a iron golem. To decipher and use the manual, you must be a spellcaster with at least two 5th-level spell slots. A creature that can't use a manual of golems and attempts to read it takes 6d6 psychic damage.To create an iron golem, you must spend 120 days, working without interruption with the manual at hand and resting no more than 8 hours per day. You must also pay 100,000 gp to purchase supplies.Once you finish creating the golem, the book is consumed in eldritch flames. The golem becomes animate when the ashes of the manual are sprinkled on it. It is under your control, and it understands and obeys your spoken commands.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "manual-of-quickness-of-action",
+    "name": "Manual of Quickness of Action",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 5,
+    "description": "This book contains coordination and balance exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Dexterity increases by 2, to a maximum of 30. The manual then loses its magic, but regains it in a century.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "manual-of-stone-golems",
+    "name": "Manual of Stone Golems",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 5,
+    "description": "This tome contains information and incantations necessary to make a stone golem. To decipher and use the manual, you must be a spellcaster with at least two 5th-level spell slots. A creature that can't use a manual of golems and attempts to read it takes 6d6 psychic damage.To create a stone golem, you must spend 90 days, working without interruption with the manual at hand and resting no more than 8 hours per day. You must also pay 80,000 gp to purchase supplies.Once you finish creating the golem, the book is consumed in eldritch flames. The golem becomes animate when the ashes of the manual are sprinkled on it. It is under your control, and it understands and obeys your spoken commands.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "map",
+    "name": "Map",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "If you consult an accurate Map, you gain a +5 bonus to Wisdom (Survival) checks you make to find your way in the place represented on it.",
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "midnight-tears",
+    "name": "Midnight Tears",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A creature that ingests Midnight Tears suffers no effect until the stroke of midnight. Any effect that ends the Poisoned condition neutralizes this poison. If the poison hasn't been neutralized before midnight, the creature makes a DC 17 Constitution saving throw, taking 31 (9d6) Poison damage on a failed save or half as much damage on a successful one.",
+    "cost": {
+      "quantity": 500,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "mirror-of-life-trapping",
+    "name": "Mirror of Life Trapping",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 50,
+    "description": "When this 4-foot-tall, 2-foot-wide mirror is viewed indirectly, its surface shows faint images of creatures. The mirror weighs 50 pounds, and it has AC 11, HP 10, Immunity to Poison and Psychic damage, and Vulnerability to Bludgeoning damage. It shatters and is destroyed when reduced to 0 Hit Points.If the mirror is hanging on a vertical surface and you are within 5 feet of it, you can take a Magic action and use a command word to activate it. It remains activated until you take a Magic action and repeat the command word to deactivate it.Any creature other than you that sees its reflection in the activated mirror while within 30 feet of the mirror must succeed on a DC 15 Charisma saving throw or be trapped, along with anything it is wearing or carrying, in one of the mirror's twelve extradimensional cells. A creature that knows the mirror's nature makes the save with Advantage, and Constructs succeed on the save automatically.An extradimensional cell is an infinite expanse filled with thick fog that reduces visibility to 10 feet. Creatures trapped in the mirror's cells don't age, and they don't need to eat, drink, or sleep. A creature trapped within a cell can escape using magic that permits planar travel. Otherwise, the creature is confined to the cell until freed.If the mirror traps a creature but its twelve extradimensional cells are already occupied, the mirror frees one trapped creature at random to accommodate the new prisoner. A freed creature appears in an unoccupied space within sight of the mirror but facing away from it. If the mirror is shattered, all creatures it contains are freed and appear in unoccupied spaces near it.While within 5 feet of the mirror, you can take a Magic action to name one creature trapped in it or call out a particular cell by number. The creature named or contained in the named cell appears as an image on the mirror's surface. You and the creature can then communicate.In a similar way, you can take a Magic action and use a second command word to free one creature trapped in the mirror. The freed creature appears, along with its possessions, in the unoccupied space nearest to the mirror and facing away from it.Placing the mirror inside an extradimensional space created by a Bag of Holding, Portable Hole, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate and not behind Total Cover is sucked through it to a random location on the Astral Plane. The gate then closes. The gate is one-way only and can't be reopened.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "mirror",
+    "name": "Mirror",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0.5,
+    "description": "A handheld steel Mirror is useful for personal cosmetics but also for peeking around corners and reflecting light as a signal.",
+    "cost": {
+      "quantity": 5,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "mystery-key",
+    "name": "Mystery Key",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A question mark is worked into the head of this key. The key has a 5 percent chance of unlocking any lock into which it's inserted. Once it unlocks something, the key disappears.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "nature-s-mantle",
+    "name": "Nature's Mantle",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "This cloak shifts color and texture to blend with the terrain surrounding you. While wearing the cloak, you can use it as a Spellcasting Focus for your Druid and Ranger spells.While you are in an area that is Lightly Obscured, you can Hide as a Bonus Action even if you are being directly observed.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "necklace-of-adaptation",
+    "name": "Necklace of Adaptation",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 1,
+    "description": "While wearing this necklace, you can breathe normally in any environment, and you have Advantage on saving throws made to avoid or end the Poisoned condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "necklace-of-fireballs",
+    "name": "Necklace of Fireballs",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 1,
+    "description": "This necklace has 1d6 + 3 beads hanging from it. You can take a Magic action to detach a bead and throw it up to 60 feet away. When it reaches the end of its trajectory, the bead detonates as a level 3 Fireball (save DC 15).You can hurl multiple beads, or even the whole necklace, at one time. When you do so, increase the damage of the Fireball by 1d6 for each bead after the first (maximum 12d6).",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "net",
+    "name": "Ağ",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 3,
+    "description": "When you take the Attack action, you can replace one of your attacks with throwing a Net. Target a creature you can see within 15 feet of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or have the Restrained condition until it escapes. The target succeeds automatically if it is Huge or larger.To escape, the target or a creature within 5 feet of it must take an action to make a DC 10 Strength (Athletics) check, freeing the Restrained creature on a success. Destroying the Net (AC 10; 5 HP; Immunity to Bludgeoning, Poison, and Psychic damage) also frees the target, ending the effect.",
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "orb-of-direction",
+    "name": "Orb of Direction",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 3,
+    "description": "This orb can be used as an Arcane Focus.While holding this orb, you can take a Magic action to determine which way is magnetic north. Nothing happens if the orb is used in a location that has no magnetic north.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "orb-of-dragonkind",
+    "name": "Orb of Dragonkind",
+    "type": "wondrous",
+    "rarity": "Yadigâr",
+    "weight": 3,
+    "description": "Long ago, in the Dragonlance setting, elves and humans waged a terrible war against chromatic dragons. When the world seemed doomed, the wizards of the Towers of High Sorcery came together and forged five Orbs of Dragonkind to help defeat the dragons. One orb was taken to each of the five towers, and there they were used to speed the war toward a victorious end. The wizards used the orbs to lure dragons to them, then destroyed the dragons with powerful magic.As the Towers of High Sorcery fell in later ages, the orbs were destroyed or faded into legend, and only three are thought to survive. Their magic has been warped over the centuries. Their primary purpose of calling dragons still functions, but they also allow some measure of control over dragons.Each orb contains the essence of an evil dragon, a presence that resents any attempt to coax magic from it. Those who try to wield an orb's magic but lack sufficient force of personality might find themselves under the orb's control.An orb is an etched crystal globe about 10 inches in diameter. When used, it grows to about 20 inches in diameter, and mist swirls inside it.While attuned to an orb, you can take a Magic action to peer into the orb's depths. You must then make a DC 15 Charisma saving throw. On a successful save, you control the orb for as long as you remain attuned to it. On a failed save, the orb imposes the Charmed condition on you for as long as you remain attuned to it.While you are Charmed by the orb, you can't voluntarily end your Attunement to it, and the orb casts Suggestion on you at will (save DC 18), urging you to work toward the evil ends it desires. The dragon essence within the orb might want many things: the annihilation of a particular society or organization, freedom from the orb, to spread suffering in the world, to advance the worship of Tiamat, or something else the DM decides. Random Properties. An Orb of Dragonkind has the following random properties:2 minor beneficial properties1 minor detrimental property1 major detrimental property Spells. The orb has 7 charges and regains 1d4 + 3 expended charges daily at dawn. If you control the orb, you can cast one of the spells on the following table from it. The table indicates how many charges you must expend to cast the spell.SpellCharge CostCure Wounds (level 9 version)4Daylight1Death Ward2Detect Magic0Scrying (save DC 18)3 Call Dragons. While you control the orb, you can take a Magic action to cause the orb to issue a telepathic call that extends in all directions for 40 miles. Chromatic dragons in range feel compelled to come to the orb as soon as possible by the most direct route. Dragon deities such as Tiamat are unaffected by this call. Chromatic dragons drawn to the orb might be Hostile toward you for compelling them against their will. Once you have used this property, it can't be used again for 1 hour. Destroying an Orb. An Orb of Dragonkind has AC 20 and is destroyed if it takes damage from a +3 Weapon or a Disintegrate spell. Nothing else can harm it.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "orb-of-time",
+    "name": "Orb of Time",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 3,
+    "description": "This orb can be used as an Arcane Focus.While holding the orb, you can take a Magic action to determine whether it is morning, afternoon, evening, or nighttime. This property functions only on the Material Plane.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "pale-tincture",
+    "name": "Pale Tincture",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A creature subjected to Pale Tincture must succeed on a DC 16 Constitution saving throw or take 3 (1d6) Poison damage and have the Poisoned condition. The Poisoned creature repeats the save every 24 hours, taking 3 (1d6) Poison damage on a failed save. The damage the poison deals can't be healed by any means while the creature remains Poisoned. After seven successful saves against the poison, the creature is no longer Poisoned.",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "paper",
+    "name": "Paper",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "One sheet of Paper can hold about 250 handwritten words.",
+    "cost": {
+      "quantity": 2,
+      "unit": "sp"
+    }
+  },
+  {
+    "id": "parchment",
+    "name": "Parchment",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "One sheet of Parchment can hold about 250 handwritten words.",
+    "cost": {
+      "quantity": 1,
+      "unit": "sp"
+    }
+  },
+  {
+    "id": "pearl-of-power",
+    "name": "Pearl of Power",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "While this pearl is on your person, you can take a Magic action to regain one expended spell slot of level 3 or lower. Once you use the pearl, it can't be used again until the next dawn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "perfume-of-bewitching",
+    "name": "Perfume of Bewitching",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "This tiny vial contains magic perfume, enough for one use. You can take a Magic action to apply the perfume to yourself, and its effect lasts 1 hour. For the duration, you have Advantage on all Charisma (Deception and Persuasion) checks made to influence a creature within 5 feet of yourself.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "perfume",
+    "name": "Perfume",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Perfume comes in a 4-ounce vial. For 1 hour after applying Perfume to yourself, you have Advantage on Charisma (Persuasion) checks made to influence an Indifferent Humanoid within 5 feet of yourself.",
+    "cost": {
+      "quantity": 5,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "pipe-of-smoke-monsters",
+    "name": "Pipe of Smoke Monsters",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "While smoking this pipe, you can take a Magic action to exhale a puff of smoke that takes the form of a creature, such as a dragon, a flumph, or a slaad. The form must be small enough to fit in a 1-foot cube and loses its shape after a few seconds, becoming an ordinary puff of smoke.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "pipes-of-haunting",
+    "name": "Pipes of Haunting",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "These pipes have 3 charges and regain 1d3 expended charges daily at dawn. You can take a Magic action to play them and expend 1 charge to create an eerie, spellbinding tune. Each creature of your choice within 30 feet of you must succeed on a DC 15 Wisdom saving throw or have the Frightened condition for 1 minute. A creature that fails the save repeats it at the end of each of its turns, ending the effect on itself on a success. A creature that succeeds on its save is immune to the effect of these pipes for 24 hours.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "pipes-of-the-sewers",
+    "name": "Pipes of the Sewers",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "While these pipes are on your person, ordinary rats and giant rats are Indifferent toward you and won't attack you unless you threaten or harm them.The pipes have 3 charges and regain 1d3 expended charges daily at dawn. If you play the pipes as a Magic action, you can take a Bonus Action to expend 1 to 3 charges, calling forth one Swarm of Rats with each expended charge if enough rats are within half a mile of you to be called in this fashion (as determined by the DM). If there aren't enough rats to form a swarm, the charge is wasted. Called swarms move toward the music by the shortest available route but aren't under your control otherwise.Whenever a Swarm of Rats that isn't under another creature's control comes within 30 feet of you while you are playing the pipes, the swarm makes a DC 15 Wisdom saving throw. On a successful save, the swarm behaves as it normally would and can't be swayed by the pipes' music for the next 24 hours. On a failed save, the swarm is swayed by the pipes' music and becomes Friendly to you and your allies for as long as you continue to play the pipes each round as a Magic action. A Friendly swarm obeys your commands. If you issue no commands to a Friendly swarm, it defends itself but otherwise takes no actions. If a Friendly swarm starts its turn more than 30 feet away from you, your control over that swarm ends, and the swarm behaves as it normally would and can't be swayed by the pipes' music for the next 24 hours.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "plus-1-wraps-of-unarmed-power",
+    "name": "+1 Wraps of Unarmed Power",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "While wearing these wraps, you have a +1 bonus to attack rolls and damage rolls made with your Unarmed Strikes. Those strikes deal your choice of Force damage or their normal damage type.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "plus-2-wraps-of-unarmed-power",
+    "name": "+2 Wraps of Unarmed Power",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "While wearing these wraps, you have a +2 bonus to attack rolls and damage rolls made with your Unarmed Strikes. Those strikes deal your choice of Force damage or their normal damage type.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "plus-3-wraps-of-unarmed-power",
+    "name": "+3 Wraps of Unarmed Power",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "While wearing these wraps, you have a +3 bonus to attack rolls and damage rolls made with your Unarmed Strikes. Those strikes deal your choice of Force damage or their normal damage type.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "pole-of-angling",
+    "name": "Pole of Angling",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "This item functions as a Pole. While holding it, you can take a Magic action to cause it to transform into a fishing pole with a hook, a line, and a reel, or have the fishing pole revert to a Pole.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "pole-of-collapsing",
+    "name": "Pole of Collapsing",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "This item functions as a Pole. While holding it, you can take a Magic action to collapse it into a 1-foot-long rod for ease of storage (the pole's weight doesn't change) or cause the 1-foot-long rod to revert to a Pole. The rod elongates only as far as the surrounding space allows.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "pole",
+    "name": "Pole",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 7,
+    "description": "A Pole is 10 feet long. You can use it to touch something up to 10 feet away. If you must make a Strength (Athletics) check as part of a High or Long Jump, you can use the Pole to vault, giving yourself Advantage on the check.",
+    "cost": {
+      "quantity": 5,
+      "unit": "cp"
+    }
+  },
+  {
+    "id": "portable-ram",
+    "name": "Portable Ram",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 35,
+    "description": "You can use a Portable Ram to break down doors. When doing so, you gain a +4 bonus to the Strength check. One other character can help you use the ram, giving you Advantage on this check.",
+    "cost": {
+      "quantity": 4,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "pot-of-awakening",
+    "name": "Pot of Awakening",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "If you plant an ordinary shrub in this 10-pound clay pot and let it grow for 30 days, the shrub magically transforms into an Awakened Shrub at the end of that time. When the shrub awakens, its roots break the pot, destroying it.The awakened shrub is Friendly toward you and obeys your commands. Absent commands from you, it does nothing.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "prosthetic-limb",
+    "name": "Prosthetic Limb",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "This magic item replaces a lost limb—a hand, an arm, a foot, a leg, or a similar body part. While the prosthetic is attached, it functions identically to the part it replaces. You can detach or reattach it as a Magic action, and it can't be removed against your will while you are alive.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "quaal-s-feather-token-anchor",
+    "name": "Quaal's Feather Token, Anchor",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "This object looks like a feather.You can take a Magic action to touch the token to a boat or ship. For the next 24 hours, the vessel can't be moved by any means. Touching the token to the vessel again ends the effect. When the effect ends, the token disappears.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "quaal-s-feather-token-bird",
+    "name": "Quaal's Feather Token, Bird",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "This object looks like a feather.You can take a Magic action to toss the token 5 feet into the air. The token disappears and an enormous, multicolored bird takes its place. The bird has the statistics of a Roc, but it can't attack. It obeys your simple commands and can carry up to 500 pounds while flying at its maximum speed (16 miles per hour for a maximum of 144 miles per day, with a 1-hour rest for every 3 hours of flying) or 1,000 pounds at half that speed. The bird disappears after flying its maximum distance for a day or if it drops to 0 Hit Points. You can dismiss the bird as a Magic action.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "quaal-s-feather-token-fan",
+    "name": "Quaal's Feather Token, Fan",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "This object looks like a feather.If you are on a boat or ship, you can take a Magic action to toss the token up to 10 feet in the air. The token disappears, and a giant flapping fan takes its place. The fan floats and creates a strong wind. This wind can fill the sails of one ship, increasing its speed by 5 miles per hour for 8 hours. You can dismiss the fan as a Magic action.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "quaal-s-feather-token-swan-boat",
+    "name": "Quaal's Feather Token, Swan Boat",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "This object looks like a feather.You can take a Magic action to touch the token to a body of water at least 60 feet in diameter. The token disappears, and a 50-foot-long, 20-foot-wide boat shaped like a swan takes its place. The boat is self-propelled and moves across water at a speed of 6 miles per hour. You can take a Magic action while on the boat to command it to move or to turn up to 90 degrees. The boat remains for 24 hours and then disappears. You can dismiss the boat as a Magic action.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "quaal-s-feather-token-tree",
+    "name": "Quaal's Feather Token, Tree",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "This object looks like a feather.You must be outdoors to use this token. You can take a Magic action to touch it to an unoccupied space on the ground. The token disappears, and in its place a nonmagical oak tree springs into existence. The tree is 60 feet tall and has a 5-foot-diameter trunk, and its branches at the top spread out in a 20-foot radius.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "quaal-s-feather-token-whip",
+    "name": "Quaal's Feather Token, Whip",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "This object looks like a feather.You can take a Magic action to throw the token to a point within 10 feet of yourself. The token disappears, and a floating whip takes its place. You can then take a Bonus Action to make a melee spell attack against a creature within 10 feet of the whip, with an attack bonus of +9. On a hit, the target takes 1d6 + 5 Force damage.As a Bonus Action, you can direct the whip to fly up to 20 feet and repeat the attack against a creature within 10 feet of the whip. The whip disappears after 1 hour, when you take a Magic action to dismiss it, or when you die or have the Incapacitated condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "quaal-s-feather-token",
+    "name": "Quaal's Feather Token",
+    "type": "wondrous",
+    "rarity": "varies",
+    "weight": 0,
+    "description": "This object looks like a feather. Different types of feather tokens exist, each with a different single-use effect. The DM chooses the kind of token or determines it randomly by rolling on the Quaal's Feather Tokens table. The type of token determines its rarity.Quaal's Feather Tokens1d100TokenRarity01-20AnchorUncommon21-35BirdRare36-50FanUncommon51-65Swan BoatRare66-90TreeUncommon91-00WhipRare",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "quiver-of-ehlonna",
+    "name": "Quiver of Ehlonna",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 2,
+    "description": "Each of the quiver's three compartments connects to an extradimensional space that allows the quiver to hold numerous items while never weighing more than 2 pounds. The shortest compartment can hold up to 60 Arrows, Bolts, or similar objects. The midsize compartment holds up to 18 Javelins or similar objects. The longest compartment holds up to 6 long objects, such as bows, Quarterstaff's, or Spears.You can draw any item the quiver contains as if doing so from a regular quiver or scabbard.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "quiver",
+    "name": "Quiver",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "A Quiver holds up to 20 Arrows.",
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "rations",
+    "name": "Rations",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 2,
+    "description": "Rations consist of travel-ready food, including jerky, dried fruit, hardtack, and nuts. See \"Malnutrition\" for the risks of not eating.",
+    "cost": {
+      "quantity": 5,
+      "unit": "sp"
+    }
+  },
+  {
+    "id": "rival-coin",
+    "name": "Rival Coin",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "This gold coin has a creature embossed on each side. The two depicted creatures must be famous rivals or enemies of each other. For example, a Rival Coin might show Iggwilv on one side and Mordenkainen on the other, or Venger on one side and Tiamat on the other. One of these figures is on the \"heads\" side of the coin, the other on the \"tails\" side.The coin has 1 charge and regains its expended charge daily at dawn. You can take a Magic action to toss the coin, expending its charge. Roll any die to determine whether the coin comes up heads (on an even number) or tails (on an odd number). The roll also determines the effect:Heads. Target one creature you can see within 60 feet of yourself. The target makes a DC 13 Wisdom saving throw. On a failed save, the target takes 2d4 Psychic damage and has Disadvantage on the next attack roll it makes before the end of its next turn. On a successful save, the target takes half as much damage only.Tails. You take 1d4 Psychic damage.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "rope-of-climbing",
+    "name": "Rope of Climbing",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "This 60-foot length of rope can hold up to 3,000 pounds. While holding one end of the rope, you can take a Magic action to command the other end of the rope to animate and move toward a destination you choose, up to the rope's length away from you. That end moves 10 feet on your turn when you first command it and 10 feet at the start of each of your subsequent turns until reaching its destination or until you tell it to stop. You can also tell the rope to fasten itself securely to an object or to unfasten itself, to knot or unknot itself, or to coil itself for carrying.If you tell the rope to knot, large knots appear at 1-foot intervals along the rope. While knotted, the rope shortens to a 50-foot length and grants Advantage on ability checks made to climb using the rope.The rope has AC 20, HP 20, and Immunity to Poison and Psychic damage. It regains 1 Hit Point every 5 minutes as long as it has at least 1 Hit Point. If the rope drops to 0 Hit Points, it is destroyed.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "rope-of-entanglement",
+    "name": "Rope of Entanglement",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "This rope is 30 feet long. While holding one end of the rope, you can take a Magic action to command the other end to dart forward and entangle one creature you can see within 20 feet of yourself. The target must succeed on a DC 15 Dexterity saving throw or have the Restrained condition. You can release the target by letting go of your end of the rope (causing the rope to coil up in the target's space) or by using a Bonus Action to repeat the command (causing the rope to coil up in your hand).A target Restrained by the rope can take an action to make its choice of a DC 15 Strength (Athletics) or Dexterity (Acrobatics) check. On a successful check, the target is no longer Restrained by the rope. If you're still holding onto the rope when a target escapes from it, you can take a Reaction to command the rope to coil up in your hand; otherwise, the rope coils up in the target's space.The rope has AC 20, HP 20, and Immunity to Poison and Psychic damage. It regains 1 Hit Point every 5 minutes as long as it has at least 1 Hit Point. If the rope drops to 0 Hit Points, it is destroyed.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "rope-of-mending",
+    "name": "Rope of Mending",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "This 50-foot coil of rope can repair itself when cut into any number of smaller pieces. As a Magic action, you can cause all pieces of the rope that are in contact with each other and not otherwise in use to knit back together. A Rope of Mending is forever shortened if a section of it is lost or destroyed.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "rope",
+    "name": "Rope",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 5,
+    "description": "As a Utilize action, you can tie a knot with Rope if you succeed on a DC 10 Dexterity (Sleight of Hand) check. The Rope can be burst with a successful DC 20 Strength (Athletics) check.You can bind an unwilling creature with the Rope only if the creature has the Grappled, Incapacitated, or Restrained condition. If the creature's legs are bound, the creature has the Restrained condition until it escapes. Escaping the Rope requires the creature to make a successful DC 15 Dexterity (Acrobatics) check as an action.",
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "ruby-of-the-war-mage",
+    "name": "Ruby of the War Mage",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Etched with eldritch runes, this 1-inch-diameter ruby allows you to use a Simple or Martial weapon as a Spellcasting Focus for your spells. For this property to work, you must attach the ruby to the weapon by pressing the ruby against it for at least 10 minutes. Thereafter, the ruby can't be removed unless you detach it as a Magic action, the weapon is destroyed, or your Attunement to the ruby ends.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "sack",
+    "name": "Sack",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0.5,
+    "description": "A Sack holds up to 30 pounds within 1 cubic foot.",
+    "cost": {
+      "quantity": 1,
+      "unit": "cp"
+    }
+  },
+  {
+    "id": "saddle-of-the-cavalier",
+    "name": "Saddle of the Cavalier",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "While in this saddle on a mount, you can't be dismounted against your will if you're conscious, and attack rolls against the mount have disadvantage.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "scarab-of-protection",
+    "name": "Scarab of Protection",
+    "type": "wondrous",
+    "rarity": "Efsanevi",
+    "weight": 1,
+    "description": "This beetle-shaped medallion provides three benefits while it is on your person. Defense. You gain a +1 bonus to Armor Class. Preservation. The scarab has 12 charges. If you fail a saving throw against a Necromancy spell or a harmful effect originating from an Undead, you can take a Reaction to expend 1 charge and turn the failed save into a successful one. The scarab crumbles into powder and is destroyed when its last charge is expended. Spell Resistance. You have Advantage on saving throws against spells.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "sending-stones",
+    "name": "Sending Stones",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "Sending Stones come in pairs, with each stone carved to match the other so the pairing is easily recognized. While you touch one stone, you can cast Sending from it. The target is the bearer of the other stone. If no creature bears the other stone, you know that fact as soon as you use the stone, and you don't cast the spell.Once Sending is cast using either stone, the stones can't be used again until the next dawn. If one of the stones in a pair is destroyed, the other one becomes nonmagical.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "serpent-venom",
+    "name": "Serpent Venom",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A creature subjected to Serpent Venom must succeed on a DC 11 Constitution saving throw, taking 10 (3d6) Poison damage on a failed save or half as much damage on a successful one.",
+    "cost": {
+      "quantity": 200,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "shovel",
+    "name": "Shovel",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 5,
+    "description": "Working for 1 hour, you can use a Shovel to dig a hole that is 5 feet on each side in soil or similar material.",
+    "cost": {
+      "quantity": 2,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "signal-whistle",
+    "name": "Signal Whistle",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "When blown as a Utilize action, a Signal Whistle produces a sound that can be heard up to 600 feet away.",
+    "cost": {
+      "quantity": 5,
+      "unit": "cp"
+    }
+  },
+  {
+    "id": "slippers-of-spider-climbing",
+    "name": "Slippers of Spider Climbing",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "While you wear these light shoes, you can move up, down, and across vertical surfaces and along ceilings, while leaving your hands free. You have a Climb Speed equal to your Speed. However, the slippers don't allow you to move this way on a slippery surface, such as one covered by ice or oil.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "sphere-of-annihilation",
+    "name": "Sphere of Annihilation",
+    "type": "wondrous",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "This 2-foot-diameter black sphere is a hole in the multiverse, hovering in space and stabilized by a magical field surrounding it.The sphere obliterates all matter it passes through and all matter that passes through it. Artifacts are the exception. Unless an Artifact is susceptible to damage from a Sphere of Annihilation, it passes through the sphere unscathed. Anything else that touches the sphere but isn't wholly engulfed and obliterated by it takes 8d10 Force damage. Controlling the Sphere. A Sphere of Annihilation is stationary until someone takes control of it. If you are within 60 feet of a sphere, you can take a Magic action to make a DC 25 Intelligence (Arcana) check. On a successful check, you control the sphere until the start of your next turn, and if it was under another creature's control, that creature loses control of the sphere. On a failed check, the sphere moves 10 feet toward you in a straight line.While in control of the sphere, you can take a Bonus Action to cause it to move in one direction of your choice, up to a number of feet equal to 5 times your Intelligence modifier (minimum 5 feet). Any creature whose space the sphere enters must succeed on a DC 19 Dexterity saving throw or be touched by it, taking 8d10 Force damage. A creature reduced to 0 Hit Points by this damage is obliterated, leaving its possessions behind but no other physical remains. Sphere Interactions. If the sphere comes into contact with a planar portal (such as that created by the Gate spell) or an extradimensional space (such as that within a Portable Hole), the DM determines randomly what happens using the following table.1d100Result01-50The sphere is destroyed.51-85The sphere moves through the portal or into the extradimensional space.86-00A spatial rift sends the sphere and each creature and object within 180 feet of the sphere to a random plane of existence.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "spirit-board",
+    "name": "Spirit Board",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "This ornate wooden board has the letters of the Common alphabet printed on one side, alongside the words \"Yes\" and \"No\" and symbols representing \"Weal\" and \"Woe.\" The board comes with a heart-shaped, wooden planchette. This planchette must be resting on the lettered side of the board for the board's magic to function.This board has 3 charges and regains 1 expended charge daily at dawn. While touching the planchette, you can take 1 minute to cast one of the spells on the table below. The table indicates how many charges you must expend to cast the spell. As you cast the spell, you call on the spirits of the dead to help guide the planchette across the board's surface, answering your questions by pointing to the letters or words on the board.SpellCharge CostAugury1Commune3",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "spyglass",
+    "name": "Spyglass",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "Objects viewed through a Spyglass are magnified to twice their size.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "stone-of-controlling-earth-elementals",
+    "name": "Stone of Controlling Earth Elementals",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "While touching this 5-pound stone to the ground, you can take a Magic action to summon an Earth Elemental. The elemental appears in an unoccupied space you choose within 30 feet of yourself, obeys your commands, and takes its turn immediately after you on your Initiative count. The elemental disappears after 1 hour, when it dies, or when you dismiss it as a Bonus Action. The stone can't be used this way again until the next dawn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "stone-of-good-luck",
+    "name": "Stone of Good Luck",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "While this polished agate is on your person, you gain a +1 bonus to ability checks and saving throws.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "talisman-of-pure-good",
+    "name": "Talisman of Pure Good",
+    "type": "wondrous",
+    "rarity": "Efsanevi",
+    "weight": 1,
+    "description": "This talisman is a mighty symbol of goodness. A Fiend or an Undead that touches the talisman takes 8d6 Radiant damage and takes the damage again each time it ends its turn holding or carrying the talisman. Holy Symbol. You can use the talisman as a Holy Symbol. You gain a +2 bonus to spell attack rolls while you wear or hold it. Pure Rebuke. The talisman has 7 charges. While wearing or holding the talisman, you can take a Magic action to expend 1 charge and target one creature you can see on the ground within 120 feet of yourself. A flaming fissure opens under the target, and the target makes a DC 20 Dexterity saving throw. If the target is a Fiend or an Undead, it has Disadvantage on the save. On a failed save, the target falls into the fissure and is destroyed, leaving no remains. On a successful save, the target isn't cast into the fissure but takes 4d6 Psychic damage from the ordeal. In either case, the fissure then closes, leaving no trace of its existence. When you expend the last charge, the talisman disperses into motes of golden light and is destroyed.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "talisman-of-the-sphere",
+    "name": "Talisman of the Sphere",
+    "type": "wondrous",
+    "rarity": "Efsanevi",
+    "weight": 1,
+    "description": "While holding or wearing this talisman, you have Advantage on any Intelligence (Arcana) check you make to control a Sphere of Annihilation. In addition, when you start your turn in control of a Sphere of Annihilation, you can take a Magic action to move it 10 feet plus a number of additional feet equal to 10 times your Intelligence modifier. This movement doesn't have to be in a straight line.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "talisman-of-ultimate-evil",
+    "name": "Talisman of Ultimate Evil",
+    "type": "wondrous",
+    "rarity": "Efsanevi",
+    "weight": 1,
+    "description": "This item symbolizes unrepentant evil. A creature that isn't a Fiend or an Undead that touches the talisman takes 8d6 Necrotic damage and takes the damage again each time it ends its turn holding or carrying the talisman. Holy Symbol. You can use the talisman as a Holy Symbol. You gain a +2 bonus to spell attack rolls while you wear or hold it. Ultimate End. The talisman has 6 charges. While wearing or holding the talisman, you can take a Magic action to expend 1 charge and target one creature you can see on the ground within 120 feet of yourself. A flaming fissure opens under the target, and the target makes a DC 20 Dexterity saving throw. If the target is a Celestial, it has Disadvantage on the save. On a failed save, the target falls into the fissure and is destroyed, leaving no remains. On a successful save, the target isn't cast into the fissure but takes 4d6 Psychic damage from the ordeal. In either case, the fissure then closes, leaving no trace of its existence. When you expend the last charge, the talisman dissolves into foul-smelling slime and is destroyed.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "talking-doll",
+    "name": "Talking Doll",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "While this doll is within 5 feet of you, you can spend a Short Rest telling it to say up to six phrases, none of which can be more than six words long, and set a condition under which the doll speaks each phrase. You can also replace old phrases with new ones. Whatever the condition, it must occur within 5 feet of the doll to make it speak. For example, whenever someone picks up the doll, it might say, \"I want a piece of candy.\" The doll's phrases are lost when your Attunement to the doll ends.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "tankard-of-sobriety",
+    "name": "Tankard of Sobriety",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "This tankard has a stern face sculpted into one side. You can drink ale, wine, or any other nonmagical alcoholic beverage poured into it without becoming inebriated. The tankard has no effect on magical liquids or harmful substances such as poison.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "tent",
+    "name": "Tent",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 20,
+    "description": "A Tent sleeps up to two Small or Medium creatures.",
+    "cost": {
+      "quantity": 2,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "tome-of-clear-thought",
+    "name": "Tome of Clear Thought",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 5,
+    "description": "This book contains memory and logic exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Intelligence increases by 2, to a maximum of 30. The manual then loses its magic, but regains it in a century.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "tome-of-leadership-and-influence",
+    "name": "Tome of Leadership and Influence",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 5,
+    "description": "This book contains guidelines for influencing and charming others, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Charisma increases by 2, to a maximum of 30. The manual then loses its magic, but regains it in a century.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "tome-of-the-stilled-tongue",
+    "name": "Tome of the Stilled Tongue",
+    "type": "wondrous",
+    "rarity": "Efsanevi",
+    "weight": 5,
+    "description": "This book has a desiccated tongue pinned to its front cover. Five of these tomes exist, and it's unknown which one is the original. The tongue on the first Tome of the Stilled Tongue belonged to a treacherous former servant of the lich Vecna. The tongues pinned to the covers of the four copies came from other spellcasters who crossed Vecna. The first few pages of each tome are filled with indecipherable scrawls. The remaining pages are blank.While attuned to this item, you can use it as a Spellbook and an Arcane Focus. In addition, while holding the tome, you can take a Bonus Action to cast a spell you have written in this tome, without expending a spell slot or using any Verbal or Somatic components. Once used, this property of the tome can't be used again until the next dawn.Only you can remove the tongue from the book's cover. If you do so, all spells written in the book are permanently erased.Vecna watches anyone using this tome and can write cryptic messages in it. These messages typically fade away after they are read.An Arcane Focus takes a specific form and is bejeweled or carved to channel arcane magic. A Sorcerer, Warlock, or Wizard can use such an item as a Spellcasting Focus.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "tome-of-understanding",
+    "name": "Tome of Understanding",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 5,
+    "description": "This book contains intuition and insight exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Wisdom increases by 2, to a maximum of 30. The manual then loses its magic, but regains it in a century.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "torch",
+    "name": "Meşale",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "A Torch burns for 1 hour, casting Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. When you take the Attack action, you can attack with the Torch, using it as a Simple Melee weapon. On a hit, the target takes 1 Fire damage.",
+    "cost": {
+      "quantity": 1,
+      "unit": "cp"
+    }
+  },
+  {
+    "id": "torpor",
+    "name": "Torpor",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A creature subjected to Torpor poison must succeed on a DC 15 Constitution saving throw or have the Poisoned condition for 4d6 hours. The creature's Speed is halved while the creature is Poisoned in this way.",
+    "cost": {
+      "quantity": 600,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "trinket",
+    "name": "Trinket",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "When you make your character, you can roll once on the Trinkets table to gain a Tiny trinket, a simple item lightly touched by mystery. The DM might also use this table. It can help stock a room in a dungeon or fill a creature's pockets.Trinkets1d100Trinket01A mummified goblin hand02A crystal that faintly glows in moonlight03A gold coin minted in an unknown land04A diary written in a language you don't know05A brass ring that never tarnishes06An old chess piece made from glass07A pair of knucklebone dice, each with a skull symbol on the side that would normally show six pips08A small idol depicting a nightmarish creature that gives you unsettling dreams when you sleep near it09A lock of someone's hair10The deed for a parcel of land in a realm unknown to you11A 1-ounce block made from an unknown material12A small cloth doll skewered with needles13A tooth from an unknown beast14An enormous scale, perhaps from a dragon15A bright-green feather16An old divination card bearing your likeness17A glass orb filled with moving smoke18A 1-pound egg with a bright-red shell19A pipe that blows bubbles20A glass jar containing a bit of flesh floating in pickling fluid21A gnome-crafted music box that plays a song you dimly remember from your childhood22A wooden statuette of a smug halfling23A brass orb etched with strange runes24A multicolored stone disk25A silver icon of a raven26A bag containing forty-seven teeth, one of which is rotten27A shard of obsidian that always feels warm to the touch28A dragon's talon strung on a leather necklace29A pair of old socks30A blank book whose pages refuse to hold ink, chalk, graphite, or any other marking31A silver badge that is a five-pointed star32A knife that belonged to a relative33A glass vial filled with nail clippings34A rectangular metal device with two tiny metal cups on one end that throws sparks when wet35A white, sequined glove sized for a human36A vest with one hundred tiny pockets37A weightless stone38A sketch of a goblin39An empty glass vial that smells of perfume40A gemstone that looks like a lump of coal when examined by anyone but you41A scrap of cloth from an old banner42A rank insignia from a lost legionnaire43A silver bell without a clapper44A mechanical canary inside a lamp45A miniature chest carved to look like it has numerous feet on the bottom46A dead sprite inside a clear glass bottle47A metal can that has no opening but sounds as if it is filled with liquid, sand, spiders, or broken glass (your choice)48A glass orb filled with water, in which swims a clockwork goldfish49A silver spoon with an M engraved on the handle50A whistle made from gold-colored wood51A dead scarab beetle the size of your hand52Two toy soldiers, one missing a head53A small box filled with different-sized buttons54A candle that can't be lit55A miniature cage with no door56An old key57An indecipherable treasure map58A hilt from a broken sword59A rabbit's foot60A glass eye61A cameo of a hideous person62A silver skull the size of a coin63An alabaster mask64A cone of sticky black incense that stinks65A nightcap that gives you pleasant dreams when you wear it66A single caltrop made from bone67A gold monocle frame without the lens68A 1-inch cube, each side a different color69A crystal doorknob70A packet filled with pink dust71A fragment of a beautiful song, written as musical notes on two pieces of parchment72A silver teardrop earring containing a real teardrop73An eggshell painted with scenes of misery in disturbing detail74A fan that, when unfolded, shows a sleepy cat75A set of bone pipes76A four-leaf clover pressed inside a book discussing manners and etiquette77A sheet of parchment upon which is drawn a mechanical contraption78An ornate scabbard that fits no blade you have found79An invitation to a party where a murder happened80A bronze pentacle with an etching of a rat's head in its center81A purple handkerchief embroidered with the name of an archmage82Half a floor plan for a temple, a castle, or another structure83A bit of folded cloth that, when unfolded, turns into a stylish cap84A receipt of deposit at a bank in a far-off city85A diary with seven missing pages86An empty silver snuffbox bearing the inscription \"dreams\" on its lid87An iron holy symbol devoted to an unknown god88A book about a legendary hero's rise and fall, with the last chapter missing89A vial of dragon blood90An ancient arrow of elven design91A needle that never bends92An ornate brooch of dwarven design93An empty wine bottle bearing a pretty label that says, \"The Wizard of Wines Winery, Red Dragon Crush, 331422-W\"94A mosaic tile with a multicolored, glazed surface95A petrified mouse96A black pirate flag adorned with a dragon's skull and crossbones97A tiny mechanical crab or spider that moves about when it's not being observed98A glass jar containing lard with a label that reads, \"Griffon Grease\"99A wooden box with a ceramic bottom that holds a living worm with a head on each end of its body00A metal urn containing the ashes of a hero",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "truth-serum",
+    "name": "Truth Serum",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A creature subjected to Truth Serum must succeed on a DC 11 Constitution saving throw or have the Poisoned condition for 1 hour. The Poisoned creature can't knowingly communicate a lie.",
+    "cost": {
+      "quantity": 150,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "veteran-s-cane",
+    "name": "Veteran's Cane",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "As a Bonus Action, you can transform this walking cane into an ordinary Longsword or change the Longsword back into a walking cane. In either case, you must be holding the item.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "waterskin",
+    "name": "Su Matarası",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 5,
+    "description": "A Waterskin holds up to 4 pints. If you don't drink sufficient water, you risk dehydration.",
+    "cost": {
+      "quantity": 2,
+      "unit": "sp"
+    }
+  },
+  {
+    "id": "well-of-many-worlds",
+    "name": "Well of Many Worlds",
+    "type": "wondrous",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "This fine black cloth, soft as silk, is folded up to the dimensions of a handkerchief. It unfolds into a circular sheet 6 feet in diameter.You can take a Magic action to unfold the Well of Many Worlds and place it on a solid surface, whereupon it forms a two-way, 6-foot-diameter, circular portal to another world or plane of existence. Each time the item opens a portal, the DM decides where it leads. The portal remains open until a creature within 5 feet of it takes a Magic action to close it by taking hold of the edges of the cloth and folding it up.Once the Well of Many Worlds has opened a portal, it can't do so again for 1d8 hours.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "wind-fan",
+    "name": "Wind Fan",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "While holding this fan, you can cast Gust of Wind (save DC 13) from it. Each subsequent time the fan is used before the next dawn, it has a cumulative 20 percent chance of not working; if the fan fails to work, it tears into useless, nonmagical tatters.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "wings-of-flying",
+    "name": "Wings of Flying",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "While wearing this cloak, you can take a Magic action to turn the cloak into a pair of wings on your back. The wings lasts for 1 hour or until you end the effect early as a Magic action. The wings give you a Fly Speed of 60 feet. If you are aloft when the wings disappear, you fall. When the wings disappear, you can't use them again for 1d12 hours.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "wraps-of-unarmed-power",
+    "name": "Wraps of Unarmed Power",
+    "type": "wondrous",
+    "rarity": "varies",
+    "weight": 0,
+    "description": "Multiple variations of this item exist, as listed below:+1 Wraps of Unarmed Power+2 Wraps of Unarmed Power+3 Wraps of Unarmed Power",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  }
+]

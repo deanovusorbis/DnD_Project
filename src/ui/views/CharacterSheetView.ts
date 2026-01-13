@@ -11,6 +11,8 @@ import {
 	translateSpeciesName,
 	translateAbilityName
 } from '../../utils/translations/index.ts';
+import { registry } from '../../engine/core/registry.ts';
+import { SpeciesTrait } from '../../types/species.types.ts';
 
 type SheetTab = 'stats' | 'inventory' | 'features' | 'spells' | 'bio';
 
@@ -328,10 +330,10 @@ export class CharacterSheetView {
 			traitList.style.gridTemplateColumns = 'repeat(auto-fill, minmax(300px, 1fr))';
 
 			const level = this.character.progression.totalLevel || 1;
-			const visibleTraits = species.traits.filter(t => (t.level || 1) <= level);
+			const visibleTraits = species.traits.filter((t: SpeciesTrait) => (t.level || 1) <= level);
 
 			if (visibleTraits.length > 0) {
-				visibleTraits.forEach(t => {
+				visibleTraits.forEach((t: SpeciesTrait) => {
 					const traitDiv = document.createElement('div');
 					traitDiv.style.background = 'var(--color-bg-tertiary)';
 					traitDiv.style.padding = '12px';

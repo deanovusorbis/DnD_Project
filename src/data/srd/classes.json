@@ -1533,7 +1533,7 @@
 		{
 			"id": "barbarian",
 			"name": "Barbarian",
-			"source": "srd",
+			"source": "phb24",
 			"description": "A fierce warrior who can enter a battle rage.",
 			"hitDie": "d12",
 			"primaryAbility": [
@@ -1581,13 +1581,36 @@
 				}
 			},
 			"startingEquipment": {
-				"guaranteed": [
+				"choices": [
 					{
-						"itemId": "explorers_pack",
-						"quantity": 1
+						"id": "starting-pack",
+						"options": [
+							{
+								"description": "(A) Greataxe, 4 Handaxes, Explorer’s Pack, and 15 GP",
+								"items": [
+									{
+										"itemId": "greataxe",
+										"quantity": 1
+									},
+									{
+										"itemId": "handaxe",
+										"quantity": 4
+									},
+									{
+										"itemId": "explorers_pack",
+										"quantity": 1
+									}
+								],
+								"gold": 15
+							},
+							{
+								"description": "(B) 75 GP",
+								"items": [],
+								"gold": 75
+							}
+						]
 					}
-				],
-				"choices": []
+				]
 			},
 			"spellcasting": {
 				"hasSpellcasting": false
@@ -1595,47 +1618,172 @@
 			"features": [
 				{
 					"id": "rage",
-					"name": "Rage",
-					"source": "srd",
-					"description": "In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action.",
+					"name": "Hiddet (Rage)",
+					"source": "phb24",
+					"description": "Bonus Aksiyon olarak Hiddet'e girebilirsiniz (Ağır zırh giyilmediğinde). Avantajlar: Bludgeoning, Piercing, Slashing hasar direnci; Strength tabanlı hasar bonusu; Strength kontrolleri ve kurtarma atışlarında avantaj. Büyü yapılamaz ve konsantrasyon korunamaz. 10 dakika sürer veya şartlar sağlanmazsa biter. Kısa Dinlenmede 1 kullanım, Uzun Dinlenmede tüm kullanımlar yenilenir.",
 					"level": 1,
 					"featureType": "resource",
 					"resource": {
-						"name": "Rage",
+						"name": "Hiddet",
 						"maxCount": 2,
-						"recoversOn": "long"
+						"recoversOn": "short"
 					}
 				},
 				{
 					"id": "unarmored-defense-barbarian",
-					"name": "Unarmored Defense",
-					"source": "srd",
-					"description": "While not wearing armor, your AC equals 10 + DEX modifier + CON modifier.",
+					"name": "Zırhsız Savunma (Unarmored Defense)",
+					"source": "phb24",
+					"description": "Zırh giymediğinizde AC değeriniz 10 + Dexterity + Constitution modifikasyonlarınıza eşit olur. Kalkan kullanabilirsiniz.",
 					"level": 1,
 					"featureType": "passive"
 				},
 				{
-					"id": "reckless-attack",
-					"name": "Reckless Attack",
-					"source": "srd",
-					"description": "You can throw aside all concern for defense to attack with fierce desperation.",
-					"level": 2,
-					"featureType": "active"
+					"id": "weapon-mastery-barbarian",
+					"name": "Silah Uzmanlığı (Weapon Mastery)",
+					"source": "phb24",
+					"description": "Seçtiğiniz iki farklı Simple veya Martial silahın ustalık özelliklerini (mastery properties) kullanabilirsiniz.",
+					"level": 1,
+					"featureType": "choice",
+					"choicesCount": 2
 				},
 				{
 					"id": "danger-sense",
-					"name": "Danger Sense",
-					"source": "srd",
-					"description": "You gain advantage on DEX saving throws against effects you can see.",
+					"name": "Tehlike Sezgisi (Danger Sense)",
+					"source": "phb24",
+					"description": "Görebildiğiniz etkilere karşı yapılan Dexterity kurtarma atışlarında avantaj kazanırsınız (Incapacitated değilseniz).",
 					"level": 2,
 					"featureType": "passive"
 				},
 				{
+					"id": "reckless-attack",
+					"name": "Pervasız Saldırı (Reckless Attack)",
+					"source": "phb24",
+					"description": "Sıranızın ilk saldırısında pervasızca saldırmaya karar verebilirsiniz. Bir sonraki turunuzun başına kadar Strength tabanlı saldırılarınız avantajlı olur, ancak size yapılan saldırılar da avantajlı olur.",
+					"level": 2,
+					"featureType": "active"
+				},
+				{
+					"id": "primal-knowledge",
+					"name": "Kadim Bilgi (Primal Knowledge)",
+					"source": "phb24",
+					"description": "Barbar beceri listesinden ek bir beceri uzmanlığı kazanırsınız. Ayrıca Hiddetiniz etkinken; Acrobatics, Intimidation, Perception, Stealth veya Survival kontrollerini Strength kullanarak yapabilirsiniz.",
+					"level": 3,
+					"featureType": "choice",
+					"choicesCount": 1
+				},
+				{
+					"id": "barbarian-subclass",
+					"name": "Barbar Alt Sınıfı",
+					"source": "phb24",
+					"description": "Seçtiğiniz bir Barbar yolunda (subclass) uzmanlaşırsınız.",
+					"level": 3,
+					"featureType": "choice"
+				},
+				{
+					"id": "asi-4",
+					"name": "Yetenek Skoru Artışı veya Hüner",
+					"source": "phb24",
+					"description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+					"level": 4,
+					"featureType": "choice"
+				},
+				{
 					"id": "extra-attack-barbarian",
-					"name": "Extra Attack",
-					"source": "srd",
-					"description": "You can attack twice when you take the Attack action.",
+					"name": "Ek Saldırı (Extra Attack)",
+					"source": "phb24",
+					"description": "Saldırı (Attack) aksiyonu aldığınızda iki kez saldırabilirsiniz.",
 					"level": 5,
+					"featureType": "passive"
+				},
+				{
+					"id": "fast-movement",
+					"name": "Hızlı Hareket (Fast Movement)",
+					"source": "phb24",
+					"description": "Ağır zırh giyilmediğinde hızınız 10 feet artar.",
+					"level": 5,
+					"featureType": "passive"
+				},
+				{
+					"id": "feral-instinct",
+					"name": "Vahşi İçgüdü (Feral Instinct)",
+					"source": "phb24",
+					"description": "Girişim (Initiative) zarlarında avantaj kazanırsınız.",
+					"level": 7,
+					"featureType": "passive"
+				},
+				{
+					"id": "instinctive-pounce",
+					"name": "İçgüdüsel Atılım (Instinctive Pounce)",
+					"source": "phb24",
+					"description": "Hiddet'e girmek için kullandığınız Bonus Aksiyonun parçası olarak, hızınızın yarısı kadar hareket edebilirsiniz.",
+					"level": 7,
+					"featureType": "active"
+				},
+				{
+					"id": "brutal-strike",
+					"name": "Acımasız Darbe (Brutal Strike)",
+					"source": "phb24",
+					"description": "Reckless Attack kullanırken bir saldırıda avantajdan feragat ederek 1d10 ekstra hasar verebilir ve hedefi 15 fit itme (Forceful Blow) veya hızını 15 fit düşürme (Hamstring Blow) etkilerinden birini seçebilirsiniz.",
+					"level": 9,
+					"featureType": "active"
+				},
+				{
+					"id": "relentless-rage",
+					"name": "Yılmaz Hiddet (Relentless Rage)",
+					"source": "phb24",
+					"description": "Hiddet etkisindeyken 0 cana düşerseniz DC 10 Constitution kurtarma atışı yaparak karakter seviyenizin iki katı kadar canla ayakta kalabilirsiniz. Her kullanımda DC 5 artar, dinlenme ile sıfırlanır.",
+					"level": 11,
+					"featureType": "passive"
+				},
+				{
+					"id": "improved-brutal-strike-13",
+					"name": "Gelişmiş Acımasız Darbe (Improved Brutal Strike)",
+					"source": "phb24",
+					"description": "Acımasız Darbe seçeneklerinize Staggering Blow (dezavantaj ve reaksiyon engelleyici) ve Sundering Blow (+5 bir sonraki saldırı bonusu) eklenir.",
+					"level": 13,
+					"featureType": "passive",
+					"improvesFeature": "brutal-strike"
+				},
+				{
+					"id": "persistent-rage",
+					"name": "Kalıcı Hiddet (Persistent Rage)",
+					"source": "phb24",
+					"description": "Girişim (Initiative) zarı attığınızda Hiddet kullanımlarınızı yenileyebilirsiniz (Uzun Dinlenme başına bir kez). Hiddetiniz artık 10 dakika boyunca kendiligün sürmeye başlar.",
+					"level": 15,
+					"featureType": "passive",
+					"improvesFeature": "rage"
+				},
+				{
+					"id": "improved-brutal-strike-17",
+					"name": "Gelişmiş Acımasız Darbe (Seviye 17)",
+					"source": "phb24",
+					"description": "Acımasız Darbe hasarı 2d10 olur ve aynı anda iki farklı darbe etkisi seçebilirsiniz.",
+					"level": 17,
+					"featureType": "passive",
+					"improvesFeature": "improved-brutal-strike-13"
+				},
+				{
+					"id": "indomitable-might",
+					"name": "Boyun Eğmez Güç (Indomitable Might)",
+					"source": "phb24",
+					"description": "Bir Strength kontrolü veya kurtarma atışı toplamınız Strength skorunuzdan düşükse, skorunuzu sonuç olarak kullanabilirsiniz.",
+					"level": 18,
+					"featureType": "passive"
+				},
+				{
+					"id": "epic-boon-barbarian",
+					"name": "Epik Lütuf (Epic Boon)",
+					"source": "phb24",
+					"description": "Bir Epik Lütuf veya seçebileceğiniz başka bir hüner kazanırsınız. Boon of Irresistible Offense önerilir.",
+					"level": 19,
+					"featureType": "choice"
+				},
+				{
+					"id": "primal-champion",
+					"name": "Kadim Şampiyon (Primal Champion)",
+					"source": "phb24",
+					"description": "Strength ve Constitution skorlarınız 4 artar (Maksimum 25).",
+					"level": 20,
 					"featureType": "passive"
 				}
 			],

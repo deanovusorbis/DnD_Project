@@ -1,0 +1,73 @@
+{
+  "id": "dwarf",
+  "name": "Dwarf",
+  "source": "srd",
+  "description": "Bold and hardy, dwarves are known as skilled warriors, miners, and workers of stone and metal.",
+  "size": "medium",
+  "speed": 30,
+  "abilityScoreIncreases": [],
+  "ageMaturity": 50,
+  "ageLifespan": 350,
+  "languages": [
+    "Common",
+    "Dwarvish"
+  ],
+  "traits": [
+    {
+      "id": "darkvision-dwarf",
+      "name": "Karanlık Görüş (Darkvision)",
+      "source": "2024",
+      "description": "Yeraltı yaşamına alışkın olduğunuz için karanlıkta ve loş ışıkta üstün görüşe sahipsiniz. 120 feet menzilinde loş ışığı parlak ışık gibi, karanlığı ise loş ışık gibi görebilirsiniz.",
+      "mechanicType": "passive",
+      "level": 1,
+      "grantsDarkvision": 120
+    },
+    {
+      "id": "dwarven-resilience",
+      "name": "Cüce Dayanıklılığı (Dwarven Resilience)",
+      "source": "2024",
+      "description": "Zehirlenmeye karşı kurtarma atışlarında avantaja ve zehir hasarına karşı dirence sahipsiniz.",
+      "mechanicType": "passive",
+      "level": 1,
+      "grantsAdvantage": {
+        "savingThrows": [
+          "poison"
+        ]
+      },
+      "grantsResistance": [
+        "poison"
+      ]
+    },
+    {
+      "id": "dwarven-toughness",
+      "name": "Cüce Sağlamlığı (Dwarven Toughness)",
+      "source": "2024",
+      "description": "Can Puanı maksimumunuz 1 artar ve her seviye atladığınızda 1 daha artar.",
+      "mechanicType": "passive",
+      "level": 1
+    },
+    {
+      "id": "stonecunning",
+      "name": "Taş Sezgisi (Stonecunning)",
+      "source": "2024",
+      "description": "Bir Bonus Aksiyon olarak, taş bir yüzey üzerindeyken veya ona dokunurken 10 dakika boyunca 60 feet menzilli Titreşim Duyusu (Tremorsense) kazanırsınız. Bu özelliği Proficiency Bonusunuz kadar kullanabilirsiniz ve biten kullanımları Uzun Dinlenme ile geri kazanırsınız.",
+      "mechanicType": "active",
+      "level": 1
+    }
+  ],
+  "creatureType": "humanoid",
+  "teachingNotes": {
+    "complexity": "beginner",
+    "recommendedForNewPlayers": true,
+    "keyMechanics": [
+      "Darkvision",
+      "Poison Resistance",
+      "Dwarven Toughness"
+    ],
+    "flavorHooks": [
+      "Sturdy",
+      "Craftsmen",
+      "Underground kingdoms"
+    ]
+  }
+}

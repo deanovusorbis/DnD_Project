@@ -1,0 +1,233 @@
+{
+  "id": "wizard",
+  "name": "Wizard",
+  "source": "srd",
+  "description": "A scholarly magic-user capable of manipulating the structures of reality.",
+  "hitDie": "d6",
+  "primaryAbility": [
+    "INT"
+  ],
+  "abilityPriority": {
+    "primary": [
+      "INT",
+      "CON"
+    ],
+    "secondary": [
+      "DEX",
+      "WIS"
+    ],
+    "dump": [
+      "STR",
+      "CHA"
+    ]
+  },
+  "proficiencies": {
+    "armor": [],
+    "weapons": [
+      "dagger",
+      "dart",
+      "sling",
+      "quarterstaff",
+      "light_crossbow"
+    ],
+    "tools": [],
+    "savingThrows": [
+      "INT",
+      "WIS"
+    ],
+    "skills": {
+      "choices": [
+        "arcana",
+        "history",
+        "insight",
+        "investigation",
+        "medicine",
+        "religion"
+      ],
+      "count": 2
+    }
+  },
+  "startingEquipment": {
+    "guaranteed": [
+      {
+        "itemId": "spellbook",
+        "quantity": 1
+      },
+      {
+        "itemId": "scholars_pack",
+        "quantity": 1
+      }
+    ],
+    "choices": []
+  },
+  "spellcasting": {
+    "hasSpellcasting": true,
+    "spellcastingAbility": "INT",
+    "spellcastingType": "full",
+    "cantripsKnown": [
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "ritualCasting": true
+  },
+  "features": [
+    {
+      "id": "arcane-recovery",
+      "name": "Arcane Recovery",
+      "source": "srd",
+      "description": "You have learned to regain some of your magical energy by studying your spellbook.",
+      "level": 1,
+      "featureType": "resource",
+      "resource": {
+        "name": "Arcane Recovery",
+        "maxCount": 1,
+        "recoversOn": "long"
+      }
+    },
+    {
+      "id": "arcane-tradition",
+      "name": "Arcane Tradition",
+      "source": "srd",
+      "description": "You choose an arcane tradition, shaping your practice of magic.",
+      "level": 2,
+      "featureType": "choice"
+    },
+    {
+      "id": "spell-mastery",
+      "name": "Spell Mastery",
+      "source": "srd",
+      "description": "You have achieved such mastery over certain spells that you can cast them at will.",
+      "level": 18,
+      "featureType": "passive"
+    },
+    {
+      "id": "signature-spells",
+      "name": "Signature Spells",
+      "source": "srd",
+      "description": "You gain mastery over two powerful spells and can cast them with little effort.",
+      "level": 20,
+      "featureType": "passive"
+    }
+  ],
+  "subclasses": [
+    {
+      "id": "school-of-evocation",
+      "name": "School of Evocation",
+      "source": "srd",
+      "description": "You focus your study on magic that creates powerful elemental effects.",
+      "parentClassId": "wizard",
+      "subclassFeatureLevel": 2,
+      "features": [
+        {
+          "id": "evocation-savant",
+          "name": "Evocation Savant",
+          "source": "srd",
+          "description": "The gold and time you must spend to copy an evocation spell into your spellbook is halved.",
+          "level": 2,
+          "featureType": "passive"
+        },
+        {
+          "id": "sculpt-spells",
+          "name": "Sculpt Spells",
+          "source": "srd",
+          "description": "You can create pockets of relative safety within the effects of your evocation spells.",
+          "level": 2,
+          "featureType": "active"
+        }
+      ]
+    },
+    {
+      "id": "school-of-abjuration",
+      "name": "School of Abjuration",
+      "source": "user",
+      "description": "The School of Abjuration emphasizes magic that blocks, banishes, or protects.",
+      "parentClassId": "wizard",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "arcane-ward",
+          "name": "Arcane Ward",
+          "description": "You can weave magic around yourself for protection.",
+          "level": 3,
+          "featureType": "passive"
+        }
+      ]
+    },
+    {
+      "id": "school-of-divination",
+      "name": "School of Divination",
+      "source": "user",
+      "description": "The counsel of a diviner is sought by royalty and commoners alike, for all seek a clearer understanding of the past, present, and future.",
+      "parentClassId": "wizard",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "portent",
+          "name": "Portent",
+          "description": "Glimpses of the future begin to press in on your awareness.",
+          "level": 3,
+          "featureType": "active"
+        }
+      ]
+    },
+    {
+      "id": "school-of-illusion",
+      "name": "School of Illusion",
+      "source": "user",
+      "description": "You focus your studies on magic that dazzles the senses, befuddles the mind, and tricks the wisest folk.",
+      "parentClassId": "wizard",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "improved-minor-illusion",
+          "name": "Improved Minor Illusion",
+          "description": "You learn the Minor Illusion cantrip. If you already know this cantrip, you learn a different wizard cantrip of your choice.",
+          "level": 3,
+          "featureType": "passive"
+        }
+      ]
+    }
+  ],
+  "subclassName": "Arcane Tradition",
+  "subclassLevel": 2,
+  "asiLevels": [
+    4,
+    8,
+    12,
+    16,
+    19
+  ],
+  "teachingNotes": {
+    "complexity": "advanced",
+    "recommendedForNewPlayers": false,
+    "playstyleKeywords": [
+      "Arcane caster",
+      "Prepared",
+      "Versatile",
+      "Spellbook"
+    ],
+    "roleInParty": [
+      "Blaster",
+      "Controller",
+      "Utility caster"
+    ]
+  }
+}

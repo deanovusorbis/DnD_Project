@@ -1,0 +1,245 @@
+{
+  "id": "dragonborn",
+  "name": "Dragonborn",
+  "source": "srd",
+  "description": "Ejderhalardan doğan ejderhasoylu, kendilerini korku dolu bir anlayışsızlıkla karşılayan bir dünyada gururla yürür. Ejderha tanrıları veya ejderhaların kendileri tarafından şekillendirilen ejderhasoylular, başlangıçta ejderha yumurtalarından çıkmışlardır.",
+  "size": "medium",
+  "speed": 30,
+  "abilityScoreIncreases": [],
+  "ageMaturity": 15,
+  "ageLifespan": 80,
+  "languages": [
+    "Common",
+    "Draconic"
+  ],
+  "traits": [
+    {
+      "id": "draconic-ancestry",
+      "name": "Ejderha Soyu (Draconic Ancestry)",
+      "source": "srd",
+      "description": "Ejderha atalarınızdan gelen bir mirasa sahipsiniz. Ejderha Soyu tablosundan bir ejderha türü seçin. Nefes Silahınız ve Hasar Direnciniz bu türe göre belirlenir.",
+      "mechanicType": "choice",
+      "level": 1
+    },
+    {
+      "id": "breath-weapon",
+      "name": "Nefes Silahı (Breath Weapon)",
+      "source": "2024",
+      "description": "Saldırı (Attack) aksiyonu aldığınızda, saldırılarınızdan birinin yerine büyülü bir enerji nefesi kullanabilirsiniz. Seçtiğiniz şekle göre (15 ft. koni veya 30 ft. x 5 ft. çizgi) alandaki her yaratık Çeviklik (Dexterity) kurtarma atışı yapmalıdır (Zorluk Derecesi = 8 + Constitution mod + Proficiency Bonus). Başarısız olanlar 1d10 (türe göre) hasar alır, başarılı olanlar yarısını alır. Hasar 5., 11. ve 17. seviyelerde 1d10 artar. Proficiency Bonusunuz kadar kullanabilirsiniz (Uzun Dinlenme ile yenilenir).",
+      "mechanicType": "active",
+      "level": 1
+    },
+    {
+      "id": "damage-resistance-dragonborn",
+      "name": "Hasar Direnci (Damage Resistance)",
+      "source": "srd",
+      "description": "Ejderha soyunuza uygun hasar türüne karşı direnciniz vardır.",
+      "mechanicType": "passive",
+      "level": 1
+    },
+    {
+      "id": "darkvision-dragonborn",
+      "name": "Karanlık Görüş (Darkvision)",
+      "source": "2024",
+      "description": "60 feet menzilinde loş ışığı parlak ışık gibi, karanlığı ise loş ışık gibi görebilirsiniz.",
+      "mechanicType": "passive",
+      "level": 1,
+      "grantsDarkvision": 60
+    },
+    {
+      "id": "draconic-flight",
+      "name": "Ejderha Uçuşu (Draconic Flight)",
+      "source": "2024",
+      "description": "5. seviyeden itibaren, bir Bonus Aksiyon olarak 10 dakikalığına spektral kanatlar çıkarabilirsiniz (Uzun Dinlenme ile yenilenir). Bu sürede Uçuş Hızınız, yürüme hızınıza eşit olur.",
+      "mechanicType": "active",
+      "level": 5
+    }
+  ],
+  "subraces": [
+    {
+      "id": "black-dragonborn",
+      "name": "Black Dragonborn",
+      "source": "2024",
+      "description": "Soy: Asit hasarı, 5'e 30 ft. Çizgi (Çvk. kurtarma zarı).",
+      "parentSpeciesId": "dragonborn",
+      "additionalTraits": [
+        {
+          "id": "acid-breath-line",
+          "name": "Asit Nefesi",
+          "source": "2024",
+          "description": "5'e 30 ft. çizgi (Çvk. kurtarma zarı), 1d10 asit hasarı.",
+          "mechanicType": "active",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "blue-dragonborn",
+      "name": "Blue Dragonborn",
+      "source": "2024",
+      "description": "Soy: Yıldırım hasarı, 5'e 30 ft. Çizgi (Çvk. kurtarma zarı).",
+      "parentSpeciesId": "dragonborn",
+      "additionalTraits": [
+        {
+          "id": "lightning-breath-line",
+          "name": "Yıldırım Nefesi",
+          "source": "2024",
+          "description": "5'e 30 ft. çizgi (Çvk. kurtarma zarı), 1d10 yıldırım hasarı.",
+          "mechanicType": "active",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "brass-dragonborn",
+      "name": "Brass Dragonborn",
+      "source": "2024",
+      "description": "Soy: Ateş hasarı, 5'e 30 ft. Çizgi (Çvk. kurtarma zarı).",
+      "parentSpeciesId": "dragonborn",
+      "additionalTraits": [
+        {
+          "id": "fire-breath-line",
+          "name": "Ateş Nefesi",
+          "source": "2024",
+          "description": "5'e 30 ft. çizgi (Çvk. kurtarma zarı), 1d10 ateş hasarı.",
+          "mechanicType": "active",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "bronze-dragonborn",
+      "name": "Bronze Dragonborn",
+      "source": "2024",
+      "description": "Soy: Yıldırım hasarı, 5'e 30 ft. Çizgi (Çvk. kurtarma zarı).",
+      "parentSpeciesId": "dragonborn",
+      "additionalTraits": [
+        {
+          "id": "lightning-breath-line-bronze",
+          "name": "Yıldırım Nefesi",
+          "source": "2024",
+          "description": "5'e 30 ft. çizgi (Çvk. kurtarma zarı), 1d10 yıldırım hasarı.",
+          "mechanicType": "active",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "copper-dragonborn",
+      "name": "Copper Dragonborn",
+      "source": "2024",
+      "description": "Soy: Asit hasarı, 5'e 30 ft. Çizgi (Çvk. kurtarma zarı).",
+      "parentSpeciesId": "dragonborn",
+      "additionalTraits": [
+        {
+          "id": "acid-breath-line-copper",
+          "name": "Asit Nefesi",
+          "source": "2024",
+          "description": "5'e 30 ft. çizgi (Çvk. kurtarma zarı), 1d10 asit hasarı.",
+          "mechanicType": "active",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "gold-dragonborn",
+      "name": "Gold Dragonborn",
+      "source": "2024",
+      "description": "Soy: Ateş hasarı, 15 ft. Koni (Çvk. kurtarma zarı).",
+      "parentSpeciesId": "dragonborn",
+      "additionalTraits": [
+        {
+          "id": "fire-breath-cone-gold",
+          "name": "Ateş Nefesi",
+          "source": "2024",
+          "description": "15 ft. koni (Çvk. kurtarma zarı), 1d10 ateş hasarı.",
+          "mechanicType": "active",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "green-dragonborn",
+      "name": "Green Dragonborn",
+      "source": "2024",
+      "description": "Soy: Zehir hasarı, 15 ft. Koni (Day. kurtarma zarı).",
+      "parentSpeciesId": "dragonborn",
+      "additionalTraits": [
+        {
+          "id": "poison-breath-cone",
+          "name": "Zehir Nefesi",
+          "source": "2024",
+          "description": "15 ft. koni (Day. kurtarma zarı), 1d10 zehir hasarı.",
+          "mechanicType": "active",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "red-dragonborn",
+      "name": "Red Dragonborn",
+      "source": "2024",
+      "description": "Soy: Ateş hasarı, 15 ft. Koni (Çvk. kurtarma zarı).",
+      "parentSpeciesId": "dragonborn",
+      "additionalTraits": [
+        {
+          "id": "fire-breath-cone-red",
+          "name": "Ateş Nefesi",
+          "source": "2024",
+          "description": "15 ft. koni (Çvk. kurtarma zarı), 1d10 ateş hasarı.",
+          "mechanicType": "active",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "silver-dragonborn",
+      "name": "Silver Dragonborn",
+      "source": "2024",
+      "description": "Soy: Soğuk hasarı, 15 ft. Koni (Day. kurtarma zarı).",
+      "parentSpeciesId": "dragonborn",
+      "additionalTraits": [
+        {
+          "id": "cold-breath-cone-silver",
+          "name": "Soğuk Nefesi",
+          "source": "2024",
+          "description": "15 ft. koni (Day. kurtarma zarı), 1d10 soğuk hasarı.",
+          "mechanicType": "active",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "id": "white-dragonborn",
+      "name": "White Dragonborn",
+      "source": "2024",
+      "description": "Soy: Soğuk hasarı, 15 ft. Koni (Day. kurtarma zarı).",
+      "parentSpeciesId": "dragonborn",
+      "additionalTraits": [
+        {
+          "id": "cold-breath-cone-white",
+          "name": "Soğuk Nefesi",
+          "source": "2024",
+          "description": "15 ft. koni (Day. kurtarma zarı), 1d10 soğuk hasarı.",
+          "mechanicType": "active",
+          "level": 1
+        }
+      ]
+    }
+  ],
+  "creatureType": "humanoid",
+  "teachingNotes": {
+    "complexity": "beginner",
+    "recommendedForNewPlayers": true,
+    "keyMechanics": [
+      "Breath Weapon",
+      "Damage Resistance",
+      "Draconic Ancestry"
+    ],
+    "flavorHooks": [
+      "Proud",
+      "Honorable",
+      "Dragon heritage"
+    ]
+  }
+}
