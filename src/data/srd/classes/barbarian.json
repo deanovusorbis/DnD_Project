@@ -288,7 +288,7 @@
         {
           "id": "intimidating-presence",
           "name": "Ürkütücü Varlık (Intimidating Presence)",
-          "description": "Bonus Aksiyon olarak, 30 fit yakınınızdaki bir yaratığı korkutmaya çalışabilirsiniz. Hedef bir Wisdom kurtarma atışı (DC 8 + Strength + Proficiency) yapmalıdır, başarısız olursa bir sonraki turunuzun sonuna kadar Korkmuş (Frightened) olur.",
+          "description": "Bonus Aksiyon olarak, ürkütücü varlığınız ve kadim gücünüzle başkalarını dehşete düşürebilirsiniz. Bunu yaptığınızda, sizden başlayan 30 fit Emanation içindeki seçtiğiniz yaratıklar Wisdom kurtarma atışı yapmalıdır (DC 8 + Strength + Proficiency). Başarısız olursa, yaratık 1 dakika boyunca Korkmuş (Frightened) durumuna girer. Korkmuş yaratık her turunun sonunda atışı tekrarlar ve başarılı olursa etki sona erer. Bu özelliği kullandıktan sonra Uzun Dinlenme bitirene kadar tekrar kullanamazsınız. Alternatif olarak bir Hiddet kullanımı harcayarak (aksiyon gerekmez) bu özelliği yenileyebilirsiniz.",
           "level": 14,
           "featureType": "active"
         }
@@ -344,37 +344,37 @@
     },
     {
       "id": "world-tree",
-      "name": "Path of the World Tree",
+      "name": "Dünya Ağacı Yolu (Path of the World Tree)",
       "source": "phb24",
-      "description": "Barbarians who follow the Path of the World Tree connect with the cosmic tree Yggdrasil through their Rage.",
+      "description": "Dünya Ağacı yolunu izleyen barbarlar, hiddetleri aracılığıyla kozmik ağaç Yggdrasil ile bağlantı kurarlar. Bu ağaç, Dış Düzlemler arasında büyür ve onları birbirine ve Maddi Düzleme bağlar. Bu barbarlar, ağacın büyüsünden canlılık ve boyutlar arası seyahat için güç çekerler.",
       "parentClassId": "barbarian",
       "subclassFeatureLevel": 3,
       "features": [
         {
           "id": "vitality-of-the-tree",
-          "name": "Vitality of the Tree",
-          "description": "Your Rage taps into the life force of the World Tree, granting Temporary Hit Points.",
+          "name": "Ağacın Canlılığı (Vitality of the Tree)",
+          "description": "Hiddetiniz Dünya Ağacının yaşam gücüne bağlanır. Şu faydaları kazanırsınız:\n\nCanlılık Patlaması (Vitality Surge): Hiddetinizi etkinleştirdiğinizde, Barbar seviyenize eşit sayıda Geçici Can Puanı (Temporary Hit Points) kazanırsınız.\n\nHayat Veren Güç (Life-Giving Force): Hiddetiniz etkinken her turunuzun başında, 10 fit yakınınızdaki başka bir yaratığı seçerek ona Geçici Can Puanları verebilirsiniz. Geçici Can sayısını belirlemek için Hiddet Hasarı bonusunuza eşit sayıda d6 zarı atın ve toplayın. Hiddetiniz sona erdiğinde kalan Geçici Canlar kaybolur.",
           "level": 3,
           "featureType": "active"
         },
         {
           "id": "branches-of-the-tree",
-          "name": "Branches of the Tree",
-          "description": "You can summon spectral branches to teleport creatures within 30 feet.",
+          "name": "Ağacın Dalları (Branches of the Tree)",
+          "description": "Hiddetiniz etkinken 30 fit uzaklığınızda bir yaratık turunun başında başlarsa, Reaksiyon olarak onun etrafında Dünya Ağacının hayalet dallarını çağırabilirsiniz. Hedef bir Strength kurtarma atışı yapmalıdır (DC 8 + Strength + Proficiency). Başarısız olursa, görebildiğiniz ve 5 fit yakınınızdaki boş bir alana (veya en yakın boş alana) ışınlanır. Hedef ışınlandıktan sonra, mevcut turun sonuna kadar Hızını (Speed) 0'a indirebilirsiniz.",
           "level": 6,
           "featureType": "active"
         },
         {
           "id": "battering-roots",
-          "name": "Battering Roots",
-          "description": "Your reach is 10 feet greater with Heavy or Versatile Melee weapons.",
+          "name": "Dövücü Kökler (Battering Roots)",
+          "description": "Turunuz sırasında, Heavy veya Versatile özelliğine sahip herhangi bir Yakın Dövüş silahıyla erişiminiz 10 fit daha fazladır (Dünya Ağacının dalları uzanır). Turunuzda böyle bir silahla isabet ettirdiğinizde, o silahla kullandığınız başka bir ustalık özelliğine (mastery property) ek olarak Push veya Topple ustalık özelliklerini de etkinleştirebilirsiniz.",
           "level": 10,
           "featureType": "passive"
         },
         {
           "id": "travel-along-the-tree",
-          "name": "Travel Along the Tree",
-          "description": "You can teleport up to 60 feet (or 150 feet) through the World Tree.",
+          "name": "Ağaç Boyunca Seyahat (Travel Along the Tree)",
+          "description": "Hiddetinizi etkinleştirdiğinizde ve hiddetiniz etkinken Bonus Aksiyon olarak, görebildiğiniz boş bir alana 60 fit uzaklığa kadar ışınlanabilirsiniz.\n\nEk olarak, her Hiddet başına bir kez, bu ışınlanma mesafesini 150 fit'e çıkarabilirsiniz. Bunu yaptığınızda, 10 fit yakınınızda bulunan 6 istekli yaratığa kadar da beraberinizde getirebilirsiniz. Her yaratık, varış noktanızın 10 fit yakınındaki boş bir alana ışınlanır.",
           "level": 14,
           "featureType": "active"
         }
@@ -382,44 +382,44 @@
     },
     {
       "id": "zealot",
-      "name": "Path of the Zealot",
+      "name": "Yobaz Yolu (Path of the Zealot)",
       "source": "phb24",
-      "description": "Barbarians who walk the Path of the Zealot receive boons from a god or pantheon.",
+      "description": "Yobaz yolunu izleyen barbarlar, bir tanrı veya panteondan lütuflar alırlar. Bu barbarlar hiddetlerini tanrısal bir birleşmenin coşkulu bir bölümü olarak yaşarlar ve bu onları güçle doldurur. Genellikle tanrılarının rahiplerinin ve diğer takipçilerinin müttefikleridir.",
       "parentClassId": "barbarian",
       "subclassFeatureLevel": 3,
       "features": [
         {
           "id": "divine-fury",
-          "name": "Divine Fury",
-          "description": "You can channel divine power into your strikes.",
+          "name": "İlahi Öfke (Divine Fury)",
+          "description": "Darbelerinize tanrısal güç kanalı açabilirsiniz. Hiddetiniz etkinken her turunuzda, bir silah veya Silahsız Vuruş (Unarmed Strike) ile vurduğunuz ilk yaratık ekstra hasar alır. Ekstra hasar 1d6 + Barbar seviyenizin yarısı (aşağı yuvarla) kadardır. Ekstra hasarın türü Necrotic veya Radiant'tır; her hasar verdiğinizde türü seçebilirsiniz.",
           "level": 3,
           "featureType": "passive"
         },
         {
           "id": "warrior-of-the-gods",
-          "name": "Warrior of the Gods",
-          "description": "A divine entity helps ensure you can continue the fight, providing a healing pool.",
+          "name": "Tanrıların Savaşçısı (Warrior of the Gods)",
+          "description": "İlahi bir varlık, savaşı sürdürebilmenizi sağlamaya yardımcı olur. Kendinizi iyileştirmek için harcayabileceğiniz 4 adet d12'den oluşan bir havuzunuz vardır. Bonus Aksiyon olarak havuzdan zar harcayabilir, atabilir ve atış toplamı kadar Can Puanı kazanabilirsiniz. Uzun Dinlenme bitirdiğinizde havuz yenilenir. Havuzdaki maksimum zar sayısı Barbar seviyesi 6'da (5 zar), 12'de (6 zar) ve 17'de (7 zar) birer artar.",
           "level": 3,
           "featureType": "resource"
         },
         {
           "id": "fanatical-focus",
-          "name": "Fanatical Focus",
-          "description": "You can reroll a failed saving throw with a bonus while raging.",
+          "name": "Fanatik Odak (Fanatical Focus)",
+          "description": "Her aktif Hiddet sırasında bir kez, bir kurtarma atışında başarısız olursanız, Hiddet Hasarı bonusunuza eşit bir bonusla tekrar atabilirsiniz. Yeni atış sonucunu kullanmalısınız.",
           "level": 6,
           "featureType": "passive"
         },
         {
           "id": "zealous-presence",
-          "name": "Zealous Presence",
-          "description": "You unleash a battle cry that grants advantage to allies.",
+          "name": "Yobaz Varlık (Zealous Presence)",
+          "description": "Bonus Aksiyon olarak, tanrısal enerjiyle dolu bir savaş çığlığı atabilirsiniz. 60 fit içindeki seçtiğiniz en fazla on yaratık, bir sonraki turunuzun başına kadar saldırı zarlarında ve kurtarma atışlarında avantaj kazanır. Bu özelliği kullandıktan sonra Uzun Dinlenme bitirene kadar tekrar kullanamazsınız. Alternatif olarak bir Hiddet kullanımı harcayarak (aksiyon gerekmez) bu özelliği yenileyebilirsiniz.",
           "level": 10,
           "featureType": "active"
         },
         {
           "id": "rage-of-the-gods",
-          "name": "Rage of the Gods",
-          "description": "You assume the form of a divine warrior, gaining flight and resistances.",
+          "name": "Tanrıların Hiddeti (Rage of the Gods)",
+          "description": "Hiddetinizi etkinleştirdiğinizde, tanrısal bir savaşçı formunu alabilirsiniz. Bu form 1 dakika sürer veya 0 Can Puanına düşene kadar devam eder. Bu özelliği kullandıktan sonra Uzun Dinlenme bitirene kadar tekrar kullanamazsınız.\n\nBu formdayken şu faydaları kazanırsınız:\n\nUçuş (Flight): Yürüme hızınıza eşit bir Uçma Hızı kazanırsınız ve havada asılı kalabilirsiniz (hover).\n\nDirenç (Resistance): Necrotic, Psychic ve Radiant hasara karşı Direnç kazanırsınız.\n\nDiriltme (Revivification): 30 fit yakınınızdaki bir yaratık 0 Can Puanına düşecekken, Reaksiyon kullanarak bir Hiddet kullanımı harcayıp hedefin Can Puanlarını Barbar seviyenize eşit bir sayıya değiştirebilirsiniz.",
           "level": 14,
           "featureType": "active"
         }

@@ -1,8 +1,8 @@
 {
   "id": "monk",
   "name": "Monk",
-  "source": "srd",
-  "description": "A master of martial arts, harnessing the power of the body in pursuit of physical and spiritual perfection.",
+  "source": "phb24",
+  "description": "Fiziksel ve ruhsal mükemmelliği arayarak vücudun gücünden yararlanan bir dövüş sanatları ustası.",
   "hitDie": "d8",
   "primaryAbility": [
     "DEX",
@@ -34,29 +34,10 @@
         "brewers_supplies",
         "calligraphers_supplies",
         "carpenters_tools",
-        "cartographers_tools",
-        "cobblers_tools",
-        "cooks_utensils",
-        "glassblowers_tools",
-        "jewelers_tools",
-        "leatherworkers_tools",
         "masons_tools",
         "painters_supplies",
         "potters_tools",
-        "smiths_tools",
-        "tinkers_tools",
-        "weavers_tools",
-        "woodcarvers_tools",
-        "bagpipes",
-        "drum",
-        "dulcimer",
-        "flute",
-        "horn",
-        "lute",
-        "lyre",
-        "pan_flute",
-        "shawm",
-        "viol"
+        "weavers_tools"
       ],
       "count": 1
     },
@@ -77,154 +58,448 @@
     }
   },
   "startingEquipment": {
-    "guaranteed": [
+    "choices": [
       {
-        "itemId": "explorers_pack",
-        "quantity": 1
+        "id": "starting-pack",
+        "options": [
+          {
+            "description": "(A) Spear, 5 Daggers, Explorer's Pack, and 11 GP",
+            "items": [
+              {
+                "itemId": "spear",
+                "quantity": 1
+              },
+              {
+                "itemId": "dagger",
+                "quantity": 5
+              },
+              {
+                "itemId": "explorers_pack",
+                "quantity": 1
+              }
+            ],
+            "gold": 11
+          },
+          {
+            "description": "(B) 50 GP",
+            "items": [],
+            "gold": 50
+          }
+        ]
       }
-    ],
-    "choices": []
+    ]
   },
   "spellcasting": {
     "hasSpellcasting": false
   },
   "features": [
     {
-      "id": "unarmored-defense-monk",
-      "name": "Unarmored Defense",
-      "source": "srd",
-      "description": "While not wearing armor, your AC equals 10 + DEX modifier + WIS modifier.",
-      "level": 1,
-      "featureType": "passive"
-    },
-    {
       "id": "martial-arts",
-      "name": "Martial Arts",
-      "source": "srd",
-      "description": "Your practice of martial arts gives you mastery of combat styles that use unarmed strikes and monk weapons.",
+      "name": "Dövüş Sanatları (Martial Arts)",
+      "source": "phb24",
+      "description": "Dövüş sanatları pratiğiniz Unarmed Strike ve Monk silahlarını kullanan savaş stilleri nde ustalık kazandırır. Monk silahları Simple Melee silahlar ve Light özelliğine sahip Martial Melee silahlardır.\n\nZırh giymediğinizde veya Kalkan kullanmadığınızda ve yalnızca silahsızken veya sadece Monk silahları kullanırken şu faydaları kazanırsınız:\n\nBonus Unarmed Strike: Bonus Aksiyon olarak bir Unarmed Strike yapabilirsiniz.\n\nMartial Arts Die: Unarmed Strike veya Monk silahlarınızın normal hasarı yerine 1d6 atabilirsiniz. Bu zar Monk seviyesi kazandıkça değişir.\n\nÇevik Saldırılar (Dexterous Attacks): Unarmed Strike ve Monk silahlarınızın saldırı ve hasar atışları için Strength yerine Dexterity kullanabilirsiniz. Ayrıca Unarmed Strike'ın Grapple veya Shove seçeneğini kullandığınızda kurtarma DC'sini belirlemek için Strength yerine Dexterity kullanabilirsiniz.",
       "level": 1,
       "featureType": "passive"
     },
     {
-      "id": "ki",
-      "name": "Ki",
-      "source": "srd",
-      "description": "Your training allows you to harness the mystic energy of ki.",
+      "id": "unarmored-defense-monk",
+      "name": "Zırhsız Savunma (Unarmored Defense)",
+      "source": "phb24",
+      "description": "Zırh giymediğinizde veya Kalkan kullanmadığınızda temel Armor Class değeriniz 10 artı Dexterity ve Wisdom modifikasyonlarınıza eşittir.",
+      "level": 1,
+      "featureType": "passive"
+    },
+    {
+      "id": "monks-focus",
+      "name": "Monk'un Odağı (Monk's Focus)",
+      "source": "phb24",
+      "description": "Odağınız ve dövüş eğitiminiz içinizdeki olağanüstü bir enerji kuyusunu kullanmanızı sağlar. Bu enerji Focus Points ile temsil edilir. Monk seviyeniz sahip olduğunuz puan sayısını belirler.\n\nBu puanları belirli Monk özelliklerini geliştirmek veya güçlendirmek için harcayabilirsiniz. Üç özellikle başlarsınız: Flurry of Blows, Patient Defense ve Step of the Wind.\n\nBir Focus Point harcadığınızda Kısa veya Uzun Dinlenme bitene kadar kullanılamaz, sonunda tüm harcanan puanları yenilersiniz.\n\nFocus Points kullanan bazı özellikler hedefin kurtarma atışı yapmasını gerektirir. Kurtarma DC'si 8 artı Wisdom modifikasyonunuz ve Proficiency Bonusunuza eşittir.\n\nFlurry of Blows: Bonus Aksiyon olarak iki Unarmed Strike yapmak için 1 Focus Point harcayabilirsiniz.\n\nPatient Defense: Disengage aksiyonunu Bonus Aksiyon olarak alabilirsiniz. Alternatif olarak Bonus Aksiyon olarak hem Disengage hem Dodge aksiyonlarını almak için 1 Focus Point harcayabilirsiniz.\n\nStep of the Wind: Dash aksiyonunu Bonus Aksiyon olarak alabilirsiniz. Alternatif olarak Bonus Aksiyon olarak hem Disengage hem Dash aksiyonlarını almak için 1 Focus Point harcayabilir ve tur için sıçrama mesafeniz iki katına çıkar.",
       "level": 2,
       "featureType": "resource",
       "resource": {
-        "name": "Ki",
+        "name": "Focus Points",
         "maxCount": 2,
         "recoversOn": "short"
       }
     },
     {
-      "id": "flurry-of-blows",
-      "name": "Flurry of Blows",
-      "source": "srd",
-      "description": "You can spend 1 ki point to make two unarmed strikes as a bonus action.",
-      "level": 2,
-      "featureType": "active"
-    },
-    {
       "id": "unarmored-movement",
-      "name": "Unarmored Movement",
-      "source": "srd",
-      "description": "Your speed increases by 10 feet while you are not wearing armor or wielding a shield.",
+      "name": "Zırhsız Hareket (Unarmored Movement)",
+      "source": "phb24",
+      "description": "Zırh giymediğinizde veya Kalkan kullanmadığınızda hızınız 10 feet artar. Bu bonus belirli Monk seviyelerine ulaştığınızda artar.",
       "level": 2,
       "featureType": "passive"
     },
     {
-      "id": "deflect-missiles",
-      "name": "Deflect Missiles",
-      "source": "srd",
-      "description": "You can use your reaction to deflect or catch the missile when you are hit by a ranged weapon attack.",
+      "id": "uncanny-metabolism",
+      "name": "Esrarengiz Metabolizma (Uncanny Metabolism)",
+      "source": "phb24",
+      "description": "Girişim (Initiative) zarı attığınızda tüm harcanan Focus Point'leri yenileyebilirsiniz. Bunu yaptığınızda Martial Arts zarınızı atın ve Monk seviyenize artı atılan sayı kadar Can Puanı yenilersiniz.\n\nBu özelliği kullandıktan sonra Uzun Dinlenme bitirene kadar tekrar kullanamazsınız.",
+      "level": 2,
+      "featureType": "resource",
+      "resource": {
+        "name": "Esrarengiz Metabolizma",
+        "maxCount": 1,
+        "recoversOn": "long"
+      }
+    },
+    {
+      "id": "deflect-attacks",
+      "name": "Saldırıları Saptırma (Deflect Attacks)",
+      "source": "phb24",
+      "description": "Bir saldırı atışı size isabet ettiğinde ve hasarı Bludgeoning, Piercing veya Slashing hasar içerdiğinde saldırının size karşı toplam hasarını azaltmak için Reaksiyon alabilirsiniz. Azaltma 1d10 artı Dexterity modifikasyonunuz ve Monk seviyenize eşittir.\n\nHasarı 0'a azaltırsanız saldırının gücünün bir kısmını yönlendirmek için 1 Focus Point harcayabilirsiniz. Bunu yaparsanız saldırı yakın dövüş saldırısıysa 5 fit içinde görebildiğiniz bir yaratık seçin veya saldırı uzak saldırıysa Total Cover arkasında olmayan 60 fit içinde görebildiğiniz bir yaratık seçin. O yaratık Dexterity kurtarma atışında başarılı olmalıdır veya Martial Arts zarınızın iki atışı artı Dexterity modifikasyonunuz kadar hasar alır. Hasar saldırının verdiği hasar tipiyle aynıdır.",
       "level": 3,
       "featureType": "active"
     },
     {
+      "id": "monk-subclass",
+      "name": "Monk Alt Sınıfı",
+      "source": "phb24",
+      "description": "Seçtiğiniz bir Monk alt sınıfında (subclass) uzmanlaşırsınız.",
+      "level": 3,
+      "featureType": "choice"
+    },
+    {
+      "id": "asi-4",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 4,
+      "featureType": "choice"
+    },
+    {
+      "id": "slow-fall",
+      "name": "Yavaş Düşüş (Slow Fall)",
+      "source": "phb24",
+      "description": "Düştüğünüzde düşüşten alacağınız hasarı Monk seviyenizin beş katı kadar azaltmak için Reaksiyon alabilirsiniz.",
+      "level": 4,
+      "featureType": "active"
+    },
+    {
       "id": "extra-attack-monk",
-      "name": "Extra Attack",
-      "source": "srd",
-      "description": "You can attack twice when you take the Attack action.",
+      "name": "Ek Saldırı (Extra Attack)",
+      "source": "phb24",
+      "description": "Turunuzda Attack aksiyonu aldığınızda bir yerine iki kez saldırabilirsiniz.",
       "level": 5,
       "featureType": "passive"
     },
     {
       "id": "stunning-strike",
-      "name": "Stunning Strike",
-      "source": "srd",
-      "description": "You can spend 1 ki point to attempt to stun a creature you hit with a melee weapon attack.",
+      "name": "Sersemletici Darbe (Stunning Strike)",
+      "source": "phb24",
+      "description": "Tur başına bir kez, bir Monk silahı veya Unarmed Strike ile bir yaratığa isabet ettirdiğinizde sersemletici darbe denemesi için 1 Focus Point harcayabilirsiniz. Hedef Constitution kurtarma atışı yapmalıdır. Başarısız olursa hedef bir sonraki turunuzun başına kadar Stunned durumuna girer. Başarılı olursa hedefin Hızı bir sonraki turunuzun başına kadar yarıya iner ve o zamana kadar ona karşı yapılan bir sonraki saldırı atışı avantajlıdır.",
       "level": 5,
       "featureType": "active"
+    },
+    {
+      "id": "empowered-strikes",
+      "name": "Güçlendirilmiş Darbeler (Empowered Strikes)",
+      "source": "phb24",
+      "description": "Unarmed Strike ile hasar verdiğinizde seçtiğiniz Force hasar veya normal hasar tipini verebilir.",
+      "level": 6,
+      "featureType": "passive"
+    },
+    {
+      "id": "subclass-feature-6",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Monk alt sınıfınızdan bir özellik kazanırsınız.",
+      "level": 6,
+      "featureType": "passive"
+    },
+    {
+      "id": "evasion-monk",
+      "name": "Kaçınma (Evasion)",
+      "source": "phb24",
+      "description": "Sadece yarı hasar almak için Dexterity kurtarma atışı yapmanızı gerektiren bir etkiye maruz kaldığınızda, kurtarma atışında başarılı olursanız hiç hasar almazsınız, başarısız olursanız sadece yarı hasar alırsınız.\n\nIncapacitated durumu varsa bu özellikten faydalanamazsınız.",
+      "level": 7,
+      "featureType": "passive"
+    },
+    {
+      "id": "asi-8",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 8,
+      "featureType": "choice"
+    },
+    {
+      "id": "acrobatic-movement",
+      "name": "Akrobatik Hareket (Acrobatic Movement)",
+      "source": "phb24",
+      "description": "Zırh giymediğinizde veya Kalkan kullanmadığınızda turunuzda hareket sırasında düşmeden dikey yüzeylerde ve sıvılar üzerinde hareket edebilme yeteneği kazanırsınız.",
+      "level": 9,
+      "featureType": "passive"
+    },
+    {
+      "id": "heightened-focus",
+      "name": "Yükseltilmiş Odak (Heightened Focus)",
+      "source": "phb24",
+      "description": "Flurry of Blows, Patient Defense ve Step of the Wind şu faydaları kazanır:\n\nFlurry of Blows: Flurry of Blows kullanmak için 1 Focus Point harcayabilir ve onunla iki yerine üç Unarmed Strike yapabilirsiniz.\n\nPatient Defense: Patient Defense kullanmak için Focus Point harcadığınızda Martial Arts zarınızın iki atışına eşit sayıda Geçici Can Puanı kazanırsınız.\n\nStep of the Wind: Step of the Wind kullanmak için Focus Point harcadığınızda 5 fit içindeki Large veya daha küçük istekli bir yaratık seçebilirsiniz. Yaratığı turunuz sonuna kadar sizinle birlikte hareket ettirirsiniz. Yaratığın hareketi Opportunity Attack'e sebep olmaz.",
+      "level": 10,
+      "featureType": "passive"
+    },
+    {
+      "id": "self-restoration",
+      "name": "Kendini İyileştirme (Self-Restoration)",
+      "source": "phb24",
+      "description": "Salt irade gücüyle turlarınızın her birinin sonunda kendinizden şu durumlardan birini kaldırabilirsiniz: Charmed, Frightened veya Poisoned.\n\nAyrıca yemek ve içecekten vazgeçmek size Exhaustion seviyeleri vermez.",
+      "level": 10,
+      "featureType": "passive"
+    },
+    {
+      "id": "subclass-feature-11",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Monk alt sınıfınızdan bir özellik kazanırsın ız.",
+      "level": 11,
+      "featureType": "passive"
+    },
+    {
+      "id": "asi-12",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 12,
+      "featureType": "choice"
+    },
+    {
+      "id": "deflect-energy",
+      "name": "Enerjiyi Saptırma (Deflect Energy)",
+      "source": "phb24",
+      "description": "Artık Deflect Attacks özelliğinizi sadece Bludgeoning, Piercing veya Slashing hasar veren saldırılara karşı değil, herhangi bir hasar tipi veren saldırılara karşı kullanabilirsiniz.",
+      "level": 13,
+      "featureType": "passive",
+      "improvesFeature": "deflect-attacks"
+    },
+    {
+      "id": "disciplined-survivor",
+      "name": "Disiplinli Hayatta Kalan (Disciplined Survivor)",
+      "source": "phb24",
+      "description": "Fiziksel ve zihinsel disiplininiz size tüm kurtarma atışlarında proficiency verir.\n\nAyrıca bir kurtarma atışı yapıp başarısız olduğunuzda tekrar atmak için 1 Focus Point harcayabilirsiniz ve yeni atışı kullanmalısınız.",
+      "level": 14,
+      "featureType": "passive"
+    },
+    {
+      "id": "perfect-focus",
+      "name": "Mükemmel Odak (Perfect Focus)",
+      "source": "phb24",
+      "description": "Girişim (Initiative) zarı atıp Uncanny Metabolism kullanmadığınızda 3 veya daha az Focus Point'iniz varsa 4 olana kadar harcanan Focus Point'leri yenilersiniz.",
+      "level": 15,
+      "featureType": "passive"
+    },
+    {
+      "id": "asi-16",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 16,
+      "featureType": "choice"
+    },
+    {
+      "id": "subclass-feature-17",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Monk alt sınıfınızdan bir özellik kazanırsınız.",
+      "level": 17,
+      "featureType": "passive"
+    },
+    {
+      "id": "superior-defense",
+      "name": "Üstün Savunma (Superior Defense)",
+      "source": "phb24",
+      "description": "Turunuzun başında 1 dakika boyunca veya Incapacitated durumuna girene kadar kendinizi zarara karşı desteklemek için 3 Focus Point harcayabilirsiniz. O süre boyunca Force hasar hariç tüm hasara karşı Direnç kazanırsınız.",
+      "level": 18,
+      "featureType": "active"
+    },
+    {
+      "id": "epic-boon-monk",
+      "name": "Epik Lütuf (Epic Boon)",
+      "source": "phb24",
+      "description": "Bir Epik Lütuf veya seçebileceğiniz başka bir hüner kazanırsınız. Boon of Irresistible Offense önerilir.",
+      "level": 19,
+      "featureType": "choice"
+    },
+    {
+      "id": "body-and-mind",
+      "name": "Vücut ve Zihin (Body and Mind)",
+      "source": "phb24",
+      "description": "Vücudunuzu ve zihninizi yeni zirvelere geliştirdiniz. Dexterity ve Wisdom skorlarınız 4 artar, maksimum 25'e kadar.",
+      "level": 20,
+      "featureType": "passive"
     }
   ],
   "subclasses": [
     {
-      "id": "way-of-the-open-hand",
-      "name": "Way of the Open Hand",
-      "source": "srd",
-      "description": "Monks of the Way of the Open Hand are the ultimate masters of martial arts combat.",
-      "parentClassId": "monk",
-      "subclassFeatureLevel": 3,
-      "features": [
-        {
-          "id": "open-hand-technique",
-          "name": "Open Hand Technique",
-          "source": "srd",
-          "description": "You can manipulate your enemy's ki when you harness your own.",
-          "level": 3,
-          "featureType": "active"
-        }
-      ]
-    },
-    {
-      "id": "warrior-of-the-elements",
-      "name": "Warrior of the Elements",
-      "source": "user",
-      "description": "You channel the elemental power of the multiverse into your attacks.",
-      "parentClassId": "monk",
-      "subclassFeatureLevel": 3,
-      "features": [
-        {
-          "id": "elemental-attunement",
-          "name": "Elemental Attunement",
-          "description": "You can use your reaction to reduce acid, cold, fire, lightning, or thunder damage you take.",
-          "level": 3,
-          "featureType": "active"
-        }
-      ]
-    },
-    {
       "id": "warrior-of-mercy",
-      "name": "Warrior of Mercy",
-      "source": "user",
-      "description": "You manipulate the life force of others to bring aid to those in need or an end to your enemies.",
+      "name": "Merhamet Savaşçısı (Warrior of Mercy)",
+      "source": "phb24",
+      "description": "Merhamet Savaşçıları başkalarının yaşam gücünü manipüle ederler. Bu Monklar gezgin hekimlerdir ancak düşmanlarına hızlı bir son getirirler. Genellikle maske takarlar ve kendilerini yüzsüz yaşam ve ölüm getiricileri olarak sunarlar.",
       "parentClassId": "monk",
       "subclassFeatureLevel": 3,
       "features": [
+        {
+          "id": "hand-of-harm",
+          "name": "Zarar Eli (Hand of Harm)",
+          "description": "Tur başına bir kez, Unarmed Strike ile bir yaratığa isabet ettirip hasar verdiğinizde Martial Arts zarınızın bir atışı artı Wisdom modifikasyonunuza eşit ekstra Necrotic hasar vermek için 1 Focus Point harcayabilirsiniz.",
+          "level": 3,
+          "featureType": "active"
+        },
         {
           "id": "hand-of-healing",
-          "name": "Hand of Healing",
-          "description": "You can touch a creature and spend 1 ki point to restore hit points.",
+          "name": "İyileşme Eli (Hand of Healing)",
+          "description": "Magic aksiyon olarak bir yaratığa dokunmak ve Martial Arts zarınızın bir atışı artı Wisdom modifikasyonunuza eşit sayıda Can Puanı restore etmek için 1 Focus Point harcayabilirsiniz. Flurry of Blows kullandığınızda Unarmed Strike'lardan birini iyileşme için Focus Point harcamadan bu özelliğin kullanımıyla değiştirebilirsiniz.",
           "level": 3,
+          "featureType": "active"
+        },
+        {
+          "id": "implements-of-mercy",
+          "name": "Merhamet Araçları (Implements of Mercy)",
+          "description": "Insight ve Medicine becerileriyle ve Herbalism Kit ile proficiency kazanırsınız.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "physicians-touch",
+          "name": "Hekimin Dokunuşu (Physician's Touch)",
+          "description": "Hand of Harm ve Hand of Healing'iniz gelişir:\n\nHand of Harm: Bir yaratığa Hand of Harm kullandığınızda o yaratığa bir sonraki turunuzun sonuna kadar Poisoned durumu da verebilirsiniz.\n\nHand of Healing: Hand of Healing kullandığınızda iyileştirdiğiniz yaratıktaki şu durumlardan birini de sonlandırabilirsiniz: Blinded, Deafened, Paralyzed, Poisoned veya Stunned.",
+          "level": 6,
+          "featureType": "passive"
+        },
+        {
+          "id": "flurry-of-healing-and-harm",
+          "name": "İy ileşme ve Zarar Yağmuru (Flurry of Healing and Harm)",
+          "description": "Flurry of Blows kullandığınızda Unarmed Strike'ların her birini iyileşme için Focus Point harcamadan Hand of Healing kullanımıyla değiştirebilirsiniz.\n\nAyrıca Flurry of Blows ile Unarmed Strike yapıp hasar verdiğinizde o darbe ile Hand of Harm için Focus Point harcamadan Hand of Harm kullanabilirsiniz. Yine de tur başına Hand of Harm'ı sadece bir kez kullanabilirsiniz.\n\nBu faydaları Wisdom modifikasyonunuza eşit sayıda (minimum bir kez) toplam kullanabilirsiniz. Uzun Dinlenme bittiğinde tüm harcanan kullanımları yenilersiniz.",
+          "level": 11,
+          "featureType": "active"
+        },
+        {
+          "id": "hand-of-ultimate-mercy",
+          "name": "Nihai Merhamet Eli (Hand of Ultimate Mercy)",
+          "description": "Yaşam enerjisindeki ustalığınız nihai merhamete kapıyı açar. Magic aksiyon olarak son 24 saat içinde ölen bir yaratığın cesedine dokunabilir ve 5 Focus Point harcayabilirsiniz. Yaratık 4d10 artı Wisdom modifikasyonunuz kadar Can Puanıyla hayata döner. Yaratık şu durumlardan biriyle öldüyse kaldırılmış olarak diriltilir: Blinded, Deafened, Paralyzed, Poisoned ve Stunned.\n\nBu özelliği kullandıktan sonra Uzun Dinlenme bitirene kadar tekrar kullanamazsınız.",
+          "level": 17,
           "featureType": "active"
         }
       ]
     },
     {
       "id": "warrior-of-shadow",
-      "name": "Warrior of Shadow",
-      "source": "user",
-      "description": "You practice the arts of stealth and subterfuge, bending the shadows to your will.",
+      "name": "Gölge Savaşçısı (Warrior of Shadow)",
+      "source": "phb24",
+      "description": "Gölge Savaşçıları gizlilik ve hile pratiği yapar, Shadowfell'in gücünden yararlanırlar. Karanlıkta evlerindedirler, gizlenmek için etraflarına kasvet çekebilir, gölgeden gölgeye sıçrayabilir ve hayalet benzeri bir form alabilirler.",
       "parentClassId": "monk",
       "subclassFeatureLevel": 3,
       "features": [
         {
           "id": "shadow-arts",
-          "name": "Shadow Arts",
-          "description": "You can use your ki to duplicate the effects of certain spells like Darkness or Silence.",
+          "name": "Gölge Sanatları (Shadow Arts)",
+          "description": "Shadowfell'in gücünden yararlanmayı öğrendiniz, şu faydaları kazanırsınız:\n\nKaranlık (Darkness): Darkness büyüsünü büyü bileşenleri olmadan yapmak için 1 Focus Point harcayabilirsiniz. Bu özellikle yaptığınızda büyünün alanı içinde görebilirsiniz. Büyü devam ederken turlarınızın başında Darkness alanını 60 fit içindeki bir alana hareket ettirebilirsiniz.\n\nKaranlıkta Görme (Darkvision): 60 fit menzilli Darkvision kazanırsınız. Zaten Darkvision'ınız varsa menzili 60 feet artar.\n\nGölgeli Hayaller (Shadowy Figments): Minor Illusion büyüsünü bilirsiniz. Bunun için büyü yapma yeteneğiniz Wisdom'dır.",
           "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "shadow-step",
+          "name": "Gölge Adımı (Shadow Step)",
+          "description": "Tamamen Loş Işık veya Karanlık içindeyken Bonus Aksiyon kullanarak aynı zamanda Loş Işık veya Karanlık içinde olan görebildiğiniz boş bir alana 60 fit kadar ışınlanabilirsiniz. Sonra mevcut tur bitmeden yaptığınız bir sonraki yakın dövüş saldırısında avantaj kazanırsınız.",
+          "level": 6,
+          "featureType": "active"
+        },
+        {
+          "id": "improved-shadow-step",
+          "name": "Gelişmiş Gölge Adımı (Improved Shadow Step)",
+          "description": "Işınlanmanızı güçlendirmek için Shadowfell bağlantınızdan yararlanabilirsiniz. Shadow Step kullandığınızda o kullanım için Loş Işık veya Karanlıkta başlama ve bitme gereksinimini kaldırmak için 1 Focus Point harcayabilirsiniz. Bu Bonus Aksiyonun parçası olarak ışınlandıktan hemen sonra bir Unarmed Strike yapabilirsiniz.",
+          "level": 11,
+          "featureType": "passive",
+          "improvesFeature": "shadow-step"
+        },
+        {
+          "id": "cloak-of-shadows",
+          "name": "Gölgeler Cübbesi (Cloak of Shadows)",
+          "description": "Tamamen Loş Işık veya Karanlık içindeyken Magic aksiyon olarak 1 dakika boyunca, Incapacitated durumuna girene veya turunuzu Parlak Işıkta bitirene kadar kendinizi gölgelerle örtmek için 3 Focus Point harcayabilirsiniz. Bu gölgelerle örtülüyken şu faydaları kazanırsınız:\n\nGörünmezlik (Invisibility): Invisible durumuna sahip olursunuz.\n\nKısmen Maddi Olmayan (Partially Incorporeal): Dolu alanlardan Zor Arazi gibi geçebilirsiniz. Turunuzu böyle bir alanda bitirirseniz içinde bulunduğunuz son boş alana itilirsiniz.\n\nGölge Yağmuru (Shadow Flurry): Flurry of Blows'u hiç Focus Point harcamadan kullanabilirsiniz.",
+          "level": 17,
+          "featureType": "active"
+        }
+      ]
+    },
+    {
+      "id": "warrior-of-the-elements",
+      "name": "Elementler Savaşçısı (Warrior of the Elements)",
+      "source": "phb24",
+      "description": "Elementler Savaşçıları Elemental Düzlemlerin gücünden yararlanırlar. Doğaüstü odaklarını kullanarak bu Monklar Elemental Kaosu'nun enerjisini savaşta ve savaş dışında kendilerini güçlendirmek için bir an evcilleştirirler.",
+      "parentClassId": "monk",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "elemental-attunement",
+          "name": "Elementel Uyum (Elemental Attunement)",
+          "description": "Turunuzun başında kendinizi elementel enerjiyle aşılamak için 1 Focus Point harcayabilirsiniz. Enerji 10 dakika boyunca veya Incapacitated durumuna girene kadar sürer. Bu özellik etkinken şu faydaları kazanırsınız:\n\nErişim (Reach): Unarmed Strike yaptığınızda erişiminiz normalden 10 fit daha fazladır, sizden elementel enerji uzanır.\n\nElementel Darbeler (Elemental Strikes): Unarmed Strike ile isabet ettirdiğinizde normal hasar tipi yerine seçtiğiniz Acid, Cold, Fire, Lightning veya Thunder hasarı verebilirsiniz. Onunla bu tiplerden birini verdiğinizde hedefi Strength kurtarma atışı yapmaya da zorlayabilirsiniz. Başarısız olursa hedefi etrafında elementel enerji döner ken 10 fit kadar size doğru veya sizden uzağa hareket ettirebilirsiniz.",
+          "level": 3,
+          "featureType": "active"
+        },
+        {
+          "id": "manipulate-elements",
+          "name": "Elementleri Manipüle Etme (Manipulate Elements)",
+          "description": "Elementalism büyüsünü bilirsiniz. Bunun için büyü yapma yeteneğiniz Wisdom'dır.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "elemental-burst",
+          "name": "Elementel Patlama (Elemental Burst)",
+          "description": "Magic aksiyon olarak 120 fit içindeki bir noktayı merkez alan 20 fit yarıçaplı Sphere içinde elementel enerjinin patlamasına sebep olmak için 2 Focus Point harcayabilirsiniz. Bir hasar tipi seçin: Acid, Cold, Fire, Lightning veya Thunder.\n\nSphere içindeki her yaratık Dexterity kurtarma atışı yapmalıdır. Başarısız olursa yaratık seçilen tipte Martial Arts zarınızın üç atışına eşit hasar alır. Başarılı olursa yarı hasar alır.",
+          "level": 6,
+          "featureType": "active"
+        },
+        {
+          "id": "stride-of-the-elements",
+          "name": "Elementlerin Adımı (Stride of the Elements)",
+          "description": "Elemental Attunement'ınız etkinken Hızınıza eşit bir Fly Speed ve Swim Speed de kazanırsınız.",
+          "level": 11,
+          "featureType": "passive"
+        },
+        {
+          "id": "elemental-epitome",
+          "name": "Elementel Özet (Elemental Epitome)",
+          "description": "Elemental Attunement'ınız etkinken şu faydaları da kazanırsınız:\n\nHasar Direnci (Damage Resistance): Seçtiğiniz şu hasar tiplerinden birine karşı Direnç kazanırsınız: Acid, Cold, Fire, Lightning veya Thunder. Turlarınızın her birinin başında bu seçimi değiştirebilirsiniz.\n\nYıkıcı Adım (Destructive Stride): Step of the Wind kullandığınızda Hızınız tur sonuna kadar 20 fit artar. O süre boyunca seçtiğiniz herhangi bir yaratık 5 fit içine bir alana girdiğinizde Martial Arts zarınızın bir atışına eşit hasar alır. Hasar tipi seçtiğiniz Acid, Cold, Fire, Lightning veya Thunder'dır. Bir yaratık bu hasarı tur başına sadece bir kez alabilir.\n\nGüçlendirilmiş Darbeler (Empowered Strikes): Turlarınızın her birinde bir kez, Unarmed Strike ile bir hedefe isabet ettirdiğinizde hedefe Martial Arts zarınızın bir atışına eşit ekstra hasar verebilirsiniz. Ekstra hasar o darbenin verdiği hasar tipiyle aynıdır.",
+          "level": 17,
+          "featureType": "passive"
+        }
+      ]
+    },
+    {
+      "id": "warrior-of-the-open-hand",
+      "name": "Açık El Savaşçısı (Warrior of the Open Hand)",
+      "source": "phb24",
+      "description": "Açık El Savaşçıları silahsız dövüş ustalıdır. Rakiplerini itmek ve devirmek için teknikler öğrenirler ve kendilerini zarardan korumak için kendi enerjilerini manipüle ederler.",
+      "parentClassId": "monk",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "open-hand-technique",
+          "name": "Açık El Tekniği (Open Hand Technique)",
+          "description": "Flurry of Blows'unuzun verdiği bir saldırıyla bir yaratığa isabet ettirdiğinizde o hedefe şu etkilerden birini uygulayabilirsiniz:\n\nŞaşırtma (Addle): Hedef bir sonraki turunun başına kadar Opportunity Attack yapamaz.\n\nİtme (Push): Hedef Strength kurtarma atışında başarılı olmalıdır veya sizden 15 fit kadar itilir.\n\nDevir me (Topple): Hedef Dexterity kurtarma atışında başarılı olmalıdır veya Prone durumuna girer.",
+          "level": 3,
+          "featureType": "active"
+        },
+        {
+          "id": "wholeness-of-body",
+          "name": "Vücudun Bütünlüğü (Wholeness of Body)",
+          "description": "Kendinizi iyileştirme yeteneği kazanırsınız. Bonus Aksiyon olarak Martial Arts zarınızı atabilirsiniz. Atılan sayı artı Wisdom modifikasyonunuz (minimum 1 Can Puanı kazanılır) kadar Can Puanı yenilersiniz.\n\nBu özelliği Wisdom modifikasyonunuza eşit sayıda (minimum bir kez) kullanabilirsiniz ve Uzun Dinlenme bittiğinde tüm harcanan kullanımları yenilersiniz.",
+          "level": 6,
+          "featureType": "active"
+        },
+        {
+          "id": "fleet-step",
+          "name": "Hızlı Adım (Fleet Step)",
+          "description": "Step of the Wind dışında bir Bonus Aksiyon aldığınızda o Bonus Aksiyondan hemen sonra Step of the Wind da kullanabilirsiniz.",
+          "level": 11,
+          "featureType": "passive"
+        },
+        {
+          "id": "quivering-palm",
+          "name": "Titreyen Avuç (Quivering Palm)",
+          "description": "Birinin vücudunda ölümcül titreşimler kurma yeteneği kazanırsınız. Unarmed Strike ile bir yaratığa isabet ettirdiğinizde Monk seviyenize eşit sayıda gün süren bu algılanamaz titreşimleri başlatmak için 4 Focus Point harcayabilirsiniz. Titreşimler siz sonlandırana kadar zararsızdır. Alternatif olarak turunuzda Attack aksiyonu aldığınızda saldırılardan birinden vazgeçerek titreşimleri sonlandırabilirsiniz. Onları sonlandırmak için siz ve hedef aynı varoluş düzleminde olmalısınız. Onları sonlandırdığınızda hedef Constitution kurtarma atışı yapmalıdır, başarısız olursa 10d12 Force hasar alır, başarılı olursa yarı hasar alır.\n\nAynı anda bu özelliğin etkisi altında sadece bir yaratık olabilir. Titreşimleri zararsız şekilde (aksiyon gerekmez) sonlandırabilirsiniz.",
+          "level": 17,
           "featureType": "active"
         }
       ]
@@ -245,7 +520,7 @@
     "playstyleKeywords": [
       "Martial",
       "Mobile",
-      "Ki user",
+      "Focus user",
       "Striker"
     ],
     "roleInParty": [

@@ -1,8 +1,8 @@
 {
   "id": "cleric",
   "name": "Cleric",
-  "source": "srd",
-  "description": "A priestly champion who wields divine magic in service of a higher power.",
+  "source": "phb24",
+  "description": "Daha yüksek bir gücün hizmetinde ilahi büyü kullanan rahip şampiyon.",
   "hitDie": "d8",
   "primaryAbility": [
     "WIS"
@@ -47,92 +47,40 @@
     }
   },
   "startingEquipment": {
-    "guaranteed": [
-      {
-        "itemId": "shield",
-        "quantity": 1
-      },
-      {
-        "itemId": "holy_symbol",
-        "quantity": 1
-      }
-    ],
     "choices": [
       {
-        "id": "weapon-choice",
+        "id": "starting-pack",
         "options": [
           {
-            "description": "A mace",
-            "items": [
-              {
-                "itemId": "mace",
-                "quantity": 1
-              }
-            ]
-          },
-          {
-            "description": "A warhammer (if proficient)",
-            "items": [
-              {
-                "itemId": "warhammer",
-                "quantity": 1
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "armor-choice",
-        "options": [
-          {
-            "description": "Scale mail",
-            "items": [
-              {
-                "itemId": "scale_mail",
-                "quantity": 1
-              }
-            ]
-          },
-          {
-            "description": "Leather armor",
-            "items": [
-              {
-                "itemId": "leather_armor",
-                "quantity": 1
-              }
-            ]
-          },
-          {
-            "description": "Chain mail (if proficient)",
+            "description": "(A) Chain Mail, Holy Symbol, Mace, Priest's Pack, Shield, and 7 GP",
             "items": [
               {
                 "itemId": "chain_mail",
                 "quantity": 1
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "pack-choice",
-        "options": [
-          {
-            "description": "A priest's pack",
-            "items": [
+              },
+              {
+                "itemId": "holy_symbol",
+                "quantity": 1
+              },
+              {
+                "itemId": "mace",
+                "quantity": 1
+              },
               {
                 "itemId": "priests_pack",
                 "quantity": 1
-              }
-            ]
-          },
-          {
-            "description": "An explorer's pack",
-            "items": [
+              },
               {
-                "itemId": "explorers_pack",
+                "itemId": "shield",
                 "quantity": 1
               }
-            ]
+            ],
+            "gold": 7
+          },
+          {
+            "description": "(B) 110 GP",
+            "items": [],
+            "gold": 110
           }
         ]
       }
@@ -172,195 +120,249 @@
   "features": [
     {
       "id": "spellcasting-cleric",
-      "name": "Spellcasting",
-      "source": "srd",
-      "description": "As a conduit for divine power, you can cast cleric spells. Wisdom is your spellcasting ability.",
+      "name": "Büyü Yapma (Spellcasting)",
+      "source": "phb24",
+      "description": "Dua ve meditasyon yoluyla büyü yapmayı öğrendiniz.\n\nCantrip'ler: Cleric büyü listesinden seçtiğiniz üç cantrip bilirsiniz (Guidance, Sacred Flame, Thaumaturgy önerilir). Cleric seviyesi kazandığınızda cantrip'lerden birini başka bir Cleric cantrip ile değiştirebilirsiniz. Seviye 4 ve 10'da birer cantrip daha öğrenirsiniz.\n\nBüyü Slotları: Uzun Dinlenme bittiğinde tüm harcanan slotları yenilersiniz.\n\nHazırlanan Büyüler (Seviye 1+): Başlangıçta Cleric büyü listesinden dört adet seviye 1 büyü seçin (Bless, Cure Wounds, Guiding Bolt, Shield of Faith önerilir). Cleric seviyesi kazandıkça hazırlanan büyü sayınız artar. Uzun Dinlenme bittiğinde hazırlanan büyüleri değiştirebilirsiniz.\n\nBüyü Yapma Yeteneği: Wisdom.\n\nBüyü Odağı: Holy Symbol kullanabilirsiniz.",
       "level": 1,
-      "featureType": "passive",
-      "teachingNotes": {
-        "conceptsTaught": [
-          "spellcasting",
-          "spell_slots",
-          "prepared_caster",
-          "spell_save_dc",
-          "spell_attack"
-        ],
-        "practiceScenario": "cleric-spellcasting-intro"
-      }
+      "featureType": "passive"
     },
     {
-      "id": "divine-domain",
-      "name": "Divine Domain",
+      "id": "divine-order",
+      "name": "İlahi Düzen (Divine Order)",
       "source": "phb24",
-      "description": "Choose one domain related to your deity. Your choice grants you domain spells and other features.",
-      "level": 3,
-      "featureType": "choice",
-      "teachingNotes": {
-        "conceptsTaught": [
-          "subclass_selection",
-          "domain_spells"
-        ],
-        "practiceScenario": "domain-selection"
-      }
+      "description": "Kendinizi aşağıdaki kutsal rollerden birine adadınız:\n\nKoruyucu (Protector): Savaş için eğitilmiş olarak Martial silahlar ile proficiency ve Heavy zırh ile eğitim kazanırsınız.\n\nThaumaturge: Cleric büyü listesinden bir ekstra cantrip bilirsiniz. Ayrıca ilahiye mistik bağlantınız Intelligence (Arcana veya Religion) kontrollerine bonus verir. Bonus Wisdom modifikasyonunuza eşittir (minimum +1).",
+      "level": 1,
+      "featureType": "choice"
     },
     {
       "id": "channel-divinity",
-      "name": "Channel Divinity",
-      "source": "srd",
-      "description": "You gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects.",
+      "name": "İlahi Kanal (Channel Divinity)",
+      "source": "phb24",
+      "description": "Büyüsel etkileri güçlendirmek için Dış Düzlemlerden doğrudan ilahi enerji kanalı açabilirsiniz. İki etkiyle başlarsınız: Divine Spark ve Turn Undead. Bu sınıfın Channel Divinity'sini her kullandığınızda bu sınıftan hangi etkiyi yaratacağınızı seçin. Daha yüksek Cleric seviyelerinde ek etki seçenekleri kazanırsınız.\n\nBu sınıfın Channel Divinity'sini iki kez kullanabilirsiniz. Kısa Dinlenme bittiğinde bir harcanan kullanım, Uzun Dinlenme bittiğinde tüm harcanan kullanımlar yenilenir. Belirli Cleric seviyelerine ulaştığınızda ek kullanımlar kazanırsınız.\n\nBir Channel Divinity etkisi kurtarma atışı gerektiriyorsa DC, bu sınıfın Spellcasting özelliğindeki büyü kurtarma DC'sine eşittir.",
       "level": 2,
       "featureType": "resource",
       "resource": {
-        "name": "Channel Divinity",
-        "maxCount": 1,
+        "name": "İlahi Kanal",
+        "maxCount": 2,
         "recoversOn": "short"
-      },
-      "teachingNotes": {
-        "conceptsTaught": [
-          "channel_divinity",
-          "class_resource"
-        ],
-        "practiceScenario": "channel-divinity-tutorial"
       }
+    },
+    {
+      "id": "divine-spark",
+      "name": "İlahi Kıvılcım (Divine Spark)",
+      "source": "phb24",
+      "description": "Magic aksiyon olarak Holy Symbolünüzü 30 fit içinde görebildiğiniz başka bir yaratığa doğrultup ilahi enerji odaklarsınız. 1d8 atın ve Wisdom modifikasyonunuzu ekleyin. Ya yaratığa o toplam kadar Can Puanı restore edersiniz ya da yaratığın Constitution kurtarma atışı yapmasını zorlarsınız. Başarısız olursa yaratık o toplam kadar Necrotic veya Radiant hasar (seçiminize göre) alır. Başarılı olursa yarı hasar alır (aşağı yuvarla).\n\nCleric seviyesi 7 (2d8), 13 (3d8) ve 18'de (4d8) ek d8 atarsınız.",
+      "level": 2,
+      "featureType": "active"
     },
     {
       "id": "turn-undead",
-      "name": "Channel Divinity: Turn Undead",
-      "source": "srd",
-      "description": "As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead within 30 feet must make a Wisdom saving throw or be turned for 1 minute.",
+      "name": "Ölüleri Çevirme (Turn Undead)",
+      "source": "phb24",
+      "description": "Magic aksiyon olarak Holy Symbolünüzü gösterip Undead yaratıkları kınarsınız. 30 fit içindeki seçtiğiniz her Undead bir Wisdom kurtarma atışı yapmalıdır. Yaratık atışta başarısız olursa 1 dakika boyunca Frightened ve Incapacitated durumlarına girer. Bu süre boyunca turlarında sizden olabildiğince uzağa hareket etmeye çalışır. Yaratık herhangi bir hasar alırsa, siz Incapacitated durumuna girerseniz veya ölürseniz etki erken biter.",
       "level": 2,
-      "featureType": "active",
-      "teachingNotes": {
-        "conceptsTaught": [
-          "aoe_effect",
-          "saving_throws",
-          "condition_application"
-        ],
-        "practiceScenario": "turn-undead-demo"
-      }
+      "featureType": "active"
     },
     {
-      "id": "destroy-undead",
-      "name": "Destroy Undead",
-      "source": "srd",
-      "description": "When an undead fails its saving throw against your Turn Undead feature, the creature is instantly destroyed if its challenge rating is at or below a certain threshold.",
+      "id": "cleric-subclass",
+      "name": "Cleric Alt Sınıfı",
+      "source": "phb24",
+      "description": "Seçtiğiniz bir Cleric alt sınıfında (subclass) uzmanlaşırsınız.",
+      "level": 3,
+      "featureType": "choice"
+    },
+    {
+      "id": "asi-4",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 4,
+      "featureType": "choice"
+    },
+    {
+      "id": "sear-undead",
+      "name": "Ölüleri Yakma (Sear Undead)",
+      "source": "phb24",
+      "description": "Turn Undead kullandığınızda Wisdom modifikasyonunuza eşit sayıda d8 (minimum 1d8) atabilir ve atışları toplayabilirsiniz. Turn Undead'e karşı kurtarma atışında başarısız olan her Undead, atış toplamına eşit Radiant hasar alır. Bu hasar turn etkisini sonlandırmaz.",
       "level": 5,
       "featureType": "passive",
       "improvesFeature": "turn-undead"
     },
     {
+      "id": "subclass-feature-6",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Cleric alt sınıfınızdan bir özellik kazanırsınız.",
+      "level": 6,
+      "featureType": "passive"
+    },
+    {
+      "id": "blessed-strikes",
+      "name": "Kutsanmış Darbeler (Blessed Strikes)",
+      "source": "phb24",
+      "description": "İlahi güç savaşta size nüfuz eder. Seçtiğiniz aşağıdaki seçeneklerden birini kazanırsınız:\n\nİlahi Darbe (Divine Strike): Turlarınızda bir kez, bir silahla saldırı atışıyla bir yaratığa isabet ettirdiğinizde hedefe ekstra 1d8 Necrotic veya Radiant hasar (seçiminize göre) verebilirsiniz.\n\nGüçlü Büyü Yapma (Potent Spellcasting): Herhangi bir Cleric cantrip ile verdiğiniz hasara Wisdom modifikasyonunuzu eklersiniz.",
+      "level": 7,
+      "featureType": "choice"
+    },
+    {
+      "id": "asi-8",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 8,
+      "featureType": "choice"
+    },
+    {
       "id": "divine-intervention",
-      "name": "Divine Intervention",
-      "source": "srd",
-      "description": "You can call on your deity to intervene on your behalf when your need is great.",
+      "name": "İlahi Müdahale (Divine Intervention)",
+      "source": "phb24",
+      "description": "Tanrınızı veya panteonunuzu sizin adınıza müdahale etmesi için çağırabilirsiniz. Magic aksiyon olarak Reaction gerektirmeyen seviye 5 veya altı herhangi bir Cleric büyüsü seçin. Aynı aksiyonun parçası olarak o büyüyü büyü slotu harcamadan ve Material bileşenlerine ihtiyaç duymadan yaparsınız. Bu özelliği Uzun Dinlenme bitirene kadar tekrar kullanamazsınız.",
       "level": 10,
       "featureType": "resource",
       "resource": {
-        "name": "Divine Intervention",
+        "name": "İlahi Müdahale",
         "maxCount": 1,
         "recoversOn": "long"
       }
+    },
+    {
+      "id": "asi-12",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 12,
+      "featureType": "choice"
+    },
+    {
+      "id": "improved-blessed-strikes",
+      "name": "Gelişmiş Kutsanmış Darbeler (Improved Blessed Strikes)",
+      "source": "phb24",
+      "description": "Blessed Strikes için seçtiğiniz seçenek daha güçlü hale gelir:\n\nİlahi Darbe (Divine Strike): Divine Strike'ın ekstra hasarı 2d8'e yükselir.\n\nGüçlü Büyü Yapma (Potent Spellcasting): Bir Cleric cantrip yapıp bir yaratığa hasar verdiğinizde, 60 fit içindeki kendinize veya başka bir yaratığa canlılık verebilirsiniz, Wisdom modifikasyonunuzun iki katı kadar Geçici Can Puanı verirsiniz.",
+      "level": 14,
+      "featureType": "passive",
+      "improvesFeature": "blessed-strikes"
+    },
+    {
+      "id": "asi-16",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 16,
+      "featureType": "choice"
+    },
+    {
+      "id": "subclass-feature-17",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Cleric alt sınıfınızdan bir özellik kazanırsınız.",
+      "level": 17,
+      "featureType": "passive"
+    },
+    {
+      "id": "epic-boon-cleric",
+      "name": "Epik Lütuf (Epic Boon)",
+      "source": "phb24",
+      "description": "Bir Epik Lütuf veya seçebileceğiniz başka bir hüner kazanırsınız. Boon of Fate önerilir.",
+      "level": 19,
+      "featureType": "choice"
+    },
+    {
+      "id": "greater-divine-intervention",
+      "name": "Yüce İlahi Müdahale (Greater Divine Intervention)",
+      "source": "phb24",
+      "description": "Daha da güçlü ilahi müdahaleyi çağırabilirsiniz. Divine Intervention özelliğinizi kullandığınızda büyü seçerken Wish'i seçebilirsiniz. Bunu yaparsanız 2d4 Uzun Dinlenme bitirene kadar Divine Intervention'ı tekrar kullanamazsınız.",
+      "level": 20,
+      "featureType": "passive",
+      "improvesFeature": "divine-intervention"
     }
   ],
   "subclasses": [
     {
       "id": "life-domain",
-      "name": "Life Domain",
+      "name": "Yaşam Alanı (Life Domain)",
       "source": "phb24",
-      "description": "The Life domain focuses on the vibrant positive energy that sustains all life.",
+      "description": "Yaşam Alanı, çoklu evrende tüm yaşamı sürdüren pozitif enerjiye odaklanır. Bu alana dokunan Cleric'ler iyileşme ustalarıdır ve o yaşam gücünü birçok yarayı tedavi etmek için kullanırlar. Varoluşun kendisi bu alanla ilişkili pozitif enerjiye dayanır, bu nedenle neredeyse herhangi bir dini geleneğin Cleric'i bunu seçebilir. Bu alan özellikle tarım tanrıları, iyileşme veya dayanıklılık tanrıları ve ev ve topluluk tanrıları ile ilişkilidir.",
       "parentClassId": "cleric",
       "subclassFeatureLevel": 3,
       "features": [
         {
           "id": "life-domain-spells",
-          "name": "Life Domain Spells",
-          "description": "You always have certain spells prepared: Aid, Bless, Cure Wounds, Lesser Restoration at level 3, etc.",
+          "name": "Yaşam Alanı Büyüleri (Life Domain Spells)",
+          "description": "Bu ilahi alana bağlantınız belirli büyüleri her zaman hazır tutmanızı sağlar:\n\nSeviye 3: Aid, Bless, Cure Wounds, Lesser Restoration\nSeviye 5: Mass Healing Word, Revivify\nSeviye 7: Aura of Life, Death Ward\nSeviye 9: Greater Restoration, Mass Cure Wounds",
           "level": 3,
           "featureType": "passive"
         },
         {
           "id": "disciple-of-life",
-          "name": "Disciple of Life",
-          "source": "phb24",
-          "description": "When a spell you cast with a spell slot restores Hit Points, the creature regains additional HP equal to 2 plus the spell slot's level.",
+          "name": "Yaşam Müridi (Disciple of Life)",
+          "description": "Büyü slotu ile yaptığınız bir büyü bir yaratığa Can Puanı restore ettiğinde, o yaratık büyüyü yaptığınız turda ek Can Puanları kazanır. Ek Can Puanları 2 artı büyü slotunun seviyesine eşittir.",
           "level": 3,
           "featureType": "passive"
         },
         {
           "id": "preserve-life",
-          "name": "Preserve Life",
-          "source": "phb24",
-          "description": "As a Magic action, you expend Channel Divinity to heal bloodied creatures within 30 feet.",
+          "name": "Yaşamı Koruma (Preserve Life)",
+          "description": "Magic aksiyon olarak Holy Symbolünüzü gösterir ve Channel Divinity kullanımı harcayarak Cleric seviyenizin beş katı kadar Can Puanı restore edebilen iyileştirici enerji çağırırsınız. 30 fit içindeki Bloodied yaratıkları seçin (kendinizi içerebilir) ve bu Can Puanlarını aralarında bölüştürün. Bu özellik bir yaratığı Can Puanı maksimumunun yarısından fazlasına restore edemez.",
           "level": 3,
           "featureType": "active"
         },
         {
           "id": "blessed-healer",
-          "name": "Blessed Healer",
-          "source": "phb24",
-          "description": "Healing spells you cast on others heal you as well.",
+          "name": "Kutsanmış İyileştirici (Blessed Healer)",
+          "description": "Başkalarına yaptığınız iyileştirici büyüler sizi de iyileştirir. Büyü slotu ile sizden başka bir yaratığa Can Puanı restore eden bir büyü yaptıktan hemen sonra, 2 artı büyü slotunun seviyesi kadar Can Puanı kazanırsınız.",
           "level": 6,
           "featureType": "passive"
         },
         {
           "id": "supreme-healing",
-          "name": "Supreme Healing",
-          "source": "phb24",
-          "description": "When you restore Hit Points with a spell or Channel Divinity, use the highest number possible for each die.",
+          "name": "Üstün İyileşme (Supreme Healing)",
+          "description": "Normalde bir büyü veya Channel Divinity ile bir yaratığa Can Puanı restore etmek için bir veya daha fazla zar atacağınızda, iyileşme için zar atmayın; bunun yerine her zar için mümkün olan en yüksek sayıyı kullanın. Örneğin bir yaratığa bir büyüyle 2d6 Can Puanı restore etmek yerine 12 restore edersiniz.",
           "level": 17,
           "featureType": "passive"
         }
-      ],
-      "additionalSpellcasting": {
-        "spellList": "life-domain",
-        "spellcastingAbility": "WIS",
-        "progression": "full"
-      }
+      ]
     },
     {
       "id": "light-domain",
-      "name": "Light Domain",
+      "name": "Işık Alanı (Light Domain)",
       "source": "phb24",
-      "description": "The Light domain emphasizes the divine power to bring about blazing fire and revelation.",
+      "description": "Işık Alanı, parlayan ateş ve vahiy getirmek için ilahi gücü vurgular. Bu gücü kullanan Cleric'ler, ışıkla dolu ve tanrılarının ayırt edici vizyonunun gücüyle dolmuş aydınlanmış ruhlardır; yalanları kovalamak ve karanlığı yakmakla görevlendirilmişlerdir. Işık Alanı hakikat, uyanıklık, güzellik, içgörü ve yenilenme tanrılarıyla ilişkilidir. Bu tanrılardan bazıları güneşle özdeşleştirilir veya güneşi gökyüzünde yönlendiren arabalılar olarak tanımlanır.",
       "parentClassId": "cleric",
       "subclassFeatureLevel": 3,
       "features": [
         {
           "id": "light-domain-spells",
-          "name": "Light Domain Spells",
-          "description": "You always have certain spells prepared: Burning Hands, Faerie Fire, Scorching Ray, See Invisibility at level 3, etc.",
+          "name": "Işık Alanı Büyüleri (Light Domain Spells)",
+          "description": "Bu ilahi alana bağlantınız belirli büyüleri her zaman hazır tutmanızı sağlar:\n\nSeviye 3: Burning Hands, Faerie Fire, Scorching Ray, See Invisibility\nSeviye 5: Daylight, Fireball\nSeviye 7: Arcane Eye, Wall of Fire\nSeviye 9: Flame Strike, Scrying",
           "level": 3,
           "featureType": "passive"
         },
         {
           "id": "radiance-of-the-dawn",
-          "name": "Radiance of the Dawn",
-          "source": "phb24",
-          "description": "As a Magic action, you expend Channel Divinity to emit a flash of light that dispels darkness and deals radiant damage.",
+          "name": "Şafağın Parıltısı (Radiance of the Dawn)",
+          "description": "Magic aksiyon olarak Holy Symbolünüzü gösterir ve Channel Divinity kullanımı harcayarak kendinizden başlayan 30 fit Emanation içinde ışık flaşı yayarsınız. O alandaki herhangi bir büyüsel Karanlık—örneğin Darkness büyüsünün yarattığı—dağıtılır. Ayrıca o alandaki seçtiğiniz her yaratık Constitution kurtarma atışı yapmalıdır, başarısız olursa 2d10 artı Cleric seviyeniz kadar Radiant hasar alır, başarılı olursa yarı hasar alır.",
           "level": 3,
           "featureType": "active"
         },
         {
           "id": "warding-flare",
-          "name": "Warding Flare",
-          "source": "phb24",
-          "description": "When a creature within 30 feet attacks, you can use a Reaction to impose Disadvantage.",
+          "name": "Koruyucu Parıltı (Warding Flare)",
+          "description": "30 fit içinde görebildiğiniz bir yaratık saldırı atışı yaptığında, isabetlemeden veya ıskalamadan önce ışığın parlamasına sebep olarak saldırı atışına Dezavantaj vermek için Reaksiyon alabilirsiniz.\n\nBu özelliği Wisdom modifikasyonunuza eşit sayıda (minimum bir kez) kullanabilirsiniz. Uzun Dinlenme bittiğinde tüm harcanan kullanımlar yenilenir.",
           "level": 3,
           "featureType": "active"
         },
         {
           "id": "improved-warding-flare",
-          "name": "Improved Warding Flare",
-          "source": "phb24",
-          "description": "You regain uses of Warding Flare on a Short Rest and grant temporary HP when using it.",
+          "name": "Gelişmiş Koruyucu Parıltı (Improved Warding Flare)",
+          "description": "Kısa veya Uzun Dinlenme bittiğinde Warding Flare'in tüm harcanan kullanımlarını yenilersiniz.\n\nAyrıca Warding Flare kullandığınızda tetikleyici saldırının hedefine 2d6 artı Wisdom modifikasyonunuz kadar Geçici Can Puanı verebilirsiniz.",
           "level": 6,
-          "featureType": "active"
+          "featureType": "passive",
+          "improvesFeature": "warding-flare"
         },
         {
           "id": "corona-of-light",
-          "name": "Corona of Light",
-          "source": "phb24",
-          "description": "As a Magic action, you emit an aura of sunlight that imposes Disadvantage on saves against your fire/radiant effects.",
+          "name": "Işık Tacı (Corona of Light)",
+          "description": "Magic aksiyon olarak 1 dakika boyunca veya kapatana kadar (aksiyon gerekmez) güneş ışığı yayan bir aura yayarsınız. 60 fit yarıçapında Parlak Işık ve ek 30 fit için Loş Işık yayarsınız. Parlak Işıktaki düşmanlarınız Radiance of the Dawn ve Fire veya Radiant hasar veren herhangi bir büyüye karşı kurtarma atışlarında Dezavantaja sahiptir.\n\nBu özelliği Wisdom modifikasyonunuza eşit sayıda (minimum bir kez) kullanabilirsiniz ve Uzun Dinlenme bittiğinde tüm harcanan kullanımları yenilersiniz.",
           "level": 17,
           "featureType": "active"
         }
@@ -368,97 +370,90 @@
     },
     {
       "id": "trickery-domain",
-      "name": "Trickery Domain",
+      "name": "Hile Alanı (Trickery Domain)",
       "source": "phb24",
-      "description": "The Trickery Domain offers magic of deception, illusion, and stealth.",
+      "description": "Hile Alanı aldatma, illüzyon ve gizlilik büyüsü sunar. Bu büyüyü kullanan Cleric'ler dünyada yıkıcı bir güçtür; gururu delen, tiranlarla alay eden, tutsakları kurtaran ve içi boş gelenekleri alaycılıkladır. Doğrudan yüzleşme yerine kurnazlığı ve şakaları tercih ederler. Hile tanrıları yaramazlık yapanlardır ve hem tanrılar hem de ölümlüler arasında kabul edilen düzene sürekli bir meydan okuma olarak dururlar.",
       "parentClassId": "cleric",
       "subclassFeatureLevel": 3,
       "features": [
         {
           "id": "trickery-domain-spells",
-          "name": "Trickery Domain Spells",
-          "description": "You always have certain spells prepared: Charm Person, Disguise Self, Invisibility, Pass without Trace at level 3, etc.",
+          "name": "Hile Alanı Büyüleri (Trickery Domain Spells)",
+          "description": "Bu ilahi alana bağlantınız belirli büyüleri her zaman hazır tutmanızı sağlar:\n\nSeviye 3: Charm Person, Disguise Self, Invisibility, Pass without Trace\nSeviye 5: Hypnotic Pattern, Nondetection\nSeviye 7: Confusion, Dimension Door\nSeviye 9: Dominate Person, Modify Memory",
           "level": 3,
           "featureType": "passive"
         },
         {
           "id": "blessing-of-the-trickster",
-          "name": "Blessing of the Trickster",
-          "source": "phb24",
-          "description": "As a Magic action, you grant Advantage on Dexterity (Stealth) checks to yourself or a willing creature.",
+          "name": "Hilekârın Lütfu (Blessing of the Trickster)",
+          "description": "Magic aksiyon olarak kendinizi veya 30 fit içindeki istekli bir yaratığı seçerek Dexterity (Stealth) kontrollerinde avantaj kazanmasını sağlayabilirsiniz. Bu lütuf Uzun Dinlenme bitirene veya bu özelliği tekrar kullanana kadar sürer.",
           "level": 3,
           "featureType": "active"
         },
         {
           "id": "invoke-duplicity",
-          "name": "Invoke Duplicity",
-          "source": "phb24",
-          "description": "As a Bonus Action, you expend Channel Divinity to create an illusion of yourself.",
+          "name": "İkizliği Çağırma (Invoke Duplicity)",
+          "description": "Bonus Aksiyon olarak Channel Divinity kullanımı harcayarak 30 fit içinde görebildiğiniz boş bir alanda kendinizin mükemmel bir görsel illüzyonunu yaratabilirsiniz. İllüzyon maddi olmayan ve alanını kaplamaz. 1 dakika sürer ancak kapatırsanız (aksiyon gerekmez) veya Incapacitated durumuna girerseniz erken biter. İllüzyon canlandırılmıştır ve ifadelerinizi ve jestlerinizi taklit eder. Devam ederken şu faydaları kazanırsınız:\n\nBüyü Yapma (Cast Spells): İllüzyonun alanındaymış gibi büyü yapabilirsiniz ama kendi duyularınızı kullanmalısınız.\n\nDikkati Dağıtma (Distract): Hem siz hem illüzyonunuz illüzyonu görebilen bir yaratığın 5 fit içindeyken, o yaratığa karşı saldırı atışlarınızda avantaj kazanırsınız, çünkü illüzyon hedef için dikkat dağıtıcıdır.\n\nHareket (Move): Bonus Aksiyon olarak illüzyonu 120 fit içinde görebildiğiniz boş bir alana 30 fit kadar hareket ettirebilirsiniz.",
           "level": 3,
           "featureType": "active"
         },
         {
           "id": "tricksters-transposition",
-          "name": "Trickster's Transposition",
-          "source": "phb24",
-          "description": "You can teleport and swap places with your illusion.",
+          "name": "Hilekârın Yer Değiştirmesi (Trickster's Transposition)",
+          "description": "Invoke Duplicity illüzyonunu yaratmak veya hareket ettirmek için Bonus Aksiyon aldığınızda ışınlanabilir ve illüzyonla yer değiştirebilirsiniz.",
           "level": 6,
           "featureType": "active"
         },
         {
           "id": "improved-duplicity",
-          "name": "Improved Duplicity",
-          "source": "phb24",
-          "description": "Your illusion grants shared distraction and heals when it ends.",
+          "name": "Gelişmiş İkizlik (Improved Duplicity)",
+          "description": "Invoke Duplicity illüzyonunuz şu şekillerde daha güçlü hale gelmiştir:\n\nPaylaşılan Dikkati Dağıtma (Shared Distraction): Siz ve müttefikleriniz illüzyonun 5 fit içindeki bir yaratığa saldırı atışları yaptığınızda saldırı atışları avantajlıdır.\n\nİyileştirici İllüzyon (Healing Illusion): İllüzyon sona erdiğinde siz veya onun 5 fit içindeki seçtiğiniz bir yaratık Cleric seviyenize eşit Can Puanı kazanır.",
           "level": 17,
-          "featureType": "active"
+          "featureType": "passive",
+          "improvesFeature": "invoke-duplicity"
         }
       ]
     },
     {
       "id": "war-domain",
-      "name": "War Domain",
+      "name": "Savaş Alanı (War Domain)",
       "source": "phb24",
-      "description": "Clerics of the War Domain excel in battle, inspiring others to fight the good fight.",
+      "description": "Savaşın birçok tezahürü vardır. Sıradan insanları kahramanlara dönüştürebilir. Umutsuz ve korkunç olabilir, mükemmellik ve cesaret örneklerini gölgede bırakan gaddarlık ve korkaklık eylemleriyle. Savaş Alanının büyüsüne dokunan Cleric'ler savaşta mükemmelleşirler, başkalarına iyi savaşı vermek için ilham verirler veya şiddet eylemlerini dua olarak sunarlar. Savaş Alanının tanrıları savaşçıları izler ve büyük işleri için onları ödüllendirirler.",
       "parentClassId": "cleric",
       "subclassFeatureLevel": 3,
       "features": [
         {
           "id": "war-domain-spells",
-          "name": "War Domain Spells",
-          "description": "You always have certain spells prepared: Guiding Bolt, Magic Weapon, Shield of Faith, Spiritual Weapon at level 3, etc.",
+          "name": "Savaş Alanı Büyüleri (War Domain Spells)",
+          "description": "Bu ilahi alana bağlantınız belirli büyüleri her zaman hazır tutmanızı sağlar:\n\nSeviye 3: Guiding Bolt, Magic Weapon, Shield of Faith, Spiritual Weapon\nSeviye 5: Crusader's Mantle, Spirit Guardians\nSeviye 7: Fire Shield, Freedom of Movement\nSeviye 9: Hold Monster, Steel Wind Strike",
           "level": 3,
           "featureType": "passive"
         },
         {
           "id": "war-priest",
-          "name": "War Priest",
-          "source": "phb24",
-          "description": "As a Bonus Action, you can make one attack with a weapon or an Unarmed Strike.",
+          "name": "Savaş Rahibi (War Priest)",
+          "description": "Bonus Aksiyon olarak bir silahla veya Unarmed Strike ile bir saldırı yapabilirsiniz. Bu Bonus Aksiyonu Wisdom modifikasyonunuza eşit sayıda (minimum bir kez) kullanabilirsiniz. Kısa veya Uzun Dinlenme bittiğinde tüm harcanan kullanımlar yenilenir.",
           "level": 3,
           "featureType": "active"
         },
         {
           "id": "guided-strike",
-          "name": "Guided Strike",
-          "source": "phb24",
-          "description": "You can expend Channel Divinity to gain a +10 bonus to an attack roll.",
+          "name": "Yönlendirilmiş Darbe (Guided Strike)",
+          "description": "Siz veya 30 fit içindeki bir yaratık saldırı atışında ıskaladığında, Channel Divinity kullanımı harcayıp o atışa +10 bonus verebilirsiniz, potansiyel olarak isabetlemesini sağlayabilirsiniz. Bu özelliği başka bir yaratığın saldırı atışına fayda sağlamak için kullandığınızda bunu yapmak için Reaksiyon almalısınız.",
           "level": 3,
           "featureType": "active"
         },
         {
           "id": "war-gods-blessing",
-          "name": "War God's Blessing",
-          "source": "phb24",
-          "description": "You can expend Channel Divinity to cast Shield of Faith or Spiritual Weapon without concentration.",
+          "name": "Savaş Tanrısının Lütfu (War God's Blessing)",
+          "description": "Büyü slotu harcamak yerine Channel Divinity kullanımı harcayarak Shield of Faith veya Spiritual Weapon yapabilirsiniz. Bu şekilde bu büyülerden birini yaptığınızda büyü Konsantrasyon gerektirmez. Bunun yerine büyü 1 dakika sürer ancak o büyüyü tekrar yaparsanız, Incapacitated durumuna girerseniz veya ölürseniz erken biter.",
           "level": 6,
           "featureType": "active"
         },
         {
           "id": "avatar-of-battle",
-          "name": "Avatar of Battle",
-          "source": "phb24",
-          "description": "You gain Resistance to Bludgeoning, Piercing, and Slashing damage.",
+          "name": "Savaş Avatarı (Avatar of Battle)",
+          "description": "Bludgeoning, Piercing ve Slashing hasara karşı Direnç kazanırsınız.",
           "level": 17,
           "featureType": "passive"
         }
@@ -487,16 +482,6 @@
       "Healer",
       "Support caster",
       "Secondary combatant"
-    ],
-    "keyDecisionPoints": [
-      {
-        "level": 3,
-        "decision": "Divine Domain - shapes your entire playstyle"
-      },
-      {
-        "level": 1,
-        "decision": "Prepared spells - daily spell selection"
-      }
     ]
   }
 }

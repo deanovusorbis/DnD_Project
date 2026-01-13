@@ -1,8 +1,8 @@
 {
   "id": "bard",
   "name": "Bard",
-  "source": "srd",
-  "description": "An inspiring magician whose power echoes the music of creation.",
+  "source": "phb24",
+  "description": "Gücü yaratılış müziğinin yankısıyla örtüşen ilham verici bir büyücü.",
   "hitDie": "d8",
   "primaryAbility": [
     "CHA"
@@ -76,13 +76,36 @@
     }
   },
   "startingEquipment": {
-    "guaranteed": [
+    "choices": [
       {
-        "itemId": "leather_armor",
-        "quantity": 1
+        "id": "starting-pack",
+        "options": [
+          {
+            "description": "(A) Leather Armor, 2 Daggers, Musical Instrument of your choice, Entertainer's Pack, and 19 GP",
+            "items": [
+              {
+                "itemId": "leather_armor",
+                "quantity": 1
+              },
+              {
+                "itemId": "dagger",
+                "quantity": 2
+              },
+              {
+                "itemId": "entertainers_pack",
+                "quantity": 1
+              }
+            ],
+            "gold": 19
+          },
+          {
+            "description": "(B) 90 GP",
+            "items": [],
+            "gold": 90
+          }
+        ]
       }
-    ],
-    "choices": []
+    ]
   },
   "spellcasting": {
     "hasSpellcasting": true,
@@ -110,128 +133,198 @@
       4,
       4
     ],
-    "ritualCasting": true
+    "ritualCasting": false
   },
   "features": [
     {
       "id": "bardic-inspiration",
-      "name": "Bardic Inspiration",
-      "source": "srd",
-      "description": "You can inspire others through stirring words or music.",
+      "name": "Bard İlhamı (Bardic Inspiration)",
+      "source": "phb24",
+      "description": "Kelimeler, müzik veya dans yoluyla başkalarına doğaüstü ilham verebilirsiniz. Bu ilham, d6 olan Bard İlhamı zarınızla temsil edilir.\n\nBard İlhamını Kullanma: Bonus Aksiyon olarak, 60 fit içinde sizi görebilen veya duyabilen başka bir yaratığa ilham verebilirsiniz. O yaratık Bard İlhamı zarlarınızdan birini kazanır. Bir yaratık aynı anda sadece bir Bard İlhamı zarına sahip olabilir.\n\nBir sonraki saat içinde yaratık bir D20 Testinde başarısız olduğunda, Bard İlhamı zarını atabilir ve atılan sayıyı d20'ye ekleyerek başarısızlığı başarıya dönüştürebilir. Bard İlhamı zarı atıldığında harcanır.\n\nKullanım Sayısı: Charisma modifikasyonunuza eşit sayıda (minimum bir kez) Bard İlhamı zarı verebilirsiniz ve Uzun Dinlenme bittiğinde tüm harcanan kullanımlar yenilenir.\n\nYüksek Seviyelerde: Bard İlhamı zarınız belirli Bard seviyelerine ulaştığınızda değişir. Seviye 5'te d8, seviye 10'da d10 ve seviye 15'te d12 olur.",
       "level": 1,
       "featureType": "resource",
       "resource": {
-        "name": "Bardic Inspiration",
+        "name": "Bard İlhamı",
         "maxCount": "ability_mod",
         "abilityModifier": "CHA",
         "recoversOn": "long"
       }
     },
     {
+      "id": "spellcasting-bard",
+      "name": "Büyü Yapma (Spellcasting)",
+      "source": "phb24",
+      "description": "Bard sanatlarınız yoluyla büyü yapmayı öğrendiniz.\n\nCantrip'ler: Bard büyü listesinden seçtiğiniz iki cantrip bilirsiniz (Dancing Lights ve Vicious Mockery önerilir). Bard seviyesi kazandığınızda cantrip'lerden birini başka bir Bard cantrip ile değiştirebilirsiniz. Seviye 4 ve 10'da birer cantrip daha öğrenirsiniz.\n\nBüyü Slotları: Uzun Dinlenme bittiğinde tüm harcanan slotları yenilersiniz.\n\nHazırlanan Büyüler (Seviye 1+): Başlangıçta Bard büyü listesinden dört adet seviye 1 büyü seçin (Charm Person, Color Spray, Dissonant Whispers, Healing Word önerilir). Bard seviyesi kazandıkça hazırlanan büyü sayınız artar. Bard seviyesi kazandığınızda listenizdeki bir büyüyü başka bir Bard büyüsüyle değiştirebilirsiniz.\n\nBüyü Yapma Yeteneği: Charisma.\n\nBüyü Odağı: Müzikal Enstrüman kullanabilirsiniz.",
+      "level": 1,
+      "featureType": "passive"
+    },
+    {
+      "id": "expertise-bard-2",
+      "name": "Uzmanlık (Expertise)",
+      "source": "phb24",
+      "description": "Seçtiğiniz iki beceri proficiency'nizde Expertise kazanırsınız (Performance ve Persuasion varsa önerilir). Seviye 9'da iki beceri proficiency'nizde daha Expertise kazanırsınız.",
+      "level": 2,
+      "featureType": "choice",
+      "choicesCount": 2
+    },
+    {
       "id": "jack-of-all-trades",
-      "name": "Jack of All Trades",
-      "source": "srd",
-      "description": "You can add half your proficiency bonus to any ability check you make that doesn't already include your proficiency bonus.",
+      "name": "Her İşe Yatkın (Jack of All Trades)",
+      "source": "phb24",
+      "description": "Proficiency sahibi olmadığınız ve Proficiency Bonusunuzu kullanmayan herhangi bir yetenek kontrolüne Proficiency Bonusunuzun yarısını (aşağı yuvarla) ekleyebilirsiniz. Örneğin Strength (Athletics) kontrolü yapıp Athletics proficiency'niz yoksa kontrole Proficiency Bonusunuzun yarısını ekleyebilirsiniz.",
       "level": 2,
       "featureType": "passive"
     },
     {
-      "id": "song-of-rest",
-      "name": "Song of Rest",
-      "source": "srd",
-      "description": "You can use soothing music or oration to help revitalize your wounded allies during a short rest.",
-      "level": 2,
-      "featureType": "passive"
-    },
-    {
-      "id": "expertise-bard",
-      "name": "Expertise",
-      "source": "srd",
-      "description": "Choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.",
+      "id": "bard-subclass",
+      "name": "Bard Alt Sınıfı",
+      "source": "phb24",
+      "description": "Seçtiğiniz bir Bard alt sınıfında (subclass) uzmanlaşırsınız.",
       "level": 3,
       "featureType": "choice"
+    },
+    {
+      "id": "asi-4",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 4,
+      "featureType": "choice"
+    },
+    {
+      "id": "font-of-inspiration",
+      "name": "İlham Pınarı (Font of Inspiration)",
+      "source": "phb24",
+      "description": "Artık Kısa veya Uzun Dinlenme bittiğinde Bard İlhamının tüm harcanan kullanımlarını yenilersiniz. Ayrıca bir büyü slotu harcayarak (aksiyon gerekmez) bir harcanan Bard İlhamı kullanımını geri kazanabilirsiniz.",
+      "level": 5,
+      "featureType": "passive",
+      "improvesFeature": "bardic-inspiration"
+    },
+    {
+      "id": "subclass-feature-6",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Bard alt sınıfınızdan bir özellik kazanırsınız.",
+      "level": 6,
+      "featureType": "passive"
+    },
+    {
+      "id": "countercharm",
+      "name": "Karşı Büyü (Countercharm)",
+      "source": "phb24",
+      "description": "Zihin etkileyen efektleri bozmak için müzikal notalar veya güç sözcükleri kullanabilirsiniz. Siz veya 30 fit içindeki bir yaratık Charmed veya Frightened durumu uygulayan bir etkiye karşı kurtarma atışında başarısız olursa, Reaksiyon alarak atışın tekrarlanmasını sağlayabilirsiniz ve yeni atış avantajlı olur.",
+      "level": 7,
+      "featureType": "active"
+    },
+    {
+      "id": "asi-8",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 8,
+      "featureType": "choice"
+    },
+    {
+      "id": "expertise-bard-9",
+      "name": "Uzmanlık (Expertise)",
+      "source": "phb24",
+      "description": "Seçtiğiniz iki beceri proficiency'nizde daha Expertise kazanırsınız.",
+      "level": 9,
+      "featureType": "choice",
+      "choicesCount": 2
+    },
+    {
+      "id": "magical-secrets",
+      "name": "Büyüsel Sırlar (Magical Secrets)",
+      "source": "phb24",
+      "description": "Çeşitli büyüsel geleneklerden sırlar öğrendiniz. Bir Bard seviyesine ulaştığınızda (bu seviye dahil) ve Hazırlanan Büyüler sayısı arttığında, yeni hazırladığınız büyüleri Bard, Cleric, Druid ve Wizard büyü listelerinden seçebilirsiniz. Seçilen büyüler sizin için Bard büyüsü sayılır. Ayrıca bu sınıf için hazırlanan bir büyüyü değiştirdiğinizde bu listelerden bir büyüyle değiştirebilirsiniz.",
+      "level": 10,
+      "featureType": "passive"
+    },
+    {
+      "id": "asi-12",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 12,
+      "featureType": "choice"
+    },
+    {
+      "id": "subclass-feature-14",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Bard alt sınıfınızdan bir özellik kazanırsınız.",
+      "level": 14,
+      "featureType": "passive"
+    },
+    {
+      "id": "asi-16",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 16,
+      "featureType": "choice"
+    },
+    {
+      "id": "superior-inspiration",
+      "name": "Üstün İlham (Superior Inspiration)",
+      "source": "phb24",
+      "description": "Girişim (Initiative) zarı attığınızda, ikiden az Bard İlhamı kullanımınız varsa iki kullanıma ulaşana kadar harcanan kullanımları yenilersiniz.",
+      "level": 18,
+      "featureType": "passive",
+      "improvesFeature": "bardic-inspiration"
+    },
+    {
+      "id": "epic-boon-bard",
+      "name": "Epik Lütuf (Epic Boon)",
+      "source": "phb24",
+      "description": "Bir Epik Lütuf veya seçebileceğiniz başka bir hüner kazanırsınız. Boon of Spell Recall önerilir.",
+      "level": 19,
+      "featureType": "choice"
+    },
+    {
+      "id": "words-of-creation",
+      "name": "Yaratılış Sözleri (Words of Creation)",
+      "source": "phb24",
+      "description": "Yaratılış Sözlerinden ikisinde ustalaştınız: hayat ve ölüm sözleri. Power Word Heal ve Power Word Kill büyülerini her zaman hazırlanmış sayılırsınız. Bu büyülerden birini yaptığınızda, ilk hedefin 10 fit içindeki ikinci bir yaratığı da hedefleyebilirsiniz.",
+      "level": 20,
+      "featureType": "passive"
     }
   ],
   "subclasses": [
     {
-      "id": "college-of-lore",
-      "name": "College of Lore",
-      "source": "srd",
-      "description": "Bards of the College of Lore know something about most things.",
-      "parentClassId": "bard",
-      "subclassFeatureLevel": 3,
-      "features": [
-        {
-          "id": "bonus-proficiencies-lore",
-          "name": "Bonus Proficiencies",
-          "source": "phb24",
-          "description": "You gain proficiency with three skills of your choice.",
-          "level": 3,
-          "featureType": "passive"
-        },
-        {
-          "id": "cutting-words",
-          "name": "Cutting Words",
-          "source": "phb24",
-          "description": "You learn to use your wit to supernaturally distract, confuse, and otherwise sap the confidence and competence of others.",
-          "level": 3,
-          "featureType": "active"
-        },
-        {
-          "id": "magical-discoveries",
-          "name": "Magical Discoveries",
-          "source": "phb24",
-          "description": "You learn two spells from the Cleric, Druid, or Wizard spell list. These spells are always prepared.",
-          "level": 6,
-          "featureType": "choice"
-        },
-        {
-          "id": "peerless-skill",
-          "name": "Peerless Skill",
-          "source": "phb24",
-          "description": "When you fail an ability check or attack roll, you can add a Bardic Inspiration die to the roll. The die isn't expended on a failure.",
-          "level": 14,
-          "featureType": "passive"
-        }
-      ]
-    },
-    {
       "id": "college-of-dance",
-      "name": "College of Dance",
-      "source": "user",
-      "description": "You know that the multiverse dances to the rhythm of creation, and you use your movements to harness that rhythm.",
+      "name": "Dans Koleji (College of Dance)",
+      "source": "phb24",
+      "description": "Dans Koleji'nin Bardları, Yaratılış Sözlerinin konuşma veya şarkı ile sınırlanamayacağını bilirler; bu sözler gök cisimlerinin hareketleriyle söylenir ve en küçük yaratıkların hareketlerinden akar. Bu Bardlar çeviklik, hız ve zarafeti vurgulayan, dönen kozmosla uyum içinde bir varoluş yolu uygularlar.",
       "parentClassId": "bard",
       "subclassFeatureLevel": 3,
       "features": [
         {
           "id": "dazzling-footwork",
-          "name": "Dazzling Footwork",
-          "source": "phb24",
-          "description": "While you aren't wearing armor or wielding a shield, you gain advantages in Performance, Unarmored Defense, and Agile Strikes.",
+          "name": "Göz Kamaştırıcı Ayak İşi (Dazzling Footwork)",
+          "description": "Zırh giymediğinizde veya Kalkan kullanmadığınızda şu faydaları kazanırsınız:\n\nDans Virtüözü (Dance Virtuoso): Dans içeren Charisma (Performance) kontrollerinde avantaj kazanırsınız.\n\nZırhsız Savunma (Unarmored Defense): Temel Armor Class değeriniz 10 artı Dexterity ve Charisma modifikasyonlarınıza eşittir.\n\nÇevik Darbeler (Agile Strikes): Bir aksiyon, Bonus Aksiyon veya Reaksiyon parçası olarak Bard İlhamı kullanımı harcadığınızda, o aksiyon, Bonus Aksiyon veya Reaksiyonun parçası olarak bir Unarmed Strike yapabilirsiniz.\n\nBard Hasarı (Bardic Damage): Unarmed Strike saldırı atışlarınız için Strength yerine Dexterity kullanabilirsiniz. Unarmed Strike ile hasar verdiğinizde, darbenin normal hasarı yerine Bard İlhamı zarınızı atıp çıkan sayıya Dexterity modifikasyonunuzu ekleyerek Bludgeoning hasar verebilirsiniz. Bu atış zarı harcamaz.",
           "level": 3,
           "featureType": "passive"
         },
         {
           "id": "inspiring-movement",
-          "name": "Inspiring Movement",
-          "source": "phb24",
-          "description": "As a Reaction, you can expend Bardic Inspiration to move yourself and an ally without provoking Opportunity Attacks.",
+          "name": "İlham Veren Hareket (Inspiring Movement)",
+          "description": "Görebildiğiniz bir düşman 5 fit yakınınızda turun bitirdiğinde, Reaksiyon alıp bir Bard İlhamı kullanımı harcayarak hızınızın yarısı kadar hareket edebilirsiniz. Sonra 30 fit içindeki seçtiğiniz bir müttefik de Reaksiyonu kullanarak hızının yarısı kadar hareket edebilir.\n\nBu özelliğin hiçbir hareketi Opportunity Attack'e sebep olmaz.",
           "level": 6,
           "featureType": "active"
         },
         {
           "id": "tandem-footwork",
-          "name": "Tandem Footwork",
-          "source": "phb24",
-          "description": "You can expend Bardic Inspiration to grant an initiative bonus to yourself and nearby allies.",
+          "name": "İkili Ayak İşi (Tandem Footwork)",
+          "description": "Girişim (Initiative) zarı attığınızda, Incapacitated durumu yoksa bir Bard İlhamı kullanımı harcayabilirsiniz. Bunu yaptığınızda Bard İlhamı zarınızı atın; siz ve 30 fit içindeki sizi görebilen veya duyabilen her müttefik, atılan sayı kadar Initiative bonusu kazanır.",
           "level": 6,
           "featureType": "active"
         },
         {
           "id": "leading-evasion",
-          "name": "Leading Evasion",
-          "source": "phb24",
-          "description": "You and nearby allies gain benefits to Dexterity saving throws, potentially taking no damage on a success.",
+          "name": "Lider Kaçış (Leading Evasion)",
+          "description": "Sadece yarı hasar almak için Dexterity kurtarma atışı yapmanızı gerektiren bir etkiye maruz kaldığınızda, kurtarma atışında başarılı olursanız hiç hasar almazsınız, başarısız olursanız sadece yarı hasar alırsınız. Aynı Dexterity kurtarma atışını yapan 5 fit içindeki yaratıklar varsa bu faydayı o kurtarma için onlarla paylaşabilirsiniz.\n\nIncapacitated durumu varsa bu özelliği kullanamazsınız.",
           "level": 14,
           "featureType": "passive"
         }
@@ -239,41 +332,76 @@
     },
     {
       "id": "college-of-glamour",
-      "name": "College of Glamour",
-      "source": "user",
-      "description": "The College of Glamour is open to those who mastered their craft in the vibrant realm of the Feywild.",
+      "name": "Cazibe Koleji (College of Glamour)",
+      "source": "phb24",
+      "description": "Cazibe Koleji kökenini Feywild'ın büyüleyici büyüsüne dayandırır. Bu büyüyü çalışan Bardlar, şarkılarına ve hikayelerine güzellik ve korku iplikler dokurlar ve içlerindeki en güçlüler kendilerini öte dünyadaki ihtişamla örterler. Performansları unutulmuş masumiyete hasret uyandırır, uzun süredir tutulan korkuların bilinçdışı hatıralarını canlandırır ve en katı kalpli dinleyicilerin bile duygularını harekete geçirir.",
       "parentClassId": "bard",
       "subclassFeatureLevel": 3,
       "features": [
         {
           "id": "beguiling-magic",
-          "name": "Beguiling Magic",
-          "source": "phb24",
-          "description": "You always have Charm Person and Mirror Image prepared. You can Charm or Frighten creatures after casting Enchantment/Illusion spells.",
+          "name": "Büyüleyici Sihir (Beguiling Magic)",
+          "description": "Charm Person ve Mirror Image büyülerini her zaman hazırlanmış sayılırsınız.\n\nAyrıca, büyü slotu kullanarak bir Enchantment veya Illusion büyüsü yaptıktan hemen sonra, 60 fit içinde görebildiğiniz bir yaratığın büyü kurtarma DC'nize karşı Wisdom kurtarma atışı yapmasını sağlayabilirsiniz. Başarısız olursa hedef 1 dakika boyunca Charmed veya Frightened durumuna (seçiminize göre) girer. Hedef her turunun sonunda atışı tekrarlar ve başarılı olursa etki sona erer.\n\nBu faydayı kullandıktan sonra Uzun Dinlenme bitirene kadar tekrar kullanamazsınız. Ayrıca bir Bard İlhamı kullanımı harcayarak (aksiyon gerekmez) kullanımını yenileyebilirsiniz.",
           "level": 3,
-          "featureType": "passive"
+          "featureType": "active"
         },
         {
           "id": "mantle-of-inspiration",
-          "name": "Mantle of Inspiration",
-          "source": "phb24",
-          "description": "As a Bonus Action, you can spend one use of your Bardic Inspiration to grant temporary HP and movement to allies.",
+          "name": "İlham Cübbesi (Mantle of Inspiration)",
+          "description": "Başkalarını güçle doldurmak için şarkı veya dansa peri büyüsü dokuyabilirsiniz. Bonus Aksiyon olarak bir Bard İlhamı kullanımı harcayıp Bard İlhamı zarı atabilirsiniz. Bunu yaptığınızda 60 fit içindeki Charisma modifikasyonunuza kadar (minimum bir yaratık) sayıda başka yaratık seçin. Seçilen her yaratık Bard İlhamı zarında atılan sayının iki katı kadar Geçici Can Puanı kazanır, sonra her biri Opportunity Attack'e sebep olmadan Reaksiyonu kullanarak Hızı kadar hareket edebilir.",
           "level": 3,
           "featureType": "active"
         },
         {
           "id": "mantle-of-majesty",
-          "name": "Mantle of Majesty",
-          "source": "phb24",
-          "description": "You always have Command prepared. You can cast it as a Bonus Action for 1 minute.",
+          "name": "Heybetli Cübbe (Mantle of Majesty)",
+          "description": "Command büyüsünü her zaman hazırlanmış sayılırsınız.\n\nBonus Aksiyon olarak Command'ı büyü slotu harcamadan yapabilir ve 1 dakika boyunca veya Konsantrasyonunuz sonlanana kadar doğaüstü bir görünüm kazanırsınız. Bu süre boyunca Command'ı Bonus Aksiyon olarak büyü slotu harcamadan yapabilirsiniz.\n\nSizin tarafınızdan Charmed olan herhangi bir yaratık otomatik olarak bu özellikle yaptığınız Command'a karşı kurtarma atışında başarısız olur.\n\nBu özelliği kullandıktan sonra Uzun Dinlenme bitirene kadar tekrar kullanamazsınız. Ayrıca seviye 3+ büyü slotu harcayarak (aksiyon gerekmez) kullanımını yenileyebilirsiniz.",
           "level": 6,
           "featureType": "active"
         },
         {
           "id": "unbreakable-majesty",
-          "name": "Unbreakable Majesty",
-          "source": "phb24",
-          "description": "As a Bonus Action, you assume a majestic presence that can cause attacks against you to miss.",
+          "name": "Kırılmaz Heybetlilik (Unbreakable Majesty)",
+          "description": "Bonus Aksiyon olarak 1 dakika boyunca veya Incapacitated durumuna girene kadar büyüsel olarak heybetli bir varlık kazanabilirsiniz. Süre boyunca, herhangi bir yaratık bir turda size ilk kez saldırı atışıyla isabet ettirdiğinde, saldırgan büyü kurtarma DC'nize karşı Charisma kurtarma atışında başarılı olmalıdır, aksi takdirde saldırı ıskalanır çünkü yaratık heybetinizden geri çekilir.\n\nBu heybetli varlığı bir kez kazandıktan sonra Kısa veya Uzun Dinlenme bitirene kadar tekrar yapamazsınız.",
+          "level": 14,
+          "featureType": "active"
+        }
+      ]
+    },
+    {
+      "id": "college-of-lore",
+      "name": "Bilgi Koleji (College of Lore)",
+      "source": "phb24",
+      "description": "Bilgi Koleji'nin Bardları bilimsel yazılar, mistik ritüeller ve köylü hikayeleri gibi çeşitli kaynaklardan büyüler ve sırlar toplarlar. Kolejin üyeleri kütüphanelerde ve üniversitelerde toplanarak bilgilerini birbirleriyle paylaşırlar. Ayrıca festivallerde veya devlet işlerinde bir araya gelerek yozlaşmayı açığa çıkarır, yalanları çözer ve kendini beğenmiş otorite figürleriyle dalga geçerler.",
+      "parentClassId": "bard",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "bonus-proficiencies-lore",
+          "name": "Bonus Proficiency'ler (Bonus Proficiencies)",
+          "description": "Seçtiğiniz üç beceri ile proficiency kazanırsınız.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "cutting-words",
+          "name": "Keskin Sözler (Cutting Words)",
+          "description": "Zekanızı kullanarak doğaüstü şekilde dikkati dağıtmayı, karıştırmayı ve başkalarının güven ve yetkinliğini azaltmayı öğrenirsiniz. 60 fit içinde görebildiğiniz bir yaratık hasar atışı yaptığında veya yetenek kontrolü ya da saldırı atışında başarılı olduğunda, Reaksiyon alıp bir Bard İlhamı kullanımı harcayabilirsiniz; Bard İlhamı zarınızı atın ve atılan sayıyı yaratığın atışından çıkarın, hasarı azaltın veya potansiyel olarak başarıyı başarısızlığa çevirin.",
+          "level": 3,
+          "featureType": "active"
+        },
+        {
+          "id": "magical-discoveries",
+          "name": "Büyüsel Keşifler (Magical Discoveries)",
+          "description": "Seçtiğiniz iki büyü öğrenirsiniz. Bu büyüler Cleric, Druid veya Wizard büyü listesinden veya bunların herhangi bir kombinasyonundan gelebilir. Seçtiğiniz bir büyü cantrip veya büyü slotunuz olan bir büyü olmalıdır.\n\nSeçilen büyüleri her zaman hazırlanmış sayılırsınız ve Bard seviyesi kazandığınızda büyülerden birini bu gereksinimleri karşılayan başka bir büyüyle değiştirebilirsiniz.",
+          "level": 6,
+          "featureType": "choice",
+          "choicesCount": 2
+        },
+        {
+          "id": "peerless-skill",
+          "name": "Eşsiz Yetenek (Peerless Skill)",
+          "description": "Bir yetenek kontrolü veya saldırı atışı yapıp başarısız olduğunuzda, bir Bard İlhamı kullanımı harcayabilirsiniz; Bard İlhamı zarını atın ve atılan sayıyı d20'ye ekleyin, potansiyel olarak başarısızlığı başarıya çevirin. Başarısızlıkta Bard İlhamı harcanmaz.",
           "level": 14,
           "featureType": "active"
         }
@@ -281,41 +409,38 @@
     },
     {
       "id": "college-of-valor",
-      "name": "College of Valor",
-      "source": "user",
-      "description": "Bards of the College of Valor are daring skalds whose tales keep the memory of the great heroes of the past alive.",
+      "name": "Cesaret Koleji (College of Valor)",
+      "source": "phb24",
+      "description": "Cesaret Koleji'nin Bardları, hikayeleri geçmişin büyük kahramanlarının anısını koruyan cesur ozanlardır. Bu Bardlar güçlülerin işlerini tonozlu salonlarda veya büyük şenlik ateşleri etrafında toplanan kalabalıklara şarkı söylerler. Büyük olayları ilk elden görmek ve bu olayların anısının kaybolmamasını sağlamak için seyahat ederler. Şarkılarıyla yeni nesilleri eski kahramanların başardığı zirvelere ulaşmaya ilham verirler.",
       "parentClassId": "bard",
       "subclassFeatureLevel": 3,
       "features": [
         {
           "id": "combat-inspiration",
-          "name": "Combat Inspiration",
-          "source": "phb24",
-          "description": "Allies can use your Bardic Inspiration for Defense (AC bonus) or Offense (Damage bonus).",
+          "name": "Savaş İlhamı (Combat Inspiration)",
+          "description": "Zekanızı savaşın akışını değiştirmek için kullanabilirsiniz. Sizden Bard İlhamı zarına sahip bir yaratık bunu şu etkilerden biri için kullanabilir:\n\nSavunma (Defense): Yaratık saldırı atışıyla isabet aldığında, Reaksiyonu kullanarak Bard İlhamı zarını atıp çıkan sayıyı o saldırıya karşı AC'sine ekleyebilir, potansiyel olarak saldırının ıskalanmasını sağlayabilir.\n\nSaldırı (Offense): Yaratık saldırı atışıyla bir hedefe isabet ettikten hemen sonra, Bard İlhamı zarını atıp çıkan sayıyı saldırının hedefe verdiği hasara ekleyebilir.",
           "level": 3,
-          "featureType": "active"
+          "featureType": "passive"
         },
         {
           "id": "martial-training-valor",
-          "name": "Martial Training",
-          "source": "phb24",
-          "description": "You gain proficiency with Martial weapons, Medium armor, and Shields. You can use weapons as a spellcasting focus.",
+          "name": "Savaş Eğitimi (Martial Training)",
+          "description": "Martial silahlar, Medium zırh ve Kalkanlar ile proficiency kazanırsınız.\n\nAyrıca Bard büyü listenizden büyü yapmak için Simple veya Martial silahı Büyü Odağı olarak kullanabilirsiniz.",
           "level": 3,
           "featureType": "passive"
         },
         {
           "id": "extra-attack-valor",
-          "name": "Extra Attack",
+          "name": "Ek Saldırı (Extra Attack)",
           "source": "phb24",
-          "description": "You can attack twice, or replace one attack with a cantrip.",
+          "description": "Saldırı (Attack) aksiyonu aldığınızda bir yerine iki kez saldırabilirsiniz.\n\nAyrıca, casting time'ı bir aksiyon olan cantrip'lerinizden birini bu saldırılardan birinin yerine yapabilirsiniz.",
           "level": 6,
           "featureType": "passive"
         },
         {
           "id": "battle-magic",
-          "name": "Battle Magic",
-          "source": "phb24",
-          "description": "After casting a spell, you can make one weapon attack as a Bonus Action.",
+          "name": "Savaş Büyüsü (Battle Magic)",
+          "description": "Casting time'ı bir aksiyon olan bir büyü yaptıktan sonra, Bonus Aksiyon olarak bir silahla bir saldırı yapabilirsiniz.",
           "level": 14,
           "featureType": "active"
         }

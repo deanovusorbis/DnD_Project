@@ -2,7 +2,7 @@
   "id": "fighter",
   "name": "Fighter",
   "source": "phb24",
-  "description": "A master of martial combat, skilled with a variety of weapons and armor.",
+  "description": "Çeşitli silah ve zırhlarla yetenekli, savaş sanatının ustası.",
   "hitDie": "d10",
   "primaryAbility": [
     "STR",
@@ -53,95 +53,36 @@
     }
   },
   "startingEquipment": {
-    "guaranteed": [
-      {
-        "itemId": "dungeoneers_pack",
-        "quantity": 1
-      }
-    ],
     "choices": [
       {
-        "id": "armor-choice",
+        "id": "starting-pack",
         "options": [
           {
-            "description": "Chain mail",
+            "description": "(A) Chain Mail, Greatsword, Flail, Dungeoneer's Pack, and 4 GP",
             "items": [
               {
                 "itemId": "chain_mail",
                 "quantity": 1
+              },
+              {
+                "itemId": "greatsword",
+                "quantity": 1
+              },
+              {
+                "itemId": "flail",
+                "quantity": 1
+              },
+              {
+                "itemId": "dungeoneers_pack",
+                "quantity": 1
               }
-            ]
+            ],
+            "gold": 4
           },
           {
-            "description": "Leather armor, longbow, and 20 arrows",
-            "items": [
-              {
-                "itemId": "leather_armor",
-                "quantity": 1
-              },
-              {
-                "itemId": "longbow",
-                "quantity": 1
-              },
-              {
-                "itemId": "arrow",
-                "quantity": 20
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "weapon-choice",
-        "options": [
-          {
-            "description": "A martial weapon and a shield",
-            "items": [
-              {
-                "itemId": "martial_weapon_choice",
-                "quantity": 1
-              },
-              {
-                "itemId": "shield",
-                "quantity": 1
-              }
-            ]
-          },
-          {
-            "description": "Two martial weapons",
-            "items": [
-              {
-                "itemId": "martial_weapon_choice",
-                "quantity": 2
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "ranged-choice",
-        "options": [
-          {
-            "description": "A light crossbow and 20 bolts",
-            "items": [
-              {
-                "itemId": "light_crossbow",
-                "quantity": 1
-              },
-              {
-                "itemId": "bolt",
-                "quantity": 20
-              }
-            ]
-          },
-          {
-            "description": "Two handaxes",
-            "items": [
-              {
-                "itemId": "handaxe",
-                "quantity": 2
-              }
-            ]
+            "description": "(B) 155 GP",
+            "items": [],
+            "gold": 155
           }
         ]
       }
@@ -153,217 +94,228 @@
   "features": [
     {
       "id": "fighting-style-fighter",
-      "name": "Fighting Style",
+      "name": "Dövüş Stili (Fighting Style)",
       "source": "phb24",
-      "description": "You adopt a particular style of fighting as your specialty.",
+      "description": "Savaş becerilerinizi geliştirdiniz ve seçtiğiniz bir Fighting Style hüneri kazandınız. Defense önerilir.\n\nFighter seviyesi kazandığınızda seçtiğiniz hüneri farklı bir Fighting Style hüneriyle değiştirebilirsiniz.",
       "level": 1,
-      "featureType": "choice",
-      "choices": [
-        {
-          "id": "archery",
-          "name": "Archery",
-          "description": "You gain a +2 bonus to attack rolls you make with ranged weapons.",
-          "effect": "ranged_attack_bonus:+2"
-        },
-        {
-          "id": "defense",
-          "name": "Defense",
-          "description": "While you are wearing armor, you gain a +1 bonus to AC.",
-          "effect": "ac_bonus:+1:when_armored"
-        },
-        {
-          "id": "dueling",
-          "name": "Dueling",
-          "description": "When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.",
-          "effect": "damage_bonus:+2:one_handed_melee"
-        },
-        {
-          "id": "great-weapon-fighting",
-          "name": "Great Weapon Fighting",
-          "description": "When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die.",
-          "effect": "reroll_damage:1-2:two_handed"
-        },
-        {
-          "id": "protection",
-          "name": "Protection",
-          "description": "When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll.",
-          "effect": "reaction:impose_disadvantage:ally_attacked"
-        },
-        {
-          "id": "two-weapon-fighting",
-          "name": "Two-Weapon Fighting",
-          "description": "When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.",
-          "effect": "twf_damage_mod:add"
-        }
-      ]
+      "featureType": "choice"
     },
     {
       "id": "second-wind",
-      "name": "Second Wind",
+      "name": "İkinci Nefes (Second Wind)",
       "source": "phb24",
-      "description": "You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level.",
+      "description": "Kullanabileceğiniz sınırlı bir fiziksel ve zihinsel dayanıklılık kuyunuz vardır. Bonus Aksiyon olarak 1d10 artı Fighter seviyenize eşit Can Puanı yenilersiniz.\n\nBu özelliği iki kez kullanabilirsiniz. Kısa Dinlenme bittiğinde bir harcanan kullanım, Uzun Dinlenme bittiğinde tüm harcanan kullanımlar yenilenir. Belirli Fighter seviyelerine ulaştığınızda daha fazla kullanım kazanırsınız.",
       "level": 1,
       "featureType": "resource",
       "resource": {
-        "name": "Second Wind",
+        "name": "İkinci Nefes",
         "maxCount": 2,
         "recoversOn": "short"
-      },
-      "grantsAction": {
-        "name": "Second Wind",
-        "actionType": "bonus_action",
-        "effect": "heal:1d10+level"
       }
+    },
+    {
+      "id": "weapon-mastery",
+      "name": "Silah Ustalığı (Weapon Mastery)",
+      "source": "phb24",
+      "description": "Silahlarla eğitiminiz seçtiğiniz üç çeşit Simple veya Martial silahın ustalık (mastery) özelliklerini kullanmanızı sağlar. Uzun Dinlenme bittiğinde silah talimlerini yaparak bu silah seçimlerinden birini değiştirebilirsiniz.\n\nBelirli Fighter seviyelerine ulaştığınızda daha fazla silah çeşidinin ustalık özelliklerini kullanma yeteneği kazanırsınız.",
+      "level": 1,
+      "featureType": "choice"
     },
     {
       "id": "action-surge",
-      "name": "Action Surge",
+      "name": "Aksiyon Patlaması (Action Surge)",
       "source": "phb24",
-      "description": "You can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action.",
+      "description": "Kendinizi bir an için normal limitinizin üstüne zorlayabilirsiniz. Turunuzda Magic aksiyonu hariç bir ek aksiyon alabilirsiniz.\n\nBu özelliği kullandıktan sonra Kısa veya Uzun Dinlenme bitirene kadar tekrar kullanamazsınız. Seviye 17'den başlayarak dinlenme öncesi iki kez kullanabilirsiniz ancak turda sadece bir kez.",
       "level": 2,
       "featureType": "resource",
       "resource": {
-        "name": "Action Surge",
+        "name": "Aksiyon Patlaması",
         "maxCount": 1,
         "recoversOn": "short"
-      },
-      "grantsAction": {
-        "name": "Action Surge",
-        "actionType": "free",
-        "effect": "grant_additional_action"
       }
     },
     {
-      "id": "extra-attack-fighter",
-      "name": "Extra Attack",
+      "id": "tactical-mind",
+      "name": "Taktik Zihin (Tactical Mind)",
       "source": "phb24",
-      "description": "You can attack twice, instead of once, whenever you take the Attack action on your turn.",
+      "description": "Savaş alanında ve dışında taktikler için bir zihinsiniz. Yetenek kontrolünde başarısız olduğunuzda Second Wind kullanımı harcayarak kendinizi başarıya doğru itilebilirsiniz. Can Puanı yenilemek yerine 1d10 atıp atılan sayıyı yetenek kontrolüne eklersiniz, potansiyel olarak başarıya dönüştürürsünüz. Kontrol yine başarısız olursa bu Second Wind kullanımı harcanmaz.",
+      "level": 2,
+      "featureType": "active"
+    },
+    {
+      "id": "fighter-subclass",
+      "name": "Fighter Alt Sınıfı",
+      "source": "phb24",
+      "description": "Seçtiğiniz bir Fighter alt sınıfında (subclass) uzmanlaşırsınız.",
+      "level": 3,
+      "featureType": "choice"
+    },
+    {
+      "id": "asi-4",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 4,
+      "featureType": "choice"
+    },
+    {
+      "id": "extra-attack-fighter",
+      "name": "Ek Saldırı (Extra Attack)",
+      "source": "phb24",
+      "description": "Turunuzda Attack aksiyonu aldığınızda bir yerine iki kez saldırabilirsiniz.",
       "level": 5,
       "featureType": "passive"
     },
     {
-      "id": "extra-attack-fighter-2",
-      "name": "Extra Attack (2)",
-      "source": "srd",
-      "description": "You can attack three times whenever you take the Attack action on your turn.",
-      "level": 11,
+      "id": "tactical-shift",
+      "name": "Taktik Kaydırma (Tactical Shift)",
+      "source": "phb24",
+      "description": "Second Wind'i Bonus Aksiyon ile etkinleştirdiğinizde Opportunity Attack'e sebep olmadan Hızınızın yarısı kadar hareket edebilirsiniz.",
+      "level": 5,
       "featureType": "passive",
-      "improvesFeature": "extra-attack-fighter"
+      "improvesFeature": "second-wind"
     },
     {
-      "id": "extra-attack-fighter-3",
-      "name": "Extra Attack (3)",
-      "source": "srd",
-      "description": "You can attack four times whenever you take the Attack action on your turn.",
-      "level": 20,
-      "featureType": "passive",
-      "improvesFeature": "extra-attack-fighter-2"
+      "id": "asi-6",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 6,
+      "featureType": "choice"
+    },
+    {
+      "id": "subclass-feature-7",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Fighter alt sınıfınızdan bir özellik kazanırsınız.",
+      "level": 7,
+      "featureType": "passive"
+    },
+    {
+      "id": "asi-8",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 8,
+      "featureType": "choice"
     },
     {
       "id": "indomitable",
-      "name": "Indomitable",
+      "name": "Eğilmez (Indomitable)",
       "source": "phb24",
-      "description": "You can reroll a saving throw that you fail. If you do so, you must use the new roll.",
+      "description": "Kurtarma atışında başarısız olursanız Fighter seviyenize eşit bir bonusla tekrar atabilirsiniz. Yeni atışı kullanmalısınız ve bu özelliği Uzun Dinlenme bitirene kadar tekrar kullanamazsınız.\n\nSeviye 13'te Uzun Dinlenme öncesi iki kez, seviye 17'de üç kez kullanabilirsiniz.",
       "level": 9,
       "featureType": "resource",
       "resource": {
-        "name": "Indomitable",
+        "name": "Eğilmez",
         "maxCount": 1,
         "recoversOn": "long"
       }
     },
     {
-      "id": "indomitable-2",
-      "name": "Indomitable (2 uses)",
-      "source": "srd",
-      "description": "You can use Indomitable twice between long rests.",
-      "level": 13,
-      "featureType": "passive",
-      "improvesFeature": "indomitable"
+      "id": "tactical-master",
+      "name": "Taktik Ustası (Tactical Master)",
+      "source": "phb24",
+      "description": "Ustalık özelliğini kullanabileceğiniz bir silahla saldırdığınızda o saldırı için o özelliği Push, Sap veya Slow özelliğiyle değiştirebilirsiniz.",
+      "level": 9,
+      "featureType": "passive"
     },
     {
-      "id": "indomitable-3",
-      "name": "Indomitable (3 uses)",
-      "source": "srd",
-      "description": "You can use Indomitable three times between long rests.",
-      "level": 17,
+      "id": "subclass-feature-10",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Fighter alt sınıfınızdan bir özellik kazanırsınız.",
+      "level": 10,
+      "featureType": "passive"
+    },
+    {
+      "id": "two-extra-attacks",
+      "name": "İki Ek Saldırı (Two Extra Attacks)",
+      "source": "phb24",
+      "description": "Turunuzda Attack aksiyonu aldığınızda bir yerine üç kez saldırabilirsiniz.",
+      "level": 11,
       "featureType": "passive",
-      "improvesFeature": "indomitable-2"
+      "improvesFeature": "extra-attack-fighter"
+    },
+    {
+      "id": "asi-12",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 12,
+      "featureType": "choice"
+    },
+    {
+      "id": "studied-attacks",
+      "name": "İncelenmiş Saldırılar (Studied Attacks)",
+      "source": "phb24",
+      "description": "Rakiplerinizi inceler ve yaptığınız her saldırıdan öğrenirsiniz. Bir yaratığa saldırı atışı yapar ve ıskalarsanız, bir sonraki turunuz bitmeden o yaratığa bir sonraki saldırı atışınızda avantaj kazanırsınız.",
+      "level": 13,
+      "featureType": "passive"
+    },
+    {
+      "id": "asi-14",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 14,
+      "featureType": "choice"
+    },
+    {
+      "id": "subclass-feature-15",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Fighter alt sınıfınızdan bir özellik kazanırsınız.",
+      "level": 15,
+      "featureType": "passive"
+    },
+    {
+      "id": "asi-16",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 16,
+      "featureType": "choice"
+    },
+    {
+      "id": "subclass-feature-18",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Fighter alt sınıfınızdan bir özellik kazanırsınız.",
+      "level": 18,
+      "featureType": "passive"
+    },
+    {
+      "id": "epic-boon-fighter",
+      "name": "Epik Lütuf (Epic Boon)",
+      "source": "phb24",
+      "description": "Bir Epik Lütuf veya seçebileceğiniz başka bir hüner kazanırsınız. Boon of Combat Prowess önerilir.",
+      "level": 19,
+      "featureType": "choice"
+    },
+    {
+      "id": "three-extra-attacks",
+      "name": "Üç Ek Saldırı (Three Extra Attacks)",
+      "source": "phb24",
+      "description": "Turunuzda Attack aksiyonu aldığınızda bir yerine dört kez saldırabilirsiniz.",
+      "level": 20,
+      "featureType": "passive",
+      "improvesFeature": "two-extra-attacks"
     }
   ],
   "subclasses": [
     {
-      "id": "champion",
-      "name": "Champion",
-      "source": "phb24",
-      "description": "A Champion focuses on the development of martial prowess in a relentless pursuit of victory.",
-      "parentClassId": "fighter",
-      "subclassFeatureLevel": 3,
-      "features": [
-        {
-          "id": "improved-critical",
-          "name": "Improved Critical",
-          "source": "phb24",
-          "description": "Your attack rolls with weapons and Unarmed Strikes can score a Critical Hit on a roll of 19 or 20.",
-          "level": 3,
-          "featureType": "passive"
-        },
-        {
-          "id": "remarkable-athlete",
-          "name": "Remarkable Athlete",
-          "source": "phb24",
-          "description": "Advantage on Initiative rolls and Strength (Athletics) checks. After a Critical Hit, move up to half your Speed without provoking Opportunity Attacks.",
-          "level": 3,
-          "featureType": "passive"
-        },
-        {
-          "id": "additional-fighting-style",
-          "name": "Additional Fighting Style",
-          "source": "phb24",
-          "description": "You gain another Fighting Style feat of your choice.",
-          "level": 7,
-          "featureType": "choice"
-        },
-        {
-          "id": "heroic-warrior",
-          "name": "Heroic Warrior",
-          "source": "phb24",
-          "description": "Give yourself Heroic Inspiration whenever you start your turn without it during combat.",
-          "level": 10,
-          "featureType": "passive"
-        },
-        {
-          "id": "superior-critical",
-          "name": "Superior Critical",
-          "source": "phb24",
-          "description": "Your weapon and Unarmed Strike attacks score a critical hit on a roll of 18-20.",
-          "level": 15,
-          "featureType": "passive",
-          "improvesFeature": "improved-critical"
-        },
-        {
-          "id": "survivor",
-          "name": "Survivor",
-          "source": "phb24",
-          "description": "Advantage on Death Saving Throws (18-20 = 20). If Bloodied, regain 5 + CON modifier HP at start of your turn.",
-          "level": 18,
-          "featureType": "passive"
-        }
-      ]
-    },
-    {
       "id": "battle-master",
-      "name": "Battle Master",
+      "name": "Savaş Ustası (Battle Master)",
       "source": "phb24",
-      "description": "Battle Masters study the art of combat, using maneuvers to outsmart and outmaneuver their foes.",
+      "description": "Savaş Ustası savaş sanatının öğrencileridir, nesillerden beri aktarılan savaş tekniklerini öğrenirler. En başarılı Savaş Ustaları, özenle işlenmiş savaş becerilerini tarih, teori ve sanatlar alanlarında akademik çalışma ile birleştiren çok yönlü fıg rürlerdir.",
       "parentClassId": "fighter",
       "subclassFeatureLevel": 3,
       "features": [
         {
           "id": "combat-superiority",
-          "name": "Combat Superiority",
-          "source": "phb24",
-          "description": "You learn 3 maneuvers fueled by 4 Superiority Dice (d8). Regain on Short/Long Rest. Gain more dice/maneuvers at 7, 10, and 15.",
+          "name": "Savaş Üstünlüğü (Combat Superiority)",
+          "description": "Savaş alanındaki deneyiminiz dövüş tekniklerinizi geliştirmiştir. Superiority Dice adlı özel zarlarla güçlendirilen manevralar (maneuvers) öğrenirsiniz.\n\nManevralar: Seçtiğiniz üç manevra öğrenirsiniz. Birçok manevra bir saldırıyı bir şekilde geliştirir. Saldırı başına sadece bir manevra kullanabilirsiniz. Fighter seviyesi 7, 10 ve 15'te seçtiğiniz iki ek manevra daha öğrenirsiniz. Her yeni manevra öğrendiğinizde bildiğiniz bir manevrayı farklı biriyle değiştirebilirsiniz.\n\nSuperiority Dice: d8 olan dört Superiority Dice'ınız vardır. Bir Superiority Die kullandığınızda harcanır. Kısa veya Uzun Dinlenme bittiğinde tüm harcanan Superiority Dice yenilenir. Fighter seviyesi 7 (beş zar) ve 15'te (altı zar) ek bir Superiority Die kazanırsınız.\n\nKurtarma Atışları: Bir manevra kurtarma atışı gerektiriyorsa DC, 8 artı Strength veya Dexterity modifikasyonunuz (seçiminize göre) ve Proficiency Bonusunuza eşittir.",
           "level": 3,
           "featureType": "resource",
           "resource": {
@@ -374,42 +326,37 @@
         },
         {
           "id": "student-of-war",
-          "name": "Student of War",
-          "source": "phb24",
-          "description": "Gain proficiency with one type of Artisan's Tools and one skill from the Fighter list.",
+          "name": "Savaş Öğrencisi (Student of War)",
+          "description": "Seçtiğiniz bir Artisan's Tools tipiyle proficiency kazanırsınız ve seviye 1'de Fighterlar için mevcut becerilerden seçtiğiniz bir beceriyle proficiency kazanırsınız.",
           "level": 3,
           "featureType": "passive"
         },
         {
           "id": "know-your-enemy",
-          "name": "Know Your Enemy",
-          "source": "phb24",
-          "description": "Bonus Action: discern Immunities, Resistances, or Vulnerabilities of a creature within 30ft. Once per Long Rest, or expend a Superiority Die to reuse.",
+          "name": "Düşmanını Tanı (Know Your Enemy)",
+          "description": "Bonus Aksiyon olarak 30 fit içinde görebildiğiniz bir yaratığın belirli güç ve zaaflarını ayırt edebilirsiniz; o yaratığın herhangi bir Immunity, Resistance veya Vulnerability'si olup olmadığını bilirsiniz ve varsa neler olduklarını bilirsiniz.\n\nBu özelliği kullandıktan sonra Uzun Dinlenme bitirene kadar tekrar kullanamazsınız. Ayrıca bir Superiority Die harcayarak (aksiyon gerekmez) özelliğin kullanımını yenileyebilirsiniz.",
           "level": 7,
-          "featureType": "action"
+          "featureType": "active"
         },
         {
           "id": "improved-combat-superiority",
-          "name": "Improved Combat Superiority",
-          "source": "phb24",
-          "description": "Your Superiority Die becomes a d10.",
+          "name": "Gelişmiş Savaş Üstünlüğü (Improved Combat Superiority)",
+          "description": "Superiority Die zulünüz d10 olur.",
           "level": 10,
           "featureType": "passive",
           "improvesFeature": "combat-superiority"
         },
         {
           "id": "relentless-fighter",
-          "name": "Relentless",
-          "source": "phb24",
-          "description": "Once per turn, use a maneuver by rolling 1d8 instead of expending a Superiority Die.",
+          "name": "Yorulmaz (Relentless)",
+          "description": "Tur başına bir kez, bir manevra kullandığınızda 1d8 atıp Superiority Die harcamak yerine atılan sayıyı kullanabilirsiniz.",
           "level": 15,
           "featureType": "passive"
         },
         {
           "id": "ultimate-combat-superiority",
-          "name": "Ultimate Combat Superiority",
-          "source": "phb24",
-          "description": "Your Superiority Die becomes a d12.",
+          "name": "Nihai Savaş Üstünlüğü (Ultimate Combat Superiority)",
+          "description": "Superiority Die'ınız d12 olur.",
           "level": 18,
           "featureType": "passive",
           "improvesFeature": "improved-combat-superiority"
@@ -417,58 +364,105 @@
       ]
     },
     {
-      "id": "eldritch-knight",
-      "name": "Eldritch Knight",
+      "id": "champion",
+      "name": "Şampiyon (Champion)",
       "source": "phb24",
-      "description": "Eldritch Knights combine martial mastery with Wizard spells to augment their combat skills.",
+      "description": "Şampiyon, zafere ulaşmak için amansız bir arayışta savaş becerilerinin geliştirilmesine odaklanır. Şampiyonlar, yıkıcı darbeler vermek, tehlikeye dayanmak ve zafer kazanmak için titiz eğitimi fiziksel mükemmellikle birleştirirler. Atletik yarışmalarda veya kanlı savaşlarda olsun Şampiyonlar galibiyetin tacını arar.",
+      "parentClassId": "fighter",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "improved-critical",
+          "name": "Gelişmiş Kritik (Improved Critical)",
+          "description": "Silahlarla ve Unarmed Strike ile yaptığınız saldırı atışları d20'de 19 veya 20 atışında Critical Hit yapabilir.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "remarkable-athlete",
+          "name": "Olağanüstü Atlet (Remarkable Athlete)",
+          "description": "Atletizminiz sayesinde Initiative atışlarında ve Strength (Athletics) kontrollerinde avantaj kazanırsınız.\n\nAyrıca bir Critical Hit yaptıktan hemen sonra Opportunity Attack'e sebep olmadan Hızınızın yarısı kadar hareket edebilirsiniz.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "additional-fighting-style",
+          "name": "Ek Dövüş Stili (Additional Fighting Style)",
+          "description": "Seçtiğiniz başka bir Fighting Style hüneri kazanırsınız.",
+          "level": 7,
+          "featureType": "choice"
+        },
+        {
+          "id": "heroic-warrior",
+          "name": "Kahramanca Savaşçı (Heroic Warrior)",
+          "description": "Savaşın heyecanı sizi zafere doğru itikler. Savaş sırasında turunuza Heroic Inspiration olmadan başladığınızda kendinize Heroic Inspiration verebilirsiniz.",
+          "level": 10,
+          "featureType": "passive"
+        },
+        {
+          "id": "superior-critical",
+          "name": "Üstün Kritik (Superior Critical)",
+          "description": "Silahlarla ve Unarmed Strike ile yaptığınız saldırı atışları artık d20'de 18-20 atışında Critical Hit yapabilir.",
+          "level": 15,
+          "featureType": "passive",
+          "improvesFeature": "improved-critical"
+        },
+        {
+          "id": "survivor",
+          "name": "Hayatta Kalan (Survivor)",
+          "description": "Savaşta dayanıklılığın zirvesine ulaşırsınız, size şu faydaları verir:\n\nÖlüme Meydan Okuma (Defy Death): Death Saving Throw'larda avantaj kazanırsınız. Ayrıca Death Saving Throw'da 18-20 attığınızda üzerinde 20 atışının faydasını kazanırsınız.\n\nKahramanca Toplanma (Heroic Rally): Turlarınızın başında Bloodied iseniz ve en az 1 Can Puanınız varsa 5 artı Constitution modifikasyonunuz kadar Can Puanı yenilersiniz.",
+          "level": 18,
+          "featureType": "passive"
+        }
+      ]
+    },
+    {
+      "id": "eldritch-knight",
+      "name": "Gizemli Şövalye (Eldritch Knight)",
+      "source": "phb24",
+      "description": "Gizemli Şövalyeler, tüm Fighterlara ortak olan savaş ustalığını büyünün dikkatli bir çalışmasıyla birleştirirler. Büyüleri hem savaş becerilerini tamamlar hem de genişletir, zırhlarını desteklemek için ek koruma sağlar ve aynı zamanda patlayıcı büyüyle bir çok düşmanla aynı anda etkileşime geçmelerine olanak tanır.",
       "parentClassId": "fighter",
       "subclassFeatureLevel": 3,
       "features": [
         {
           "id": "spellcasting-eldritch-knight",
-          "name": "Spellcasting",
-          "source": "phb24",
-          "description": "Cast Wizard spells using Intelligence. Gain cantrips and prepared spells.",
+          "name": "Büyü Yapma (Spellcasting)",
+          "description": "Büyü yapmayı öğrendiniz.\n\nCantrip'ler: Wizard büyü listesinden seçtiğiniz iki cantrip bilirsiniz (Ray of Frost ve Shocking Grasp önerilir). Fighter seviyesi kazandığınızda bu cantrip'lerden birini başka bir Wizard cantrip ile değiştirebilirsiniz. Fighter seviyesi 10'a ulaştığınızda seçtiğiniz başka bir Wizard cantrip öğrenirsiniz.\n\nBüyü Slotları: Uzun Dinlenme bittiğinde tüm harcanan slotları yenilersiniz.\n\nHazırlanan Büyüler (Seviye 1+): Başlangıçta Wizard büyü listesinden üç adet seviye 1 büyü seçin (Burning Hands, Jump, Shield önerilir). Sayı Fighter seviyesi kazandıkça artar. Fighter seviyesi kazandığınızda listenizdeki bir büyüyü büyü slotlarınız olan başka bir Wizard büyüsüyle değiştirebilirsiniz.\n\nBüyü Yapma Yeteneği: Intelligence.\n\nBüyü Odağı: Arcane Focus kullanabilirsiniz.",
           "level": 3,
           "featureType": "passive"
         },
         {
           "id": "war-bond",
-          "name": "War Bond",
-          "source": "phb24",
-          "description": "Bond with up to 2 weapons. Can't be disarmed, and can summon one to your hand as a Bonus Action.",
+          "name": "Savaş Bağı (War Bond)",
+          "description": "Kendiniz ve bir silah arasında büyüsel bir bağ yaratan bir ritüel öğrenirsiniz. Ritüeli Kısa Dinlenme sırasında yapılabilecek 1 saat boyunca gerçekleştirirsiniz. Ritüel boyunca silah erişiminizde olmalıdır, sonunda silaha dokunup bağı oluşturursunuz.\n\nBir silahı kendine bağladıktan sonra Incapacitated durumu yoksa o silahtan silahsızlandırılamazsınız. Aynı varoluş düzlemindeyse Bonus Aksiyon olarak o silahı çağırabilirsiniz, anında elinize ışınlanmasına sebep olursunuz.\n\nEn fazla iki bağlı silaha sahip olabilirsiniz ama Bonus Aksiyon ile bir seferde sadece bir tanesini çağırabilirsiniz. Üçüncü bir silahla bağ kurmayı denerseniz diğer ikisinden biriyle bağı koparmalısınız.",
           "level": 3,
           "featureType": "passive"
         },
         {
           "id": "war-magic",
-          "name": "War Magic",
-          "source": "phb24",
-          "description": "Replace one attack with a Wizard cantrip (Action cast time) during an Attack action.",
+          "name": "Savaş Büyüsü (War Magic)",
+          "description": "Turunuzda Attack aksiyonu aldığınızda saldırılardan birini casting time'ı bir aksiyon olan Wizard cantrip'lerinizden biriyle değiştirebilirsiniz.",
           "level": 7,
           "featureType": "passive"
         },
         {
           "id": "eldritch-strike",
-          "name": "Eldritch Strike",
-          "source": "phb24",
-          "description": "Weapon hit imposes Disadvantage on the target's next saving throw against your spell before the end of your next turn.",
+          "name": "Gizemli Darbe (Eldritch Strike)",
+          "description": "Silah darbelerinizi büyülerinize dayanma yeteneğini azaltacak şekilde yapmayı öğrenirsiniz. Bir silahla saldırı yaparak bir yaratığa isabet ettirdiğinizde o yaratık bir sonraki turunuz bitmeden yaptığınız büyüye karşı bir sonraki kurtarma atışında dezavantaja sahiptir.",
           "level": 10,
           "featureType": "passive"
         },
         {
           "id": "arcane-charge",
-          "name": "Arcane Charge",
-          "source": "phb24",
-          "description": "Teleport up to 30ft when using Action Surge (before or after the extra action).",
+          "name": "Gizemli Hücum (Arcane Charge)",
+          "description": "Action Surge'ünüzü kullandığınızda görebildiğiniz boş bir alana 30 fit kadar ışınlanabilirsiniz. Ek aksiyondan önce veya sonra ışınlanabilirsiniz.",
           "level": 15,
           "featureType": "passive"
         },
         {
           "id": "improved-war-magic",
-          "name": "Improved War Magic",
-          "source": "phb24",
-          "description": "Replace two attacks with a Level 1 or 2 Wizard spell during an Attack action.",
+          "name": "Gelişmiş Savaş Büyüsü (Improved War Magic)",
+          "description": "Turunuzda Attack aksiyonu aldığınızda saldırılardan ikisini casting time'ı bir aksiyon olan seviye 1 veya 2 Wizard büyülerinizden biriyle değiştirebilirsiniz.",
           "level": 18,
           "featureType": "passive",
           "improvesFeature": "war-magic"
@@ -477,17 +471,16 @@
     },
     {
       "id": "psi-warrior",
-      "name": "Psi Warrior",
+      "name": "Psi Savaşçısı (Psi Warrior)",
       "source": "phb24",
-      "description": "Psi Warriors harness psionic energy to infuse strikes, create barriers, and move objects.",
+      "description": "Psi Savaşçıları fiziksel gücü artırmak için zihinlerinin gücünü uyandırırlar. Bu psionik gücü silah darbelerine nüfuz ettirmek, teleki netik enerjiyle saldırmak ve zihinsel güç bariyerleri yaratmak için kullanırlar.",
       "parentClassId": "fighter",
       "subclassFeatureLevel": 3,
       "features": [
         {
           "id": "psionic-power",
-          "name": "Psionic Power",
-          "source": "phb24",
-          "description": "Harbor Psionic Energy Dice. Features: Protective Field (reduce damage), Psionic Strike (extra Force damage), Telekinetic Movement.",
+          "name": "Psionik Güç (Psionic Power)",
+          "description": "İçinizde bir psionik enerji kaynağı barındırırsınız. Bu alt sınıftan sahip olduğunuz güçleri besleyen Psionic Energy Dice ile temsil edilir.\n\nBu alt sınıftaki psionik enerji zar kullanan özellikler yalnızca bu alt sınıftan gelen zarları kullanır. Bazı güçleriniz Psionic Energy Die harcar ve tüm Psionic Energy Dice'larınız harcandığında bir zar kullanmayı gerektiren bir gücü kullanamazsınız.\n\nKısa Dinlenme bittiğinde bir harcanan Psionic Energy Die, Uzun Dinlenme bittiğinde hepsini yenilersiniz.\n\nKoruyucu Alan (Protective Field): Siz veya 30 fit içinde görebildiğiniz başka bir yaratık hasar aldığında Reaksiyon alıp bir Psionic Energy Die harcayabilir, zarı atabilir ve anlık bir telekinetik güç kalkanı yaratarak alınan hasarı atılan sayı artı Intelligence modifikasyonunuz (minimum 1 azaltma) kadar azaltabilirsiniz.\n\nPsionik Darbe (Psionic Strike): Silahlarınızı psionik güçle itebilirsiniz. Turlarınızın her birinde bir kez, 30 fit içindeki bir hedefe saldırı yapıp bir silahla hasar verdikten hemen sonra bir Psionic Energy Die harcayabilir, atabilir ve hedefe atılan sayı artı Intelligence modifikasyonunuz kadar Force hasar verebilirsiniz.\n\nTelekinetik Hareket (Telekinetic Movement): Bir nesneyi veya yaratığı zihninizle hareket ettirebilirsiniz. Magic aksiyon olarak 30 fit içinde görebildiğiniz bir hedef seçin; hedef Large veya daha küçük gevşek bir nesne veya sizden başka istekli bir yaratık olmalıdır. Hedefi görebildiğiniz boş bir alana 30 fit kadar taşırsınız. Alternatif olarak hedef Tiny bir nesneyse elinize veya elinizden taşıyabilirsiniz. Bu aksiyonu aldıktan sonra Kısa veya Uzun Dinlenme bitirene kadar tekrar alamazsınız, aksi takdirde bir Psionic Energy Die harcayarak (aksiyon gerekmez) kullanımını yenileyebilirsiniz.",
           "level": 3,
           "featureType": "resource",
           "resource": {
@@ -498,35 +491,31 @@
         },
         {
           "id": "telekinetic-adept",
-          "name": "Telekinetic Adept",
-          "source": "phb24",
-          "description": "Psi-Powered Leap (Bonus Action Fly speed) and Telekinetic Thrust (force Prone or move 10ft on Psionic Strike).",
+          "name": "Telekinetik Usta (Telekinetic Adept)",
+          "description": "Telekinetik yeteneklerinizi kullanmanın yeni yollarında ustalaştınız:\n\nPsi ile Güçlendirilmiş Sıçrama (Psi-Powered Leap): Bonus Aksiyon olarak mevcut tur sonuna kadar Hızınızın iki katına eşit bir Fly Speed kazanırsınız. Bu Bonus Aksiyonu aldıktan sonra Kısa veya Uzun Dinlenme bitirene kadar tekrar alamazsınız, aksi takdirde bir Psionic Energy Die harcayarak (aksiyon gerekmez) kullanımını yenileyebilirsiniz.\n\nTelekinetik İtiş (Telekinetic Thrust): Psionic Strike ile bir hedefe hasar verdiğinizde hedefi Strength kurtarma atışı (DC 8 artı Intelligence modifikasyonunuz ve Proficiency Bonus) yapmaya zorlayabilirsiniz. Başarısız olursa hedefe Prone durumu verebilir veya yatay olarak 10 fit kadar taşıyabilirsiniz.",
           "level": 7,
           "featureType": "passive"
         },
         {
           "id": "guarded-mind",
-          "name": "Guarded Mind",
-          "source": "phb24",
-          "description": "Resistance to Psychic damage. Expend a die to end Charmed or Frightened conditions.",
+          "name": "Korunmuş Zihin (Guarded Mind)",
+          "description": "Psychic hasara karşı Direnç kazanırsınız. Ayrıca turunuza Charmed veya Frightened durumuyla başlarsanız bir Psionic Energy Die harcayıp (aksiyon gerekmez) size bu durumları veren tüm etkileri sonlandırabilirsiniz.",
           "level": 10,
           "featureType": "passive"
         },
         {
           "id": "bulwark-of-force",
-          "name": "Bulwark of Force",
-          "source": "phb24",
-          "description": "Bonus Action: give Half Cover to yourself and allies (up to Int mod) within 30ft for 1 minute.",
+          "name": "Güç Kalesı (Bulwark of Force)",
+          "description": "Kendinizi ve başkalarını telekinetik güçle koruyabilirsiniz. Bonus Aksiyon olarak Intelligence modifikasyonunuza (minimum bir yaratık) kadar 30 fit içindeki kendiniz dahil yaratıklar seçebilirsiniz. Seçilen her yaratık 1 dakika boyunca veya Incapacitated durumuna girene kadar Half Cover sahibi olur.\n\nBu özelliği kullandıktan sonra Uzun Dinlenme bitirene kadar tekrar kullanamazsınız, aksi takdirde bir Psionic Energy Die harcayarak (aksiyon gerekmez) kullanımını yenileyebilirsiniz.",
           "level": 15,
-          "featureType": "action"
+          "featureType": "active"
         },
         {
           "id": "telekinetic-master",
-          "name": "Telekinetic Master",
-          "source": "phb24",
-          "description": "Cast Telekinesis (Int) without slot. Attack as Bonus Action while maintaining Concentration.",
+          "name": "Telekinetik Usta (Telekinetic Master)",
+          "description": "Telekinesis büyüsünü her zaman hazırlanmış sayılırsınız. Bu özellikle büyü slotu veya bileşenler olmadan yapabilirsiniz ve bunun için büyü yapma yeteneğiniz Intelligence'dir. Üzerinde Konsantrasyon korurken her turunuzda yapabilme turunu içerecek şekilde Bonus Aksiyon olarak bir silahla bir saldırı yapabilirsiniz.\n\nBu özellikle büyüyü yaptıktan sonra Uzun Dinlenme bitirene kadar bu şekilde tekrar yapamazsınız, aksi takdirde bir Psionic Energy Die harcayarak (aksiyon gerekmez) kullanımını yenileyebilirsiniz.",
           "level": 18,
-          "featureType": "action"
+          "featureType": "active"
         }
       ]
     }
@@ -555,20 +544,6 @@
       "Front-line combatant",
       "Damage dealer",
       "Tank"
-    ],
-    "keyDecisionPoints": [
-      {
-        "level": 1,
-        "decision": "Fighting Style - defines your combat approach"
-      },
-      {
-        "level": 3,
-        "decision": "Martial Archetype - your specialization"
-      },
-      {
-        "level": 4,
-        "decision": "ASI or Feat - improve abilities or gain new capabilities"
-      }
     ]
   }
 }

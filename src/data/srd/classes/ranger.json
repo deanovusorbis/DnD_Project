@@ -1,8 +1,8 @@
 {
   "id": "ranger",
   "name": "Ranger",
-  "source": "srd",
-  "description": "A warrior who combats threats on the edges of civilization.",
+  "source": "phb24",
+  "description": "Uygarlığın kenarlarındaki tehditlere karşı savaşan bir savaşçı.",
   "hitDie": "d10",
   "primaryAbility": [
     "DEX",
@@ -52,17 +52,56 @@
     }
   },
   "startingEquipment": {
-    "guaranteed": [
+    "choices": [
       {
-        "itemId": "leather_armor",
-        "quantity": 1
-      },
-      {
-        "itemId": "explorers_pack",
-        "quantity": 1
+        "id": "starting-pack",
+        "options": [
+          {
+            "description": "(A) Studded Leather Armor, Scimitar, Shortsword, Longbow, Quiver with 20 Arrows, Druidic Focus, Explorer's Pack, and 7 GP",
+            "items": [
+              {
+                "itemId": "studded_leather",
+                "quantity": 1
+              },
+              {
+                "itemId": "scimitar",
+                "quantity": 1
+              },
+              {
+                "itemId": "shortsword",
+                "quantity": 1
+              },
+              {
+                "itemId": "longbow",
+                "quantity": 1
+              },
+              {
+                "itemId": "quiver",
+                "quantity": 1
+              },
+              {
+                "itemId": "arrow",
+                "quantity": 20
+              },
+              {
+                "itemId": "druidic_focus",
+                "quantity": 1
+              },
+              {
+                "itemId": "explorers_pack",
+                "quantity": 1
+              }
+            ],
+            "gold": 7
+          },
+          {
+            "description": "(B) 150 GP",
+            "items": [],
+            "gold": 150
+          }
+        ]
       }
-    ],
-    "choices": []
+    ]
   },
   "spellcasting": {
     "hasSpellcasting": true,
@@ -72,105 +111,377 @@
   },
   "features": [
     {
+      "id": "spellcasting-ranger",
+      "name": "Büyü Yapma (Spellcasting)",
+      "source": "phb24",
+      "description": "Doğanın büyüsel özünü kanalıza rak büyü yapmayı öğrendiniz.\n\nBüyü Slotları: Uzun Dinlenme bittiğinde tüm harcanan slotları yenilersiniz.\n\nHazırlanan Büyüler (Seviye 1+): Başlangıçta iki adet seviye 1 Ranger büyüsü seçin (Cure Wounds ve Ensnaring Strike önerilir). Sayı Ranger seviyesi kazandıkça artar. Uzun Dinlenme bittiğinde listenizdeki bir büyüyü büyü slotlarınız olan başka bir Ranger büyüsüyle değiştirebilirsiniz.\n\nBüyü Yapma Yeteneği: Wisdom.\n\nBüyü Odağı: Druidic Focus kullanabilirsiniz.",
+      "level": 1,
+      "featureType": "passive"
+    },
+    {
       "id": "favored-enemy",
-      "name": "Favored Enemy",
-      "source": "srd",
-      "description": "You have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.",
+      "name": "Tercih Edilen Düşman (Favored Enemy)",
+      "source": "phb24",
+      "description": "Hunter's Mark büyüsünü her zaman hazırlanmış sayılırsınız. Büyü slotu harcamadan iki kez yapabilirsiniz ve Uzun Dinlenme bittiğinde bu yeteneğin tüm harcanan kullanımlarını yenilersiniz.\n\nBelirli Ranger seviyelerine ulaştığınızda büyüyü büyü slotu olmadan yapabilme sayınız artar.",
+      "level": 1,
+      "featureType": "passive"
+    },
+    {
+      "id": "weapon-mastery-ranger",
+      "name": "Silah Ustalığı (Weapon Mastery)",
+      "source": "phb24",
+      "description": "Silahlarla eğitiminiz proficiency sahibi olduğunuz seçtiğiniz iki çeşit silahın (Longbow ve Shortsword gibi) ustalık özelliklerini kullanmanızı sağlar.\n\nUzun Dinlenme bittiğinde seçtiğiniz silah çeşitlerini değiştirebilirsiniz. Örneğin Scimitar ve Longsword'un ustalık özelliklerini kullanmaya geçebilirsiniz.",
       "level": 1,
       "featureType": "choice"
     },
     {
-      "id": "natural-explorer",
-      "name": "Natural Explorer",
-      "source": "srd",
-      "description": "You are particularly familiar with one type of natural environment.",
-      "level": 1,
-      "featureType": "choice"
-    },
-    {
-      "id": "fighting-style-ranger",
-      "name": "Fighting Style",
-      "source": "srd",
-      "description": "You adopt a particular style of fighting as your specialty.",
+      "id": "deft-explorer",
+      "name": "Becerikli Kâşif (Deft Explorer)",
+      "source": "phb24",
+      "description": "Yolculuklarınız sayesinde şu faydaları kazanırsınız:\n\nExpertise: Expertise sahibi olmadığınız beceri proficiency'lerinizden birini seçin. O beceri için Expertise kazanırsınız.\n\nDiller (Languages): Dil tablolarından seçtiğiniz iki dil bilirsiniz.",
       "level": 2,
       "featureType": "choice"
     },
     {
+      "id": "fighting-style-ranger",
+      "name": "Dövüş Stili (Fighting Style)",
+      "source": "phb24",
+      "description": "Seçtiğiniz bir Fighting Style hüneri kazanırsınız. Bu hünerlerden birini seçmek yerine aşağıdaki seçeneği seçebilirsiniz:\n\nDruidik Savaşçı (Druidic Warrior): Seçtiğiniz iki Druid cantrip öğrenirsiniz (Guidance ve Starry Wisp önerilir). Seçilen cantrip'ler sizin için Ranger büyüsü sayılır ve bunlar için büyü yapma yeteneğiniz Wisdom'dır. Ranger seviyesi kazandığınızda bu cantrip'lerden birini başka bir Druid cantrip ile değiştirebilirsiniz.",
+      "level": 2,
+      "featureType": "choice"
+    },
+    {
+      "id": "ranger-subclass",
+      "name": "Ranger Alt Sınıfı",
+      "source": "phb24",
+      "description": "Seçtiğiniz bir Ranger alt sınıfında (subclass) uzmanlaşırsınız.",
+      "level": 3,
+      "featureType": "choice"
+    },
+    {
+      "id": "asi-4",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 4,
+      "featureType": "choice"
+    },
+    {
       "id": "extra-attack-ranger",
-      "name": "Extra Attack",
-      "source": "srd",
-      "description": "You can attack twice when you take the Attack action.",
+      "name": "Ek Saldırı (Extra Attack)",
+      "source": "phb24",
+      "description": "Turunuzda Attack aksiyonu aldığınızda bir yerine iki kez saldırabilirsiniz.",
       "level": 5,
       "featureType": "passive"
+    },
+    {
+      "id": "roving",
+      "name": "Dolaşma (Roving)",
+      "source": "phb24",
+      "description": "Heavy zırh giymediğinizde Hızınız 10 feet artar. Ayrıca Hızınıza eşit bir Climb Speed ve Swim Speed kazanırsınız.",
+      "level": 6,
+      "featureType": "passive"
+    },
+    {
+      "id": "subclass-feature-7",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Ranger alt sınıfınızdan bir özellik kazanırsınız.",
+      "level": 7,
+      "featureType": "passive"
+    },
+    {
+      "id": "asi-8",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 8,
+      "featureType": "choice"
+    },
+    {
+      "id": "expertise-ranger",
+      "name": "Uzmanlık (Expertise)",
+      "source": "phb24",
+      "description": "Expertise sahibi olmadığınız beceri proficiency'lerinizden ikisini seçin. O becerilerde Expertise kazanırsınız.",
+      "level": 9,
+      "featureType": "choice"
+    },
+    {
+      "id": "tireless",
+      "name": "Yorulmaz (Tireless)",
+      "source": "phb24",
+      "description": "Kadim güçler artık yolculuklarınızda yakıt olmaya yardımcı olur, size şu faydaları verir:\n\nGeçici Can Puanları: Magic aksiyon olarak kendinize 1d8 artı Wisdom modifikasyonunuz (minimum 1) kadar Geçici Can Puanı verebilirsiniz. Bu aksiyonu Wisdom modifikasyonunuza (minimum bir kez) eşit sayıda kullanabilirsiniz ve Uzun Dinlenme bittiğinde tüm harcanan kullanımları yenilersiniz.\n\nExhaustion'ı Azaltma (Decrease Exhaustion): Kısa Dinlenme bittiğinde varsa Exhaustion seviyeniz 1 azalır.",
+      "level": 10,
+      "featureType": "active"
+    },
+    {
+      "id": "subclass-feature-11",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Ranger alt sınıfınızdan bir özellik kazanırsınız.",
+      "level": 11,
+      "featureType": "passive"
+    },
+    {
+      "id": "asi-12",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 12,
+      "featureType": "choice"
+    },
+    {
+      "id": "relentless-hunter",
+      "name": "Yorulmaz Avcı (Relentless Hunter)",
+      "source": "phb24",
+      "description": "Hasar almak Hunter's Mark üzerindeki Konsantrasyonunuzu kesemez.",
+      "level": 13,
+      "featureType": "passive"
+    },
+    {
+      "id": "natures-veil",
+      "name": "Doğanın Örtüsü (Nature's Veil)",
+      "source": "phb24",
+      "description": "Büyüsel olarak kendinizi gizlemek için doğanın ruhlarını çağırırsınız. Bonus Aksiyon olarak bir sonraki turunuzun sonuna kadar kendinize Invisible durumu verebilirsiniz.\n\nBu özelliği Wisdom modifikasyonunuza (minimum bir kez) eşit sayıda kullanabilirsiniz ve Uzun Dinlenme bittiğinde tüm harcanan kullanımları yenilersiniz.",
+      "level": 14,
+      "featureType": "active"
+    },
+    {
+      "id": "subclass-feature-15",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Ranger alt sınıfınızdan bir özellik kazanırsınız.",
+      "level": 15,
+      "featureType": "passive"
+    },
+    {
+      "id": "asi-16",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 16,
+      "featureType": "choice"
+    },
+    {
+      "id": "precise-hunter",
+      "name": "Hassas Avcı (Precise Hunter)",
+      "source": "phb24",
+      "description": "Hunter's Mark'ınızla işaretlenmiş yaratığa karşı saldırı atışlarında avantaj kazanırsınız.",
+      "level": 17,
+      "featureType": "passive"
+    },
+    {
+      "id": "feral-senses",
+      "name": "Vahşi Duyular (Feral Senses)",
+      "source": "phb24",
+      "description": "Doğanın güçleriyle bağlantınız size 30 feet menzilli Blindsight verir.",
+      "level": 18,
+      "featureType": "passive"
+    },
+    {
+      "id": "epic-boon-ranger",
+      "name": "Epik Lütuf (Epic Boon)",
+      "source": "phb24",
+      "description": "Bir Epik Lütuf veya seçebileceğiniz başka bir hüner kazanırsınız. Boon of Dimensional Travel önerilir.",
+      "level": 19,
+      "featureType": "choice"
+    },
+    {
+      "id": "foe-slayer",
+      "name": "Düşman Öldürücü (Foe Slayer)",
+      "source": "phb24",
+      "description": "Hunter's Mark'ınızın hasar zarı d6 yerine d10'dur.",
+      "level": 20,
+      "featureType": "passive",
+      "improvesFeature": "favored-enemy"
     }
   ],
   "subclasses": [
     {
-      "id": "hunter",
-      "name": "Hunter",
-      "source": "srd",
-      "description": "Emulating the Hunter archetype means accepting your place as a bulwark between civilization and the terrors of the wilderness.",
-      "parentClassId": "ranger",
-      "subclassFeatureLevel": 3,
-      "features": [
-        {
-          "id": "hunters-prey",
-          "name": "Hunter's Prey",
-          "source": "srd",
-          "description": "You gain one of the following features of your choice.",
-          "level": 3,
-          "featureType": "choice"
-        }
-      ]
-    },
-    {
       "id": "beast-master",
-      "name": "Beast Master",
-      "source": "user",
-      "description": "The Beast Master archetype embodies a friendship between the civilized races and the beasts of the world.",
+      "name": "Canavar Ustası (Beast Master)",
+      "source": "phb24",
+      "description": "Bir Canavar Ustası özel bir hayvanla mistik bir bağ oluşturur, kadim büyüden ve doğal dünyayla derin bir bağlantıdan yararlanır.",
       "parentClassId": "ranger",
       "subclassFeatureLevel": 3,
       "features": [
         {
           "id": "primal-companion",
-          "name": "Primal Companion",
-          "description": "You can call on the primal beast spirits of nature to fight alongside you.",
+          "name": "Kadim Yoldaş (Primal Companion)",
+          "description": "Doğayla olan bağınızdan güç alan bir kadim canavarı büyüsel olarak çağırırsınız. Stat bloğunu seçin: Beast of the Land, Beast of the Sea veya Beast of the Sky. Ayrıca stat bloğuna uygun seçerek ne tür bir hayvan olduğunu belirlersiniz. Hangi canavarı seçerseniz seçin doğaüstü kökenini gösteren kadim işaretler taşır.\n\nCanavar size ve müttefiklerinize Friendly'dir ve komutlarınıza itaat eder. Ölürseniz kaybolur.\n\nSavaşta Canavar: Savaşta canavar turunuzda hareket eder. Kendi başına hareket edebilir ve Reaksiyonunu kullanabilir ancak siz stat bloğundaki bir aksiyonu veya başka bir aksiyonu almak için Bonus Aksiyon almadıkça sadece Dodge aksiyonunu alır. Attack aksiyonu aldığınızda saldırılarınızdan birinden vazgeçerek canavara Beast's Strike aksiyonunu almayı komuta edebilirsiniz. Incapacitated durumu varsa canavar kendi başına hareket eder ve Dodge aksiyonuyla sınırlı değildir.\n\nCanavarı İyileştirme veya Değiştirme: Canavar son bir saat içinde ölmüşse Magic aksiyon alıp dokunabilir ve büyü slotu harcayabilirsiniz. Canavar 1 dakika sonra tüm Can Puanlarıyla hayata döner. Uzun Dinlenme bittiğinde 5 fit içinde boş bir alanda beliren farklı bir kadim canavar çağırabilirsiniz. Stat bloğunu ve görünüşünü seçersiniz. Bu özellinden zaten bir canavarınız varsa yenisi belirdiğinde eskisi kaybolur.",
           "level": 3,
           "featureType": "active"
+        },
+        {
+          "id": "exceptional-training",
+          "name": "Olağanüstü Eğitim (Exceptional Training)",
+          "description": "Primal Companion canavarınıza bir aksiyon almayı komuta etmek için Bonus Aksiyon aldığınızda ona Bonus Aksiyonunu kullanarak Dash, Disengage, Dodge veya Help aksiyonunu almayı da komuta edebilirsiniz.\n\nAyrıca saldırı atışıyla isabet ettirip hasar verdiğinde seçtiğiniz Force hasar veya normal hasar tipini verebilir.",
+          "level": 7,
+          "featureType": "passive"
+        },
+        {
+          "id": "bestial-fury",
+          "name": "Canavarî Öfke (Bestial Fury)",
+          "description": "Primal Companion canavarınıza Beast's Strike aksiyonunu almayı komuta ettiğinizde canavar onu iki kez kullanabilir.\n\nAyrıca her tur ilk kez Hunter's Mark büyünüzün etkisi altındaki bir yaratığa isabet ettirdiğinde canavar o büyünün bonus hasarına eşit ekstra Force hasar verir.",
+          "level": 11,
+          "featureType": "passive"
+        },
+        {
+          "id": "share-spells",
+          "name": "Büyüleri Paylaşma (Share Spells)",
+          "description": "Kendinizi hedef alan bir büyü yaptığınızda canavar 30 fit içindeyse büyüyle Primal Companion canavarınızı da etkileyebilirsiniz.",
+          "level": 15,
+          "featureType": "passive"
         }
       ]
     },
     {
       "id": "fey-wanderer",
-      "name": "Fey Wanderer",
-      "source": "user",
-      "description": "Fey Wanderer rangers guard the border between the Feywild and the Material Plane.",
+      "name": "Peri Gezgini (Fey Wanderer)",
+      "source": "phb24",
+      "description": "Bir archfey'in lütfu veya Feywild'daki bir konumun sizi dönüştürmesi sayesinde etrafınızda bir peri mistiği vardır. Peri büyüsünü nasıl kazandıysanız kazanın artık bir Peri Gezginisiniz. Neşeli kahkahanız mazlumların kalbini aydınlatır ve savaş becerileriniz düşmanlarınızda korku yaratır, zira büyüktür perilerin şenliği ve korkunçtur onların öfkesi.",
       "parentClassId": "ranger",
       "subclassFeatureLevel": 3,
       "features": [
         {
           "id": "dreadful-strikes",
-          "name": "Dreadful Strikes",
-          "description": "You can augment your weapon strikes with mind-scarring magic.",
+          "name": "Korkunç Darbeler (Dreadful Strikes)",
+          "description": "Silah darbelerinizi Feywild'in kasvetli kovuklarından çekilen zihin yakan büyüyle artırabilirsiniz. Bir silahla bir yaratığa isabet ettirdiğinizde hedefe ekstra 1d4 Psychic hasar verebilirsiniz, tur başına sadece bir kez. Ekstra hasar Ranger seviyesi 11'de 1d6'ya yükselir.",
           "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "fey-wanderer-spells",
+          "name": "Peri Gezgini Büyüleri",
+          "description": "Belirli Ranger seviyelerine ulaştığınızda listelenen büyüleri her zaman hazırlanmış sayılırsınız.\n\nSeviye 3: Charm Person\nSeviye 5: Misty Step\nSeviye 9: Summon Fey\nSeviye 13: Dimension Door\nSeviye 17: Mislead\n\nAyrıca bir peri kutsamasına sahipsiniz. Kelebekler etrafınızda uçuşur, saçlarınızdan çiçekler çıkar, gölgeniz hareket eder veya benzer Feywild armağanlarından birine sahipsiniz.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "otherworldly-glamour",
+          "name": "Öte Dünya Büyüsü (Otherworldly Glamour)",
+          "description": "Charisma kontrolü yaptığınızda kontrole Wisdom modifikasyonunuza eşit bonus kazanırsınız (minimum +1).\n\nAyrıca seçtiğiniz bu becerilerden birinde proficiency kazanırsınız: Deception, Performance veya Persuasion.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "beguiling-twist",
+          "name": "Büyüleyici Bükülme (Beguiling Twist)",
+          "description": "Feywild büyüsü zihninizi korur. Charmed veya Frightened durumundan kaçınmak veya sonlandırmak için kurtarma atışlarında avantaj kazanırsınız.\n\nAyrıca siz veya 120 fit içinde görebildiğiniz bir yaratık Charmed veya Frightened durumundan kaçınmak veya sonlandırmak için kurtarma atışında başarılı olduğunda Reaksiyon alarak 120 fit içinde görebildiğiniz farklı bir yaratığı büyü kurtarma DC'nize karşı Wisdom kurtarma atışı yapmaya zorlayabilirsiniz. Başarısız olursa hedef 1 dakika boyunca Charmed veya Frightened (seçiminize göre) olur. Hedef turlarının her birinin sonunda atışı tekrarlar ve başarılı olursa etki sona erer.",
+          "level": 7,
+          "featureType": "passive"
+        },
+        {
+          "id": "fey-reinforcements",
+          "name": "Peri Takviyeleri (Fey Reinforcements)",
+          "description": "Summon Fey'i Material bileşen olmadan yapabilirsiniz. Ayrıca büyü slotu olmadan bir kez yapabilirsiniz ve Uzun Dinlenme bittiğinde bu şekilde yapma yeteneğinizi yenilersiniz.\n\nBüyüyü yapmaya başladığınızda Konsantrasyon gerektirmeyecek şekilde değiştirebilirsiniz. Bunu yaparsanız o yapma için büyünün süresi 1 dakika olur.",
+          "level": 11,
+          "featureType": "passive"
+        },
+        {
+          "id": "misty-wanderer",
+          "name": "Sisli Gezgin (Misty Wanderer)",
+          "description": "Misty Step'i büyü slotu harcamadan yapabilirsiniz. Bunu Wisdom modifikasyonunuza (minimum bir kez) eşit sayıda yapabilirsiniz ve Uzun Dinlenme bittiğinde tüm harcanan kullanımları yenilersiniz.\n\nAyrıca Misty Step yaptığınızda 5 fit içinde görebildiğiniz istekli bir yaratığı beraberinizde getirebilirsiniz. O yaratık varış noktanızın 5 fit içinde seçtiğiniz boş bir alana ışınlanır.",
+          "level": 15,
           "featureType": "passive"
         }
       ]
     },
     {
       "id": "gloom-stalker",
-      "name": "Gloom Stalker",
-      "source": "user",
-      "description": "Gloom Stalkers are at home in the darkest places: deep under the earth, in gloomy alleyways, and wherever else light is unknown.",
+      "name": "Kasvet Takipçisi (Gloom Stalker)",
+      "source": "phb24",
+      "description": "Kasvet Takipçileri en karanlık yerlerde evlerindedir, düşmanlarıyla savaşmak için Shadowfell'den çekilen büyüyü kullanırlar.",
       "parentClassId": "ranger",
       "subclassFeatureLevel": 3,
       "features": [
         {
           "id": "dread-ambusher",
-          "name": "Dread Ambusher",
-          "description": "You master the art of the ambush. You gain a bonus to initiative rolls and extra damage on your first turn.",
+          "name": "Korkunç Pusucu (Dread Ambusher)",
+          "description": "Korkunç pususlar yaratma sanatında ustalaştınız, size şu faydaları verir:\n\nPusucunun Sıçraması (Ambusher's Leap): Her savaşın ilk turunuzun başında Hızınız o tur sonuna kadar 10 fit artar.\n\nKorkunç Darbe (Dreadful Strike): Bir silahla bir yaratığa saldırıp isabet ettirdiğinizde ekstra 2d6 Psychic hasar verebilirsiniz. Bu faydayı tur başına bir kez kullanabilir, Wisdom modifikasyonunuza (minimum bir kez) eşit sayıda kullanabilirsiniz ve Uzun Dinlenme bittiğinde tüm harcanan kullanımları yenilersiniz.\n\nInitiative Bonusu: Initiative zarı attığınızda atışa Wisdom modifikasyonunuzu ekleyebilirsiniz.",
           "level": 3,
           "featureType": "passive"
+        },
+        {
+          "id": "gloom-stalker-spells",
+          "name": "Kasvet Takipçisi Büyüleri",
+          "description": "Belirli Ranger seviyelerine ulaştığınızda listelenen büyüleri her zaman hazırlanmış sayılırsınız.\n\nSeviye 3: Disguise Self\nSeviye 5: Rope Trick\nSeviye 9: Fear\nSeviye 13: Greater Invisibility\nSeviye 17: Seeming",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "umbral-sight",
+          "name": "Gölgesel Görüş (Umbral Sight)",
+          "description": "60 feet menzilli Darkvision kazanırsınız. Bu özelliği kazandığınızda zaten Darkvision'ınız varsa menzili 60 feet artar.\n\nAyrıca Darkvision'a güvenen yaratıkları atlatmada da ustasınız. Tamamen Karanlıktayken o Karanlıkta sizi görmek için Darkvision'a güvenen herhangi bir yaratığa karşı Invisible durumuna sahipsiniz.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "iron-mind",
+          "name": "Demir Zihin (Iron Mind)",
+          "description": "Zihin değiştiren güçlere direnim yeteneğinizi inceletiniz. Wisdom kurtarma atışlarında proficiency kazanırsınız. Zaten bu proficiency'ye sahipseniz bunun yerine Intelligence veya Charisma kurtarma atışlarında (seçiminize göre) proficiency kazanırsınız.",
+          "level": 7,
+          "featureType": "passive"
+        },
+        {
+          "id": "stalkers-flurry",
+          "name": "Takipçinin Yağmuru (Stalker's Flurry)",
+          "description": "Dread Ambusher özelliğinizin Psychic hasarı 2d8 olur. Ayrıca Dread Ambusher özelliğinizin Dreadful Strike etkisini kullandığınızda şu ek etkilerden birini de verebilirsiniz:\n\nAni Darbe (Sudden Strike): Aynı silahla orijinal hedefin 5 fit içindeki ve silahın menzilindeki farklı bir yaratığa başka bir saldırı yapabilirsiniz.\n\nToplu Korku (Mass Fear): Hedef ve 10 fit içindeki her yaratık büyü kurtarma DC'nize karşı Wisdom kurtarma atışı yapmalıdır. Başarısız olursa yaratık bir sonraki turunuzun başına kadar Frightened durumuna girer.",
+          "level": 11,
+          "featureType": "passive",
+          "improvesFeature": "dread-ambusher"
+        },
+        {
+          "id": "shadowy-dodge",
+          "name": "Gölgeli Kaçınma (Shadowy Dodge)",
+          "description": "Bir yaratık size saldırı atışı yaptığında o atışta dezavantaj uygulamak için Reaksiyon alabilirsiniz. Saldırı isabet etsin veya ıskalasın görebildiğiniz boş bir alana 30 fit kadar ışınlanabilirsiniz.",
+          "level": 15,
+          "featureType": "active"
+        }
+      ]
+    },
+    {
+      "id": "hunter",
+      "name": "Avcı (Hunter)",
+      "source": "phb24",
+      "description": "Doğayı ve insanları yıkımdan korumak için vahşi bölgelerde ve başka yerlerde avınızı takip edersiniz, her yerde doğayı ve insanları onları yok edecek güçlerden korumak için bir Avcı olarak yeteneklerinizi kullanırsınız.",
+      "parentClassId": "ranger",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "hunters-prey",
+          "name": "Avcının Avı (Hunter's Prey)",
+          "description": "Seçtiğiniz şu özellik seçeneklerinden birini kazanırsınız. Kısa veya Uzun Dinlenme bittiğinde seçilen seçeneği diğeriyle değiştirebilirsiniz:\n\nDev Öldürücü (Colossus Slayer): Dayanıklılığınız en dirençli düşmanları bile yıpratabilir. Bir silahla bir yaratığa isabet ettirdiğinizde silah Can Puanlarından herhangi birini kaybetmişse hedefe ekstra 1d8 hasar verir. Bu ekstra hasarı tur başına sadece bir kez verebilirsiniz.\n\nSürü Kırıcı (Horde Breaker): Turlarınızın her birinde bir kez, bir silahla saldırı yaptığınızda aynı silahla orijinal hedefin 5 fit içindeki, silahın menzilindeki ve bu tur saldırmadığınız farklı bir yaratığa başka bir saldırı yapabilirsiniz.",
+          "level": 3,
+          "featureType": "choice"
+        },
+        {
+          "id": "hunters-lore",
+          "name": "Avcının Bilgisi (Hunter's Lore)",
+          "description": "Avınızın belirli güç ve zaaflarını ortaya çıkarmak için doğanın güçlerini çağırabilirsiniz. Bir yaratık Hunter's Mark'ınızla işaretlendiğinde o yaratığın herhangi bir Immunity, Resistance veya Vulnerability'si olup olmadığını bilirsiniz ve varsa neler olduklarını bilirsiniz.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "defensive-tactics",
+          "name": "Savunma Taktikleri (Defensive Tactics)",
+          "description": "Seçtiğiniz şu özellik seçeneklerinden birini kazanırsınız. Kısa veya Uzun Dinlenme bittiğinde seçilen seçeneği diğeriyle değiştirebilirsiniz:\n\nSürüden Kaçış (Escape the Horde): Opportunity Attack'ler size karşı dezavantaja sahiptir.\n\nÇoklu Saldırı Savunması (Multiattack Defense): Bir yaratık saldırı atışıyla size isabet ettirdiğinde o yaratık bu tur size karşı diğer tüm saldırı atışlarında dezavantaja sahiptir.",
+          "level": 7,
+          "featureType": "choice"
+        },
+        {
+          "id": "superior-hunters-prey",
+          "name": "Üstün Avcının Avı (Superior Hunter's Prey)",
+          "description": "Tur başına bir kez, Hunter's Mark'ınızla işaretlenmiş bir yaratığa hasar verdiğinizde o büyünün ekstra hasarını ilk yaratığın 30 fit içinde görebildiğiniz farklı bir yaratığa da verebilirsiniz.",
+          "level": 11,
+          "featureType": "passive"
+        },
+        {
+          "id": "superior-hunters-defense",
+          "name": "Üstün Avcının Savunması (Superior Hunter's Defense)",
+          "description": "Hasar aldığınızda kendinize o hasara ve mevcut tur sonuna kadar aynı tipdeki diğer hasarlara karşı Direnç vermek için Reaksiyon alabilirsiniz.",
+          "level": 15,
+          "featureType": "active"
         }
       ]
     }
@@ -191,7 +502,7 @@
       "Nature warrior",
       "Tracker",
       "Archer",
-      "Two-weapon"
+      "Hunter"
     ],
     "roleInParty": [
       "Striker",

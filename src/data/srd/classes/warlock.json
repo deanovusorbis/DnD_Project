@@ -1,8 +1,8 @@
 {
   "id": "warlock",
   "name": "Warlock",
-  "source": "srd",
-  "description": "A wielder of magic derived from a bargain with an extraplanar entity.",
+  "source": "phb24",
+  "description": "Düzlem ötesi bir varlıkla yaptığı pazarlıktan türeyen büyü kullanan biri.",
   "hitDie": "d8",
   "primaryAbility": [
     "CHA"
@@ -47,174 +47,342 @@
     }
   },
   "startingEquipment": {
-    "guaranteed": [
+    "choices": [
       {
-        "itemId": "leather_armor",
-        "quantity": 1
-      },
-      {
-        "itemId": "simple_weapon",
-        "quantity": 1
+        "id": "starting-pack",
+        "options": [
+          {
+            "description": "(A) Leather Armor, Sickle, 2 Daggers, Arcane Focus, Dungeoneer's Pack, and 19 GP",
+            "items": [
+              {
+                "itemId": "leather_armor",
+                "quantity": 1
+              },
+              {
+                "itemId": "sickle",
+                "quantity": 1
+              },
+              {
+                "itemId": "dagger",
+                "quantity": 2
+              },
+              {
+                "itemId": "arcane_focus",
+                "quantity": 1
+              },
+              {
+                "itemId": "dungeoneers_pack",
+                "quantity": 1
+              }
+            ],
+            "gold": 19
+          },
+          {
+            "description": "(B) 100 GP",
+            "items": [],
+            "gold": 100
+          }
+        ]
       }
-    ],
-    "choices": []
+    ]
   },
   "spellcasting": {
     "hasSpellcasting": true,
     "spellcastingAbility": "CHA",
     "spellcastingType": "pact",
-    "cantripsKnown": [
-      2,
-      2,
-      2,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4
-    ],
-    "spellsKnown": [
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      10,
-      11,
-      11,
-      12,
-      12,
-      13,
-      13,
-      14,
-      14,
-      15,
-      15
-    ]
+    "ritualCasting": false
   },
   "features": [
     {
-      "id": "otherworldly-patron",
-      "name": "Otherworldly Patron",
-      "source": "srd",
-      "description": "You have struck a bargain with an otherworldly being of your choice.",
+      "id": "eldritch-invocations",
+      "name": "El Gizli Çağrılar (Eldritch Invocations)",
+      "source": "phb24",
+      "description": "Size kalıcı büyüsel yetenek veren yasak bilgi parçalarını ortaya çıkardınız. Seçtiğiniz bir invocation kazanırsınız (Pact of the Tome gibi).\n\nBelirli Warlock seviyelerine ulaştığınızda daha fazla invocation kazanırsınız. Warlock seviyesi kazandığınızda invocationlarınızdan birini seçebileceğiniz başkasıyla değiştirebilirsiniz.\n\n26 İNVOCATION SEÇENEĞİ (özet): Agonizing Blast (CHA hasara), Armor of Shadows (Mage Armor), Ascendant Step (Levitate), Devil's Sight (120ft karanlık görüş), Devouring Blade (3 attack), Eldritch Mind (Concentration advantage), Eldritch Smite (pact weapon smite), Eldritch Spear (menzil artışı), Fiendish Vigor (False Life), Gaze of Two Minds, Gift of the Depths (underwater), Gift of the Protectors (Book of Shadows koruma), Investment of the Chain Master, Lessons of First Ones (Origin feat), Lifedrinker (pact weapon healing), Mask of Many Faces (Disguise Self), Master of Myriad Forms (Alter Self), Misty Visions (Silent Image), One with Shadows (Invisibility at dimlight), Otherworldly Leap (Jump), Pact of the Blade/Chain/Tome, Repelling Blast (10ft itme), Thirsting Blade (Extra Attack), Visions of Distant Realms (Arcane Eye), Whispers of the Grave (Speak with Dead), Witch Sight (Truesight 30ft).",
       "level": 1,
       "featureType": "choice"
     },
     {
       "id": "pact-magic",
-      "name": "Pact Magic",
-      "source": "srd",
-      "description": "Your arcane research and the magic bestowed on you by your patron have given you facility with spells.",
+      "name": "Pakt Büyüsü (Pact Magic)",
+      "source": "phb24",
+      "description": "Gizemli bir tören aracılığıyla büyüsel güçler kazanmak için gizemli bir varlıkla pakt oluşturdunuz.\n\nCantrip'ler: Seçtiğiniz iki Warlock cantrip bilirsiniz (Eldritch Blast ve Prestidigitation önerilir). Warlock seviyesi kazandığınızda cantrip'lerinizden birini başkasıyla değiştirebilirsiniz. Warlock seviyeleri 4 ve 10'a ulaştığınızda başka bir Warlock cantrip öğrenirsiniz.\n\nBüyü Slotları: Tüm slotlar aynı seviyededir. Kısa veya Uzun Dinlenme bittiğinde tüm harcanan Pact Magic slotlarını yenilersiniz.\n\nHazırlanan Büyüler (Seviye 1+): Başlangıçta iki adet seviye 1 Warlock büyüsü seçin (Charm Person ve Hex önerilir). Warlock seviyesi kazandığınızda listenizdeki bir büyüyü uygun seviyedeki başka bir Warlock büyüsüyle değiştirebilirsiniz.\n\nBüyü Yapma Yeteneği: Charisma.\n\nBüyü Odağı: Arcane Focus kullanabilirsiniz.",
       "level": 1,
       "featureType": "passive"
     },
     {
-      "id": "eldritch-invocations",
-      "name": "Eldritch Invocations",
-      "source": "srd",
-      "description": "In your study of occult lore, you have unearthed eldritch invocations.",
+      "id": "magical-cunning",
+      "name": "Büyüsel Kurnazlık (Magical Cunning)",
+      "source": "phb24",
+      "description": "1 dakika boyunca gizli bir rit yapabilirsiniz. Sonunda harcanan Pact Magic slotlarını yenilersiniz ancak maximumunuzun yarısından (yukarı yuvarla) fazla olamaz. Bu özelliği kullandıktan sonra Uzun Dinlenme bitirene kadar tekrar yapamazsınız.",
       "level": 2,
+      "featureType": "active"
+    },
+    {
+      "id": "warlock-subclass",
+      "name": "Warlock Alt Sınıfı",
+      "source": "phb24",
+      "description": "Seçtiğiniz bir Warlock alt sınıfında (Patron) uzmanlaşırsınız.",
+      "level": 3,
       "featureType": "choice"
     },
     {
-      "id": "pact-boon",
-      "name": "Pact Boon",
-      "source": "srd",
-      "description": "Your otherworldly patron bestows a gift upon you.",
-      "level": 3,
+      "id": "asi-4",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 4,
       "featureType": "choice"
+    },
+    {
+      "id": "subclass-feature-6",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Warlock alt sınıfınızdan (Patron) bir özellik kazanırsınız.",
+      "level": 6,
+      "featureType": "passive"
+    },
+    {
+      "id": "asi-8",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 8,
+      "featureType": "choice"
+    },
+    {
+      "id": "contact-patron",
+      "name": "Patronla İletişim (Contact Patron)",
+      "source": "phb24",
+      "description": "Geçmişte patronunuzla genellikle aracılar aracılığıyla iletişim kurdunuz. Artık doğrudan iletişim kurabilirsiniz. Contact Other Plane büyüsünü her zaman hazırlanmış sayılırsınız. Bu özellikle patronunuzla iletişim kurmak için büyüyü büyü slotu harcamadan yapabilirsiniz ve büyünün kurtarma atışında otomatik başarılı olursunuz.\n\nBu özellikle büyüyü yaptıktan sonra Uzun Dinlenme bitirene kadar bu şekilde tekrar yapamazsınız.",
+      "level": 9,
+      "featureType": "passive"
+    },
+    {
+      "id": "subclass-feature-10",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Warlock alt sınıfınızdan (Patron) bir özellik kazanırsınız.",
+      "level": 10,
+      "featureType": "passive"
+    },
+    {
+      "id": "mystic-arcanum-6",
+      "name": "Mistik Arkanum (Mystic Arcanum) - Seviye 6",
+      "source": "phb24",
+      "description": "Patronunuz size arcanum adı verilen büyüsel bir sır verir. Bir seviye 6 Warlock büyüsünü bu arcanum olarak seçin.\n\nArcanum büyünüzü büyü slotu harcamadan bir kez yapabilirsiniz ve bu şekilde tekrar yapmadan önce Uzun Dinlenme bitirmelisiniz.\n\nWarlock seviyeleri 13 (seviye 7), 15 (seviye 8) ve 17'ye (seviye 9) ulaştığınızda seçtiğiniz başka bir Warlock büyüsü kazanırsınız. Uzun Dinlenme bittiğinde Mystic Arcanum kullanımlarınızın hepsini yenilersiniz.\n\nWarlock seviyesi kazandığınızda arcanum büyülerinizden birini aynı seviyede başka bir Warlock büyüsüyle değiştirebilirsiniz.",
+      "level": 11,
+      "featureType": "choice"
+    },
+    {
+      "id": "asi-12",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 12,
+      "featureType": "choice"
+    },
+    {
+      "id": "mystic-arcanum-7",
+      "name": "Mistik Arkanum (Mystic Arcanum) - Seviye 7",
+      "source": "phb24",
+      "description": "Seçtiğiniz bir seviye 7 Warlock büyüsü kazanırsınız.",
+      "level": 13,
+      "featureType": "choice"
+    },
+    {
+      "id": "subclass-feature-14",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Warlock alt sınıfınızdan (Patron) bir özellik kazanırsınız.",
+      "level": 14,
+      "featureType": "passive"
+    },
+    {
+      "id": "mystic-arcanum-8",
+      "name": "Mistik Arkanum (Mystic Arcanum) - Seviye 8",
+      "source": "phb24",
+      "description": "Seçtiğiniz bir seviye 8 Warlock büyüsü kazanırsınız.",
+      "level": 15,
+      "featureType": "choice"
+    },
+    {
+      "id": "asi-16",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 16,
+      "featureType": "choice"
+    },
+    {
+      "id": "mystic-arcanum-9",
+      "name": "Mistik Arkanum (Mystic Arcanum) - Seviye 9",
+      "source": "phb24",
+      "description": "Seçtiğiniz bir seviye 9 Warlock büyüsü kazanırsınız.",
+      "level": 17,
+      "featureType": "choice"
+    },
+    {
+      "id": "epic-boon-warlock",
+      "name": "Epik Lütuf (Epic Boon)",
+      "source": "phb24",
+      "description": "Bir Epik Lütuf veya seçebileceğiniz başka bir hüner kazanırsınız. Boon of Fate önerilir.",
+      "level": 19,
+      "featureType": "choice"
+    },
+    {
+      "id": "eldritch-master",
+      "name": "El Gizli Usta (Eldritch Master)",
+      "source": "phb24",
+      "description": "Magical Cunning özelliğinizi kullandığınızda tüm harcanan Pact Magic slotlarınızı yenilersiniz.",
+      "level": 20,
+      "featureType": "passive",
+      "improvesFeature": "magical-cunning"
     }
   ],
   "subclasses": [
     {
-      "id": "the-fiend",
-      "name": "The Fiend",
-      "source": "srd",
-      "description": "You have made a pact with a fiend from the lower planes of existence.",
-      "parentClassId": "warlock",
-      "subclassFeatureLevel": 1,
-      "features": [
-        {
-          "id": "dark-ones-blessing",
-          "name": "Dark One's Blessing",
-          "source": "srd",
-          "description": "When you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your Charisma modifier + your warlock level.",
-          "level": 1,
-          "featureType": "passive"
-        }
-      ]
-    },
-    {
       "id": "archfey-patron",
-      "name": "Archfey Patron",
-      "source": "user",
-      "description": "Your patron is a lord or lady of the fey, a creature of legend who holds secrets that were forgotten before the mortal races were born.",
+      "name": "Archfey Patronu",
+      "source": "phb24",
+      "description": "Paktınız Feywild'in gücünden yararlanır. Bu alt sınıfı seçtiğinizde Prince of Frost, Queen of Air and Darkness, Titania of the Summer Court veya özellikle güçlü bir hag gibi bir archfey ile anlaşma yapabilirsiniz. Patronunuz genellikle anlaşılmaz ve kaprislidir.",
       "parentClassId": "warlock",
-      "subclassFeatureLevel": 1,
+      "subclassFeatureLevel": 3,
       "features": [
         {
-          "id": "fey-presence",
-          "name": "Fey Presence",
-          "description": "You can cause each creature in a 10-foot cube originating from you to make a Wisdom saving throw against your warlock spell save DC.",
-          "level": 1,
+          "id": "archfey-spells",
+          "name": "Archfey Büyüleri",
+          "description": "Patronunuzun büyüsü belirli büyülerin her zaman hazır olmasını sağlar. Belirli Warlock seviyelerine ulaştığınızda listelenen büyüleri her zaman hazırlanmış sayılırsınız.\n\nSeviye 3: Calm Emotions, Faerie Fire, Misty Step, Phantasmal Force, Sleep\nSeviye 5: Blink, Plant Growth\nSeviye 7: Dominate Beast, Greater Invisibility\nSeviye 9: Dominate Person, Seeming",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "steps-of-the-fey",
+          "name": "Perilerin Adımları (Steps of the Fey)",
+          "description": "Patronunuz düzlemlerin sınırları arasında hareket etme yeteneği verir. Misty Step'i büyü slotu harcamadan Charisma modifikasyonunuza (minimum bir kez) eşit sayıda yapabilirsiniz ve Uzun Dinlenme bittiğinde tüm harcanan kullanımları yenilersiniz.\n\nAyrıca o büyüyü her yaptığınızda şu ek etkilerden birini seçebilirsiniz:\n\nTazeleyici Adım (Refreshing Step): Işınlandıktan hemen sonra siz veya 10 fit içinde görebildiğiniz bir yaratık 1d10 Geçici Can Puanı kazanır.\n\nAlay Eden Adım (Taunting Step): Ayrıldığınız alanın 5 fit içindeki yaratıklar büyü kurtarma DC'nize karşı Wisdom kurtarma atışı yapmalıdır veya bir sonraki turunuzun başına kadar sizden başka yaratıklara saldırılarda dezavantaja sahip olur.",
+          "level": 3,
           "featureType": "active"
+        },
+        {
+          "id": "misty-escape",
+          "name": "Sisli Kaçış (Misty Escape)",
+          "description": "Hasar almaya cevap olarak Misty Step'i Reaksiyon olarak yapabilirsiniz.\n\nAyrıca şu etkiler artık Steps of the Fey seçenekleriniz arasındadır:\n\nKaybolan Adım (Disappearing Step): Bir sonraki turunuzun başına kadar veya saldırı atışı yapar, hasar verir veya büyü yaparsanız hemen sonra Invisible durumuna sahip olursunuz.\n\nKorkunç Adım (Dreadful Step): Ayrıldığınız alanın veya belirdiğiniz alanın (seçiminize göre) 5 fit içindeki yaratıklar büyü kurtarma DC'nize karşı Wisdom kurtarma atışı yapmalıdır veya 2d10 Psychic hasar alır.",
+          "level": 6,
+          "featureType": "active"
+        },
+        {
+          "id": "beguiling-defenses",
+          "name": "Büyüleyici Savunmalar (Beguiling Defenses)",
+          "description": "Patronunuz zihninizi ve vücudunuzu nasıl koruyacağınızı öğretir. Charmed durumuna karşı bağışıksınız.\n\nAyrıca görebildiğiniz bir yaratık saldırı atışıyla size isabet ettirdikten hemen sonra aldığınız hasarı yarıya indirmek (aşağı yuvarla) için Reaksiyon alabilir ve saldırganı büyü kurtarma DC'nize karşı Wisdom kurtarma atışı yapmaya zorlayabilirsiniz. Başarısız olursa saldırgan aldığınız hasara eşit Psychic hasar alır. Bu Reaksiyonu kullandıktan sonra Uzun Dinlenme bitirene kadar tekrar kullanamazsınız. Alternatif olarak kullanımı yenilemek için Pact Magic slotu harcayabilirsiniz (aksiyon gerekmez).",
+          "level": 10,
+          "featureType": "active"
+        },
+        {
+          "id": "bewitching-magic",
+          "name": "Büyüleyici Büyü (Bewitching Magic)",
+          "description": "Patronunuz büyünüzü ışınlanmayla dokuma yeteneği verir. Aksiyon ve büyü slotu kullanarak Enchantment veya Illusion büyüsü yaptıktan hemen sonra aynı aksiyonun parçası olarak ve büyü slotu harcamadan Misty Step yapabilirsiniz.",
+          "level": 14,
+          "featureType": "passive"
         }
       ]
     },
     {
       "id": "celestial-patron",
-      "name": "Celestial Patron",
-      "source": "user",
-      "description": "Your patron is a powerful being of the Upper Planes.",
+      "name": "Celestial Patronu",
+      "source": "phb24",
+      "description": "Paktınız sonsuz mutluluk alemlerini Üst Düzlemler'den yararlanır. Bir empyrean, couatl, sphinx, unicorn veya başka göksel bir varlıkla anlaşma yapabilirsiniz. Paktınız çoklu evreni aydınlatan kutsal ışığın bir ipucunu deneyimlemenize izin verir.",
       "parentClassId": "warlock",
-      "subclassFeatureLevel": 1,
+      "subclassFeatureLevel": 3,
       "features": [
         {
+          "id": "celestial-spells",
+          "name": "Celestial Büyüleri",
+          "description": "Patronunuzun büyüsü belirli büyülerin her zaman hazır olmasını sağlar. Belirli Warlock seviyelerine ulaştığınızda listelenen büyüleri her zaman hazırlanmış sayılırsınız.\n\nSeviye 3: Aid, Cure Wounds, Guiding Bolt, Lesser Restoration, Light, Sacred Flame\nSeviye 5: Daylight, Revivify\nSeviye 7: Guardian of Faith, Wall of Fire\nSeviye 9: Greater Restoration, Summon Celestial",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
           "id": "healing-light",
-          "name": "Healing Light",
-          "description": "You have a pool of d6s that you spend to heal others.",
-          "level": 1,
-          "featureType": "resource"
+          "name": "İyileştirici Işık (Healing Light)",
+          "description": "Yaraları iyileştirmek için göksel enerjiyi kanalıza alma yeteneği kazanırsınız. Bu iyileştirmeyi beslemek için d6'lardan oluşan havuzunuz vardır. Havuzdaki zar sayısı 1 artı Warlock seviyenize eşittir.\n\nBonus Aksiyon olarak kendinizi veya 60 fit içinde görebildiğiniz bir yaratığı iyileştirebilir, havuzdan zar harcayabilirsiniz. Bir seferde harcayabileceğiniz maksimum zar sayısı Charisma modifikasyonunuza (minimum bir zar) eşittir. Harcadığınız zarları atın ve atış toplamına eşit Can Puanı restore edin. Uzun Dinlenme bittiğinde havuzunuz tüm harcanan zarları yeniler.",
+          "level": 3,
+          "featureType": "active",
+          "resource": {
+            "name": "Healing Light Dice",
+            "maxCount": 1,
+            "recoversOn": "long"
+          }
+        },
+        {
+          "id": "radiant-soul",
+          "name": "Parlak Ruh (Radiant Soul)",
+          "description": "Patronunuzla bağlantınız ışınlı enerji için bir kanal olarak hizmet etmenize izin verir. Radiant hasara karşı Direnç kazanırsınız. Tur başına bir kez, yaptığınız bir büyü Radiant veya Fire hasar verdiğinde o büyünün hedeflerinden birine karşı hasara Charisma modifikasyonunuzu ekleyebilirsiniz.",
+          "level": 6,
+          "featureType": "passive"
+        },
+        {
+          "id": "celestial-resilience",
+          "name": "Göksel Dayanıklılık (Celestial Resilience)",
+          "description": "Magical Cunning özelliğinizi kullandığınızda veya Kısa veya Uzun Dinlenme bitirdiğinizde Geçici Can Puanları kazanırsınız. Bu Geçici Canlar Warlock seviyeniz artı Charisma modifikasyonunuza eşittir. Ayrıca puanları kazandığınızda görebildiğiniz beş yaratığa kadar seçin. O yaratıkların her biri Warlock seviyenizin yarısı artı Charisma modifikasyonunuza eşit Geçici Can Puanları kazanır.",
+          "level": 10,
+          "featureType": "passive"
+        },
+        {
+          "id": "searing-vengeance",
+          "name": "Yakıcı İntikam (Searing Vengeance)",
+          "description": "Siz veya 60 fit içindeki bir müttefikiniz Death Saving Throw atmak üzereyken yaratığı kurtarmak için ışınlı enerji serbest bırakabilirsiniz. Yaratık Can Puanlarının yarısı kadar Can Puanı kazanır ve üzerindeki Prone durumunu sonlandırabilir. Seçtiğiniz yaratığın 30 fit içindeki her yaratık 2d8 artı Charisma modifikasyonunuza eşit Radiant hasar alır ve mevcut tur sonuna kadar Blinded durumuna girer.\n\nBu özelliği kullandıktan sonra Uzun Dinlenme bitirene kadar tekrar yapamazsınız.",
+          "level": 14,
+          "featureType": "active"
         }
       ]
     },
     {
-      "id": "great-old-one-patron",
-      "name": "Great Old One Patron",
-      "source": "user",
-      "description": "Your patron is a mysterious entity whose nature is utterly foreign to the fabric of reality.",
+      "id": "fiend-patron",
+      "name": "Fiend Patronu",
+      "source": "phb24",
+      "description": "Paktınız mahkumiyet alemleri Alt Düzlemler'den yararlanır. Demogorgon veya Orcus gibi demon lord; Asmodeus gibi archdevil veya özellikle güçlü pit fiend, balor, yugoloth veya night hag ile pazarlık yapabilirsiniz. Patronun amaçları kötüdür—sonunda sizi de içeren her şeyin yozlaşması veya yok edilmesi.",
       "parentClassId": "warlock",
-      "subclassFeatureLevel": 1,
+      "subclassFeatureLevel": 3,
       "features": [
         {
-          "id": "awakened-mind",
-          "name": "Awakened Mind",
-          "description": "You can telepathically speak to any creature you can see within 30 feet of you.",
-          "level": 1,
+          "id": "fiend-spells",
+          "name": "Fiend Büyüleri",
+          "description": "Patronunuzun büyüsü belirli büyülerin her zaman hazır olmasını sağlar. Belirli Warlock seviyelerine ulaştığınızda listelenen büyüleri her zaman hazırlanmış sayılırsınız.\n\nSeviye 3: Burning Hands, Command, Scorching Ray, Suggestion\nSeviye 5: Fireball, Stinking Cloud\nSeviye 7: Fire Shield, Wall of Fire\nSeviye 9: Geas, Insect Plague",
+          "level": 3,
           "featureType": "passive"
+        },
+        {
+          "id": "dark-ones-blessing",
+          "name": "Karanlığın Kutsaması (Dark One's Blessing)",
+          "description": "Bir düşmanı 0 Can Puanına düşürdüğünüzde Charisma modifikasyonunuz artı Warlock seviyenize (minimum 1) eşit Geçici Can Puanları kazanırsınız. Başkası 10 fit içindeki bir düşmanı 0 Can Puanına düşürürse de bu faydayı kazanırsınız.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "dark-ones-own-luck",
+          "name": "Karanlığın Kendi Şansı (Dark One's Own Luck)",
+          "description": "Kaderi lehinize değiştirmek için şeytani patronunuzu çağırabilirsiniz. Yetenek kontrolü veya kurtarma atışı yaptığınızda atışa 1d10 eklemek için bu özelliği kullanabilirsiniz. Bunu atışı gördükten sonra ancak atışın etkilerinden önce yapabilirsiniz.\n\nBu özelliği Charisma modifikasyonunuza (minimum bir kez) eşit sayıda kullanabilir ancak atış başına bir kereden fazla kullanamazsınız. Uzun Dinlenme bittiğinde tüm harcanan kullanımları yenilersiniz.",
+          "level": 6,
+          "featureType": "active"
+        },
+        {
+          "id": "fiendish-resilience",
+          "name": "Şeytani Dayanıklılık (Fiendish Resilience)",
+          "description": "Kısa veya Uzun Dinlenme bittiğinde Force hariç bir hasar tipi seçin. Bu özellikle farklı birini seçene kadar o hasar tipine karşı Direnç kazanırsınız.",
+          "level": 10,
+          "featureType": "choice"
+        },
+        {
+          "id": "hurl-through-hell",
+          "name": "Cehenneme Fırlatma (Hurl Through Hell)",
+          "description": "Tur başına bir kez saldırı atışıyla bir yaratığa isabet ettirdiğinizde hedefi Alt Düzlemler aracılığıyla anında taşımayı deneyebilirsiniz. Hedef büyü kurtarma DC'nize karşı Charisma kurtarma atışında başarılı olmalıdır veya hedef kaybolur ve kabus manzarasından geçer. Hedef Fiend değilse 8d10 Psychic hasar alır ve bir sonraki turunuzun sonuna kadar Incapacitated durumuna girer, sonra önceden kapladığı alana veya en yakın boş alana döner.\n\nBu özelliği kullandıktan sonra Uzun Dinlenme bitirene kadar tekrar yapamazsınız. Alternatif olarak kullanımı yenilemek için Pact Magic slotu harcayabilirsiniz (aksiyon gerekmez).",
+          "level": 14,
+          "featureType": "active"
         }
       ]
     }
   ],
   "subclassName": "Otherworldly Patron",
-  "subclassLevel": 1,
+  "subclassLevel": 3,
   "asiLevels": [
     4,
     8,

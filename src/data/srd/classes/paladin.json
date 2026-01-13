@@ -1,8 +1,8 @@
 {
   "id": "paladin",
   "name": "Paladin",
-  "source": "srd",
-  "description": "A holy warrior bound to a sacred oath.",
+  "source": "phb24",
+  "description": "Kutsal bir yemine bağlı bir kutsal savaşçı.",
   "hitDie": "d10",
   "primaryAbility": [
     "STR",
@@ -51,17 +51,40 @@
     }
   },
   "startingEquipment": {
-    "guaranteed": [
+    "choices": [
       {
-        "itemId": "chain_mail",
-        "quantity": 1
-      },
-      {
-        "itemId": "holy_symbol",
-        "quantity": 1
+        "id": "starting-pack",
+        "options": [
+          {
+            "description": "(A) Chain Mail, Holy Symbol, Javelin (6), Priest's Pack, and 7 GP",
+            "items": [
+              {
+                "itemId": "chain_mail",
+                "quantity": 1
+              },
+              {
+                "itemId": "holy_symbol",
+                "quantity": 1
+              },
+              {
+                "itemId": "javelin",
+                "quantity": 6
+              },
+              {
+                "itemId": "priests_pack",
+                "quantity": 1
+              }
+            ],
+            "gold": 7
+          },
+          {
+            "description": "(B) 150 GP",
+            "items": [],
+            "gold": 150
+          }
+        ]
       }
-    ],
-    "choices": []
+    ]
   },
   "spellcasting": {
     "hasSpellcasting": true,
@@ -71,131 +94,386 @@
   },
   "features": [
     {
-      "id": "divine-sense",
-      "name": "Divine Sense",
-      "source": "srd",
-      "description": "You can open your awareness to detect evil and good.",
+      "id": "lay-on-hands",
+      "name": "El Koyma (Lay on Hands)",
+      "source": "phb24",
+      "description": "Kutsal dokunuşunuz yaraları iyileştirebilir. Uzun Dinlenme bittiğinde yenilenen bir iyileşme gücü havuzunuz vardır. O havuzla Paladin seviyenizin beş katına eşit toplam Can Puanı restore edebilirsiniz.\n\nBonus Aksiyon olarak bir yaratığa (kendiniz olabilir) dokunabilir ve havuzdan güç çekerek o yaratığa havuzda kalan maksimum miktara kadar Can Puanı restore edebilirsiniz.\n\nAyrıca yaratıktan Poisoned durumunu kaldırmak için iyileşme gücü havuzundan 5 Can Puanı harcayabilirsiniz; bu puanlar yaratığa Can Puanı da restore etmez.",
       "level": 1,
       "featureType": "resource",
       "resource": {
-        "name": "Divine Sense",
-        "maxCount": "ability_mod",
-        "abilityModifier": "CHA",
+        "name": "El Koyma Havuzu",
+        "maxCount": "5 * level",
         "recoversOn": "long"
       }
     },
     {
-      "id": "lay-on-hands",
-      "name": "Lay on Hands",
-      "source": "srd",
-      "description": "Your blessed touch can heal wounds. You have a pool of healing power that replenishes after a long rest.",
+      "id": "spellcasting-paladin",
+      "name": "Büyü Yapma (Spellcasting)",
+      "source": "phb24",
+      "description": "Dua ve meditasyon yoluyla büyü yapmayı öğrendiniz.\n\nBüyü Slotları: Uzun Dinlenme bittiğinde tüm harcanan slotları yenilersiniz.\n\nHazırlanan Büyüler (Seviye 1+): Başlangıçta iki adet seviye 1 Paladin büyüsü seçin (Heroism ve Searing Smite önerilir). Sayı Paladin seviyesi kazandıkça artar. Uzun Dinlenme bittiğinde listenizdeki bir büyüyü büyü slotlarınız olan başka bir Paladin büyüsüyle değiştirebilirsiniz.\n\nBüyü Yapma Yeteneği: Charisma.\n\nBüyü Odağı: Holy Symbol kullanabilirsiniz.",
       "level": 1,
-      "featureType": "resource",
-      "resource": {
-        "name": "Lay on Hands Pool",
-        "maxCount": 5,
-        "recoversOn": "long"
-      }
+      "featureType": "passive"
+    },
+    {
+      "id": "weapon-mastery-paladin",
+      "name": "Silah Ustalığı (Weapon Mastery)",
+      "source": "phb24",
+      "description": "Silahlarla eğitiminiz proficiency sahibi olduğunuz seçtiğiniz iki çeşit silahın (Longsword ve Javelin gibi) ustalık özelliklerini kullanmanızı sağlar.\n\nUzun Dinlenme bittiğinde seçtiğiniz silah çeşitlerini değiştirebilirsiniz. Örneğin Halberd ve Flail'in ustalık özelliklerini kullanmaya geçebilirsiniz.",
+      "level": 1,
+      "featureType": "choice"
     },
     {
       "id": "fighting-style-paladin",
-      "name": "Fighting Style",
-      "source": "srd",
-      "description": "You adopt a particular style of fighting as your specialty.",
+      "name": "Dövüş Stili (Fighting Style)",
+      "source": "phb24",
+      "description": "Seçtiğiniz bir Fighting Style hüneri kazanırsınız. Bu hünerlerden birini seçmek yerine aşağıdaki seçeneği seçebilirsiniz:\n\nKutlu Savaşçı (Blessed Warrior): Seçtiğiniz iki Cleric cantrip öğrenirsiniz (Guidance ve Sacred Flame önerilir). Seçilen cantrip'ler sizin için Paladin büyüsü sayılır ve bunlar için büyü yapma yeteneğiniz Charisma'dır. Paladin seviyesi kazandığınızda bu cantrip'lerden birini başka bir Cleric cantrip ile değiştirebilirsiniz.",
       "level": 2,
       "featureType": "choice"
     },
     {
-      "id": "divine-smite",
-      "name": "Divine Smite",
-      "source": "srd",
-      "description": "When you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage.",
+      "id": "paladins-smite",
+      "name": "Paladin'in Darbesi (Paladin's Smite)",
+      "source": "phb24",
+      "description": "Divine Smite büyüsünü her zaman hazırlanmış sayılırsınız. Ayrıca büyü slotu harcamadan yapabilirsiniz ancak bu şekilde yapmadan önce Uzun Dinlenme bitirmelisiniz.",
       "level": 2,
-      "featureType": "active"
+      "featureType": "passive"
+    },
+    {
+      "id": "channel-divinity-paladin",
+      "name": "İlahi Kanal (Channel Divinity)",
+      "source": "phb24",
+      "description": "İlahi enerjiyi doğrudan Dış Düzlemlerden kanalıza rak büyüsel etkiler üretebilirsiniz. Bir etkiyle başlarsınız: Divine Sense. Diğer Paladin özellikleri ek Channel Divinity etki seçenekleri verir.\n\nBu sınıfın Channel Divinity'sini iki kez kullanabilirsiniz. Kısa Dinlenme bittiğinde bir harcanan kullanım, Uzun Dinlenme bittiğinde tüm harcanan kullanımlar yenilenir. Paladin seviyesi 11'e ulaştığınızda ek bir kullanım kazanırsınız.\n\nChannel Divinity etkisi kurtarma atışı gerektiriyorsa DC bu sınıfın Spellcasting özelliğinden gelen büyü kurtarma DC'sine eşittir.\n\nDivine Sense: Bonus Aksiyon olarak Celestial, Fiend ve Undead algılamak için farkındalığınızı açabilirsiniz. 10 dakika boyunca veya Incapacitated durumuna girene kadar 60 fit içindeki bu tiplerden herhangi bir yaratığın konumunu ve yaratık tipini bilirsiniz. Aynı yarıçapta Hallow büyüsü gibi kutsal veya lanetli herhangi bir yer veya nesnenin varlığını da algılarsınız.",
+      "level": 3,
+      "featureType": "resource",
+      "resource": {
+        "name": "Channel Divinity",
+        "maxCount": 2,
+        "recoversOn": "short"
+      }
+    },
+    {
+      "id": "paladin-subclass",
+      "name": "Paladin Alt Sınıfı",
+      "source": "phb24",
+      "description": "Seçtiğiniz bir Paladin alt sınıfında (subclass) uzmanlaşırsınız.",
+      "level": 3,
+      "featureType": "choice"
+    },
+    {
+      "id": "asi-4",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 4,
+      "featureType": "choice"
     },
     {
       "id": "extra-attack-paladin",
-      "name": "Extra Attack",
-      "source": "srd",
-      "description": "You can attack twice when you take the Attack action.",
+      "name": "Ek Saldırı (Extra Attack)",
+      "source": "phb24",
+      "description": "Turunuzda Attack aksiyonu aldığınızda bir yerine iki kez saldırabilirsiniz.",
+      "level": 5,
+      "featureType": "passive"
+    },
+    {
+      "id": "faithful-steed",
+      "name": "Sadık At (Faithful Steed)",
+      "source": "phb24",
+      "description": "Öte dünyadan bir atın yardımını çağırabilirsiniz. Find Steed büyüsünü her zaman hazırlanmış sayılırsınız.\n\nAyrıca büyüyü bir kez büyü slotu harcamadan yapabilirsiniz ve Uzun Dinlenme bittiğinde bunu yapma yeteneğinizi yenilersiniz.",
       "level": 5,
       "featureType": "passive"
     },
     {
       "id": "aura-of-protection",
-      "name": "Aura of Protection",
-      "source": "srd",
-      "description": "Whenever you or a friendly creature within 10 feet of you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier.",
+      "name": "Koruma Aurası (Aura of Protection)",
+      "source": "phb24",
+      "description": "Sizden başlayan 10 fit Emanation içinde koruyucu, görünmez bir aura yayarsınız. Aura Incapacitated durumu varken etkin değildir.\n\nSiz ve auradaki müttefikleriniz kurtarma atışlarında Charisma modifikasyonunuza eşit bonus kazanırsınız (minimum +1 bonus).\n\nBaşka bir Paladin mevcutsa bir yaratık aynı anda sadece bir Aura of Protection'dan faydalanabilir; yaratık içlerindeyken hangisini seçer.",
       "level": 6,
+      "featureType": "passive"
+    },
+    {
+      "id": "subclass-feature-7",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Paladin alt sınıfınızdan bir özellik kazanırsınız.",
+      "level": 7,
+      "featureType": "passive"
+    },
+    {
+      "id": "asi-8",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 8,
+      "featureType": "choice"
+    },
+    {
+      "id": "abjure-foes",
+      "name": "Düşmanları Uzaklaştırma (Abjure Foes)",
+      "source": "phb24",
+      "description": "Magic aksiyon olarak düşmanları heybete boğmak için bu sınıfın Channel Divinity'sinin bir kullanımını harcayabilirsiniz. Holy Symbol veya silahınızı gösterirken 60 fit içinde görebildiğiniz Charisma modifikasyonunuza (minimum bir yaratık) eşit sayıda yaratığı hedef alabilirsiniz. Her hedef Wisdom kurtarma atışında başarılı olmalıdır veya 1 dakika boyunca veya herhangi bir hasar alana kadar Frightened durumuna girer. Bu şekilde Frightened olan bir hedef turlarında şunlardan sadece birini yapabilir: hareket etmek, aksiyon almak veya Bonus Aksiyon almak.",
+      "level": 9,
+      "featureType": "active"
+    },
+    {
+      "id": "aura-of-courage",
+      "name": "Cesaret Aurası (Aura of Courage)",
+      "source": "phb24",
+      "description": "Siz ve müttefikleriniz Aura of Protection içindeyken Frightened durumuna karşı Immunity kazanırsınız. Frightened bir müttefik auraya girerse oradayken o durum o müttefik üzerinde etkisizdir.",
+      "level": 10,
+      "featureType": "passive"
+    },
+    {
+      "id": "radiant-strikes",
+      "name": "Parlak Darbeler (Radiant Strikes)",
+      "source": "phb24",
+      "description": "Darbeleriniz artık doğaüstü güç taşır. Bir Melee silah veya Unarmed Strike ile saldırı atışıyla bir hedefe isabet ettirdiğinizde hedef ekstra 1d8 Radiant hasar alır.",
+      "level": 11,
+      "featureType": "passive"
+    },
+    {
+      "id": "asi-12",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya bir Hüner (Feat) kazanın.",
+      "level": 12,
+      "featureType": "choice"
+    },
+    {
+      "id": "restoring-touch",
+      "name": "İyileştiren Dokunuş (Restoring Touch)",
+      "source": "phb24",
+      "description": "Bir yaratıkta Lay On Hands kullandığınızda yaratıktaki şu durumlardan bir veya daha fazlasını da kaldırabilirsiniz: Blinded, Charmed, Deafened, Frightened, Paralyzed veya Stunned. Kaldırdığınız bu durumların her biri için Lay On Hands iyileşme havuzundan 5 Can Puanı harcamalısınız; bu puanlar yaratığa Can Puanı da restore etmez.",
+      "level": 14,
+      "featureType": "passive",
+      "improvesFeature": "lay-on-hands"
+    },
+    {
+      "id": "subclass-feature-15",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Paladin alt sınıfınızdan bir özellik kazanırsınız.",
+      "level": 15,
+      "featureType": "passive"
+    },
+    {
+      "id": "asi-16",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 16,
+      "featureType": "choice"
+    },
+    {
+      "id": "aura-expansion",
+      "name": "Aura Genişlemesi (Aura Expansion)",
+      "source": "phb24",
+      "description": "Aura of Protection'ınız artık 30 fit Emanation'dır.",
+      "level": 18,
+      "featureType": "passive",
+      "improvesFeature": "aura-of-protection"
+    },
+    {
+      "id": "epic-boon-paladin",
+      "name": "Epik Lütuf (Epic Boon)",
+      "source": "phb24",
+      "description": "Bir Epik Lütuf veya seçebileceğiniz başka bir hüner kazanırsınız. Boon of Truesight önerilir.",
+      "level": 19,
+      "featureType": "choice"
+    },
+    {
+      "id": "subclass-feature-20",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Paladin alt sınıfınızdan bir özellik kazanırsınız.",
+      "level": 20,
       "featureType": "passive"
     }
   ],
   "subclasses": [
     {
       "id": "oath-of-devotion",
-      "name": "Oath of Devotion",
-      "source": "srd",
-      "description": "The Oath of Devotion binds a paladin to the loftiest ideals of justice, virtue, and order.",
+      "name": "Bağlılık Yemini (Oath of Devotion)",
+      "source": "phb24",
+      "description": "Bağlılık Yemini, Paladinleri adalet ve düzen ideallerine bağlar. Bu Paladinlar parlak zırhlarıyla şövalye arketipine ulaşırlar. Kendilerini en yüksek davranış standartlarına tutarlar ve bazıları -iyi veya kötü olsun- dünyanın geri kalanını da aynı standartlara tutarlar.\n\nBu yemini edenler şu ilkeleri paylaşırlar: Sözün sözleşmen olsun. Zayıfları koru ve asla hareket etmekten korkma. Onurlu işlerin örnek olsun.",
       "parentClassId": "paladin",
       "subclassFeatureLevel": 3,
       "features": [
+        {
+          "id": "oath-of-devotion-spells",
+          "name": "Bağlılık Yemini Büyüleri",
+          "description": "Yemininizin büyüsü belirli Paladin seviyelerine ulaştığınızda listelenen büyüleri her zaman hazırlanmış olarak tutar.\n\nSeviye 3: Protection from Evil And Good, Shield of Faith\nSeviye 5: Aid, Zone of Truth\nSeviye 9: Beacon of Hope, Dispel Magic\nSeviye 13: Freedom of Movement, Guardian of Faith\nSeviye 17: Commune, Flame Strike",
+          "level": 3,
+          "featureType": "passive"
+        },
         {
           "id": "sacred-weapon",
-          "name": "Channel Divinity: Sacred Weapon",
-          "source": "srd",
-          "description": "You can imbue one weapon with positive energy, adding your Charisma modifier to attack rolls.",
+          "name": "Kutsal Silah (Sacred Weapon)",
+          "description": "Attack aksiyonu aldığınızda tuttuğunuz bir Melee silahı pozitif enerjiyle aşılamak için Channel Divinity'nizin bir kullanımını harcayabilirsiniz. 10 dakika boyunca veya bu özelliği tekrar kullanana kadar o silahla yaptığınız saldırı atışlarına Charisma modifikasyonunuzu (minimum +1 bonus) eklersiniz ve onunla her isabet ettirdiğinizde normal hasar tipini veya Radiant hasar vermesine sebep olursunuz.\n\nSilah ayrıca 20 fit yarıçapında Parlak Işık ve ek 20 fit için Loş Işık yayar.\n\nBu etkiyi erken sonlandırabilirsiniz (aksiyon gerekmez). Silahı taşımıyorsanız da etki sona erer.",
           "level": 3,
           "featureType": "active"
-        }
-      ]
-    },
-    {
-      "id": "oath-of-the-ancients",
-      "name": "Oath of the Ancients",
-      "source": "user",
-      "description": "The Oath of the Ancients is as old as the race of elves and the rituals of the druids.",
-      "parentClassId": "paladin",
-      "subclassFeatureLevel": 3,
-      "features": [
+        },
         {
-          "id": "natures-wrath",
-          "name": "Channel Divinity: Nature's Wrath",
-          "description": "You can use your Channel Divinity to restrain a creature with spectral vines.",
-          "level": 3,
+          "id": "aura-of-devotion",
+          "name": "Bağlılık Aurası (Aura of Devotion)",
+          "description": "Siz ve müttefikleriniz Aura of Protection içindeyken Charmed durumuna karşı Immunity kazanırsınız. Charmed bir müttefik auraya girerse oradayken o durum o müttefik üzerinde etkisizdir.",
+          "level": 7,
+          "featureType": "passive"
+        },
+        {
+          "id": "smite-of-protection",
+          "name": "Koruyucu Darbe (Smite of Protection)",
+          "description": "Büyüsel darbesiniz artık koruyucu enerji yayar. Divine Smite yaptığınızda siz ve müttefikleriniz Aura of Protection içindeyken Half Cover sahibi olursunuz. Aura bir sonraki turunuzun başına kadar bu faydaya sahiptir.",
+          "level": 15,
+          "featureType": "passive"
+        },
+        {
+          "id": "holy-nimbus",
+          "name": "Kutsal Hale (Holy Nimbus)",
+          "description": "Bonus Aksiyon olarak Aura of Protection'ınızı kutsal güçle aşılayabilir, 10 dakika boyunca veya sonlandırana kadar (aksiyon gerekmez) şu faydaları kazanırsınız. Bu özelliği kullandıktan sonra Uzun Dinlenme bitirene kadar tekrar kullanamazsınız. Seviye 5 büyü slotu harcayarak (aksiyon gerekmez) kullanımını yenileyebilirsiniz.\n\nKutsal Korunma (Holy Ward): Bir Fiend veya Undead tarafından yapmaya zorlandığınız herhangi bir kurtarma atışında avantaj kazanırsınız.\n\nRadiant Hasarı (Radiant Damage): Bir düşman turunakendisine aurada başladığında o yaratık Charisma modifikasyonunuz artı Proficiency Bonusunuza eşit Radiant hasar alır.\n\nGüneş Işığı (Sunlight): Aura güneş ışığı olan Parlak Işıkla doldurulur.",
+          "level": 20,
           "featureType": "active"
         }
       ]
     },
     {
       "id": "oath-of-glory",
-      "name": "Oath of Glory",
-      "source": "user",
-      "description": "Paladins who take the Oath of Glory believe they are destined to achieve greatness through deeds of heroism.",
+      "name": "Şan Yemini (Oath of Glory)",
+      "source": "phb24",
+      "description": "Şan Yemini eden Paladinlar, kendilerinin ve yoldaşlarının kahramanca işler yoluyla şan kazanmaya yazgılı olduklarına inanırlar. Özenle eğitim yapar ve yoldaşlarını cesaretlendirirler, böylece kader çağırdığında herkes hazır olur.\n\nBu ilkeleri paylaşırlar: İşlerinle tanınmaya çalış. Zorlukla cesaretlekla yüzleş. Başkalarını şan için çabalamaya ilham ver.",
       "parentClassId": "paladin",
       "subclassFeatureLevel": 3,
       "features": [
         {
-          "id": "peerless-athlete",
-          "name": "Channel Divinity: Peerless Athlete",
-          "description": "You can use your Channel Divinity to augment your athleticism.",
+          "id": "oath-of-glory-spells",
+          "name": "Şan Yemini Büyüleri",
+          "description": "Yemininizin büyüsü belirli Paladin seviyelerine ulaştığınızda listelenen büyüleri her zaman hazırlanmış olarak tutar.\n\nSeviye 3: Guiding Bolt, Heroism\nSeviye 5: Enhance Ability, Magic Weapon\nSeviye 9: Haste, Protection from Energy\nSeviye 13: Compulsion, Freedom of Movement\nSeviye 17: Legend Lore, Yolande's Regal Presence",
           "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "inspiring-smite",
+          "name": "İlham Veren Darbe (Inspiring Smite)",
+          "description": "Divine Smite yaptıktan hemen sonra Channel Divinity'nizin bir kullanımını harcayabilir ve 30 fit içindeki seçtiğiniz yaratıklara (kendinizi dahil edebilirsiniz) Geçici Can Puanları dağıtabilirsiniz. Toplam Geçici Can Puanı 2d8 artı Paladin seviyenize eşittir, seçilen yaratıklar arasında istediğiniz gibi bölünür.",
+          "level": 3,
+          "featureType": "active"
+        },
+        {
+          "id": "peerless-athlete",
+          "name": "Eşsiz Atlet (Peerless Athlete)",
+          "description": "Bonus Aksiyon olarak atletizminizi artırmak için Channel Divinity'nizin bir kullanımını harcayabilirsiniz. 1 saat boyunca Strength (Athletics) ve Dexterity (Acrobatics) kontrollerinde avantaj kazanırsınız ve Long ve High Jump mesafeniz10 fit artar (bu ekstra mesafe normal şekilde hareket maliyeti öder).",
+          "level": 3,
+          "featureType": "active"
+        },
+        {
+          "id": "aura-of-alacrity",
+          "name": "Çeviklik Aurası (Aura of Alacrity)",
+          "description": "Hızınız 10 fit artar.\n\nAyrıca bir müttefik turunda ilk kez Aura of Protection'ınıza girdiğinde veya turunaaaurada başladığında müttefikin Hızı bir sonraki turunun sonuna kadar 10 fit artar.",
+          "level": 7,
+          "featureType": "passive"
+        },
+        {
+          "id": "glorious-defense",
+          "name": "Görkemli Savunma (Glorious Defense)",
+          "description": "Savunmayı ani darbeye çevirebilirsiniz. Siz veya 10 fit içinde görebildiğiniz başka bir yaratık saldırı atışı ile vurulduğunda hedefe o saldırıya karşı AC'sine bonus veren Reaksiyon alabilirsiniz, potansiyel olarak ıskalmasına sebep olursunuz. Bonus Charisma modifikasyonunuza (minimum +1) eşittir. Saldırı ıskalırsa ve saldıran silahınızın menzilindeyse bu Reaksiyonun parçası olarak saldırana bir silah saldırısı yapabilirsiniz.\n\nBu özelliği Charisma modifikasyonunuza eşit sayıda (minimum bir kez) kullanabilirsiniz ve Uzun Dinlenme bittiğinde tüm harcanan kullanımları yenilersiniz.",
+          "level": 15,
+          "featureType": "active"
+        },
+        {
+          "id": "living-legend",
+          "name": "Yaşayan Efsane (Living Legend)",
+          "description": "Kendinizi büyük işlerinizin efsaneleriyle -gerçek veya abartılı- güçlendirebilirsiniz. Bonus Aksiyon olarak 10 dakika boyunca şu faydaları kazanırsınız. Bu özelliği kullandıktan sonra Uzun Dinlenme bitirene kadar tekrar kullanamazsınız. Seviye 5 büyü slotu harcayarak (aksiyon gerekmez) kullanımını yenileyebilirsiniz.\n\nKarizmatik (Charismatic): Öte dünyadan bir varlıkla kutsanır ve tüm Charisma kontrollerinde avantaj kazanırsınız.\n\nKurtarma Atışı Yenileme (Saving Throw Reroll): Kurtarma atışında başarısız olursanız tekrar atmak için Reaksiyon alabilirsiniz. Yeni atışı kullanmalısınız.\n\nİsabetsiz Darbe (Unerring Strike): Turlarınızın her birinde bir kez, bir silahla saldırı atışı yapıp ıskaladığınızda o saldırının isabet etmesine sebep olabilirsiniz.",
+          "level": 20,
+          "featureType": "active"
+        }
+      ]
+    },
+    {
+      "id": "oath-of-the-ancients",
+      "name": "Kadimler Yemini (Oath of the Ancients)",
+      "source": "phb24",
+      "description": "Kadimler Yemini ilk elfler kadar eskidir. Bu yemini eden Paladinler ışığı değerli tutarlar; dünyanın güzel ve yaşam veren şeylerini herhangi bir onur, cesaret ve adalet ilkesinden daha çok severler. Zırh ve kıyafetlerini genellikle yaşamı ve ışığı korumaya olan bağlılıklarını yansıtmak için büyüyen şeylerle -yapraklar, boynuzlar veya çiçekler- süslerler.\n\nBu ilkeleri paylaşırlar: Umudun ışığını yak. Yaşamı koru. Sanat ve kahkahadan zevk al.",
+      "parentClassId": "paladin",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "oath-of-the-ancients-spells",
+          "name": "Kadimler Yemini Büyüleri",
+          "description": "Yemininizin büyüsü belirli Paladin seviyelerine ulaştığınızda listelenen büyüleri her zaman hazırlanmış olarak tutar.\n\nSeviye 3: Ensnaring Strike, Speak with Animals\nSeviye 5: Misty Step, Moonbeam\nSeviye 9: Plant Growth, Protection from Energy\nSeviye 13: Ice Storm, Stoneskin\nSeviye 17: Commune with Nature, Tree Stride",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "natures-wrath",
+          "name": "Doğanın Gazabı (Nature's Wrath)",
+          "description": "Magic aksiyon olarak yakındaki yaratıkların etrafında hayalet asmaları çağırmak için Channel Divinity'nizin bir kullanımını harcayabilirsiniz. 15 fit içinde görebildiğiniz seçtiğiniz her yaratık Strength kurtarma atışında başarılı olmalıdır veya 1 dakika boyunca Restrained durumuna girer. Restrained yaratık turlarının her birinin sonunda atışı tekrarlar ve başarılı olursa etki sona erer.",
+          "level": 3,
+          "featureType": "active"
+        },
+        {
+          "id": "aura-of-warding",
+          "name": "Korunma Aurası (Aura of Warding)",
+          "description": "Kadim büyü üzerinize o kadar ağır basar ki gizemli bir koruma oluşturur, Maddi Düzlemin ötesinden gelen enerjiyi yumuşatır; siz ve müttefikleriniz Aura of Protection içindeyken Necrotic, Psychic ve Radiant hasara karşı Direnç kazanırsınız.",
+          "level": 7,
+          "featureType": "passive"
+        },
+        {
+          "id": "undying-sentinel",
+          "name": "Ölümsüz Nöbetçi (Undying Sentinel)",
+          "description": "0 Can Puanına düşüp doğrudan öldürülmediğinizde bunun yerine 1 Can Puanına düşürebilir ve Paladin seviyenizin üç katı kadar Can Puanı yenilersiniz. Bu özelliği kullandıktan sonra Uzun Dinlenme bitirene kadar tekrar yapamazsınız.\n\nAyrıca büyüsel olarak yaşlandırılamazsınız ve görünür olarak yaşlanmayı durdurursunuz.",
+          "level": 15,
+          "featureType": "passive"
+        },
+        {
+          "id": "elder-champion",
+          "name": "Kadim Şampiyon (Elder Champion)",
+          "description": "Bonus Aksiyon olarak Aura of Protection'ınızı ilkel güçle aşılayabilir, 1 dakika boyunca veya sonlandırana kadar (aksiyon gerekmez) şu faydaları kazanırsınız. Bu özelliği kullandıktan sonra Uzun Dinlenme bitirene kadar tekrar kullanamazsınız. Seviye 5 büyü slotu harcayarak (aksiyon gerekmez) kullanımını yenileyebilirsiniz.\n\nMeydan Okumayı Azaltma (Diminish Defiance): Auradaki düşmanlar büyülerinize ve Channel Divinity seçeneklerinize karşı kurtarma atışlarında dezavantaja sahiptir.\n\nRejenerasyon (Regeneration): Turlarınızın her birinin başında 10 Can Puanı yenilersiniz.\n\nHızlı Büyüler (Swift Spells): Casting time'ı bir aksiyon olan bir büyü yaptığınızda bunun yerine Bonus Aksiyon kullanarak yapabilirsiniz.",
+          "level": 20,
           "featureType": "active"
         }
       ]
     },
     {
       "id": "oath-of-vengeance",
-      "name": "Oath of Vengeance",
-      "source": "user",
-      "description": "The Oath of Vengeance is a solemn commitment to punish those who have committed a grievous sin.",
+      "name": "İntikam Yemini (Oath of Vengeance)",
+      "source": "phb24",
+      "description": "İntikam Yemini, ağır şekilde kötü eylemler işlemiş olanları cezalandırmak için ciddi bir taahhüttür. Kötü ordular çaresiz köylüleri katlettiğinde, bir tiran tanrıların iradesine meydan okuduğunda, bir hırsızlar lonca çok şiddetli hale geldiğinde, bir ejderha kırsal alanda harap ettiğinde -bu gibi zamanlarda Paladinlar yükselir ve yanlış gitmiş olanı düzeltmek için İntikam Yemini ederler.\n\nBu ilkeleri paylaşırlar: Kötülere merhamet gösterme. Adaletsizlikle ve sebepleriyle savaş. Adaletsizlikten zarar görenlere yardım et.",
       "parentClassId": "paladin",
       "subclassFeatureLevel": 3,
       "features": [
         {
-          "id": "abjure-enemy",
-          "name": "Channel Divinity: Abjure Enemy",
-          "description": "You can use your Channel Divinity to frighten a creature.",
+          "id": "oath-of-vengeance-spells",
+          "name": "İntikam Yemini Büyüleri",
+          "description": "Yemininizin büyüsü belirli Paladin seviyelerine ulaştığınızda listelenen büyüleri her zaman hazırlanmış olarak tutar.\n\nSeviye 3: Bane, Hunter's Mark\nSeviye 5: Hold Person, Misty Step\nSeviye 9: Haste, Protection from Energy\nSeviye 13: Banishment, Dimension Door\nSeviye 17: Hold Monster, Scrying",
           "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "vow-of-enmity",
+          "name": "Düşmanlık Yemini (Vow of Enmity)",
+          "description": "Attack aksiyonu aldığınızda 30 fit içinde görebildiğiniz bir yaratığa karşı düşmanlık yemini etmek için Channel Divinity'nizin bir kullanımını harcayabilirsiniz. 1 dakika boyunca veya bu özelliği tekrar kullanana kadar yaratığa karşı saldırı atışlarında avantaj kazanırsınız.\n\nYemin bitmeden yaratık 0 Can Puanına düşerse yemini 30 fit içindeki farklı bir yaratığa aktarabilirsiniz (aksiyon gerekmez).",
+          "level": 3,
+          "featureType": "active"
+        },
+        {
+          "id": "relentless-avenger",
+          "name": "Yorulmaz İntikamcı (Relentless Avenger)",
+          "description": "Doğaüstü odağınız bir düşmanın geri çekilişini kapatmanıza yardımcı olur. Bir yaratığa Opportunity Attack ile isabet ettirdiğinizde yaratığın Hızını mevcut tur sonuna kadar 0'a indirebilirsiniz. Sonra aynı Reaksiyonun parçası olarak Hızınızın yarısı kadar hareket edebilirsiniz. Bu hareket Opportunity Attack'e sebep olmaz.",
+          "level": 7,
+          "featureType": "passive"
+        },
+        {
+          "id": "soul-of-vengeance",
+          "name": "İntikam Ruhu (Soul of Vengeance)",
+          "description": "Vow of Enmity'nizin etkisi altındaki bir yaratık saldırı atışıyla isabet ettirdiğinde veya ıskaladığında hemen sonra yaratık menzildeyse ona karşı yakın dövüş saldırısı yapmak için Reaksiyon alabilirsiniz.",
+          "level": 15,
+          "featureType": "passive"
+        },
+        {
+          "id": "avenging-angel",
+          "name": "İntikamcı Melek (Avenging Angel)",
+          "description": "Bonus Aksiyon olarak 10 dakika boyunca veya sonlandırana kadar (aksiyon gerekmez) şu faydaları kazanırsınız. Bu özelliği kullandıktan sonra Uzun Dinlenme bitirene kadar tekrar kullanamazsınız. Seviye 5 büyü slotu harcayarak (aksiyon gerekmez) kullanımını yenileyebilirsiniz.\n\nUçuş (Flight): Sırtınızda hayalet kanatlar belirir, 60 fit Fly Speed sahibi olursunuz ve havada asılı kalabilirsiniz.\n\nÜrkütücü Aura (Frightful Aura): Bir düşman turunaaAura of Protection'ınızda başladığında o yaratık Wisdom kurtarma atışında başarılı olmalıdır veya 1 dakika boyunca veya herhangi bir hasar alana kadar Frightened durumuna girer. Frightened yaratığa karşı saldırı atışları avantajlıdır.",
+          "level": 20,
           "featureType": "active"
         }
       ]

@@ -1,8 +1,8 @@
 {
   "id": "wizard",
   "name": "Wizard",
-  "source": "srd",
-  "description": "A scholarly magic-user capable of manipulating the structures of reality.",
+  "source": "phb24",
+  "description": "Gerçekliğin yapısını manipüle edebilen bilgin bir büyü kullanıcısı.",
   "hitDie": "d6",
   "primaryAbility": [
     "INT"
@@ -42,23 +42,43 @@
         "insight",
         "investigation",
         "medicine",
+        "nature",
         "religion"
       ],
       "count": 2
     }
   },
   "startingEquipment": {
-    "guaranteed": [
+    "choices": [
       {
-        "itemId": "spellbook",
-        "quantity": 1
-      },
-      {
-        "itemId": "scholars_pack",
-        "quantity": 1
+        "id": "starting-pack",
+        "options": [
+          {
+            "description": "(A) Arcane Focus, Scholar's Pack, Spellbook, and 50 GP",
+            "items": [
+              {
+                "itemId": "arcane_focus",
+                "quantity": 1
+              },
+              {
+                "itemId": "scholars_pack",
+                "quantity": 1
+              },
+              {
+                "itemId": "spellbook",
+                "quantity": 1
+              }
+            ],
+            "gold": 50
+          },
+          {
+            "description": "(B) 110 GP",
+            "items": [],
+            "gold": 110
+          }
+        ]
       }
-    ],
-    "choices": []
+    ]
   },
   "spellcasting": {
     "hasSpellcasting": true,
@@ -90,124 +110,324 @@
   },
   "features": [
     {
+      "id": "spellcasting-wizard",
+      "name": "Büyü Yapma (Spellcasting)",
+      "source": "phb24",
+      "description": "Gizemli büyü öğrencisi olarak büyü yapmayı öğrendiniz. Büyü Kitabı: Unique bir kitap olan büyü kitabınız, seviye 1+ büyülerinizi içerir. 6 adet seviye 1 Wizard büyüsüyle başlar (Detect Magic, Feather Fall, Mage Armor, Magic Missile, Sleep, Thunderwave önerilir). Her seviye atladığınızda 2 Wizard büyüsü eklersiniz.\n\nCantrip'ler: 3 Wizard cantrip bilirsiniz (Light, Mage Hand, Ray of Frost önerilir). Uzun Dinlenme bittiğinde cantrip'lerden birini değiştirebilirsiniz. Seviye 4 ve 10'da birer cantrip daha öğrenirsiniz.\n\nHazırlanan Büyüler: Büyü kitabınızdan 4 büyü seçerek hazırlar ve bunları kullanabilirsiniz. Seviye atladıkça hazırlanan büyü sayınız artar. Uzun Dinlenme bittiğinde hazırlanan büyüleri değiştirebilirsiniz.\n\nBüyü Slotu: Uzun Dinlenme bittiğinde tüm büyü slotları yenilenir.\n\nBüyü Yapma Yeteneği: Intelligence.\n\nBüyü Odağı: Arcane Focus veya büyü kitabınızı kullanabilirsiniz.",
+      "level": 1,
+      "featureType": "passive"
+    },
+    {
+      "id": "ritual-adept",
+      "name": "Ritüel Ustası (Ritual Adept)",
+      "source": "phb24",
+      "description": "Büyü kitabınızdaki Ritual etiketli herhangi bir büyüyü Ritüel olarak yapabilirsiniz. Büyünün hazırlanmış olması gerekmez, ancak kitaptan okuyarak yapmalısınız.",
+      "level": 1,
+      "featureType": "passive"
+    },
+    {
       "id": "arcane-recovery",
-      "name": "Arcane Recovery",
-      "source": "srd",
-      "description": "You have learned to regain some of your magical energy by studying your spellbook.",
+      "name": "Gizemli İyileşme (Arcane Recovery)",
+      "source": "phb24",
+      "description": "Büyü kitabınızı çalışarak büyüsel enerjinizin bir kısmını geri kazanabilirsiniz. Kısa Dinlenme bittiğinde, harcanan büyü slotlarını geri kazanabilirsiniz. Slotların toplam seviyesi Wizard seviyenizin yarısından (yukarı yuvarla) fazla olamaz ve hiçbiri seviye 6 veya üstü olamaz. Örneğin seviye 4 Wizard iseniz, 2 seviye değerinde slot geri kazanabilirsiniz (bir adet seviye 2 slot veya iki adet seviye 1 slot). Bu özelliği kullandıktan sonra Uzun Dinlenme bitirene kadar tekrar kullanamazsınız.",
       "level": 1,
       "featureType": "resource",
       "resource": {
-        "name": "Arcane Recovery",
+        "name": "Gizemli İyileşme",
         "maxCount": 1,
         "recoversOn": "long"
       }
     },
     {
-      "id": "arcane-tradition",
-      "name": "Arcane Tradition",
-      "source": "srd",
-      "description": "You choose an arcane tradition, shaping your practice of magic.",
+      "id": "scholar",
+      "name": "Bilgin (Scholar)",
+      "source": "phb24",
+      "description": "Büyü çalışırken başka bir alanda da uzmanlaştınız. Proficiency sahibi olduğunuz şu becerilerden birini seçin: Arcana, History, Investigation, Medicine, Nature veya Religion. Seçilen beceri için Expertise kazanırsınız.",
       "level": 2,
+      "featureType": "choice",
+      "choicesCount": 1
+    },
+    {
+      "id": "wizard-subclass",
+      "name": "Wizard Alt Sınıfı",
+      "source": "phb24",
+      "description": "Seçtiğiniz bir Wizard alt sınıfında (subclass) uzmanlaşırsınız.",
+      "level": 3,
+      "featureType": "choice"
+    },
+    {
+      "id": "asi-4",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 4,
+      "featureType": "choice"
+    },
+    {
+      "id": "memorize-spell",
+      "name": "Büyü Ezberleme (Memorize Spell)",
+      "source": "phb24",
+      "description": "Kısa Dinlenme bittiğinde büyü kitabınızı çalışabilir ve Büyü Yapma özelliğiniz için hazırladığınız seviye 1+ Wizard büyülerinden birini kitaptaki başka bir seviye 1+ büyüyle değiştirebilirsiniz.",
+      "level": 5,
+      "featureType": "passive"
+    },
+    {
+      "id": "subclass-feature-6",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Wizard alt sınıfınızdan bir özellik kazanırsınız.",
+      "level": 6,
+      "featureType": "passive"
+    },
+    {
+      "id": "asi-8",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 8,
+      "featureType": "choice"
+    },
+    {
+      "id": "subclass-feature-10",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Wizard alt sınıfınızdan bir özellik kazanırsınız.",
+      "level": 10,
+      "featureType": "passive"
+    },
+    {
+      "id": "asi-12",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 12,
+      "featureType": "choice"
+    },
+    {
+      "id": "subclass-feature-14",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Wizard alt sınıfınızdan bir özellik kazanırsınız.",
+      "level": 14,
+      "featureType": "passive"
+    },
+    {
+      "id": "asi-16",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 16,
       "featureType": "choice"
     },
     {
       "id": "spell-mastery",
-      "name": "Spell Mastery",
-      "source": "srd",
-      "description": "You have achieved such mastery over certain spells that you can cast them at will.",
+      "name": "Büyü Ustalığı (Spell Mastery)",
+      "source": "phb24",
+      "description": "Belirli büyüler üzerinde öyle bir ustalık kazandınız ki onları dilediğinizde yapabilirsiniz. Büyü kitabınızdaki casting time'ı bir aksiyon olan seviye 1 ve seviye 2'den birer büyü seçin. Bu büyüleri her zaman hazırlanmış sayılırsınız ve en düşük seviyelerinde büyü slotu harcamadan yapabilirsiniz. Daha yüksek seviyede yapmak için slot harcamalısınız. Uzun Dinlenme bittiğinde bu büyülerden birini kitaptaki uygun aynı seviyeli başka bir büyüyle değiştirebilirsiniz.",
       "level": 18,
       "featureType": "passive"
     },
     {
+      "id": "epic-boon-wizard",
+      "name": "Epik Lütuf (Epic Boon)",
+      "source": "phb24",
+      "description": "Bir Epik Lütuf veya seçebileceğiniz başka bir hüner kazanırsınız. Boon of Spell Recall önerilir.",
+      "level": 19,
+      "featureType": "choice"
+    },
+    {
       "id": "signature-spells",
-      "name": "Signature Spells",
-      "source": "srd",
-      "description": "You gain mastery over two powerful spells and can cast them with little effort.",
+      "name": "İmza Büyüleri (Signature Spells)",
+      "source": "phb24",
+      "description": "Büyü kitabınızdan iki adet seviye 3 büyü seçerek imza büyüleriniz yapın. Bu büyüleri her zaman hazırlanmış sayılırsınız ve her birini seviye 3'te büyü slotu harcamadan bir kez yapabilirsiniz. Bunu yaptıktan sonra Kısa veya Uzun Dinlenme bitirene kadar tekrar yapamazsınız. Daha yüksek seviyede yapmak için slot harcamalısınız.",
       "level": 20,
       "featureType": "passive"
     }
   ],
   "subclasses": [
     {
-      "id": "school-of-evocation",
-      "name": "School of Evocation",
-      "source": "srd",
-      "description": "You focus your study on magic that creates powerful elemental effects.",
+      "id": "abjurer",
+      "name": "Abjurer (Koruyucu Okulu)",
+      "source": "phb24",
+      "description": "Büyü çalışmanız bloke eden, sürgün eden veya koruyan büyülere odaklanmıştır. Zararlı etkileri sona erdirmek, kötü etkileri sürgün etmek ve zayıfları korumak için çalışırsınız. Abjurer'lar kötü ruhları kovmak, yerleri büyüsel gözetimden korumak ve diğer boyutlara geçit kapılarını kapatmak için aranırlar.",
       "parentClassId": "wizard",
-      "subclassFeatureLevel": 2,
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "abjuration-savant",
+          "name": "Abjuration Uzmanı (Abjuration Savant)",
+          "description": "Abjuration okulundan en fazla seviye 2 olan iki Wizard büyüsü seçin ve bunları ücretsiz olarak büyü kitabınıza ekleyin. Ayrıca, bu sınıfta yeni bir büyü slotu seviyesine eriştiğinizde, Abjuration okulundan bir Wizard büyüsünü ücretsiz olarak büyü kitabınıza ekleyebilirsiniz. Seçilen büyü, büyü slotlarınız olan bir seviyede olmalıdır.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "arcane-ward",
+          "name": "Gizemli Kalkan (Arcane Ward)",
+          "description": "Kendinizin etrafına koruma için büyü örebilirsiniz. Bir Abjuration büyüsünü büyü slotu ile yaptığınızda, aynı anda büyünün büyüsünden bir parçayı kullanarak Uzun Dinlenme bitene kadar süren büyüsel bir kalkan oluşturabilirsiniz. Kalkanın maksimum Can Puanı Wizard seviyenizin iki katı artı Intelligence modifikasyonunuza eşittir. Hasar aldığınızda kalkan hasarı alır ve Direnç veya Zafiyet varsa kalkanın Can Puanını azaltmadan önce uygulayın. Hasar kalkanı 0 Can Puanına düşürürse kalan hasarı siz alırsınız. Kalkan 0 Can Puanındayken hasar ememez ama büyüsü kalır.\n\nBir Abjuration büyüsünü büyü slotu ile her yaptığınızda kalkan, büyü slotunun seviyesinin iki katı kadar Can Puanı kazanır. Alternatif olarak Bonus Aksiyon ile bir büyü slotu harcayabilir ve kalkan, harcadığınız slotun seviyesinin iki katı kadar Can Puanı kazanır.\n\nKalkanı bir kez oluşturduktan sonra Uzun Dinlenme bitirene kadar tekrar oluşturamazsınız.",
+          "level": 3,
+          "featureType": "active"
+        },
+        {
+          "id": "projected-ward",
+          "name": "Yansıtılan Kalkan (Projected Ward)",
+          "description": "30 fit içinde görebildiğiniz bir yaratık hasar aldığında, Reaksiyon alarak Gizemli Kalkanınızın o hasarı emmesini sağlayabilirsiniz. Bu hasar kalkanı 0 Can Puanına düşürürse korunan yaratık kalan hasarı alır. Yaratığın Direnç veya Zafiyeti varsa kalkanın Can Puanını azaltmadan önce uygulayın.",
+          "level": 6,
+          "featureType": "active"
+        },
+        {
+          "id": "spell-breaker",
+          "name": "Büyü Kırıcı (Spell Breaker)",
+          "description": "Counterspell ve Dispel Magic büyülerini her zaman hazırlanmış sayılırsınız. Ayrıca Dispel Magic'i Bonus Aksiyon olarak yapabilir ve yetenek kontrolüne Proficiency Bonusunuzu ekleyebilirsiniz.\n\nBu büyülerden birini büyü slotu ile yaptığınızda, eğer büyü bir büyüyü durdurmada başarısız olursa slot harcanmaz.",
+          "level": 10,
+          "featureType": "passive"
+        },
+        {
+          "id": "spell-resistance",
+          "name": "Büyü Direnci (Spell Resistance)",
+          "description": "Büyülere karşı yapılan kurtarma atışlarında avantaj kazanırsınız ve büyülerin hasarına karşı Direnç kazanırsınız.",
+          "level": 14,
+          "featureType": "passive"
+        }
+      ]
+    },
+    {
+      "id": "diviner",
+      "name": "Diviner (Kehanet Okulu)",
+      "source": "phb24",
+      "description": "Diviner'ın tavsiyesi, geçmiş, şimdi ve geleceği daha net anlamak isteyenler tarafından aranır. Bir Diviner olarak uzay, zaman ve bilinç perdelerini kaldırmaya çalışırsınız. Ayırt etme, uzaktan izleme, doğaüstü bilgi ve öngörü büyülerinde ustalaşmak için çalışırsınız.",
+      "parentClassId": "wizard",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "divination-savant",
+          "name": "Divination Uzmanı (Divination Savant)",
+          "description": "Divination okulundan en fazla seviye 2 olan iki Wizard büyüsü seçin ve bunları ücretsiz olarak büyü kitabınıza ekleyin. Ayrıca, bu sınıfta yeni bir büyü slotu seviyesine eriştiğinizde, Divination okulundan bir Wizard büyüsünü ücretsiz olarak büyü kitabınıza ekleyebilirsiniz.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "portent",
+          "name": "Kehanet (Portent)",
+          "description": "Geleceğin görüntüleri farkındalığınıza basmaya başlar. Uzun Dinlenme bittiğinde iki adet d20 atın ve atılan sayıları kaydedin. Sizin veya görebildiğiniz bir yaratığın yaptığı herhangi bir D20 Testini bu kehanet atışlarından biriyle değiştirebilirsiniz. Atıştan önce seçmelisiniz ve bu şekilde bir atışı tur başına sadece bir kez değiştirebilirsiniz.\n\nHer kehanet atışı sadece bir kez kullanılabilir. Uzun Dinlenme bittiğinde kullanılmayan kehanet atışlarını kaybedersiniz.",
+          "level": 3,
+          "featureType": "active"
+        },
+        {
+          "id": "expert-divination",
+          "name": "Uzman Kehanet (Expert Divination)",
+          "description": "Divination büyüleri yapmak sizin için o kadar kolay gelir ki büyü yapma çabanızın sadece bir kısmını harcar. Seviye 2+ büyü slotu kullanarak bir Divination büyüsü yaptığınızda, harcanan bir büyü slotunu geri kazanırsınız. Geri kazandığınız slot, harcadığınız slottan daha düşük seviyede olmalı ve seviye 5'ten yüksek olamaz.",
+          "level": 6,
+          "featureType": "passive"
+        },
+        {
+          "id": "the-third-eye",
+          "name": "Üçüncü Göz (The Third Eye)",
+          "description": "Algı güçlerinizi artırabilirsiniz. Bonus Aksiyon olarak aşağıdaki faydalardan birini seçin, bu fayda Kısa veya Uzun Dinlenme başlatana kadar sürer. Bu özelliği Kısa veya Uzun Dinlenme bitirene kadar tekrar kullanamazsınız.\n\nKaranlık Görüş (Darkvision): 120 fit mesafeli Karanlık Görüş kazanırsınız.\n\nDaha Büyük Kavrayış (Greater Comprehension): Herhangi bir dili okuyabilirsiniz.\n\nGörünmezliği Görme (See Invisibility): See Invisibility büyüsünü büyü slotu harcamadan yapabilirsiniz.",
+          "level": 10,
+          "featureType": "active"
+        },
+        {
+          "id": "greater-portent",
+          "name": "Yüce Kehanet (Greater Portent)",
+          "description": "Rüyalarınızdaki görüntüler yoğunlaşır ve gelecek hakkında zihninizde daha doğru bir resim çizer. Portent özelliğiniz için iki yerine üç adet d20 atın.",
+          "level": 14,
+          "featureType": "passive"
+        }
+      ]
+    },
+    {
+      "id": "evoker",
+      "name": "Evoker (Çağrı Okulu)",
+      "source": "phb24",
+      "description": "Çalışmalarınız acı soğuk, kavurucu alev, yuvarlanan gök gürültüsü, çatırdayan şimşek ve yakan asit gibi güçlü elementel etkiler yaratan büyülere odaklanır. Bazı Evoker'lar askeri güçlerde istihdam bulur ve orduları uzaktan patlatmak için topçu görevi görürler. Diğerleri güçlerini başkalarını korumak için kullanırken bazıları kendi çıkarlarını ararlar.",
+      "parentClassId": "wizard",
+      "subclassFeatureLevel": 3,
       "features": [
         {
           "id": "evocation-savant",
-          "name": "Evocation Savant",
-          "source": "srd",
-          "description": "The gold and time you must spend to copy an evocation spell into your spellbook is halved.",
-          "level": 2,
+          "name": "Evocation Uzmanı (Evocation Savant)",
+          "description": "Evocation okulundan en fazla seviye 2 olan iki Wizard büyüsü seçin ve bunları ücretsiz olarak büyü kitabınıza ekleyin. Ayrıca, bu sınıfta yeni bir büyü slotu seviyesine eriştiğinizde, Evocation okulundan bir Wizard büyüsünü ücretsiz olarak büyü kitabınıza ekleyebilirsiniz.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "potent-cantrip",
+          "name": "Güçlü Cantrip (Potent Cantrip)",
+          "description": "Hasar veren cantrip'leriniz etkiden kaçınan yaratıkları bile etkiler. Bir yaratığa cantrip yaptığınızda saldırı atışında ıskaladığınızda veya hedef cantrip'e karşı kurtarma atışında başarılı olduğunda, hedef cantrip'in hasarının yarısını alır (varsa) ancak cantrip'ten başka bir etki görmez.",
+          "level": 3,
           "featureType": "passive"
         },
         {
           "id": "sculpt-spells",
-          "name": "Sculpt Spells",
-          "source": "srd",
-          "description": "You can create pockets of relative safety within the effects of your evocation spells.",
-          "level": 2,
+          "name": "Büyü Şekillendirme (Sculpt Spells)",
+          "description": "Evocation büyülerinizin etkileri içinde göreceli güvenlik cepleri oluşturabilirsiniz. Görebildiğiniz diğer yaratıkları etkileyen bir Evocation büyüsü yaptığınızda, 1 artı büyünün seviyesi kadar yaratık seçebilirsiniz. Seçilen yaratıklar büyüye karşı kurtarma atışlarında otomatik olarak başarılı olurlar ve normalde başarılı kurtarmada yarı hasar alacaklarsa hiç hasar almazlar.",
+          "level": 6,
+          "featureType": "active"
+        },
+        {
+          "id": "empowered-evocation",
+          "name": "Güçlendirilmiş Evocation (Empowered Evocation)",
+          "description": "Evocation okulundan bir Wizard büyüsü yaptığınızda, o büyünün bir hasar atışına Intelligence modifikasyonunuzu ekleyebilirsiniz.",
+          "level": 10,
+          "featureType": "passive"
+        },
+        {
+          "id": "overchannel",
+          "name": "Aşırı Kanallama (Overchannel)",
+          "description": "Büyülerinizin gücünü artırabilirsiniz. Seviye 1-5 arası büyü slotu ile hasar veren bir Wizard büyüsü yaptığınızda, o büyüyle yapıldığı turda maksimum hasar verebilirsiniz.\n\nBunu ilk yaptığınızda olumsuz bir etki görmezsiniz. Uzun Dinlenme bitirmeden önce bu özelliği tekrar kullanırsanız, büyüyü yaptıktan hemen sonra büyü slotunun her seviyesi için 2d12 Necrotic hasar alırsınız. Bu hasar Direnç ve Bağışıklığı görmezden gelir.\n\nUzun Dinlenme bitirmeden önce bu özelliği her tekrar kullanışınızda, büyü seviyesi başına Necrotic hasar 1d12 artar.",
+          "level": 14,
           "featureType": "active"
         }
       ]
     },
     {
-      "id": "school-of-abjuration",
-      "name": "School of Abjuration",
-      "source": "user",
-      "description": "The School of Abjuration emphasizes magic that blocks, banishes, or protects.",
+      "id": "illusionist",
+      "name": "Illusionist (İllüzyon Okulu)",
+      "source": "phb24",
+      "description": "Duyuları şaşırtan ve zihni kandıran büyülerde uzmanlaşırsınız ve oluşturduğunuz illüzyonlar imkansızı gerçekmiş gibi gösterir.",
       "parentClassId": "wizard",
       "subclassFeatureLevel": 3,
       "features": [
         {
-          "id": "arcane-ward",
-          "name": "Arcane Ward",
-          "description": "You can weave magic around yourself for protection.",
+          "id": "illusion-savant",
+          "name": "Illusion Uzmanı (Illusion Savant)",
+          "description": "Illusion okulundan en fazla seviye 2 olan iki Wizard büyüsü seçin ve bunları ücretsiz olarak büyü kitabınıza ekleyin. Ayrıca, bu sınıfta yeni bir büyü slotu seviyesine eriştiğinizde, Illusion okulundan bir Wizard büyüsünü ücretsiz olarak büyü kitabınıza ekleyebilirsiniz.",
           "level": 3,
           "featureType": "passive"
-        }
-      ]
-    },
-    {
-      "id": "school-of-divination",
-      "name": "School of Divination",
-      "source": "user",
-      "description": "The counsel of a diviner is sought by royalty and commoners alike, for all seek a clearer understanding of the past, present, and future.",
-      "parentClassId": "wizard",
-      "subclassFeatureLevel": 3,
-      "features": [
+        },
         {
-          "id": "portent",
-          "name": "Portent",
-          "description": "Glimpses of the future begin to press in on your awareness.",
+          "id": "improved-illusions",
+          "name": "Gelişmiş İllüzyonlar (Improved Illusions)",
+          "description": "Illusion büyülerini Verbal bileşen sağlamadan yapabilirsiniz ve yaptığınız bir Illusion büyüsünün menzili 10+ fit ise, menzil 60 fit artar.\n\nAyrıca Minor Illusion cantrip'ini bilirsiniz. Zaten biliyorsanız seçtiğiniz farklı bir Wizard cantrip öğrenirsiniz. Cantrip bilinen cantrip sayınıza sayılmaz. Minor Illusion'ın tek bir kullanımıyla hem ses hem görüntü oluşturabilirsiniz ve Bonus Aksiyon olarak yapabilirsiniz.",
           "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "phantasmal-creatures",
+          "name": "Hayalet Yaratıklar (Phantasmal Creatures)",
+          "description": "Summon Beast ve Summon Fey büyülerini her zaman hazırlanmış sayılırsınız. Bu büyülerden herhangi birini yaptığınızda okulunu Illusion olarak değiştirebilirsiniz, bu da çağrılan yaratığın hayalet görünmesini sağlar. Her büyünün Illusion versiyonunu büyü slotu harcamadan yapabilirsiniz, ancak slot olmadan yapmak yaratığın Can Puanlarını yarıya indirir. Bir büyüyü slot olmadan yaptıktan sonra Uzun Dinlenme bitirene kadar o büyüyü bu şekilde tekrar yapamazsınız.",
+          "level": 6,
+          "featureType": "passive"
+        },
+        {
+          "id": "illusory-self",
+          "name": "İllüzyon Benlik (Illusory Self)",
+          "description": "Bir yaratık size saldırı atışıyla isabet ettirdiğinde, saldırganla kendiniz arasına kendinizin bir illüzyon kopyasını koymak için Reaksiyon alabilirsiniz. Saldırı otomatik olarak ıskalanır, sonra illüzyon dağılır.\n\nBu özelliği kullandıktan sonra Kısa veya Uzun Dinlenme bitirene kadar tekrar kullanamazsınız. Ayrıca seviye 2+ büyü slotu harcayarak (aksiyon gerekmez) kullanımını yenileyebilirsiniz.",
+          "level": 10,
           "featureType": "active"
-        }
-      ]
-    },
-    {
-      "id": "school-of-illusion",
-      "name": "School of Illusion",
-      "source": "user",
-      "description": "You focus your studies on magic that dazzles the senses, befuddles the mind, and tricks the wisest folk.",
-      "parentClassId": "wizard",
-      "subclassFeatureLevel": 3,
-      "features": [
+        },
         {
-          "id": "improved-minor-illusion",
-          "name": "Improved Minor Illusion",
-          "description": "You learn the Minor Illusion cantrip. If you already know this cantrip, you learn a different wizard cantrip of your choice.",
-          "level": 3,
-          "featureType": "passive"
+          "id": "illusory-reality",
+          "name": "İllüzyon Gerçeklik (Illusory Reality)",
+          "description": "İllüzyonlarınıza yarı-gerçeklik vermek için gölge büyüsünü örmeyi öğrendiniz. Büyü slotu ile bir Illusion büyüsü yaptığınızda, illüzyonun parçası olan bir cansız, büyüsel olmayan nesneyi seçebilir ve o nesneyi gerçek yapabilirsiniz. Bunu turunuzda Bonus Aksiyon olarak büyü devam ederken yapabilirsiniz. Nesne 1 dakika boyunca gerçek kalır, bu süreçte hasar veremez veya durum veremez. Örneğin bir uçurum üzerinde köprü illüzyonu yaratıp onu gerçek yaparak geçebilirsiniz.",
+          "level": 14,
+          "featureType": "active"
         }
       ]
     }
   ],
   "subclassName": "Arcane Tradition",
-  "subclassLevel": 2,
+  "subclassLevel": 3,
   "asiLevels": [
     4,
     8,
