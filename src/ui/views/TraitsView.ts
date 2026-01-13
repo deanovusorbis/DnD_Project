@@ -16,7 +16,7 @@ import {
 
 export class TraitsView {
 	private container: HTMLElement;
-	private currentSelection: { speciesId: string | null; subspeciesId: string | null; classId: string | null; };
+	private currentSelection: { speciesId: string | null; subspeciesId: string | null; classId: string | null; level: number; };
 
 	constructor(container: HTMLElement) {
 		this.container = container;
@@ -25,7 +25,8 @@ export class TraitsView {
 		this.currentSelection = {
 			speciesId: null,
 			subspeciesId: null,
-			classId: null
+			classId: null,
+			level: 1
 		};
 
 		// Subscribe to state changes - use single listener pattern compatible with all Zustand versions
@@ -35,7 +36,8 @@ export class TraitsView {
 			this.currentSelection = {
 				speciesId: creationState.selectedSpecies ?? null,
 				subspeciesId: creationState.selectedSubspecies ?? null,
-				classId: creationState.selectedClass ?? null
+				classId: creationState.selectedClass ?? null,
+				level: creationState.level ?? 1
 			};
 			this.render();
 		});
@@ -115,7 +117,7 @@ export class TraitsView {
 		this.container.appendChild(header);
 		this.container.appendChild(content);
 
-		const { speciesId, subspeciesId, classId } = this.currentSelection;
+		const { speciesId, subspeciesId, classId, level } = this.currentSelection;
 
 		if (!speciesId && !classId) {
 			content.innerHTML = `
@@ -137,33 +139,34 @@ export class TraitsView {
 				// Base traits
 				let hasContent = false;
 				if (species.traits && species.traits.length > 0) {
-					species.traits.forEach(trait => {
+					const visibleTraits = species.traits.filter(t => (t.level || 1) <= level);
+					visibleTraits.forEach(trait => {
 						const traitCard = this.createTraitCard(trait.name, trait.description);
 						speciesSection.appendChild(traitCard);
 					});
-					hasContent = true;
+					if (visibleTraits.length > 0) hasContent = true;
 				}
 
 				// Subrace traits
 				if (subspeciesId && species.subraces) {
 					const subrace = species.subraces.find(sr => sr.id === subspeciesId);
-					if (subrace && subrace.additionalTraits && subrace.additionalTraits.length > 0) {
-						if (hasContent) {
-							// Add a spacer or separator if needed, but H5 title handles it
-						}
-						const subraceTitle = document.createElement('h5');
-						subraceTitle.style.color = 'var(--color-accent-gold)';
-						subraceTitle.style.fontSize = '0.85rem';
-						subraceTitle.style.marginTop = 'var(--space-md)';
-						subraceTitle.style.marginBottom = 'var(--space-sm)';
-						subraceTitle.innerText = `${translateSubspeciesName(subrace.name || '')} Ek Özellikleri`;
-						speciesSection.appendChild(subraceTitle);
+					if (subrace && subrace.additionalTraits) {
+						const visibleAdditionalTraits = subrace.additionalTraits.filter(t => (t.level || 1) <= level);
+						if (visibleAdditionalTraits.length > 0) {
+							const subraceTitle = document.createElement('h5');
+							subraceTitle.style.color = 'var(--color-accent-gold)';
+							subraceTitle.style.fontSize = '0.85rem';
+							subraceTitle.style.marginTop = 'var(--space-md)';
+							subraceTitle.style.marginBottom = 'var(--space-sm)';
+							subraceTitle.innerText = `${translateSubspeciesName(subrace.name || '')} Ek Özellikleri`;
+							speciesSection.appendChild(subraceTitle);
 
-						subrace.additionalTraits.forEach(trait => {
-							const traitCard = this.createTraitCard(trait.name, trait.description);
-							speciesSection.appendChild(traitCard);
-						});
-						hasContent = true;
+							visibleAdditionalTraits.forEach(trait => {
+								const traitCard = this.createTraitCard(trait.name, trait.description);
+								speciesSection.appendChild(traitCard);
+							});
+							hasContent = true;
+						}
 					}
 				}
 
@@ -192,7 +195,7 @@ export class TraitsView {
 				classTitle.style.color = 'var(--color-accent-red)';
 				classTitle.style.fontSize = '0.9rem';
 				classTitle.style.marginBottom = 'var(--space-sm)';
-				classTitle.innerText = `${translateClassName(classData.name)} Özellikleri (Seviye 1)`;
+				classTitle.innerText = `${translateClassName(classData.name)} Özellikleri (Seviye ${level})`;
 				classSection.appendChild(classTitle);
 
 				// Hit Die
@@ -220,37 +223,36 @@ export class TraitsView {
 					classSection.appendChild(savesInfo);
 				}
 
-				// Level 1 Features
+				// Features up to current level
 				if (classData.features && classData.features.length > 0) {
-					const level1Features = classData.features.filter(f => f.level === 1);
+					const visibleFeatures = classData.features.filter(f => f.level <= level);
 
-					if (level1Features.length > 0) {
-						level1Features.forEach(feature => {
-							// Try to find translation for feature
-							const translated = translateTrait(feature.name, feature.description);
-							const card = this.createTraitCard(translated.name, translated.description);
+					if (visibleFeatures.length > 0) {
+						visibleFeatures.forEach(feature => {
+							const card = this.createTraitCard(feature.name, feature.description);
 							classSection.appendChild(card);
 						});
 					}
 				}
 
-				// Subclass Features (if selected and at Level 1)
+				// Subclass Features (if selected)
 				const { selectedSubclass } = useGameStore.getState().characterCreation;
 				if (selectedSubclass && classData.subclasses) {
 					const subclass = classData.subclasses.find(s => s.id === selectedSubclass);
-					if (subclass) {
-						const subclassTitle = document.createElement('h5');
-						subclassTitle.style.color = 'var(--color-accent-gold)';
-						subclassTitle.style.fontSize = '0.85rem';
-						subclassTitle.style.marginTop = 'var(--space-md)';
-						subclassTitle.style.marginBottom = 'var(--space-sm)';
-						subclassTitle.innerText = `${translateSubclassName(subclass.name)} Özellikleri`;
-						classSection.appendChild(subclassTitle);
+					if (subclass && subclass.features) {
+						const visibleSubclassFeatures = subclass.features.filter(f => f.level <= level);
 
-						if (subclass.features) {
-							subclass.features.forEach(feature => {
-								const translated = translateTrait(feature.name, feature.description);
-								const card = this.createTraitCard(translated.name, translated.description);
+						if (visibleSubclassFeatures.length > 0) {
+							const subclassTitle = document.createElement('h5');
+							subclassTitle.style.color = 'var(--color-accent-gold)';
+							subclassTitle.style.fontSize = '0.85rem';
+							subclassTitle.style.marginTop = 'var(--space-md)';
+							subclassTitle.style.marginBottom = 'var(--space-sm)';
+							subclassTitle.innerText = `${translateSubclassName(subclass.name)} Özellikleri`;
+							classSection.appendChild(subclassTitle);
+
+							visibleSubclassFeatures.forEach(feature => {
+								const card = this.createTraitCard(feature.name, feature.description);
 								classSection.appendChild(card);
 							});
 						}

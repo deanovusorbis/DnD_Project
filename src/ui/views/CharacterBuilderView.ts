@@ -13,6 +13,7 @@ import { CharacterManager } from '../../engine/character/character-manager.ts';
 import { buildCharacter } from '../../entities/character/factory.ts';
 
 // Step Implementations
+import { renderGeneralStep } from './builder/steps/GeneralStep.ts';
 import { renderSpeciesStep } from './builder/steps/SpeciesStep.ts';
 import { renderClassStep } from './builder/steps/ClassStep.ts';
 import { renderBackgroundStep } from './builder/steps/BackgroundStep.ts';
@@ -33,7 +34,20 @@ export class CharacterBuilderView {
 
 	public render(): void {
 		const state = useGameStore.getState();
-		const step = state.characterCreation.step || 'species';
+		let step = state.characterCreation.step || 'general';
+
+		// FORCE RESET if Name is missing but we are deep in the flow
+		// This fixes the issue where user starts at "Species" or later without a name
+		if (!state.characterCreation.characterName && step !== 'general') {
+			// Update state silently to avoid loop if possible, or just render General
+			// But we need to update Store so it persists.
+			// However, calling update inside render is risky (render loop).
+			// Instead, just force local step variable to 'general' for THIS render,
+			// and rely on GeneralStep to display.
+			step = 'general';
+			// We should also sync the store eventually, but for View consistency:
+			setTimeout(() => useGameStore.getState().updateCharacterCreation({ step: 'general' }), 0);
+		}
 
 		this.container.innerHTML = '';
 
@@ -65,8 +79,9 @@ export class CharacterBuilderView {
 		header.appendChild(headerContent);
 		this.container.appendChild(header);
 
+
 		// Progress Stepper with Navigation
-		const steps = ['species', 'class', 'background', 'abilities', 'proficiencies', 'equipment', 'details'];
+		const steps = ['general', 'species', 'class', 'background', 'abilities', 'proficiencies', 'equipment', 'details'];
 		const currentStepIndex = steps.indexOf(step);
 
 		// Create clickable stepper
@@ -82,13 +97,16 @@ export class CharacterBuilderView {
 
 		// Determine unlocked steps based on state
 		const cState = state.characterCreation;
-		const unlockedSteps = [0]; // Species always unlocked
-		if (cState.selectedSpecies) unlockedSteps.push(1); // Class unlocked
-		if (cState.selectedClass) unlockedSteps.push(2); // Background unlocked
-		if (cState.selectedBackground) unlockedSteps.push(3); // Abilities unlocked
-		if (cState.abilityScores && Object.keys(cState.abilityScores).length > 0) unlockedSteps.push(4); // Proficiencies unlocked
-		if (cState.skillChoices && cState.skillChoices.length > 0) unlockedSteps.push(5); // Equipment unlocked
-		if (cState.startingGold !== undefined) unlockedSteps.push(6); // Details unlocked
+		const unlockedSteps = [0]; // General always unlocked
+		if (cState.characterName) unlockedSteps.push(1); // Species unlocked if name set
+		if (cState.selectedSpecies) unlockedSteps.push(2); // Class unlocked
+		if (cState.selectedClass) unlockedSteps.push(3); // Background unlocked
+		if (cState.selectedBackground) unlockedSteps.push(4); // Abilities unlocked
+		if (cState.abilityScores && Object.keys(cState.abilityScores).length > 0) unlockedSteps.push(5); // Proficiencies unlocked
+		if (cState.skillChoices && cState.skillChoices.length > 0) unlockedSteps.push(6); // Equipment unlocked
+		if (cState.startingGold !== undefined) unlockedSteps.push(7); // Details unlocked
+		if (cState.step === 'details' && cState.backstory) unlockedSteps.push(8); // Review unlocked (loose check)
+
 
 		steps.forEach((s, idx) => {
 			const stepBtn = document.createElement('button');
@@ -131,6 +149,9 @@ export class CharacterBuilderView {
 		const onRefresh = () => this.render();
 
 		switch (step) {
+			case 'general':
+				renderGeneralStep(contentArea, onRefresh);
+				break;
 			case 'species':
 				renderSpeciesStep(contentArea, onRefresh);
 				break;
@@ -172,7 +193,7 @@ export class CharacterBuilderView {
 		const background = registry.getAllBackgrounds().find(b => b.id === cState.selectedBackground);
 
 		if (!species || !characterClass) {
-			state.addNotification('Karakter oluşturulamadı: Irk veya sınıf bulunamadı.', 'error');
+			state.addNotification('Karakter oluşturulamadı: Tür veya sınıf bulunamadı.', 'error');
 			return;
 		}
 

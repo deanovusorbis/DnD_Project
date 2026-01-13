@@ -212,3 +212,34 @@ export function translateAbilityName(name: string): string {
 export function translateSkillName(name: string): string {
 	return skillNames[name] || name;
 }
+
+// Language Names
+export const languageNames: Record<string, string> = {
+	'Common': 'Ortak Dil',
+	'Common Sign Language': 'Ortak İşaret Dili',
+	'Draconic': 'Ejderha Dili (Draconic)',
+	'Dwarvish': 'Cücece',
+	'Elvish': 'Elfçe',
+	'Giant': 'Devce',
+	'Gnomish': 'Gnomeca',
+	'Goblin': 'Goblin Dili',
+	'Halfling': 'Buçuklukça',
+	'Orc': 'Orkça',
+	'Abyssal': 'Hiçlik Dili (Abyssal)',
+	'Celestial': 'Göksel Lisan (Celestial)',
+	'Deep Speech': 'Derin Lisan',
+	'Druidic': 'Druid Dili',
+	'Infernal': 'Cehennem Dili (Infernal)',
+	'Primordial': 'Ezeli Lisan (Primordial)',
+	'Aquan': 'Su Lisanı (Aquan)',
+	'Auran': 'Hava Lisanı (Auran)',
+	'Ignan': 'Ateş Lisanı (Ignan)',
+	'Terran': 'Toprak Lisanı (Terran)',
+	'Sylvan': 'Peri Dili (Sylvan)',
+	'Thieves\' Cant': 'Hırsız Jargonu',
+	'Undercommon': 'Yeraltı Ortak Dili'
+};
+
+export function translateLanguageName(name: string): string {
+	return languageNames[name] || name;
+}

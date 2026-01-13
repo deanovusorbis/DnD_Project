@@ -17,7 +17,9 @@ export {
 	translateClassName,
 	translateSubclassName,
 	translateAbilityName,
-	translateSkillName
+	translateSkillName,
+	languageNames,
+	translateLanguageName
 } from './character';
 
 // Feature translations

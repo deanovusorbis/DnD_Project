@@ -169,7 +169,7 @@ export class CharacterSheetView {
 				container.innerHTML = '<div style="padding: 20px; text-align: center;">Inventory implementation coming soon...</div>';
 				break;
 			case 'features':
-				container.innerHTML = '<div style="padding: 20px; text-align: center;">Features implementation coming soon...</div>';
+				this.renderFeaturesTab(container);
 				break;
 			case 'spells':
 				container.innerHTML = '<div style="padding: 20px; text-align: center;">Spells implementation coming soon...</div>';
@@ -312,5 +312,52 @@ export class CharacterSheetView {
             <div style="font-size: 1.4rem; font-weight: 700; color: var(--color-text-primary);">${value}</div>
         `;
 		return box;
+	}
+	private renderFeaturesTab(container: HTMLElement): void {
+		container.style.display = 'flex';
+		container.style.flexDirection = 'column';
+		container.style.gap = 'var(--space-xl)';
+
+		// 1. Species Traits
+		const species = registry.getSpecies(this.character.speciesId);
+		if (species && species.traits) {
+			const traitsCard = this.createCard(`Tür Özellikleri (${translateSpeciesName(species.name)})`);
+			const traitList = document.createElement('div');
+			traitList.style.display = 'grid';
+			traitList.style.gap = 'var(--space-md)';
+			traitList.style.gridTemplateColumns = 'repeat(auto-fill, minmax(300px, 1fr))';
+
+			const level = this.character.progression.totalLevel || 1;
+			const visibleTraits = species.traits.filter(t => (t.level || 1) <= level);
+
+			if (visibleTraits.length > 0) {
+				visibleTraits.forEach(t => {
+					const traitDiv = document.createElement('div');
+					traitDiv.style.background = 'var(--color-bg-tertiary)';
+					traitDiv.style.padding = '12px';
+					traitDiv.style.borderRadius = 'var(--radius-sm)';
+					traitDiv.style.border = '1px solid var(--color-border)';
+
+					traitDiv.innerHTML = `
+						<div style="display:flex; justify-content:space-between; margin-bottom: 6px;">
+							<span style="font-weight: 700; color: var(--color-accent-blue);">${t.name}</span>
+							<span style="font-size: 0.8rem; background: var(--color-bg-secondary); padding: 2px 6px; border-radius: 4px;">Lvl ${t.level || 1}</span>
+						</div>
+						<div style="font-size: 0.9rem; color: var(--color-text-secondary); line-height: 1.5;">${t.description}</div>
+					`;
+					traitList.appendChild(traitDiv);
+				});
+			} else {
+				traitList.innerHTML = '<div style="color:var(--color-text-dim);">Bu seviyede aktif özellik yok.</div>';
+			}
+			traitsCard.appendChild(traitList);
+			container.appendChild(traitsCard);
+		}
+
+		// 2. Class Features
+		// (Future implementation: Fetch class features similarly)
+		const classSection = this.createCard('Sınıf Özellikleri');
+		classSection.innerHTML = '<div style="color:var(--color-text-dim); text-align:center;">Sınıf özellikleri yakında eklenecek...</div>';
+		container.appendChild(classSection);
 	}
 }

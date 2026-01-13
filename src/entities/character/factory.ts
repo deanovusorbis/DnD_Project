@@ -473,7 +473,6 @@ export function createPregenCleric(): Character {
 		source: 'srd',
 		playerName: undefined,
 		speciesId: 'dwarf',
-		subspeciesId: 'hill-dwarf',
 
 		// Actor Implementation
 		stats: {

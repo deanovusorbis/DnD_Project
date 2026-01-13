@@ -47,7 +47,7 @@ export function renderReviewStep(parent: HTMLElement, onStepComplete: () => void
 	grid.style.marginBottom = 'var(--space-xl)';
 
 	// Card: Species
-	const speciesCard = createSummaryCard('🧬 Irk', [
+	const speciesCard = createSummaryCard('🧬 Tür', [
 		species ? translateSpeciesName(species.name) : 'Seçilmedi',
 		subspecies ? translateSubspeciesName(subspecies.name) : ''
 	].filter(Boolean).join(' - '));

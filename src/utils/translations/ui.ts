@@ -5,7 +5,8 @@
 
 // Step Labels
 export const stepLabels: Record<string, string> = {
-	'species': 'Irk',
+	'general': 'Genel',
+	'species': 'Tür',
 	'class': 'Sınıf',
 	'background': 'Geçmiş',
 	'abilities': 'Yetenekler',

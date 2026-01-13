@@ -5,150 +5,8 @@
 
 // Trait Translations
 export const traitTranslations: Record<string, { name: string, description: string }> = {
-	'Ability Score Increase': {
-		name: 'Yetenek Puanı Artışı',
-		description: 'Belirli yetenek puanların, ırkına bağlı olarak artar. Bu senin doğal yeteneklerini yansıtır.'
-	},
-	'Age': {
-		name: 'Yaş',
-		description: 'Karakterinin olgunlaşma yaşı ve ortalama yaşam süresi. Maceraya atılmak için uygun yaşta olduğundan emin ol.'
-	},
-	'Size': {
-		name: 'Boyut',
-		description: 'Karakterinin fiziksel büyüklüğü. Çoğu karakter Orta (insan boyu) veya Küçük (buçukluk boyu) boyutundadır.'
-	},
-	'Speed': {
-		name: 'Hız',
-		description: 'Bir turda (6 saniye) katedebileceğin temel yürüme mesafesi.'
-	},
-	'Darkvision': {
-		name: 'Karanlık Görüşü',
-		description: 'Loş ışıkta aydınlıktaymış gibi, karanlıkta ise loş ışıktaymış gibi görebilirsin. Karanlıkta renkleri ayırt edemez, sadece gri tonlarını görürsün.'
-	},
-	'Keen Senses': {
-		name: 'Keskin Duyular',
-		description: 'Algı (Perception) becerisinde yetkinliğin vardır. Çevrendeki detayları fark etmede doğuştan yeteneklisin.'
-	},
-	'Fey Ancestry': {
-		name: 'Peri Soyu',
-		description: 'Seni büyüyle uyutmaya çalışan etkiler işlemez ve büyüyle ayartılmaya (charm) karşı kurtarma atışlarında avantajlısın.'
-	},
-	'Trance': {
-		name: 'Trans',
-		description: 'Elfler uyumazlar. Bunun yerine günde 4 saatlik derin bir meditasyon yaparlar. Bu sayede 8 saatlik bir uykunun sağladığı dinlenmeyi kazanırlar.'
-	},
-	'Dwarven Resilience': {
-		name: 'Cüce Dayanıklılığı',
-		description: 'Zehirlenmeye karşı kurtarma atışlarında avantajlısın ve zehir hasarına karşı direncin var.'
-	},
-	'Dwarven Combat Training': {
-		name: 'Cüce Savaş Eğitimi',
-		description: 'Savaş baltası, el baltası, fırlatma çekici ve savaş çekici kullanmada yetkinliğin vardır.'
-	},
-	'Stonecunning': {
-		name: 'Taş Tanımazlık',
-		description: 'Taş işçiliği ile ilgili Tarih (History) kontrollerinde yetkinlik bonusunun iki katını eklersin.'
-	},
-	'Lucky': {
-		name: 'Şanslı',
-		description: 'Saldırı zarı, yetenek kontrolü veya kurtarma atışında 1 atarsan, zarı tekrar atabilirsin (ama yeni sonucu kullanmalısın).'
-	},
-	'Brave': {
-		name: 'Cesur',
-		description: 'Korkuya karşı yaptığın kurtarma atışlarında avantajlısın.'
-	},
-	'Halfling Nimbleness': {
-		name: 'Buçukluk Çevikliği',
-		description: 'Senden en az bir boy büyük olan herhangi bir yaratığın alanından geçebilirsin.'
-	},
-	'Draconic Ancestry': {
-		name: 'Ejderha Soyu',
-		description: 'Bir ejderha atası seçersin. Nefes silahın ve hasar direncin bu seçime göre belirlenir.'
-	},
-	'Breath Weapon': {
-		name: 'Nefes Silahı',
-		description: 'Aksiyonunu kullanarak yıkıcı bir enerji dalgası püskürtürsün. Hasar türü ve alanı ejderha soyuna bağlıdır.'
-	},
-	'Damage Resistance': {
-		name: 'Hasar Direnci',
-		description: 'Ejderha soyunla ilişkili hasar türüne karşı direncin vardır (örneğin ateşe karşı direnç).'
-	},
-	'Gnome Cunning': {
-		name: 'Gnome Kurnazlığı',
-		description: 'Zeka, Bilgelik ve Karizma kurtarma atışlarında, büyüye karşı avantajlısın.'
-	},
-	'Hellish Resistance': {
-		name: 'Cehennemi Direnç',
-		description: 'Ateş hasarına karşı direncin var.'
-	},
-	'Infernal Legacy': {
-		name: 'İblis Mirası',
-		description: 'Thaumaturgy büyüsünü bilirsin. Seviye atladıkça Hellish Rebuke ve Darkness büyülerini de yapabilirsin.'
-	},
-	'Relentless Endurance': {
-		name: 'Amansız Dayanıklılık',
-		description: 'Can puanın 0\'a düştüğünde ama ölmediğinde, 1 can puanıyla ayakta kalabilirsin. Uzun dinlenmeden sonra tekrar kullanabilirsin.'
-	},
-	'Savage Attacks': {
-		name: 'Vahşi Saldırılar',
-		description: 'Yakın dövüş silahıyla kritik vuruş yaptığında, hasar zarını bir kez daha atıp toplama eklersin.'
-	},
-	'Menacing': {
-		name: 'Tehditkar',
-		description: 'Gözdağı (Intimidation) becerisinde yetkinliğin vardır.'
-	},
-	'Elf Weapon Training': {
-		name: 'Elf Silah Eğitimi',
-		description: 'Uzun kılıç, kısa kılıç, uzun yay ve kısa yay kullanmada yetkinliğin vardır.'
-	},
-	'Fleet of Foot': {
-		name: 'Ayağına Çabuk',
-		description: 'Temel yürüme hızın 35 ft\'tir.'
-	},
-	'Mask of the Wild': {
-		name: 'Yabanın Maskesi',
-		description: 'Hafifçe gizlendiğinde bile (örneğin yapraklar, şiddetli yağmur, kar veya sis) saklanmaya çalışabilirsin.'
-	},
-	'Superior Darkvision': {
-		name: 'Üstün Karanlık Görüşü',
-		description: 'Karanlık görüşün 120 ft menzile sahiptir.'
-	},
-	'Sunlight Sensitivity': {
-		name: 'Güneş Işığı Hassasiyeti',
-		description: 'Sen veya hedefin doğrudan güneş ışığı altındayken, saldırı zarlarında ve Görme (Perception) kontrollerinde dezavantajlısın.'
-	},
-	'Drow Magic': {
-		name: 'Drow Büyüsü',
-		description: 'Dancing Lights büyüsünü bilirsin. Seviyeler ilerledikçe Faerie Fire ve Darkness büyülerini de kazanırsın.'
-	},
-	'Toughness': {
-		name: 'Dayanıklılık',
-		description: 'Maksimum can puanın her seviyede (1. seviye dahil) fazladan 1 artar.'
-	},
-	'Powerful Build': {
-		name: 'Güçlü Yapı',
-		description: 'Yük taşıma ve itme/çekme kapasiten hesaplanırken bir boy büyük (Large) sayılırsın.'
-	},
-	'Mountain Born': {
-		name: 'Dağların Oğlu',
-		description: 'Yüksek irtifaya ve soğuk iklimlere alışkınsın.'
-	},
-	'Celestial Resistance': {
-		name: 'İlahi Direnç',
-		description: 'Nekrotik (Necrotic) ve Radyant (Radiant) hasara karşı direncin var.'
-	},
-	'Healing Hands': {
-		name: 'Şifalı Eller',
-		description: 'Dokunarak bir yaratığı seviyen kadar iyileştirebilirsin (uzun dinlenmede yenilenir).'
-	},
-	'Light Bearer': {
-		name: 'Işık Taşıyıcısı',
-		description: 'Light (Işık) büyüsünü bilirsin.'
-	},
-	'Aggressive': {
-		name: 'Agresif',
-		description: 'Bonus aksiyon olarak bir düşmana doğru hızın kadar hareket edebilirsin.'
-	},
+
+
 	'Rage': {
 		name: 'Öfke (Rage)',
 		description: 'Savaşta ilkel bir öfkeye bürünerek hasar bonusu, dirençler ve güç avantajları kazanırsın.'
@@ -217,55 +75,9 @@ export const traitTranslations: Record<string, { name: string, description: stri
 		name: 'Büyüsel Yenilenme',
 		description: 'Kısa bir dinlenme sırasında, harcadığın bazı büyü slotlarını geri kazanabilirsin.'
 	},
-	'Celestial Revelation': {
-		name: 'Göksel Vahiy',
-		description: '3. seviye özelliği. İçindeki ilahi enerjiyi serbest bırakarak geçici bir dönüşüm (uçma, hasar verme vb.) gerçekleştirebilirsin.'
-	},
-	'Naturally Stealthy': {
-		name: 'Doğuştan Gizli',
-		description: 'Senden en az bir boy büyük olan bir yaratığın arkasına saklandığında gizlenmeye çalışabilirsin.'
-	},
-	'Tool Proficiency': {
-		name: 'Alet Yetkinliği',
-		description: 'Seçtiğin zanaatkar aletlerinde yetkinlik kazanırsın.'
-	},
-	'Cantrip': {
-		name: 'Sihir (Cantrip)',
-		description: 'Seviye 0 bir büyü bilirsin (örneğin Işık, Büyülü El) ve bunu slot harcamadan yapabilirsin.'
-	},
-	'Extra Language': {
-		name: 'Ekstra Dil',
-		description: 'Konuşabildiğin, okuyup yazabildiğin dillere bir yenisi eklenir.'
-	},
-	'Adrenaline Rush': {
-		name: 'Adrenalin Patlaması',
-		description: 'Bonus aksiyon olarak Dash (Depar) yapabilirsin. Bunu yaptığında geçici can puanı kazanırsın.'
-	},
-	'Stone\'s Endurance': {
-		name: 'Taşın Dayanıklılığı',
-		description: 'Hasar aldığında tepkini kullanarak hasarı 1d12 + CON kadar azaltabilirsin.'
-	},
-	// Goliath Subraces
-	'Cloud Jaunt': {
-		name: 'Bulut Sıçrayışı',
-		description: 'Bonus aksiyon olarak 30 fit mesafeye kadar görebildiğin boş bir alana ışınlanabilirsin.'
-	},
-	'Fire\'s Burn': {
-		name: 'Ateşin Yakışı',
-		description: 'Bir saldırıyla hasar verdiğinde, hedefe fazladan 1d10 Ateş hasarı verebilirsin.'
-	},
-	'Frost\'s Chill': {
-		name: 'Buzun Ürpertisi',
-		description: 'Saldırıyla hasar verdiğinde, hedefe 1d6 Soğuk hasarı verebilir ve hızını 10 fit azaltabilirsin.'
-	},
-	'Hill\'s Tumble': {
-		name: 'Tepenin Devrilişi',
-		description: 'Büyük veya daha küçük bir yaratığa hasar verdiğinde, onu yere devirebilirsin (Prone).'
-	},
-	'Storm\'s Thunder': {
-		name: 'Fırtınanın Gök Gürültüsü',
-		description: '60 fit yakınındaki bir yaratıktan hasar aldığında, ona 1d8 Yıldırım hasarı verebilirsin.'
-	},
+
+
+
 	// Barbarian Class Features
 	'Reckless Attack': {
 		name: 'Pervasız Saldırı',
@@ -445,58 +257,7 @@ export const traitTranslations: Record<string, { name: string, description: stri
 		name: 'Avcının Avı',
 		description: 'Colossus Slayer (büyük hasar), Giant Killer (dev öldürücü) veya Horde Breaker (sürü kırıcı) arasından bir av tarzı seçersin.'
 	},
-	// Missing Species Traits - Dragonborn Breath Variants
-	'Acid Breath': {
-		name: 'Asit Nefesi',
-		description: '5x30 ft çizgi şeklinde asit püskürtürsün (Dex kurtarma atışı). Hasar: 2d6 asit (3. seviyede), seviye arttıkça artar.'
-	},
-	'Cold Breath': {
-		name: 'Soğuk Nefes',
-		description: '15 ft koni şeklinde dondurucu soğuk püskürtürsün (Con kurtarma atışı). Hasar: 2d6 soğuk (3. seviyede), seviye arttıkça artar.'
-	},
-	'Fire Breath': {
-		name: 'Ateş Nefesi',
-		description: 'Ateş püskürtürsün (koni veya çizgi, ejderha türüne göre). Hedefler Dex kurtarma atışı yapar. Hasar: 2d6 ateş, seviye arttıkça artar.'
-	},
-	'Lightning Breath': {
-		name: 'Yıldırım Nefesi',
-		description: '5x30 ft çizgi şeklinde yıldırım püskürtürsün (Dex kurtarma atışı). Hasar: 2d6 yıldırım, seviye arttıkça artar.'
-	},
-	'Poison Breath': {
-		name: 'Zehir Nefesi',
-		description: '15 ft koni şeklinde zehirli gaz püskürtürsün (Con kurtarma atışı). Hasar: 2d6 zehir, seviye arttıkça artar.'
-	},
-	// Tiefling Variants
-	'Abyssal Legacy': {
-		name: 'Uçurum Mirası',
-		description: 'Abyssal (Uçurum) kökenli bir tiefling\'sin. Dancing Lights catrip\'ini bilirsin. 3. seviyede Burning Hands, 5. seviyede Alter Self büyülerini günde bir kez yapabilirsin.'
-	},
-	'Chthonic Legacy': {
-		name: 'Yeraltı Mirası',
-		description: 'Cthonic (Yeraltı) güçlerinden gelen bir tiefling\'sin. Chill Touch catrip\'ini bilirsin. 3. seviyede False Life, 5. seviyede Ray of Enfeeblement büyülerini günde bir kez yapabilirsin.'
-	},
-	// Gnome Variants
-	'Gnomish Lineage (Forest)': {
-		name: 'Gnome Soyu (Orman)',
-		description: 'Minor Illusion catrip\'ini bilirsin. Ayrıca Speak with Animals büyüsünü (sadece küçük hayvanlara) sınırsız yapabilirsin.'
-	},
-	'Gnomish Lineage (Rock)': {
-		name: 'Gnome Soyu (Kaya)',
-		description: 'Mending ve Prestidigitation catrip\'lerini bilirsin. Zanaatkarlık ve icatlarda doğuştan yeteneklisin.'
-	},
-	// Other Missing Species Traits
-	'Drow Weapon Training': {
-		name: 'Drow Silah Eğitimi',
-		description: 'Rapier, kısa kılıç ve el tırpanı (hand crossbow) kullanmada yetkinliğin vardır.'
-	},
-	'Dwarven Toughness': {
-		name: 'Cüce Sağlamlığı',
-		description: 'Maksimum can puanın her seviyede 1 artar (1. seviye dahil).'
-	},
-	'Otherworldly Presence': {
-		name: 'Düzlem Ötesi Varlık',
-		description: 'Doğuştan gelen ilahi veya şeytani aura taşırsın. Bonus aksiyon olarak 30 ft içindeki yaratıkları büyüleyebilir veya korkutabilirsin.'
-	},
+
 	// Missing Class Features - Rogue
 	'Assassinate': {
 		name: 'Suikast',
@@ -837,6 +598,8 @@ export const traitTranslations: Record<string, { name: string, description: stri
 		name: 'Dengeyi Kurtar',
 		description: 'Clockwork Sorcerer özelliği. Tepki olarak bir yaratığın avantaj veya dezavantajını iptal edebilirsin.'
 	},
+
+
 	'Psionic Spells': {
 		name: 'Psionik Büyüler',
 		description: 'Soulknife rogue özelliği. Psionic Energy zarlarını kullanarak belirli büyüleri (Mage Hand, Invisibility vb.) yapabilirsin.'

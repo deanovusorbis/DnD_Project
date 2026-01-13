@@ -249,7 +249,10 @@ export interface Character extends Actor {
 // ============================================================================
 
 export interface CharacterCreationState {
-	step: 'species' | 'class' | 'background' | 'abilities' | 'proficiencies' | 'equipment' | 'details' | 'review';
+	step: 'general' | 'species' | 'class' | 'background' | 'abilities' | 'proficiencies' | 'equipment' | 'details' | 'review';
+
+	// General Info
+	level?: number;
 
 	// Selected options
 	selectedSpecies?: string;

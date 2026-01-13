@@ -23,7 +23,8 @@
           "name": "Becerikli (Resourceful)",
           "source": "2024",
           "description": "Her Uzun Dinlenme bitirdiğinizde Kahramanca İlham (Heroic Inspiration) kazanırsınız.",
-          "mechanicType": "passive"
+          "mechanicType": "passive",
+          "level": 1
         },
         {
           "id": "skillful",
@@ -31,6 +32,7 @@
           "source": "2024",
           "description": "Seçtiğiniz bir yetenekte ustalık (proficiency) kazanırsınız.",
           "mechanicType": "choice",
+          "level": 1,
           "grantsProficiency": {
             "skills": [
               "choice"
@@ -43,6 +45,7 @@
           "source": "2024",
           "description": "Seçtiğiniz bir Köken Hüneri (Origin Feat) kazanırsınız. Becerikli (Skilled) hüneri önerilir.",
           "mechanicType": "choice",
+          "level": 1,
           "grantsFeat": [
             "choice"
           ]
@@ -67,15 +70,10 @@
       "id": "elf",
       "name": "Elf",
       "source": "srd",
-      "description": "Elves are a magical people of otherworldly grace, living in places of ethereal beauty, in the midst of ancient forests or in silvery spires glittering with faerie light.",
+      "description": "Elfler, uhrevi bir zarafete sahip büyülü bir halktır. Antik ormanların ortasında veya peri ışıklarıyla parlayan gümüş kulelerde yaşarlar.",
       "size": "medium",
       "speed": 30,
-      "abilityScoreIncreases": [
-        {
-          "ability": "DEX",
-          "bonus": 2
-        }
-      ],
+      "abilityScoreIncreases": [],
       "ageMaturity": 100,
       "ageLifespan": 750,
       "languages": [
@@ -85,18 +83,20 @@
       "traits": [
         {
           "id": "darkvision-elf",
-          "name": "Darkvision",
+          "name": "Karanlık Görüş (Darkvision)",
           "source": "srd",
-          "description": "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light.",
+          "description": "Alacakaranlık ormanlara ve gece gökyüzüne alışkın olduğunuz için, karanlık ve loş ışıkta üstün bir görüşe sahipsiniz. 60 feet menzilinde loş ışığı parlak ışık gibi, karanlığı ise loş ışık gibi görebilirsiniz.",
           "mechanicType": "passive",
+          "level": 1,
           "grantsDarkvision": 60
         },
         {
           "id": "keen-senses",
-          "name": "Keen Senses",
+          "name": "Keskin Duyular (Keen Senses)",
           "source": "srd",
-          "description": "You have proficiency in the Perception skill.",
+          "description": "Algı (Perception) becerisinde ustalığınız vardır.",
           "mechanicType": "passive",
+          "level": 1,
           "grantsProficiency": {
             "skills": [
               "perception"
@@ -105,10 +105,11 @@
         },
         {
           "id": "fey-ancestry",
-          "name": "Fey Ancestry",
+          "name": "Peri Soyu (Fey Ancestry)",
           "source": "srd",
-          "description": "You have advantage on saving throws against being charmed, and magic can't put you to sleep.",
+          "description": "Büyülenmeye (Charmed) karşı kurtarma atışlarında avantaja sahipsiniz ve büyü sizi uyutamaz.",
           "mechanicType": "passive",
+          "level": 1,
           "grantsAdvantage": {
             "conditions": [
               "charmed"
@@ -120,176 +121,132 @@
         },
         {
           "id": "trance",
-          "name": "Trance",
+          "name": "Trans (Trance)",
           "source": "srd",
-          "description": "Elves don't need to sleep. Instead, they meditate deeply for 4 hours a day. After resting this way, you gain the same benefit that a human does from 8 hours of sleep.",
-          "mechanicType": "passive"
+          "description": "Elflerin uyumaya ihtiyacı yoktur. Bunun yerine günde 4 saat derin bir meditasyon yaparlar. Bu dinlenmeden sonra, bir insanın 8 saatlik uykudan aldığı faydayı kazanırsınız.",
+          "mechanicType": "passive",
+          "level": 1
         }
       ],
       "subraces": [
         {
           "id": "high-elf",
-          "name": "High Elf",
+          "name": "Yüce Elf (High Elf)",
           "source": "srd",
-          "description": "As a high elf, you have a keen mind and a mastery of at least the basics of magic.",
+          "description": "Bir Yüce Elf olarak keskin bir zihne ve en azından temel büyü bilgisine sahipsiniz.",
           "parentSpeciesId": "elf",
-          "additionalASI": [
-            {
-              "ability": "INT",
-              "bonus": 1
-            }
-          ],
           "additionalTraits": [
             {
-              "id": "elf-weapon-training",
-              "name": "Elf Weapon Training",
-              "source": "srd",
-              "description": "You have proficiency with the longsword, shortsword, shortbow, and longbow.",
-              "mechanicType": "passive",
-              "grantsProficiency": {
-                "weapons": [
-                  "longsword",
-                  "shortsword",
-                  "shortbow",
-                  "longbow"
-                ]
-              }
-            },
-            {
               "id": "cantrip-high-elf",
-              "name": "Cantrip",
-              "source": "srd",
-              "description": "You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it.",
+              "name": "Hüner (Cantrip)",
+              "source": "2024",
+              "description": "Prestidigitation hünerini (cantrip) bilirsiniz. Her Uzun Dinlenmeyi (Long Rest) tamamladığınızda, bu hüneri Büyücü (Wizard) büyü listesinden başka bir hünerle değiştirebilirsiniz. Büyü yapma yeteneğiniz Zeka'dır (Intelligence).",
               "mechanicType": "active",
+              "level": 1,
               "grantsSpells": [
                 {
-                  "spellId": "choice-wizard-cantrip",
+                  "spellId": "prestidigitation",
                   "atLevel": 1,
                   "castingAbility": "INT"
                 }
-              ]
-            },
-            {
-              "id": "extra-language-high-elf",
-              "name": "Extra Language",
-              "source": "srd",
-              "description": "You can speak, read, and write one extra language of your choice.",
-              "mechanicType": "passive",
-              "grantsLanguages": [
-                "choice"
               ]
             }
           ]
         },
         {
           "id": "wood-elf",
-          "name": "Wood Elf",
+          "name": "Orman Elfi (Wood Elf)",
           "source": "srd",
-          "description": "As a wood elf, you have keen senses and intuition, and your fleet feet carry you quickly and stealthily through your native forests.",
+          "description": "Bir Orman Elfi olarak keskin duyulara ve sezgilere sahipsiniz, hızlı ayaklarınız sizi ormanlarda sessizce taşır.",
           "parentSpeciesId": "elf",
-          "additionalASI": [
-            {
-              "ability": "WIS",
-              "bonus": 1
-            }
-          ],
           "additionalTraits": [
             {
-              "id": "elf-weapon-training-wood",
-              "name": "Elf Weapon Training",
-              "source": "srd",
-              "description": "You have proficiency with the longsword, shortsword, shortbow, and longbow.",
-              "mechanicType": "passive",
-              "grantsProficiency": {
-                "weapons": [
-                  "longsword",
-                  "shortsword",
-                  "shortbow",
-                  "longbow"
-                ]
-              }
-            },
-            {
               "id": "fleet-of-foot",
-              "name": "Fleet of Foot",
+              "name": "Hızlı Ayaklar (Fleet of Foot)",
               "source": "srd",
-              "description": "Your base walking speed increases to 35 feet.",
-              "mechanicType": "passive"
+              "description": "Temel yürüme hızınız 35 feet'e çıkar.",
+              "mechanicType": "passive",
+              "level": 1
             },
             {
               "id": "mask-of-the-wild",
-              "name": "Mask of the Wild",
+              "name": "Vahşi Doğa Maskesi (Mask of the Wild)",
               "source": "srd",
-              "description": "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.",
-              "mechanicType": "passive"
+              "description": "Sadece yapraklar, şiddetli yağmur, kar yağışı veya sis gibi doğal olaylar tarafından hafifçe gizlendiğinizde bile saklanmaya çalışabilirsiniz.",
+              "mechanicType": "passive",
+              "level": 1
             }
           ]
         },
         {
           "id": "dark-elf",
-          "name": "Dark Elf (Drow)",
+          "name": "Karanlık Elf (Drow)",
           "source": "srd",
-          "description": "Descended from an earlier subrace of dark-skinned elves, the drow were banished from the surface world for following the goddess Lolth down the path to evil.",
+          "description": "Karanlık tenli elflerin soyundan gelen Drowlar, yeraltında yaşarlar.",
           "parentSpeciesId": "elf",
-          "additionalASI": [
-            {
-              "ability": "CHA",
-              "bonus": 1
-            }
-          ],
           "additionalTraits": [
             {
               "id": "superior-darkvision",
-              "name": "Superior Darkvision",
+              "name": "Üstün Karanlık Görüş",
               "source": "srd",
-              "description": "Your darkvision has a radius of 120 feet.",
+              "description": "Karanlık görüşünüzün menzili 120 feet'tir.",
               "mechanicType": "passive",
+              "level": 1,
               "grantsDarkvision": 120
             },
             {
               "id": "sunlight-sensitivity",
-              "name": "Sunlight Sensitivity",
+              "name": "Güneş Işığı Hassasiyeti",
               "source": "srd",
-              "description": "You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.",
-              "mechanicType": "passive"
+              "description": "Siz veya hedefiniz doğrudan güneş ışığı altındayken saldırı zarlarında ve görmeye dayalı Algı (Perception) testlerinde dezavantaja sahipsiniz.",
+              "mechanicType": "passive",
+              "level": 1
             },
             {
-              "id": "drow-magic",
-              "name": "Drow Magic",
+              "id": "drow-magic-1",
+              "name": "Drow Büyüsü (Seviye 1)",
               "source": "srd",
-              "description": "You know the dancing lights cantrip. When you reach 3rd level, you can cast the faerie fire spell once. When you reach 5th level, you can also cast the darkness spell once. Charisma is your spellcasting ability for these spells.",
+              "description": "Dancing Lights hünerini (cantrip) bilirsiniz. Büyü yapma yeteneğiniz Karizma'dır.",
               "mechanicType": "active",
+              "level": 1,
+              "requiredLevel": 1,
               "grantsSpells": [
                 {
                   "spellId": "dancing-lights",
                   "atLevel": 1,
                   "castingAbility": "CHA"
-                },
+                }
+              ]
+            },
+            {
+              "id": "drow-magic-3",
+              "name": "Drow Büyüsü (Seviye 3)",
+              "source": "srd",
+              "description": "Faerie Fire büyüsünü günde bir kez yapabilirsiniz.",
+              "mechanicType": "active",
+              "level": 3,
+              "grantsSpells": [
                 {
                   "spellId": "faerie-fire",
                   "atLevel": 3,
                   "castingAbility": "CHA"
-                },
+                }
+              ]
+            },
+            {
+              "id": "drow-magic-5",
+              "name": "Drow Büyüsü (Seviye 5)",
+              "source": "srd",
+              "description": "Darkness büyüsünü günde bir kez yapabilirsiniz.",
+              "mechanicType": "active",
+              "level": 5,
+              "grantsSpells": [
                 {
                   "spellId": "darkness",
                   "atLevel": 5,
                   "castingAbility": "CHA"
                 }
               ]
-            },
-            {
-              "id": "drow-weapon-training",
-              "name": "Drow Weapon Training",
-              "source": "srd",
-              "description": "You have proficiency with rapiers, shortswords, and hand crossbows.",
-              "mechanicType": "passive",
-              "grantsProficiency": {
-                "weapons": [
-                  "rapier",
-                  "shortsword",
-                  "hand_crossbow"
-                ]
-              }
             }
           ]
         }
@@ -299,14 +256,14 @@
         "complexity": "beginner",
         "recommendedForNewPlayers": true,
         "keyMechanics": [
-          "Darkvision",
-          "Fey Ancestry",
-          "Trance"
+          "Karanlık Görüş",
+          "Peri Soyu",
+          "Trans"
         ],
         "flavorHooks": [
-          "Ancient",
-          "Graceful",
-          "Connected to nature and magic"
+          "Kadim",
+          "Zarif",
+          "Büyülü Doğa"
         ]
       }
     },
@@ -316,13 +273,8 @@
       "source": "srd",
       "description": "Bold and hardy, dwarves are known as skilled warriors, miners, and workers of stone and metal.",
       "size": "medium",
-      "speed": 25,
-      "abilityScoreIncreases": [
-        {
-          "ability": "CON",
-          "bonus": 2
-        }
-      ],
+      "speed": 30,
+      "abilityScoreIncreases": [],
       "ageMaturity": 50,
       "ageLifespan": 350,
       "languages": [
@@ -332,18 +284,20 @@
       "traits": [
         {
           "id": "darkvision-dwarf",
-          "name": "Darkvision",
-          "source": "srd",
-          "description": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light.",
+          "name": "Karanlık Görüş (Darkvision)",
+          "source": "2024",
+          "description": "Yeraltı yaşamına alışkın olduğunuz için karanlıkta ve loş ışıkta üstün görüşe sahipsiniz. 120 feet menzilinde loş ışığı parlak ışık gibi, karanlığı ise loş ışık gibi görebilirsiniz.",
           "mechanicType": "passive",
-          "grantsDarkvision": 60
+          "level": 1,
+          "grantsDarkvision": 120
         },
         {
           "id": "dwarven-resilience",
-          "name": "Dwarven Resilience",
-          "source": "srd",
-          "description": "You have advantage on saving throws against poison, and you have resistance against poison damage.",
+          "name": "Cüce Dayanıklılığı (Dwarven Resilience)",
+          "source": "2024",
+          "description": "Zehirlenmeye karşı kurtarma atışlarında avantaja ve zehir hasarına karşı dirence sahipsiniz.",
           "mechanicType": "passive",
+          "level": 1,
           "grantsAdvantage": {
             "savingThrows": [
               "poison"
@@ -354,45 +308,20 @@
           ]
         },
         {
-          "id": "dwarven-combat-training",
-          "name": "Dwarven Combat Training",
-          "source": "srd",
-          "description": "You have proficiency with the battleaxe, handaxe, light hammer, and warhammer.",
+          "id": "dwarven-toughness",
+          "name": "Cüce Sağlamlığı (Dwarven Toughness)",
+          "source": "2024",
+          "description": "Can Puanı maksimumunuz 1 artar ve her seviye atladığınızda 1 daha artar.",
           "mechanicType": "passive",
-          "grantsProficiency": {
-            "weapons": [
-              "battleaxe",
-              "handaxe",
-              "light_hammer",
-              "warhammer"
-            ]
-          }
-        },
-        {
-          "id": "tool-proficiency-dwarf",
-          "name": "Tool Proficiency",
-          "source": "srd",
-          "description": "You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools.",
-          "mechanicType": "passive",
-          "grantsProficiency": {
-            "tools": [
-              "choice:smiths_tools,brewers_supplies,masons_tools"
-            ]
-          }
+          "level": 1
         },
         {
           "id": "stonecunning",
-          "name": "Stonecunning",
-          "source": "srd",
-          "description": "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check.",
-          "mechanicType": "passive"
-        },
-        {
-          "id": "dwarven-toughness-core",
-          "name": "Dwarven Toughness",
+          "name": "Taş Sezgisi (Stonecunning)",
           "source": "2024",
-          "description": "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.",
-          "mechanicType": "passive"
+          "description": "Bir Bonus Aksiyon olarak, taş bir yüzey üzerindeyken veya ona dokunurken 10 dakika boyunca 60 feet menzilli Titreşim Duyusu (Tremorsense) kazanırsınız. Bu özelliği Proficiency Bonusunuz kadar kullanabilirsiniz ve biten kullanımları Uzun Dinlenme ile geri kazanırsınız.",
+          "mechanicType": "active",
+          "level": 1
         }
       ],
       "creatureType": "humanoid",
@@ -413,17 +342,12 @@
     },
     {
       "id": "halfling",
-      "name": "Halfling",
+      "name": "Buçukluk (Halfling)",
       "source": "srd",
-      "description": "The diminutive halflings survive in a world full of larger creatures by avoiding notice or, barring that, avoiding offense.",
+      "description": "Küçük boyutlu Buçukluklar, dikkat çekmekten ve tehlikeden kaçınarak büyük yaratıklarla dolu bir dünyada hayatta kalırlar.",
       "size": "small",
-      "speed": 25,
-      "abilityScoreIncreases": [
-        {
-          "ability": "DEX",
-          "bonus": 2
-        }
-      ],
+      "speed": 30,
+      "abilityScoreIncreases": [],
       "ageMaturity": 20,
       "ageLifespan": 150,
       "languages": [
@@ -433,17 +357,19 @@
       "traits": [
         {
           "id": "lucky-halfling",
-          "name": "Lucky",
+          "name": "Şanslı (Lucky)",
           "source": "srd",
-          "description": "When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.",
-          "mechanicType": "passive"
+          "description": "Saldırı, yetenek veya kurtarma zarında 1 attığınızda, zarı tekrar atabilirsiniz. Yeni sonucu kullanmak zorundasınız.",
+          "mechanicType": "passive",
+          "level": 1
         },
         {
           "id": "brave",
-          "name": "Brave",
+          "name": "Cesur (Brave)",
           "source": "srd",
-          "description": "You have advantage on saving throws against being frightened.",
+          "description": "Korkutulmaya (Frightened) karşı kurtarma atışlarında avantaja sahipsiniz.",
           "mechanicType": "passive",
+          "level": 1,
           "grantsAdvantage": {
             "conditions": [
               "frightened"
@@ -452,32 +378,35 @@
         },
         {
           "id": "halfling-nimbleness",
-          "name": "Halfling Nimbleness",
+          "name": "Buçukluk Çevikliği (Halfling Nimbleness)",
           "source": "srd",
-          "description": "You can move through the space of any creature that is of a size larger than yours.",
-          "mechanicType": "passive"
+          "description": "Sizden daha büyük boyuttaki herhangi bir yaratığın alanından geçip gidebilirsiniz.",
+          "mechanicType": "passive",
+          "level": 1
         },
         {
           "id": "naturally-stealthy-core",
-          "name": "Naturally Stealthy",
+          "name": "Doğuştan Gizli (Naturally Stealthy)",
           "source": "2024",
-          "description": "You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you.",
-          "mechanicType": "passive"
+          "description": "Sizden en az bir boy büyük bir yaratık tarafından gizlendiğinizde bile Saklanma (Hide) aksiyonu alabilirsiniz.",
+          "mechanicType": "passive",
+          "level": 1
         }
       ],
+      "subraces": [],
       "creatureType": "humanoid",
       "teachingNotes": {
         "complexity": "beginner",
         "recommendedForNewPlayers": true,
         "keyMechanics": [
-          "Lucky (reroll 1s)",
-          "Brave",
-          "Small size"
+          "Şanslı (1'leri tekrar at)",
+          "Cesur",
+          "Küçük Boyut"
         ],
         "flavorHooks": [
-          "Cheerful",
-          "Resourceful",
-          "Comfort-loving"
+          "Neşeli",
+          "Becerikli",
+          "Konforuna Düşkün"
         ]
       }
     },
@@ -488,16 +417,7 @@
       "description": "Ejderhalardan doğan ejderhasoylu, kendilerini korku dolu bir anlayışsızlıkla karşılayan bir dünyada gururla yürür. Ejderha tanrıları veya ejderhaların kendileri tarafından şekillendirilen ejderhasoylular, başlangıçta ejderha yumurtalarından çıkmışlardır.",
       "size": "medium",
       "speed": 30,
-      "abilityScoreIncreases": [
-        {
-          "ability": "STR",
-          "bonus": 2
-        },
-        {
-          "ability": "CHA",
-          "bonus": 1
-        }
-      ],
+      "abilityScoreIncreases": [],
       "ageMaturity": 15,
       "ageLifespan": 80,
       "languages": [
@@ -507,24 +427,44 @@
       "traits": [
         {
           "id": "draconic-ancestry",
-          "name": "Draconic Ancestry",
+          "name": "Ejderha Soyu (Draconic Ancestry)",
           "source": "srd",
-          "description": "You have draconic ancestry. Choose one type of dragon from the Draconic Ancestry table. Your breath weapon and damage resistance are determined by the dragon type.",
-          "mechanicType": "choice"
+          "description": "Ejderha atalarınızdan gelen bir mirasa sahipsiniz. Ejderha Soyu tablosundan bir ejderha türü seçin. Nefes Silahınız ve Hasar Direnciniz bu türe göre belirlenir.",
+          "mechanicType": "choice",
+          "level": 1
         },
         {
           "id": "breath-weapon",
-          "name": "Breath Weapon",
-          "source": "srd",
-          "description": "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.",
-          "mechanicType": "active"
+          "name": "Nefes Silahı (Breath Weapon)",
+          "source": "2024",
+          "description": "Saldırı (Attack) aksiyonu aldığınızda, saldırılarınızdan birinin yerine büyülü bir enerji nefesi kullanabilirsiniz. Seçtiğiniz şekle göre (15 ft. koni veya 30 ft. x 5 ft. çizgi) alandaki her yaratık Çeviklik (Dexterity) kurtarma atışı yapmalıdır (Zorluk Derecesi = 8 + Constitution mod + Proficiency Bonus). Başarısız olanlar 1d10 (türe göre) hasar alır, başarılı olanlar yarısını alır. Hasar 5., 11. ve 17. seviyelerde 1d10 artar. Proficiency Bonusunuz kadar kullanabilirsiniz (Uzun Dinlenme ile yenilenir).",
+          "mechanicType": "active",
+          "level": 1
         },
         {
           "id": "damage-resistance-dragonborn",
-          "name": "Damage Resistance",
+          "name": "Hasar Direnci (Damage Resistance)",
           "source": "srd",
-          "description": "You have resistance to the damage type associated with your draconic ancestry.",
-          "mechanicType": "passive"
+          "description": "Ejderha soyunuza uygun hasar türüne karşı direnciniz vardır.",
+          "mechanicType": "passive",
+          "level": 1
+        },
+        {
+          "id": "darkvision-dragonborn",
+          "name": "Karanlık Görüş (Darkvision)",
+          "source": "2024",
+          "description": "60 feet menzilinde loş ışığı parlak ışık gibi, karanlığı ise loş ışık gibi görebilirsiniz.",
+          "mechanicType": "passive",
+          "level": 1,
+          "grantsDarkvision": 60
+        },
+        {
+          "id": "draconic-flight",
+          "name": "Ejderha Uçuşu (Draconic Flight)",
+          "source": "2024",
+          "description": "5. seviyeden itibaren, bir Bonus Aksiyon olarak 10 dakikalığına spektral kanatlar çıkarabilirsiniz (Uzun Dinlenme ile yenilenir). Bu sürede Uçuş Hızınız, yürüme hızınıza eşit olur.",
+          "mechanicType": "active",
+          "level": 5
         }
       ],
       "subraces": [
@@ -540,7 +480,8 @@
               "name": "Asit Nefesi",
               "source": "2024",
               "description": "5'e 30 ft. çizgi (Çvk. kurtarma zarı), 1d10 asit hasarı.",
-              "mechanicType": "active"
+              "mechanicType": "active",
+              "level": 1
             }
           ]
         },
@@ -556,7 +497,8 @@
               "name": "Yıldırım Nefesi",
               "source": "2024",
               "description": "5'e 30 ft. çizgi (Çvk. kurtarma zarı), 1d10 yıldırım hasarı.",
-              "mechanicType": "active"
+              "mechanicType": "active",
+              "level": 1
             }
           ]
         },
@@ -572,7 +514,8 @@
               "name": "Ateş Nefesi",
               "source": "2024",
               "description": "5'e 30 ft. çizgi (Çvk. kurtarma zarı), 1d10 ateş hasarı.",
-              "mechanicType": "active"
+              "mechanicType": "active",
+              "level": 1
             }
           ]
         },
@@ -588,7 +531,8 @@
               "name": "Yıldırım Nefesi",
               "source": "2024",
               "description": "5'e 30 ft. çizgi (Çvk. kurtarma zarı), 1d10 yıldırım hasarı.",
-              "mechanicType": "active"
+              "mechanicType": "active",
+              "level": 1
             }
           ]
         },
@@ -604,7 +548,8 @@
               "name": "Asit Nefesi",
               "source": "2024",
               "description": "5'e 30 ft. çizgi (Çvk. kurtarma zarı), 1d10 asit hasarı.",
-              "mechanicType": "active"
+              "mechanicType": "active",
+              "level": 1
             }
           ]
         },
@@ -620,7 +565,8 @@
               "name": "Ateş Nefesi",
               "source": "2024",
               "description": "15 ft. koni (Çvk. kurtarma zarı), 1d10 ateş hasarı.",
-              "mechanicType": "active"
+              "mechanicType": "active",
+              "level": 1
             }
           ]
         },
@@ -636,7 +582,8 @@
               "name": "Zehir Nefesi",
               "source": "2024",
               "description": "15 ft. koni (Day. kurtarma zarı), 1d10 zehir hasarı.",
-              "mechanicType": "active"
+              "mechanicType": "active",
+              "level": 1
             }
           ]
         },
@@ -652,7 +599,8 @@
               "name": "Ateş Nefesi",
               "source": "2024",
               "description": "15 ft. koni (Çvk. kurtarma zarı), 1d10 ateş hasarı.",
-              "mechanicType": "active"
+              "mechanicType": "active",
+              "level": 1
             }
           ]
         },
@@ -668,7 +616,8 @@
               "name": "Soğuk Nefesi",
               "source": "2024",
               "description": "15 ft. koni (Day. kurtarma zarı), 1d10 soğuk hasarı.",
-              "mechanicType": "active"
+              "mechanicType": "active",
+              "level": 1
             }
           ]
         },
@@ -684,7 +633,8 @@
               "name": "Soğuk Nefesi",
               "source": "2024",
               "description": "15 ft. koni (Day. kurtarma zarı), 1d10 soğuk hasarı.",
-              "mechanicType": "active"
+              "mechanicType": "active",
+              "level": 1
             }
           ]
         }
@@ -726,6 +676,7 @@
           "source": "2024",
           "description": "60 feet menzilinde loş ışığı parlak ışık gibi, karanlığı ise loş ışık gibi görebilirsiniz.",
           "mechanicType": "passive",
+          "level": 1,
           "grantsDarkvision": 60
         },
         {
@@ -734,6 +685,7 @@
           "source": "2024",
           "description": "Zeka (Intelligence), Bilgelik (Wisdom) ve Karizma (Charisma) kurtarma atışlarında avantaja sahipsiniz.",
           "mechanicType": "passive",
+          "level": 1,
           "grantsAdvantage": {
             "savingThrows": [
               "INT",
@@ -757,6 +709,7 @@
               "source": "2024",
               "description": "Minor Illusion hünerini (cantrip) bilirsiniz. Ayrıca Speak with Animals büyüsünü her zaman hazırlarsınız ve büyü yuvası harcamadan Proficiency Bonusunuz kadar kullanabilirsiniz. Bu büyüleri kullanım için Zeka, Bilgelik veya Karizma özelliğini seçebilirsiniz.",
               "mechanicType": "active",
+              "level": 1,
               "grantsSpells": [
                 {
                   "spellId": "minor-illusion",
@@ -785,6 +738,7 @@
               "source": "2024",
               "description": "Mending ve Prestidigitation hünerlerini bilirsiniz. Ayrıca Prestidigitation kullanarak minik saat mekanizmalı cihazlar (oyuncak, ateş başlatıcı, müzik kutusu) üretebilirsiniz (10 dk).",
               "mechanicType": "active",
+              "level": 1,
               "grantsSpells": [
                 {
                   "spellId": "mending",
@@ -821,19 +775,10 @@
       "id": "tiefling",
       "name": "Tiefling",
       "source": "srd",
-      "description": "Tieflings are derived from human bloodlines, and in the broadest possible sense, they still look human. However, their infernal heritage has left a clear imprint on their appearance.",
+      "description": "Tieflingler, insan soyundan gelir ancak cehennemi mirasları görünümlerinde belirgin bir iz bırakmıştır.",
       "size": "medium",
       "speed": 30,
-      "abilityScoreIncreases": [
-        {
-          "ability": "INT",
-          "bonus": 1
-        },
-        {
-          "ability": "CHA",
-          "bonus": 2
-        }
-      ],
+      "abilityScoreIncreases": [],
       "ageMaturity": 18,
       "ageLifespan": 100,
       "languages": [
@@ -843,18 +788,20 @@
       "traits": [
         {
           "id": "darkvision-tiefling",
-          "name": "Darkvision",
+          "name": "Karanlık Görüş (Darkvision)",
           "source": "srd",
-          "description": "Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light.",
+          "description": "Cehennemi mirasınız sayesinde, karanlık ve loş ışıkta üstün bir görüşe sahipsiniz. 60 feet menzilinde loş ışığı parlak ışık gibi, karanlığı ise loş ışık gibi görebilirsiniz.",
           "mechanicType": "passive",
+          "level": 1,
           "grantsDarkvision": 60
         },
         {
           "id": "otherworldly-presence",
-          "name": "Otherworldly Presence",
+          "name": "Öteki Dünya Varlığı (Otherworldly Presence)",
           "source": "2024",
-          "description": "You know the Thaumaturgy cantrip. Charisma is your spellcasting ability for it.",
+          "description": "Thaumaturgy hünerini (Cantrip) bilirsiniz. Büyü yapma yeteneğiniz Karizma'dır.",
           "mechanicType": "active",
+          "level": 1,
           "grantsSpells": [
             {
               "spellId": "thaumaturgy",
@@ -867,17 +814,19 @@
       "subraces": [
         {
           "id": "abyssal-tiefling",
-          "name": "Abyssal Tiefling",
+          "name": "Uçurum Tiefling'i (Abyssal Tiefling)",
           "source": "2024",
-          "description": "Lineage linked to the Abyss. You have resistance to Poison damage. You know the Poison Spray cantrip. At 3rd level, you learn Ray of Sickness. At 5th level, you learn Hold Person.",
+          "description": "Soyunuz Uçurum'a (Abyss) dayanır. Zehir hasarına direnciniz vardır. Poison Spray, Ray of Sickness (3. sv) ve Hold Person (5. sv) büyülerini bilirsiniz.",
           "parentSpeciesId": "tiefling",
           "additionalTraits": [
             {
-              "id": "abyssal-legacy",
-              "name": "Abyssal Legacy",
+              "id": "abyssal-legacy-1",
+              "name": "Uçurum Mirası (Seviye 1)",
               "source": "2024",
-              "description": "You have resistance to Poison damage. You know spells.",
+              "description": "Zehir hasarına direnciniz vardır. Poison Spray hünerini (cantrip) bilirsiniz.",
               "mechanicType": "active",
+              "level": 1,
+              "requiredLevel": 1,
               "grantsResistance": [
                 "poison"
               ],
@@ -886,12 +835,32 @@
                   "spellId": "poison-spray",
                   "atLevel": 1,
                   "castingAbility": "CHA"
-                },
+                }
+              ]
+            },
+            {
+              "id": "abyssal-legacy-3",
+              "name": "Uçurum Mirası (Seviye 3)",
+              "source": "2024",
+              "description": "Ray of Sickness büyüsünü günde bir kez yapabilirsiniz.",
+              "mechanicType": "active",
+              "level": 3,
+              "grantsSpells": [
                 {
                   "spellId": "ray-of-sickness",
                   "atLevel": 3,
                   "castingAbility": "CHA"
-                },
+                }
+              ]
+            },
+            {
+              "id": "abyssal-legacy-5",
+              "name": "Uçurum Mirası (Seviye 5)",
+              "source": "2024",
+              "description": "Hold Person büyüsünü günde bir kez yapabilirsiniz.",
+              "mechanicType": "active",
+              "level": 5,
+              "grantsSpells": [
                 {
                   "spellId": "hold-person",
                   "atLevel": 5,
@@ -903,17 +872,19 @@
         },
         {
           "id": "chthonic-tiefling",
-          "name": "Chthonic Tiefling",
+          "name": "Yeraltı Tiefling'i (Chthonic Tiefling)",
           "source": "2024",
-          "description": "Lineage linked to Carceri or the Underworld. You have resistance to Necrotic damage. You know the Chill Touch cantrip. At 3rd level, you learn False Life. At 5th level, you learn Ray of Enfeeblement.",
+          "description": "Soyunuz Carceri veya Yeraltı Dünyası'na dayanır. Nekrotik hasara direnciniz vardır. Chill Touch, False Life (3. sv) ve Ray of Enfeeblement (5. sv) büyülerini bilirsiniz.",
           "parentSpeciesId": "tiefling",
           "additionalTraits": [
             {
-              "id": "chthonic-legacy",
-              "name": "Chthonic Legacy",
+              "id": "chthonic-legacy-1",
+              "name": "Yeraltı Mirası (Seviye 1)",
               "source": "2024",
-              "description": "You have resistance to Necrotic damage. You know spells.",
+              "description": "Nekrotik hasara direnciniz vardır. Chill Touch hünerini (cantrip) bilirsiniz.",
               "mechanicType": "active",
+              "level": 1,
+              "requiredLevel": 1,
               "grantsResistance": [
                 "necrotic"
               ],
@@ -922,12 +893,32 @@
                   "spellId": "chill-touch",
                   "atLevel": 1,
                   "castingAbility": "CHA"
-                },
+                }
+              ]
+            },
+            {
+              "id": "chthonic-legacy-3",
+              "name": "Yeraltı Mirası (Seviye 3)",
+              "source": "2024",
+              "description": "False Life büyüsünü günde bir kez yapabilirsiniz.",
+              "mechanicType": "active",
+              "level": 3,
+              "grantsSpells": [
                 {
                   "spellId": "false-life",
                   "atLevel": 3,
                   "castingAbility": "CHA"
-                },
+                }
+              ]
+            },
+            {
+              "id": "chthonic-legacy-5",
+              "name": "Yeraltı Mirası (Seviye 5)",
+              "source": "2024",
+              "description": "Ray of Enfeeblement büyüsünü günde bir kez yapabilirsiniz.",
+              "mechanicType": "active",
+              "level": 5,
+              "grantsSpells": [
                 {
                   "spellId": "ray-of-enfeeblement",
                   "atLevel": 5,
@@ -939,17 +930,19 @@
         },
         {
           "id": "infernal-tiefling",
-          "name": "Infernal Tiefling",
+          "name": "Cehennem Tiefling'i (Infernal Tiefling)",
           "source": "2024",
-          "description": "Lineage linked to the Nine Hells. You have resistance to Fire damage. You know the Fire Bolt cantrip. At 3rd level, you learn Hellish Rebuke. At 5th level, you learn Darkness.",
+          "description": "Soyunuz Dokuz Cehennem'e dayanır. Ateş hasarına direnciniz vardır. Fire Bolt, Hellish Rebuke (3. sv) ve Darkness (5. sv) büyülerini bilirsiniz.",
           "parentSpeciesId": "tiefling",
           "additionalTraits": [
             {
-              "id": "infernal-legacy",
-              "name": "Infernal Legacy",
+              "id": "infernal-legacy-1",
+              "name": "Cehennem Mirası (Seviye 1)",
               "source": "2024",
-              "description": "You have resistance to Fire damage. You know spells.",
+              "description": "Ateş hasarına direnciniz vardır. Fire Bolt hünerini (cantrip) bilirsiniz.",
               "mechanicType": "active",
+              "level": 1,
+              "requiredLevel": 1,
               "grantsResistance": [
                 "fire"
               ],
@@ -958,12 +951,32 @@
                   "spellId": "fire-bolt",
                   "atLevel": 1,
                   "castingAbility": "CHA"
-                },
+                }
+              ]
+            },
+            {
+              "id": "infernal-legacy-3",
+              "name": "Cehennem Mirası (Seviye 3)",
+              "source": "2024",
+              "description": "Hellish Rebuke büyüsünü günde bir kez yapabilirsiniz.",
+              "mechanicType": "active",
+              "level": 3,
+              "grantsSpells": [
                 {
                   "spellId": "hellish-rebuke",
                   "atLevel": 3,
                   "castingAbility": "CHA"
-                },
+                }
+              ]
+            },
+            {
+              "id": "infernal-legacy-5",
+              "name": "Cehennem Mirası (Seviye 5)",
+              "source": "2024",
+              "description": "Darkness büyüsünü günde bir kez yapabilirsiniz.",
+              "mechanicType": "active",
+              "level": 5,
+              "grantsSpells": [
                 {
                   "spellId": "darkness",
                   "atLevel": 5,
@@ -1020,6 +1033,7 @@
           "source": "2024",
           "description": "You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light.",
           "mechanicType": "passive",
+          "level": 1,
           "grantsDarkvision": 60
         },
         {
@@ -1028,6 +1042,7 @@
           "source": "2024",
           "description": "You have resistance to necrotic damage and radiant damage.",
           "mechanicType": "passive",
+          "level": 1,
           "grantsResistance": [
             "necrotic",
             "radiant"
@@ -1038,7 +1053,8 @@
           "name": "Healing Hands",
           "source": "2024",
           "description": "As an action, you can touch a creature and cause it to regain a number of hit points equal to your level. Once you use this trait, you can't use it again until you finish a long rest.",
-          "mechanicType": "active"
+          "mechanicType": "active",
+          "level": 1
         },
         {
           "id": "light-bearer",
@@ -1046,6 +1062,7 @@
           "source": "2024",
           "description": "You know the Light cantrip. Charisma is your spellcasting ability for it.",
           "mechanicType": "active",
+          "level": 1,
           "grantsSpells": [
             {
               "spellId": "light",
@@ -1056,10 +1073,11 @@
         },
         {
           "id": "celestial-revelation",
-          "name": "Celestial Revelation",
+          "name": "Göksel İfşa (Celestial Revelation)",
           "source": "2024",
-          "description": "At 3rd level, choose one revelation option (Necrotic Shroud, Radiant Consumption, or Radiant Soul). You can use it as a bonus action.",
-          "mechanicType": "choice"
+          "description": "3. seviyede bir Bonus Aksiyon olarak dönüşebilirsiniz (1 dakika sürer, Uzun Dinlenme ile yenilenir). Dönüşüm sırasında her turunuzda bir hedefe saldırı veya büyü ile hasar verdiğinizde Proficiency Bonusunuz kadar ekstra Nekrotik veya Radyant hasar (seçime bağlı) verirsiniz. Seçenekler: Heavenly Wings (Uçuş Hızı), Inner Radiance (Işık ve Radyant Hasar Alanı), Necrotic Shroud (Korkutma Etkisi).",
+          "mechanicType": "choice",
+          "level": 3
         }
       ],
       "creatureType": "humanoid",
@@ -1084,7 +1102,7 @@
       "source": "2024",
       "description": "Goliaths are distant descendants of giants. Each goliath bears the stamp of a specific kind of giant in their nature.",
       "size": "medium",
-      "speed": 30,
+      "speed": 35,
       "abilityScoreIncreases": [
         {
           "ability": "STR",
@@ -1103,18 +1121,28 @@
       ],
       "traits": [
         {
-          "id": "powerful-build-goliath",
-          "name": "Powerful Build",
+          "id": "large-form",
+          "name": "İri Form (Large Form)",
           "source": "2024",
-          "description": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.",
-          "mechanicType": "passive"
+          "description": "5. seviyeden itibaren, bir Bonus Aksiyon olarak 10 dakikalığına İri (Large) boyuta geçebilirsiniz. Bu sürede Güç (Strength) testlerinde avantaj kazanırsınız ve Hızınız 10 feet artar. Bu özelliği Uzun Dinlenme bitirene kadar tekrar kullanamazsınız.",
+          "mechanicType": "active",
+          "level": 1
+        },
+        {
+          "id": "powerful-build-goliath",
+          "name": "Güçlü Yapı (Powerful Build)",
+          "source": "2024",
+          "description": "Grappled (Kavraşmış) durumundan kurtulmak için yaptığınız yetenek testlerinde avantaja sahipsiniz. Ayrıca taşıma kapasitesi hesaplanırken bir boy büyük sayılırsınız.",
+          "mechanicType": "passive",
+          "level": 1
         },
         {
           "id": "mountain-born",
-          "name": "Mountain Born",
+          "name": "Dağ Doğumlu (Mountain Born)",
           "source": "2024",
-          "description": "You have resistance to cold damage.",
+          "description": "Soğuk hasarına karşı direnciniz vardır.",
           "mechanicType": "passive",
+          "level": 1,
           "grantsResistance": [
             "cold"
           ]
@@ -1133,7 +1161,8 @@
               "name": "Cloud Jaunt",
               "source": "2024",
               "description": "As a Bonus Action, you magically teleport up to 30 feet to an unoccupied space you can see. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.",
-              "mechanicType": "active"
+              "mechanicType": "active",
+              "level": 1
             }
           ]
         },
@@ -1149,7 +1178,8 @@
               "name": "Fire's Burn",
               "source": "2024",
               "description": "When you hit a target with an Attack Roll and deal damage to it, you can also deal 1d10 Fire damage to that target. You can use this trait a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.",
-              "mechanicType": "active"
+              "mechanicType": "active",
+              "level": 1
             }
           ]
         },
@@ -1165,7 +1195,8 @@
               "name": "Frost's Chill",
               "source": "2024",
               "description": "When you hit a target with an Attack Roll and deal damage to it, you can also deal 1d6 Cold damage and reduce the target's Speed by 10 feet until the start of your next turn. You can use this trait a number of times equal to your Proficiency Bonus.",
-              "mechanicType": "active"
+              "mechanicType": "active",
+              "level": 1
             }
           ]
         },
@@ -1181,7 +1212,8 @@
               "name": "Hill's Tumble",
               "source": "2024",
               "description": "When you hit a Large or smaller creature with an Attack Roll and deal damage to it, you can knock the target Prone. You can use this trait a number of times equal to your Proficiency Bonus.",
-              "mechanicType": "active"
+              "mechanicType": "active",
+              "level": 1
             }
           ]
         },
@@ -1197,7 +1229,8 @@
               "name": "Stone's Endurance",
               "source": "2024",
               "description": "When you take damage, you can use your Reaction to roll 1d12. Add your Constitution modifier to the number rolled and reduce the damage by that total. You can use this trait a number of times equal to your Proficiency Bonus.",
-              "mechanicType": "active"
+              "mechanicType": "active",
+              "level": 1
             }
           ]
         },
@@ -1213,7 +1246,8 @@
               "name": "Storm's Thunder",
               "source": "2024",
               "description": "When you take damage from a creature within 60 feet of you, you can use your Reaction to deal 1d8 Thunder damage to that creature. You can use this trait a number of times equal to your Proficiency Bonus.",
-              "mechanicType": "active"
+              "mechanicType": "active",
+              "level": 1
             }
           ]
         }
@@ -1264,28 +1298,32 @@
           "source": "2024",
           "description": "You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light.",
           "mechanicType": "passive",
+          "level": 1,
           "grantsDarkvision": 120
         },
         {
           "id": "adrenaline-rush",
-          "name": "Adrenaline Rush",
+          "name": "Adrenalin Patlaması (Adrenaline Rush)",
           "source": "2024",
-          "description": "You can take the Dash action as a Bonus Action. When you do so, you gain Temporary Hit Points equal to your Proficiency Bonus.",
-          "mechanicType": "active"
+          "description": "Bonus Aksiyon olarak Dash (Atılma) yapabilirsiniz. Bunu yaptığınızda Proficiency Bonusunuz kadar Geçici Can Puanı kazanırsınız. Kısa veya Uzun Dinlenme ile yenilenir.",
+          "mechanicType": "active",
+          "level": 1
         },
         {
           "id": "relentless-endurance-orc",
-          "name": "Relentless Endurance",
+          "name": "Amansız Dayanıklılık (Relentless Endurance)",
           "source": "2024",
-          "description": "When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 Hit Point instead. You can't use this trait again until you finish a Long Rest.",
-          "mechanicType": "active"
+          "description": "0 Can Puanına düştüğünüzde (fakat ölmediğinizde), bunun yerine 1 Can Puanına düşebilirsiniz. Uzun Dinlenme ile yenilenir.",
+          "mechanicType": "active",
+          "level": 1
         },
         {
           "id": "powerful-build-orc",
-          "name": "Powerful Build",
+          "name": "Güçlü Yapı (Powerful Build)",
           "source": "2024",
-          "description": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.",
-          "mechanicType": "passive"
+          "description": "Taşıma kapasitesi hesaplanırken bir boy büyük sayılırsınız ve Grappled durumundan kurtulmak için avantaj kazanırsınız.",
+          "mechanicType": "passive",
+          "level": 1
         }
       ],
       "creatureType": "humanoid",
@@ -1301,6 +1339,89 @@
           "Relentless",
           "Loyal",
           "Survivor"
+        ]
+      }
+    },
+    {
+      "id": "aasimar",
+      "name": "Aasimar",
+      "source": "2024",
+      "description": "Aasimarlar, Üst Düzlemler'den gelen bir ilahi kıvılcım taşıyan ölümlülerdir. İsimleri 'göksel' anlamına gelse de, her zaman iyilik meleği değildirler.",
+      "size": "medium",
+      "speed": 30,
+      "abilityScoreIncreases": [],
+      "ageMaturity": 18,
+      "ageLifespan": 160,
+      "languages": [
+        "Common"
+      ],
+      "traits": [
+        {
+          "id": "darkvision-aasimar",
+          "name": "Karanlık Görüş (Darkvision)",
+          "source": "2024",
+          "description": "60 feet menzilinde loş ışığı parlak ışık gibi, karanlığı ise loş ışık gibi görebilirsiniz.",
+          "mechanicType": "passive",
+          "level": 1,
+          "grantsDarkvision": 60
+        },
+        {
+          "id": "celestial-resistance",
+          "name": "İlahi Direnç (Celestial Resistance)",
+          "source": "2024",
+          "description": "Nekrotik (Necrotic) ve Radyant (Radiant) hasara karşı direnciniz vardır.",
+          "mechanicType": "passive",
+          "level": 1,
+          "grantsResistance": [
+            "necrotic",
+            "radiant"
+          ]
+        },
+        {
+          "id": "healing-hands",
+          "name": "Şifalı Eller (Healing Hands)",
+          "source": "2024",
+          "description": "Aksiyon olarak, dokunduğunuz bir yaratığı seviyeniz kadar d4 zarı atarak (örneğin 3. seviyede 3d4) iyileştirebilirsiniz. Uzun Dinlenme ile yenilenir.",
+          "mechanicType": "active",
+          "level": 1
+        },
+        {
+          "id": "light-bearer",
+          "name": "Işık Taşıyıcısı (Light Bearer)",
+          "source": "2024",
+          "description": "Light (Işık) hünerini (cantrip) bilirsiniz. Büyü yapma yeteneğiniz Karizma'dır.",
+          "mechanicType": "active",
+          "level": 1,
+          "grantsSpells": [
+            {
+              "spellId": "light",
+              "atLevel": 1,
+              "castingAbility": "CHA"
+            }
+          ]
+        },
+        {
+          "id": "celestial-revelation",
+          "name": "Göksel Vahiy (Celestial Revelation)",
+          "source": "2024",
+          "description": "3. seviyeye ulaştığınızda, Bonus Aksiyon olarak içinizdeki ilahi enerjiyi serbest bırakarak bir dönüşüm seçebilirsiniz: Heavenly Wings (Uçuş), Inner Radiance (Radyant hasar) veya Necrotic Shroud (Korkutma ve Nekrotik hasar). Bu dönüşüm 1 dakika sürer. Uzun Dinlenme ile yenilenir.",
+          "mechanicType": "choice",
+          "level": 3
+        }
+      ],
+      "creatureType": "humanoid",
+      "teachingNotes": {
+        "complexity": "intermediate",
+        "recommendedForNewPlayers": true,
+        "keyMechanics": [
+          "Healing Hands",
+          "Resistances",
+          "Transformation"
+        ],
+        "flavorHooks": [
+          "Divine Guide",
+          "Fallen Angel",
+          "Chosen One"
         ]
       }
     }

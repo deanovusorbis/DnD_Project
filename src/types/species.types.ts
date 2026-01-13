@@ -16,7 +16,8 @@ export interface AbilityScoreIncrease {
 
 export interface SpeciesTrait extends Identifiable, Describable {
 	// Trait mechanics
-	mechanicType: 'passive' | 'active' | 'resource';
+	mechanicType: 'passive' | 'active' | 'resource' | 'choice';
+	level: number; // Standardized level requirement (User Request)
 
 	// For active abilities
 	usesPerRest?: 'short' | 'long';

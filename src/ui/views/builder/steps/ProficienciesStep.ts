@@ -7,7 +7,9 @@ import {
 	translateSkillName,
 	skillDescriptions,
 	translateToolName,
-	getToolDescription
+	getToolDescription,
+	languageNames,
+	translateLanguageName
 } from '../../../../utils/translations/index.ts';
 import { SkillName, SKILL_ABILITY_MAP } from '../../../../types/core.types.ts';
 
@@ -51,6 +53,25 @@ export function renderProficienciesStep(parent: HTMLElement, onStepComplete: () 
 	// Initial selection from state or empty
 	let selectedSkills = cState.skillChoices || [];
 	let selectedTools = cState.toolChoices || [];
+	let selectedLanguages = cState.languageChoices || [];
+
+	// Language Calculation
+	const knownLanguages = new Set<string>();
+	knownLanguages.add('Common'); // Everyone knows Common (SRD 5.2)
+	species?.languages?.forEach(l => knownLanguages.add(l));
+
+	// Calculate Max Languages (Standard Rule: Common + 2 Choice + Species Extras)
+	// Base is 2 choices (Common is already fixed)
+	let maxLanguageChoices = 2;
+
+	// Add extra languages from species trait (e.g. Human)
+	if (species?.extraLanguages) {
+		maxLanguageChoices += species.extraLanguages;
+	}
+
+	// Filter inherent languages from choice list to prevent re-selecting
+	const availableLanguages = Object.keys(languageNames).filter(l => !knownLanguages.has(l));
+
 
 	const container = document.createElement('div');
 	container.style.display = 'flex';
@@ -77,7 +98,7 @@ export function renderProficienciesStep(parent: HTMLElement, onStepComplete: () 
 	const inherentCard = createCard({
 		title: 'Kazanılmış Yetenekler',
 		content: `
-			<p style="font-size: 0.85rem; color: var(--color-text-dim); margin-bottom: 12px;">Irkınız ve geçmişinizden gelen otomatik uzmanlıklar.</p>
+			<p style="font-size: 0.85rem; color: var(--color-text-dim); margin-bottom: 12px;">Türünüz ve geçmişinizden gelen otomatik uzmanlıklar.</p>
 			
 			<div style="margin-bottom: 12px;">
 				<strong style="display: block; font-size: 0.8rem; color: var(--color-text-secondary); margin-bottom: 4px;">Beceriler (Skills)</strong>
@@ -263,6 +284,82 @@ export function renderProficienciesStep(parent: HTMLElement, onStepComplete: () 
 		updateToolCard();
 	}
 
+	// Language Choice Card
+	const langCard = document.createElement('div');
+	langCard.className = 'card';
+	langCard.style.padding = 'var(--space-md)';
+	langCard.style.background = 'var(--color-bg-secondary)';
+	langCard.style.borderRadius = 'var(--radius-md)';
+	langCard.style.border = '1px solid var(--color-border)';
+	langCard.style.marginTop = 'var(--space-md)';
+
+	const updateLangCard = () => {
+		const remaining = maxLanguageChoices - selectedLanguages.length;
+		langCard.innerHTML = `
+			<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+				<h4 style="margin: 0; color: var(--color-accent-blue);">Lisanlar (Diller)</h4>
+				<span style="font-size: 0.85rem; padding: 2px 8px; border-radius: 4px; background: ${remaining === 0 ? 'var(--color-success)' : 'var(--color-bg-tertiary)'}; color: white;">
+					${remaining > 0 ? `${remaining} seçim kaldı` : 'Tamamlandı'}
+				</span>
+			</div>
+			
+			<div style="margin-bottom: 12px;">
+				<strong style="display: block; font-size: 0.8rem; color: var(--color-text-secondary); margin-bottom: 4px;">Bildikleriniz</strong>
+				<div style="display: flex; gap: 8px; flex-wrap: wrap;">
+					${Array.from(knownLanguages).map(l => `
+						<span style="background: rgba(255,255,255,0.1); padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; color: var(--color-text-dim);">
+							${translateLanguageName(l)}
+						</span>
+					`).join('')}
+				</div>
+			</div>
+
+			<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 8px;">
+				${availableLanguages.map(lang => {
+			const isSelected = selectedLanguages.includes(lang);
+			const isDisabled = !isSelected && selectedLanguages.length >= maxLanguageChoices;
+
+			return `
+						<label style="
+							display: flex; 
+							align-items: center;
+							gap: 8px; 
+							padding: 8px; 
+							border-radius: var(--radius-sm); 
+							border: 1px solid ${isSelected ? 'var(--color-accent-blue)' : 'var(--color-border)'}; 
+							background: ${isSelected ? 'var(--color-bg-tertiary)' : 'transparent'}; 
+							cursor: ${isDisabled ? 'not-allowed' : 'pointer'}; 
+							opacity: ${isDisabled ? '0.5' : '1'};
+							transition: all 0.2s;
+						">
+							<input type="checkbox" value="${lang}" ${isSelected ? 'checked' : ''} ${isDisabled ? 'disabled' : ''} style="cursor: pointer;">
+							<span style="font-size: 0.9rem; font-weight: 500; color: ${isSelected ? 'var(--color-accent-blue)' : 'var(--color-text-primary)'}">
+								${translateLanguageName(lang)}
+							</span>
+						</label>
+					`;
+		}).join('')}
+			</div>
+		`;
+
+		// Events
+		langCard.querySelectorAll('input').forEach(input => {
+			input.onchange = (e) => {
+				const val = (e.target as HTMLInputElement).value;
+				if ((e.target as HTMLInputElement).checked) {
+					if (selectedLanguages.length < maxLanguageChoices) selectedLanguages.push(val);
+				} else {
+					selectedLanguages = selectedLanguages.filter(l => l !== val);
+				}
+				updateLangCard();
+				updateNextButton();
+			};
+		});
+	};
+
+	container.appendChild(langCard);
+	updateLangCard();
+
 	skillsGrid.appendChild(choiceCard);
 	container.appendChild(skillsGrid);
 
@@ -286,7 +383,8 @@ export function renderProficienciesStep(parent: HTMLElement, onStepComplete: () 
 	const updateNextButton = () => {
 		const skillsComplete = selectedSkills.length >= classSkillCount;
 		const toolsComplete = toolOptions.length === 0 || selectedTools.length >= toolCount;
-		nextBtn.disabled = !skillsComplete || !toolsComplete
+		const languagesComplete = selectedLanguages.length >= maxLanguageChoices;
+		nextBtn.disabled = !skillsComplete || !toolsComplete || !languagesComplete;
 	};
 
 	const nextBtn = createButton({
@@ -297,7 +395,8 @@ export function renderProficienciesStep(parent: HTMLElement, onStepComplete: () 
 			useGameStore.getState().updateCharacterCreation({
 				step: 'equipment',
 				skillChoices: selectedSkills,
-				toolChoices: selectedTools
+				toolChoices: selectedTools,
+				languageChoices: selectedLanguages
 			});
 			onStepComplete();
 		}
