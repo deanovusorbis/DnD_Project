@@ -7,42 +7,47 @@
       "id": "human",
       "name": "Human",
       "source": "srd",
-      "description": "Humans are the most adaptable and ambitious people among the common races. Whatever drives them, humans are the innovators, the achievers, and the pioneers of the worlds.",
+      "description": "İnsanlar, ortak ırklar arasında en uyumlu ve hırslı olanlardır. Onları neyin motive ettiğine bakılmaksızın, insanlar dünyaların yenilikçileri, başaranları ve öncüleridir.",
       "size": "medium",
       "speed": 30,
       "ageMaturity": 18,
       "ageLifespan": 80,
-      "abilityScoreIncreases": [
-        {
-          "ability": "STR",
-          "bonus": 1
-        },
-        {
-          "ability": "DEX",
-          "bonus": 1
-        },
-        {
-          "ability": "CON",
-          "bonus": 1
-        },
-        {
-          "ability": "INT",
-          "bonus": 1
-        },
-        {
-          "ability": "WIS",
-          "bonus": 1
-        },
-        {
-          "ability": "CHA",
-          "bonus": 1
-        }
-      ],
+      "abilityScoreIncreases": [],
       "languages": [
         "Common"
       ],
       "extraLanguages": 1,
-      "traits": [],
+      "traits": [
+        {
+          "id": "resourceful",
+          "name": "Becerikli (Resourceful)",
+          "source": "2024",
+          "description": "Her Uzun Dinlenme bitirdiğinizde Kahramanca İlham (Heroic Inspiration) kazanırsınız.",
+          "mechanicType": "passive"
+        },
+        {
+          "id": "skillful",
+          "name": "Yetenekli (Skillful)",
+          "source": "2024",
+          "description": "Seçtiğiniz bir yetenekte ustalık (proficiency) kazanırsınız.",
+          "mechanicType": "choice",
+          "grantsProficiency": {
+            "skills": [
+              "choice"
+            ]
+          }
+        },
+        {
+          "id": "versatile",
+          "name": "Çok Yönlü (Versatile)",
+          "source": "2024",
+          "description": "Seçtiğiniz bir Köken Hüneri (Origin Feat) kazanırsınız. Becerikli (Skilled) hüneri önerilir.",
+          "mechanicType": "choice",
+          "grantsFeat": [
+            "choice"
+          ]
+        }
+      ],
       "creatureType": "humanoid",
       "teachingNotes": {
         "complexity": "beginner",
@@ -480,7 +485,7 @@
       "id": "dragonborn",
       "name": "Dragonborn",
       "source": "srd",
-      "description": "Born of dragons, dragonborn walk proudly through a world that greets them with fearful incomprehension. Shaped by draconic gods or the dragons themselves, dragonborn originally hatched from dragon eggs.",
+      "description": "Ejderhalardan doğan ejderhasoylu, kendilerini korku dolu bir anlayışsızlıkla karşılayan bir dünyada gururla yürür. Ejderha tanrıları veya ejderhaların kendileri tarafından şekillendirilen ejderhasoylular, başlangıçta ejderha yumurtalarından çıkmışlardır.",
       "size": "medium",
       "speed": 30,
       "abilityScoreIncreases": [
@@ -527,14 +532,14 @@
           "id": "black-dragonborn",
           "name": "Black Dragonborn",
           "source": "2024",
-          "description": "Ancestry: Acid damage, 5 by 30 ft. Line (Dex. save).",
+          "description": "Soy: Asit hasarı, 5'e 30 ft. Çizgi (Çvk. kurtarma zarı).",
           "parentSpeciesId": "dragonborn",
           "additionalTraits": [
             {
               "id": "acid-breath-line",
-              "name": "Acid Breath",
+              "name": "Asit Nefesi",
               "source": "2024",
-              "description": "5 by 30 ft. line (Dex. save), 1d10 acid damage.",
+              "description": "5'e 30 ft. çizgi (Çvk. kurtarma zarı), 1d10 asit hasarı.",
               "mechanicType": "active"
             }
           ]
@@ -543,14 +548,14 @@
           "id": "blue-dragonborn",
           "name": "Blue Dragonborn",
           "source": "2024",
-          "description": "Ancestry: Lightning damage, 5 by 30 ft. Line (Dex. save).",
+          "description": "Soy: Yıldırım hasarı, 5'e 30 ft. Çizgi (Çvk. kurtarma zarı).",
           "parentSpeciesId": "dragonborn",
           "additionalTraits": [
             {
               "id": "lightning-breath-line",
-              "name": "Lightning Breath",
+              "name": "Yıldırım Nefesi",
               "source": "2024",
-              "description": "5 by 30 ft. line (Dex. save), 1d10 lightning damage.",
+              "description": "5'e 30 ft. çizgi (Çvk. kurtarma zarı), 1d10 yıldırım hasarı.",
               "mechanicType": "active"
             }
           ]
@@ -559,14 +564,14 @@
           "id": "brass-dragonborn",
           "name": "Brass Dragonborn",
           "source": "2024",
-          "description": "Ancestry: Fire damage, 5 by 30 ft. Line (Dex. save).",
+          "description": "Soy: Ateş hasarı, 5'e 30 ft. Çizgi (Çvk. kurtarma zarı).",
           "parentSpeciesId": "dragonborn",
           "additionalTraits": [
             {
               "id": "fire-breath-line",
-              "name": "Fire Breath",
+              "name": "Ateş Nefesi",
               "source": "2024",
-              "description": "5 by 30 ft. line (Dex. save), 1d10 fire damage.",
+              "description": "5'e 30 ft. çizgi (Çvk. kurtarma zarı), 1d10 ateş hasarı.",
               "mechanicType": "active"
             }
           ]
@@ -575,14 +580,14 @@
           "id": "bronze-dragonborn",
           "name": "Bronze Dragonborn",
           "source": "2024",
-          "description": "Ancestry: Lightning damage, 5 by 30 ft. Line (Dex. save).",
+          "description": "Soy: Yıldırım hasarı, 5'e 30 ft. Çizgi (Çvk. kurtarma zarı).",
           "parentSpeciesId": "dragonborn",
           "additionalTraits": [
             {
               "id": "lightning-breath-line-bronze",
-              "name": "Lightning Breath",
+              "name": "Yıldırım Nefesi",
               "source": "2024",
-              "description": "5 by 30 ft. line (Dex. save), 1d10 lightning damage.",
+              "description": "5'e 30 ft. çizgi (Çvk. kurtarma zarı), 1d10 yıldırım hasarı.",
               "mechanicType": "active"
             }
           ]
@@ -591,14 +596,14 @@
           "id": "copper-dragonborn",
           "name": "Copper Dragonborn",
           "source": "2024",
-          "description": "Ancestry: Acid damage, 5 by 30 ft. Line (Dex. save).",
+          "description": "Soy: Asit hasarı, 5'e 30 ft. Çizgi (Çvk. kurtarma zarı).",
           "parentSpeciesId": "dragonborn",
           "additionalTraits": [
             {
               "id": "acid-breath-line-copper",
-              "name": "Acid Breath",
+              "name": "Asit Nefesi",
               "source": "2024",
-              "description": "5 by 30 ft. line (Dex. save), 1d10 acid damage.",
+              "description": "5'e 30 ft. çizgi (Çvk. kurtarma zarı), 1d10 asit hasarı.",
               "mechanicType": "active"
             }
           ]
@@ -607,14 +612,14 @@
           "id": "gold-dragonborn",
           "name": "Gold Dragonborn",
           "source": "2024",
-          "description": "Ancestry: Fire damage, 15 ft. Cone (Dex. save).",
+          "description": "Soy: Ateş hasarı, 15 ft. Koni (Çvk. kurtarma zarı).",
           "parentSpeciesId": "dragonborn",
           "additionalTraits": [
             {
               "id": "fire-breath-cone-gold",
-              "name": "Fire Breath",
+              "name": "Ateş Nefesi",
               "source": "2024",
-              "description": "15 ft. cone (Dex. save), 1d10 fire damage.",
+              "description": "15 ft. koni (Çvk. kurtarma zarı), 1d10 ateş hasarı.",
               "mechanicType": "active"
             }
           ]
@@ -623,14 +628,14 @@
           "id": "green-dragonborn",
           "name": "Green Dragonborn",
           "source": "2024",
-          "description": "Ancestry: Poison damage, 15 ft. Cone (Con. save).",
+          "description": "Soy: Zehir hasarı, 15 ft. Koni (Day. kurtarma zarı).",
           "parentSpeciesId": "dragonborn",
           "additionalTraits": [
             {
               "id": "poison-breath-cone",
-              "name": "Poison Breath",
+              "name": "Zehir Nefesi",
               "source": "2024",
-              "description": "15 ft. cone (Con. save), 1d10 poison damage.",
+              "description": "15 ft. koni (Day. kurtarma zarı), 1d10 zehir hasarı.",
               "mechanicType": "active"
             }
           ]
@@ -639,14 +644,14 @@
           "id": "red-dragonborn",
           "name": "Red Dragonborn",
           "source": "2024",
-          "description": "Ancestry: Fire damage, 15 ft. Cone (Dex. save).",
+          "description": "Soy: Ateş hasarı, 15 ft. Koni (Çvk. kurtarma zarı).",
           "parentSpeciesId": "dragonborn",
           "additionalTraits": [
             {
               "id": "fire-breath-cone-red",
-              "name": "Fire Breath",
+              "name": "Ateş Nefesi",
               "source": "2024",
-              "description": "15 ft. cone (Dex. save), 1d10 fire damage.",
+              "description": "15 ft. koni (Çvk. kurtarma zarı), 1d10 ateş hasarı.",
               "mechanicType": "active"
             }
           ]
@@ -655,14 +660,14 @@
           "id": "silver-dragonborn",
           "name": "Silver Dragonborn",
           "source": "2024",
-          "description": "Ancestry: Cold damage, 15 ft. Cone (Con. save).",
+          "description": "Soy: Soğuk hasarı, 15 ft. Koni (Day. kurtarma zarı).",
           "parentSpeciesId": "dragonborn",
           "additionalTraits": [
             {
               "id": "cold-breath-cone-silver",
-              "name": "Cold Breath",
+              "name": "Soğuk Nefesi",
               "source": "2024",
-              "description": "15 ft. cone (Con. save), 1d10 cold damage.",
+              "description": "15 ft. koni (Day. kurtarma zarı), 1d10 soğuk hasarı.",
               "mechanicType": "active"
             }
           ]
@@ -671,14 +676,14 @@
           "id": "white-dragonborn",
           "name": "White Dragonborn",
           "source": "2024",
-          "description": "Ancestry: Cold damage, 15 ft. Cone (Con. save).",
+          "description": "Soy: Soğuk hasarı, 15 ft. Koni (Day. kurtarma zarı).",
           "parentSpeciesId": "dragonborn",
           "additionalTraits": [
             {
               "id": "cold-breath-cone-white",
-              "name": "Cold Breath",
+              "name": "Soğuk Nefesi",
               "source": "2024",
-              "description": "15 ft. cone (Con. save), 1d10 cold damage.",
+              "description": "15 ft. koni (Day. kurtarma zarı), 1d10 soğuk hasarı.",
               "mechanicType": "active"
             }
           ]
@@ -707,16 +712,7 @@
       "description": "A gnome's energy and enthusiasm for living shines through every inch of his or her tiny body. Gnomes average slightly over 3 feet tall and weigh 40 to 45 pounds.",
       "size": "small",
       "speed": 25,
-      "abilityScoreIncreases": [
-        {
-          "ability": "INT",
-          "bonus": 2
-        },
-        {
-          "ability": "choice",
-          "bonus": 1
-        }
-      ],
+      "abilityScoreIncreases": [],
       "ageMaturity": 40,
       "ageLifespan": 500,
       "languages": [
@@ -726,17 +722,17 @@
       "traits": [
         {
           "id": "darkvision-gnome",
-          "name": "Darkvision",
+          "name": "Karanlık Görüş (Darkvision)",
           "source": "2024",
-          "description": "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light.",
+          "description": "60 feet menzilinde loş ışığı parlak ışık gibi, karanlığı ise loş ışık gibi görebilirsiniz.",
           "mechanicType": "passive",
           "grantsDarkvision": 60
         },
         {
           "id": "gnome-cunning",
-          "name": "Gnome Cunning",
+          "name": "Gnome Kurnazlığı (Gnome Cunning)",
           "source": "2024",
-          "description": "You have advantage on Intelligence, Wisdom, and Charisma saving throws.",
+          "description": "Zeka (Intelligence), Bilgelik (Wisdom) ve Karizma (Charisma) kurtarma atışlarında avantaja sahipsiniz.",
           "mechanicType": "passive",
           "grantsAdvantage": {
             "savingThrows": [
@@ -750,16 +746,16 @@
       "subraces": [
         {
           "id": "forest-gnome",
-          "name": "Forest Gnome",
+          "name": "Orman Gnome'u (Forest Gnome)",
           "source": "2024",
-          "description": "Gnomish Lineage: You have a natural knack for illusion and inherent quickness and stealth.",
+          "description": "Gnome Soyu: İllüzyonlar için doğal bir yeteneğe, ayrıca doğuştan gelen bir çabukluğa ve gizliliğe sahipsiniz.",
           "parentSpeciesId": "gnome",
           "additionalTraits": [
             {
               "id": "gnomish-lineage-forest",
-              "name": "Gnomish Lineage (Forest)",
+              "name": "Gnome Soyu (Orman)",
               "source": "2024",
-              "description": "You know the Minor Illusion cantrip. You can also cast Speak with Animals (targeting Small or smaller beasts) at will. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this species).",
+              "description": "Minor Illusion hünerini (cantrip) bilirsiniz. Ayrıca Speak with Animals büyüsünü her zaman hazırlarsınız ve büyü yuvası harcamadan Proficiency Bonusunuz kadar kullanabilirsiniz. Bu büyüleri kullanım için Zeka, Bilgelik veya Karizma özelliğini seçebilirsiniz.",
               "mechanicType": "active",
               "grantsSpells": [
                 {
@@ -778,16 +774,16 @@
         },
         {
           "id": "rock-gnome",
-          "name": "Rock Gnome",
+          "name": "Kaya Gnome'u (Rock Gnome)",
           "source": "2024",
-          "description": "Gnomish Lineage: You have a natural inventiveness and hardiness beyond that of other gnomes.",
+          "description": "Gnome Soyu: Doğal bir yaratıcılığa ve diğer Gnomelardan daha fazla dayanıklılığa sahipsiniz.",
           "parentSpeciesId": "gnome",
           "additionalTraits": [
             {
               "id": "gnomish-lineage-rock",
-              "name": "Gnomish Lineage (Rock)",
+              "name": "Gnome Soyu (Kaya)",
               "source": "2024",
-              "description": "You know the Mending and Prestidigitation cantrips. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this species).",
+              "description": "Mending ve Prestidigitation hünerlerini bilirsiniz. Ayrıca Prestidigitation kullanarak minik saat mekanizmalı cihazlar (oyuncak, ateş başlatıcı, müzik kutusu) üretebilirsiniz (10 dk).",
               "mechanicType": "active",
               "grantsSpells": [
                 {

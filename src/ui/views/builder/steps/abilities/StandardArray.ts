@@ -33,10 +33,14 @@ export function renderStandardArray(parent: HTMLElement, onUpdate: () => void): 
 	`;
 
 	let bonuses: Partial<Record<AbilityName, number>> = {};
+
+	// 1. Background Bonuses
 	const bgAssignments = state.characterCreation.backgroundAbilityAssignments;
 	if (bgAssignments) {
 		bgAssignments.forEach(a => bonuses[a.ability] = (bonuses[a.ability] || 0) + a.bonus);
 	}
+
+
 
 	abilities.forEach(ability => {
 		const assignedValue = currentAssignments[ability];

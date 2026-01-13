@@ -4,10 +4,13 @@
  */
 
 import { useGameStore } from '../../engine/core/store.ts';
+import { registry } from '../../engine/core/registry.ts';
 import { createProgressBar } from '../components/ProgressBar.ts';
 import {
 	getStepLabel
 } from '../../utils/translations/index.ts';
+import { CharacterManager } from '../../engine/character/character-manager.ts';
+import { buildCharacter } from '../../entities/character/factory.ts';
 
 // Step Implementations
 import { renderSpeciesStep } from './builder/steps/SpeciesStep.ts';
@@ -21,9 +24,11 @@ import { renderReviewStep } from './builder/steps/ReviewStep.ts';
 
 export class CharacterBuilderView {
 	private container: HTMLElement;
+	private onNavigate?: (view: string) => void;
 
-	constructor(container: HTMLElement) {
+	constructor(container: HTMLElement, onNavigate?: (view: string) => void) {
 		this.container = container;
+		this.onNavigate = onNavigate;
 	}
 
 	public render(): void {
@@ -34,10 +39,30 @@ export class CharacterBuilderView {
 
 		const header = document.createElement('div');
 		header.className = 'view-header';
-		header.innerHTML = `
-            <h2>Karakter Oluşturucu</h2>
-            <p>D&D dünyasına ilk adımını at. Kendi kahramanını tasarla.</p>
-        `;
+
+		const headerContent = document.createElement('div');
+		headerContent.style.display = 'flex';
+		headerContent.style.justifyContent = 'space-between';
+		headerContent.style.alignItems = 'flex-start';
+
+		const titleSection = document.createElement('div');
+		titleSection.innerHTML = `
+			<h2>Karakter Oluşturucu</h2>
+			<p>D&D dünyasına ilk adımını at. Kendi kahramanını tasarla.</p>
+		`;
+
+		headerContent.appendChild(titleSection);
+
+		if (this.onNavigate) {
+			const backBtn = document.createElement('button');
+			backBtn.innerHTML = '← Karakter Listesi';
+			backBtn.className = 'btn btn-secondary';
+			backBtn.style.padding = '8px 16px';
+			backBtn.onclick = () => this.onNavigate!('list');
+			headerContent.appendChild(backBtn);
+		}
+
+		header.appendChild(headerContent);
 		this.container.appendChild(header);
 
 		// Progress Stepper with Navigation
@@ -141,52 +166,57 @@ export class CharacterBuilderView {
 		const state = useGameStore.getState();
 		const cState = state.characterCreation;
 
-		// Build character object
-		const character = {
-			id: `char-${Date.now()}`,
-			name: cState.characterName || 'Adsız Kahraman',
-			playerName: cState.playerName,
-			speciesId: cState.selectedSpecies,
-			subspeciesId: cState.selectedSubspecies,
-			classId: cState.selectedClass,
-			subclassId: cState.selectedSubclass,
-			backgroundId: cState.selectedBackground,
-			abilityScores: cState.abilityScores,
-			alignment: cState.alignment,
-			appearance: cState.appearance,
-			backstory: cState.backstory,
-			createdAt: new Date().toISOString()
-		};
+		// Get required data
+		const species = registry.getAllSpecies().find(s => s.id === cState.selectedSpecies);
+		const characterClass = registry.getAllClasses().find(c => c.id === cState.selectedClass);
+		const background = registry.getAllBackgrounds().find(b => b.id === cState.selectedBackground);
 
-		// Save to localStorage
-		const savedCharacters = JSON.parse(localStorage.getItem('dnd-characters') || '[]');
-		savedCharacters.push(character);
-		localStorage.setItem('dnd-characters', JSON.stringify(savedCharacters));
+		if (!species || !characterClass) {
+			state.addNotification('Karakter oluşturulamadı: Irk veya sınıf bulunamadı.', 'error');
+			return;
+		}
 
-		// Show success notification
-		state.addNotification(`${character.name} başarıyla kaydedildi!`, 'success');
+		try {
+			// Build full Character object using factory
+			const character = buildCharacter(cState, species, characterClass, background, 1);
 
-		// Reset creation state
-		useGameStore.getState().updateCharacterCreation({
-			step: 'species',
-			selectedSpecies: undefined,
-			selectedSubspecies: undefined,
-			selectedClass: undefined,
-			selectedSubclass: undefined,
-			selectedBackground: undefined,
-			abilityScores: undefined,
-			abilityAssignments: undefined,
-			abilityMethod: undefined,
-			startingGold: undefined,
-			characterName: undefined,
-			playerName: undefined,
-			alignment: undefined,
-			appearance: undefined,
-			backstory: undefined,
-			isComplete: false
-		});
+			// Save using CharacterManager
+			CharacterManager.saveCharacter(character);
 
-		// Go back to character list or home (for now just refresh)
-		this.render();
+			// Show success notification
+			state.addNotification(`${character.name} başarıyla kaydedildi!`, 'success');
+
+			// Reset creation state
+			useGameStore.getState().updateCharacterCreation({
+				step: 'species',
+				selectedSpecies: undefined,
+				selectedSubspecies: undefined,
+				selectedClass: undefined,
+				selectedSubclass: undefined,
+				selectedBackground: undefined,
+				abilityScores: undefined,
+				abilityAssignments: undefined,
+				abilityMethod: undefined,
+				startingGold: undefined,
+				skillChoices: undefined,
+				toolChoices: undefined,
+				characterName: undefined,
+				playerName: undefined,
+				alignment: undefined,
+				appearance: undefined,
+				backstory: undefined,
+				isComplete: false
+			});
+
+			// Refresh view or navigate
+			if (this.onNavigate) {
+				this.onNavigate('list');
+			} else {
+				this.render();
+			}
+		} catch (error) {
+			console.error('Character save error:', error);
+			state.addNotification('Karakter kaydedilemedi. Lütfen tüm alanları doldurun.', 'error');
+		}
 	}
 }

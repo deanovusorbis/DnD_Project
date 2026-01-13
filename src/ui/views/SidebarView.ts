@@ -6,6 +6,7 @@
 import { useGameStore } from '../../engine/core/store.ts';
 import { createProgressBar } from '../components/ProgressBar.ts';
 import { createButton } from '../components/Button.ts';
+import { translateClassName } from '../../utils/translations/index.ts';
 
 export class SidebarView {
 	private container: HTMLElement;
@@ -31,7 +32,7 @@ export class SidebarView {
 			charSection.innerHTML = `
                 <h3 class="ability-name">${character.name}</h3>
                 <div style="font-size: 0.8rem; color: var(--color-text-secondary); margin-bottom: 10px;">
-                    Seviye ${character.progression.totalLevel} ${character.progression.classes[0]?.classId || ''}
+                    Seviye ${character.progression?.totalLevel || 1} ${translateClassName(character.progression?.classes?.[0]?.classId || '') || 'Sınıfsız'}
                 </div>
             `;
 
@@ -54,6 +55,14 @@ export class SidebarView {
 		navSection.style.flexDirection = 'column';
 		navSection.style.gap = '8px';
 		navSection.style.marginBottom = '30px';
+
+
+		navSection.appendChild(createButton({
+			label: 'Karakterlerim',
+			icon: '👥',
+			onClick: () => this.onNavigate('list'),
+			className: 'nav-btn'
+		}));
 
 		navSection.appendChild(createButton({
 			label: 'Karakter Oluşturucu',

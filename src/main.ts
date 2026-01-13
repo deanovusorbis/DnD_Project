@@ -14,17 +14,22 @@ import { SidebarView } from './ui/views/SidebarView.ts';
 import { CharacterBuilderView } from './ui/views/CharacterBuilderView.ts';
 import { CombatView } from './ui/views/CombatView.ts';
 import { TraitsView } from './ui/views/TraitsView.ts';
+import { CharacterListView } from './ui/views/CharacterListView.ts';
+import { CharacterSheetView } from './ui/views/CharacterSheetView.ts';
+import { CharacterManager } from './engine/character/character-manager.ts';
 
 class App {
   private layout: MainLayout;
   private engine: GameEngine;
-  private currentView: 'builder' | 'combat' = 'builder';
+  private currentView: 'builder' | 'combat' | 'list' | 'sheet' = 'list';
 
   private views: {
     sidebar: SidebarView;
     builder: CharacterBuilderView;
     combat: CombatView;
     traits: TraitsView;
+    list: CharacterListView;
+    sheet: CharacterSheetView | null;
   };
 
   constructor() {
@@ -47,16 +52,29 @@ class App {
 
     this.views = {
       sidebar: new SidebarView(sidebarElement, (view) => this.navigateTo(view as any)),
-      builder: new CharacterBuilderView(mainElement),
+
+      builder: new CharacterBuilderView(mainElement, (view) => this.navigateTo(view as any)),
+
       combat: new CombatView(mainElement, this.engine),
-      traits: new TraitsView(traitsElement)
+
+      traits: new TraitsView(traitsElement),
+
+      list: new CharacterListView(
+        mainElement,
+        (charId) => this.loadCharacter(charId),
+        () => this.createCharacter()
+      ),
+
+      sheet: null // Created dynamically when needed
     };
 
     // 4. Setup State Subscriptions
     this.setupSubscriptions();
 
     // 5. Initial Navigation
-    this.navigateTo('builder');
+    // Check if we have saved characters
+    const hasCharacters = CharacterManager.getAllCharacters().length > 0;
+    this.navigateTo(hasCharacters ? 'list' : 'builder');
   }
 
   private setupSubscriptions(): void {
@@ -64,23 +82,63 @@ class App {
     useGameStore.subscribe((_state) => {
       this.views.sidebar.render();
       this.views.traits.render(); // Update traits when state changes
+
       // If the current view needs refreshing on state change, do it here
       if (this.currentView === 'builder') this.views.builder.render();
+      if (this.currentView === 'list') this.views.list.render();
+      if (this.currentView === 'sheet' && this.views.sheet) this.views.sheet.render();
     });
   }
 
-  private navigateTo(view: 'builder' | 'combat'): void {
+  private navigateTo(view: 'builder' | 'combat' | 'list' | 'sheet'): void {
     this.currentView = view;
+    // Clear main element (handled by views mostly, but good practice if needed)
 
     if (view === 'builder') {
       this.views.builder.render();
     } else if (view === 'combat') {
       this.views.combat.render();
+    } else if (view === 'list') {
+      this.views.list.render();
+    } else if (view === 'sheet' && this.views.sheet) {
+      this.views.sheet.render();
     }
 
     // Highlight active nav in sidebar (sidebar rerender will handle this)
     this.views.sidebar.render();
     this.views.traits.render(); // Update traits panel
+  }
+
+  private loadCharacter(id: string): void {
+    const char = CharacterManager.loadCharacter(id);
+    if (char) {
+      useGameStore.getState().setActiveCharacter(char);
+
+      // Create a new CharacterSheetView instance
+      const mainElement = this.layout.getMain();
+      if (mainElement) {
+        this.views.sheet = new CharacterSheetView(
+          mainElement,
+          char,
+          () => this.navigateTo('list') // Back to list callback
+        );
+        this.navigateTo('sheet');
+      }
+
+      useGameStore.getState().addNotification(`${char.name} yüklendi!`, 'success');
+    }
+  }
+
+  private createCharacter(): void {
+    // Reset state logic is already handled in CharacterBuilderView usually, 
+    // but good to ensure we start fresh.
+    useGameStore.getState().updateCharacterCreation({
+      step: 'species',
+      isComplete: false,
+      characterName: undefined,
+      // ... clear other fields if needed
+    });
+    this.navigateTo('builder');
   }
 }
 

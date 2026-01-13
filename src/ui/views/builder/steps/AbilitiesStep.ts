@@ -90,7 +90,7 @@ export function renderAbilityFooter(parent: HTMLElement, isComplete: boolean, on
 		size: 'md',
 		disabled: !isComplete,
 		onClick: () => {
-			useGameStore.getState().updateCharacterCreation({ step: 'equipment' });
+			useGameStore.getState().updateCharacterCreation({ step: 'proficiencies' });
 			onStepComplete();
 		}
 	});
