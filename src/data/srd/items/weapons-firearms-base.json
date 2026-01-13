@@ -1,0 +1,1190 @@
+[
+  {
+    "id": "antimatter-rifle-of-warning",
+    "name": "Uyarıcı Antimadde Tüfeği",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 10,
+    "description": "As long as this weapon is within your reach and you are attuned to it, you and allies within 30 feet of you gain the following benefits. Alarm. The weapon magically awakens each subject who is sleeping naturally when combat begins. This benefit doesn't wake a subject from magically induced sleep. Supernatural Readiness. Each subject has Advantage on its Initiative rolls. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "6d8",
+      "damageType": "necrotic",
+      "properties": [
+        "Ammunition (120/360 ft.; Energy Cell)",
+        "Reload (2 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "antimatter-rifle",
+    "name": "Antimadde Tüfeği",
+    "type": "Silah",
+    "rarity": "Yaygın",
+    "weight": 10,
+    "description": "Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "6d8",
+      "damageType": "necrotic",
+      "properties": [
+        "Ammunition (120/360 ft.; Energy Cell)",
+        "Reload (2 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "automatic-rifle-of-warning",
+    "name": "Uyarıcı Otomatik Tüfek",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 8,
+    "description": "As long as this weapon is within your reach and you are attuned to it, you and allies within 30 feet of you gain the following benefits. Alarm. The weapon magically awakens each subject who is sleeping naturally when combat begins. This benefit doesn't wake a subject from magically induced sleep. Supernatural Readiness. Each subject has Advantage on its Initiative rolls. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Burst Fire. As an action, you can expend 10 pieces of a Burst Fire weapon's ammunition to spray shots in a 10-foot Cube within the weapon's normal range. Each creature in that area must succeed on a DC 15 Dexterity saving throw or take damage. Roll the weapon's damage once, and apply it to each creature that failed the save. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d8",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (80/240 ft.; Firearm Bullet)",
+        "Burst Fire",
+        "Reload (30 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "automatic-rifle",
+    "name": "Otomatik Tüfek",
+    "type": "Silah",
+    "rarity": "Yaygın",
+    "weight": 8,
+    "description": "Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Burst Fire. As an action, you can expend 10 pieces of a Burst Fire weapon's ammunition to spray shots in a 10-foot Cube within the weapon's normal range. Each creature in that area must succeed on a DC 15 Dexterity saving throw or take damage. Roll the weapon's damage once, and apply it to each creature that failed the save. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d8",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (80/240 ft.; Firearm Bullet)",
+        "Burst Fire",
+        "Reload (30 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "giant-slayer-antimatter-rifle",
+    "name": "Giant Slayer Antimatter Rifle",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 10,
+    "description": "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.When you hit a Giant with this weapon, the Giant takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or have the Prone condition. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "6d8",
+      "damageType": "necrotic",
+      "properties": [
+        "Ammunition (120/360 ft.; Energy Cell)",
+        "Reload (2 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "giant-slayer-automatic-rifle",
+    "name": "Giant Slayer Automatic Rifle",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 8,
+    "description": "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.When you hit a Giant with this weapon, the Giant takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or have the Prone condition. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Burst Fire. As an action, you can expend 10 pieces of a Burst Fire weapon's ammunition to spray shots in a 10-foot Cube within the weapon's normal range. Each creature in that area must succeed on a DC 15 Dexterity saving throw or take damage. Roll the weapon's damage once, and apply it to each creature that failed the save. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d8",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (80/240 ft.; Firearm Bullet)",
+        "Burst Fire",
+        "Reload (30 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "giant-slayer-hunting-rifle",
+    "name": "Giant Slayer Hunting Rifle",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 8,
+    "description": "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.When you hit a Giant with this weapon, the Giant takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or have the Prone condition. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d10",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (80/240 ft.; Firearm Bullet)",
+        "Reload (5 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "giant-slayer-laser-pistol",
+    "name": "Giant Slayer Laser Pistol",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 2,
+    "description": "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.When you hit a Giant with this weapon, the Giant takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or have the Prone condition. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "3d6",
+      "damageType": "radiant",
+      "properties": [
+        "Ammunition (40/120 ft.; Energy Cell)",
+        "Reload (50 shots)"
+      ]
+    }
+  },
+  {
+    "id": "giant-slayer-laser-rifle",
+    "name": "Giant Slayer Laser Rifle",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 7,
+    "description": "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.When you hit a Giant with this weapon, the Giant takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or have the Prone condition. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "3d8",
+      "damageType": "radiant",
+      "properties": [
+        "Ammunition (100/300 ft.; Energy Cell)",
+        "Reload (30 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "giant-slayer-musket",
+    "name": "Giant Slayer Musket",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 10,
+    "description": "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.When you hit a Giant with this weapon, the Giant takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or have the Prone condition. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost. Loading. You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d12",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (Range 40/120 ft.; Firearm Bullet)",
+        "Loading",
+        "Two‑Handed"
+      ],
+      "range": "Ammunition (Range 40/120 ft.; Firearm Bullet)"
+    }
+  },
+  {
+    "id": "giant-slayer-pistol",
+    "name": "Giant Slayer Pistol",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 3,
+    "description": "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.When you hit a Giant with this weapon, the Giant takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or have the Prone condition. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost. Loading. You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (Range 30/90 ft.; Firearm Bullet)",
+        "Loading"
+      ],
+      "range": "Ammunition (Range 30/90 ft.; Firearm Bullet)"
+    }
+  },
+  {
+    "id": "giant-slayer-semiautomatic-pistol",
+    "name": "Giant Slayer Semiautomatic Pistol",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 3,
+    "description": "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.When you hit a Giant with this weapon, the Giant takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or have the Prone condition. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d6",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (50/150 ft.; Firearm Bullet)",
+        "Reload (15 shots)"
+      ]
+    }
+  },
+  {
+    "id": "giant-slayer-shotgun",
+    "name": "Giant Slayer Shotgun",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 7,
+    "description": "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.When you hit a Giant with this weapon, the Giant takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or have the Prone condition. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d8",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (30/90 ft.; Firearm Bullet)",
+        "Reload (2 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "hunting-rifle-of-warning",
+    "name": "Uyarıcı Av Tüfeği",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 8,
+    "description": "As long as this weapon is within your reach and you are attuned to it, you and allies within 30 feet of you gain the following benefits. Alarm. The weapon magically awakens each subject who is sleeping naturally when combat begins. This benefit doesn't wake a subject from magically induced sleep. Supernatural Readiness. Each subject has Advantage on its Initiative rolls. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d10",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (80/240 ft.; Firearm Bullet)",
+        "Reload (5 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "hunting-rifle",
+    "name": "Av Tüfeği",
+    "type": "Silah",
+    "rarity": "Yaygın",
+    "weight": 8,
+    "description": "Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d10",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (80/240 ft.; Firearm Bullet)",
+        "Reload (5 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "laser-pistol-of-warning",
+    "name": "Uyarıcı Lazer Tabancası",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 2,
+    "description": "As long as this weapon is within your reach and you are attuned to it, you and allies within 30 feet of you gain the following benefits. Alarm. The weapon magically awakens each subject who is sleeping naturally when combat begins. This benefit doesn't wake a subject from magically induced sleep. Supernatural Readiness. Each subject has Advantage on its Initiative rolls. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "3d6",
+      "damageType": "radiant",
+      "properties": [
+        "Ammunition (40/120 ft.; Energy Cell)",
+        "Reload (50 shots)"
+      ]
+    }
+  },
+  {
+    "id": "laser-pistol",
+    "name": "Lazer Tabancası",
+    "type": "Silah",
+    "rarity": "Yaygın",
+    "weight": 2,
+    "description": "Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "3d6",
+      "damageType": "radiant",
+      "properties": [
+        "Ammunition (40/120 ft.; Energy Cell)",
+        "Reload (50 shots)"
+      ]
+    }
+  },
+  {
+    "id": "laser-rifle-of-warning",
+    "name": "Uyarıcı Lazer Tüfeği",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 7,
+    "description": "As long as this weapon is within your reach and you are attuned to it, you and allies within 30 feet of you gain the following benefits. Alarm. The weapon magically awakens each subject who is sleeping naturally when combat begins. This benefit doesn't wake a subject from magically induced sleep. Supernatural Readiness. Each subject has Advantage on its Initiative rolls. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "3d8",
+      "damageType": "radiant",
+      "properties": [
+        "Ammunition (100/300 ft.; Energy Cell)",
+        "Reload (30 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "laser-rifle",
+    "name": "Lazer Tüfeği",
+    "type": "Silah",
+    "rarity": "Yaygın",
+    "weight": 7,
+    "description": "Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "3d8",
+      "damageType": "radiant",
+      "properties": [
+        "Ammunition (100/300 ft.; Energy Cell)",
+        "Reload (30 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "musket-of-warning",
+    "name": "Uyarıcı Misket Tüfeği",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 10,
+    "description": "As long as this weapon is within your reach and you are attuned to it, you and allies within 30 feet of you gain the following benefits. Alarm. The weapon magically awakens each subject who is sleeping naturally when combat begins. This benefit doesn't wake a subject from magically induced sleep. Supernatural Readiness. Each subject has Advantage on its Initiative rolls. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost. Loading. You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d12",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (Range 40/120 ft.; Firearm Bullet)",
+        "Loading",
+        "Two‑Handed"
+      ],
+      "range": "Ammunition (Range 40/120 ft.; Firearm Bullet)"
+    }
+  },
+  {
+    "id": "musket",
+    "name": "Misket Tüfeği",
+    "type": "Silah",
+    "rarity": "Yaygın",
+    "weight": 10,
+    "description": "Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost. Loading. You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 500,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d12",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (Range 40/120 ft.; Firearm Bullet)",
+        "Loading",
+        "Two‑Handed"
+      ],
+      "range": "Ammunition (Range 40/120 ft.; Firearm Bullet)"
+    }
+  },
+  {
+    "id": "nine-lives-stealer-antimatter-rifle",
+    "name": "Nine Lives Stealer Antimatter Rifle",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 10,
+    "description": "You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon. Life Stealing. The weapon has 1d8 + 1 charges. When you attack a creature that has fewer than 100 Hit Points with this weapon and roll a 20 on the d20 for the attack roll, the creature must succeed on a DC 15 Constitution saving throw or be slain instantly as the sword tears its life force from its body. Constructs and Undead succeed on the save automatically. The weapon loses 1 charge if the creature is slain. When the weapon has no charges remaining, it loses this property. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "6d8",
+      "damageType": "necrotic",
+      "properties": [
+        "Ammunition (120/360 ft.; Energy Cell)",
+        "Reload (2 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "nine-lives-stealer-automatic-rifle",
+    "name": "Nine Lives Stealer Automatic Rifle",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 8,
+    "description": "You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon. Life Stealing. The weapon has 1d8 + 1 charges. When you attack a creature that has fewer than 100 Hit Points with this weapon and roll a 20 on the d20 for the attack roll, the creature must succeed on a DC 15 Constitution saving throw or be slain instantly as the sword tears its life force from its body. Constructs and Undead succeed on the save automatically. The weapon loses 1 charge if the creature is slain. When the weapon has no charges remaining, it loses this property. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Burst Fire. As an action, you can expend 10 pieces of a Burst Fire weapon's ammunition to spray shots in a 10-foot Cube within the weapon's normal range. Each creature in that area must succeed on a DC 15 Dexterity saving throw or take damage. Roll the weapon's damage once, and apply it to each creature that failed the save. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d8",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (80/240 ft.; Firearm Bullet)",
+        "Burst Fire",
+        "Reload (30 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "nine-lives-stealer-hunting-rifle",
+    "name": "Nine Lives Stealer Hunting Rifle",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 8,
+    "description": "You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon. Life Stealing. The weapon has 1d8 + 1 charges. When you attack a creature that has fewer than 100 Hit Points with this weapon and roll a 20 on the d20 for the attack roll, the creature must succeed on a DC 15 Constitution saving throw or be slain instantly as the sword tears its life force from its body. Constructs and Undead succeed on the save automatically. The weapon loses 1 charge if the creature is slain. When the weapon has no charges remaining, it loses this property. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d10",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (80/240 ft.; Firearm Bullet)",
+        "Reload (5 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "nine-lives-stealer-laser-pistol",
+    "name": "Nine Lives Stealer Laser Pistol",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 2,
+    "description": "You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon. Life Stealing. The weapon has 1d8 + 1 charges. When you attack a creature that has fewer than 100 Hit Points with this weapon and roll a 20 on the d20 for the attack roll, the creature must succeed on a DC 15 Constitution saving throw or be slain instantly as the sword tears its life force from its body. Constructs and Undead succeed on the save automatically. The weapon loses 1 charge if the creature is slain. When the weapon has no charges remaining, it loses this property. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "3d6",
+      "damageType": "radiant",
+      "properties": [
+        "Ammunition (40/120 ft.; Energy Cell)",
+        "Reload (50 shots)"
+      ]
+    }
+  },
+  {
+    "id": "nine-lives-stealer-laser-rifle",
+    "name": "Nine Lives Stealer Laser Rifle",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 7,
+    "description": "You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon. Life Stealing. The weapon has 1d8 + 1 charges. When you attack a creature that has fewer than 100 Hit Points with this weapon and roll a 20 on the d20 for the attack roll, the creature must succeed on a DC 15 Constitution saving throw or be slain instantly as the sword tears its life force from its body. Constructs and Undead succeed on the save automatically. The weapon loses 1 charge if the creature is slain. When the weapon has no charges remaining, it loses this property. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "3d8",
+      "damageType": "radiant",
+      "properties": [
+        "Ammunition (100/300 ft.; Energy Cell)",
+        "Reload (30 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "nine-lives-stealer-musket",
+    "name": "Nine Lives Stealer Musket",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 10,
+    "description": "You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon. Life Stealing. The weapon has 1d8 + 1 charges. When you attack a creature that has fewer than 100 Hit Points with this weapon and roll a 20 on the d20 for the attack roll, the creature must succeed on a DC 15 Constitution saving throw or be slain instantly as the sword tears its life force from its body. Constructs and Undead succeed on the save automatically. The weapon loses 1 charge if the creature is slain. When the weapon has no charges remaining, it loses this property. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost. Loading. You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d12",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (Range 40/120 ft.; Firearm Bullet)",
+        "Loading",
+        "Two‑Handed"
+      ],
+      "range": "Ammunition (Range 40/120 ft.; Firearm Bullet)"
+    }
+  },
+  {
+    "id": "nine-lives-stealer-pistol",
+    "name": "Nine Lives Stealer Pistol",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 3,
+    "description": "You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon. Life Stealing. The weapon has 1d8 + 1 charges. When you attack a creature that has fewer than 100 Hit Points with this weapon and roll a 20 on the d20 for the attack roll, the creature must succeed on a DC 15 Constitution saving throw or be slain instantly as the sword tears its life force from its body. Constructs and Undead succeed on the save automatically. The weapon loses 1 charge if the creature is slain. When the weapon has no charges remaining, it loses this property. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost. Loading. You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (Range 30/90 ft.; Firearm Bullet)",
+        "Loading"
+      ],
+      "range": "Ammunition (Range 30/90 ft.; Firearm Bullet)"
+    }
+  },
+  {
+    "id": "nine-lives-stealer-semiautomatic-pistol",
+    "name": "Nine Lives Stealer Semiautomatic Pistol",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 3,
+    "description": "You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon. Life Stealing. The weapon has 1d8 + 1 charges. When you attack a creature that has fewer than 100 Hit Points with this weapon and roll a 20 on the d20 for the attack roll, the creature must succeed on a DC 15 Constitution saving throw or be slain instantly as the sword tears its life force from its body. Constructs and Undead succeed on the save automatically. The weapon loses 1 charge if the creature is slain. When the weapon has no charges remaining, it loses this property. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d6",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (50/150 ft.; Firearm Bullet)",
+        "Reload (15 shots)"
+      ]
+    }
+  },
+  {
+    "id": "nine-lives-stealer-shotgun",
+    "name": "Nine Lives Stealer Shotgun",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 7,
+    "description": "You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon. Life Stealing. The weapon has 1d8 + 1 charges. When you attack a creature that has fewer than 100 Hit Points with this weapon and roll a 20 on the d20 for the attack roll, the creature must succeed on a DC 15 Constitution saving throw or be slain instantly as the sword tears its life force from its body. Constructs and Undead succeed on the save automatically. The weapon loses 1 charge if the creature is slain. When the weapon has no charges remaining, it loses this property. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d8",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (30/90 ft.; Firearm Bullet)",
+        "Reload (2 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "pistol-of-warning",
+    "name": "Uyarıcı Tabanca",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 3,
+    "description": "As long as this weapon is within your reach and you are attuned to it, you and allies within 30 feet of you gain the following benefits. Alarm. The weapon magically awakens each subject who is sleeping naturally when combat begins. This benefit doesn't wake a subject from magically induced sleep. Supernatural Readiness. Each subject has Advantage on its Initiative rolls. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost. Loading. You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (Range 30/90 ft.; Firearm Bullet)",
+        "Loading"
+      ],
+      "range": "Ammunition (Range 30/90 ft.; Firearm Bullet)"
+    }
+  },
+  {
+    "id": "pistol",
+    "name": "Tabanca",
+    "type": "Silah",
+    "rarity": "Yaygın",
+    "weight": 3,
+    "description": "Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost. Loading. You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (Range 30/90 ft.; Firearm Bullet)",
+        "Loading"
+      ],
+      "range": "Ammunition (Range 30/90 ft.; Firearm Bullet)"
+    }
+  },
+  {
+    "id": "semiautomatic-pistol-of-warning",
+    "name": "Uyarıcı Yarı Otomatik Tabanca",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 3,
+    "description": "As long as this weapon is within your reach and you are attuned to it, you and allies within 30 feet of you gain the following benefits. Alarm. The weapon magically awakens each subject who is sleeping naturally when combat begins. This benefit doesn't wake a subject from magically induced sleep. Supernatural Readiness. Each subject has Advantage on its Initiative rolls. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d6",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (50/150 ft.; Firearm Bullet)",
+        "Reload (15 shots)"
+      ]
+    }
+  },
+  {
+    "id": "semiautomatic-pistol",
+    "name": "Yarı Otomatik Tabanca",
+    "type": "Silah",
+    "rarity": "Yaygın",
+    "weight": 3,
+    "description": "Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d6",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (50/150 ft.; Firearm Bullet)",
+        "Reload (15 shots)"
+      ]
+    }
+  },
+  {
+    "id": "shotgun-of-warning",
+    "name": "Uyarıcı Pompalı Tüfek",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 7,
+    "description": "As long as this weapon is within your reach and you are attuned to it, you and allies within 30 feet of you gain the following benefits. Alarm. The weapon magically awakens each subject who is sleeping naturally when combat begins. This benefit doesn't wake a subject from magically induced sleep. Supernatural Readiness. Each subject has Advantage on its Initiative rolls. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d8",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (30/90 ft.; Firearm Bullet)",
+        "Reload (2 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "shotgun",
+    "name": "Pompalı Tüfek",
+    "type": "Silah",
+    "rarity": "Yaygın",
+    "weight": 7,
+    "description": "Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d8",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (30/90 ft.; Firearm Bullet)",
+        "Reload (2 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "silvered-antimatter-rifle",
+    "name": "Gümüşlenmiş Antimadde Tüfeği",
+    "type": "Silah",
+    "rarity": "Yaygın",
+    "weight": 10,
+    "description": "An alchemical process has bonded silver to this magic weapon. When you score a Critical Hit with it against a creature that is shape-shifted, the weapon deals one additional die of damage. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "6d8",
+      "damageType": "necrotic",
+      "properties": [
+        "Ammunition (120/360 ft.; Energy Cell)",
+        "Reload (2 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "silvered-automatic-rifle",
+    "name": "Gümüşlenmiş Otomatik Tüfek",
+    "type": "Silah",
+    "rarity": "Yaygın",
+    "weight": 8,
+    "description": "An alchemical process has bonded silver to this magic weapon. When you score a Critical Hit with it against a creature that is shape-shifted, the weapon deals one additional die of damage. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Burst Fire. As an action, you can expend 10 pieces of a Burst Fire weapon's ammunition to spray shots in a 10-foot Cube within the weapon's normal range. Each creature in that area must succeed on a DC 15 Dexterity saving throw or take damage. Roll the weapon's damage once, and apply it to each creature that failed the save. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d8",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (80/240 ft.; Firearm Bullet)",
+        "Burst Fire",
+        "Reload (30 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "silvered-hunting-rifle",
+    "name": "Gümüşlenmiş Av Tüfeği",
+    "type": "Silah",
+    "rarity": "Yaygın",
+    "weight": 8,
+    "description": "An alchemical process has bonded silver to this magic weapon. When you score a Critical Hit with it against a creature that is shape-shifted, the weapon deals one additional die of damage. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d10",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (80/240 ft.; Firearm Bullet)",
+        "Reload (5 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "silvered-laser-pistol",
+    "name": "Gümüşlenmiş Lazer Tabancası",
+    "type": "Silah",
+    "rarity": "Yaygın",
+    "weight": 2,
+    "description": "An alchemical process has bonded silver to this magic weapon. When you score a Critical Hit with it against a creature that is shape-shifted, the weapon deals one additional die of damage. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "3d6",
+      "damageType": "radiant",
+      "properties": [
+        "Ammunition (40/120 ft.; Energy Cell)",
+        "Reload (50 shots)"
+      ]
+    }
+  },
+  {
+    "id": "silvered-laser-rifle",
+    "name": "Gümüşlenmiş Lazer Tüfeği",
+    "type": "Silah",
+    "rarity": "Yaygın",
+    "weight": 7,
+    "description": "An alchemical process has bonded silver to this magic weapon. When you score a Critical Hit with it against a creature that is shape-shifted, the weapon deals one additional die of damage. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "3d8",
+      "damageType": "radiant",
+      "properties": [
+        "Ammunition (100/300 ft.; Energy Cell)",
+        "Reload (30 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "silvered-musket",
+    "name": "Gümüşlenmiş Misket Tüfeği",
+    "type": "Silah",
+    "rarity": "Yaygın",
+    "weight": 10,
+    "description": "An alchemical process has bonded silver to this magic weapon. When you score a Critical Hit with it against a creature that is shape-shifted, the weapon deals one additional die of damage. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost. Loading. You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d12",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (Range 40/120 ft.; Firearm Bullet)",
+        "Loading",
+        "Two‑Handed"
+      ],
+      "range": "Ammunition (Range 40/120 ft.; Firearm Bullet)"
+    }
+  },
+  {
+    "id": "silvered-pistol",
+    "name": "Gümüşlenmiş Tabanca",
+    "type": "Silah",
+    "rarity": "Yaygın",
+    "weight": 3,
+    "description": "An alchemical process has bonded silver to this magic weapon. When you score a Critical Hit with it against a creature that is shape-shifted, the weapon deals one additional die of damage. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost. Loading. You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (Range 30/90 ft.; Firearm Bullet)",
+        "Loading"
+      ],
+      "range": "Ammunition (Range 30/90 ft.; Firearm Bullet)"
+    }
+  },
+  {
+    "id": "silvered-semiautomatic-pistol",
+    "name": "Gümüşlenmiş Yarı Otomatik Tabanca",
+    "type": "Silah",
+    "rarity": "Yaygın",
+    "weight": 3,
+    "description": "An alchemical process has bonded silver to this magic weapon. When you score a Critical Hit with it against a creature that is shape-shifted, the weapon deals one additional die of damage. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d6",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (50/150 ft.; Firearm Bullet)",
+        "Reload (15 shots)"
+      ]
+    }
+  },
+  {
+    "id": "silvered-shotgun",
+    "name": "Gümüşlenmiş Pompalı Tüfek",
+    "type": "Silah",
+    "rarity": "Yaygın",
+    "weight": 7,
+    "description": "An alchemical process has bonded silver to this magic weapon. When you score a Critical Hit with it against a creature that is shape-shifted, the weapon deals one additional die of damage. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d8",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (30/90 ft.; Firearm Bullet)",
+        "Reload (2 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "vicious-antimatter-rifle",
+    "name": "Acımasız Antimadde Tüfeği",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 10,
+    "description": "This magic weapon deals an extra 2d6 damage to any creature it hits. This extra damage is of the same type as the weapon's normal damage. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "6d8",
+      "damageType": "necrotic",
+      "properties": [
+        "Ammunition (120/360 ft.; Energy Cell)",
+        "Reload (2 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "vicious-automatic-rifle",
+    "name": "Acımasız Otomatik Tüfek",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 8,
+    "description": "This magic weapon deals an extra 2d6 damage to any creature it hits. This extra damage is of the same type as the weapon's normal damage. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Burst Fire. As an action, you can expend 10 pieces of a Burst Fire weapon's ammunition to spray shots in a 10-foot Cube within the weapon's normal range. Each creature in that area must succeed on a DC 15 Dexterity saving throw or take damage. Roll the weapon's damage once, and apply it to each creature that failed the save. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d8",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (80/240 ft.; Firearm Bullet)",
+        "Burst Fire",
+        "Reload (30 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "vicious-hunting-rifle",
+    "name": "Acımasız Av Tüfeği",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 8,
+    "description": "This magic weapon deals an extra 2d6 damage to any creature it hits. This extra damage is of the same type as the weapon's normal damage. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d10",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (80/240 ft.; Firearm Bullet)",
+        "Reload (5 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "vicious-laser-pistol",
+    "name": "Acımasız Lazer Tabancası",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 2,
+    "description": "This magic weapon deals an extra 2d6 damage to any creature it hits. This extra damage is of the same type as the weapon's normal damage. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "3d6",
+      "damageType": "radiant",
+      "properties": [
+        "Ammunition (40/120 ft.; Energy Cell)",
+        "Reload (50 shots)"
+      ]
+    }
+  },
+  {
+    "id": "vicious-laser-rifle",
+    "name": "Acımasız Lazer Tüfeği",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 7,
+    "description": "This magic weapon deals an extra 2d6 damage to any creature it hits. This extra damage is of the same type as the weapon's normal damage. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "3d8",
+      "damageType": "radiant",
+      "properties": [
+        "Ammunition (100/300 ft.; Energy Cell)",
+        "Reload (30 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "vicious-musket",
+    "name": "Acımasız Misket Tüfeği",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 10,
+    "description": "This magic weapon deals an extra 2d6 damage to any creature it hits. This extra damage is of the same type as the weapon's normal damage. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost. Loading. You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d12",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (Range 40/120 ft.; Firearm Bullet)",
+        "Loading",
+        "Two‑Handed"
+      ],
+      "range": "Ammunition (Range 40/120 ft.; Firearm Bullet)"
+    }
+  },
+  {
+    "id": "vicious-pistol",
+    "name": "Acımasız Tabanca",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 3,
+    "description": "This magic weapon deals an extra 2d6 damage to any creature it hits. This extra damage is of the same type as the weapon's normal damage. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost. Loading. You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (Range 30/90 ft.; Firearm Bullet)",
+        "Loading"
+      ],
+      "range": "Ammunition (Range 30/90 ft.; Firearm Bullet)"
+    }
+  },
+  {
+    "id": "vicious-semiautomatic-pistol",
+    "name": "Acımasız Yarı Otomatik Tabanca",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 3,
+    "description": "This magic weapon deals an extra 2d6 damage to any creature it hits. This extra damage is of the same type as the weapon's normal damage. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d6",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (50/150 ft.; Firearm Bullet)",
+        "Reload (15 shots)"
+      ]
+    }
+  },
+  {
+    "id": "vicious-shotgun",
+    "name": "Acımasız Pompalı Tüfek",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 7,
+    "description": "This magic weapon deals an extra 2d6 damage to any creature it hits. This extra damage is of the same type as the weapon's normal damage. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d8",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (30/90 ft.; Firearm Bullet)",
+        "Reload (2 shots)",
+        "Two‑Handed"
+      ]
+    }
+  }
+]

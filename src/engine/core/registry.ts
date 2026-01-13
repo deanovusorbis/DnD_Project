@@ -10,10 +10,10 @@ import { Species } from '../../types/species.types';
 import { BackgroundData } from '../../types/background.types';
 
 // JSON Data Imports
-import itemsData from '../../data/srd/items.json';
-import spellsData from '../../data/srd/spells.json';
-import classesData from '../../data/srd/classes.json';
-import speciesData from '../../data/srd/species.json';
+import { items as itemsData } from '../../data/srd/items/index';
+import { spells as spellsData } from '../../data/srd/spells/index';
+import { classes as classesData } from '../../data/srd/classes/index';
+import { species as speciesData } from '../../data/srd/species/index';
 import backgroundsData from '../../data/srd/backgrounds.json';
 
 class SRDRegistry {
@@ -34,23 +34,23 @@ class SRDRegistry {
 		if (this.initialized) return;
 
 		// Load Items (with normalization)
-		(itemsData.items as any[]).forEach(raw => {
+		(itemsData as any[]).forEach(raw => {
 			const item = this.normalizeItem(raw);
 			this.items.set(item.id, item);
 		});
 
 		// Load Spells
-		(spellsData.spells as any[]).forEach(raw => {
+		(spellsData as any[]).forEach(raw => {
 			this.spells.set(raw.id, raw as Spell);
 		});
 
 		// Load Classes
-		(classesData.classes as any[]).forEach(raw => {
+		(classesData as any[]).forEach(raw => {
 			this.classes.set(raw.id, raw as Class);
 		});
 
 		// Load Species
-		(speciesData.species as any[]).forEach(raw => {
+		(speciesData as any[]).forEach(raw => {
 			this.species.set(raw.id, raw as Species);
 		});
 

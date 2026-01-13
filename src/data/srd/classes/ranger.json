@@ -1,0 +1,202 @@
+{
+  "id": "ranger",
+  "name": "Ranger",
+  "source": "srd",
+  "description": "A warrior who combats threats on the edges of civilization.",
+  "hitDie": "d10",
+  "primaryAbility": [
+    "DEX",
+    "WIS"
+  ],
+  "abilityPriority": {
+    "primary": [
+      "DEX",
+      "WIS"
+    ],
+    "secondary": [
+      "CON",
+      "STR"
+    ],
+    "dump": [
+      "INT",
+      "CHA"
+    ]
+  },
+  "proficiencies": {
+    "armor": [
+      "light",
+      "medium",
+      "shield"
+    ],
+    "weapons": [
+      "simple",
+      "martial"
+    ],
+    "tools": [],
+    "savingThrows": [
+      "STR",
+      "DEX"
+    ],
+    "skills": {
+      "choices": [
+        "animal_handling",
+        "athletics",
+        "insight",
+        "investigation",
+        "nature",
+        "perception",
+        "stealth",
+        "survival"
+      ],
+      "count": 3
+    }
+  },
+  "startingEquipment": {
+    "guaranteed": [
+      {
+        "itemId": "leather_armor",
+        "quantity": 1
+      },
+      {
+        "itemId": "explorers_pack",
+        "quantity": 1
+      }
+    ],
+    "choices": []
+  },
+  "spellcasting": {
+    "hasSpellcasting": true,
+    "spellcastingAbility": "WIS",
+    "spellcastingType": "half",
+    "ritualCasting": false
+  },
+  "features": [
+    {
+      "id": "favored-enemy",
+      "name": "Favored Enemy",
+      "source": "srd",
+      "description": "You have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.",
+      "level": 1,
+      "featureType": "choice"
+    },
+    {
+      "id": "natural-explorer",
+      "name": "Natural Explorer",
+      "source": "srd",
+      "description": "You are particularly familiar with one type of natural environment.",
+      "level": 1,
+      "featureType": "choice"
+    },
+    {
+      "id": "fighting-style-ranger",
+      "name": "Fighting Style",
+      "source": "srd",
+      "description": "You adopt a particular style of fighting as your specialty.",
+      "level": 2,
+      "featureType": "choice"
+    },
+    {
+      "id": "extra-attack-ranger",
+      "name": "Extra Attack",
+      "source": "srd",
+      "description": "You can attack twice when you take the Attack action.",
+      "level": 5,
+      "featureType": "passive"
+    }
+  ],
+  "subclasses": [
+    {
+      "id": "hunter",
+      "name": "Hunter",
+      "source": "srd",
+      "description": "Emulating the Hunter archetype means accepting your place as a bulwark between civilization and the terrors of the wilderness.",
+      "parentClassId": "ranger",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "hunters-prey",
+          "name": "Hunter's Prey",
+          "source": "srd",
+          "description": "You gain one of the following features of your choice.",
+          "level": 3,
+          "featureType": "choice"
+        }
+      ]
+    },
+    {
+      "id": "beast-master",
+      "name": "Beast Master",
+      "source": "user",
+      "description": "The Beast Master archetype embodies a friendship between the civilized races and the beasts of the world.",
+      "parentClassId": "ranger",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "primal-companion",
+          "name": "Primal Companion",
+          "description": "You can call on the primal beast spirits of nature to fight alongside you.",
+          "level": 3,
+          "featureType": "active"
+        }
+      ]
+    },
+    {
+      "id": "fey-wanderer",
+      "name": "Fey Wanderer",
+      "source": "user",
+      "description": "Fey Wanderer rangers guard the border between the Feywild and the Material Plane.",
+      "parentClassId": "ranger",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "dreadful-strikes",
+          "name": "Dreadful Strikes",
+          "description": "You can augment your weapon strikes with mind-scarring magic.",
+          "level": 3,
+          "featureType": "passive"
+        }
+      ]
+    },
+    {
+      "id": "gloom-stalker",
+      "name": "Gloom Stalker",
+      "source": "user",
+      "description": "Gloom Stalkers are at home in the darkest places: deep under the earth, in gloomy alleyways, and wherever else light is unknown.",
+      "parentClassId": "ranger",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "dread-ambusher",
+          "name": "Dread Ambusher",
+          "description": "You master the art of the ambush. You gain a bonus to initiative rolls and extra damage on your first turn.",
+          "level": 3,
+          "featureType": "passive"
+        }
+      ]
+    }
+  ],
+  "subclassName": "Ranger Archetype",
+  "subclassLevel": 3,
+  "asiLevels": [
+    4,
+    8,
+    12,
+    16,
+    19
+  ],
+  "teachingNotes": {
+    "complexity": "intermediate",
+    "recommendedForNewPlayers": false,
+    "playstyleKeywords": [
+      "Nature warrior",
+      "Tracker",
+      "Archer",
+      "Two-weapon"
+    ],
+    "roleInParty": [
+      "Striker",
+      "Scout",
+      "Utility"
+    ]
+  }
+}

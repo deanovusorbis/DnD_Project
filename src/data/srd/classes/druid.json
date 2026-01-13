@@ -1,0 +1,343 @@
+{
+  "id": "druid",
+  "name": "Druid",
+  "source": "srd",
+  "description": "A priest of the Old Faith, wielding the powers of nature and adopting animal forms.",
+  "hitDie": "d8",
+  "primaryAbility": [
+    "WIS"
+  ],
+  "abilityPriority": {
+    "primary": [
+      "WIS",
+      "CON"
+    ],
+    "secondary": [
+      "DEX",
+      "INT"
+    ],
+    "dump": [
+      "STR",
+      "CHA"
+    ]
+  },
+  "proficiencies": {
+    "armor": [
+      "light",
+      "medium",
+      "shield"
+    ],
+    "weapons": [
+      "club",
+      "dagger",
+      "dart",
+      "javelin",
+      "mace",
+      "quarterstaff",
+      "scimitar",
+      "sickle",
+      "sling",
+      "spear"
+    ],
+    "tools": [
+      "herbalism_kit"
+    ],
+    "savingThrows": [
+      "INT",
+      "WIS"
+    ],
+    "skills": {
+      "choices": [
+        "arcana",
+        "animal_handling",
+        "insight",
+        "medicine",
+        "nature",
+        "perception",
+        "religion",
+        "survival"
+      ],
+      "count": 2
+    }
+  },
+  "startingEquipment": {
+    "guaranteed": [
+      {
+        "itemId": "leather_armor",
+        "quantity": 1
+      },
+      {
+        "itemId": "explorers_pack",
+        "quantity": 1
+      }
+    ],
+    "choices": []
+  },
+  "spellcasting": {
+    "hasSpellcasting": true,
+    "spellcastingAbility": "WIS",
+    "spellcastingType": "full",
+    "cantripsKnown": [
+      2,
+      2,
+      2,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "ritualCasting": true
+  },
+  "features": [
+    {
+      "id": "druidic",
+      "name": "Druidic",
+      "source": "srd",
+      "description": "You know Druidic, the secret language of druids.",
+      "level": 1,
+      "featureType": "passive"
+    },
+    {
+      "id": "wild-shape",
+      "name": "Wild Shape",
+      "source": "srd",
+      "description": "You can use your action to magically assume the shape of a beast that you have seen before.",
+      "level": 2,
+      "featureType": "resource",
+      "resource": {
+        "name": "Wild Shape",
+        "maxCount": 2,
+        "recoversOn": "short"
+      }
+    }
+  ],
+  "subclasses": [
+    {
+      "id": "circle-of-the-land",
+      "name": "Circle of the Land",
+      "source": "phb24",
+      "description": "The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites.",
+      "parentClassId": "druid",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "circle-of-the-land-spells",
+          "name": "Circle of the Land Spells",
+          "description": "Whenever you finish a Long Rest, choose one type of land: arid, polar, temperate, or tropical. You have the spells listed for your Druid level and lower prepared.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "lands-aid",
+          "name": "Land's Aid",
+          "description": "As a Magic action, you can expend a use of your Wild Shape and choose a point within 60 feet. 10-foot-radius Sphere: creatures make CON save or take 2d6 Necrotic damage (half on success). One creature regains 2d6 HP.",
+          "level": 3,
+          "featureType": "action"
+        },
+        {
+          "id": "natural-recovery-enhanced",
+          "name": "Natural Recovery",
+          "description": "Cast one level 1+ Circle Spell without a slot once per Long Rest. Also, recover spell slots on a Short Rest (combined level <= half druid level).",
+          "level": 6,
+          "featureType": "passive"
+        },
+        {
+          "id": "natures-ward",
+          "name": "Nature's Ward",
+          "description": "Immune to Poisoned condition. Resistance to a damage type based on your land choice: Arid (Fire), Polar (Cold), Temperate (Lightning), Tropical (Poison).",
+          "level": 10,
+          "featureType": "passive"
+        },
+        {
+          "id": "natures-sanctuary",
+          "name": "Nature's Sanctuary",
+          "description": "As a Magic action, expend Wild Shape to create a 15-foot Cube of spectral trees within 120 feet (1 minute). Allies have Half Cover and your Nature's Ward resistance while inside.",
+          "level": 14,
+          "featureType": "action"
+        }
+      ]
+    },
+    {
+      "id": "circle-of-the-moon",
+      "name": "Circle of the Moon",
+      "source": "phb24",
+      "description": "Druids of the Circle of the Moon are fierce guardians of the wilds and masters of Wild Shape.",
+      "parentClassId": "druid",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "circle-of-the-moon-spells",
+          "name": "Circle of the Moon Spells",
+          "description": "Always have certain spells prepared (Cure Wounds, Moonbeam, etc.). You can cast them while in Wild Shape.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "circle-forms",
+          "name": "Circle Forms",
+          "description": "Improved Wild Shape: Max CR = Level/3. AC = 13 + Wis modifier (if higher). Gain Temp HP = 3x Druid level.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "improved-circle-forms",
+          "name": "Improved Circle Forms",
+          "description": "In Wild Shape: Attacks can deal Radiant damage. Add Wisdom modifier to Constitution saving throws.",
+          "level": 6,
+          "featureType": "passive"
+        },
+        {
+          "id": "moonlight-step",
+          "name": "Moonlight Step",
+          "description": "As a Bonus Action, teleport up to 30 feet. Advantage on next attack roll this turn. Uses = Wis modifier.",
+          "level": 10,
+          "featureType": "bonus_action"
+        },
+        {
+          "id": "lunar-form",
+          "name": "Lunar Form",
+          "description": "Extra 2d10 Radiant damage once per turn in Wild Shape. Can teleport one willing creature with Moonlight Step.",
+          "level": 14,
+          "featureType": "passive"
+        }
+      ]
+    },
+    {
+      "id": "circle-of-the-sea",
+      "name": "Circle of the Sea",
+      "source": "phb24",
+      "description": "Druids of the Circle of the Sea draw on the tempestuous power of the oceans.",
+      "parentClassId": "druid",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "circle-of-the-sea-spells",
+          "name": "Circle of the Sea Spells",
+          "description": "Always have certain spells prepared (Fog Cloud, Gust of Wind, Ray of Frost, Shatter, Thunderwave at Level 3, etc.).",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "wrath-of-the-sea",
+          "name": "Wrath of the Sea",
+          "description": "As a Bonus Action, spend Wild Shape to manifest a 5-foot (10ft at lvl 6) Emanation for 10 minutes. As a Bonus Action, target takes Cold damage (Wis mod d6) and Large or smaller creatures are pushed 15ft.",
+          "level": 3,
+          "featureType": "bonus_action"
+        },
+        {
+          "id": "aquatic-affinity",
+          "name": "Aquatic Affinity",
+          "description": "Wrath of the Sea emanation size increases to 10 feet. Gain Swim Speed equal to your Speed.",
+          "level": 6,
+          "featureType": "passive"
+        },
+        {
+          "id": "stormborn",
+          "name": "Stormborn",
+          "description": "While Wrath of the Sea is active: Gain Fly Speed. Resistance to Cold, Lightning, and Thunder damage.",
+          "level": 10,
+          "featureType": "passive"
+        },
+        {
+          "id": "oceanic-gift",
+          "name": "Oceanic Gift",
+          "description": "Manifest Wrath of the Sea around a willing creature within 60 feet. Spend two Wild Shape uses to manifest it around both yourself and the creature.",
+          "level": 14,
+          "featureType": "passive"
+        }
+      ]
+    },
+    {
+      "id": "circle-of-the-stars",
+      "name": "Circle of the Stars",
+      "source": "phb24",
+      "description": "The Circle of the Stars allows druids to draw on the power of starlight.",
+      "parentClassId": "druid",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "star-map",
+          "name": "Star Map",
+          "description": "Gain a star chart (spellcasting focus). Guidance and Guiding Bolt prepared. Cast Guiding Bolt without a slot (Wis mod times/Long Rest).",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "starry-form",
+          "name": "Starry Form",
+          "description": "Bonus Action: spend Wild Shape to take a luminous form (10 mins). Choose Archer (Bonus Action ranged spell attack), Chalice (extra healing), or Dragon (better concentration/INT/WIS checks).",
+          "level": 3,
+          "featureType": "bonus_action"
+        },
+        {
+          "id": "cosmic-omen",
+          "name": "Cosmic Omen",
+          "description": "After a Long Rest, roll a die. Even (Weal): reaction to add 1d6 to a d20 test. Odd (Woe): reaction to subtract 1d6 from a d20 test. Uses = Wis mod.",
+          "level": 6,
+          "featureType": "reaction"
+        },
+        {
+          "id": "twinkling-constellations",
+          "name": "Twinkling Constellations",
+          "description": "Starry Form improves: Archer/Chalice (2d8), Dragon (Fly speed 20ft, hover). Change constellation at start of turn.",
+          "level": 10,
+          "featureType": "passive"
+        },
+        {
+          "id": "full-of-stars",
+          "name": "Full of Stars",
+          "description": "While in Starry Form, gain Resistance to Bludgeoning, Piercing, and Slashing damage.",
+          "level": 14,
+          "featureType": "passive"
+        }
+      ]
+    }
+  ],
+  "subclassName": "Druid Circle",
+  "subclassLevel": 3,
+  "asiLevels": [
+    4,
+    8,
+    12,
+    16,
+    19
+  ],
+  "teachingNotes": {
+    "complexity": "advanced",
+    "recommendedForNewPlayers": false,
+    "playstyleKeywords": [
+      "Nature caster",
+      "Shapeshifter",
+      "Versatile",
+      "Control"
+    ],
+    "roleInParty": [
+      "Caster",
+      "Healer",
+      "Utility"
+    ],
+    "keyDecisionPoints": [
+      {
+        "level": 3,
+        "decision": "Druid Circle - defines your focus and power source"
+      },
+      {
+        "level": 1,
+        "decision": "Prepared spells - daily adaptation to nature"
+      }
+    ]
+  }
+}

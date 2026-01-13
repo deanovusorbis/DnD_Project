@@ -1,0 +1,105 @@
+[
+  {
+    "id": "adamantine-greatsword",
+    "name": "Adamantin Büyük Kılıç",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 6,
+    "description": "This weapon or piece of ammunition is made of adamantine, one of the hardest substances in existence. Whenever this weapon or piece of ammunition hits an object, the hit is a Critical Hit. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Graze. If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d6",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "adamantine-longsword",
+    "name": "Adamantin Uzun Kılıç",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 3,
+    "description": "This weapon or piece of ammunition is made of adamantine, one of the hardest substances in existence. Whenever this weapon or piece of ammunition hits an object, the hit is a Critical Hit. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "slashing",
+      "properties": [
+        "Versatile (1d10)"
+      ]
+    }
+  },
+  {
+    "id": "adamantine-rapier",
+    "name": "Adamantin İnce Kılıç",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 2,
+    "description": "This weapon or piece of ammunition is made of adamantine, one of the hardest substances in existence. Whenever this weapon or piece of ammunition hits an object, the hit is a Critical Hit. Finesse. When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": [
+        "Finesse"
+      ]
+    }
+  },
+  {
+    "id": "adamantine-scimitar",
+    "name": "Adamantin Pala",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 3,
+    "description": "This weapon or piece of ammunition is made of adamantine, one of the hardest substances in existence. Whenever this weapon or piece of ammunition hits an object, the hit is a Critical Hit. Finesse. When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls. Light. When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative. Mastery: Nick. When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d6",
+      "damageType": "slashing",
+      "properties": [
+        "Finesse",
+        "Light"
+      ]
+    }
+  },
+  {
+    "id": "adamantine-shortsword",
+    "name": "Adamantin Kısa Kılıç",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 2,
+    "description": "This weapon or piece of ammunition is made of adamantine, one of the hardest substances in existence. Whenever this weapon or piece of ammunition hits an object, the hit is a Critical Hit. Finesse. When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls. Light. When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Finesse",
+        "Light"
+      ]
+    }
+  }
+]

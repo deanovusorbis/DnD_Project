@@ -1,0 +1,2234 @@
+[
+  {
+    "id": "airship",
+    "name": "Airship",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Speed. A ship sailing against a strong wind moves at half speed. In a dead calm (no wind), waterborne ships can't move under sail and must be rowed. Keelboats and Rowboats are used on lakes and rivers. If going downstream, add the speed of the current (typically 3 miles per hour) to the speed of the vehicle. These vehicles can't be rowed against any significant current, but they can be pulled upstream by draft animals on the shores. A Rowboat can be carried and weighs 100 pounds. Crew. A ship larger than a Keelboat or Rowboat needs a crew of skilled hirelings (see \"Services\") to function. The minimum number of skilled hirelings needed to crew a ship depends on the type of ship. Passengers. The number of Small and Medium passengers the ship can accommodate using hammocks. A ship outfitted with private accommodations can carry one-fifth as many passengers. A passenger usually pays 5 SP per day for a hammock, but prices can vary from ship to ship. A small private cabin usually costs 2 GP per day. Damage Threshold. See the rules glossary. Ship Repair. Repairs to a damaged ship can be made while the vessel is berthed. Repairing 1 Hit Point of damage requires 1 day and costs 20 GP for materials and labor. If the repairs are made in a location where supplies and skilled labor are abundant, such as a city shipyard, the repair time and cost are halved.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "ale-mug",
+    "name": "Ale (mug)",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "",
+    "cost": {
+      "quantity": 4,
+      "unit": "cp"
+    }
+  },
+  {
+    "id": "alexandrite",
+    "name": "Alexandrite",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A dark green gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 500,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "amber",
+    "name": "Amber",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A watery gold to rich gold gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 100,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "amethyst",
+    "name": "Amethyst",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A deep purple gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 100,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "amulet",
+    "name": "Amulet",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "For an Amulet to be an effective Holy Symbol, it must be worn or held.A Holy Symbol takes a specific form and is bejeweled or painted to channel divine magic. A Cleric or Paladin can use a Holy Symbol as a Spellcasting Focus.",
+    "cost": {
+      "quantity": 5,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "aquamarine",
+    "name": "Aquamarine",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A pale blue green gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 500,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "arcane-focus",
+    "name": "Büyü Odağı",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "An Arcane Focus takes a specific form and is bejeweled or carved to channel arcane magic. A Sorcerer, Warlock, or Wizard can use such an item as a Spellcasting Focus.Multiple variations of this item exist, as listed below:CrystalOrbRodStaffWand",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "armor-of-cold-resistance",
+    "name": "Armor of Cold Resistance",
+    "type": "other",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "You have Resistance to Cold damage while you wear this armor. Base items. This item variant can be applied to the following base items:Breastplate (Breastplate of Cold Resistance)Chain Mail (Chain Mail of Cold Resistance)Chain Shirt (Chain Shirt of Cold Resistance)Half Plate Armor (Half Plate Armor of Cold Resistance)Hide Armor (Hide Armor of Cold Resistance)Leather Armor (Leather Armor of Cold Resistance)Padded Armor (Padded Armor of Cold Resistance)Plate Armor (Plate Armor of Cold Resistance)Ring Mail (Ring Mail of Cold Resistance)Scale Mail (Scale Mail of Cold Resistance)Splint Armor (Splint Armor of Cold Resistance)Studded Leather Armor (Studded Leather Armor of Cold Resistance)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "armor-of-fire-resistance",
+    "name": "Armor of Fire Resistance",
+    "type": "other",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "You have Resistance to Fire damage while you wear this armor. Base items. This item variant can be applied to the following base items:Breastplate (Breastplate of Fire Resistance)Chain Mail (Chain Mail of Fire Resistance)Chain Shirt (Chain Shirt of Fire Resistance)Half Plate Armor (Half Plate Armor of Fire Resistance)Hide Armor (Hide Armor of Fire Resistance)Leather Armor (Leather Armor of Fire Resistance)Padded Armor (Padded Armor of Fire Resistance)Plate Armor (Plate Armor of Fire Resistance)Ring Mail (Ring Mail of Fire Resistance)Scale Mail (Scale Mail of Fire Resistance)Splint Armor (Splint Armor of Fire Resistance)Studded Leather Armor (Studded Leather Armor of Fire Resistance)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "armor-of-force-resistance",
+    "name": "Armor of Force Resistance",
+    "type": "other",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "You have Resistance to Force damage while you wear this armor. Base items. This item variant can be applied to the following base items:Breastplate (Breastplate of Force Resistance)Chain Mail (Chain Mail of Force Resistance)Chain Shirt (Chain Shirt of Force Resistance)Half Plate Armor (Half Plate Armor of Force Resistance)Hide Armor (Hide Armor of Force Resistance)Leather Armor (Leather Armor of Force Resistance)Padded Armor (Padded Armor of Force Resistance)Plate Armor (Plate Armor of Force Resistance)Ring Mail (Ring Mail of Force Resistance)Scale Mail (Scale Mail of Force Resistance)Splint Armor (Splint Armor of Force Resistance)Studded Leather Armor (Studded Leather Armor of Force Resistance)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "armor-of-gleaming",
+    "name": "Armor of Gleaming",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "This armor never gets dirty. Base items. This item variant can be applied to the following base items:Breastplate (Breastplate of Gleaming)Chain Mail (Chain Mail of Gleaming)Chain Shirt (Chain Shirt of Gleaming)Half Plate Armor (Half Plate Armor of Gleaming)Hide Armor (Hide Armor of Gleaming)Leather Armor (Leather Armor of Gleaming)Padded Armor (Padded Armor of Gleaming)Plate Armor (Plate Armor of Gleaming)Ring Mail (Ring Mail of Gleaming)Scale Mail (Scale Mail of Gleaming)Splint Armor (Splint Armor of Gleaming)Studded Leather Armor (Studded Leather Armor of Gleaming)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "armor-of-lightning-resistance",
+    "name": "Armor of Lightning Resistance",
+    "type": "other",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "You have Resistance to Lightning damage while you wear this armor. Base items. This item variant can be applied to the following base items:Breastplate (Breastplate of Lightning Resistance)Chain Mail (Chain Mail of Lightning Resistance)Chain Shirt (Chain Shirt of Lightning Resistance)Half Plate Armor (Half Plate Armor of Lightning Resistance)Hide Armor (Hide Armor of Lightning Resistance)Leather Armor (Leather Armor of Lightning Resistance)Padded Armor (Padded Armor of Lightning Resistance)Plate Armor (Plate Armor of Lightning Resistance)Ring Mail (Ring Mail of Lightning Resistance)Scale Mail (Scale Mail of Lightning Resistance)Splint Armor (Splint Armor of Lightning Resistance)Studded Leather Armor (Studded Leather Armor of Lightning Resistance)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "armor-of-necrotic-resistance",
+    "name": "Armor of Necrotic Resistance",
+    "type": "other",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "You have Resistance to Necrotic damage while you wear this armor. Base items. This item variant can be applied to the following base items:Breastplate (Breastplate of Necrotic Resistance)Chain Mail (Chain Mail of Necrotic Resistance)Chain Shirt (Chain Shirt of Necrotic Resistance)Half Plate Armor (Half Plate Armor of Necrotic Resistance)Hide Armor (Hide Armor of Necrotic Resistance)Leather Armor (Leather Armor of Necrotic Resistance)Padded Armor (Padded Armor of Necrotic Resistance)Plate Armor (Plate Armor of Necrotic Resistance)Ring Mail (Ring Mail of Necrotic Resistance)Scale Mail (Scale Mail of Necrotic Resistance)Splint Armor (Splint Armor of Necrotic Resistance)Studded Leather Armor (Studded Leather Armor of Necrotic Resistance)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "armor-of-psychic-resistance",
+    "name": "Armor of Psychic Resistance",
+    "type": "other",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "You have Resistance to Psychic damage while you wear this armor. Base items. This item variant can be applied to the following base items:Breastplate (Breastplate of Psychic Resistance)Chain Mail (Chain Mail of Psychic Resistance)Chain Shirt (Chain Shirt of Psychic Resistance)Half Plate Armor (Half Plate Armor of Psychic Resistance)Hide Armor (Hide Armor of Psychic Resistance)Leather Armor (Leather Armor of Psychic Resistance)Padded Armor (Padded Armor of Psychic Resistance)Plate Armor (Plate Armor of Psychic Resistance)Ring Mail (Ring Mail of Psychic Resistance)Scale Mail (Scale Mail of Psychic Resistance)Splint Armor (Splint Armor of Psychic Resistance)Studded Leather Armor (Studded Leather Armor of Psychic Resistance)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "armor-of-radiant-resistance",
+    "name": "Armor of Radiant Resistance",
+    "type": "other",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "You have Resistance to Radiant damage while you wear this armor. Base items. This item variant can be applied to the following base items:Breastplate (Breastplate of Radiant Resistance)Chain Mail (Chain Mail of Radiant Resistance)Chain Shirt (Chain Shirt of Radiant Resistance)Half Plate Armor (Half Plate Armor of Radiant Resistance)Hide Armor (Hide Armor of Radiant Resistance)Leather Armor (Leather Armor of Radiant Resistance)Padded Armor (Padded Armor of Radiant Resistance)Plate Armor (Plate Armor of Radiant Resistance)Ring Mail (Ring Mail of Radiant Resistance)Scale Mail (Scale Mail of Radiant Resistance)Splint Armor (Splint Armor of Radiant Resistance)Studded Leather Armor (Studded Leather Armor of Radiant Resistance)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "armor-of-resistance",
+    "name": "Armor of Resistance",
+    "type": "other",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "You have Resistance to one type of damage while you wear this armor. The DM chooses the type or determines it randomly by rolling on the following table.d10Damage Type1Acid2Cold3Fire4Force5Lightning6Necrotic7Poison8Psychic9Radiant10Thunder",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "armor-of-thunder-resistance",
+    "name": "Armor of Thunder Resistance",
+    "type": "other",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "You have Resistance to Thunder damage while you wear this armor. Base items. This item variant can be applied to the following base items:Breastplate (Breastplate of Thunder Resistance)Chain Mail (Chain Mail of Thunder Resistance)Chain Shirt (Chain Shirt of Thunder Resistance)Half Plate Armor (Half Plate Armor of Thunder Resistance)Hide Armor (Hide Armor of Thunder Resistance)Leather Armor (Leather Armor of Thunder Resistance)Padded Armor (Padded Armor of Thunder Resistance)Plate Armor (Plate Armor of Thunder Resistance)Ring Mail (Ring Mail of Thunder Resistance)Scale Mail (Scale Mail of Thunder Resistance)Splint Armor (Splint Armor of Thunder Resistance)Studded Leather Armor (Studded Leather Armor of Thunder Resistance)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "armor-of-vulnerability-bludgeoning",
+    "name": "Armor of Vulnerability (Bludgeoning)",
+    "type": "other",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "While wearing this armor, you have Resistance to Bludgeoning damage. Curse. This armor is cursed, a fact that is revealed only when the Identify spell is cast on the armor or you attune to it. Attuning to the armor curses you until you are targeted by a Remove Curse spell or similar magic; removing the armor fails to end the curse. While cursed, you have Vulnerability to Piercing and Slashing damage. Base items. This item variant can be applied to the following base items:Breastplate (Breastplate of Vulnerability (Bludgeoning))Chain Mail (Chain Mail of Vulnerability (Bludgeoning))Chain Shirt (Chain Shirt of Vulnerability (Bludgeoning))Half Plate Armor (Half Plate Armor of Vulnerability (Bludgeoning))Hide Armor (Hide Armor of Vulnerability (Bludgeoning))Leather Armor (Leather Armor of Vulnerability (Bludgeoning))Padded Armor (Padded Armor of Vulnerability (Bludgeoning))Plate Armor (Plate Armor of Vulnerability (Bludgeoning))Ring Mail (Ring Mail of Vulnerability (Bludgeoning))Scale Mail (Scale Mail of Vulnerability (Bludgeoning))Splint Armor (Splint Armor of Vulnerability (Bludgeoning))Studded Leather Armor (Studded Leather Armor of Vulnerability (Bludgeoning))",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "armor-of-vulnerability-piercing",
+    "name": "Armor of Vulnerability (Piercing)",
+    "type": "other",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "While wearing this armor, you have Resistance to Piercing damage. Curse. This armor is cursed, a fact that is revealed only when the Identify spell is cast on the armor or you attune to it. Attuning to the armor curses you until you are targeted by a Remove Curse spell or similar magic; removing the armor fails to end the curse. While cursed, you have Vulnerability to Bludgeoning and Slashing damage. Base items. This item variant can be applied to the following base items:Breastplate (Breastplate of Vulnerability (Piercing))Chain Mail (Chain Mail of Vulnerability (Piercing))Chain Shirt (Chain Shirt of Vulnerability (Piercing))Half Plate Armor (Half Plate Armor of Vulnerability (Piercing))Hide Armor (Hide Armor of Vulnerability (Piercing))Leather Armor (Leather Armor of Vulnerability (Piercing))Padded Armor (Padded Armor of Vulnerability (Piercing))Plate Armor (Plate Armor of Vulnerability (Piercing))Ring Mail (Ring Mail of Vulnerability (Piercing))Scale Mail (Scale Mail of Vulnerability (Piercing))Splint Armor (Splint Armor of Vulnerability (Piercing))Studded Leather Armor (Studded Leather Armor of Vulnerability (Piercing))",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "armor-of-vulnerability-slashing",
+    "name": "Armor of Vulnerability (Slashing)",
+    "type": "other",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "While wearing this armor, you have Resistance to Slashing damage. Curse. This armor is cursed, a fact that is revealed only when the Identify spell is cast on the armor or you attune to it. Attuning to the armor curses you until you are targeted by a Remove Curse spell or similar magic; removing the armor fails to end the curse. While cursed, you have Vulnerability to Bludgeoning and Piercing damage. Base items. This item variant can be applied to the following base items:Breastplate (Breastplate of Vulnerability (Slashing))Chain Mail (Chain Mail of Vulnerability (Slashing))Chain Shirt (Chain Shirt of Vulnerability (Slashing))Half Plate Armor (Half Plate Armor of Vulnerability (Slashing))Hide Armor (Hide Armor of Vulnerability (Slashing))Leather Armor (Leather Armor of Vulnerability (Slashing))Padded Armor (Padded Armor of Vulnerability (Slashing))Plate Armor (Plate Armor of Vulnerability (Slashing))Ring Mail (Ring Mail of Vulnerability (Slashing))Scale Mail (Scale Mail of Vulnerability (Slashing))Splint Armor (Splint Armor of Vulnerability (Slashing))Studded Leather Armor (Studded Leather Armor of Vulnerability (Slashing))",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "armor-of-vulnerability",
+    "name": "Armor of Vulnerability",
+    "type": "other",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "Multiple variations of this item exist, as listed below:Armor of Vulnerability (Bludgeoning)Armor of Vulnerability (Piercing)Armor of Vulnerability (Slashing)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "azurite",
+    "name": "Azurite",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A mottled deep blue gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "banded-agate",
+    "name": "Banded Agate",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A striped brown, blue, white, or red gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "berserker-axe",
+    "name": "Berserker Baltası",
+    "type": "other",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon. In addition, while you are attuned to this weapon, your Hit Point maximum increases by 1 for each level you have attained. Curse. This weapon is cursed, and becoming attuned to it extends the curse to you. As long as you remain cursed, you are unwilling to part with the weapon, keeping it within reach at all times. You also have Disadvantage on attack rolls with weapons other than this one.Whenever another creature damages you while the weapon is in your possession, you must succeed on a DC 15 Wisdom saving throw or go berserk. This berserk state ends when you start your turn and there are no creatures within 60 feet of you that you can see or hear.While berserk, you regard the creature nearest to you that you can see or hear as your enemy. If there are multiple possible creatures, choose one at random. On each of your turns, you must move as close to the creature as possible and take the Attack action, targeting the creature. If you're unable to get close enough to the creature to attack it with the weapon, your turn ends after you've used up all your available movement. If the creature dies or can no longer be seen or heard by you, the next nearest creature that you can see or hear becomes your new target. Base items. This item variant can be applied to the following base items:Battleaxe (Berserker Battleaxe)Greataxe (Berserker Greataxe)Halberd (Berserker Halberd)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "black-opal",
+    "name": "Black Opal",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A dark green with black mottling and golden flecks gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "black-pearl",
+    "name": "Black Pearl",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A pure black gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 500,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "bloodstone",
+    "name": "Bloodstone",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A dark gray with red flecks gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "blue-quartz",
+    "name": "Blue Quartz",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A pale blue gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "blue-spinel",
+    "name": "Blue Spinel",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A deep blue gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 500,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "bomb",
+    "name": "Bomb",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "As an action, you can light a Bomb and throw it at a point up to 60 feet away, where it explodes. Each creature in a 5-foot-radius Sphere centered on that point makes a DC 12 Dexterity saving throw, taking 3d6 Fire damage on a failed save or half as much damage on a successful one.",
+    "cost": {
+      "quantity": 100,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "box-of-turquoise-animal-figurines",
+    "name": "Box of turquoise animal figurines",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "brass-mug-with-jade-inlay",
+    "name": "Brass mug with jade inlay",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "bread-loaf",
+    "name": "Bread (loaf)",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "",
+    "cost": {
+      "quantity": 2,
+      "unit": "cp"
+    }
+  },
+  {
+    "id": "bundle-of-sheet-music-representing-the-lost-dirges-of-a-famous-composer",
+    "name": "Bundle of sheet music representing the lost dirges of a famous composer",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 750,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "camel",
+    "name": "Camel",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "",
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "canvas-1-sq-yd",
+    "name": "Canvas (1 sq. yd.)",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Merchants commonly exchange trade goods without using currency.",
+    "cost": {
+      "quantity": 1,
+      "unit": "sp"
+    }
+  },
+  {
+    "id": "carnelian",
+    "name": "Carnelian",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A orange to red brown gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "carriage",
+    "name": "Carriage",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 600,
+    "description": "",
+    "cost": {
+      "quantity": 100,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "cart",
+    "name": "Cart",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 200,
+    "description": "",
+    "cost": {
+      "quantity": 15,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "cast-off-armor",
+    "name": "Cast-Off Armor",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "You can doff this armor as a Magic action. Base items. This item variant can be applied to the following base items:Breastplate (Cast-Off Breastplate)Chain Mail (Cast-Off Chain Mail)Chain Shirt (Cast-Off Chain Shirt)Half Plate Armor (Cast-Off Half Plate Armor)Hide Armor (Cast-Off Hide Armor)Leather Armor (Cast-Off Leather Armor)Padded Armor (Cast-Off Padded Armor)Plate Armor (Cast-Off Plate Armor)Ring Mail (Cast-Off Ring Mail)Scale Mail (Cast-Off Scale Mail)Splint Armor (Cast-Off Splint Armor)Studded Leather Armor (Cast-Off Studded Leather Armor)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "chalcedony",
+    "name": "Chalcedony",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A white gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "chariot",
+    "name": "Chariot",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 100,
+    "description": "",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "cheese-wedge",
+    "name": "Cheese (wedge)",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "",
+    "cost": {
+      "quantity": 1,
+      "unit": "sp"
+    }
+  },
+  {
+    "id": "chicken",
+    "name": "Chicken",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Merchants commonly exchange trade goods without using currency.",
+    "cost": {
+      "quantity": 2,
+      "unit": "cp"
+    }
+  },
+  {
+    "id": "chrysoberyl",
+    "name": "Chrysoberyl",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A yellow green to pale green gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 100,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "chrysoprase",
+    "name": "Chrysoprase",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A green gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "cinnamon",
+    "name": "Cinnamon",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "Merchants commonly exchange trade goods without using currency.",
+    "cost": {
+      "quantity": 2,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "citrine",
+    "name": "Citrine",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A pale yellow brown gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "cloves",
+    "name": "Cloves",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "Merchants commonly exchange trade goods without using currency.",
+    "cost": {
+      "quantity": 3,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "command-amulet",
+    "name": "Command Amulet",
+    "type": "other",
+    "rarity": "unknown (magic)",
+    "weight": 1,
+    "description": "Each Shield Guardian is magically bound to an amulet. While the guardian and its amulet are on the same plane of existence, the amulet's wearer can telepathically call the guardian to travel to it, and the guardian knows the distance and direction to the amulet. If the guardian is within 60 feet of the amulet's wearer, half of any damage the wearer takes (round up) is transferred to the guardian.A shield guardian's command amulet might be passed down through a magic-using society or family for generations.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "common-wine-bottle",
+    "name": "Common Wine (bottle)",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "",
+    "cost": {
+      "quantity": 2,
+      "unit": "sp"
+    }
+  },
+  {
+    "id": "copper",
+    "name": "Copper",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "Merchants commonly exchange trade goods without using currency.",
+    "cost": {
+      "quantity": 5,
+      "unit": "sp"
+    }
+  },
+  {
+    "id": "coral",
+    "name": "Coral",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A crimson gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 100,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "cotton-cloth-1-sq-yd",
+    "name": "Cotton Cloth (1 sq. yd.)",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Merchants commonly exchange trade goods without using currency.",
+    "cost": {
+      "quantity": 5,
+      "unit": "sp"
+    }
+  },
+  {
+    "id": "cow",
+    "name": "Cow",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Merchants commonly exchange trade goods without using currency.",
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "crystal",
+    "name": "Crystal",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "An Arcane Focus takes a specific form and is bejeweled or carved to channel arcane magic. A Sorcerer, Warlock, or Wizard can use such an item as a Spellcasting Focus.",
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "dancing-sword",
+    "name": "Dans Eden Kılıç",
+    "type": "other",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "You can take a Bonus Action to toss this magic weapon into the air. When you do so, the weapon begins to hover, flies up to 30 feet, and attacks one creature of your choice within 5 feet of itself. The weapon uses your attack roll and adds your ability modifier to damage rolls.While the weapon hovers, you can take a Bonus Action to cause it to fly up to 30 feet to another spot within 30 feet of you. As part of the same Bonus Action, you can cause the weapon to attack one creature within 5 feet of the weapon.After the hovering weapon attacks for the fourth time, it flies back to you and tries to return to your hand. If you have no hand free, the weapon falls to the ground in your space. If the weapon has no unobstructed path to you, it moves as close to you as it can and then falls to the ground. It also ceases to hover if you grasp it or are more than 30 feet away from it. Base items. This item variant can be applied to the following base items:Double-Bladed Scimitar (Dancing Double-Bladed Scimitar)Greatsword (Dancing Greatsword)Longsword (Dancing Longsword)Rapier (Dancing Rapier)Scimitar (Dancing Scimitar)Shortsword (Dancing Shortsword)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "defender",
+    "name": "Savunucu",
+    "type": "other",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon.The first time you attack with the weapon on each of your turns, you can transfer some or all of the weapon's bonus to your Armor Class. For example, you could reduce the bonus to your attack rolls and damage rolls to +1 and gain a +2 bonus to Armor Class. The adjusted bonuses remain in effect until the start of your next turn, although you must hold the weapon to gain a bonus to AC from it. Base items. This item variant can be applied to the following base items:Battleaxe (Defender Battleaxe)Club (Defender Club)Dagger (Defender Dagger)Flail (Defender Flail)Glaive (Defender Glaive)Greataxe (Defender Greataxe)Greatclub (Defender Greatclub)Greatsword (Defender Greatsword)Halberd (Defender Halberd)Handaxe (Defender Handaxe)Javelin (Defender Javelin)Lance (Defender Lance)Light Hammer (Defender Light Hammer)Longsword (Defender Longsword)Mace (Defender Mace)Maul (Defender Maul)Morningstar (Defender Morningstar)Pike (Defender Pike)Quarterstaff (Defender Quarterstaff)Rapier (Defender Rapier)Scimitar (Defender Scimitar)Shortsword (Defender Shortsword)Sickle (Defender Sickle)Spear (Defender Spear)Trident (Defender Trident)War Pick (Defender War Pick)Warhammer (Defender Warhammer)Whip (Defender Whip)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "demon-armor",
+    "name": "Demon Armor",
+    "type": "other",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "While wearing this armor, you gain a +1 bonus to Armor Class, and you know Abyssal. In addition, the armor's clawed gauntlets allow your Unarmed Strikes to deal 1d8 Slashing damage instead of the usual Bludgeoning damage, and you gain a +1 bonus to the attack and damage rolls of your Unarmed Strikes. Curse. Once you don this cursed armor, you can't doff it unless you are targeted by a Remove Curse spell or similar magic. While wearing the armor, you have Disadvantage on attack rolls against demons and on saving throws against their spells and special abilities. Base items. This item variant can be applied to the following base items:Breastplate (Demon Breastplate)Chain Mail (Demon Chain Mail)Chain Shirt (Demon Chain Shirt)Half Plate Armor (Demon Half Plate Armor)Hide Armor (Demon Hide Armor)Leather Armor (Demon Leather Armor)Padded Armor (Demon Padded Armor)Plate Armor (Demon Plate Armor)Ring Mail (Demon Ring Mail)Scale Mail (Demon Scale Mail)Splint Armor (Demon Splint Armor)Studded Leather Armor (Demon Studded Leather Armor)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "detailed-life-sized-dragonborn-skull-cast-in-electrum",
+    "name": "Detailed, life-sized dragonborn skull cast in electrum",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 750,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "draft-horse",
+    "name": "Draft Horse",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "",
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "dragon-slayer",
+    "name": "Ejderha Katili",
+    "type": "other",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.The weapon deals an extra 3d6 damage of the weapon's type if the target is a Dragon. Base items. This item variant can be applied to the following base items:Antimatter Rifle (Dragon Slayer Antimatter Rifle)Automatic Rifle (Dragon Slayer Automatic Rifle)Battleaxe (Dragon Slayer Battleaxe)Blowgun (Dragon Slayer Blowgun)Club (Dragon Slayer Club)Dagger (Dragon Slayer Dagger)Dart (Dragon Slayer Dart)Double-Bladed Scimitar (Dragon Slayer Double-Bladed Scimitar)Flail (Dragon Slayer Flail)Glaive (Dragon Slayer Glaive)Greataxe (Dragon Slayer Greataxe)Greatclub (Dragon Slayer Greatclub)Greatsword (Dragon Slayer Greatsword)Halberd (Dragon Slayer Halberd)Hand Crossbow (Dragon Slayer Hand Crossbow)Handaxe (Dragon Slayer Handaxe)Heavy Crossbow (Dragon Slayer Heavy Crossbow)Hooked Shortspear (Dragon Slayer Hooked Shortspear)Hoopak (Dragon Slayer Hoopak)Hunting Rifle (Dragon Slayer Hunting Rifle)Javelin (Dragon Slayer Javelin)Lance (Dragon Slayer Lance)Laser Pistol (Dragon Slayer Laser Pistol)Laser Rifle (Dragon Slayer Laser Rifle)Light Crossbow (Dragon Slayer Light Crossbow)Light Hammer (Dragon Slayer Light Hammer)Light Repeating Crossbow (Dragon Slayer Light Repeating Crossbow)Longbow (Dragon Slayer Longbow)Longsword (Dragon Slayer Longsword)Mace (Dragon Slayer Mace)Maul (Dragon Slayer Maul)Morningstar (Dragon Slayer Morningstar)Musket (Dragon Slayer Musket)Pike (Dragon Slayer Pike)Pistol (Dragon Slayer Pistol)Quarterstaff (Dragon Slayer Quarterstaff)Rapier (Dragon Slayer Rapier)Revolver (Dragon Slayer Revolver)Scimitar (Dragon Slayer Scimitar)Semiautomatic Pistol (Dragon Slayer Semiautomatic Pistol)Shortbow (Dragon Slayer Shortbow)Shortsword (Dragon Slayer Shortsword)Shotgun (Dragon Slayer Shotgun)Sickle (Dragon Slayer Sickle)Sling (Dragon Slayer Sling)Spear (Dragon Slayer Spear)Staff (Dragon Slayer Staff)Trident (Dragon Slayer Trident)War Pick (Dragon Slayer War Pick)Warhammer (Dragon Slayer Warhammer)Whip (Dragon Slayer Whip)Wooden Staff (Dragon Slayer Wooden Staff)Yklwa (Dragon Slayer Yklwa)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "druidic-focus",
+    "name": "Druidic Focus",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A Druidic Focus takes a specific form and is carved, tied with ribbon, or painted to channel primal magic. A Druid or Ranger can use such an object as a Spellcasting Focus.Multiple variations of this item exist, as listed below:Sprig of mistletoeWooden staffYew wand",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "dwarven-plate",
+    "name": "Dwarven Plate",
+    "type": "other",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "While wearing this armor, you gain a +2 bonus to Armor Class. In addition, if an effect moves you against your will along the ground, you can take a Reaction to reduce the distance you are moved by up to 10 feet. Base items. This item variant can be applied to the following base items:Half Plate Armor (Dwarven Half Plate Armor)Plate Armor (Dwarven Plate Armor)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "dynamite-stick",
+    "name": "Dynamite Stick",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "An an action, you can light a Dynamite Stick and throw it at a point up to 60 feet away, where it explodes. Each creature in a 5-foot-radius Sphere centered on that point makes a DC 12 Dexterity saving throw, taking 3d6 Force damage on a failed save or half as much damage on a successful one.It takes 1 minute to bind two or more Dynamite Sticks together so they explode at the same time. Each stick after the first increases the damage by 1d6 (to a maximum of 10d6) and the effect's radius by 5 feet (to a maximum of 20 feet).It takes 1 minute to rig dynamite with a longer fuse so it explodes after a longer period of time, such as 1 minute or 10 minutes.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "efreeti-chain",
+    "name": "Efreeti Chain",
+    "type": "other",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "While wearing this armor, you gain a +3 bonus to Armor Class, you have Immunity to Fire damage, and you know Primordial. In addition, you can stand on and move across molten rock as if it were solid ground. Base items. This item variant can be applied to the following base items:Chain Mail (Efreeti Chain Mail)Chain Shirt (Efreeti Chain Shirt)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "elephant",
+    "name": "Elephant",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "",
+    "cost": {
+      "quantity": 200,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "elven-chain",
+    "name": "Elven Chain",
+    "type": "other",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "You gain a +1 bonus to Armor Class while you wear this armor. You are considered trained with this armor even if you lack training with Medium or Heavy armor. Base items. This item variant can be applied to the following base items:Chain Mail (Elven Chain Mail)Chain Shirt (Elven Chain Shirt)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "emblem",
+    "name": "Emblem",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "For an Emblem to be an effective Holy Symbol, it must be borne on fabric (such as a tabard or banner) or a Shield.A Holy Symbol takes a specific form and is bejeweled or painted to channel divine magic. A Cleric or Paladin can use a Holy Symbol as a Spellcasting Focus.",
+    "cost": {
+      "quantity": 5,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "energy-bow",
+    "name": "Energy Bow",
+    "type": "other",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon, which has no string. Each time you pull your arm back in a firing motion, a magical arrow made of golden energy appears nocked and ready to fire. An arrow produced by this weapon deals Force damage instead of Piercing damage on a hit, and it disappears after it hits or misses its target. Until it disappears, the arrow emits Bright Light in a 20-foot radius and Dim Light for an additional 20 feet.This weapon has the following additional properties. Arrow of Restraint. Whenever you use this weapon to make a ranged attack against a creature, you can try to restrain the target instead of dealing damage to it. If the arrow hits, the target must succeed on a DC 15 Strength saving throw or have the Restrained condition for 1 minute. As an action, a creature Restrained by an arrow can make a DC 20 Strength (Athletics) check to try to break the restraint, ending the effect on itself on a successful check. Arrow of Transport. As a Magic action, you can fire one energy arrow from this weapon at a target you can see within 60 feet of yourself. The target can be either a willing Medium or smaller creature or an object that isn't being worn or carried, provided the object is small enough to fit inside a 5-foot Cube. The arrow teleports the target to an unoccupied space you can see within 10 feet of you. Energy Ladder. As a Magic action, you can loose a flurry of energy arrows from this weapon at a wall up to 60 feet away from yourself. The arrows become glowing rungs that stick out of the wall, forming a magical ladder up to 60 feet long on the wall. This ladder lasts for 1 minute before disappearing. Base items. This item variant can be applied to the following base items:Longbow (Energy Longbow)Shortbow (Energy Shortbow)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "enspelled-armor-cantrip",
+    "name": "Enspelled Armor (Cantrip)",
+    "type": "other",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "Bound into this armor is a cantrip. The cantrip is determined when the armor is created and must belong to the Abjuration or Illusion school of magic. The armor has 6 charges and regains 1d6 expended charges daily at dawn. While wearing the armor, you can expend 1 charge to cast its spell.The spell's saving throw DC is 13, and its attack bonus is +5. Base items. This item variant can be applied to the following base items:Breastplate (Enspelled (Cantrip) Breastplate)Chain Mail (Enspelled (Cantrip) Chain Mail)Chain Shirt (Enspelled (Cantrip) Chain Shirt)Half Plate Armor (Enspelled (Cantrip) Half Plate Armor)Hide Armor (Enspelled (Cantrip) Hide Armor)Leather Armor (Enspelled (Cantrip) Leather Armor)Padded Armor (Enspelled (Cantrip) Padded Armor)Plate Armor (Enspelled (Cantrip) Plate Armor)Ring Mail (Enspelled (Cantrip) Ring Mail)Scale Mail (Enspelled (Cantrip) Scale Mail)Splint Armor (Enspelled (Cantrip) Splint Armor)Studded Leather Armor (Enspelled (Cantrip) Studded Leather Armor)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "enspelled-armor-level-1",
+    "name": "Enspelled Armor (Level 1)",
+    "type": "other",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "Bound into this armor is a level 1 spell. The spell is determined when the armor is created and must belong to the Abjuration or Illusion school of magic. The armor has 6 charges and regains 1d6 expended charges daily at dawn. While wearing the armor, you can expend 1 charge to cast its spell.The spell's saving throw DC is 13, and its attack bonus is +5. Base items. This item variant can be applied to the following base items:Breastplate (Enspelled (Level 1) Breastplate)Chain Mail (Enspelled (Level 1) Chain Mail)Chain Shirt (Enspelled (Level 1) Chain Shirt)Half Plate Armor (Enspelled (Level 1) Half Plate Armor)Hide Armor (Enspelled (Level 1) Hide Armor)Leather Armor (Enspelled (Level 1) Leather Armor)Padded Armor (Enspelled (Level 1) Padded Armor)Plate Armor (Enspelled (Level 1) Plate Armor)Ring Mail (Enspelled (Level 1) Ring Mail)Scale Mail (Enspelled (Level 1) Scale Mail)Splint Armor (Enspelled (Level 1) Splint Armor)Studded Leather Armor (Enspelled (Level 1) Studded Leather Armor)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "enspelled-armor-level-2",
+    "name": "Enspelled Armor (Level 2)",
+    "type": "other",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "Bound into this armor is a level 2 spell. The spell is determined when the armor is created and must belong to the Abjuration or Illusion school of magic. The armor has 6 charges and regains 1d6 expended charges daily at dawn. While wearing the armor, you can expend 1 charge to cast its spell.The spell's saving throw DC is 13, and its attack bonus is +5. Base items. This item variant can be applied to the following base items:Breastplate (Enspelled (Level 2) Breastplate)Chain Mail (Enspelled (Level 2) Chain Mail)Chain Shirt (Enspelled (Level 2) Chain Shirt)Half Plate Armor (Enspelled (Level 2) Half Plate Armor)Hide Armor (Enspelled (Level 2) Hide Armor)Leather Armor (Enspelled (Level 2) Leather Armor)Padded Armor (Enspelled (Level 2) Padded Armor)Plate Armor (Enspelled (Level 2) Plate Armor)Ring Mail (Enspelled (Level 2) Ring Mail)Scale Mail (Enspelled (Level 2) Scale Mail)Splint Armor (Enspelled (Level 2) Splint Armor)Studded Leather Armor (Enspelled (Level 2) Studded Leather Armor)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "enspelled-armor-level-3",
+    "name": "Enspelled Armor (Level 3)",
+    "type": "other",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "Bound into this armor is a level 3 spell. The spell is determined when the armor is created and must belong to the Abjuration or Illusion school of magic. The armor has 6 charges and regains 1d6 expended charges daily at dawn. While wearing the armor, you can expend 1 charge to cast its spell.The spell's saving throw DC is 15, and its attack bonus is +7. Base items. This item variant can be applied to the following base items:Breastplate (Enspelled (Level 3) Breastplate)Chain Mail (Enspelled (Level 3) Chain Mail)Chain Shirt (Enspelled (Level 3) Chain Shirt)Half Plate Armor (Enspelled (Level 3) Half Plate Armor)Hide Armor (Enspelled (Level 3) Hide Armor)Leather Armor (Enspelled (Level 3) Leather Armor)Padded Armor (Enspelled (Level 3) Padded Armor)Plate Armor (Enspelled (Level 3) Plate Armor)Ring Mail (Enspelled (Level 3) Ring Mail)Scale Mail (Enspelled (Level 3) Scale Mail)Splint Armor (Enspelled (Level 3) Splint Armor)Studded Leather Armor (Enspelled (Level 3) Studded Leather Armor)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "enspelled-armor-level-4",
+    "name": "Enspelled Armor (Level 4)",
+    "type": "other",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "Bound into this armor is a level 4 spell. The spell is determined when the armor is created and must belong to the Abjuration or Illusion school of magic. The armor has 6 charges and regains 1d6 expended charges daily at dawn. While wearing the armor, you can expend 1 charge to cast its spell.The spell's saving throw DC is 15, and its attack bonus is +7. Base items. This item variant can be applied to the following base items:Breastplate (Enspelled (Level 4) Breastplate)Chain Mail (Enspelled (Level 4) Chain Mail)Chain Shirt (Enspelled (Level 4) Chain Shirt)Half Plate Armor (Enspelled (Level 4) Half Plate Armor)Hide Armor (Enspelled (Level 4) Hide Armor)Leather Armor (Enspelled (Level 4) Leather Armor)Padded Armor (Enspelled (Level 4) Padded Armor)Plate Armor (Enspelled (Level 4) Plate Armor)Ring Mail (Enspelled (Level 4) Ring Mail)Scale Mail (Enspelled (Level 4) Scale Mail)Splint Armor (Enspelled (Level 4) Splint Armor)Studded Leather Armor (Enspelled (Level 4) Studded Leather Armor)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "enspelled-armor-level-5",
+    "name": "Enspelled Armor (Level 5)",
+    "type": "other",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "Bound into this armor is a level 5 spell. The spell is determined when the armor is created and must belong to the Abjuration or Illusion school of magic. The armor has 6 charges and regains 1d6 expended charges daily at dawn. While wearing the armor, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Base items. This item variant can be applied to the following base items:Breastplate (Enspelled (Level 5) Breastplate)Chain Mail (Enspelled (Level 5) Chain Mail)Chain Shirt (Enspelled (Level 5) Chain Shirt)Half Plate Armor (Enspelled (Level 5) Half Plate Armor)Hide Armor (Enspelled (Level 5) Hide Armor)Leather Armor (Enspelled (Level 5) Leather Armor)Padded Armor (Enspelled (Level 5) Padded Armor)Plate Armor (Enspelled (Level 5) Plate Armor)Ring Mail (Enspelled (Level 5) Ring Mail)Scale Mail (Enspelled (Level 5) Scale Mail)Splint Armor (Enspelled (Level 5) Splint Armor)Studded Leather Armor (Enspelled (Level 5) Studded Leather Armor)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "enspelled-armor-level-6",
+    "name": "Enspelled Armor (Level 6)",
+    "type": "other",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "Bound into this armor is a level 6 spell. The spell is determined when the armor is created and must belong to the Abjuration or Illusion school of magic. The armor has 6 charges and regains 1d6 expended charges daily at dawn. While wearing the armor, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Base items. This item variant can be applied to the following base items:Breastplate (Enspelled (Level 6) Breastplate)Chain Mail (Enspelled (Level 6) Chain Mail)Chain Shirt (Enspelled (Level 6) Chain Shirt)Half Plate Armor (Enspelled (Level 6) Half Plate Armor)Hide Armor (Enspelled (Level 6) Hide Armor)Leather Armor (Enspelled (Level 6) Leather Armor)Padded Armor (Enspelled (Level 6) Padded Armor)Plate Armor (Enspelled (Level 6) Plate Armor)Ring Mail (Enspelled (Level 6) Ring Mail)Scale Mail (Enspelled (Level 6) Scale Mail)Splint Armor (Enspelled (Level 6) Splint Armor)Studded Leather Armor (Enspelled (Level 6) Studded Leather Armor)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "enspelled-armor-level-7",
+    "name": "Enspelled Armor (Level 7)",
+    "type": "other",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "Bound into this armor is a level 7 spell. The spell is determined when the armor is created and must belong to the Abjuration or Illusion school of magic. The armor has 6 charges and regains 1d6 expended charges daily at dawn. While wearing the armor, you can expend 1 charge to cast its spell.The spell's saving throw DC is 18, and its attack bonus is +10. Base items. This item variant can be applied to the following base items:Breastplate (Enspelled (Level 7) Breastplate)Chain Mail (Enspelled (Level 7) Chain Mail)Chain Shirt (Enspelled (Level 7) Chain Shirt)Half Plate Armor (Enspelled (Level 7) Half Plate Armor)Hide Armor (Enspelled (Level 7) Hide Armor)Leather Armor (Enspelled (Level 7) Leather Armor)Padded Armor (Enspelled (Level 7) Padded Armor)Plate Armor (Enspelled (Level 7) Plate Armor)Ring Mail (Enspelled (Level 7) Ring Mail)Scale Mail (Enspelled (Level 7) Scale Mail)Splint Armor (Enspelled (Level 7) Splint Armor)Studded Leather Armor (Enspelled (Level 7) Studded Leather Armor)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "enspelled-armor-level-8",
+    "name": "Enspelled Armor (Level 8)",
+    "type": "other",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "Bound into this armor is a level 8 spell. The spell is determined when the armor is created and must belong to the Abjuration or Illusion school of magic. The armor has 6 charges and regains 1d6 expended charges daily at dawn. While wearing the armor, you can expend 1 charge to cast its spell.The spell's saving throw DC is 18, and its attack bonus is +10. Base items. This item variant can be applied to the following base items:Breastplate (Enspelled (Level 8) Breastplate)Chain Mail (Enspelled (Level 8) Chain Mail)Chain Shirt (Enspelled (Level 8) Chain Shirt)Half Plate Armor (Enspelled (Level 8) Half Plate Armor)Hide Armor (Enspelled (Level 8) Hide Armor)Leather Armor (Enspelled (Level 8) Leather Armor)Padded Armor (Enspelled (Level 8) Padded Armor)Plate Armor (Enspelled (Level 8) Plate Armor)Ring Mail (Enspelled (Level 8) Ring Mail)Scale Mail (Enspelled (Level 8) Scale Mail)Splint Armor (Enspelled (Level 8) Splint Armor)Studded Leather Armor (Enspelled (Level 8) Studded Leather Armor)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "enspelled-armor",
+    "name": "Enspelled Armor",
+    "type": "other",
+    "rarity": "varies",
+    "weight": 0,
+    "description": "Multiple variations of this item exist, as listed below:Enspelled Armor (Cantrip)Enspelled Armor (Level 1)Enspelled Armor (Level 2)Enspelled Armor (Level 3)Enspelled Armor (Level 4)Enspelled Armor (Level 5)Enspelled Armor (Level 6)Enspelled Armor (Level 7)Enspelled Armor (Level 8)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "enspelled-weapon-cantrip",
+    "name": "Enspelled Weapon (Cantrip)",
+    "type": "other",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "Bound into this weapon is a cantrip. The cantrip is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 13, and its attack bonus is +5. Base items. This item variant can be applied to the following base items:Antimatter Rifle (Enspelled (Cantrip) Antimatter Rifle)Automatic Rifle (Enspelled (Cantrip) Automatic Rifle)Battleaxe (Enspelled (Cantrip) Battleaxe)Blowgun (Enspelled (Cantrip) Blowgun)Club (Enspelled (Cantrip) Club)Dagger (Enspelled (Cantrip) Dagger)Dart (Enspelled (Cantrip) Dart)Double-Bladed Scimitar (Enspelled (Cantrip) Double-Bladed Scimitar)Flail (Enspelled (Cantrip) Flail)Glaive (Enspelled (Cantrip) Glaive)Greataxe (Enspelled (Cantrip) Greataxe)Greatclub (Enspelled (Cantrip) Greatclub)Greatsword (Enspelled (Cantrip) Greatsword)Halberd (Enspelled (Cantrip) Halberd)Hand Crossbow (Enspelled (Cantrip) Hand Crossbow)Handaxe (Enspelled (Cantrip) Handaxe)Heavy Crossbow (Enspelled (Cantrip) Heavy Crossbow)Hooked Shortspear (Enspelled (Cantrip) Hooked Shortspear)Hoopak (Enspelled (Cantrip) Hoopak)Hunting Rifle (Enspelled (Cantrip) Hunting Rifle)Javelin (Enspelled (Cantrip) Javelin)Lance (Enspelled (Cantrip) Lance)Laser Pistol (Enspelled (Cantrip) Laser Pistol)Laser Rifle (Enspelled (Cantrip) Laser Rifle)Light Crossbow (Enspelled (Cantrip) Light Crossbow)Light Hammer (Enspelled (Cantrip) Light Hammer)Light Repeating Crossbow (Enspelled (Cantrip) Light Repeating Crossbow)Longbow (Enspelled (Cantrip) Longbow)Longsword (Enspelled (Cantrip) Longsword)Mace (Enspelled (Cantrip) Mace)Maul (Enspelled (Cantrip) Maul)Morningstar (Enspelled (Cantrip) Morningstar)Musket (Enspelled (Cantrip) Musket)Pike (Enspelled (Cantrip) Pike)Pistol (Enspelled (Cantrip) Pistol)Quarterstaff (Enspelled (Cantrip) Quarterstaff)Rapier (Enspelled (Cantrip) Rapier)Revolver (Enspelled (Cantrip) Revolver)Scimitar (Enspelled (Cantrip) Scimitar)Semiautomatic Pistol (Enspelled (Cantrip) Semiautomatic Pistol)Shortbow (Enspelled (Cantrip) Shortbow)Shortsword (Enspelled (Cantrip) Shortsword)Shotgun (Enspelled (Cantrip) Shotgun)Sickle (Enspelled (Cantrip) Sickle)Sling (Enspelled (Cantrip) Sling)Spear (Enspelled (Cantrip) Spear)Staff (Enspelled (Cantrip) Staff)Trident (Enspelled (Cantrip) Trident)War Pick (Enspelled (Cantrip) War Pick)Warhammer (Enspelled (Cantrip) Warhammer)Whip (Enspelled (Cantrip) Whip)Wooden Staff (Enspelled (Cantrip) Wooden Staff)Yklwa (Enspelled (Cantrip) Yklwa)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "enspelled-weapon-level-1",
+    "name": "Enspelled Weapon (Level 1)",
+    "type": "other",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "Bound into this weapon is a level 1 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 13, and its attack bonus is +5. Base items. This item variant can be applied to the following base items:Antimatter Rifle (Enspelled (Level 1) Antimatter Rifle)Automatic Rifle (Enspelled (Level 1) Automatic Rifle)Battleaxe (Enspelled (Level 1) Battleaxe)Blowgun (Enspelled (Level 1) Blowgun)Club (Enspelled (Level 1) Club)Dagger (Enspelled (Level 1) Dagger)Dart (Enspelled (Level 1) Dart)Double-Bladed Scimitar (Enspelled (Level 1) Double-Bladed Scimitar)Flail (Enspelled (Level 1) Flail)Glaive (Enspelled (Level 1) Glaive)Greataxe (Enspelled (Level 1) Greataxe)Greatclub (Enspelled (Level 1) Greatclub)Greatsword (Enspelled (Level 1) Greatsword)Halberd (Enspelled (Level 1) Halberd)Hand Crossbow (Enspelled (Level 1) Hand Crossbow)Handaxe (Enspelled (Level 1) Handaxe)Heavy Crossbow (Enspelled (Level 1) Heavy Crossbow)Hooked Shortspear (Enspelled (Level 1) Hooked Shortspear)Hoopak (Enspelled (Level 1) Hoopak)Hunting Rifle (Enspelled (Level 1) Hunting Rifle)Javelin (Enspelled (Level 1) Javelin)Lance (Enspelled (Level 1) Lance)Laser Pistol (Enspelled (Level 1) Laser Pistol)Laser Rifle (Enspelled (Level 1) Laser Rifle)Light Crossbow (Enspelled (Level 1) Light Crossbow)Light Hammer (Enspelled (Level 1) Light Hammer)Light Repeating Crossbow (Enspelled (Level 1) Light Repeating Crossbow)Longbow (Enspelled (Level 1) Longbow)Longsword (Enspelled (Level 1) Longsword)Mace (Enspelled (Level 1) Mace)Maul (Enspelled (Level 1) Maul)Morningstar (Enspelled (Level 1) Morningstar)Musket (Enspelled (Level 1) Musket)Pike (Enspelled (Level 1) Pike)Pistol (Enspelled (Level 1) Pistol)Quarterstaff (Enspelled (Level 1) Quarterstaff)Rapier (Enspelled (Level 1) Rapier)Revolver (Enspelled (Level 1) Revolver)Scimitar (Enspelled (Level 1) Scimitar)Semiautomatic Pistol (Enspelled (Level 1) Semiautomatic Pistol)Shortbow (Enspelled (Level 1) Shortbow)Shortsword (Enspelled (Level 1) Shortsword)Shotgun (Enspelled (Level 1) Shotgun)Sickle (Enspelled (Level 1) Sickle)Sling (Enspelled (Level 1) Sling)Spear (Enspelled (Level 1) Spear)Staff (Enspelled (Level 1) Staff)Trident (Enspelled (Level 1) Trident)War Pick (Enspelled (Level 1) War Pick)Warhammer (Enspelled (Level 1) Warhammer)Whip (Enspelled (Level 1) Whip)Wooden Staff (Enspelled (Level 1) Wooden Staff)Yklwa (Enspelled (Level 1) Yklwa)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "enspelled-weapon-level-2",
+    "name": "Enspelled Weapon (Level 2)",
+    "type": "other",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "Bound into this weapon is a level 2 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 13, and its attack bonus is +5. Base items. This item variant can be applied to the following base items:Antimatter Rifle (Enspelled (Level 2) Antimatter Rifle)Automatic Rifle (Enspelled (Level 2) Automatic Rifle)Battleaxe (Enspelled (Level 2) Battleaxe)Blowgun (Enspelled (Level 2) Blowgun)Club (Enspelled (Level 2) Club)Dagger (Enspelled (Level 2) Dagger)Dart (Enspelled (Level 2) Dart)Double-Bladed Scimitar (Enspelled (Level 2) Double-Bladed Scimitar)Flail (Enspelled (Level 2) Flail)Glaive (Enspelled (Level 2) Glaive)Greataxe (Enspelled (Level 2) Greataxe)Greatclub (Enspelled (Level 2) Greatclub)Greatsword (Enspelled (Level 2) Greatsword)Halberd (Enspelled (Level 2) Halberd)Hand Crossbow (Enspelled (Level 2) Hand Crossbow)Handaxe (Enspelled (Level 2) Handaxe)Heavy Crossbow (Enspelled (Level 2) Heavy Crossbow)Hooked Shortspear (Enspelled (Level 2) Hooked Shortspear)Hoopak (Enspelled (Level 2) Hoopak)Hunting Rifle (Enspelled (Level 2) Hunting Rifle)Javelin (Enspelled (Level 2) Javelin)Lance (Enspelled (Level 2) Lance)Laser Pistol (Enspelled (Level 2) Laser Pistol)Laser Rifle (Enspelled (Level 2) Laser Rifle)Light Crossbow (Enspelled (Level 2) Light Crossbow)Light Hammer (Enspelled (Level 2) Light Hammer)Light Repeating Crossbow (Enspelled (Level 2) Light Repeating Crossbow)Longbow (Enspelled (Level 2) Longbow)Longsword (Enspelled (Level 2) Longsword)Mace (Enspelled (Level 2) Mace)Maul (Enspelled (Level 2) Maul)Morningstar (Enspelled (Level 2) Morningstar)Musket (Enspelled (Level 2) Musket)Pike (Enspelled (Level 2) Pike)Pistol (Enspelled (Level 2) Pistol)Quarterstaff (Enspelled (Level 2) Quarterstaff)Rapier (Enspelled (Level 2) Rapier)Revolver (Enspelled (Level 2) Revolver)Scimitar (Enspelled (Level 2) Scimitar)Semiautomatic Pistol (Enspelled (Level 2) Semiautomatic Pistol)Shortbow (Enspelled (Level 2) Shortbow)Shortsword (Enspelled (Level 2) Shortsword)Shotgun (Enspelled (Level 2) Shotgun)Sickle (Enspelled (Level 2) Sickle)Sling (Enspelled (Level 2) Sling)Spear (Enspelled (Level 2) Spear)Staff (Enspelled (Level 2) Staff)Trident (Enspelled (Level 2) Trident)War Pick (Enspelled (Level 2) War Pick)Warhammer (Enspelled (Level 2) Warhammer)Whip (Enspelled (Level 2) Whip)Wooden Staff (Enspelled (Level 2) Wooden Staff)Yklwa (Enspelled (Level 2) Yklwa)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "enspelled-weapon-level-3",
+    "name": "Enspelled Weapon (Level 3)",
+    "type": "other",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "Bound into this weapon is a level 3 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 15, and its attack bonus is +7. Base items. This item variant can be applied to the following base items:Antimatter Rifle (Enspelled (Level 3) Antimatter Rifle)Automatic Rifle (Enspelled (Level 3) Automatic Rifle)Battleaxe (Enspelled (Level 3) Battleaxe)Blowgun (Enspelled (Level 3) Blowgun)Club (Enspelled (Level 3) Club)Dagger (Enspelled (Level 3) Dagger)Dart (Enspelled (Level 3) Dart)Double-Bladed Scimitar (Enspelled (Level 3) Double-Bladed Scimitar)Flail (Enspelled (Level 3) Flail)Glaive (Enspelled (Level 3) Glaive)Greataxe (Enspelled (Level 3) Greataxe)Greatclub (Enspelled (Level 3) Greatclub)Greatsword (Enspelled (Level 3) Greatsword)Halberd (Enspelled (Level 3) Halberd)Hand Crossbow (Enspelled (Level 3) Hand Crossbow)Handaxe (Enspelled (Level 3) Handaxe)Heavy Crossbow (Enspelled (Level 3) Heavy Crossbow)Hooked Shortspear (Enspelled (Level 3) Hooked Shortspear)Hoopak (Enspelled (Level 3) Hoopak)Hunting Rifle (Enspelled (Level 3) Hunting Rifle)Javelin (Enspelled (Level 3) Javelin)Lance (Enspelled (Level 3) Lance)Laser Pistol (Enspelled (Level 3) Laser Pistol)Laser Rifle (Enspelled (Level 3) Laser Rifle)Light Crossbow (Enspelled (Level 3) Light Crossbow)Light Hammer (Enspelled (Level 3) Light Hammer)Light Repeating Crossbow (Enspelled (Level 3) Light Repeating Crossbow)Longbow (Enspelled (Level 3) Longbow)Longsword (Enspelled (Level 3) Longsword)Mace (Enspelled (Level 3) Mace)Maul (Enspelled (Level 3) Maul)Morningstar (Enspelled (Level 3) Morningstar)Musket (Enspelled (Level 3) Musket)Pike (Enspelled (Level 3) Pike)Pistol (Enspelled (Level 3) Pistol)Quarterstaff (Enspelled (Level 3) Quarterstaff)Rapier (Enspelled (Level 3) Rapier)Revolver (Enspelled (Level 3) Revolver)Scimitar (Enspelled (Level 3) Scimitar)Semiautomatic Pistol (Enspelled (Level 3) Semiautomatic Pistol)Shortbow (Enspelled (Level 3) Shortbow)Shortsword (Enspelled (Level 3) Shortsword)Shotgun (Enspelled (Level 3) Shotgun)Sickle (Enspelled (Level 3) Sickle)Sling (Enspelled (Level 3) Sling)Spear (Enspelled (Level 3) Spear)Staff (Enspelled (Level 3) Staff)Trident (Enspelled (Level 3) Trident)War Pick (Enspelled (Level 3) War Pick)Warhammer (Enspelled (Level 3) Warhammer)Whip (Enspelled (Level 3) Whip)Wooden Staff (Enspelled (Level 3) Wooden Staff)Yklwa (Enspelled (Level 3) Yklwa)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "enspelled-weapon-level-4",
+    "name": "Enspelled Weapon (Level 4)",
+    "type": "other",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "Bound into this weapon is a level 4 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 15, and its attack bonus is +7. Base items. This item variant can be applied to the following base items:Antimatter Rifle (Enspelled (Level 4) Antimatter Rifle)Automatic Rifle (Enspelled (Level 4) Automatic Rifle)Battleaxe (Enspelled (Level 4) Battleaxe)Blowgun (Enspelled (Level 4) Blowgun)Club (Enspelled (Level 4) Club)Dagger (Enspelled (Level 4) Dagger)Dart (Enspelled (Level 4) Dart)Double-Bladed Scimitar (Enspelled (Level 4) Double-Bladed Scimitar)Flail (Enspelled (Level 4) Flail)Glaive (Enspelled (Level 4) Glaive)Greataxe (Enspelled (Level 4) Greataxe)Greatclub (Enspelled (Level 4) Greatclub)Greatsword (Enspelled (Level 4) Greatsword)Halberd (Enspelled (Level 4) Halberd)Hand Crossbow (Enspelled (Level 4) Hand Crossbow)Handaxe (Enspelled (Level 4) Handaxe)Heavy Crossbow (Enspelled (Level 4) Heavy Crossbow)Hooked Shortspear (Enspelled (Level 4) Hooked Shortspear)Hoopak (Enspelled (Level 4) Hoopak)Hunting Rifle (Enspelled (Level 4) Hunting Rifle)Javelin (Enspelled (Level 4) Javelin)Lance (Enspelled (Level 4) Lance)Laser Pistol (Enspelled (Level 4) Laser Pistol)Laser Rifle (Enspelled (Level 4) Laser Rifle)Light Crossbow (Enspelled (Level 4) Light Crossbow)Light Hammer (Enspelled (Level 4) Light Hammer)Light Repeating Crossbow (Enspelled (Level 4) Light Repeating Crossbow)Longbow (Enspelled (Level 4) Longbow)Longsword (Enspelled (Level 4) Longsword)Mace (Enspelled (Level 4) Mace)Maul (Enspelled (Level 4) Maul)Morningstar (Enspelled (Level 4) Morningstar)Musket (Enspelled (Level 4) Musket)Pike (Enspelled (Level 4) Pike)Pistol (Enspelled (Level 4) Pistol)Quarterstaff (Enspelled (Level 4) Quarterstaff)Rapier (Enspelled (Level 4) Rapier)Revolver (Enspelled (Level 4) Revolver)Scimitar (Enspelled (Level 4) Scimitar)Semiautomatic Pistol (Enspelled (Level 4) Semiautomatic Pistol)Shortbow (Enspelled (Level 4) Shortbow)Shortsword (Enspelled (Level 4) Shortsword)Shotgun (Enspelled (Level 4) Shotgun)Sickle (Enspelled (Level 4) Sickle)Sling (Enspelled (Level 4) Sling)Spear (Enspelled (Level 4) Spear)Staff (Enspelled (Level 4) Staff)Trident (Enspelled (Level 4) Trident)War Pick (Enspelled (Level 4) War Pick)Warhammer (Enspelled (Level 4) Warhammer)Whip (Enspelled (Level 4) Whip)Wooden Staff (Enspelled (Level 4) Wooden Staff)Yklwa (Enspelled (Level 4) Yklwa)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "enspelled-weapon-level-5",
+    "name": "Enspelled Weapon (Level 5)",
+    "type": "other",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Base items. This item variant can be applied to the following base items:Antimatter Rifle (Enspelled (Level 5) Antimatter Rifle)Automatic Rifle (Enspelled (Level 5) Automatic Rifle)Battleaxe (Enspelled (Level 5) Battleaxe)Blowgun (Enspelled (Level 5) Blowgun)Club (Enspelled (Level 5) Club)Dagger (Enspelled (Level 5) Dagger)Dart (Enspelled (Level 5) Dart)Double-Bladed Scimitar (Enspelled (Level 5) Double-Bladed Scimitar)Flail (Enspelled (Level 5) Flail)Glaive (Enspelled (Level 5) Glaive)Greataxe (Enspelled (Level 5) Greataxe)Greatclub (Enspelled (Level 5) Greatclub)Greatsword (Enspelled (Level 5) Greatsword)Halberd (Enspelled (Level 5) Halberd)Hand Crossbow (Enspelled (Level 5) Hand Crossbow)Handaxe (Enspelled (Level 5) Handaxe)Heavy Crossbow (Enspelled (Level 5) Heavy Crossbow)Hooked Shortspear (Enspelled (Level 5) Hooked Shortspear)Hoopak (Enspelled (Level 5) Hoopak)Hunting Rifle (Enspelled (Level 5) Hunting Rifle)Javelin (Enspelled (Level 5) Javelin)Lance (Enspelled (Level 5) Lance)Laser Pistol (Enspelled (Level 5) Laser Pistol)Laser Rifle (Enspelled (Level 5) Laser Rifle)Light Crossbow (Enspelled (Level 5) Light Crossbow)Light Hammer (Enspelled (Level 5) Light Hammer)Light Repeating Crossbow (Enspelled (Level 5) Light Repeating Crossbow)Longbow (Enspelled (Level 5) Longbow)Longsword (Enspelled (Level 5) Longsword)Mace (Enspelled (Level 5) Mace)Maul (Enspelled (Level 5) Maul)Morningstar (Enspelled (Level 5) Morningstar)Musket (Enspelled (Level 5) Musket)Pike (Enspelled (Level 5) Pike)Pistol (Enspelled (Level 5) Pistol)Quarterstaff (Enspelled (Level 5) Quarterstaff)Rapier (Enspelled (Level 5) Rapier)Revolver (Enspelled (Level 5) Revolver)Scimitar (Enspelled (Level 5) Scimitar)Semiautomatic Pistol (Enspelled (Level 5) Semiautomatic Pistol)Shortbow (Enspelled (Level 5) Shortbow)Shortsword (Enspelled (Level 5) Shortsword)Shotgun (Enspelled (Level 5) Shotgun)Sickle (Enspelled (Level 5) Sickle)Sling (Enspelled (Level 5) Sling)Spear (Enspelled (Level 5) Spear)Staff (Enspelled (Level 5) Staff)Trident (Enspelled (Level 5) Trident)War Pick (Enspelled (Level 5) War Pick)Warhammer (Enspelled (Level 5) Warhammer)Whip (Enspelled (Level 5) Whip)Wooden Staff (Enspelled (Level 5) Wooden Staff)Yklwa (Enspelled (Level 5) Yklwa)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "enspelled-weapon-level-6",
+    "name": "Enspelled Weapon (Level 6)",
+    "type": "other",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Base items. This item variant can be applied to the following base items:Antimatter Rifle (Enspelled (Level 6) Antimatter Rifle)Automatic Rifle (Enspelled (Level 6) Automatic Rifle)Battleaxe (Enspelled (Level 6) Battleaxe)Blowgun (Enspelled (Level 6) Blowgun)Club (Enspelled (Level 6) Club)Dagger (Enspelled (Level 6) Dagger)Dart (Enspelled (Level 6) Dart)Double-Bladed Scimitar (Enspelled (Level 6) Double-Bladed Scimitar)Flail (Enspelled (Level 6) Flail)Glaive (Enspelled (Level 6) Glaive)Greataxe (Enspelled (Level 6) Greataxe)Greatclub (Enspelled (Level 6) Greatclub)Greatsword (Enspelled (Level 6) Greatsword)Halberd (Enspelled (Level 6) Halberd)Hand Crossbow (Enspelled (Level 6) Hand Crossbow)Handaxe (Enspelled (Level 6) Handaxe)Heavy Crossbow (Enspelled (Level 6) Heavy Crossbow)Hooked Shortspear (Enspelled (Level 6) Hooked Shortspear)Hoopak (Enspelled (Level 6) Hoopak)Hunting Rifle (Enspelled (Level 6) Hunting Rifle)Javelin (Enspelled (Level 6) Javelin)Lance (Enspelled (Level 6) Lance)Laser Pistol (Enspelled (Level 6) Laser Pistol)Laser Rifle (Enspelled (Level 6) Laser Rifle)Light Crossbow (Enspelled (Level 6) Light Crossbow)Light Hammer (Enspelled (Level 6) Light Hammer)Light Repeating Crossbow (Enspelled (Level 6) Light Repeating Crossbow)Longbow (Enspelled (Level 6) Longbow)Longsword (Enspelled (Level 6) Longsword)Mace (Enspelled (Level 6) Mace)Maul (Enspelled (Level 6) Maul)Morningstar (Enspelled (Level 6) Morningstar)Musket (Enspelled (Level 6) Musket)Pike (Enspelled (Level 6) Pike)Pistol (Enspelled (Level 6) Pistol)Quarterstaff (Enspelled (Level 6) Quarterstaff)Rapier (Enspelled (Level 6) Rapier)Revolver (Enspelled (Level 6) Revolver)Scimitar (Enspelled (Level 6) Scimitar)Semiautomatic Pistol (Enspelled (Level 6) Semiautomatic Pistol)Shortbow (Enspelled (Level 6) Shortbow)Shortsword (Enspelled (Level 6) Shortsword)Shotgun (Enspelled (Level 6) Shotgun)Sickle (Enspelled (Level 6) Sickle)Sling (Enspelled (Level 6) Sling)Spear (Enspelled (Level 6) Spear)Staff (Enspelled (Level 6) Staff)Trident (Enspelled (Level 6) Trident)War Pick (Enspelled (Level 6) War Pick)Warhammer (Enspelled (Level 6) Warhammer)Whip (Enspelled (Level 6) Whip)Wooden Staff (Enspelled (Level 6) Wooden Staff)Yklwa (Enspelled (Level 6) Yklwa)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "enspelled-weapon-level-7",
+    "name": "Enspelled Weapon (Level 7)",
+    "type": "other",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "Bound into this weapon is a level 7 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 18, and its attack bonus is +10. Base items. This item variant can be applied to the following base items:Antimatter Rifle (Enspelled (Level 7) Antimatter Rifle)Automatic Rifle (Enspelled (Level 7) Automatic Rifle)Battleaxe (Enspelled (Level 7) Battleaxe)Blowgun (Enspelled (Level 7) Blowgun)Club (Enspelled (Level 7) Club)Dagger (Enspelled (Level 7) Dagger)Dart (Enspelled (Level 7) Dart)Double-Bladed Scimitar (Enspelled (Level 7) Double-Bladed Scimitar)Flail (Enspelled (Level 7) Flail)Glaive (Enspelled (Level 7) Glaive)Greataxe (Enspelled (Level 7) Greataxe)Greatclub (Enspelled (Level 7) Greatclub)Greatsword (Enspelled (Level 7) Greatsword)Halberd (Enspelled (Level 7) Halberd)Hand Crossbow (Enspelled (Level 7) Hand Crossbow)Handaxe (Enspelled (Level 7) Handaxe)Heavy Crossbow (Enspelled (Level 7) Heavy Crossbow)Hooked Shortspear (Enspelled (Level 7) Hooked Shortspear)Hoopak (Enspelled (Level 7) Hoopak)Hunting Rifle (Enspelled (Level 7) Hunting Rifle)Javelin (Enspelled (Level 7) Javelin)Lance (Enspelled (Level 7) Lance)Laser Pistol (Enspelled (Level 7) Laser Pistol)Laser Rifle (Enspelled (Level 7) Laser Rifle)Light Crossbow (Enspelled (Level 7) Light Crossbow)Light Hammer (Enspelled (Level 7) Light Hammer)Light Repeating Crossbow (Enspelled (Level 7) Light Repeating Crossbow)Longbow (Enspelled (Level 7) Longbow)Longsword (Enspelled (Level 7) Longsword)Mace (Enspelled (Level 7) Mace)Maul (Enspelled (Level 7) Maul)Morningstar (Enspelled (Level 7) Morningstar)Musket (Enspelled (Level 7) Musket)Pike (Enspelled (Level 7) Pike)Pistol (Enspelled (Level 7) Pistol)Quarterstaff (Enspelled (Level 7) Quarterstaff)Rapier (Enspelled (Level 7) Rapier)Revolver (Enspelled (Level 7) Revolver)Scimitar (Enspelled (Level 7) Scimitar)Semiautomatic Pistol (Enspelled (Level 7) Semiautomatic Pistol)Shortbow (Enspelled (Level 7) Shortbow)Shortsword (Enspelled (Level 7) Shortsword)Shotgun (Enspelled (Level 7) Shotgun)Sickle (Enspelled (Level 7) Sickle)Sling (Enspelled (Level 7) Sling)Spear (Enspelled (Level 7) Spear)Staff (Enspelled (Level 7) Staff)Trident (Enspelled (Level 7) Trident)War Pick (Enspelled (Level 7) War Pick)Warhammer (Enspelled (Level 7) Warhammer)Whip (Enspelled (Level 7) Whip)Wooden Staff (Enspelled (Level 7) Wooden Staff)Yklwa (Enspelled (Level 7) Yklwa)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "enspelled-weapon-level-8",
+    "name": "Enspelled Weapon (Level 8)",
+    "type": "other",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "Bound into this weapon is a level 8 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 18, and its attack bonus is +10. Base items. This item variant can be applied to the following base items:Antimatter Rifle (Enspelled (Level 8) Antimatter Rifle)Automatic Rifle (Enspelled (Level 8) Automatic Rifle)Battleaxe (Enspelled (Level 8) Battleaxe)Blowgun (Enspelled (Level 8) Blowgun)Club (Enspelled (Level 8) Club)Dagger (Enspelled (Level 8) Dagger)Dart (Enspelled (Level 8) Dart)Double-Bladed Scimitar (Enspelled (Level 8) Double-Bladed Scimitar)Flail (Enspelled (Level 8) Flail)Glaive (Enspelled (Level 8) Glaive)Greataxe (Enspelled (Level 8) Greataxe)Greatclub (Enspelled (Level 8) Greatclub)Greatsword (Enspelled (Level 8) Greatsword)Halberd (Enspelled (Level 8) Halberd)Hand Crossbow (Enspelled (Level 8) Hand Crossbow)Handaxe (Enspelled (Level 8) Handaxe)Heavy Crossbow (Enspelled (Level 8) Heavy Crossbow)Hooked Shortspear (Enspelled (Level 8) Hooked Shortspear)Hoopak (Enspelled (Level 8) Hoopak)Hunting Rifle (Enspelled (Level 8) Hunting Rifle)Javelin (Enspelled (Level 8) Javelin)Lance (Enspelled (Level 8) Lance)Laser Pistol (Enspelled (Level 8) Laser Pistol)Laser Rifle (Enspelled (Level 8) Laser Rifle)Light Crossbow (Enspelled (Level 8) Light Crossbow)Light Hammer (Enspelled (Level 8) Light Hammer)Light Repeating Crossbow (Enspelled (Level 8) Light Repeating Crossbow)Longbow (Enspelled (Level 8) Longbow)Longsword (Enspelled (Level 8) Longsword)Mace (Enspelled (Level 8) Mace)Maul (Enspelled (Level 8) Maul)Morningstar (Enspelled (Level 8) Morningstar)Musket (Enspelled (Level 8) Musket)Pike (Enspelled (Level 8) Pike)Pistol (Enspelled (Level 8) Pistol)Quarterstaff (Enspelled (Level 8) Quarterstaff)Rapier (Enspelled (Level 8) Rapier)Revolver (Enspelled (Level 8) Revolver)Scimitar (Enspelled (Level 8) Scimitar)Semiautomatic Pistol (Enspelled (Level 8) Semiautomatic Pistol)Shortbow (Enspelled (Level 8) Shortbow)Shortsword (Enspelled (Level 8) Shortsword)Shotgun (Enspelled (Level 8) Shotgun)Sickle (Enspelled (Level 8) Sickle)Sling (Enspelled (Level 8) Sling)Spear (Enspelled (Level 8) Spear)Staff (Enspelled (Level 8) Staff)Trident (Enspelled (Level 8) Trident)War Pick (Enspelled (Level 8) War Pick)Warhammer (Enspelled (Level 8) Warhammer)Whip (Enspelled (Level 8) Whip)Wooden Staff (Enspelled (Level 8) Wooden Staff)Yklwa (Enspelled (Level 8) Yklwa)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "enspelled-weapon",
+    "name": "Enspelled Weapon",
+    "type": "other",
+    "rarity": "varies",
+    "weight": 0,
+    "description": "Multiple variations of this item exist, as listed below:Enspelled Weapon (Cantrip)Enspelled Weapon (Level 1)Enspelled Weapon (Level 2)Enspelled Weapon (Level 3)Enspelled Weapon (Level 4)Enspelled Weapon (Level 5)Enspelled Weapon (Level 6)Enspelled Weapon (Level 7)Enspelled Weapon (Level 8)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "executioner-s-axe",
+    "name": "Executioner's Axe",
+    "type": "other",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.Any Humanoid you hit with the weapon takes an extra 2d6 Slashing damage, and you gain Temporary Hit Points equal to the extra damage dealt. Base items. This item variant can be applied to the following base items:Battleaxe (Executioner's Battleaxe)Greataxe (Executioner's Greataxe)Halberd (Executioner's Halberd)Handaxe (Executioner's Handaxe)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "exotic-saddle",
+    "name": "Exotic Saddle",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 40,
+    "description": "A saddle comes with a bit, a bridle, reins, and any other equipment needed to use the saddle. An Exotic Saddle is required for riding an aquatic or a flying mount.",
+    "cost": {
+      "quantity": 60,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "eye-agate",
+    "name": "Eye Agate",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A circles of gray, white, brown, blue, or green gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "feed-per-day",
+    "name": "Feed (per day)",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 10,
+    "description": "",
+    "cost": {
+      "quantity": 5,
+      "unit": "cp"
+    }
+  },
+  {
+    "id": "fine-wine-bottle",
+    "name": "Fine Wine (bottle)",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "",
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "fire-opal",
+    "name": "Fire Opal",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A fiery red gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "flame-tongue",
+    "name": "Alev Dili",
+    "type": "other",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "While holding this magic weapon, you can take a Bonus Action and use a command word to cause flames to engulf the damage-dealing part of the weapon. These flames shed Bright Light in a 40-foot radius and Dim Light for an additional 40 feet. While the weapon is ablaze, it deals an extra 2d6 Fire damage on a hit. The flames last until you take a Bonus Action to issue the command again or until you drop, stow, or sheathe the weapon. Base items. This item variant can be applied to the following base items:Battleaxe (Flame Tongue Battleaxe)Club (Flame Tongue Club)Dagger (Flame Tongue Dagger)Flail (Flame Tongue Flail)Glaive (Flame Tongue Glaive)Greataxe (Flame Tongue Greataxe)Greatclub (Flame Tongue Greatclub)Greatsword (Flame Tongue Greatsword)Halberd (Flame Tongue Halberd)Handaxe (Flame Tongue Handaxe)Javelin (Flame Tongue Javelin)Lance (Flame Tongue Lance)Light Hammer (Flame Tongue Light Hammer)Longsword (Flame Tongue Longsword)Mace (Flame Tongue Mace)Maul (Flame Tongue Maul)Morningstar (Flame Tongue Morningstar)Pike (Flame Tongue Pike)Quarterstaff (Flame Tongue Quarterstaff)Rapier (Flame Tongue Rapier)Scimitar (Flame Tongue Scimitar)Shortsword (Flame Tongue Shortsword)Sickle (Flame Tongue Sickle)Spear (Flame Tongue Spear)Trident (Flame Tongue Trident)War Pick (Flame Tongue War Pick)Warhammer (Flame Tongue Warhammer)Whip (Flame Tongue Whip)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "flour",
+    "name": "Flour",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 2,
+    "description": "Merchants commonly exchange trade goods without using currency.",
+    "cost": {
+      "quantity": 2,
+      "unit": "cp"
+    }
+  },
+  {
+    "id": "fragmentation-grenade",
+    "name": "Fragmentation Grenade",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "As an action, you can either throw a grenade at a point up to 60 feet away or use a Grenade Launcher to propel the grenade to a point up to 1,000 feet away. The grenade explodes at that point, creating a particular effect in a 20-foot-radius Sphere.Each creature in the Sphere makes a DC 15 Dexterity saving throw, taking 17 (5d6) Piercing damage on a failed save or half as much damage on a successful one.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "frost-brand",
+    "name": "Ayaz Damgası",
+    "type": "other",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "When you hit with an attack roll using this magic weapon, the target takes an extra 1d6 Cold damage. In addition, while you hold the weapon, you have Resistance to Fire damage.In freezing temperatures, the weapon sheds Bright Light in a 10-foot radius and Dim Light for an additional 10 feet.When you draw this weapon, you can extinguish all nonmagical flames within 30 feet of yourself. Once used, this property can't be used again for 1 hour. Base items. This item variant can be applied to the following base items:Glaive (Frost Brand Glaive)Greatsword (Frost Brand Greatsword)Longsword (Frost Brand Longsword)Rapier (Frost Brand Rapier)Scimitar (Frost Brand Scimitar)Shortsword (Frost Brand Shortsword)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "galley",
+    "name": "Galley",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Speed. A ship sailing against a strong wind moves at half speed. In a dead calm (no wind), waterborne ships can't move under sail and must be rowed. Keelboats and Rowboats are used on lakes and rivers. If going downstream, add the speed of the current (typically 3 miles per hour) to the speed of the vehicle. These vehicles can't be rowed against any significant current, but they can be pulled upstream by draft animals on the shores. A Rowboat can be carried and weighs 100 pounds. Crew. A ship larger than a Keelboat or Rowboat needs a crew of skilled hirelings (see \"Services\") to function. The minimum number of skilled hirelings needed to crew a ship depends on the type of ship. Passengers. The number of Small and Medium passengers the ship can accommodate using hammocks. A ship outfitted with private accommodations can carry one-fifth as many passengers. A passenger usually pays 5 SP per day for a hammock, but prices can vary from ship to ship. A small private cabin usually costs 2 GP per day. Damage Threshold. See the rules glossary. Ship Repair. Repairs to a damaged ship can be made while the vessel is berthed. Repairing 1 Hit Point of damage requires 1 day and costs 20 GP for materials and labor. If the repairs are made in a location where supplies and skilled labor are abundant, such as a city shipyard, the repair time and cost are halved.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "garnet",
+    "name": "Garnet",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A red, brown green, or violet gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 100,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "giant-slayer",
+    "name": "Giant Slayer",
+    "type": "other",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.When you hit a Giant with this weapon, the Giant takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or have the Prone condition. Base items. This item variant can be applied to the following base items:Antimatter Rifle (Giant Slayer Antimatter Rifle)Automatic Rifle (Giant Slayer Automatic Rifle)Battleaxe (Giant Slayer Battleaxe)Blowgun (Giant Slayer Blowgun)Club (Giant Slayer Club)Dagger (Giant Slayer Dagger)Dart (Giant Slayer Dart)Double-Bladed Scimitar (Giant Slayer Double-Bladed Scimitar)Flail (Giant Slayer Flail)Glaive (Giant Slayer Glaive)Greataxe (Giant Slayer Greataxe)Greatclub (Giant Slayer Greatclub)Greatsword (Giant Slayer Greatsword)Halberd (Giant Slayer Halberd)Hand Crossbow (Giant Slayer Hand Crossbow)Handaxe (Giant Slayer Handaxe)Heavy Crossbow (Giant Slayer Heavy Crossbow)Hooked Shortspear (Giant Slayer Hooked Shortspear)Hoopak (Giant Slayer Hoopak)Hunting Rifle (Giant Slayer Hunting Rifle)Javelin (Giant Slayer Javelin)Lance (Giant Slayer Lance)Laser Pistol (Giant Slayer Laser Pistol)Laser Rifle (Giant Slayer Laser Rifle)Light Crossbow (Giant Slayer Light Crossbow)Light Hammer (Giant Slayer Light Hammer)Light Repeating Crossbow (Giant Slayer Light Repeating Crossbow)Longbow (Giant Slayer Longbow)Longsword (Giant Slayer Longsword)Mace (Giant Slayer Mace)Maul (Giant Slayer Maul)Morningstar (Giant Slayer Morningstar)Musket (Giant Slayer Musket)Pike (Giant Slayer Pike)Pistol (Giant Slayer Pistol)Quarterstaff (Giant Slayer Quarterstaff)Rapier (Giant Slayer Rapier)Revolver (Giant Slayer Revolver)Scimitar (Giant Slayer Scimitar)Semiautomatic Pistol (Giant Slayer Semiautomatic Pistol)Shortbow (Giant Slayer Shortbow)Shortsword (Giant Slayer Shortsword)Shotgun (Giant Slayer Shotgun)Sickle (Giant Slayer Sickle)Sling (Giant Slayer Sling)Spear (Giant Slayer Spear)Staff (Giant Slayer Staff)Trident (Giant Slayer Trident)War Pick (Giant Slayer War Pick)Warhammer (Giant Slayer Warhammer)Whip (Giant Slayer Whip)Wooden Staff (Giant Slayer Wooden Staff)Yklwa (Giant Slayer Yklwa)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "gilded-royal-coach-or-funeral-barge",
+    "name": "Gilded royal coach or funeral barge",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 500,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "ginger",
+    "name": "Ginger",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "Merchants commonly exchange trade goods without using currency.",
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "goat",
+    "name": "Goat",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Merchants commonly exchange trade goods without using currency.",
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "gunpowder-keg",
+    "name": "Gunpowder (keg)",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 20,
+    "description": "Setting fire to a keg full of Gunpowder causes it to explode. When a keg explodes, each creature in a 10-foot-radius Sphere centered on the keg makes a DC 12 Dexterity saving throw, taking 24 (7d6) Fire damage on a failed save or half as much damage on a successful one.",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "hematite",
+    "name": "Hematite",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A gray black gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "holy-avenger",
+    "name": "Kutsal İntikamcı",
+    "type": "other",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon. When you hit a Fiend or an Undead with it, that creature takes an extra 2d10 Radiant damage.While you hold the drawn weapon, it creates a 10-foot Emanation originating from you. You and all creatures Friendly to you in the Emanation have Advantage on saving throws against spells and other magical effects. If you have 17 or more levels in the Paladin class, the size of the Emanation increases to 30 feet. Base items. This item variant can be applied to the following base items:Antimatter Rifle (Holy Avenger Antimatter Rifle)Automatic Rifle (Holy Avenger Automatic Rifle)Battleaxe (Holy Avenger Battleaxe)Blowgun (Holy Avenger Blowgun)Club (Holy Avenger Club)Dagger (Holy Avenger Dagger)Dart (Holy Avenger Dart)Double-Bladed Scimitar (Holy Avenger Double-Bladed Scimitar)Flail (Holy Avenger Flail)Glaive (Holy Avenger Glaive)Greataxe (Holy Avenger Greataxe)Greatclub (Holy Avenger Greatclub)Greatsword (Holy Avenger Greatsword)Halberd (Holy Avenger Halberd)Hand Crossbow (Holy Avenger Hand Crossbow)Handaxe (Holy Avenger Handaxe)Heavy Crossbow (Holy Avenger Heavy Crossbow)Hooked Shortspear (Holy Avenger Hooked Shortspear)Hoopak (Holy Avenger Hoopak)Hunting Rifle (Holy Avenger Hunting Rifle)Javelin (Holy Avenger Javelin)Lance (Holy Avenger Lance)Laser Pistol (Holy Avenger Laser Pistol)Laser Rifle (Holy Avenger Laser Rifle)Light Crossbow (Holy Avenger Light Crossbow)Light Hammer (Holy Avenger Light Hammer)Light Repeating Crossbow (Holy Avenger Light Repeating Crossbow)Longbow (Holy Avenger Longbow)Longsword (Holy Avenger Longsword)Mace (Holy Avenger Mace)Maul (Holy Avenger Maul)Morningstar (Holy Avenger Morningstar)Musket (Holy Avenger Musket)Pike (Holy Avenger Pike)Pistol (Holy Avenger Pistol)Quarterstaff (Holy Avenger Quarterstaff)Rapier (Holy Avenger Rapier)Revolver (Holy Avenger Revolver)Scimitar (Holy Avenger Scimitar)Semiautomatic Pistol (Holy Avenger Semiautomatic Pistol)Shortbow (Holy Avenger Shortbow)Shortsword (Holy Avenger Shortsword)Shotgun (Holy Avenger Shotgun)Sickle (Holy Avenger Sickle)Sling (Holy Avenger Sling)Spear (Holy Avenger Spear)Staff (Holy Avenger Staff)Trident (Holy Avenger Trident)War Pick (Holy Avenger War Pick)Warhammer (Holy Avenger Warhammer)Whip (Holy Avenger Whip)Wooden Staff (Holy Avenger Wooden Staff)Yklwa (Holy Avenger Yklwa)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "holy-symbol",
+    "name": "Kutsal Sembol",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A Holy Symbol takes a specific form and is bejeweled or painted to channel divine magic. A Cleric or Paladin can use a Holy Symbol as a Spellcasting Focus.Multiple variations of this item exist, as listed below:AmuletEmblemReliquary",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "iron",
+    "name": "Iron",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "Merchants commonly exchange trade goods without using currency.",
+    "cost": {
+      "quantity": 1,
+      "unit": "sp"
+    }
+  },
+  {
+    "id": "jacinth",
+    "name": "Jacinth",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A fiery orange gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "jade",
+    "name": "Jade",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A light green, deep green, or white gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 100,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "jasper",
+    "name": "Jasper",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A blue, black, or brown gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "jet",
+    "name": "Jet",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A deep black gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 100,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "keelboat",
+    "name": "Keelboat",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Speed. A ship sailing against a strong wind moves at half speed. In a dead calm (no wind), waterborne ships can't move under sail and must be rowed. Keelboats and Rowboats are used on lakes and rivers. If going downstream, add the speed of the current (typically 3 miles per hour) to the speed of the vehicle. These vehicles can't be rowed against any significant current, but they can be pulled upstream by draft animals on the shores. A Rowboat can be carried and weighs 100 pounds. Crew. A ship larger than a Keelboat or Rowboat needs a crew of skilled hirelings (see \"Services\") to function. The minimum number of skilled hirelings needed to crew a ship depends on the type of ship. Passengers. The number of Small and Medium passengers the ship can accommodate using hammocks. A ship outfitted with private accommodations can carry one-fifth as many passengers. A passenger usually pays 5 SP per day for a hammock, but prices can vary from ship to ship. A small private cabin usually costs 2 GP per day. Damage Threshold. See the rules glossary. Ship Repair. Repairs to a damaged ship can be made while the vessel is berthed. Repairing 1 Hit Point of damage requires 1 day and costs 20 GP for materials and labor. If the repairs are made in a location where supplies and skilled labor are abundant, such as a city shipyard, the repair time and cost are halved.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "lapis-lazuli",
+    "name": "Lapis Lazuli",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A light and dark blue with yellow flecks gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "linen-1-sq-yd",
+    "name": "Linen (1 sq. yd.)",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Merchants commonly exchange trade goods without using currency.",
+    "cost": {
+      "quantity": 5,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "longship",
+    "name": "Longship",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Speed. A ship sailing against a strong wind moves at half speed. In a dead calm (no wind), waterborne ships can't move under sail and must be rowed. Keelboats and Rowboats are used on lakes and rivers. If going downstream, add the speed of the current (typically 3 miles per hour) to the speed of the vehicle. These vehicles can't be rowed against any significant current, but they can be pulled upstream by draft animals on the shores. A Rowboat can be carried and weighs 100 pounds. Crew. A ship larger than a Keelboat or Rowboat needs a crew of skilled hirelings (see \"Services\") to function. The minimum number of skilled hirelings needed to crew a ship depends on the type of ship. Passengers. The number of Small and Medium passengers the ship can accommodate using hammocks. A ship outfitted with private accommodations can carry one-fifth as many passengers. A passenger usually pays 5 SP per day for a hammock, but prices can vary from ship to ship. A small private cabin usually costs 2 GP per day. Damage Threshold. See the rules glossary. Ship Repair. Repairs to a damaged ship can be made while the vessel is berthed. Repairing 1 Hit Point of damage requires 1 day and costs 20 GP for materials and labor. If the repairs are made in a location where supplies and skilled labor are abundant, such as a city shipyard, the repair time and cost are halved.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "luck-blade",
+    "name": "Şans Kılıcı",
+    "type": "other",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon. While the weapon is on your person, you also gain a +1 bonus to saving throws. Luck. If the weapon is on your person, you can call on its luck (no action required) to reroll one failed D20 Test if you don't have the Incapacitated condition. You must use the second roll. Once used, this property can't be used again until the next dawn. Wish. The weapon has 1d3 charges. While holding it, you can expend 1 charge and cast Wish from it. Once used, this property can't be used again until the next dawn. The weapon loses this property if it has no charges. Base items. This item variant can be applied to the following base items:Glaive (Luck Glaive)Greatsword (Luck Greatsword)Longsword (Luck Longsword)Rapier (Luck Rapier)Scimitar (Luck Scimitar)Shortsword (Luck Shortsword)Sickle (Luck Sickle)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "malachite",
+    "name": "Malachite",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A striated light and dark green gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "mariner-s-armor",
+    "name": "Mariner's Armor",
+    "type": "other",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "While wearing this armor, you have a Swim Speed equal to your Speed. In addition, if you start your turn underwater with 0 Hit Points, you immediately regain 1d4 Hit Points. The armor can't heal anyone again until the next dawn.The armor is decorated with fish and shell motifs. Base items. This item variant can be applied to the following base items:Breastplate (Mariner's Breastplate)Chain Mail (Mariner's Chain Mail)Chain Shirt (Mariner's Chain Shirt)Half Plate Armor (Mariner's Half Plate Armor)Hide Armor (Mariner's Hide Armor)Leather Armor (Mariner's Leather Armor)Padded Armor (Mariner's Padded Armor)Plate Armor (Mariner's Plate Armor)Ring Mail (Mariner's Ring Mail)Scale Mail (Mariner's Scale Mail)Splint Armor (Mariner's Splint Armor)Studded Leather Armor (Mariner's Studded Leather Armor)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "mastiff",
+    "name": "Mastiff",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "",
+    "cost": {
+      "quantity": 25,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "military-saddle",
+    "name": "Military Saddle",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 30,
+    "description": "A saddle comes with a bit, a bridle, reins, and any other equipment needed to use the saddle. A Military Saddle gives Advantage on any ability check you make to remain mounted.",
+    "cost": {
+      "quantity": 20,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "moon-touched-sword",
+    "name": "Ay Dokunuşlu Sword",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "In Darkness, the unsheathed blade of this weapon sheds moonlight, creating Bright Light in a 15-foot radius and Dim Light for an additional 15 feet. Base items. This item variant can be applied to the following base items:Double-Bladed Scimitar (Moon-Touched Double-Bladed Scimitar)Greatsword (Moon-Touched Greatsword)Longsword (Moon-Touched Longsword)Rapier (Moon-Touched Rapier)Scimitar (Moon-Touched Scimitar)Shortsword (Moon-Touched Shortsword)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "moonblade",
+    "name": "Moonblade",
+    "type": "other",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "Of all the magic items created by elves, one of the most prized and jealously guarded is a Moonblade. In ancient times, nearly all elven noble houses claimed one such weapon. Over the centuries, some of these weapons have faded from the world, their magic lost as family lines have become extinct. Others have vanished with their bearers during great quests. Thus, only a few of these weapons remain.Every Moonblade longs for a bearer whose disposition and goals are compatible with its own. If you try to attune to a Moonblade that doesn't want you as its bearer, the weapon not only rejects you but also places a curse on you, causing you to make D20 Tests with Disadvantage for 24 hours or until the curse is ended by a Remove Curse spell or similar magic. If you're accepted by the weapon and try to attune to it, you become attuned to it instantly, and a new rune appears on it. You remain attuned to the weapon until you die or the weapon is destroyed. A Moonblade functions like a nonmagical weapon of its kind for anyone other than its chosen bearer.A Moonblade has one rune on it for each bearer it has willingly served (typically 1d6 + 1). The first rune grants a +1 bonus to attack rolls and damage rolls made with this magic weapon. Each rune beyond the first grants the Moonblade an additional property. The DM chooses each property or determines it randomly by rolling on the Moonblade Properties table. Minor Property. In addition to its aforementioned properties, each Moonblade has a minor property determined by rolling on the Magic Item's Minor Property table. Sentience. A Moonblade is a sentient weapon with an Intelligence of 12, a Wisdom of 10, and a Charisma of 12. It has hearing and Darkvision out to 120 feet. Its alignment matches that of its creator.The weapon communicates by transmitting emotions, sending a tingling sensation through the wielder's hand when it wants to communicate something it has sensed. It can communicate through visions or dreams when the wielder is either in a trance or asleep. Personality. A Moonblade has a personality similar to that of its creator. Once a Moonblade has decided on an owner, it believes that only that person should wield it, even if the bearer's alignment differs from that of the weapon's or the bearer's goals later clash with the weapon's goals.Moonblade Properties1d100Property01-60Increase the weapon's bonus to attack rolls and damage rolls by 1, to a maximum of +3. Reroll if the Moonblade already has a +3 bonus.61-75When you hit with an attack roll using the Moonblade, you deal an extra 1d6 Force damage. Each time the weapon gains this property after the first, the extra damage increases by 1d6, to a maximum of 3d6. Reroll if the Moonblade already deals an extra 3d6 Force damage on a hit.76-80The Moonblade gains Thrown with a normal range of 20 feet and a long range of 60 feet. Each time you throw the weapon, it flies back to your hand after the attack.81-85The Moonblade scores a Critical Hit on a roll of 19 or 20 on the d20.86-95You can take a Bonus Action to cause the Moonblade to flash brightly. Each other creature that is within 30 feet of you and not behind Total Cover must succeed on a DC 15 Constitution saving throw or have the Blinded condition for 1 minute. A creature repeats the save at the end of each of its turns, ending the effect on itself on a success. You can't use this property again until you finish a Short or Long Rest.96-99The Moonblade has the properties of a Ring of Spell Storing.100You can take a Magic action to conjure a spectral entity that resembles a shadowy elf if you don't already have one serving you. The entity appears in an unoccupied space within 120 feet of you. It uses the Shadow stat block with these changes: it is a Fey, has a Neutral alignment, and doesn't create new shadows. You control this entity, deciding how it acts and moves. It remains until it drops to 0 Hit Points or you dismiss it as a Magic action. Base items. This item variant can be applied to the following base items:Greatsword (Moonblade Greatsword)Longsword (Moonblade Longsword)Rapier (Moonblade Rapier)Scimitar (Moonblade Scimitar)Shortsword (Moonblade Shortsword)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "moonstone",
+    "name": "Moonstone",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A white with pale-blue glow gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "moss-agate",
+    "name": "Moss Agate",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A pink or yellow white with mossy gray or green markings gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "mule",
+    "name": "Mule",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "",
+    "cost": {
+      "quantity": 8,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "musical-instrument",
+    "name": "Musical Instrument",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "If you have proficiency with a tool, add your Proficiency Bonus to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have Advantage on the check too.Multiple variations of this item exist, as listed below:BagpipesDrumDulcimerFluteHornLuteLyrePan FluteShawmViol",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "nine-lives-stealer",
+    "name": "Nine Lives Stealer",
+    "type": "other",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon. Life Stealing. The weapon has 1d8 + 1 charges. When you attack a creature that has fewer than 100 Hit Points with this weapon and roll a 20 on the d20 for the attack roll, the creature must succeed on a DC 15 Constitution saving throw or be slain instantly as the sword tears its life force from its body. Constructs and Undead succeed on the save automatically. The weapon loses 1 charge if the creature is slain. When the weapon has no charges remaining, it loses this property. Base items. This item variant can be applied to the following base items:Antimatter Rifle (Nine Lives Stealer Antimatter Rifle)Automatic Rifle (Nine Lives Stealer Automatic Rifle)Battleaxe (Nine Lives Stealer Battleaxe)Blowgun (Nine Lives Stealer Blowgun)Club (Nine Lives Stealer Club)Dagger (Nine Lives Stealer Dagger)Dart (Nine Lives Stealer Dart)Double-Bladed Scimitar (Nine Lives Stealer Double-Bladed Scimitar)Flail (Nine Lives Stealer Flail)Glaive (Nine Lives Stealer Glaive)Greataxe (Nine Lives Stealer Greataxe)Greatclub (Nine Lives Stealer Greatclub)Greatsword (Nine Lives Stealer Greatsword)Halberd (Nine Lives Stealer Halberd)Hand Crossbow (Nine Lives Stealer Hand Crossbow)Handaxe (Nine Lives Stealer Handaxe)Heavy Crossbow (Nine Lives Stealer Heavy Crossbow)Hooked Shortspear (Nine Lives Stealer Hooked Shortspear)Hoopak (Nine Lives Stealer Hoopak)Hunting Rifle (Nine Lives Stealer Hunting Rifle)Javelin (Nine Lives Stealer Javelin)Lance (Nine Lives Stealer Lance)Laser Pistol (Nine Lives Stealer Laser Pistol)Laser Rifle (Nine Lives Stealer Laser Rifle)Light Crossbow (Nine Lives Stealer Light Crossbow)Light Hammer (Nine Lives Stealer Light Hammer)Light Repeating Crossbow (Nine Lives Stealer Light Repeating Crossbow)Longbow (Nine Lives Stealer Longbow)Longsword (Nine Lives Stealer Longsword)Mace (Nine Lives Stealer Mace)Maul (Nine Lives Stealer Maul)Morningstar (Nine Lives Stealer Morningstar)Musket (Nine Lives Stealer Musket)Pike (Nine Lives Stealer Pike)Pistol (Nine Lives Stealer Pistol)Quarterstaff (Nine Lives Stealer Quarterstaff)Rapier (Nine Lives Stealer Rapier)Revolver (Nine Lives Stealer Revolver)Scimitar (Nine Lives Stealer Scimitar)Semiautomatic Pistol (Nine Lives Stealer Semiautomatic Pistol)Shortbow (Nine Lives Stealer Shortbow)Shortsword (Nine Lives Stealer Shortsword)Shotgun (Nine Lives Stealer Shotgun)Sickle (Nine Lives Stealer Sickle)Sling (Nine Lives Stealer Sling)Spear (Nine Lives Stealer Spear)Staff (Nine Lives Stealer Staff)Trident (Nine Lives Stealer Trident)War Pick (Nine Lives Stealer War Pick)Warhammer (Nine Lives Stealer Warhammer)Whip (Nine Lives Stealer Whip)Wooden Staff (Nine Lives Stealer Wooden Staff)Yklwa (Nine Lives Stealer Yklwa)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "oathbow",
+    "name": "Oathbow",
+    "type": "other",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "When you nock an arrow on this bow, it whispers in Elvish, \"Swift defeat to my enemies.\" When you use this weapon to make a ranged attack, you can utter or sign the following command words: \"Swift death to you who have wronged me.\" The target of your attack becomes your sworn enemy until it dies or until dawn 7 days later. You can have only one such sworn enemy at a time. When your sworn enemy dies, you can choose a new one after the next dawn.When you make a ranged attack roll with this weapon against your sworn enemy, you have Advantage on the roll. In addition, your target gains no benefit from Half Cover or Three-Quarters Cover, and you suffer no Disadvantage due to long range. If the attack hits, your sworn enemy takes an extra 3d6 Piercing damage.While your sworn enemy lives, you have Disadvantage on attack rolls with all other weapons. Base items. This item variant can be applied to the following base items:Longbow (Oath Longbow)Shortbow (Oath Shortbow)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "obsidian",
+    "name": "Obsidian",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A black gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "old-masterpiece-painting",
+    "name": "Old masterpiece painting",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 500,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "onyx",
+    "name": "Onyx",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A bands of black and white, or pure black or white gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "opal",
+    "name": "Opal",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A pale blue with green and golden mottling gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "orb",
+    "name": "Orb",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 3,
+    "description": "An Arcane Focus takes a specific form and is bejeweled or carved to channel arcane magic. A Sorcerer, Warlock, or Wizard can use such an item as a Spellcasting Focus.",
+    "cost": {
+      "quantity": 20,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "ox",
+    "name": "Ox",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Merchants commonly exchange trade goods without using currency.",
+    "cost": {
+      "quantity": 15,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "pair-of-engraved-bone-dice",
+    "name": "Pair of engraved bone dice",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 25,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "pearl",
+    "name": "Pearl",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A lustrous white, yellow, or pink gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 100,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "pepper",
+    "name": "Pepper",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "Merchants commonly exchange trade goods without using currency.",
+    "cost": {
+      "quantity": 2,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "peridot",
+    "name": "Peridot",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A rich olive green gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 500,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "pig",
+    "name": "Pig",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Merchants commonly exchange trade goods without using currency.",
+    "cost": {
+      "quantity": 3,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "plate-armor-of-etherealness-1",
+    "name": "Plate Armor of Etherealness (*)",
+    "type": "other",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "* This generic variant has the same name and source as the item Plate Armor of Etherealness.While you're wearing this armor, you can take a Magic action and use a command word to gain the effect of the Etherealness spell. The spell ends immediately if you remove the armor or take a Magic action to repeat the command word. This property of the armor can't be used again until the next dawn. Base items. This item variant can be applied to the following base items:Half Plate Armor (Half Plate Armor of Etherealness)Plate Armor (Plate Armor of Etherealness)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "pony",
+    "name": "Pony",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "",
+    "cost": {
+      "quantity": 30,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "quartz",
+    "name": "Quartz",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A white, smoky gray, or yellow gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "reliquary",
+    "name": "Reliquary",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 2,
+    "description": "For a Reliquary to be an effective Holy Symbol, it must be held.A Holy Symbol takes a specific form and is bejeweled or painted to channel divine magic. A Cleric or Paladin can use a Holy Symbol as a Spellcasting Focus.",
+    "cost": {
+      "quantity": 5,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "rhodochrosite",
+    "name": "Rhodochrosite",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A light pink gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "riding-horse",
+    "name": "Riding Horse",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "",
+    "cost": {
+      "quantity": 75,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "riding-saddle",
+    "name": "Riding Saddle",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 25,
+    "description": "A saddle comes with a bit, a bridle, reins, and any other equipment needed to use the saddle.",
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "rod",
+    "name": "Rod",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 2,
+    "description": "An Arcane Focus takes a specific form and is bejeweled or carved to channel arcane magic. A Sorcerer, Warlock, or Wizard can use such an item as a Spellcasting Focus.",
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "rowboat",
+    "name": "Rowboat",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Speed. A ship sailing against a strong wind moves at half speed. In a dead calm (no wind), waterborne ships can't move under sail and must be rowed. Keelboats and Rowboats are used on lakes and rivers. If going downstream, add the speed of the current (typically 3 miles per hour) to the speed of the vehicle. These vehicles can't be rowed against any significant current, but they can be pulled upstream by draft animals on the shores. A Rowboat can be carried and weighs 100 pounds. Crew. A ship larger than a Keelboat or Rowboat needs a crew of skilled hirelings (see \"Services\") to function. The minimum number of skilled hirelings needed to crew a ship depends on the type of ship. Passengers. The number of Small and Medium passengers the ship can accommodate using hammocks. A ship outfitted with private accommodations can carry one-fifth as many passengers. A passenger usually pays 5 SP per day for a hammock, but prices can vary from ship to ship. A small private cabin usually costs 2 GP per day. Damage Threshold. See the rules glossary. Ship Repair. Repairs to a damaged ship can be made while the vessel is berthed. Repairing 1 Hit Point of damage requires 1 day and costs 20 GP for materials and labor. If the repairs are made in a location where supplies and skilled labor are abundant, such as a city shipyard, the repair time and cost are halved.",
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "saffron",
+    "name": "Saffron",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "Merchants commonly exchange trade goods without using currency.",
+    "cost": {
+      "quantity": 15,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "sailing-ship",
+    "name": "Sailing Ship",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Speed. A ship sailing against a strong wind moves at half speed. In a dead calm (no wind), waterborne ships can't move under sail and must be rowed. Keelboats and Rowboats are used on lakes and rivers. If going downstream, add the speed of the current (typically 3 miles per hour) to the speed of the vehicle. These vehicles can't be rowed against any significant current, but they can be pulled upstream by draft animals on the shores. A Rowboat can be carried and weighs 100 pounds. Crew. A ship larger than a Keelboat or Rowboat needs a crew of skilled hirelings (see \"Services\") to function. The minimum number of skilled hirelings needed to crew a ship depends on the type of ship. Passengers. The number of Small and Medium passengers the ship can accommodate using hammocks. A ship outfitted with private accommodations can carry one-fifth as many passengers. A passenger usually pays 5 SP per day for a hammock, but prices can vary from ship to ship. A small private cabin usually costs 2 GP per day. Damage Threshold. See the rules glossary. Ship Repair. Repairs to a damaged ship can be made while the vessel is berthed. Repairing 1 Hit Point of damage requires 1 day and costs 20 GP for materials and labor. If the repairs are made in a location where supplies and skilled labor are abundant, such as a city shipyard, the repair time and cost are halved.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "salt",
+    "name": "Salt",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "Merchants commonly exchange trade goods without using currency.",
+    "cost": {
+      "quantity": 5,
+      "unit": "cp"
+    }
+  },
+  {
+    "id": "sardonyx",
+    "name": "Sardonyx",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A bands of red and white gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "sheep",
+    "name": "Sheep",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Merchants commonly exchange trade goods without using currency.",
+    "cost": {
+      "quantity": 2,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "silk",
+    "name": "Silk",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "Merchants commonly exchange trade goods without using currency.",
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "sled",
+    "name": "Sled",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 300,
+    "description": "",
+    "cost": {
+      "quantity": 20,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "smoke-grenade",
+    "name": "Smoke Grenade",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 2,
+    "description": "As an action, you can either throw a grenade at a point up to 60 feet away or use a Grenade Launcher to propel the grenade to a point up to 1,000 feet away. The grenade explodes at that point, creating a particular effect in a 20-foot-radius Sphere.The area of the Sphere is Heavily Obscured by smoke for 1 minute. A strong wind (such as the Gust of Wind spell) disperses the smoke.",
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "smoldering-armor",
+    "name": "Smoldering Armor",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Wisps of harmless, odorless smoke rise from this armor while it is worn. Base items. This item variant can be applied to the following base items:Breastplate (Smoldering Breastplate)Chain Mail (Smoldering Chain Mail)Chain Shirt (Smoldering Chain Shirt)Half Plate Armor (Smoldering Half Plate Armor)Hide Armor (Smoldering Hide Armor)Leather Armor (Smoldering Leather Armor)Padded Armor (Smoldering Padded Armor)Plate Armor (Smoldering Plate Armor)Ring Mail (Smoldering Ring Mail)Scale Mail (Smoldering Scale Mail)Splint Armor (Smoldering Splint Armor)Studded Leather Armor (Smoldering Studded Leather Armor)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "spinel",
+    "name": "Spinel",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A red, red brown, or deep green gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 100,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "sprig-of-mistletoe",
+    "name": "Sprig of Mistletoe",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A Druidic Focus takes a specific form and is carved, tied with ribbon, or painted to channel primal magic. A Druid or Ranger can use such an object as a Spellcasting Focus.",
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "stabling-per-day",
+    "name": "Stabling (per day)",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "",
+    "cost": {
+      "quantity": 5,
+      "unit": "cp"
+    }
+  },
+  {
+    "id": "star-rose-quartz",
+    "name": "Star rose quartz",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A rosy stone with white star-shaped center gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "sword-of-life-stealing",
+    "name": "Sword of Life Stealing",
+    "type": "other",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "When you attack a creature with this magic weapon and roll a 20 on the d20 for the attack roll, that target takes an extra 15 Necrotic damage if it isn't a Construct or an Undead, and you gain Temporary Hit Points equal to the amount of Necrotic damage taken. Base items. This item variant can be applied to the following base items:Glaive (Glaive of Life Stealing)Greatsword (Greatsword of Life Stealing)Longsword (Longsword of Life Stealing)Rapier (Rapier of Life Stealing)Scimitar (Scimitar of Life Stealing)Shortsword (Shortsword of Life Stealing)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "sword-of-sharpness",
+    "name": "Sword of Sharpness",
+    "type": "other",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "When you attack an object with this magic weapon and hit, maximize your weapon damage dice against the target.When you attack a creature with this weapon and roll a 20 on the d20 for the attack roll, that target takes an extra 14 Slashing damage and gains 1 Exhaustion level. Base items. This item variant can be applied to the following base items:Glaive (Glaive of Sharpness)Greatsword (Greatsword of Sharpness)Longsword (Longsword of Sharpness)Scimitar (Scimitar of Sharpness)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "sword-of-vengeance",
+    "name": "Sword of Vengeance",
+    "type": "other",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon. Curse. This weapon is cursed and possessed by a vengeful spirit. Becoming attuned to it extends the curse to you. As long as you remain cursed, you are unwilling to part with the weapon, keeping it on your person at all times. While attuned to this weapon, you have Disadvantage on attack rolls made with weapons other than this one.In addition, while the weapon is on your person, you must succeed on a DC 15 Wisdom saving throw whenever you take damage from another creature in combat. On a failed save, you must attack the creature that damaged you until you drop to 0 Hit Points or it does or until you can't reach the creature to make a melee attack against it.You can break the curse in the usual ways. Alternatively, casting Banishment on the weapon forces the vengeful spirit to leave it. The weapon then becomes a +1 Weapon with no other properties. Base items. This item variant can be applied to the following base items:Glaive (Glaive of Vengeance)Greatsword (Greatsword of Vengeance)Longsword (Longsword of Vengeance)Rapier (Rapier of Vengeance)Scimitar (Scimitar of Vengeance)Shortsword (Shortsword of Vengeance)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "sword-of-wounding",
+    "name": "Sword of Wounding",
+    "type": "other",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "When you hit a creature with an attack using this magic weapon, the target takes an extra 2d6 Necrotic damage and must succeed on a DC 15 Constitution saving throw or be unable to regain Hit Points for 1 hour. The target repeats the save at the end of each of its turns, ending the effect on itself on a success. Base items. This item variant can be applied to the following base items:Glaive (Glaive of Wounding)Greatsword (Greatsword of Wounding)Longsword (Longsword of Wounding)Rapier (Rapier of Wounding)Scimitar (Scimitar of Wounding)Shortsword (Shortsword of Wounding)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "sylvan-talon",
+    "name": "Orman (Sylvan) Talon",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "While this weapon is on your person, you understand the non-written communication of all Fey, and they understand yours. Secret Message. As a Magic action, you can use the weapon to cast Message. Once this property is used, it can't be used again until the next dawn. Base items. This item variant can be applied to the following base items:Dagger (Sylvan Talon Dagger)Rapier (Sylvan Talon Rapier)Scimitar (Sylvan Talon Scimitar)Shortsword (Sylvan Talon Shortsword)Sickle (Sylvan Talon Sickle)Spear (Sylvan Talon Spear)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "tiger-eye",
+    "name": "Tiger Eye",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A brown with golden center gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "topaz",
+    "name": "Topaz",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A golden yellow gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 500,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "tourmaline",
+    "name": "Tourmaline",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A pale green, blue, brown, or red gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 100,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "turquoise",
+    "name": "Turquoise",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A light blue green gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "vicious-weapon",
+    "name": "Acımasız Silah",
+    "type": "other",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "This magic weapon deals an extra 2d6 damage to any creature it hits. This extra damage is of the same type as the weapon's normal damage. Base items. This item variant can be applied to the following base items:Antimatter Rifle (Vicious Antimatter Rifle)Automatic Rifle (Vicious Automatic Rifle)Battleaxe (Vicious Battleaxe)Blowgun (Vicious Blowgun)Club (Vicious Club)Dagger (Vicious Dagger)Dart (Vicious Dart)Double-Bladed Scimitar (Vicious Double-Bladed Scimitar)Flail (Vicious Flail)Glaive (Vicious Glaive)Greataxe (Vicious Greataxe)Greatclub (Vicious Greatclub)Greatsword (Vicious Greatsword)Halberd (Vicious Halberd)Hand Crossbow (Vicious Hand Crossbow)Handaxe (Vicious Handaxe)Heavy Crossbow (Vicious Heavy Crossbow)Hooked Shortspear (Vicious Hooked Shortspear)Hoopak (Vicious Hoopak)Hunting Rifle (Vicious Hunting Rifle)Javelin (Vicious Javelin)Lance (Vicious Lance)Laser Pistol (Vicious Laser Pistol)Laser Rifle (Vicious Laser Rifle)Light Crossbow (Vicious Light Crossbow)Light Hammer (Vicious Light Hammer)Light Repeating Crossbow (Vicious Light Repeating Crossbow)Longbow (Vicious Longbow)Longsword (Vicious Longsword)Mace (Vicious Mace)Maul (Vicious Maul)Morningstar (Vicious Morningstar)Musket (Vicious Musket)Pike (Vicious Pike)Pistol (Vicious Pistol)Quarterstaff (Vicious Quarterstaff)Rapier (Vicious Rapier)Revolver (Vicious Revolver)Scimitar (Vicious Scimitar)Semiautomatic Pistol (Vicious Semiautomatic Pistol)Shortbow (Vicious Shortbow)Shortsword (Vicious Shortsword)Shotgun (Vicious Shotgun)Sickle (Vicious Sickle)Sling (Vicious Sling)Spear (Vicious Spear)Staff (Vicious Staff)Trident (Vicious Trident)War Pick (Vicious War Pick)Warhammer (Vicious Warhammer)Whip (Vicious Whip)Wooden Staff (Vicious Wooden Staff)Yklwa (Vicious Yklwa)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "vorpal-sword",
+    "name": "Vorpal Kılıcı",
+    "type": "other",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon. In addition, the weapon ignores Resistance to Slashing damage.When you use this weapon to attack a creature that has at least one head and roll a 20 on the d20 for the attack roll, you cut off one of the creature's heads. The creature dies if it can't survive without the lost head. A creature is immune to this effect if it has Immunity to Slashing damage, if it doesn't have or need a head, or if the DM decides that the creature is too big for its head to be cut off with this weapon. Such a creature instead takes an extra 30 Slashing damage from the hit. If the creature has Legendary Resistance, it can expend one daily use of that trait to avoid losing its head, taking the extra damage instead. Base items. This item variant can be applied to the following base items:Glaive (Vorpal Glaive)Greatsword (Vorpal Greatsword)Longsword (Vorpal Longsword)Scimitar (Vorpal Scimitar)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "wagon",
+    "name": "Wagon",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 400,
+    "description": "",
+    "cost": {
+      "quantity": 35,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "wand",
+    "name": "Wand",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "An Arcane Focus takes a specific form and is bejeweled or carved to channel arcane magic. A Sorcerer, Warlock, or Wizard can use such an item as a Spellcasting Focus.",
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "warhorse",
+    "name": "Warhorse",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "",
+    "cost": {
+      "quantity": 400,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "warship",
+    "name": "Warship",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Speed. A ship sailing against a strong wind moves at half speed. In a dead calm (no wind), waterborne ships can't move under sail and must be rowed. Keelboats and Rowboats are used on lakes and rivers. If going downstream, add the speed of the current (typically 3 miles per hour) to the speed of the vehicle. These vehicles can't be rowed against any significant current, but they can be pulled upstream by draft animals on the shores. A Rowboat can be carried and weighs 100 pounds. Crew. A ship larger than a Keelboat or Rowboat needs a crew of skilled hirelings (see \"Services\") to function. The minimum number of skilled hirelings needed to crew a ship depends on the type of ship. Passengers. The number of Small and Medium passengers the ship can accommodate using hammocks. A ship outfitted with private accommodations can carry one-fifth as many passengers. A passenger usually pays 5 SP per day for a hammock, but prices can vary from ship to ship. A small private cabin usually costs 2 GP per day. Damage Threshold. See the rules glossary. Ship Repair. Repairs to a damaged ship can be made while the vessel is berthed. Repairing 1 Hit Point of damage requires 1 day and costs 20 GP for materials and labor. If the repairs are made in a location where supplies and skilled labor are abundant, such as a city shipyard, the repair time and cost are halved.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "weapon-of-warning",
+    "name": "Uyarıcı Silah",
+    "type": "other",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "As long as this weapon is within your reach and you are attuned to it, you and allies within 30 feet of you gain the following benefits. Alarm. The weapon magically awakens each subject who is sleeping naturally when combat begins. This benefit doesn't wake a subject from magically induced sleep. Supernatural Readiness. Each subject has Advantage on its Initiative rolls. Base items. This item variant can be applied to the following base items:Antimatter Rifle (Antimatter Rifle of Warning)Automatic Rifle (Automatic Rifle of Warning)Battleaxe (Battleaxe of Warning)Blowgun (Blowgun of Warning)Club (Club of Warning)Dagger (Dagger of Warning)Dart (Dart of Warning)Double-Bladed Scimitar (Double-Bladed Scimitar of Warning)Flail (Flail of Warning)Glaive (Glaive of Warning)Greataxe (Greataxe of Warning)Greatclub (Greatclub of Warning)Greatsword (Greatsword of Warning)Halberd (Halberd of Warning)Hand Crossbow (Hand Crossbow of Warning)Handaxe (Handaxe of Warning)Heavy Crossbow (Heavy Crossbow of Warning)Hooked Shortspear (Hooked Shortspear of Warning)Hoopak (Hoopak of Warning)Hunting Rifle (Hunting Rifle of Warning)Javelin (Javelin of Warning)Lance (Lance of Warning)Laser Pistol (Laser Pistol of Warning)Laser Rifle (Laser Rifle of Warning)Light Crossbow (Light Crossbow of Warning)Light Hammer (Light Hammer of Warning)Light Repeating Crossbow (Light Repeating Crossbow of Warning)Longbow (Longbow of Warning)Longsword (Longsword of Warning)Mace (Mace of Warning)Maul (Maul of Warning)Morningstar (Morningstar of Warning)Musket (Musket of Warning)Pike (Pike of Warning)Pistol (Pistol of Warning)Quarterstaff (Quarterstaff of Warning)Rapier (Rapier of Warning)Revolver (Revolver of Warning)Scimitar (Scimitar of Warning)Semiautomatic Pistol (Semiautomatic Pistol of Warning)Shortbow (Shortbow of Warning)Shortsword (Shortsword of Warning)Shotgun (Shotgun of Warning)Sickle (Sickle of Warning)Sling (Sling of Warning)Spear (Spear of Warning)Staff (Staff of Warning)Trident (Trident of Warning)War Pick (War Pick of Warning)Warhammer (Warhammer of Warning)Whip (Whip of Warning)Wooden Staff (Wooden Staff of Warning)Yklwa (Yklwa of Warning)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "well-made-tapestry-that-is-10-feet-by-10-feet",
+    "name": "Well-made tapestry that is 10 feet by 10 feet",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more.",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "wheat",
+    "name": "Wheat",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "Merchants commonly exchange trade goods without using currency.",
+    "cost": {
+      "quantity": 1,
+      "unit": "cp"
+    }
+  },
+  {
+    "id": "yew-wand",
+    "name": "Yew Wand",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "A Druidic Focus takes a specific form and is carved, tied with ribbon, or painted to channel primal magic. A Druid or Ranger can use such an object as a Spellcasting Focus.",
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "zircon",
+    "name": "Zircon",
+    "type": "other",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A pale blue green gemstone.Gemstones are small, lightweight, and easily secured compared to their same value in coins.",
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    }
+  }
+]

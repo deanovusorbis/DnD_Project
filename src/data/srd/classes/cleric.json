@@ -1,0 +1,502 @@
+{
+  "id": "cleric",
+  "name": "Cleric",
+  "source": "srd",
+  "description": "A priestly champion who wields divine magic in service of a higher power.",
+  "hitDie": "d8",
+  "primaryAbility": [
+    "WIS"
+  ],
+  "abilityPriority": {
+    "primary": [
+      "WIS",
+      "CON"
+    ],
+    "secondary": [
+      "STR",
+      "CHA"
+    ],
+    "dump": [
+      "DEX",
+      "INT"
+    ]
+  },
+  "proficiencies": {
+    "armor": [
+      "light",
+      "medium",
+      "shield"
+    ],
+    "weapons": [
+      "simple"
+    ],
+    "tools": [],
+    "savingThrows": [
+      "WIS",
+      "CHA"
+    ],
+    "skills": {
+      "choices": [
+        "history",
+        "insight",
+        "medicine",
+        "persuasion",
+        "religion"
+      ],
+      "count": 2
+    }
+  },
+  "startingEquipment": {
+    "guaranteed": [
+      {
+        "itemId": "shield",
+        "quantity": 1
+      },
+      {
+        "itemId": "holy_symbol",
+        "quantity": 1
+      }
+    ],
+    "choices": [
+      {
+        "id": "weapon-choice",
+        "options": [
+          {
+            "description": "A mace",
+            "items": [
+              {
+                "itemId": "mace",
+                "quantity": 1
+              }
+            ]
+          },
+          {
+            "description": "A warhammer (if proficient)",
+            "items": [
+              {
+                "itemId": "warhammer",
+                "quantity": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "armor-choice",
+        "options": [
+          {
+            "description": "Scale mail",
+            "items": [
+              {
+                "itemId": "scale_mail",
+                "quantity": 1
+              }
+            ]
+          },
+          {
+            "description": "Leather armor",
+            "items": [
+              {
+                "itemId": "leather_armor",
+                "quantity": 1
+              }
+            ]
+          },
+          {
+            "description": "Chain mail (if proficient)",
+            "items": [
+              {
+                "itemId": "chain_mail",
+                "quantity": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pack-choice",
+        "options": [
+          {
+            "description": "A priest's pack",
+            "items": [
+              {
+                "itemId": "priests_pack",
+                "quantity": 1
+              }
+            ]
+          },
+          {
+            "description": "An explorer's pack",
+            "items": [
+              {
+                "itemId": "explorers_pack",
+                "quantity": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "spellcasting": {
+    "hasSpellcasting": true,
+    "spellcastingAbility": "WIS",
+    "spellcastingType": "full",
+    "cantripsKnown": [
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "ritualCasting": true,
+    "spellcastingFocus": [
+      "holy_symbol"
+    ]
+  },
+  "features": [
+    {
+      "id": "spellcasting-cleric",
+      "name": "Spellcasting",
+      "source": "srd",
+      "description": "As a conduit for divine power, you can cast cleric spells. Wisdom is your spellcasting ability.",
+      "level": 1,
+      "featureType": "passive",
+      "teachingNotes": {
+        "conceptsTaught": [
+          "spellcasting",
+          "spell_slots",
+          "prepared_caster",
+          "spell_save_dc",
+          "spell_attack"
+        ],
+        "practiceScenario": "cleric-spellcasting-intro"
+      }
+    },
+    {
+      "id": "divine-domain",
+      "name": "Divine Domain",
+      "source": "phb24",
+      "description": "Choose one domain related to your deity. Your choice grants you domain spells and other features.",
+      "level": 3,
+      "featureType": "choice",
+      "teachingNotes": {
+        "conceptsTaught": [
+          "subclass_selection",
+          "domain_spells"
+        ],
+        "practiceScenario": "domain-selection"
+      }
+    },
+    {
+      "id": "channel-divinity",
+      "name": "Channel Divinity",
+      "source": "srd",
+      "description": "You gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects.",
+      "level": 2,
+      "featureType": "resource",
+      "resource": {
+        "name": "Channel Divinity",
+        "maxCount": 1,
+        "recoversOn": "short"
+      },
+      "teachingNotes": {
+        "conceptsTaught": [
+          "channel_divinity",
+          "class_resource"
+        ],
+        "practiceScenario": "channel-divinity-tutorial"
+      }
+    },
+    {
+      "id": "turn-undead",
+      "name": "Channel Divinity: Turn Undead",
+      "source": "srd",
+      "description": "As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead within 30 feet must make a Wisdom saving throw or be turned for 1 minute.",
+      "level": 2,
+      "featureType": "active",
+      "teachingNotes": {
+        "conceptsTaught": [
+          "aoe_effect",
+          "saving_throws",
+          "condition_application"
+        ],
+        "practiceScenario": "turn-undead-demo"
+      }
+    },
+    {
+      "id": "destroy-undead",
+      "name": "Destroy Undead",
+      "source": "srd",
+      "description": "When an undead fails its saving throw against your Turn Undead feature, the creature is instantly destroyed if its challenge rating is at or below a certain threshold.",
+      "level": 5,
+      "featureType": "passive",
+      "improvesFeature": "turn-undead"
+    },
+    {
+      "id": "divine-intervention",
+      "name": "Divine Intervention",
+      "source": "srd",
+      "description": "You can call on your deity to intervene on your behalf when your need is great.",
+      "level": 10,
+      "featureType": "resource",
+      "resource": {
+        "name": "Divine Intervention",
+        "maxCount": 1,
+        "recoversOn": "long"
+      }
+    }
+  ],
+  "subclasses": [
+    {
+      "id": "life-domain",
+      "name": "Life Domain",
+      "source": "phb24",
+      "description": "The Life domain focuses on the vibrant positive energy that sustains all life.",
+      "parentClassId": "cleric",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "life-domain-spells",
+          "name": "Life Domain Spells",
+          "description": "You always have certain spells prepared: Aid, Bless, Cure Wounds, Lesser Restoration at level 3, etc.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "disciple-of-life",
+          "name": "Disciple of Life",
+          "source": "phb24",
+          "description": "When a spell you cast with a spell slot restores Hit Points, the creature regains additional HP equal to 2 plus the spell slot's level.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "preserve-life",
+          "name": "Preserve Life",
+          "source": "phb24",
+          "description": "As a Magic action, you expend Channel Divinity to heal bloodied creatures within 30 feet.",
+          "level": 3,
+          "featureType": "active"
+        },
+        {
+          "id": "blessed-healer",
+          "name": "Blessed Healer",
+          "source": "phb24",
+          "description": "Healing spells you cast on others heal you as well.",
+          "level": 6,
+          "featureType": "passive"
+        },
+        {
+          "id": "supreme-healing",
+          "name": "Supreme Healing",
+          "source": "phb24",
+          "description": "When you restore Hit Points with a spell or Channel Divinity, use the highest number possible for each die.",
+          "level": 17,
+          "featureType": "passive"
+        }
+      ],
+      "additionalSpellcasting": {
+        "spellList": "life-domain",
+        "spellcastingAbility": "WIS",
+        "progression": "full"
+      }
+    },
+    {
+      "id": "light-domain",
+      "name": "Light Domain",
+      "source": "phb24",
+      "description": "The Light domain emphasizes the divine power to bring about blazing fire and revelation.",
+      "parentClassId": "cleric",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "light-domain-spells",
+          "name": "Light Domain Spells",
+          "description": "You always have certain spells prepared: Burning Hands, Faerie Fire, Scorching Ray, See Invisibility at level 3, etc.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "radiance-of-the-dawn",
+          "name": "Radiance of the Dawn",
+          "source": "phb24",
+          "description": "As a Magic action, you expend Channel Divinity to emit a flash of light that dispels darkness and deals radiant damage.",
+          "level": 3,
+          "featureType": "active"
+        },
+        {
+          "id": "warding-flare",
+          "name": "Warding Flare",
+          "source": "phb24",
+          "description": "When a creature within 30 feet attacks, you can use a Reaction to impose Disadvantage.",
+          "level": 3,
+          "featureType": "active"
+        },
+        {
+          "id": "improved-warding-flare",
+          "name": "Improved Warding Flare",
+          "source": "phb24",
+          "description": "You regain uses of Warding Flare on a Short Rest and grant temporary HP when using it.",
+          "level": 6,
+          "featureType": "active"
+        },
+        {
+          "id": "corona-of-light",
+          "name": "Corona of Light",
+          "source": "phb24",
+          "description": "As a Magic action, you emit an aura of sunlight that imposes Disadvantage on saves against your fire/radiant effects.",
+          "level": 17,
+          "featureType": "active"
+        }
+      ]
+    },
+    {
+      "id": "trickery-domain",
+      "name": "Trickery Domain",
+      "source": "phb24",
+      "description": "The Trickery Domain offers magic of deception, illusion, and stealth.",
+      "parentClassId": "cleric",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "trickery-domain-spells",
+          "name": "Trickery Domain Spells",
+          "description": "You always have certain spells prepared: Charm Person, Disguise Self, Invisibility, Pass without Trace at level 3, etc.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "blessing-of-the-trickster",
+          "name": "Blessing of the Trickster",
+          "source": "phb24",
+          "description": "As a Magic action, you grant Advantage on Dexterity (Stealth) checks to yourself or a willing creature.",
+          "level": 3,
+          "featureType": "active"
+        },
+        {
+          "id": "invoke-duplicity",
+          "name": "Invoke Duplicity",
+          "source": "phb24",
+          "description": "As a Bonus Action, you expend Channel Divinity to create an illusion of yourself.",
+          "level": 3,
+          "featureType": "active"
+        },
+        {
+          "id": "tricksters-transposition",
+          "name": "Trickster's Transposition",
+          "source": "phb24",
+          "description": "You can teleport and swap places with your illusion.",
+          "level": 6,
+          "featureType": "active"
+        },
+        {
+          "id": "improved-duplicity",
+          "name": "Improved Duplicity",
+          "source": "phb24",
+          "description": "Your illusion grants shared distraction and heals when it ends.",
+          "level": 17,
+          "featureType": "active"
+        }
+      ]
+    },
+    {
+      "id": "war-domain",
+      "name": "War Domain",
+      "source": "phb24",
+      "description": "Clerics of the War Domain excel in battle, inspiring others to fight the good fight.",
+      "parentClassId": "cleric",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "war-domain-spells",
+          "name": "War Domain Spells",
+          "description": "You always have certain spells prepared: Guiding Bolt, Magic Weapon, Shield of Faith, Spiritual Weapon at level 3, etc.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "war-priest",
+          "name": "War Priest",
+          "source": "phb24",
+          "description": "As a Bonus Action, you can make one attack with a weapon or an Unarmed Strike.",
+          "level": 3,
+          "featureType": "active"
+        },
+        {
+          "id": "guided-strike",
+          "name": "Guided Strike",
+          "source": "phb24",
+          "description": "You can expend Channel Divinity to gain a +10 bonus to an attack roll.",
+          "level": 3,
+          "featureType": "active"
+        },
+        {
+          "id": "war-gods-blessing",
+          "name": "War God's Blessing",
+          "source": "phb24",
+          "description": "You can expend Channel Divinity to cast Shield of Faith or Spiritual Weapon without concentration.",
+          "level": 6,
+          "featureType": "active"
+        },
+        {
+          "id": "avatar-of-battle",
+          "name": "Avatar of Battle",
+          "source": "phb24",
+          "description": "You gain Resistance to Bludgeoning, Piercing, and Slashing damage.",
+          "level": 17,
+          "featureType": "passive"
+        }
+      ]
+    }
+  ],
+  "subclassName": "Divine Domain",
+  "subclassLevel": 3,
+  "asiLevels": [
+    4,
+    8,
+    12,
+    16,
+    19
+  ],
+  "teachingNotes": {
+    "complexity": "intermediate",
+    "recommendedForNewPlayers": true,
+    "playstyleKeywords": [
+      "Divine Caster",
+      "Healer",
+      "Support",
+      "Versatile"
+    ],
+    "roleInParty": [
+      "Healer",
+      "Support caster",
+      "Secondary combatant"
+    ],
+    "keyDecisionPoints": [
+      {
+        "level": 3,
+        "decision": "Divine Domain - shapes your entire playstyle"
+      },
+      {
+        "level": 1,
+        "decision": "Prepared spells - daily spell selection"
+      }
+    ]
+  }
+}

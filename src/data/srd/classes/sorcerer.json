@@ -1,0 +1,242 @@
+{
+  "id": "sorcerer",
+  "name": "Sorcerer",
+  "source": "srd",
+  "description": "A spellcaster who draws on inherent magic from a gift or bloodline.",
+  "hitDie": "d6",
+  "primaryAbility": [
+    "CHA"
+  ],
+  "abilityPriority": {
+    "primary": [
+      "CHA",
+      "CON"
+    ],
+    "secondary": [
+      "DEX",
+      "WIS"
+    ],
+    "dump": [
+      "STR",
+      "INT"
+    ]
+  },
+  "proficiencies": {
+    "armor": [],
+    "weapons": [
+      "dagger",
+      "dart",
+      "sling",
+      "quarterstaff",
+      "light_crossbow"
+    ],
+    "tools": [],
+    "savingThrows": [
+      "CON",
+      "CHA"
+    ],
+    "skills": {
+      "choices": [
+        "arcana",
+        "deception",
+        "insight",
+        "intimidation",
+        "persuasion",
+        "religion"
+      ],
+      "count": 2
+    }
+  },
+  "startingEquipment": {
+    "guaranteed": [
+      {
+        "itemId": "explorers_pack",
+        "quantity": 1
+      }
+    ],
+    "choices": []
+  },
+  "spellcasting": {
+    "hasSpellcasting": true,
+    "spellcastingAbility": "CHA",
+    "spellcastingType": "full",
+    "cantripsKnown": [
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "spellsKnown": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      12,
+      13,
+      13,
+      14,
+      14,
+      15,
+      15,
+      15,
+      15
+    ]
+  },
+  "features": [
+    {
+      "id": "sorcerous-origin",
+      "name": "Sorcerous Origin",
+      "source": "srd",
+      "description": "Choose a sorcerous origin, which describes the source of your innate magical power.",
+      "level": 1,
+      "featureType": "choice"
+    },
+    {
+      "id": "font-of-magic",
+      "name": "Font of Magic",
+      "source": "srd",
+      "description": "You tap into a deep wellspring of magic within yourself. This wellspring is represented by sorcery points.",
+      "level": 2,
+      "featureType": "resource",
+      "resource": {
+        "name": "Sorcery Points",
+        "maxCount": 2,
+        "recoversOn": "long"
+      }
+    },
+    {
+      "id": "metamagic",
+      "name": "Metamagic",
+      "source": "srd",
+      "description": "You gain the ability to twist your spells to suit your needs.",
+      "level": 3,
+      "featureType": "choice"
+    }
+  ],
+  "subclasses": [
+    {
+      "id": "draconic-bloodline",
+      "name": "Draconic Bloodline",
+      "source": "srd",
+      "description": "Your innate magic comes from draconic magic that was mingled with your blood or that of your ancestors.",
+      "parentClassId": "sorcerer",
+      "subclassFeatureLevel": 1,
+      "features": [
+        {
+          "id": "dragon-ancestor",
+          "name": "Dragon Ancestor",
+          "source": "srd",
+          "description": "You choose one type of dragon as your ancestor.",
+          "level": 1,
+          "featureType": "choice"
+        },
+        {
+          "id": "draconic-resilience",
+          "name": "Draconic Resilience",
+          "source": "srd",
+          "description": "Your hit point maximum increases by 1, and it increases by 1 again whenever you gain a level in this class.",
+          "level": 1,
+          "featureType": "passive"
+        }
+      ]
+    },
+    {
+      "id": "aberrant-sorcery",
+      "name": "Aberrant Sorcery",
+      "source": "user",
+      "description": "You harbor a psychic wind from the Far Realm or another plane of madness.",
+      "parentClassId": "sorcerer",
+      "subclassFeatureLevel": 1,
+      "features": [
+        {
+          "id": "psionic-spells",
+          "name": "Psionic Spells",
+          "description": "You learn additional spells that count as sorcerer spells for you.",
+          "level": 1,
+          "featureType": "passive"
+        }
+      ]
+    },
+    {
+      "id": "clockwork-sorcery",
+      "name": "Clockwork Sorcery",
+      "source": "user",
+      "description": "You have tapped into the cosmic force of order, the clockwork precision of Mechanus.",
+      "parentClassId": "sorcerer",
+      "subclassFeatureLevel": 1,
+      "features": [
+        {
+          "id": "restore-balance",
+          "name": "Restore Balance",
+          "description": "You can use your reaction to neutralize advantage or disadvantage on a roll.",
+          "level": 1,
+          "featureType": "active"
+        }
+      ]
+    },
+    {
+      "id": "wild-magic-sorcery",
+      "name": "Wild Magic Sorcery",
+      "source": "user",
+      "description": "Your magic comes from the wild forces of chaos that underlie the order of creation.",
+      "parentClassId": "sorcerer",
+      "subclassFeatureLevel": 1,
+      "features": [
+        {
+          "id": "wild-magic-surge",
+          "name": "Wild Magic Surge",
+          "description": "Your spellcasting can unleash surges of untamed magic.",
+          "level": 1,
+          "featureType": "passive"
+        }
+      ]
+    }
+  ],
+  "subclassName": "Sorcerous Origin",
+  "subclassLevel": 1,
+  "asiLevels": [
+    4,
+    8,
+    12,
+    16,
+    19
+  ],
+  "teachingNotes": {
+    "complexity": "intermediate",
+    "recommendedForNewPlayers": false,
+    "playstyleKeywords": [
+      "Arcane caster",
+      "Metamagic",
+      "Blaster",
+      "Flexible"
+    ],
+    "roleInParty": [
+      "Blaster",
+      "Utility caster",
+      "Face"
+    ]
+  }
+}

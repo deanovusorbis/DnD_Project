@@ -1,0 +1,172 @@
+[
+  {
+    "id": "adamantine-glaive",
+    "name": "Adamantin Palalı Mızrak",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 6,
+    "description": "This weapon or piece of ammunition is made of adamantine, one of the hardest substances in existence. Whenever this weapon or piece of ammunition hits an object, the hit is a Critical Hit. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Graze. If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "adamantine-halberd",
+    "name": "Adamantin Baltalı Mızrak",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 6,
+    "description": "This weapon or piece of ammunition is made of adamantine, one of the hardest substances in existence. Whenever this weapon or piece of ammunition hits an object, the hit is a Critical Hit. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Cleave. If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "adamantine-javelin",
+    "name": "Adamantin Cirit",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 2,
+    "description": "This weapon or piece of ammunition is made of adamantine, one of the hardest substances in existence. Whenever this weapon or piece of ammunition hits an object, the hit is a Critical Hit. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (30/120 ft.)"
+      ]
+    }
+  },
+  {
+    "id": "adamantine-lance",
+    "name": "Adamantin Süvari Mızrağı",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 6,
+    "description": "This weapon or piece of ammunition is made of adamantine, one of the hardest substances in existence. Whenever this weapon or piece of ammunition hits an object, the hit is a Critical Hit.A Lance requires two hands to wield when you aren't mounted. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed (unless mounted)"
+      ]
+    }
+  },
+  {
+    "id": "adamantine-pike",
+    "name": "Adamantin Kargı",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 18,
+    "description": "This weapon or piece of ammunition is made of adamantine, one of the hardest substances in existence. Whenever this weapon or piece of ammunition hits an object, the hit is a Critical Hit. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "adamantine-quarterstaff",
+    "name": "Adamantin Asa",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 4,
+    "description": "This weapon or piece of ammunition is made of adamantine, one of the hardest substances in existence. Whenever this weapon or piece of ammunition hits an object, the hit is a Critical Hit. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "adamantine-spear",
+    "name": "Adamantin Mızrak",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 3,
+    "description": "This weapon or piece of ammunition is made of adamantine, one of the hardest substances in existence. Whenever this weapon or piece of ammunition hits an object, the hit is a Critical Hit. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "adamantine-trident",
+    "name": "Adamantin Üçlü Çatal",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 4,
+    "description": "This weapon or piece of ammunition is made of adamantine, one of the hardest substances in existence. Whenever this weapon or piece of ammunition hits an object, the hit is a Critical Hit. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d10)"
+      ]
+    }
+  }
+]

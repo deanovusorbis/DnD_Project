@@ -13,8 +13,8 @@ import {
 	getProficiencyBonus,
 } from '@utils/character.utils';
 
-import itemsData from '../../data/srd/items.json';
-const itemsDb = itemsData.items as unknown as Item[];
+import { items as itemsData } from '../../data/srd/items/index';
+const itemsDb = itemsData as unknown as Item[];
 
 // ============================================================================
 // DATA ACCESS & UTILS

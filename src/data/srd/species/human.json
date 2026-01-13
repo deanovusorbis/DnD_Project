@@ -1,0 +1,63 @@
+{
+  "id": "human",
+  "name": "Human",
+  "source": "srd",
+  "description": "İnsanlar, ortak ırklar arasında en uyumlu ve hırslı olanlardır. Onları neyin motive ettiğine bakılmaksızın, insanlar dünyaların yenilikçileri, başaranları ve öncüleridir.",
+  "size": "medium",
+  "speed": 30,
+  "ageMaturity": 18,
+  "ageLifespan": 80,
+  "abilityScoreIncreases": [],
+  "languages": [
+    "Common"
+  ],
+  "extraLanguages": 1,
+  "traits": [
+    {
+      "id": "resourceful",
+      "name": "Becerikli (Resourceful)",
+      "source": "2024",
+      "description": "Her Uzun Dinlenme bitirdiğinizde Kahramanca İlham (Heroic Inspiration) kazanırsınız.",
+      "mechanicType": "passive",
+      "level": 1
+    },
+    {
+      "id": "skillful",
+      "name": "Yetenekli (Skillful)",
+      "source": "2024",
+      "description": "Seçtiğiniz bir yetenekte ustalık (proficiency) kazanırsınız.",
+      "mechanicType": "choice",
+      "level": 1,
+      "grantsProficiency": {
+        "skills": [
+          "choice"
+        ]
+      }
+    },
+    {
+      "id": "versatile",
+      "name": "Çok Yönlü (Versatile)",
+      "source": "2024",
+      "description": "Seçtiğiniz bir Köken Hüneri (Origin Feat) kazanırsınız. Becerikli (Skilled) hüneri önerilir.",
+      "mechanicType": "choice",
+      "level": 1,
+      "grantsFeat": [
+        "choice"
+      ]
+    }
+  ],
+  "creatureType": "humanoid",
+  "teachingNotes": {
+    "complexity": "beginner",
+    "recommendedForNewPlayers": true,
+    "keyMechanics": [
+      "Versatility",
+      "Extra Language"
+    ],
+    "flavorHooks": [
+      "Adaptable",
+      "Ambitious",
+      "Diverse cultures"
+    ]
+  }
+}

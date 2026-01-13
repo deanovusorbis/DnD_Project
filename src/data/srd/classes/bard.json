@@ -1,0 +1,349 @@
+{
+  "id": "bard",
+  "name": "Bard",
+  "source": "srd",
+  "description": "An inspiring magician whose power echoes the music of creation.",
+  "hitDie": "d8",
+  "primaryAbility": [
+    "CHA"
+  ],
+  "abilityPriority": {
+    "primary": [
+      "CHA",
+      "DEX"
+    ],
+    "secondary": [
+      "CON",
+      "WIS"
+    ],
+    "dump": [
+      "STR",
+      "INT"
+    ]
+  },
+  "proficiencies": {
+    "armor": [
+      "light"
+    ],
+    "weapons": [
+      "simple",
+      "hand_crossbow",
+      "longsword",
+      "rapier",
+      "shortsword"
+    ],
+    "tools": {
+      "choices": [
+        "bagpipes",
+        "drum",
+        "dulcimer",
+        "flute",
+        "horn",
+        "lute",
+        "lyre",
+        "pan_flute",
+        "shawm",
+        "viol"
+      ],
+      "count": 3
+    },
+    "savingThrows": [
+      "DEX",
+      "CHA"
+    ],
+    "skills": {
+      "choices": [
+        "acrobatics",
+        "animal_handling",
+        "arcana",
+        "athletics",
+        "deception",
+        "history",
+        "insight",
+        "intimidation",
+        "investigation",
+        "medicine",
+        "nature",
+        "perception",
+        "performance",
+        "persuasion",
+        "religion",
+        "sleight_of_hand",
+        "stealth",
+        "survival"
+      ],
+      "count": 3
+    }
+  },
+  "startingEquipment": {
+    "guaranteed": [
+      {
+        "itemId": "leather_armor",
+        "quantity": 1
+      }
+    ],
+    "choices": []
+  },
+  "spellcasting": {
+    "hasSpellcasting": true,
+    "spellcastingAbility": "CHA",
+    "spellcastingType": "full",
+    "cantripsKnown": [
+      2,
+      2,
+      2,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "ritualCasting": true
+  },
+  "features": [
+    {
+      "id": "bardic-inspiration",
+      "name": "Bardic Inspiration",
+      "source": "srd",
+      "description": "You can inspire others through stirring words or music.",
+      "level": 1,
+      "featureType": "resource",
+      "resource": {
+        "name": "Bardic Inspiration",
+        "maxCount": "ability_mod",
+        "abilityModifier": "CHA",
+        "recoversOn": "long"
+      }
+    },
+    {
+      "id": "jack-of-all-trades",
+      "name": "Jack of All Trades",
+      "source": "srd",
+      "description": "You can add half your proficiency bonus to any ability check you make that doesn't already include your proficiency bonus.",
+      "level": 2,
+      "featureType": "passive"
+    },
+    {
+      "id": "song-of-rest",
+      "name": "Song of Rest",
+      "source": "srd",
+      "description": "You can use soothing music or oration to help revitalize your wounded allies during a short rest.",
+      "level": 2,
+      "featureType": "passive"
+    },
+    {
+      "id": "expertise-bard",
+      "name": "Expertise",
+      "source": "srd",
+      "description": "Choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.",
+      "level": 3,
+      "featureType": "choice"
+    }
+  ],
+  "subclasses": [
+    {
+      "id": "college-of-lore",
+      "name": "College of Lore",
+      "source": "srd",
+      "description": "Bards of the College of Lore know something about most things.",
+      "parentClassId": "bard",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "bonus-proficiencies-lore",
+          "name": "Bonus Proficiencies",
+          "source": "phb24",
+          "description": "You gain proficiency with three skills of your choice.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "cutting-words",
+          "name": "Cutting Words",
+          "source": "phb24",
+          "description": "You learn to use your wit to supernaturally distract, confuse, and otherwise sap the confidence and competence of others.",
+          "level": 3,
+          "featureType": "active"
+        },
+        {
+          "id": "magical-discoveries",
+          "name": "Magical Discoveries",
+          "source": "phb24",
+          "description": "You learn two spells from the Cleric, Druid, or Wizard spell list. These spells are always prepared.",
+          "level": 6,
+          "featureType": "choice"
+        },
+        {
+          "id": "peerless-skill",
+          "name": "Peerless Skill",
+          "source": "phb24",
+          "description": "When you fail an ability check or attack roll, you can add a Bardic Inspiration die to the roll. The die isn't expended on a failure.",
+          "level": 14,
+          "featureType": "passive"
+        }
+      ]
+    },
+    {
+      "id": "college-of-dance",
+      "name": "College of Dance",
+      "source": "user",
+      "description": "You know that the multiverse dances to the rhythm of creation, and you use your movements to harness that rhythm.",
+      "parentClassId": "bard",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "dazzling-footwork",
+          "name": "Dazzling Footwork",
+          "source": "phb24",
+          "description": "While you aren't wearing armor or wielding a shield, you gain advantages in Performance, Unarmored Defense, and Agile Strikes.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "inspiring-movement",
+          "name": "Inspiring Movement",
+          "source": "phb24",
+          "description": "As a Reaction, you can expend Bardic Inspiration to move yourself and an ally without provoking Opportunity Attacks.",
+          "level": 6,
+          "featureType": "active"
+        },
+        {
+          "id": "tandem-footwork",
+          "name": "Tandem Footwork",
+          "source": "phb24",
+          "description": "You can expend Bardic Inspiration to grant an initiative bonus to yourself and nearby allies.",
+          "level": 6,
+          "featureType": "active"
+        },
+        {
+          "id": "leading-evasion",
+          "name": "Leading Evasion",
+          "source": "phb24",
+          "description": "You and nearby allies gain benefits to Dexterity saving throws, potentially taking no damage on a success.",
+          "level": 14,
+          "featureType": "passive"
+        }
+      ]
+    },
+    {
+      "id": "college-of-glamour",
+      "name": "College of Glamour",
+      "source": "user",
+      "description": "The College of Glamour is open to those who mastered their craft in the vibrant realm of the Feywild.",
+      "parentClassId": "bard",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "beguiling-magic",
+          "name": "Beguiling Magic",
+          "source": "phb24",
+          "description": "You always have Charm Person and Mirror Image prepared. You can Charm or Frighten creatures after casting Enchantment/Illusion spells.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "mantle-of-inspiration",
+          "name": "Mantle of Inspiration",
+          "source": "phb24",
+          "description": "As a Bonus Action, you can spend one use of your Bardic Inspiration to grant temporary HP and movement to allies.",
+          "level": 3,
+          "featureType": "active"
+        },
+        {
+          "id": "mantle-of-majesty",
+          "name": "Mantle of Majesty",
+          "source": "phb24",
+          "description": "You always have Command prepared. You can cast it as a Bonus Action for 1 minute.",
+          "level": 6,
+          "featureType": "active"
+        },
+        {
+          "id": "unbreakable-majesty",
+          "name": "Unbreakable Majesty",
+          "source": "phb24",
+          "description": "As a Bonus Action, you assume a majestic presence that can cause attacks against you to miss.",
+          "level": 14,
+          "featureType": "active"
+        }
+      ]
+    },
+    {
+      "id": "college-of-valor",
+      "name": "College of Valor",
+      "source": "user",
+      "description": "Bards of the College of Valor are daring skalds whose tales keep the memory of the great heroes of the past alive.",
+      "parentClassId": "bard",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "combat-inspiration",
+          "name": "Combat Inspiration",
+          "source": "phb24",
+          "description": "Allies can use your Bardic Inspiration for Defense (AC bonus) or Offense (Damage bonus).",
+          "level": 3,
+          "featureType": "active"
+        },
+        {
+          "id": "martial-training-valor",
+          "name": "Martial Training",
+          "source": "phb24",
+          "description": "You gain proficiency with Martial weapons, Medium armor, and Shields. You can use weapons as a spellcasting focus.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "extra-attack-valor",
+          "name": "Extra Attack",
+          "source": "phb24",
+          "description": "You can attack twice, or replace one attack with a cantrip.",
+          "level": 6,
+          "featureType": "passive"
+        },
+        {
+          "id": "battle-magic",
+          "name": "Battle Magic",
+          "source": "phb24",
+          "description": "After casting a spell, you can make one weapon attack as a Bonus Action.",
+          "level": 14,
+          "featureType": "active"
+        }
+      ]
+    }
+  ],
+  "subclassName": "Bard College",
+  "subclassLevel": 3,
+  "asiLevels": [
+    4,
+    8,
+    12,
+    16,
+    19
+  ],
+  "teachingNotes": {
+    "complexity": "intermediate",
+    "recommendedForNewPlayers": false,
+    "playstyleKeywords": [
+      "Support",
+      "Spellcaster",
+      "Face",
+      "Versatile"
+    ],
+    "roleInParty": [
+      "Support",
+      "Face",
+      "Utility caster"
+    ]
+  }
+}

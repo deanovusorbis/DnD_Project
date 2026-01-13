@@ -1,0 +1,240 @@
+{
+  "id": "warlock",
+  "name": "Warlock",
+  "source": "srd",
+  "description": "A wielder of magic derived from a bargain with an extraplanar entity.",
+  "hitDie": "d8",
+  "primaryAbility": [
+    "CHA"
+  ],
+  "abilityPriority": {
+    "primary": [
+      "CHA",
+      "CON"
+    ],
+    "secondary": [
+      "DEX",
+      "WIS"
+    ],
+    "dump": [
+      "STR",
+      "INT"
+    ]
+  },
+  "proficiencies": {
+    "armor": [
+      "light"
+    ],
+    "weapons": [
+      "simple"
+    ],
+    "tools": [],
+    "savingThrows": [
+      "WIS",
+      "CHA"
+    ],
+    "skills": {
+      "choices": [
+        "arcana",
+        "deception",
+        "history",
+        "intimidation",
+        "investigation",
+        "nature",
+        "religion"
+      ],
+      "count": 2
+    }
+  },
+  "startingEquipment": {
+    "guaranteed": [
+      {
+        "itemId": "leather_armor",
+        "quantity": 1
+      },
+      {
+        "itemId": "simple_weapon",
+        "quantity": 1
+      }
+    ],
+    "choices": []
+  },
+  "spellcasting": {
+    "hasSpellcasting": true,
+    "spellcastingAbility": "CHA",
+    "spellcastingType": "pact",
+    "cantripsKnown": [
+      2,
+      2,
+      2,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "spellsKnown": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      10,
+      11,
+      11,
+      12,
+      12,
+      13,
+      13,
+      14,
+      14,
+      15,
+      15
+    ]
+  },
+  "features": [
+    {
+      "id": "otherworldly-patron",
+      "name": "Otherworldly Patron",
+      "source": "srd",
+      "description": "You have struck a bargain with an otherworldly being of your choice.",
+      "level": 1,
+      "featureType": "choice"
+    },
+    {
+      "id": "pact-magic",
+      "name": "Pact Magic",
+      "source": "srd",
+      "description": "Your arcane research and the magic bestowed on you by your patron have given you facility with spells.",
+      "level": 1,
+      "featureType": "passive"
+    },
+    {
+      "id": "eldritch-invocations",
+      "name": "Eldritch Invocations",
+      "source": "srd",
+      "description": "In your study of occult lore, you have unearthed eldritch invocations.",
+      "level": 2,
+      "featureType": "choice"
+    },
+    {
+      "id": "pact-boon",
+      "name": "Pact Boon",
+      "source": "srd",
+      "description": "Your otherworldly patron bestows a gift upon you.",
+      "level": 3,
+      "featureType": "choice"
+    }
+  ],
+  "subclasses": [
+    {
+      "id": "the-fiend",
+      "name": "The Fiend",
+      "source": "srd",
+      "description": "You have made a pact with a fiend from the lower planes of existence.",
+      "parentClassId": "warlock",
+      "subclassFeatureLevel": 1,
+      "features": [
+        {
+          "id": "dark-ones-blessing",
+          "name": "Dark One's Blessing",
+          "source": "srd",
+          "description": "When you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your Charisma modifier + your warlock level.",
+          "level": 1,
+          "featureType": "passive"
+        }
+      ]
+    },
+    {
+      "id": "archfey-patron",
+      "name": "Archfey Patron",
+      "source": "user",
+      "description": "Your patron is a lord or lady of the fey, a creature of legend who holds secrets that were forgotten before the mortal races were born.",
+      "parentClassId": "warlock",
+      "subclassFeatureLevel": 1,
+      "features": [
+        {
+          "id": "fey-presence",
+          "name": "Fey Presence",
+          "description": "You can cause each creature in a 10-foot cube originating from you to make a Wisdom saving throw against your warlock spell save DC.",
+          "level": 1,
+          "featureType": "active"
+        }
+      ]
+    },
+    {
+      "id": "celestial-patron",
+      "name": "Celestial Patron",
+      "source": "user",
+      "description": "Your patron is a powerful being of the Upper Planes.",
+      "parentClassId": "warlock",
+      "subclassFeatureLevel": 1,
+      "features": [
+        {
+          "id": "healing-light",
+          "name": "Healing Light",
+          "description": "You have a pool of d6s that you spend to heal others.",
+          "level": 1,
+          "featureType": "resource"
+        }
+      ]
+    },
+    {
+      "id": "great-old-one-patron",
+      "name": "Great Old One Patron",
+      "source": "user",
+      "description": "Your patron is a mysterious entity whose nature is utterly foreign to the fabric of reality.",
+      "parentClassId": "warlock",
+      "subclassFeatureLevel": 1,
+      "features": [
+        {
+          "id": "awakened-mind",
+          "name": "Awakened Mind",
+          "description": "You can telepathically speak to any creature you can see within 30 feet of you.",
+          "level": 1,
+          "featureType": "passive"
+        }
+      ]
+    }
+  ],
+  "subclassName": "Otherworldly Patron",
+  "subclassLevel": 1,
+  "asiLevels": [
+    4,
+    8,
+    12,
+    16,
+    19
+  ],
+  "teachingNotes": {
+    "complexity": "intermediate",
+    "recommendedForNewPlayers": false,
+    "playstyleKeywords": [
+      "Pact caster",
+      "Eldritch Blast",
+      "Short rest",
+      "Customizable"
+    ],
+    "roleInParty": [
+      "Blaster",
+      "Utility caster",
+      "Face"
+    ]
+  }
+}

@@ -26,7 +26,10 @@ export interface AbilityPriority {
 export interface ClassProficiencies {
 	armor: ArmorType[];
 	weapons: (WeaponCategory | string)[];
-	tools: string[];
+	tools: string[] | {
+		choices: string[];
+		count: number;
+	};
 	savingThrows: AbilityName[];
 	skills: {
 		choices: SkillName[];

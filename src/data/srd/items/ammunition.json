@@ -1,0 +1,578 @@
+[
+  {
+    "id": "adamantine-arrow",
+    "name": "Adamantin Arrow",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.05,
+    "description": "This weapon or piece of ammunition is made of adamantine, one of the hardest substances in existence. Whenever this weapon or piece of ammunition hits an object, the hit is a Critical Hit.Arrows are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Arrows are typically stored in a Quiver (bought separately).",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "adamantine-bolt",
+    "name": "Adamantin Bolt",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.075,
+    "description": "This weapon or piece of ammunition is made of adamantine, one of the hardest substances in existence. Whenever this weapon or piece of ammunition hits an object, the hit is a Critical Hit.Crossbow bolts are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Bolts are typically stored in a Crossbow Bolt Case (bought separately).",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "adamantine-energy-cell",
+    "name": "Adamantin Energy Cell",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.5,
+    "description": "This weapon or piece of ammunition is made of adamantine, one of the hardest substances in existence. Whenever this weapon or piece of ammunition hits an object, the hit is a Critical Hit.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "adamantine-firearm-bullet",
+    "name": "Adamantin Firearm Bullet",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.2,
+    "description": "This weapon or piece of ammunition is made of adamantine, one of the hardest substances in existence. Whenever this weapon or piece of ammunition hits an object, the hit is a Critical Hit.Firearm Bullets are destroyed upon use in a modern firearm.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "adamantine-needle",
+    "name": "Adamantin Needle",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.02,
+    "description": "This weapon or piece of ammunition is made of adamantine, one of the hardest substances in existence. Whenever this weapon or piece of ammunition hits an object, the hit is a Critical Hit.Blowgun needles are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Needles are typically stored in a Pouch (bought separately).",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "adamantine-sling-bullet",
+    "name": "Adamantin Sling Bullet",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.075,
+    "description": "This weapon or piece of ammunition is made of adamantine, one of the hardest substances in existence. Whenever this weapon or piece of ammunition hits an object, the hit is a Critical Hit.Sling bullets are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Sling Bullets are typically stored in a Pouch (bought separately).",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "arrow-of-slaying",
+    "name": "Arrow of Slaying",
+    "type": "Tüketilebilir",
+    "rarity": "Çok Nadir",
+    "weight": 0.05,
+    "description": "This magic ammunition is meant to slay creatures of a particular type, which the DM chooses or determines randomly by rolling on the table below. If a creature of that type takes damage from the ammunition, the creature makes a DC 17 Constitution saving throw, taking an extra 6d10 Force damage on a failed save or half as much extra damage on a successful one.After dealing its extra damage to a creature, the ammunition becomes nonmagical.1d100Creature Type01-10Aberrations11-15Beasts16-20Celestials21-25Constructs26-35Dragons36-45Elementals46-50Humanoids51-60Fey61-70Fiends71-75Giants76-80Monstrosities81-85Oozes86-90Plants91-00UndeadArrows are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Arrows are typically stored in a Quiver (bought separately).",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "arrow",
+    "name": "Arrow",
+    "type": "Tüketilebilir",
+    "rarity": "Yaygın",
+    "weight": 0.05,
+    "description": "Arrows are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Arrows are typically stored in a Quiver (bought separately).",
+    "cost": {
+      "quantity": 5,
+      "unit": "cp"
+    }
+  },
+  {
+    "id": "arrows-20",
+    "name": "Oklar (20)",
+    "type": "Tüketilebilir",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "Arrows are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Arrows are typically stored in a Quiver (bought separately).",
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "bolt-of-slaying",
+    "name": "Bolt of Slaying",
+    "type": "Tüketilebilir",
+    "rarity": "Çok Nadir",
+    "weight": 0.075,
+    "description": "This magic ammunition is meant to slay creatures of a particular type, which the DM chooses or determines randomly by rolling on the table below. If a creature of that type takes damage from the ammunition, the creature makes a DC 17 Constitution saving throw, taking an extra 6d10 Force damage on a failed save or half as much extra damage on a successful one.After dealing its extra damage to a creature, the ammunition becomes nonmagical.1d100Creature Type01-10Aberrations11-15Beasts16-20Celestials21-25Constructs26-35Dragons36-45Elementals46-50Humanoids51-60Fey61-70Fiends71-75Giants76-80Monstrosities81-85Oozes86-90Plants91-00UndeadCrossbow bolts are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Bolts are typically stored in a Crossbow Bolt Case (bought separately).",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "bolt",
+    "name": "Bolt",
+    "type": "Tüketilebilir",
+    "rarity": "Yaygın",
+    "weight": 0.075,
+    "description": "Crossbow bolts are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Bolts are typically stored in a Crossbow Bolt Case (bought separately).",
+    "cost": {
+      "quantity": 5,
+      "unit": "cp"
+    }
+  },
+  {
+    "id": "bolts-20",
+    "name": "Arbalet Okları (20)",
+    "type": "Tüketilebilir",
+    "rarity": "Yaygın",
+    "weight": 10.5,
+    "description": "Crossbow bolts are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Bolts are typically stored in a Crossbow Bolt Case (bought separately).",
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "energy-cell-of-slaying",
+    "name": "Energy Cell of Slaying",
+    "type": "Tüketilebilir",
+    "rarity": "Çok Nadir",
+    "weight": 0.5,
+    "description": "This magic ammunition is meant to slay creatures of a particular type, which the DM chooses or determines randomly by rolling on the table below. If a creature of that type takes damage from the ammunition, the creature makes a DC 17 Constitution saving throw, taking an extra 6d10 Force damage on a failed save or half as much extra damage on a successful one.After dealing its extra damage to a creature, the ammunition becomes nonmagical.1d100Creature Type01-10Aberrations11-15Beasts16-20Celestials21-25Constructs26-35Dragons36-45Elementals46-50Humanoids51-60Fey61-70Fiends71-75Giants76-80Monstrosities81-85Oozes86-90Plants91-00Undead",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "energy-cell",
+    "name": "Energy Cell",
+    "type": "Tüketilebilir",
+    "rarity": "Yaygın",
+    "weight": 0.5,
+    "description": "",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "firearm-bullet-of-slaying",
+    "name": "Firearm Bullet of Slaying",
+    "type": "Tüketilebilir",
+    "rarity": "Çok Nadir",
+    "weight": 0.2,
+    "description": "This magic ammunition is meant to slay creatures of a particular type, which the DM chooses or determines randomly by rolling on the table below. If a creature of that type takes damage from the ammunition, the creature makes a DC 17 Constitution saving throw, taking an extra 6d10 Force damage on a failed save or half as much extra damage on a successful one.After dealing its extra damage to a creature, the ammunition becomes nonmagical.1d100Creature Type01-10Aberrations11-15Beasts16-20Celestials21-25Constructs26-35Dragons36-45Elementals46-50Humanoids51-60Fey61-70Fiends71-75Giants76-80Monstrosities81-85Oozes86-90Plants91-00UndeadFirearm Bullets are destroyed upon use in a modern firearm.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "firearm-bullet",
+    "name": "Firearm Bullet",
+    "type": "Tüketilebilir",
+    "rarity": "Yaygın",
+    "weight": 0.2,
+    "description": "Firearm Bullets are destroyed upon use in a modern firearm.",
+    "cost": {
+      "quantity": 3,
+      "unit": "sp"
+    }
+  },
+  {
+    "id": "firearm-bullets-10",
+    "name": "Firearm Bullets (10)",
+    "type": "Tüketilebilir",
+    "rarity": "Yaygın",
+    "weight": 2,
+    "description": "Firearm Bullets are destroyed upon use in a modern firearm.",
+    "cost": {
+      "quantity": 3,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "hammer-of-thunderbolts",
+    "name": "Hammer of Thunderbolts",
+    "type": "other",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.The weapon has 5 charges. You can expend 1 charge and make a ranged attack with the weapon, hurling it as if it had Thrown with a normal range of 20 feet and a long range of 60 feet.If the attack hits, the weapon unleashes a thunderclap audible out to 300 feet. The target and every creature within 30 feet of it other than you must succeed on a DC 17 Constitution saving throw or have the Stunned condition until the end of your next turn. Immediately after hitting or missing, the weapon flies back to your hand. The weapon regains 1d4 + 1 expended charges daily at dawn. Giant's Bane. While you are attuned to the weapon and wearing either a Belt of Giant Strength or Gauntlets of Ogre Power to which you are also attuned, you gain the following benefits:Giants' Bane. When you roll a 20 on the d20 for an attack roll made with this weapon against a Giant, the creature must succeed on a DC 17 Constitution saving throw or die.Might of Giants. The Strength score bestowed by your Belt of Giant Strength or Gauntlets of Ogre Power increases by 4, to a maximum of 30. Base items. This item variant can be applied to the following base items:Maul (Maul of Thunderbolts)Warhammer (Warhammer of Thunderbolts)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "needle-of-slaying",
+    "name": "Needle of Slaying",
+    "type": "Tüketilebilir",
+    "rarity": "Çok Nadir",
+    "weight": 0.02,
+    "description": "This magic ammunition is meant to slay creatures of a particular type, which the DM chooses or determines randomly by rolling on the table below. If a creature of that type takes damage from the ammunition, the creature makes a DC 17 Constitution saving throw, taking an extra 6d10 Force damage on a failed save or half as much extra damage on a successful one.After dealing its extra damage to a creature, the ammunition becomes nonmagical.1d100Creature Type01-10Aberrations11-15Beasts16-20Celestials21-25Constructs26-35Dragons36-45Elementals46-50Humanoids51-60Fey61-70Fiends71-75Giants76-80Monstrosities81-85Oozes86-90Plants91-00UndeadBlowgun needles are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Needles are typically stored in a Pouch (bought separately).",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "needle",
+    "name": "Needle",
+    "type": "Tüketilebilir",
+    "rarity": "Yaygın",
+    "weight": 0.02,
+    "description": "Blowgun needles are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Needles are typically stored in a Pouch (bought separately).",
+    "cost": {
+      "quantity": 2,
+      "unit": "cp"
+    }
+  },
+  {
+    "id": "needles-50",
+    "name": "İğneler (50)",
+    "type": "Tüketilebilir",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "Blowgun needles are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Needles are typically stored in a Pouch (bought separately).",
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "plus-1-arrow",
+    "name": "+1 Arrow",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.05,
+    "description": "You have a +1 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.Arrows are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Arrows are typically stored in a Quiver (bought separately).",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "plus-1-bolt",
+    "name": "+1 Bolt",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.075,
+    "description": "You have a +1 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.Crossbow bolts are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Bolts are typically stored in a Crossbow Bolt Case (bought separately).",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "plus-1-energy-cell",
+    "name": "+1 Energy Cell",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.5,
+    "description": "You have a +1 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "plus-1-firearm-bullet",
+    "name": "+1 Firearm Bullet",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.2,
+    "description": "You have a +1 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.Firearm Bullets are destroyed upon use in a modern firearm.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "plus-1-needle",
+    "name": "+1 Needle",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.02,
+    "description": "You have a +1 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.Blowgun needles are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Needles are typically stored in a Pouch (bought separately).",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "plus-1-sling-bullet",
+    "name": "+1 Sling Bullet",
+    "type": "Tüketilebilir",
+    "rarity": "Sıra Dışı",
+    "weight": 0.075,
+    "description": "You have a +1 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.Sling bullets are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Sling Bullets are typically stored in a Pouch (bought separately).",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "plus-2-arrow",
+    "name": "+2 Arrow",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0.05,
+    "description": "You have a +2 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.Arrows are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Arrows are typically stored in a Quiver (bought separately).",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "plus-2-bolt",
+    "name": "+2 Bolt",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0.075,
+    "description": "You have a +2 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.Crossbow bolts are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Bolts are typically stored in a Crossbow Bolt Case (bought separately).",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "plus-2-energy-cell",
+    "name": "+2 Energy Cell",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0.5,
+    "description": "You have a +2 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "plus-2-firearm-bullet",
+    "name": "+2 Firearm Bullet",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0.2,
+    "description": "You have a +2 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.Firearm Bullets are destroyed upon use in a modern firearm.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "plus-2-needle",
+    "name": "+2 Needle",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0.02,
+    "description": "You have a +2 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.Blowgun needles are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Needles are typically stored in a Pouch (bought separately).",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "plus-2-sling-bullet",
+    "name": "+2 Sling Bullet",
+    "type": "Tüketilebilir",
+    "rarity": "Nadir",
+    "weight": 0.075,
+    "description": "You have a +2 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.Sling bullets are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Sling Bullets are typically stored in a Pouch (bought separately).",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "plus-3-arrow",
+    "name": "+3 Arrow",
+    "type": "Tüketilebilir",
+    "rarity": "Çok Nadir",
+    "weight": 0.05,
+    "description": "You have a +3 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.Arrows are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Arrows are typically stored in a Quiver (bought separately).",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "plus-3-bolt",
+    "name": "+3 Bolt",
+    "type": "Tüketilebilir",
+    "rarity": "Çok Nadir",
+    "weight": 0.075,
+    "description": "You have a +3 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.Crossbow bolts are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Bolts are typically stored in a Crossbow Bolt Case (bought separately).",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "plus-3-energy-cell",
+    "name": "+3 Energy Cell",
+    "type": "Tüketilebilir",
+    "rarity": "Çok Nadir",
+    "weight": 0.5,
+    "description": "You have a +3 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "plus-3-firearm-bullet",
+    "name": "+3 Firearm Bullet",
+    "type": "Tüketilebilir",
+    "rarity": "Çok Nadir",
+    "weight": 0.2,
+    "description": "You have a +3 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.Firearm Bullets are destroyed upon use in a modern firearm.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "plus-3-needle",
+    "name": "+3 Needle",
+    "type": "Tüketilebilir",
+    "rarity": "Çok Nadir",
+    "weight": 0.02,
+    "description": "You have a +3 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.Blowgun needles are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Needles are typically stored in a Pouch (bought separately).",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "plus-3-sling-bullet",
+    "name": "+3 Sling Bullet",
+    "type": "Tüketilebilir",
+    "rarity": "Çok Nadir",
+    "weight": 0.075,
+    "description": "You have a +3 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.Sling bullets are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Sling Bullets are typically stored in a Pouch (bought separately).",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "sling-bullet-of-slaying",
+    "name": "Sling Bullet of Slaying",
+    "type": "Tüketilebilir",
+    "rarity": "Çok Nadir",
+    "weight": 0.075,
+    "description": "This magic ammunition is meant to slay creatures of a particular type, which the DM chooses or determines randomly by rolling on the table below. If a creature of that type takes damage from the ammunition, the creature makes a DC 17 Constitution saving throw, taking an extra 6d10 Force damage on a failed save or half as much extra damage on a successful one.After dealing its extra damage to a creature, the ammunition becomes nonmagical.1d100Creature Type01-10Aberrations11-15Beasts16-20Celestials21-25Constructs26-35Dragons36-45Elementals46-50Humanoids51-60Fey61-70Fiends71-75Giants76-80Monstrosities81-85Oozes86-90Plants91-00UndeadSling bullets are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Sling Bullets are typically stored in a Pouch (bought separately).",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "sling-bullet",
+    "name": "Sling Bullet",
+    "type": "Tüketilebilir",
+    "rarity": "Yaygın",
+    "weight": 0.075,
+    "description": "Sling bullets are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Sling Bullets are typically stored in a Pouch (bought separately).",
+    "cost": {
+      "quantity": 0.2,
+      "unit": "cp"
+    }
+  },
+  {
+    "id": "sling-bullets-20",
+    "name": "Sapan Taşları (20)",
+    "type": "Tüketilebilir",
+    "rarity": "Yaygın",
+    "weight": 10.5,
+    "description": "Sling bullets are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Sling Bullets are typically stored in a Pouch (bought separately).",
+    "cost": {
+      "quantity": 4,
+      "unit": "cp"
+    }
+  },
+  {
+    "id": "walloping-arrow",
+    "name": "Walloping Arrow",
+    "type": "Tüketilebilir",
+    "rarity": "Yaygın",
+    "weight": 0.05,
+    "description": "A creature hit by this ammunition must succeed on a DC 10 Strength saving throw or have the Prone condition.Arrows are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Arrows are typically stored in a Quiver (bought separately).",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "walloping-bolt",
+    "name": "Walloping Bolt",
+    "type": "Tüketilebilir",
+    "rarity": "Yaygın",
+    "weight": 0.075,
+    "description": "A creature hit by this ammunition must succeed on a DC 10 Strength saving throw or have the Prone condition.Crossbow bolts are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Bolts are typically stored in a Crossbow Bolt Case (bought separately).",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "walloping-energy-cell",
+    "name": "Walloping Energy Cell",
+    "type": "Tüketilebilir",
+    "rarity": "Yaygın",
+    "weight": 0.5,
+    "description": "A creature hit by this ammunition must succeed on a DC 10 Strength saving throw or have the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "walloping-firearm-bullet",
+    "name": "Walloping Firearm Bullet",
+    "type": "Tüketilebilir",
+    "rarity": "Yaygın",
+    "weight": 0.2,
+    "description": "A creature hit by this ammunition must succeed on a DC 10 Strength saving throw or have the Prone condition.Firearm Bullets are destroyed upon use in a modern firearm.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "walloping-needle",
+    "name": "Walloping Needle",
+    "type": "Tüketilebilir",
+    "rarity": "Yaygın",
+    "weight": 0.02,
+    "description": "A creature hit by this ammunition must succeed on a DC 10 Strength saving throw or have the Prone condition.Blowgun needles are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Needles are typically stored in a Pouch (bought separately).",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "walloping-sling-bullet",
+    "name": "Walloping Sling Bullet",
+    "type": "Tüketilebilir",
+    "rarity": "Yaygın",
+    "weight": 0.075,
+    "description": "A creature hit by this ammunition must succeed on a DC 10 Strength saving throw or have the Prone condition.Sling bullets are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.Sling Bullets are typically stored in a Pouch (bought separately).",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  }
+]

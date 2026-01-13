@@ -1,0 +1,74 @@
+{
+  "id": "orc",
+  "name": "Orc",
+  "source": "2024",
+  "description": "Orcs are people who trace their origin to the one-eyed god Gruumsh. They are known for their tirelessness in battle and their devotion to their allies.",
+  "size": "medium",
+  "speed": 30,
+  "abilityScoreIncreases": [
+    {
+      "ability": "STR",
+      "bonus": 2
+    },
+    {
+      "ability": "CON",
+      "bonus": 1
+    }
+  ],
+  "ageMaturity": 12,
+  "ageLifespan": 50,
+  "languages": [
+    "Common",
+    "Orc"
+  ],
+  "traits": [
+    {
+      "id": "darkvision-orc",
+      "name": "Darkvision",
+      "source": "2024",
+      "description": "You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light.",
+      "mechanicType": "passive",
+      "level": 1,
+      "grantsDarkvision": 120
+    },
+    {
+      "id": "adrenaline-rush",
+      "name": "Adrenalin Patlaması (Adrenaline Rush)",
+      "source": "2024",
+      "description": "Bonus Aksiyon olarak Dash (Atılma) yapabilirsiniz. Bunu yaptığınızda Proficiency Bonusunuz kadar Geçici Can Puanı kazanırsınız. Kısa veya Uzun Dinlenme ile yenilenir.",
+      "mechanicType": "active",
+      "level": 1
+    },
+    {
+      "id": "relentless-endurance-orc",
+      "name": "Amansız Dayanıklılık (Relentless Endurance)",
+      "source": "2024",
+      "description": "0 Can Puanına düştüğünüzde (fakat ölmediğinizde), bunun yerine 1 Can Puanına düşebilirsiniz. Uzun Dinlenme ile yenilenir.",
+      "mechanicType": "active",
+      "level": 1
+    },
+    {
+      "id": "powerful-build-orc",
+      "name": "Güçlü Yapı (Powerful Build)",
+      "source": "2024",
+      "description": "Taşıma kapasitesi hesaplanırken bir boy büyük sayılırsınız ve Grappled durumundan kurtulmak için avantaj kazanırsınız.",
+      "mechanicType": "passive",
+      "level": 1
+    }
+  ],
+  "creatureType": "humanoid",
+  "teachingNotes": {
+    "complexity": "beginner",
+    "recommendedForNewPlayers": true,
+    "keyMechanics": [
+      "Adrenaline Rush",
+      "Relentless Endurance",
+      "Darkvision"
+    ],
+    "flavorHooks": [
+      "Relentless",
+      "Loyal",
+      "Survivor"
+    ]
+  }
+}

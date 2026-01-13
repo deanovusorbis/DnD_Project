@@ -14,7 +14,7 @@ import {
  */
 export function createCharacterCreationState(): CharacterCreationState {
 	return {
-		step: 'species',
+		step: 'general',
 		errors: [],
 		isComplete: false
 	};
@@ -169,7 +169,7 @@ export function validateCreation(state: CharacterCreationState): {
 		errors.push({ step: 'background', message: 'Background seçilmedi' });
 	}
 	if (!state.characterName) {
-		errors.push({ step: 'details', message: 'Karakter adı girilmedi' });
+		errors.push({ step: 'general', message: 'Karakter adı girilmedi' });
 	}
 
 	return {

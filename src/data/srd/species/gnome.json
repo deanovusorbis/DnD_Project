@@ -1,0 +1,116 @@
+{
+  "id": "gnome",
+  "name": "Gnome",
+  "source": "2024",
+  "description": "A gnome's energy and enthusiasm for living shines through every inch of his or her tiny body. Gnomes average slightly over 3 feet tall and weigh 40 to 45 pounds.",
+  "size": "small",
+  "speed": 25,
+  "abilityScoreIncreases": [],
+  "ageMaturity": 40,
+  "ageLifespan": 500,
+  "languages": [
+    "Common",
+    "Gnomish"
+  ],
+  "traits": [
+    {
+      "id": "darkvision-gnome",
+      "name": "Karanlık Görüş (Darkvision)",
+      "source": "2024",
+      "description": "60 feet menzilinde loş ışığı parlak ışık gibi, karanlığı ise loş ışık gibi görebilirsiniz.",
+      "mechanicType": "passive",
+      "level": 1,
+      "grantsDarkvision": 60
+    },
+    {
+      "id": "gnome-cunning",
+      "name": "Gnome Kurnazlığı (Gnome Cunning)",
+      "source": "2024",
+      "description": "Zeka (Intelligence), Bilgelik (Wisdom) ve Karizma (Charisma) kurtarma atışlarında avantaja sahipsiniz.",
+      "mechanicType": "passive",
+      "level": 1,
+      "grantsAdvantage": {
+        "savingThrows": [
+          "INT",
+          "WIS",
+          "CHA"
+        ]
+      }
+    }
+  ],
+  "subraces": [
+    {
+      "id": "forest-gnome",
+      "name": "Orman Gnome'u (Forest Gnome)",
+      "source": "2024",
+      "description": "Gnome Soyu: İllüzyonlar için doğal bir yeteneğe, ayrıca doğuştan gelen bir çabukluğa ve gizliliğe sahipsiniz.",
+      "parentSpeciesId": "gnome",
+      "additionalTraits": [
+        {
+          "id": "gnomish-lineage-forest",
+          "name": "Gnome Soyu (Orman)",
+          "source": "2024",
+          "description": "Minor Illusion hünerini (cantrip) bilirsiniz. Ayrıca Speak with Animals büyüsünü her zaman hazırlarsınız ve büyü yuvası harcamadan Proficiency Bonusunuz kadar kullanabilirsiniz. Bu büyüleri kullanım için Zeka, Bilgelik veya Karizma özelliğini seçebilirsiniz.",
+          "mechanicType": "active",
+          "level": 1,
+          "grantsSpells": [
+            {
+              "spellId": "minor-illusion",
+              "atLevel": 1,
+              "castingAbility": "choice:INT,WIS,CHA"
+            },
+            {
+              "spellId": "speak-with-animals",
+              "atLevel": 1,
+              "castingAbility": "choice:INT,WIS,CHA"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rock-gnome",
+      "name": "Kaya Gnome'u (Rock Gnome)",
+      "source": "2024",
+      "description": "Gnome Soyu: Doğal bir yaratıcılığa ve diğer Gnomelardan daha fazla dayanıklılığa sahipsiniz.",
+      "parentSpeciesId": "gnome",
+      "additionalTraits": [
+        {
+          "id": "gnomish-lineage-rock",
+          "name": "Gnome Soyu (Kaya)",
+          "source": "2024",
+          "description": "Mending ve Prestidigitation hünerlerini bilirsiniz. Ayrıca Prestidigitation kullanarak minik saat mekanizmalı cihazlar (oyuncak, ateş başlatıcı, müzik kutusu) üretebilirsiniz (10 dk).",
+          "mechanicType": "active",
+          "level": 1,
+          "grantsSpells": [
+            {
+              "spellId": "mending",
+              "atLevel": 1,
+              "castingAbility": "choice:INT,WIS,CHA"
+            },
+            {
+              "spellId": "prestidigitation",
+              "atLevel": 1,
+              "castingAbility": "choice:INT,WIS,CHA"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "creatureType": "humanoid",
+  "teachingNotes": {
+    "complexity": "beginner",
+    "recommendedForNewPlayers": true,
+    "keyMechanics": [
+      "Darkvision",
+      "Gnome Cunning",
+      "Lineage Spells"
+    ],
+    "flavorHooks": [
+      "Curious",
+      "Inventive",
+      "Mischievous"
+    ]
+  }
+}

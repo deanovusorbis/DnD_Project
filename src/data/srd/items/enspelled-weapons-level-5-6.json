@@ -1,0 +1,2012 @@
+[
+  {
+    "id": "enspelled-weapon-level-5",
+    "name": "Enspelled Weapon (Level 5)",
+    "type": "other",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Base items. This item variant can be applied to the following base items:Antimatter Rifle (Enspelled (Level 5) Antimatter Rifle)Automatic Rifle (Enspelled (Level 5) Automatic Rifle)Battleaxe (Enspelled (Level 5) Battleaxe)Blowgun (Enspelled (Level 5) Blowgun)Club (Enspelled (Level 5) Club)Dagger (Enspelled (Level 5) Dagger)Dart (Enspelled (Level 5) Dart)Double-Bladed Scimitar (Enspelled (Level 5) Double-Bladed Scimitar)Flail (Enspelled (Level 5) Flail)Glaive (Enspelled (Level 5) Glaive)Greataxe (Enspelled (Level 5) Greataxe)Greatclub (Enspelled (Level 5) Greatclub)Greatsword (Enspelled (Level 5) Greatsword)Halberd (Enspelled (Level 5) Halberd)Hand Crossbow (Enspelled (Level 5) Hand Crossbow)Handaxe (Enspelled (Level 5) Handaxe)Heavy Crossbow (Enspelled (Level 5) Heavy Crossbow)Hooked Shortspear (Enspelled (Level 5) Hooked Shortspear)Hoopak (Enspelled (Level 5) Hoopak)Hunting Rifle (Enspelled (Level 5) Hunting Rifle)Javelin (Enspelled (Level 5) Javelin)Lance (Enspelled (Level 5) Lance)Laser Pistol (Enspelled (Level 5) Laser Pistol)Laser Rifle (Enspelled (Level 5) Laser Rifle)Light Crossbow (Enspelled (Level 5) Light Crossbow)Light Hammer (Enspelled (Level 5) Light Hammer)Light Repeating Crossbow (Enspelled (Level 5) Light Repeating Crossbow)Longbow (Enspelled (Level 5) Longbow)Longsword (Enspelled (Level 5) Longsword)Mace (Enspelled (Level 5) Mace)Maul (Enspelled (Level 5) Maul)Morningstar (Enspelled (Level 5) Morningstar)Musket (Enspelled (Level 5) Musket)Pike (Enspelled (Level 5) Pike)Pistol (Enspelled (Level 5) Pistol)Quarterstaff (Enspelled (Level 5) Quarterstaff)Rapier (Enspelled (Level 5) Rapier)Revolver (Enspelled (Level 5) Revolver)Scimitar (Enspelled (Level 5) Scimitar)Semiautomatic Pistol (Enspelled (Level 5) Semiautomatic Pistol)Shortbow (Enspelled (Level 5) Shortbow)Shortsword (Enspelled (Level 5) Shortsword)Shotgun (Enspelled (Level 5) Shotgun)Sickle (Enspelled (Level 5) Sickle)Sling (Enspelled (Level 5) Sling)Spear (Enspelled (Level 5) Spear)Staff (Enspelled (Level 5) Staff)Trident (Enspelled (Level 5) Trident)War Pick (Enspelled (Level 5) War Pick)Warhammer (Enspelled (Level 5) Warhammer)Whip (Enspelled (Level 5) Whip)Wooden Staff (Enspelled (Level 5) Wooden Staff)Yklwa (Enspelled (Level 5) Yklwa)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "enspelled-weapon-level-6",
+    "name": "Enspelled Weapon (Level 6)",
+    "type": "other",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Base items. This item variant can be applied to the following base items:Antimatter Rifle (Enspelled (Level 6) Antimatter Rifle)Automatic Rifle (Enspelled (Level 6) Automatic Rifle)Battleaxe (Enspelled (Level 6) Battleaxe)Blowgun (Enspelled (Level 6) Blowgun)Club (Enspelled (Level 6) Club)Dagger (Enspelled (Level 6) Dagger)Dart (Enspelled (Level 6) Dart)Double-Bladed Scimitar (Enspelled (Level 6) Double-Bladed Scimitar)Flail (Enspelled (Level 6) Flail)Glaive (Enspelled (Level 6) Glaive)Greataxe (Enspelled (Level 6) Greataxe)Greatclub (Enspelled (Level 6) Greatclub)Greatsword (Enspelled (Level 6) Greatsword)Halberd (Enspelled (Level 6) Halberd)Hand Crossbow (Enspelled (Level 6) Hand Crossbow)Handaxe (Enspelled (Level 6) Handaxe)Heavy Crossbow (Enspelled (Level 6) Heavy Crossbow)Hooked Shortspear (Enspelled (Level 6) Hooked Shortspear)Hoopak (Enspelled (Level 6) Hoopak)Hunting Rifle (Enspelled (Level 6) Hunting Rifle)Javelin (Enspelled (Level 6) Javelin)Lance (Enspelled (Level 6) Lance)Laser Pistol (Enspelled (Level 6) Laser Pistol)Laser Rifle (Enspelled (Level 6) Laser Rifle)Light Crossbow (Enspelled (Level 6) Light Crossbow)Light Hammer (Enspelled (Level 6) Light Hammer)Light Repeating Crossbow (Enspelled (Level 6) Light Repeating Crossbow)Longbow (Enspelled (Level 6) Longbow)Longsword (Enspelled (Level 6) Longsword)Mace (Enspelled (Level 6) Mace)Maul (Enspelled (Level 6) Maul)Morningstar (Enspelled (Level 6) Morningstar)Musket (Enspelled (Level 6) Musket)Pike (Enspelled (Level 6) Pike)Pistol (Enspelled (Level 6) Pistol)Quarterstaff (Enspelled (Level 6) Quarterstaff)Rapier (Enspelled (Level 6) Rapier)Revolver (Enspelled (Level 6) Revolver)Scimitar (Enspelled (Level 6) Scimitar)Semiautomatic Pistol (Enspelled (Level 6) Semiautomatic Pistol)Shortbow (Enspelled (Level 6) Shortbow)Shortsword (Enspelled (Level 6) Shortsword)Shotgun (Enspelled (Level 6) Shotgun)Sickle (Enspelled (Level 6) Sickle)Sling (Enspelled (Level 6) Sling)Spear (Enspelled (Level 6) Spear)Staff (Enspelled (Level 6) Staff)Trident (Enspelled (Level 6) Trident)War Pick (Enspelled (Level 6) War Pick)Warhammer (Enspelled (Level 6) Warhammer)Whip (Enspelled (Level 6) Whip)Wooden Staff (Enspelled (Level 6) Wooden Staff)Yklwa (Enspelled (Level 6) Yklwa)",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "enspelled-level-5-antimatter-rifle",
+    "name": "Büyülü (. Seviye 5) Antimadde Tüfeği",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 10,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "6d8",
+      "damageType": "necrotic",
+      "properties": [
+        "Ammunition (120/360 ft.; Energy Cell)",
+        "Reload (2 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-automatic-rifle",
+    "name": "Büyülü (. Seviye 5) Otomatik Tüfek",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 8,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Burst Fire. As an action, you can expend 10 pieces of a Burst Fire weapon's ammunition to spray shots in a 10-foot Cube within the weapon's normal range. Each creature in that area must succeed on a DC 15 Dexterity saving throw or take damage. Roll the weapon's damage once, and apply it to each creature that failed the save. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d8",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (80/240 ft.; Firearm Bullet)",
+        "Burst Fire",
+        "Reload (30 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-battleaxe",
+    "name": "Büyülü (. Seviye 5) Savaş Baltası",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 4,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "slashing",
+      "properties": [
+        "Versatile (1d10)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-blowgun",
+    "name": "Büyülü (. Seviye 5) Üfleme Borusu",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 1,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost. Loading. You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (Range 25/100 ft.; Needle)",
+        "Loading"
+      ],
+      "range": "Ammunition (Range 25/100 ft.; Needle)"
+    }
+  },
+  {
+    "id": "enspelled-level-5-club",
+    "name": "Büyülü (. Seviye 5) Sopa",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Light. When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d4",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Light"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-dagger",
+    "name": "Büyülü (. Seviye 5) Hançer",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 1,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Finesse. When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls. Light. When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Mastery: Nick. When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d4",
+      "damageType": "piercing",
+      "properties": [
+        "Finesse",
+        "Light",
+        "Thrown (20/60 ft.)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-dart",
+    "name": "Büyülü (. Seviye 5) Dart",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 0.25,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Finesse. When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d4",
+      "damageType": "piercing",
+      "properties": [
+        "Finesse",
+        "Thrown (20/60 ft.)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-flail",
+    "name": "Büyülü (. Seviye 5) Döven",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "bludgeoning",
+      "properties": []
+    }
+  },
+  {
+    "id": "enspelled-level-5-glaive",
+    "name": "Büyülü (. Seviye 5) Palalı Mızrak",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Graze. If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-greataxe",
+    "name": "Büyülü (. Seviye 5) Büyük Balta",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 7,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Cleave. If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d12",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-greatclub",
+    "name": "Büyülü (. Seviye 5) Büyük Sopa",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 10,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d8",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-greatsword",
+    "name": "Büyülü (. Seviye 5) Büyük Kılıç",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Graze. If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d6",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-halberd",
+    "name": "Büyülü (. Seviye 5) Baltalı Mızrak",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Cleave. If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-hand-crossbow",
+    "name": "Büyülü (. Seviye 5) El Arbaleti",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 3,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost. Light. When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative. Loading. You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (Range 30/120 ft.; Bolt)",
+        "Light",
+        "Loading"
+      ],
+      "range": "Ammunition (Range 30/120 ft.; Bolt)"
+    }
+  },
+  {
+    "id": "enspelled-level-5-handaxe",
+    "name": "Büyülü (. Seviye 5) El Baltası",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Light. When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "slashing",
+      "properties": [
+        "Light",
+        "Thrown (20/60 ft.)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-heavy-crossbow",
+    "name": "Büyülü (. Seviye 5) Ağır Arbalet",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 18,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Loading. You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (Range 100/400 ft.; Bolt)",
+        "Heavy",
+        "Loading",
+        "Two‑Handed"
+      ],
+      "range": "Ammunition (Range 100/400 ft.; Bolt)"
+    }
+  },
+  {
+    "id": "enspelled-level-5-hunting-rifle",
+    "name": "Büyülü (. Seviye 5) Av Tüfeği",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 8,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d10",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (80/240 ft.; Firearm Bullet)",
+        "Reload (5 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-javelin",
+    "name": "Büyülü (. Seviye 5) Cirit",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (30/120 ft.)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-lance",
+    "name": "Büyülü (. Seviye 5) Süvari Mızrağı",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9.A Lance requires two hands to wield when you aren't mounted. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed (unless mounted)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-laser-pistol",
+    "name": "Büyülü (. Seviye 5) Lazer Tabancası",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "3d6",
+      "damageType": "radiant",
+      "properties": [
+        "Ammunition (40/120 ft.; Energy Cell)",
+        "Reload (50 shots)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-laser-rifle",
+    "name": "Büyülü (. Seviye 5) Lazer Tüfeği",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 7,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "3d8",
+      "damageType": "radiant",
+      "properties": [
+        "Ammunition (100/300 ft.; Energy Cell)",
+        "Reload (30 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-light-crossbow",
+    "name": "Büyülü (. Seviye 5) Hafif Arbalet",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 5,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost. Loading. You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (Range 80/320 ft.; Bolt)",
+        "Loading",
+        "Two‑Handed"
+      ],
+      "range": "Ammunition (Range 80/320 ft.; Bolt)"
+    }
+  },
+  {
+    "id": "enspelled-level-5-light-hammer",
+    "name": "Büyülü (. Seviye 5) Hafif Çekiç",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Light. When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Mastery: Nick. When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d4",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Light",
+        "Thrown (20/60 ft.)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-longbow",
+    "name": "Büyülü (. Seviye 5) Uzun Yay",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (Range 150/600 ft.; Arrow)",
+        "Heavy",
+        "Two‑Handed"
+      ],
+      "range": "Ammunition (Range 150/600 ft.; Arrow)"
+    }
+  },
+  {
+    "id": "enspelled-level-5-longsword",
+    "name": "Büyülü (. Seviye 5) Uzun Kılıç",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 3,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "slashing",
+      "properties": [
+        "Versatile (1d10)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-mace",
+    "name": "Büyülü (. Seviye 5) Gürz",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 4,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "bludgeoning",
+      "properties": []
+    }
+  },
+  {
+    "id": "enspelled-level-5-maul",
+    "name": "Büyülü (. Seviye 5) Balyoz",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 10,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d6",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Heavy",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-musket",
+    "name": "Büyülü (. Seviye 5) Misket Tüfeği",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 10,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost. Loading. You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d12",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (Range 40/120 ft.; Firearm Bullet)",
+        "Loading",
+        "Two‑Handed"
+      ],
+      "range": "Ammunition (Range 40/120 ft.; Firearm Bullet)"
+    }
+  },
+  {
+    "id": "enspelled-level-5-pike",
+    "name": "Büyülü (. Seviye 5) Kargı",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 18,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-pistol",
+    "name": "Büyülü (. Seviye 5) Tabanca",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 3,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost. Loading. You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (Range 30/90 ft.; Firearm Bullet)",
+        "Loading"
+      ],
+      "range": "Ammunition (Range 30/90 ft.; Firearm Bullet)"
+    }
+  },
+  {
+    "id": "enspelled-level-5-quarterstaff",
+    "name": "Büyülü (. Seviye 5) Asa",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 4,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-rapier",
+    "name": "Büyülü (. Seviye 5) İnce Kılıç",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Finesse. When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": [
+        "Finesse"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-scimitar",
+    "name": "Büyülü (. Seviye 5) Pala",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 3,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Finesse. When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls. Light. When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative. Mastery: Nick. When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d6",
+      "damageType": "slashing",
+      "properties": [
+        "Finesse",
+        "Light"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-semiautomatic-pistol",
+    "name": "Büyülü (. Seviye 5) Yarı Otomatik Tabanca",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 3,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d6",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (50/150 ft.; Firearm Bullet)",
+        "Reload (15 shots)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-shortbow",
+    "name": "Büyülü (. Seviye 5) Kısa Yay",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (Range 80/320 ft.; Arrow)",
+        "Two‑Handed"
+      ],
+      "range": "Ammunition (Range 80/320 ft.; Arrow)"
+    }
+  },
+  {
+    "id": "enspelled-level-5-shortsword",
+    "name": "Büyülü (. Seviye 5) Kısa Kılıç",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Finesse. When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls. Light. When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Finesse",
+        "Light"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-shotgun",
+    "name": "Büyülü (. Seviye 5) Pompalı Tüfek",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 7,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d8",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (30/90 ft.; Firearm Bullet)",
+        "Reload (2 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-sickle",
+    "name": "Büyülü (. Seviye 5) Orak",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Light. When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative. Mastery: Nick. When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d4",
+      "damageType": "slashing",
+      "properties": [
+        "Light"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-sling",
+    "name": "Büyülü (. Seviye 5) Sapan",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d4",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Ammunition (Range 30/120 ft.; Sling Bullet)"
+      ],
+      "range": "Ammunition (Range 30/120 ft.; Sling Bullet)"
+    }
+  },
+  {
+    "id": "enspelled-level-5-spear",
+    "name": "Büyülü (. Seviye 5) Mızrak",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 3,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-staff",
+    "name": "Büyülü (. Seviye 5) Asa",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 4,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Versatile. This weapon can be used with one or two hands. A damage value in parentheses appears with the property—the damage when the weapon is used with two hands to make a melee attack.An Arcane Focus takes a specific form and is bejeweled or carved to channel arcane magic. A Sorcerer, Warlock, or Wizard can use such an item as a Spellcasting Focus. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "bludgeoning",
+      "properties": [
+        "versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-trident",
+    "name": "Büyülü (. Seviye 5) Üçlü Çatal",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 4,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d10)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-war-pick",
+    "name": "Büyülü (. Seviye 5) Savaş Kazması",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": [
+        "Versatile (1d10)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-warhammer",
+    "name": "Büyülü (. Seviye 5) Savaş Çekici",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 5,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Versatile (1d10)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-whip",
+    "name": "Büyülü (. Seviye 5) Kamçı",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 3,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Finesse. When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d4",
+      "damageType": "slashing",
+      "properties": [
+        "Finesse",
+        "Reach"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-wooden-staff",
+    "name": "Büyülü (. Seviye 5) Ahşap Asa",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 4,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Versatile. This weapon can be used with one or two hands. A damage value in parentheses appears with the property—the damage when the weapon is used with two hands to make a melee attack.A Druidic Focus takes a specific form and is carved, tied with ribbon, or painted to channel primal magic. A Druid or Ranger can use such an object as a Spellcasting Focus. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "bludgeoning",
+      "properties": [
+        "versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-antimatter-rifle",
+    "name": "Büyülü (. Seviye 6) Antimadde Tüfeği",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 10,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "6d8",
+      "damageType": "necrotic",
+      "properties": [
+        "Ammunition (120/360 ft.; Energy Cell)",
+        "Reload (2 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-automatic-rifle",
+    "name": "Büyülü (. Seviye 6) Otomatik Tüfek",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 8,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Burst Fire. As an action, you can expend 10 pieces of a Burst Fire weapon's ammunition to spray shots in a 10-foot Cube within the weapon's normal range. Each creature in that area must succeed on a DC 15 Dexterity saving throw or take damage. Roll the weapon's damage once, and apply it to each creature that failed the save. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d8",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (80/240 ft.; Firearm Bullet)",
+        "Burst Fire",
+        "Reload (30 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-battleaxe",
+    "name": "Büyülü (. Seviye 6) Savaş Baltası",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 4,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "slashing",
+      "properties": [
+        "Versatile (1d10)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-blowgun",
+    "name": "Büyülü (. Seviye 6) Üfleme Borusu",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 1,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost. Loading. You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (Range 25/100 ft.; Needle)",
+        "Loading"
+      ],
+      "range": "Ammunition (Range 25/100 ft.; Needle)"
+    }
+  },
+  {
+    "id": "enspelled-level-6-club",
+    "name": "Büyülü (. Seviye 6) Sopa",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Light. When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d4",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Light"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-dagger",
+    "name": "Büyülü (. Seviye 6) Hançer",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 1,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Finesse. When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls. Light. When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Mastery: Nick. When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d4",
+      "damageType": "piercing",
+      "properties": [
+        "Finesse",
+        "Light",
+        "Thrown (20/60 ft.)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-dart",
+    "name": "Büyülü (. Seviye 6) Dart",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 0.25,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Finesse. When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d4",
+      "damageType": "piercing",
+      "properties": [
+        "Finesse",
+        "Thrown (20/60 ft.)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-flail",
+    "name": "Büyülü (. Seviye 6) Döven",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "bludgeoning",
+      "properties": []
+    }
+  },
+  {
+    "id": "enspelled-level-6-glaive",
+    "name": "Büyülü (. Seviye 6) Palalı Mızrak",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Graze. If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-greataxe",
+    "name": "Büyülü (. Seviye 6) Büyük Balta",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 7,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Cleave. If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d12",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-greatclub",
+    "name": "Büyülü (. Seviye 6) Büyük Sopa",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 10,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d8",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-greatsword",
+    "name": "Büyülü (. Seviye 6) Büyük Kılıç",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Graze. If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d6",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-halberd",
+    "name": "Büyülü (. Seviye 6) Baltalı Mızrak",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Cleave. If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-hand-crossbow",
+    "name": "Büyülü (. Seviye 6) El Arbaleti",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 3,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost. Light. When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative. Loading. You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (Range 30/120 ft.; Bolt)",
+        "Light",
+        "Loading"
+      ],
+      "range": "Ammunition (Range 30/120 ft.; Bolt)"
+    }
+  },
+  {
+    "id": "enspelled-level-6-handaxe",
+    "name": "Büyülü (. Seviye 6) El Baltası",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Light. When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "slashing",
+      "properties": [
+        "Light",
+        "Thrown (20/60 ft.)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-heavy-crossbow",
+    "name": "Büyülü (. Seviye 6) Ağır Arbalet",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 18,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Loading. You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (Range 100/400 ft.; Bolt)",
+        "Heavy",
+        "Loading",
+        "Two‑Handed"
+      ],
+      "range": "Ammunition (Range 100/400 ft.; Bolt)"
+    }
+  },
+  {
+    "id": "enspelled-level-6-hunting-rifle",
+    "name": "Büyülü (. Seviye 6) Av Tüfeği",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 8,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d10",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (80/240 ft.; Firearm Bullet)",
+        "Reload (5 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-javelin",
+    "name": "Büyülü (. Seviye 6) Cirit",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (30/120 ft.)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-lance",
+    "name": "Büyülü (. Seviye 6) Süvari Mızrağı",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9.A Lance requires two hands to wield when you aren't mounted. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed (unless mounted)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-laser-pistol",
+    "name": "Büyülü (. Seviye 6) Lazer Tabancası",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "3d6",
+      "damageType": "radiant",
+      "properties": [
+        "Ammunition (40/120 ft.; Energy Cell)",
+        "Reload (50 shots)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-laser-rifle",
+    "name": "Büyülü (. Seviye 6) Lazer Tüfeği",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 7,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "3d8",
+      "damageType": "radiant",
+      "properties": [
+        "Ammunition (100/300 ft.; Energy Cell)",
+        "Reload (30 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-light-crossbow",
+    "name": "Büyülü (. Seviye 6) Hafif Arbalet",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 5,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost. Loading. You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (Range 80/320 ft.; Bolt)",
+        "Loading",
+        "Two‑Handed"
+      ],
+      "range": "Ammunition (Range 80/320 ft.; Bolt)"
+    }
+  },
+  {
+    "id": "enspelled-level-6-light-hammer",
+    "name": "Büyülü (. Seviye 6) Hafif Çekiç",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Light. When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Mastery: Nick. When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d4",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Light",
+        "Thrown (20/60 ft.)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-longbow",
+    "name": "Büyülü (. Seviye 6) Uzun Yay",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (Range 150/600 ft.; Arrow)",
+        "Heavy",
+        "Two‑Handed"
+      ],
+      "range": "Ammunition (Range 150/600 ft.; Arrow)"
+    }
+  },
+  {
+    "id": "enspelled-level-6-longsword",
+    "name": "Büyülü (. Seviye 6) Uzun Kılıç",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 3,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "slashing",
+      "properties": [
+        "Versatile (1d10)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-mace",
+    "name": "Büyülü (. Seviye 6) Gürz",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 4,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "bludgeoning",
+      "properties": []
+    }
+  },
+  {
+    "id": "enspelled-level-6-maul",
+    "name": "Büyülü (. Seviye 6) Balyoz",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 10,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d6",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Heavy",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-musket",
+    "name": "Büyülü (. Seviye 6) Misket Tüfeği",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 10,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost. Loading. You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d12",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (Range 40/120 ft.; Firearm Bullet)",
+        "Loading",
+        "Two‑Handed"
+      ],
+      "range": "Ammunition (Range 40/120 ft.; Firearm Bullet)"
+    }
+  },
+  {
+    "id": "enspelled-level-6-pike",
+    "name": "Büyülü (. Seviye 6) Kargı",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 18,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-pistol",
+    "name": "Büyülü (. Seviye 6) Tabanca",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 3,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost. Loading. You can fire only one piece of ammunition from a Loading weapon when you use an action, a Bonus Action, or a Reaction to fire it, regardless of the number of attacks you can normally make. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (Range 30/90 ft.; Firearm Bullet)",
+        "Loading"
+      ],
+      "range": "Ammunition (Range 30/90 ft.; Firearm Bullet)"
+    }
+  },
+  {
+    "id": "enspelled-level-6-quarterstaff",
+    "name": "Büyülü (. Seviye 6) Asa",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 4,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-rapier",
+    "name": "Büyülü (. Seviye 6) İnce Kılıç",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Finesse. When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": [
+        "Finesse"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-scimitar",
+    "name": "Büyülü (. Seviye 6) Pala",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 3,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Finesse. When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls. Light. When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative. Mastery: Nick. When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d6",
+      "damageType": "slashing",
+      "properties": [
+        "Finesse",
+        "Light"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-semiautomatic-pistol",
+    "name": "Büyülü (. Seviye 6) Yarı Otomatik Tabanca",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 3,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d6",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (50/150 ft.; Firearm Bullet)",
+        "Reload (15 shots)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-shortbow",
+    "name": "Büyülü (. Seviye 6) Kısa Yay",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (Range 80/320 ft.; Arrow)",
+        "Two‑Handed"
+      ],
+      "range": "Ammunition (Range 80/320 ft.; Arrow)"
+    }
+  },
+  {
+    "id": "enspelled-level-6-shortsword",
+    "name": "Büyülü (. Seviye 6) Kısa Kılıç",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Finesse. When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls. Light. When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative. Mastery: Vex. If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Finesse",
+        "Light"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-shotgun",
+    "name": "Büyülü (. Seviye 6) Pompalı Tüfek",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 7,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion. Reload. You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a Bonus Action. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "2d8",
+      "damageType": "piercing",
+      "properties": [
+        "Ammunition (30/90 ft.; Firearm Bullet)",
+        "Reload (2 shots)",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-sickle",
+    "name": "Büyülü (. Seviye 6) Orak",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Light. When you take the Attack action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a Shortsword in one hand and a Dagger in the other using the Attack action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative. Mastery: Nick. When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus Action. You can make this extra attack only once per turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d4",
+      "damageType": "slashing",
+      "properties": [
+        "Light"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-sling",
+    "name": "Büyülü (. Seviye 6) Sapan",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Range. A Range weapon has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second is the weapon's long range. When attacking a target beyond normal range, you have Disadvantage on the attack roll. You can't attack a target beyond the long range. Ammunition. You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d4",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Ammunition (Range 30/120 ft.; Sling Bullet)"
+      ],
+      "range": "Ammunition (Range 30/120 ft.; Sling Bullet)"
+    }
+  },
+  {
+    "id": "enspelled-level-6-spear",
+    "name": "Büyülü (. Seviye 6) Mızrak",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 3,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-staff",
+    "name": "Büyülü (. Seviye 6) Asa",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 4,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Versatile. This weapon can be used with one or two hands. A damage value in parentheses appears with the property—the damage when the weapon is used with two hands to make a melee attack.An Arcane Focus takes a specific form and is bejeweled or carved to channel arcane magic. A Sorcerer, Warlock, or Wizard can use such an item as a Spellcasting Focus. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "bludgeoning",
+      "properties": [
+        "versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-trident",
+    "name": "Büyülü (. Seviye 6) Üçlü Çatal",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 4,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d10)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-war-pick",
+    "name": "Büyülü (. Seviye 6) Savaş Kazması",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": [
+        "Versatile (1d10)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-warhammer",
+    "name": "Büyülü (. Seviye 6) Savaş Çekici",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 5,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Versatile (1d10)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-whip",
+    "name": "Büyülü (. Seviye 6) Kamçı",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 3,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Finesse. When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d4",
+      "damageType": "slashing",
+      "properties": [
+        "Finesse",
+        "Reach"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-wooden-staff",
+    "name": "Büyülü (. Seviye 6) Ahşap Asa",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 4,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Versatile. This weapon can be used with one or two hands. A damage value in parentheses appears with the property—the damage when the weapon is used with two hands to make a melee attack.A Druidic Focus takes a specific form and is carved, tied with ribbon, or painted to channel primal magic. A Druid or Ranger can use such an object as a Spellcasting Focus. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "bludgeoning",
+      "properties": [
+        "versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-staff-level-5",
+    "name": "Enspelled Staff (Level 5)",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 4,
+    "description": "Bound into this staff is a level 5 spell. The spell is determined when the staff is created and can be of any school of magic. The staff has 6 charges and regains 1d6 expended charges daily at dawn. While holding the staff, you can expend 1 charge to cast its spell. If you expend the staff's last charge, roll 1d20. On a 1, the staff loses its properties and becomes a nonmagical Quarterstaff.The spell's saving throw DC is 17, and its attack bonus is +9. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-staff-level-6",
+    "name": "Enspelled Staff (Level 6)",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 4,
+    "description": "Bound into this staff is a level 6 spell. The spell is determined when the staff is created and can be of any school of magic. The staff has 6 charges and regains 1d6 expended charges daily at dawn. While holding the staff, you can expend 1 charge to cast its spell. If you expend the staff's last charge, roll 1d20. On a 1, the staff loses its properties and becomes a nonmagical Quarterstaff.The spell's saving throw DC is 17, and its attack bonus is +9. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Versatile (1d8)"
+      ]
+    }
+  }
+]

@@ -7,7 +7,7 @@ import {
 	AbilityScores, AbilityModifiers, AbilityName, SkillName,
 	SKILL_ABILITY_MAP
 } from '../types';
-import { getAbilityModifier } from '@engine/core/dice';
+import { getAbilityModifier } from '../engine/core/dice.ts';
 
 // ============================================================================
 // ABILITY SCORE UTILITIES

@@ -1,0 +1,2596 @@
+[
+  {
+    "id": "defender-glaive",
+    "name": "Defender Glaive",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 6,
+    "description": "You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon.The first time you attack with the weapon on each of your turns, you can transfer some or all of the weapon's bonus to your Armor Class. For example, you could reduce the bonus to your attack rolls and damage rolls to +1 and gain a +2 bonus to Armor Class. The adjusted bonuses remain in effect until the start of your next turn, although you must hold the weapon to gain a bonus to AC from it. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Graze. If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "defender-halberd",
+    "name": "Defender Halberd",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 6,
+    "description": "You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon.The first time you attack with the weapon on each of your turns, you can transfer some or all of the weapon's bonus to your Armor Class. For example, you could reduce the bonus to your attack rolls and damage rolls to +1 and gain a +2 bonus to Armor Class. The adjusted bonuses remain in effect until the start of your next turn, although you must hold the weapon to gain a bonus to AC from it. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Cleave. If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "defender-javelin",
+    "name": "Defender Javelin",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 2,
+    "description": "You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon.The first time you attack with the weapon on each of your turns, you can transfer some or all of the weapon's bonus to your Armor Class. For example, you could reduce the bonus to your attack rolls and damage rolls to +1 and gain a +2 bonus to Armor Class. The adjusted bonuses remain in effect until the start of your next turn, although you must hold the weapon to gain a bonus to AC from it. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (30/120 ft.)"
+      ]
+    }
+  },
+  {
+    "id": "defender-lance",
+    "name": "Defender Lance",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 6,
+    "description": "You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon.The first time you attack with the weapon on each of your turns, you can transfer some or all of the weapon's bonus to your Armor Class. For example, you could reduce the bonus to your attack rolls and damage rolls to +1 and gain a +2 bonus to Armor Class. The adjusted bonuses remain in effect until the start of your next turn, although you must hold the weapon to gain a bonus to AC from it.A Lance requires two hands to wield when you aren't mounted. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed (unless mounted)"
+      ]
+    }
+  },
+  {
+    "id": "defender-pike",
+    "name": "Defender Pike",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 18,
+    "description": "You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon.The first time you attack with the weapon on each of your turns, you can transfer some or all of the weapon's bonus to your Armor Class. For example, you could reduce the bonus to your attack rolls and damage rolls to +1 and gain a +2 bonus to Armor Class. The adjusted bonuses remain in effect until the start of your next turn, although you must hold the weapon to gain a bonus to AC from it. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "defender-quarterstaff",
+    "name": "Defender Quarterstaff",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 4,
+    "description": "You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon.The first time you attack with the weapon on each of your turns, you can transfer some or all of the weapon's bonus to your Armor Class. For example, you could reduce the bonus to your attack rolls and damage rolls to +1 and gain a +2 bonus to Armor Class. The adjusted bonuses remain in effect until the start of your next turn, although you must hold the weapon to gain a bonus to AC from it. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "defender-spear",
+    "name": "Defender Spear",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 3,
+    "description": "You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon.The first time you attack with the weapon on each of your turns, you can transfer some or all of the weapon's bonus to your Armor Class. For example, you could reduce the bonus to your attack rolls and damage rolls to +1 and gain a +2 bonus to Armor Class. The adjusted bonuses remain in effect until the start of your next turn, although you must hold the weapon to gain a bonus to AC from it. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "defender-trident",
+    "name": "Defender Trident",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 4,
+    "description": "You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon.The first time you attack with the weapon on each of your turns, you can transfer some or all of the weapon's bonus to your Armor Class. For example, you could reduce the bonus to your attack rolls and damage rolls to +1 and gain a +2 bonus to Armor Class. The adjusted bonuses remain in effect until the start of your next turn, although you must hold the weapon to gain a bonus to AC from it. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d10)"
+      ]
+    }
+  },
+  {
+    "id": "dragon-slayer-glaive",
+    "name": "Ejderha Katili Palalı Mızrak",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 6,
+    "description": "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.The weapon deals an extra 3d6 damage of the weapon's type if the target is a Dragon. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Graze. If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "dragon-slayer-halberd",
+    "name": "Ejderha Katili Baltalı Mızrak",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 6,
+    "description": "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.The weapon deals an extra 3d6 damage of the weapon's type if the target is a Dragon. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Cleave. If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "dragon-slayer-javelin",
+    "name": "Ejderha Katili Cirit",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 2,
+    "description": "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.The weapon deals an extra 3d6 damage of the weapon's type if the target is a Dragon. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (30/120 ft.)"
+      ]
+    }
+  },
+  {
+    "id": "dragon-slayer-lance",
+    "name": "Ejderha Katili Süvari Mızrağı",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 6,
+    "description": "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.The weapon deals an extra 3d6 damage of the weapon's type if the target is a Dragon.A Lance requires two hands to wield when you aren't mounted. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed (unless mounted)"
+      ]
+    }
+  },
+  {
+    "id": "dragon-slayer-pike",
+    "name": "Ejderha Katili Kargı",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 18,
+    "description": "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.The weapon deals an extra 3d6 damage of the weapon's type if the target is a Dragon. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "dragon-slayer-quarterstaff",
+    "name": "Ejderha Katili Asa",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 4,
+    "description": "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.The weapon deals an extra 3d6 damage of the weapon's type if the target is a Dragon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "dragon-slayer-spear",
+    "name": "Ejderha Katili Mızrak",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 3,
+    "description": "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.The weapon deals an extra 3d6 damage of the weapon's type if the target is a Dragon. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "dragon-slayer-trident",
+    "name": "Ejderha Katili Üçlü Çatal",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 4,
+    "description": "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.The weapon deals an extra 3d6 damage of the weapon's type if the target is a Dragon. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d10)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-cantrip-glaive",
+    "name": "Büyülü (Temel) Palalı Mızrak",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 6,
+    "description": "Bound into this weapon is a cantrip. The cantrip is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 13, and its attack bonus is +5. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Graze. If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-cantrip-halberd",
+    "name": "Büyülü (Temel) Baltalı Mızrak",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 6,
+    "description": "Bound into this weapon is a cantrip. The cantrip is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 13, and its attack bonus is +5. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Cleave. If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-cantrip-javelin",
+    "name": "Büyülü (Temel) Cirit",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 2,
+    "description": "Bound into this weapon is a cantrip. The cantrip is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 13, and its attack bonus is +5. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (30/120 ft.)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-cantrip-lance",
+    "name": "Büyülü (Temel) Süvari Mızrağı",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 6,
+    "description": "Bound into this weapon is a cantrip. The cantrip is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 13, and its attack bonus is +5.A Lance requires two hands to wield when you aren't mounted. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed (unless mounted)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-cantrip-pike",
+    "name": "Büyülü (Temel) Kargı",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 18,
+    "description": "Bound into this weapon is a cantrip. The cantrip is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 13, and its attack bonus is +5. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-cantrip-quarterstaff",
+    "name": "Büyülü (Temel) Asa",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 4,
+    "description": "Bound into this weapon is a cantrip. The cantrip is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 13, and its attack bonus is +5. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-cantrip-spear",
+    "name": "Büyülü (Temel) Mızrak",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 3,
+    "description": "Bound into this weapon is a cantrip. The cantrip is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 13, and its attack bonus is +5. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-cantrip-trident",
+    "name": "Büyülü (Temel) Üçlü Çatal",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 4,
+    "description": "Bound into this weapon is a cantrip. The cantrip is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 13, and its attack bonus is +5. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d10)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-1-glaive",
+    "name": "Büyülü (. Seviye 1) Palalı Mızrak",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 1 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 13, and its attack bonus is +5. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Graze. If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-1-halberd",
+    "name": "Büyülü (. Seviye 1) Baltalı Mızrak",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 1 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 13, and its attack bonus is +5. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Cleave. If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-1-javelin",
+    "name": "Büyülü (. Seviye 1) Cirit",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 1 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 13, and its attack bonus is +5. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (30/120 ft.)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-1-lance",
+    "name": "Büyülü (. Seviye 1) Süvari Mızrağı",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 1 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 13, and its attack bonus is +5.A Lance requires two hands to wield when you aren't mounted. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed (unless mounted)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-1-pike",
+    "name": "Büyülü (. Seviye 1) Kargı",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 18,
+    "description": "Bound into this weapon is a level 1 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 13, and its attack bonus is +5. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-1-quarterstaff",
+    "name": "Büyülü (. Seviye 1) Asa",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 4,
+    "description": "Bound into this weapon is a level 1 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 13, and its attack bonus is +5. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-1-spear",
+    "name": "Büyülü (. Seviye 1) Mızrak",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 3,
+    "description": "Bound into this weapon is a level 1 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 13, and its attack bonus is +5. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-1-trident",
+    "name": "Büyülü (. Seviye 1) Üçlü Çatal",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 4,
+    "description": "Bound into this weapon is a level 1 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 13, and its attack bonus is +5. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d10)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-2-glaive",
+    "name": "Büyülü (. Seviye 2) Palalı Mızrak",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 2 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 13, and its attack bonus is +5. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Graze. If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-2-halberd",
+    "name": "Büyülü (. Seviye 2) Baltalı Mızrak",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 2 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 13, and its attack bonus is +5. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Cleave. If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-2-javelin",
+    "name": "Büyülü (. Seviye 2) Cirit",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 2 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 13, and its attack bonus is +5. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (30/120 ft.)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-2-lance",
+    "name": "Büyülü (. Seviye 2) Süvari Mızrağı",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 2 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 13, and its attack bonus is +5.A Lance requires two hands to wield when you aren't mounted. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed (unless mounted)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-2-pike",
+    "name": "Büyülü (. Seviye 2) Kargı",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 18,
+    "description": "Bound into this weapon is a level 2 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 13, and its attack bonus is +5. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-2-quarterstaff",
+    "name": "Büyülü (. Seviye 2) Asa",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 4,
+    "description": "Bound into this weapon is a level 2 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 13, and its attack bonus is +5. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-2-spear",
+    "name": "Büyülü (. Seviye 2) Mızrak",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 3,
+    "description": "Bound into this weapon is a level 2 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 13, and its attack bonus is +5. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-2-trident",
+    "name": "Büyülü (. Seviye 2) Üçlü Çatal",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 4,
+    "description": "Bound into this weapon is a level 2 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 13, and its attack bonus is +5. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d10)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-3-glaive",
+    "name": "Büyülü (. Seviye 3) Palalı Mızrak",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 3 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 15, and its attack bonus is +7. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Graze. If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-3-halberd",
+    "name": "Büyülü (. Seviye 3) Baltalı Mızrak",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 3 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 15, and its attack bonus is +7. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Cleave. If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-3-javelin",
+    "name": "Büyülü (. Seviye 3) Cirit",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 3 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 15, and its attack bonus is +7. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (30/120 ft.)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-3-lance",
+    "name": "Büyülü (. Seviye 3) Süvari Mızrağı",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 3 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 15, and its attack bonus is +7.A Lance requires two hands to wield when you aren't mounted. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed (unless mounted)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-3-pike",
+    "name": "Büyülü (. Seviye 3) Kargı",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 18,
+    "description": "Bound into this weapon is a level 3 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 15, and its attack bonus is +7. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-3-quarterstaff",
+    "name": "Büyülü (. Seviye 3) Asa",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 4,
+    "description": "Bound into this weapon is a level 3 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 15, and its attack bonus is +7. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-3-spear",
+    "name": "Büyülü (. Seviye 3) Mızrak",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 3,
+    "description": "Bound into this weapon is a level 3 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 15, and its attack bonus is +7. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-3-trident",
+    "name": "Büyülü (. Seviye 3) Üçlü Çatal",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 4,
+    "description": "Bound into this weapon is a level 3 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 15, and its attack bonus is +7. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d10)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-4-glaive",
+    "name": "Büyülü (. Seviye 4) Palalı Mızrak",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 4 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 15, and its attack bonus is +7. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Graze. If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-4-halberd",
+    "name": "Büyülü (. Seviye 4) Baltalı Mızrak",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 4 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 15, and its attack bonus is +7. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Cleave. If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-4-javelin",
+    "name": "Büyülü (. Seviye 4) Cirit",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 4 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 15, and its attack bonus is +7. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (30/120 ft.)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-4-lance",
+    "name": "Büyülü (. Seviye 4) Süvari Mızrağı",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 4 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 15, and its attack bonus is +7.A Lance requires two hands to wield when you aren't mounted. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed (unless mounted)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-4-pike",
+    "name": "Büyülü (. Seviye 4) Kargı",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 18,
+    "description": "Bound into this weapon is a level 4 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 15, and its attack bonus is +7. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-4-quarterstaff",
+    "name": "Büyülü (. Seviye 4) Asa",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 4,
+    "description": "Bound into this weapon is a level 4 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 15, and its attack bonus is +7. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-4-spear",
+    "name": "Büyülü (. Seviye 4) Mızrak",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 3,
+    "description": "Bound into this weapon is a level 4 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 15, and its attack bonus is +7. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-4-trident",
+    "name": "Büyülü (. Seviye 4) Üçlü Çatal",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 4,
+    "description": "Bound into this weapon is a level 4 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 15, and its attack bonus is +7. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d10)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-glaive",
+    "name": "Büyülü (. Seviye 5) Palalı Mızrak",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Graze. If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-halberd",
+    "name": "Büyülü (. Seviye 5) Baltalı Mızrak",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Cleave. If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-javelin",
+    "name": "Büyülü (. Seviye 5) Cirit",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (30/120 ft.)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-lance",
+    "name": "Büyülü (. Seviye 5) Süvari Mızrağı",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9.A Lance requires two hands to wield when you aren't mounted. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed (unless mounted)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-pike",
+    "name": "Büyülü (. Seviye 5) Kargı",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 18,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-quarterstaff",
+    "name": "Büyülü (. Seviye 5) Asa",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 4,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-spear",
+    "name": "Büyülü (. Seviye 5) Mızrak",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 3,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-5-trident",
+    "name": "Büyülü (. Seviye 5) Üçlü Çatal",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 4,
+    "description": "Bound into this weapon is a level 5 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d10)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-glaive",
+    "name": "Büyülü (. Seviye 6) Palalı Mızrak",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Graze. If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-halberd",
+    "name": "Büyülü (. Seviye 6) Baltalı Mızrak",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Cleave. If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-javelin",
+    "name": "Büyülü (. Seviye 6) Cirit",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (30/120 ft.)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-lance",
+    "name": "Büyülü (. Seviye 6) Süvari Mızrağı",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9.A Lance requires two hands to wield when you aren't mounted. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed (unless mounted)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-pike",
+    "name": "Büyülü (. Seviye 6) Kargı",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 18,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-quarterstaff",
+    "name": "Büyülü (. Seviye 6) Asa",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 4,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-spear",
+    "name": "Büyülü (. Seviye 6) Mızrak",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 3,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-6-trident",
+    "name": "Büyülü (. Seviye 6) Üçlü Çatal",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 4,
+    "description": "Bound into this weapon is a level 6 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 17, and its attack bonus is +9. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d10)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-7-glaive",
+    "name": "Büyülü (. Seviye 7) Palalı Mızrak",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 7 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 18, and its attack bonus is +10. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Graze. If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-7-halberd",
+    "name": "Büyülü (. Seviye 7) Baltalı Mızrak",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 7 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 18, and its attack bonus is +10. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Cleave. If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-7-javelin",
+    "name": "Büyülü (. Seviye 7) Cirit",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 7 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 18, and its attack bonus is +10. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (30/120 ft.)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-7-lance",
+    "name": "Büyülü (. Seviye 7) Süvari Mızrağı",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 7 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 18, and its attack bonus is +10.A Lance requires two hands to wield when you aren't mounted. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed (unless mounted)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-7-pike",
+    "name": "Büyülü (. Seviye 7) Kargı",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 18,
+    "description": "Bound into this weapon is a level 7 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 18, and its attack bonus is +10. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-7-quarterstaff",
+    "name": "Büyülü (. Seviye 7) Asa",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 4,
+    "description": "Bound into this weapon is a level 7 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 18, and its attack bonus is +10. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-7-spear",
+    "name": "Büyülü (. Seviye 7) Mızrak",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 3,
+    "description": "Bound into this weapon is a level 7 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 18, and its attack bonus is +10. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-7-trident",
+    "name": "Büyülü (. Seviye 7) Üçlü Çatal",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 4,
+    "description": "Bound into this weapon is a level 7 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 18, and its attack bonus is +10. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d10)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-8-glaive",
+    "name": "Büyülü (. Seviye 8) Palalı Mızrak",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 8 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 18, and its attack bonus is +10. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Graze. If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-8-halberd",
+    "name": "Büyülü (. Seviye 8) Baltalı Mızrak",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 8 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 18, and its attack bonus is +10. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Cleave. If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-8-javelin",
+    "name": "Büyülü (. Seviye 8) Cirit",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 2,
+    "description": "Bound into this weapon is a level 8 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 18, and its attack bonus is +10. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (30/120 ft.)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-8-lance",
+    "name": "Büyülü (. Seviye 8) Süvari Mızrağı",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 6,
+    "description": "Bound into this weapon is a level 8 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 18, and its attack bonus is +10.A Lance requires two hands to wield when you aren't mounted. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed (unless mounted)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-8-pike",
+    "name": "Büyülü (. Seviye 8) Kargı",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 18,
+    "description": "Bound into this weapon is a level 8 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 18, and its attack bonus is +10. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-8-quarterstaff",
+    "name": "Büyülü (. Seviye 8) Asa",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 4,
+    "description": "Bound into this weapon is a level 8 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 18, and its attack bonus is +10. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-8-spear",
+    "name": "Büyülü (. Seviye 8) Mızrak",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 3,
+    "description": "Bound into this weapon is a level 8 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 18, and its attack bonus is +10. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "enspelled-level-8-trident",
+    "name": "Büyülü (. Seviye 8) Üçlü Çatal",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 4,
+    "description": "Bound into this weapon is a level 8 spell. The spell is determined when the weapon is created and must belong to the Conjuration, Divination, Evocation, Necromancy, or Transmutation school of magic. The weapon has 6 charges and regains 1d6 expended charges daily at dawn. While holding the weapon, you can expend 1 charge to cast its spell.The spell's saving throw DC is 18, and its attack bonus is +10. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d10)"
+      ]
+    }
+  },
+  {
+    "id": "frost-brand-glaive",
+    "name": "Frost Brand Glaive",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 6,
+    "description": "When you hit with an attack roll using this magic weapon, the target takes an extra 1d6 Cold damage. In addition, while you hold the weapon, you have Resistance to Fire damage.In freezing temperatures, the weapon sheds Bright Light in a 10-foot radius and Dim Light for an additional 10 feet.When you draw this weapon, you can extinguish all nonmagical flames within 30 feet of yourself. Once used, this property can't be used again for 1 hour. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Graze. If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "holy-avenger-glaive",
+    "name": "Holy Avenger Glaive",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 6,
+    "description": "You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon. When you hit a Fiend or an Undead with it, that creature takes an extra 2d10 Radiant damage.While you hold the drawn weapon, it creates a 10-foot Emanation originating from you. You and all creatures Friendly to you in the Emanation have Advantage on saving throws against spells and other magical effects. If you have 17 or more levels in the Paladin class, the size of the Emanation increases to 30 feet. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Graze. If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "holy-avenger-halberd",
+    "name": "Holy Avenger Halberd",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 6,
+    "description": "You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon. When you hit a Fiend or an Undead with it, that creature takes an extra 2d10 Radiant damage.While you hold the drawn weapon, it creates a 10-foot Emanation originating from you. You and all creatures Friendly to you in the Emanation have Advantage on saving throws against spells and other magical effects. If you have 17 or more levels in the Paladin class, the size of the Emanation increases to 30 feet. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Cleave. If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "holy-avenger-javelin",
+    "name": "Holy Avenger Javelin",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 2,
+    "description": "You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon. When you hit a Fiend or an Undead with it, that creature takes an extra 2d10 Radiant damage.While you hold the drawn weapon, it creates a 10-foot Emanation originating from you. You and all creatures Friendly to you in the Emanation have Advantage on saving throws against spells and other magical effects. If you have 17 or more levels in the Paladin class, the size of the Emanation increases to 30 feet. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (30/120 ft.)"
+      ]
+    }
+  },
+  {
+    "id": "holy-avenger-lance",
+    "name": "Holy Avenger Lance",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 6,
+    "description": "You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon. When you hit a Fiend or an Undead with it, that creature takes an extra 2d10 Radiant damage.While you hold the drawn weapon, it creates a 10-foot Emanation originating from you. You and all creatures Friendly to you in the Emanation have Advantage on saving throws against spells and other magical effects. If you have 17 or more levels in the Paladin class, the size of the Emanation increases to 30 feet.A Lance requires two hands to wield when you aren't mounted. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed (unless mounted)"
+      ]
+    }
+  },
+  {
+    "id": "holy-avenger-pike",
+    "name": "Holy Avenger Pike",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 18,
+    "description": "You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon. When you hit a Fiend or an Undead with it, that creature takes an extra 2d10 Radiant damage.While you hold the drawn weapon, it creates a 10-foot Emanation originating from you. You and all creatures Friendly to you in the Emanation have Advantage on saving throws against spells and other magical effects. If you have 17 or more levels in the Paladin class, the size of the Emanation increases to 30 feet. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "holy-avenger-quarterstaff",
+    "name": "Holy Avenger Quarterstaff",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 4,
+    "description": "You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon. When you hit a Fiend or an Undead with it, that creature takes an extra 2d10 Radiant damage.While you hold the drawn weapon, it creates a 10-foot Emanation originating from you. You and all creatures Friendly to you in the Emanation have Advantage on saving throws against spells and other magical effects. If you have 17 or more levels in the Paladin class, the size of the Emanation increases to 30 feet. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "holy-avenger-spear",
+    "name": "Holy Avenger Spear",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 3,
+    "description": "You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon. When you hit a Fiend or an Undead with it, that creature takes an extra 2d10 Radiant damage.While you hold the drawn weapon, it creates a 10-foot Emanation originating from you. You and all creatures Friendly to you in the Emanation have Advantage on saving throws against spells and other magical effects. If you have 17 or more levels in the Paladin class, the size of the Emanation increases to 30 feet. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "holy-avenger-trident",
+    "name": "Holy Avenger Trident",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 4,
+    "description": "You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon. When you hit a Fiend or an Undead with it, that creature takes an extra 2d10 Radiant damage.While you hold the drawn weapon, it creates a 10-foot Emanation originating from you. You and all creatures Friendly to you in the Emanation have Advantage on saving throws against spells and other magical effects. If you have 17 or more levels in the Paladin class, the size of the Emanation increases to 30 feet. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d10)"
+      ]
+    }
+  },
+  {
+    "id": "plus-1-glaive",
+    "name": "+1 Palalı Mızrak",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 6,
+    "description": "You have a +1 bonus to attack and damage rolls made with this magic weapon. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Graze. If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "plus-1-halberd",
+    "name": "+1 Baltalı Mızrak",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 6,
+    "description": "You have a +1 bonus to attack and damage rolls made with this magic weapon. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Cleave. If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "plus-1-javelin",
+    "name": "+1 Cirit",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 2,
+    "description": "You have a +1 bonus to attack and damage rolls made with this magic weapon. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (30/120 ft.)"
+      ]
+    }
+  },
+  {
+    "id": "plus-1-lance",
+    "name": "+1 Süvari Mızrağı",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 6,
+    "description": "You have a +1 bonus to attack and damage rolls made with this magic weapon.A Lance requires two hands to wield when you aren't mounted. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed (unless mounted)"
+      ]
+    }
+  },
+  {
+    "id": "plus-1-pike",
+    "name": "+1 Kargı",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 18,
+    "description": "You have a +1 bonus to attack and damage rolls made with this magic weapon. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "plus-1-quarterstaff",
+    "name": "+1 Asa",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 4,
+    "description": "You have a +1 bonus to attack and damage rolls made with this magic weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "plus-1-spear",
+    "name": "+1 Mızrak",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 3,
+    "description": "You have a +1 bonus to attack and damage rolls made with this magic weapon. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "plus-1-trident",
+    "name": "+1 Üçlü Çatal",
+    "type": "Silah",
+    "rarity": "Sıra Dışı",
+    "weight": 4,
+    "description": "You have a +1 bonus to attack and damage rolls made with this magic weapon. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d10)"
+      ]
+    }
+  },
+  {
+    "id": "plus-2-glaive",
+    "name": "+2 Palalı Mızrak",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 6,
+    "description": "You have a +2 bonus to attack and damage rolls made with this magic weapon. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Graze. If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "plus-2-halberd",
+    "name": "+2 Baltalı Mızrak",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 6,
+    "description": "You have a +2 bonus to attack and damage rolls made with this magic weapon. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Cleave. If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "plus-2-javelin",
+    "name": "+2 Cirit",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 2,
+    "description": "You have a +2 bonus to attack and damage rolls made with this magic weapon. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (30/120 ft.)"
+      ]
+    }
+  },
+  {
+    "id": "plus-2-lance",
+    "name": "+2 Süvari Mızrağı",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 6,
+    "description": "You have a +2 bonus to attack and damage rolls made with this magic weapon.A Lance requires two hands to wield when you aren't mounted. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed (unless mounted)"
+      ]
+    }
+  },
+  {
+    "id": "plus-2-pike",
+    "name": "+2 Kargı",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 18,
+    "description": "You have a +2 bonus to attack and damage rolls made with this magic weapon. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "plus-2-quarterstaff",
+    "name": "+2 Asa",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 4,
+    "description": "You have a +2 bonus to attack and damage rolls made with this magic weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "plus-2-spear",
+    "name": "+2 Mızrak",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 3,
+    "description": "You have a +2 bonus to attack and damage rolls made with this magic weapon. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "plus-2-trident",
+    "name": "+2 Üçlü Çatal",
+    "type": "Silah",
+    "rarity": "Nadir",
+    "weight": 4,
+    "description": "You have a +2 bonus to attack and damage rolls made with this magic weapon. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d10)"
+      ]
+    }
+  },
+  {
+    "id": "plus-3-glaive",
+    "name": "+3 Palalı Mızrak",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 6,
+    "description": "You have a +3 bonus to attack and damage rolls made with this magic weapon. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Graze. If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "plus-3-halberd",
+    "name": "+3 Baltalı Mızrak",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 6,
+    "description": "You have a +3 bonus to attack and damage rolls made with this magic weapon. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Cleave. If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon's damage, but don't add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "plus-3-javelin",
+    "name": "+3 Cirit",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 2,
+    "description": "You have a +3 bonus to attack and damage rolls made with this magic weapon. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Mastery: Slow. If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (30/120 ft.)"
+      ]
+    }
+  },
+  {
+    "id": "plus-3-lance",
+    "name": "+3 Süvari Mızrağı",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 6,
+    "description": "You have a +3 bonus to attack and damage rolls made with this magic weapon.A Lance requires two hands to wield when you aren't mounted. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed (unless mounted)"
+      ]
+    }
+  },
+  {
+    "id": "plus-3-pike",
+    "name": "+3 Kargı",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 18,
+    "description": "You have a +3 bonus to attack and damage rolls made with this magic weapon. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Push. If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "piercing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  },
+  {
+    "id": "plus-3-quarterstaff",
+    "name": "+3 Asa",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 4,
+    "description": "You have a +3 bonus to attack and damage rolls made with this magic weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "bludgeoning",
+      "properties": [
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "plus-3-spear",
+    "name": "+3 Mızrak",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 3,
+    "description": "You have a +3 bonus to attack and damage rolls made with this magic weapon. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Sap. If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "simple",
+      "damage": "1d6",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d8)"
+      ]
+    }
+  },
+  {
+    "id": "plus-3-trident",
+    "name": "+3 Üçlü Çatal",
+    "type": "Silah",
+    "rarity": "Çok Nadir",
+    "weight": 4,
+    "description": "You have a +3 bonus to attack and damage rolls made with this magic weapon. Thrown. If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon. Versatile. A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack. Mastery: Topple. If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d8",
+      "damageType": "piercing",
+      "properties": [
+        "Thrown (20/60 ft.)",
+        "Versatile (1d10)"
+      ]
+    }
+  },
+  {
+    "id": "vorpal-glaive",
+    "name": "Vorpal Glaive",
+    "type": "Silah",
+    "rarity": "Efsanevi",
+    "weight": 6,
+    "description": "You gain a +3 bonus to attack rolls and damage rolls made with this magic weapon. In addition, the weapon ignores Resistance to Slashing damage.When you use this weapon to attack a creature that has at least one head and roll a 20 on the d20 for the attack roll, you cut off one of the creature's heads. The creature dies if it can't survive without the lost head. A creature is immune to this effect if it has Immunity to Slashing damage, if it doesn't have or need a head, or if the DM decides that the creature is too big for its head to be cut off with this weapon. Such a creature instead takes an extra 30 Slashing damage from the hit. If the creature has Legendary Resistance, it can expend one daily use of that trait to avoid losing its head, taking the extra damage instead. Heavy. You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13. Reach. A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for Opportunity Attacks with it. Two-Handed. A Two-Handed weapon requires two hands when you attack with it. Mastery: Graze. If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can be increased only by increasing the ability modifier.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    },
+    "weapon": {
+      "category": "martial",
+      "damage": "1d10",
+      "damageType": "slashing",
+      "properties": [
+        "Heavy",
+        "Reach",
+        "Two‑Handed"
+      ]
+    }
+  }
+]

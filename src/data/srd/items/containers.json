@@ -1,0 +1,302 @@
+[
+  {
+    "id": "alchemy-jug",
+    "name": "Alchemy Jug",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 12,
+    "description": "This ceramic jug appears to be able to hold a gallon of liquid and weighs 12 pounds whether full or empty. The jug sloshes when it is shaken, even if the jug is empty.You can take a Magic action and name one liquid from the Alchemy Jug Liquids table to cause the jug to produce the chosen liquid. Afterward, you can uncork the jug as a Utilize action and pour that liquid out, up to 2 gallons per minute. The maximum amount of liquid the jug can produce depends on the liquid you named.Once the jug starts producing a liquid, it can't produce a different one, or more of one that has reached its maximum, until the next dawn.Alchemy Jug LiquidsLiquidMax. AmountAcid8 ouncesBasic Poison4 ouncesBeer4 gallonsHoney1 gallonMayonnaise2 gallonsOil1 quartVinegar2 gallonsWater, fresh8 gallonsWater, salt12 gallonsWine1 gallon",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "bag-of-beans",
+    "name": "Bag of Beans",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "This heavy cloth bag contains 3d4 dry beans when found. The bag weighs half a pound regardless of how many beans it contains and becomes a nonmagical item when it no longer contains any beans.If you dump one or more beans out of the bag, they explode in a 10-foot-radius Sphere centered on them. All the dumped beans are destroyed in the explosion, and each creature in the Sphere, including you, makes a DC 15 Dexterity saving throw, taking 5d4 Force damage on a failed save or half as much damage on a successful one.If you remove a bean from the bag, plant it in dirt or sand, and then water it, the bean disappears as it produces an effect 1 minute later from the ground where it was planted. The DM can choose an effect from the following table or determine it randomly.1d100Effect015d4 toadstools sprout. If a creature eats a toadstool, roll any die. On an odd roll, the eater must succeed on a DC 15 Constitution saving throw or take 5d6 Poison damage and have the Poisoned condition for 1 hour. On an even roll, the eater gains 5d6 Temporary Hit Points for 1 hour.02-10A geyser erupts and spouts water, beer, mayonnaise, tea, vinegar, wine, or oil (DM's choice) 30 feet into the air for 1d4 minutes.11-20A Treant sprouts. Roll any die. On an odd roll, the treant is Chaotic Evil. On an even roll, the treant is Chaotic Good.21-30An animate but immobile stone statue in your likeness rises and makes verbal threats against you. If you leave it and others come near, it describes you as the most heinous of villains and directs the newcomers to find and attack you. If you are on the same plane of existence as the statue, it knows where you are. The statue becomes inanimate after 24 hours.31-40A campfire with green flames springs forth and burns for 24 hours or until it is extinguished.41-50Three Shrieker Fungi sprout.51-601d4 + 4 bright-pink toads crawl forth. Whenever a toad is touched, it transforms into a Large or smaller monster of the DM's choice that acts in accordance with its alignment and nature. The monster remains for 1 minute, then disappears in a puff of bright-pink smoke.61-70A hungry Bulette burrows up and attacks.71-80A fruit tree grows. It has 1d10 + 20 fruit, 1d8 of which act as randomly determined potions. The tree vanishes after 1 hour. Picked fruit remains, retaining any magic for 30 days.81-90A nest of 1d4 + 3 rainbow-colored eggs springs up. Any creature that eats an egg makes a DC 20 Constitution saving throw. On a successful save, a creature permanently increases its lowest ability score by 1, randomly choosing among equally low scores. On a failed save, the creature takes 10d6 Force damage from an internal explosion.91-95A pyramid with a 60-foot-square base bursts upward. Inside is a burial chamber containing a Mummy, a Mummy Lord, or some other Undead of the DM's choice. Its sarcophagus contains treasure of the DM's choice.96-00A giant beanstalk sprouts, growing to a height of the DM's choice. The top leads where the DM chooses, such as to a great view, a cloud giant's castle, or another plane of existence.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "bag-of-holding",
+    "name": "Bag of Holding",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 5,
+    "description": "This bag has an interior space considerably larger than its outside dimensions—roughly 2 feet square and 4 feet deep on the inside. The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. The bag weighs 5 pounds, regardless of its contents. Retrieving an item from the bag requires a Utilize action.If the bag is overloaded, pierced, or torn, it is destroyed, and its contents are scattered in the Astral Plane. If the bag is turned inside out, its contents spill forth unharmed, but the bag must be put right before it can be used again. The bag holds enough air for 10 minutes of breathing, divided by the number of breathing creatures inside.Placing a Bag of Holding inside an extradimensional space created by a Heward's Handy Haversack, Portable Hole, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within a 10-foot-radius Sphere centered on the gate is sucked through it to a random location on the Astral Plane. The gate then closes. The gate is one-way and can't be reopened.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "bag-of-tricks-gray",
+    "name": "Bag of Tricks, Gray",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "This bag made from gray cloth appears empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object.You can take a Magic action to pull the fuzzy object from the bag and throw it up to 20 feet. When the object lands, it transforms into a creature you determine by rolling on the table below. See the Monster Manual for the creature's stat block. The creature vanishes at the next dawn or when it is reduced to 0 Hit Points.The creature is Friendly to you and your allies, and it acts immediately after you on your Initiative count. You can take a Bonus Action to command how the creature moves and what action it takes on its next turn, such as attacking an enemy. In the absence of such orders, the creature acts in a fashion appropriate to its nature.Once three fuzzy objects have been pulled from the bag, the bag can't be used again until the next dawn.1d8Creature1Weasel2Giant Rat3Badger4Boar5Panther6Giant Badger7Dire Wolf8Giant Elk",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "bag-of-tricks-rust",
+    "name": "Bag of Tricks, Rust",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "This bag made from rust cloth appears empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object.You can take a Magic action to pull the fuzzy object from the bag and throw it up to 20 feet. When the object lands, it transforms into a creature you determine by rolling on the table below. See the Monster Manual for the creature's stat block. The creature vanishes at the next dawn or when it is reduced to 0 Hit Points.The creature is Friendly to you and your allies, and it acts immediately after you on your Initiative count. You can take a Bonus Action to command how the creature moves and what action it takes on its next turn, such as attacking an enemy. In the absence of such orders, the creature acts in a fashion appropriate to its nature.Once three fuzzy objects have been pulled from the bag, the bag can't be used again until the next dawn.1d8Creature1Rat2Owl3Mastiff4Goat5Giant Goat6Giant Boar7Lion8Brown Bear",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "bag-of-tricks-tan",
+    "name": "Bag of Tricks, Tan",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "This bag made from tan cloth appears empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object.You can take a Magic action to pull the fuzzy object from the bag and throw it up to 20 feet. When the object lands, it transforms into a creature you determine by rolling on the table below. See the Monster Manual for the creature's stat block. The creature vanishes at the next dawn or when it is reduced to 0 Hit Points.The creature is Friendly to you and your allies, and it acts immediately after you on your Initiative count. You can take a Bonus Action to command how the creature moves and what action it takes on its next turn, such as attacking an enemy. In the absence of such orders, the creature acts in a fashion appropriate to its nature.Once three fuzzy objects have been pulled from the bag, the bag can't be used again until the next dawn.1d8Creature1Jackal2Ape3Baboon4Axe Beak5Black Bear6Giant Weasel7Giant Hyena8Tiger",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "bag-of-tricks",
+    "name": "Bag of Tricks",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "Multiple variations of this item exist, as listed below:Bag of Tricks, GrayBag of Tricks, RustBag of Tricks, Tan",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "barrel",
+    "name": "Barrel",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 70,
+    "description": "A Barrel holds up to 40 gallons of liquid or up to 4 cubic feet of dry goods.",
+    "cost": {
+      "quantity": 2,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "basket",
+    "name": "Basket",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 2,
+    "description": "A Basket holds up to 40 pounds within 2 cubic feet.",
+    "cost": {
+      "quantity": 4,
+      "unit": "sp"
+    }
+  },
+  {
+    "id": "chest",
+    "name": "Chest",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 25,
+    "description": "A Chest holds up to 12 cubic feet of contents.",
+    "cost": {
+      "quantity": 5,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "component-pouch",
+    "name": "Bileşen Kesesi",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 2,
+    "description": "A Component Pouch is watertight and filled with compartments that hold all the free Material components of your spells.",
+    "cost": {
+      "quantity": 25,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "crossbow-bolt-case",
+    "name": "Crossbow Bolt Case",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "A Crossbow Bolt Case holds up to 20 Bolts.",
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "efreeti-bottle",
+    "name": "Efreeti Bottle",
+    "type": "wondrous",
+    "rarity": "Çok Nadir",
+    "weight": 0,
+    "description": "When you take a Magic action to remove the stopper of this painted brass bottle, a cloud of thick smoke flows out of it. At the end of your turn, the smoke disappears with a flash of harmless fire, and an Efreeti appears in an unoccupied space within 30 feet of you.The first time the bottle is opened, the DM rolls on the following table to determine what happens.1d10Effect1The efreeti attacks you. After fighting for 5 rounds, the efreeti disappears, and the bottle loses its magic.2-9The efreeti understands your languages and obeys your commands for 1 hour, after which it returns to the bottle, and a new stopper contains it. The stopper can't be removed for 24 hours. The next two times the bottle is opened, the same effect occurs. If the bottle is opened a fourth time, the efreeti escapes and disappears, and the bottle loses its magic.10The efreeti understands your languages and can cast Wish once for you. It disappears when it grants the wish or after 1 hour, and the bottle loses its magic.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "eversmoking-bottle",
+    "name": "Eversmoking Bottle",
+    "type": "wondrous",
+    "rarity": "Sıra Dışı",
+    "weight": 0,
+    "description": "As a Magic action, you can open or close this bottle.Opening the bottle causes thick smoke to billow out, forming a cloud that fills a 60-foot Emanation originating from the bottle. The area within the smoke is Heavily Obscured.Each minute the bottle remains open, the size of the Emanation increases by 10 feet until it reaches its maximum size of 120 feet.Closing the bottle causes the cloud to become fixed in place until it disperses after 10 minutes. A strong wind (such as that created by the Gust of Wind spell) disperses the cloud after 1 minute.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "flask",
+    "name": "Flask",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "A Flask holds up to 1 pint.",
+    "cost": {
+      "quantity": 2,
+      "unit": "cp"
+    }
+  },
+  {
+    "id": "glass-bottle",
+    "name": "Glass Bottle",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 2,
+    "description": "A Glass Bottle holds up to 1½ pints.",
+    "cost": {
+      "quantity": 2,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "heward-s-handy-haversack",
+    "name": "Heward's Handy Haversack",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 5,
+    "description": "This backpack has a central pouch and two side pouches, each of which is an extradimensional space. Each side pouch can hold up to 200 pounds of material, not exceeding a volume of 25 cubic feet. The central pouch can hold up to 500 pounds of material, not exceeding a volume of 64 cubic feet. The haversack always weighs 5 pounds, regardless of its contents.Retrieving an item from the haversack requires a Utilize action or a Bonus Action (your choice). When you reach into the haversack for a specific item, the item is always magically on top.If any of its pouches is overloaded, pierced, or torn, the haversack ruptures and is destroyed. If the haversack is destroyed, its contents are lost forever, although an Artifact always turns up again somewhere. If the haversack is turned inside out, its contents spill forth unharmed, and the haversack must be put right before it can be used again.Each pouch of the haversack holds enough air for 10 minutes of breathing, divided by the number of breathing creatures inside.Placing the haversack inside an extradimensional space created by a Bag of Holding, Portable Hole, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate and not behind Total Cover is sucked through it and deposited in a random location on the Astral Plane. The gate then closes. The gate is one-way only and can't be reopened.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "heward-s-handy-spice-pouch",
+    "name": "Heward's Handy Spice Pouch",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "This belt pouch appears empty and has 10 charges. While holding the pouch, you can take a Magic action to expend 1 charge, name any nonmagical food seasoning (such as salt, pepper, saffron, or cilantro), and remove a pinch of the desired seasoning from the pouch. A pinch is enough to season a single meal. The pouch regains 1d6 + 4 expended charges daily at dawn.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "iron-flask",
+    "name": "Iron Flask",
+    "type": "wondrous",
+    "rarity": "Efsanevi",
+    "weight": 0,
+    "description": "While holding this brass-stoppered iron flask, you can take a Magic action to target a creature that you can see within 60 feet of yourself. If the flask is empty and the target is native to a plane of existence other than the one you're on, the target must succeed on a DC 17 Wisdom saving throw or be trapped in the flask. If the target has been trapped by the flask before, it has Advantage on the save. Once trapped, a creature remains in the flask until released. The flask can hold only one creature at a time. A creature trapped in the flask doesn't age and doesn't need to breathe, eat, or drink.You can take a Magic action to remove the flask's stopper and release the creature in the flask. The creature then obeys your commands for 1 hour, understanding those commands even if it doesn't know the language in which the commands are given. If you issue no commands or give the creature a command that is likely to result in its death or imprisonment, it defends itself but otherwise takes no actions. At the end of the duration, the creature acts in accordance with its normal disposition and alignment.An Identify spell reveals if the flask contains a creature, but the only way to determine the type of creature is to open the flask. A newly discovered Iron Flask might already contain a creature chosen by the DM or determined randomly by rolling on the following table (see the Monster Manual for the creature's stat block).1d100Contents01-50No creature51Arcanaloth52-54Bone Devil55-56Cambion57-58Dao59Deva60-61Djinni62-63Efreeti64-65Erinyes66-67Fomorian68Githyanki Knight69Githzerai Zerth70-71Glabrezu72-74Hezrou75Incubus76-77Invisible Stalker78-79Marid80Marilith81-82Mezzoloth83-84Nalfeshnee85-86Night Hag87-88Nycaloth89Planetar90-91Red Slaad92-93Salamander94Solar95Succubus96Ultroloth97-99Vrock00Xorn",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "jug",
+    "name": "Jug",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 4,
+    "description": "A Jug holds up to 1 gallon.",
+    "cost": {
+      "quantity": 2,
+      "unit": "cp"
+    }
+  },
+  {
+    "id": "map-or-scroll-case",
+    "name": "Map or Scroll Case",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "A Map or Scroll Case holds up to 10 sheets of paper or 5 sheets of parchment.",
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "portable-hole",
+    "name": "Portable Hole",
+    "type": "wondrous",
+    "rarity": "Nadir",
+    "weight": 0,
+    "description": "This fine black cloth, soft as silk, is folded up to the dimensions of a handkerchief. It unfolds into a circular sheet 6 feet in diameter.You can take a Magic action to unfold a Portable Hole and place it on or against a solid surface, whereupon the Portable Hole creates an extradimensional hole 10 feet deep. The cylindrical space within the hole exists on a different plane of existence, so it can't be used to create open passages. Any creature inside an open Portable Hole can exit the hole by climbing out of it.You can take a Magic action to close a Portable Hole by taking hold of the edges of the cloth and folding it up. Folding the cloth closes the hole, and any creatures or objects within remain in the extradimensional space. No matter what's in it, the hole weighs next to nothing.If the hole is folded up, a creature within the hole's extradimensional space can take an action to make a DC 10 Strength (Athletics) check. On a successful check, the creature forces its way out and appears within 5 feet of the Portable Hole. A closed Portable Hole holds enough air for 1 hour of breathing, divided by the number of breathing creatures inside.Placing a Portable Hole inside an extradimensional space created by a Bag of Holding, Heward's Handy Haversack, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate and not behind Total Cover is sucked through it and deposited in a random location on the Astral Plane. The gate then closes. The gate is one-way only and can't be reopened.",
+    "cost": {
+      "quantity": 0,
+      "unit": "gp"
+    }
+  },
+  {
+    "id": "pouch",
+    "name": "Kese",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "A Pouch holds up to 6 pounds within one-fifth of a cubic foot.",
+    "cost": {
+      "quantity": 5,
+      "unit": "sp"
+    }
+  },
+  {
+    "id": "tinderbox",
+    "name": "Kav Kutusu",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 1,
+    "description": "A Tinderbox is a small container holding flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a Candle, Lamp, Lantern, or Torch—or anything else with exposed fuel—takes a Bonus Action. Lighting any other fire takes 1 minute.",
+    "cost": {
+      "quantity": 5,
+      "unit": "sp"
+    }
+  },
+  {
+    "id": "vial",
+    "name": "Vial",
+    "type": "wondrous",
+    "rarity": "Yaygın",
+    "weight": 0,
+    "description": "A Vial holds up to 4 ounces.",
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    }
+  }
+]

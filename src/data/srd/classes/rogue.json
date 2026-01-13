@@ -1,0 +1,451 @@
+{
+  "id": "rogue",
+  "name": "Rogue",
+  "source": "srd",
+  "description": "A scoundrel who uses stealth and trickery to overcome obstacles and enemies.",
+  "hitDie": "d8",
+  "primaryAbility": [
+    "DEX"
+  ],
+  "abilityPriority": {
+    "primary": [
+      "DEX",
+      "INT"
+    ],
+    "secondary": [
+      "CHA",
+      "WIS"
+    ],
+    "dump": [
+      "STR",
+      "CON"
+    ]
+  },
+  "proficiencies": {
+    "armor": [
+      "light"
+    ],
+    "weapons": [
+      "simple",
+      "hand_crossbow",
+      "longsword",
+      "rapier",
+      "shortsword"
+    ],
+    "tools": [
+      "thieves_tools"
+    ],
+    "savingThrows": [
+      "DEX",
+      "INT"
+    ],
+    "skills": {
+      "choices": [
+        "acrobatics",
+        "athletics",
+        "deception",
+        "insight",
+        "intimidation",
+        "investigation",
+        "perception",
+        "performance",
+        "persuasion",
+        "sleight_of_hand",
+        "stealth"
+      ],
+      "count": 4
+    }
+  },
+  "startingEquipment": {
+    "guaranteed": [
+      {
+        "itemId": "leather_armor",
+        "quantity": 1
+      },
+      {
+        "itemId": "dagger",
+        "quantity": 2
+      },
+      {
+        "itemId": "thieves_tools",
+        "quantity": 1
+      }
+    ],
+    "choices": [
+      {
+        "id": "weapon-choice",
+        "options": [
+          {
+            "description": "A rapier",
+            "items": [
+              {
+                "itemId": "rapier",
+                "quantity": 1
+              }
+            ]
+          },
+          {
+            "description": "A shortsword",
+            "items": [
+              {
+                "itemId": "shortsword",
+                "quantity": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ranged-choice",
+        "options": [
+          {
+            "description": "A shortbow and quiver of 20 arrows",
+            "items": [
+              {
+                "itemId": "shortbow",
+                "quantity": 1
+              },
+              {
+                "itemId": "arrow",
+                "quantity": 20
+              }
+            ]
+          },
+          {
+            "description": "A shortsword",
+            "items": [
+              {
+                "itemId": "shortsword",
+                "quantity": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pack-choice",
+        "options": [
+          {
+            "description": "A burglar's pack",
+            "items": [
+              {
+                "itemId": "burglars_pack",
+                "quantity": 1
+              }
+            ]
+          },
+          {
+            "description": "A dungeoneer's pack",
+            "items": [
+              {
+                "itemId": "dungeoneers_pack",
+                "quantity": 1
+              }
+            ]
+          },
+          {
+            "description": "An explorer's pack",
+            "items": [
+              {
+                "itemId": "explorers_pack",
+                "quantity": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "spellcasting": {
+    "hasSpellcasting": false
+  },
+  "features": [
+    {
+      "id": "expertise-rogue",
+      "name": "Expertise",
+      "source": "srd",
+      "description": "Choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves' tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.",
+      "level": 1,
+      "featureType": "choice",
+      "teachingNotes": {
+        "conceptsTaught": [
+          "expertise",
+          "skill_specialization"
+        ],
+        "practiceScenario": "expertise-demo"
+      }
+    },
+    {
+      "id": "sneak-attack",
+      "name": "Sneak Attack",
+      "source": "srd",
+      "description": "You know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. You don't need advantage if another enemy of the target is within 5 feet of it.",
+      "level": 1,
+      "featureType": "passive",
+      "teachingNotes": {
+        "conceptsTaught": [
+          "sneak_attack",
+          "advantage_usage",
+          "positioning"
+        ],
+        "practiceScenario": "sneak-attack-tutorial"
+      }
+    },
+    {
+      "id": "thieves-cant",
+      "name": "Thieves' Cant",
+      "source": "srd",
+      "description": "You have learned thieves' cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation.",
+      "level": 1,
+      "featureType": "passive"
+    },
+    {
+      "id": "cunning-action",
+      "name": "Cunning Action",
+      "source": "srd",
+      "description": "Your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns to take the Dash, Disengage, or Hide action.",
+      "level": 2,
+      "featureType": "passive",
+      "grantsAction": {
+        "name": "Cunning Action",
+        "actionType": "bonus_action",
+        "effect": "dash_or_disengage_or_hide"
+      },
+      "teachingNotes": {
+        "conceptsTaught": [
+          "bonus_action",
+          "action_economy",
+          "tactical_movement"
+        ],
+        "practiceScenario": "cunning-action-tutorial"
+      }
+    },
+    {
+      "id": "uncanny-dodge",
+      "name": "Uncanny Dodge",
+      "source": "srd",
+      "description": "When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.",
+      "level": 5,
+      "featureType": "active",
+      "grantsAction": {
+        "name": "Uncanny Dodge",
+        "actionType": "reaction",
+        "effect": "halve_damage"
+      },
+      "teachingNotes": {
+        "conceptsTaught": [
+          "reactions",
+          "damage_mitigation"
+        ],
+        "practiceScenario": "uncanny-dodge-demo"
+      }
+    },
+    {
+      "id": "evasion",
+      "name": "Evasion",
+      "source": "srd",
+      "description": "When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed, and only half damage if you fail.",
+      "level": 7,
+      "featureType": "passive",
+      "teachingNotes": {
+        "conceptsTaught": [
+          "evasion",
+          "saving_throw_modification"
+        ],
+        "practiceScenario": "evasion-demo"
+      }
+    },
+    {
+      "id": "reliable-talent",
+      "name": "Reliable Talent",
+      "source": "srd",
+      "description": "Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.",
+      "level": 11,
+      "featureType": "passive"
+    },
+    {
+      "id": "blindsense",
+      "name": "Blindsense",
+      "source": "srd",
+      "description": "If you are able to hear, you are aware of the location of any hidden or invisible creature within 10 feet of you.",
+      "level": 14,
+      "featureType": "passive"
+    },
+    {
+      "id": "slippery-mind",
+      "name": "Slippery Mind",
+      "source": "srd",
+      "description": "You have acquired greater mental strength. You gain proficiency in Wisdom saving throws.",
+      "level": 15,
+      "featureType": "passive"
+    },
+    {
+      "id": "elusive",
+      "name": "Elusive",
+      "source": "srd",
+      "description": "You are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you while you aren't incapacitated.",
+      "level": 18,
+      "featureType": "passive"
+    },
+    {
+      "id": "stroke-of-luck",
+      "name": "Stroke of Luck",
+      "source": "srd",
+      "description": "You have an uncanny knack for succeeding when you need to. If your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20.",
+      "level": 20,
+      "featureType": "resource",
+      "resource": {
+        "name": "Stroke of Luck",
+        "maxCount": 1,
+        "recoversOn": "short"
+      }
+    }
+  ],
+  "subclasses": [
+    {
+      "id": "thief",
+      "name": "Thief",
+      "source": "srd",
+      "description": "You hone your skills in the larcenous arts. Burglars, bandits, cutpurses, and other criminals typically follow this archetype.",
+      "parentClassId": "rogue",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "fast-hands",
+          "name": "Fast Hands",
+          "source": "srd",
+          "description": "You can use the bonus action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves' tools to disarm a trap or open a lock, or take the Use an Object action.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "second-story-work",
+          "name": "Second-Story Work",
+          "source": "srd",
+          "description": "You gain the ability to climb faster than normal; climbing no longer costs you extra movement. In addition, when you make a running jump, the distance you cover increases by a number of feet equal to your Dexterity modifier.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "supreme-sneak",
+          "name": "Supreme Sneak",
+          "source": "srd",
+          "description": "You have advantage on a Dexterity (Stealth) check if you move no more than half your speed on the same turn.",
+          "level": 9,
+          "featureType": "passive"
+        },
+        {
+          "id": "use-magic-device",
+          "name": "Use Magic Device",
+          "source": "srd",
+          "description": "You have learned enough about the workings of magic that you can improvise the use of items even when they are not intended for you. You ignore all class, race, and level requirements on the use of magic items.",
+          "level": 13,
+          "featureType": "passive"
+        },
+        {
+          "id": "thiefs-reflexes",
+          "name": "Thief's Reflexes",
+          "source": "srd",
+          "description": "You can take two turns during the first round of any combat. You take your first turn at your normal initiative and your second turn at your initiative minus 10.",
+          "level": 17,
+          "featureType": "passive"
+        }
+      ],
+      "teachingNotes": {
+        "playstyle": "Classic rogue focused on skills, agility, and utility",
+        "complexity": "beginner",
+        "synergies": [
+          "Skill checks",
+          "Exploration",
+          "Utility"
+        ]
+      }
+    },
+    {
+      "id": "arcane-trickster",
+      "name": "Arcane Trickster",
+      "source": "srd",
+      "description": "You enhance your sneaking and agility with magic, learning illusions and enchantment spells.",
+      "parentClassId": "rogue",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "spellcasting-rogue",
+          "name": "Spellcasting",
+          "description": "You gain the ability to cast spells.",
+          "level": 3,
+          "featureType": "passive"
+        }
+      ]
+    },
+    {
+      "id": "assassin",
+      "name": "Assassin",
+      "source": "srd",
+      "description": "You focus your training on the grim art of death.",
+      "parentClassId": "rogue",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "assassinate",
+          "name": "Assassinate",
+          "description": "You are at your deadliest when you get the drop on your enemies. You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet.",
+          "level": 3,
+          "featureType": "passive"
+        }
+      ]
+    },
+    {
+      "id": "soulknife",
+      "name": "Soulknife",
+      "source": "user",
+      "description": "You strike with minds rather than muscles, manifesting your power as blades of psychic energy.",
+      "parentClassId": "rogue",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "psychic-blades",
+          "name": "Psychic Blades",
+          "description": "You can manifest shimmering blades of psychic energy from your hands.",
+          "level": 3,
+          "featureType": "active"
+        }
+      ]
+    }
+  ],
+  "subclassName": "Roguish Archetype",
+  "subclassLevel": 3,
+  "asiLevels": [
+    4,
+    8,
+    10,
+    12,
+    16,
+    19
+  ],
+  "teachingNotes": {
+    "complexity": "intermediate",
+    "recommendedForNewPlayers": true,
+    "playstyleKeywords": [
+      "Sneaky",
+      "High damage",
+      "Skill monkey",
+      "Agile"
+    ],
+    "roleInParty": [
+      "Scout",
+      "Skill expert",
+      "Single-target damage"
+    ],
+    "keyDecisionPoints": [
+      {
+        "level": 1,
+        "decision": "Expertise selection - your specializations"
+      },
+      {
+        "level": 3,
+        "decision": "Roguish Archetype - your thematic focus"
+      }
+    ]
+  }
+}

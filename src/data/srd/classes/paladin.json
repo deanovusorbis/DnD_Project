@@ -1,0 +1,228 @@
+{
+  "id": "paladin",
+  "name": "Paladin",
+  "source": "srd",
+  "description": "A holy warrior bound to a sacred oath.",
+  "hitDie": "d10",
+  "primaryAbility": [
+    "STR",
+    "CHA"
+  ],
+  "abilityPriority": {
+    "primary": [
+      "STR",
+      "CHA"
+    ],
+    "secondary": [
+      "CON",
+      "WIS"
+    ],
+    "dump": [
+      "DEX",
+      "INT"
+    ]
+  },
+  "proficiencies": {
+    "armor": [
+      "light",
+      "medium",
+      "heavy",
+      "shield"
+    ],
+    "weapons": [
+      "simple",
+      "martial"
+    ],
+    "tools": [],
+    "savingThrows": [
+      "WIS",
+      "CHA"
+    ],
+    "skills": {
+      "choices": [
+        "athletics",
+        "insight",
+        "intimidation",
+        "medicine",
+        "persuasion",
+        "religion"
+      ],
+      "count": 2
+    }
+  },
+  "startingEquipment": {
+    "guaranteed": [
+      {
+        "itemId": "chain_mail",
+        "quantity": 1
+      },
+      {
+        "itemId": "holy_symbol",
+        "quantity": 1
+      }
+    ],
+    "choices": []
+  },
+  "spellcasting": {
+    "hasSpellcasting": true,
+    "spellcastingAbility": "CHA",
+    "spellcastingType": "half",
+    "ritualCasting": false
+  },
+  "features": [
+    {
+      "id": "divine-sense",
+      "name": "Divine Sense",
+      "source": "srd",
+      "description": "You can open your awareness to detect evil and good.",
+      "level": 1,
+      "featureType": "resource",
+      "resource": {
+        "name": "Divine Sense",
+        "maxCount": "ability_mod",
+        "abilityModifier": "CHA",
+        "recoversOn": "long"
+      }
+    },
+    {
+      "id": "lay-on-hands",
+      "name": "Lay on Hands",
+      "source": "srd",
+      "description": "Your blessed touch can heal wounds. You have a pool of healing power that replenishes after a long rest.",
+      "level": 1,
+      "featureType": "resource",
+      "resource": {
+        "name": "Lay on Hands Pool",
+        "maxCount": 5,
+        "recoversOn": "long"
+      }
+    },
+    {
+      "id": "fighting-style-paladin",
+      "name": "Fighting Style",
+      "source": "srd",
+      "description": "You adopt a particular style of fighting as your specialty.",
+      "level": 2,
+      "featureType": "choice"
+    },
+    {
+      "id": "divine-smite",
+      "name": "Divine Smite",
+      "source": "srd",
+      "description": "When you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage.",
+      "level": 2,
+      "featureType": "active"
+    },
+    {
+      "id": "extra-attack-paladin",
+      "name": "Extra Attack",
+      "source": "srd",
+      "description": "You can attack twice when you take the Attack action.",
+      "level": 5,
+      "featureType": "passive"
+    },
+    {
+      "id": "aura-of-protection",
+      "name": "Aura of Protection",
+      "source": "srd",
+      "description": "Whenever you or a friendly creature within 10 feet of you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier.",
+      "level": 6,
+      "featureType": "passive"
+    }
+  ],
+  "subclasses": [
+    {
+      "id": "oath-of-devotion",
+      "name": "Oath of Devotion",
+      "source": "srd",
+      "description": "The Oath of Devotion binds a paladin to the loftiest ideals of justice, virtue, and order.",
+      "parentClassId": "paladin",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "sacred-weapon",
+          "name": "Channel Divinity: Sacred Weapon",
+          "source": "srd",
+          "description": "You can imbue one weapon with positive energy, adding your Charisma modifier to attack rolls.",
+          "level": 3,
+          "featureType": "active"
+        }
+      ]
+    },
+    {
+      "id": "oath-of-the-ancients",
+      "name": "Oath of the Ancients",
+      "source": "user",
+      "description": "The Oath of the Ancients is as old as the race of elves and the rituals of the druids.",
+      "parentClassId": "paladin",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "natures-wrath",
+          "name": "Channel Divinity: Nature's Wrath",
+          "description": "You can use your Channel Divinity to restrain a creature with spectral vines.",
+          "level": 3,
+          "featureType": "active"
+        }
+      ]
+    },
+    {
+      "id": "oath-of-glory",
+      "name": "Oath of Glory",
+      "source": "user",
+      "description": "Paladins who take the Oath of Glory believe they are destined to achieve greatness through deeds of heroism.",
+      "parentClassId": "paladin",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "peerless-athlete",
+          "name": "Channel Divinity: Peerless Athlete",
+          "description": "You can use your Channel Divinity to augment your athleticism.",
+          "level": 3,
+          "featureType": "active"
+        }
+      ]
+    },
+    {
+      "id": "oath-of-vengeance",
+      "name": "Oath of Vengeance",
+      "source": "user",
+      "description": "The Oath of Vengeance is a solemn commitment to punish those who have committed a grievous sin.",
+      "parentClassId": "paladin",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "abjure-enemy",
+          "name": "Channel Divinity: Abjure Enemy",
+          "description": "You can use your Channel Divinity to frighten a creature.",
+          "level": 3,
+          "featureType": "active"
+        }
+      ]
+    }
+  ],
+  "subclassName": "Sacred Oath",
+  "subclassLevel": 3,
+  "asiLevels": [
+    4,
+    8,
+    12,
+    16,
+    19
+  ],
+  "teachingNotes": {
+    "complexity": "intermediate",
+    "recommendedForNewPlayers": true,
+    "playstyleKeywords": [
+      "Holy warrior",
+      "Smite",
+      "Tank",
+      "Support"
+    ],
+    "roleInParty": [
+      "Front-line",
+      "Off-healer",
+      "Damage dealer"
+    ]
+  }
+}
