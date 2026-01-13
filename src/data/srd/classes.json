@@ -1866,9 +1866,21 @@
 					"rapier",
 					"shortsword"
 				],
-				"tools": [
-					"musical_instrument"
-				],
+				"tools": {
+					"choices": [
+						"bagpipes",
+						"drum",
+						"dulcimer",
+						"flute",
+						"horn",
+						"lute",
+						"lyre",
+						"pan_flute",
+						"shawm",
+						"viol"
+					],
+					"count": 3
+				},
 				"savingThrows": [
 					"DEX",
 					"CHA"
@@ -2542,9 +2554,38 @@
 					"simple",
 					"shortsword"
 				],
-				"tools": [
-					"artisans_tools"
-				],
+				"tools": {
+					"choices": [
+						"alchemists_supplies",
+						"brewers_supplies",
+						"calligraphers_supplies",
+						"carpenters_tools",
+						"cartographers_tools",
+						"cobblers_tools",
+						"cooks_utensils",
+						"glassblowers_tools",
+						"jewelers_tools",
+						"leatherworkers_tools",
+						"masons_tools",
+						"painters_supplies",
+						"potters_tools",
+						"smiths_tools",
+						"tinkers_tools",
+						"weavers_tools",
+						"woodcarvers_tools",
+						"bagpipes",
+						"drum",
+						"dulcimer",
+						"flute",
+						"horn",
+						"lute",
+						"lyre",
+						"pan_flute",
+						"shawm",
+						"viol"
+					],
+					"count": 1
+				},
 				"savingThrows": [
 					"STR",
 					"DEX"

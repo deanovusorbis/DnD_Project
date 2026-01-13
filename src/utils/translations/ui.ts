@@ -5,13 +5,14 @@
 
 // Step Labels
 export const stepLabels: Record<string, string> = {
-	'species': '1. Irk',
-	'class': '2. Sınıf',
-	'background': '3. Geçmiş',
-	'abilities': '4. Yetenekler',
-	'equipment': '5. Ekipman',
-	'details': '6. Detaylar',
-	'review': '7. Özet'
+	'species': 'Irk',
+	'class': 'Sınıf',
+	'background': 'Geçmiş',
+	'abilities': 'Yetenekler',
+	'proficiencies': 'Uzmanlıklar',
+	'equipment': 'Ekipman',
+	'details': 'Detaylar',
+	'review': 'Özet'
 };
 
 export function getStepLabel(step: string): string {

@@ -14,6 +14,7 @@ import { renderSpeciesStep } from './builder/steps/SpeciesStep.ts';
 import { renderClassStep } from './builder/steps/ClassStep.ts';
 import { renderBackgroundStep } from './builder/steps/BackgroundStep.ts';
 import { renderAbilitiesStep } from './builder/steps/AbilitiesStep.ts';
+import { renderProficienciesStep } from './builder/steps/ProficienciesStep.ts';
 import { renderEquipmentStep } from './builder/steps/EquipmentStep.ts';
 import { renderDetailsStep } from './builder/steps/DetailsStep.ts';
 import { renderReviewStep } from './builder/steps/ReviewStep.ts';
@@ -40,7 +41,7 @@ export class CharacterBuilderView {
 		this.container.appendChild(header);
 
 		// Progress Stepper with Navigation
-		const steps = ['species', 'class', 'background', 'abilities', 'equipment', 'details'];
+		const steps = ['species', 'class', 'background', 'abilities', 'proficiencies', 'equipment', 'details'];
 		const currentStepIndex = steps.indexOf(step);
 
 		// Create clickable stepper
@@ -60,8 +61,9 @@ export class CharacterBuilderView {
 		if (cState.selectedSpecies) unlockedSteps.push(1); // Class unlocked
 		if (cState.selectedClass) unlockedSteps.push(2); // Background unlocked
 		if (cState.selectedBackground) unlockedSteps.push(3); // Abilities unlocked
-		if (cState.abilityScores && Object.keys(cState.abilityScores).length > 0) unlockedSteps.push(4);
-		if (cState.startingGold !== undefined) unlockedSteps.push(5);
+		if (cState.abilityScores && Object.keys(cState.abilityScores).length > 0) unlockedSteps.push(4); // Proficiencies unlocked
+		if (cState.skillChoices && cState.skillChoices.length > 0) unlockedSteps.push(5); // Equipment unlocked
+		if (cState.startingGold !== undefined) unlockedSteps.push(6); // Details unlocked
 
 		steps.forEach((s, idx) => {
 			const stepBtn = document.createElement('button');
@@ -115,6 +117,9 @@ export class CharacterBuilderView {
 				break;
 			case 'abilities':
 				renderAbilitiesStep(contentArea, onRefresh);
+				break;
+			case 'proficiencies':
+				renderProficienciesStep(contentArea, onRefresh);
 				break;
 			case 'equipment':
 				renderEquipmentStep(contentArea, onRefresh);

@@ -1,12 +1,15 @@
 import { registry } from '../../../../engine/core/registry.ts';
 import { useGameStore } from '../../../../engine/core/store.ts';
 import { createButton } from '../../../components/Button.ts';
-import { AbilityName } from '../../../../types/core.types.ts';
+import { AbilityName, SKILL_ABILITY_MAP, SkillName } from '../../../../types/core.types.ts';
 import {
 	translateSpeciesName,
 	translateSubspeciesName,
 	translateClassName,
-	translateSubclassName
+	translateSubclassName,
+	translateSkillName,
+	translateToolName,
+	getToolDescription
 } from '../../../../utils/translations/index.ts';
 
 export function renderReviewStep(parent: HTMLElement, onStepComplete: () => void, onSave: () => void): void {
@@ -61,7 +64,26 @@ export function renderReviewStep(parent: HTMLElement, onStepComplete: () => void
 	const bgCard = createSummaryCard('📜 Geçmiş', background?.name || 'Seçilmedi');
 	grid.appendChild(bgCard);
 
-	parent.appendChild(grid);
+	// Combat Stats Summary
+	const statsContainer = document.createElement('div');
+	statsContainer.style.display = 'grid';
+	statsContainer.style.gridTemplateColumns = 'repeat(4, 1fr)';
+	statsContainer.style.gap = 'var(--space-md)';
+	statsContainer.style.marginBottom = 'var(--space-lg)';
+
+	const conScore = cState.abilityScores?.CON || 10;
+	const conMod = Math.floor((conScore - 10) / 2);
+	const dexScore = cState.abilityScores?.DEX || 10;
+	const dexMod = Math.floor((dexScore - 10) / 2);
+	const hitDie = classData?.hitDie || 'd8';
+	const baseHp = parseInt(hitDie.replace('d', ''), 10);
+
+	statsContainer.appendChild(createSummaryCard('❤️ Can Puanı (HP)', `${baseHp + conMod}`));
+	statsContainer.appendChild(createSummaryCard('🛡️ Zırh Sınıfı (AC)', `${10 + dexMod}`));
+	statsContainer.appendChild(createSummaryCard('🎲 İnisiyatif', `${dexMod >= 0 ? '+' : ''}${dexMod}`));
+	statsContainer.appendChild(createSummaryCard('✨ Uzmanlık Bonusu', '+2'));
+
+	parent.appendChild(statsContainer);
 
 	// Ability Scores
 	if (cState.abilityScores) {
@@ -103,6 +125,95 @@ export function renderReviewStep(parent: HTMLElement, onStepComplete: () => void
 
 		abilitiesSection.appendChild(abilitiesGrid);
 		parent.appendChild(abilitiesSection);
+	}
+
+	// Skills Section
+	const skillsSection = document.createElement('div');
+	skillsSection.style.background = 'var(--color-bg-secondary)';
+	skillsSection.style.padding = 'var(--space-lg)';
+	skillsSection.style.borderRadius = 'var(--radius-md)';
+	skillsSection.style.border = '1px solid var(--color-border)';
+	skillsSection.style.marginBottom = 'var(--space-lg)';
+
+	// Calculate all skills
+	const allSkills = new Set<string>();
+	species?.traits?.forEach(t => t.grantsProficiency?.skills?.forEach((s: any) => allSkills.add(s)));
+	background?.skills?.forEach((s: any) => allSkills.add(s));
+	cState.skillChoices?.forEach(s => allSkills.add(s));
+
+	// Calculate modifiers for each skill
+	const proficiencyBonus = 2; // Level 1
+	const skillsWithBonuses = Array.from(allSkills).map(skill => {
+		const abilityKey = SKILL_ABILITY_MAP[skill as SkillName];
+		const abilityScore = cState.abilityScores?.[abilityKey] || 10;
+		const abilityMod = Math.floor((abilityScore - 10) / 2);
+		const totalBonus = abilityMod + proficiencyBonus;
+		const bonusStr = totalBonus >= 0 ? `+${totalBonus}` : `${totalBonus}`;
+
+		return {
+			name: translateSkillName(skill),
+			ability: abilityKey,
+			bonus: bonusStr
+		};
+	});
+
+	skillsSection.innerHTML = `
+		<h4 style="color: var(--color-accent-gold); margin-bottom: var(--space-md);">🎯 Uzman Olduğun Yetenekler</h4>
+		<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px;">
+			${skillsWithBonuses.map(s => `
+				<div style="
+					background: var(--color-bg-tertiary); 
+					padding: 8px 12px; 
+					border-radius: 8px; 
+					border: 1px solid var(--color-border); 
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+				">
+					<div style="display: flex; flex-direction: column; gap: 2px;">
+						<span style="font-size: 0.9rem; font-weight: 600;">${s.name}</span>
+						<span style="font-size: 0.7rem; color: var(--color-text-dim);">${s.ability}</span>
+					</div>
+					<span style="
+						font-size: 1.1rem; 
+						font-weight: 700; 
+						color: var(--color-accent-gold);
+						min-width: 40px;
+						text-align: right;
+					">${s.bonus}</span>
+				</div>
+			`).join('')}
+			${allSkills.size === 0 ? '<span style="color: var(--color-text-dim);">Hiçbiri</span>' : ''}
+		</div>
+	`;
+	parent.appendChild(skillsSection);
+
+	// Tool Proficiencies
+	const allTools = new Set<string>();
+	// @ts-ignore guaranteed tools are string array if tools is array
+	const guaranteedTools: string[] = Array.isArray(classData?.proficiencies?.tools) ? classData.proficiencies.tools : [];
+	guaranteedTools.forEach((t: string) => allTools.add(t));
+	cState.toolChoices?.forEach(t => allTools.add(t));
+
+	if (allTools.size > 0) {
+		const toolsSection = document.createElement('div');
+		toolsSection.style.background = 'var(--color-bg-secondary)';
+		toolsSection.style.padding = 'var(--space-lg)';
+		toolsSection.style.borderRadius = 'var(--radius-md)';
+		toolsSection.style.border = '1px solid var(--color-border)';
+		toolsSection.style.marginBottom = 'var(--space-lg)';
+
+		toolsSection.innerHTML = `
+			<h4 style="color: var(--color-accent-purple); margin-bottom: var(--space-md);">🛠️ Alet Uzmanlıkları</h4>
+			<div style="display: flex; flex-wrap: wrap; gap: 8px;">
+				${Array.from(allTools).map(toolId => `
+					<span style="background: var(--color-bg-tertiary); padding: 6px 14px; border-radius: 20px; border: 1px solid var(--color-border); font-size: 0.9rem;" title="${getToolDescription(toolId)}">
+						${translateToolName(toolId)}
+					</span>
+				`).join('')}
+			</div>
+		`;
+		parent.appendChild(toolsSection);
 	}
 
 	// Backstory
@@ -162,8 +273,9 @@ function createSummaryCard(title: string, content: string): HTMLElement {
 
 	card.innerHTML = `
 		<div style="font-size: 0.85rem; color: var(--color-text-dim); margin-bottom: 4px;">${title}</div>
-		<div style="font-size: 1.1rem; color: var(--color-text-primary); font-weight: 600;">${content}</div>
+		<div style="font-size: 1.25rem; color: var(--color-text-primary); font-weight: 700;">${content}</div>
 	`;
 
 	return card;
 }
+

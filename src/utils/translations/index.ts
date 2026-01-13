@@ -10,11 +10,14 @@ export {
 	classNames,
 	subclassNames,
 	abilityNames,
+	skillNames,
+	skillDescriptions,
 	translateSpeciesName,
 	translateSubspeciesName,
 	translateClassName,
 	translateSubclassName,
-	translateAbilityName
+	translateAbilityName,
+	translateSkillName
 } from './character';
 
 // Feature translations
@@ -48,3 +51,14 @@ export {
 	descriptionTranslations,
 	translateDescription
 } from './descriptions';
+
+// Tool translations
+export {
+	musicalInstruments,
+	artisansTools,
+	otherTools,
+	allTools,
+	translateToolName,
+	getToolDescription
+} from './tools';
+

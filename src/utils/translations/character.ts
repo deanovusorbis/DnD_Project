@@ -144,6 +144,50 @@ export const abilityNames: Record<string, string> = {
 	'CHA': 'Karizma'
 };
 
+// Skill Names
+export const skillNames: Record<string, string> = {
+	'acrobatics': 'Akrobasi',
+	'animal_handling': 'Hayvan Terbiyesi',
+	'arcana': 'Büyü İlmi',
+	'athletics': 'Atletizm',
+	'deception': 'Aldatma',
+	'history': 'Tarih',
+	'insight': 'Sezgi',
+	'intimidation': 'Gözdağı',
+	'investigation': 'Soruşturma',
+	'medicine': 'Tıp',
+	'nature': 'Doğa',
+	'perception': 'Algı',
+	'performance': 'Performans',
+	'persuasion': 'İkna',
+	'religion': 'Din',
+	'sleight_of_hand': 'El Çabukluğu',
+	'stealth': 'Gizlilik',
+	'survival': 'Hayatta Kalma'
+};
+
+// Skill Descriptions (Turkish)
+export const skillDescriptions: Record<string, string> = {
+	'acrobatics': 'Zor durumlarda dengede kal veya akrobatik hareketler yap.',
+	'animal_handling': 'Bir hayvanı sakinleştir, eğit veya belirli bir şekilde davranmasını sağla.',
+	'arcana': 'Büyüler, sihirli eşyalar ve varoluş düzlemleri hakkında bilgi hatırla.',
+	'athletics': 'Normalden daha uzağa atla, dalgalı suda yüz veya bir şeyi kır.',
+	'deception': 'İkna edici bir yalan söyle veya kılık değiştir.',
+	'history': 'Tarihi olaylar, insanlar, uluslar ve kültürler hakkında bilgi hatırla.',
+	'insight': 'Bir kişinin ruh halini ve niyetlerini anla.',
+	'intimidation': 'Birini istediğini yapmaya zorla veya korkut.',
+	'investigation': 'Kitaplarda belirsiz bilgiler bul veya bir şeyin nasıl çalıştığını çöz.',
+	'medicine': 'Bir hastalığı teşhis et veya yakın zamanda öldürülmüş birinin nedenini belirle.',
+	'nature': 'Arazi, bitkiler, hayvanlar ve hava durumu hakkında bilgi hatırla.',
+	'perception': 'Duyularını kullanarak gözden kaçması kolay bir şeyi fark et.',
+	'performance': 'Oyunculuk yap, hikaye anlat, müzik çal veya dans et.',
+	'persuasion': 'Birini dürüstçe ve nezaketle bir şeye ikna et.',
+	'religion': 'Tanrılar, dini ritüeller ve kutsal semboller hakkında bilgi hatırla.',
+	'sleight_of_hand': 'Cep çal, el büyüklüğünde bir nesneyi gizle veya hokkabazlık yap.',
+	'stealth': 'Sessizce hareket ederek ve saklanarak fark edilmekten kaç.',
+	'survival': 'İzleri takip et, yiyecek topla, patika bul veya doğal tehlikelerden kaçın.'
+};
+
 // Helper Functions
 export function translateSpeciesName(name: string): string {
 	return speciesNames[name] || name;
@@ -163,4 +207,8 @@ export function translateSubclassName(name: string): string {
 
 export function translateAbilityName(name: string): string {
 	return abilityNames[name] || name;
+}
+
+export function translateSkillName(name: string): string {
+	return skillNames[name] || name;
 }

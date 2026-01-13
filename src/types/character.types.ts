@@ -249,7 +249,7 @@ export interface Character extends Actor {
 // ============================================================================
 
 export interface CharacterCreationState {
-	step: 'species' | 'class' | 'abilities' | 'background' | 'equipment' | 'details' | 'review';
+	step: 'species' | 'class' | 'background' | 'abilities' | 'proficiencies' | 'equipment' | 'details' | 'review';
 
 	// Selected options
 	selectedSpecies?: string;
@@ -269,8 +269,8 @@ export interface CharacterCreationState {
 
 	// Choices made
 	skillChoices?: SkillName[];
-	languageChoices?: string[];
 	toolChoices?: string[];
+	languageChoices?: string[];
 	equipmentChoices?: Record<string, number>;
 	startingGold?: number;
 
