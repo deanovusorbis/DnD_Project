@@ -1,0 +1,84 @@
+{
+	"id": "basics-abilities",
+	"category": "basics",
+	"name": "Yetenek Puanları",
+	"icon": "📊",
+	"difficulty": "beginner",
+	"description": "Karakterini tanımlayan 6 temel özellik nedir? STR, DEX, CON... Hangi durumda hangisi kullanılır?",
+	"relatedDataId": "abilities",
+	"scenario": {
+		"title": "Güç mü, Zeka mı?",
+		"description": "Lucrea ile zihinsel bir zindana giriyorsun. Karşına çıkan her engel, farklı bir yeteneğini test edecek.",
+		"estimatedTime": 12,
+		"learningObjectives": [
+			"6 Temel Yeteneği (Ability Scores) öğrenmek",
+			"Fiziksel ve Zihinsel özellikleri ayırt etmek",
+			"Modifier (Düzenleyici) mantığını kavramak"
+		],
+		"steps": [
+			{
+				"id": "intro",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "talking",
+				"content": "Hoş geldin! Bugün karakterinin 'iskeletini' oluşturan sayıları konuşacağız: **Yetenek Puanları (Ability Scores)**.\n\nHer karakterin 6 temel özelliği vardır. Bunlar senin ne kadar güçlü, ne kadar zeki veya ne kadar dayanıklı olduğunu belirler.",
+				"nextStep": "str-dex-con"
+			},
+			{
+				"id": "str-dex-con",
+				"type": "info",
+				"content": "💪 **Fiziksel Özellikler**\n\n1.  **Güç (Strength - STR):** Kas gücü. Balta savurmak, kapı kırmak, tırmanmak.\n2.  **Çeviklik (Dexterity - DEX):** Refleksler ve denge. Ok atmak, gizlenmek, ipte yürümek.\n3.  **Dayanıklılık (Constitution - CON):** Sağlık ve direnç. Zehire dayanmak, yorulmadan koşmak.",
+				"nextStep": "int-wis-cha"
+			},
+			{
+				"id": "int-wis-cha",
+				"type": "info",
+				"content": "🧠 **Zihinsel Özellikler**\n\n4.  **Zeka (Intelligence - INT):** Kitabi bilgi ve hafıza. Büyü araştırmak, tarih bilmek.\n5.  **Bilgelik (Wisdom - WIS):** Sezgi ve farkındalık. Yalanı anlamak, iz sürmek.\n6.  **Karizma (Charisma - CHA):** Kişilik gücü. İkna etmek, korkutmak, liderlik etmek.",
+				"nextStep": "challenge-1"
+			},
+			{
+				"id": "challenge-1",
+				"type": "challenge",
+				"content": "🚧 **Senaryo**: Yolunda devasa bir kaya parçası var. Onu yerinden oynatman gerekiyor.\n\nHangi yeteneğini kullanırsın?",
+				"choices": [
+					{
+						"id": "use-str",
+						"text": "💪 GÜÇ (Strength) ile itmek",
+						"nextStep": "success-str",
+						"feedback": "Doğru! Saf kas gücü gerektiren işler için STR kullanılır."
+					},
+					{
+						"id": "use-cha",
+						"text": "💬 KARİZMA (Charisma) ile kayaya bağırmak",
+						"nextStep": "fail-cha",
+						"feedback": "Kaya seni dinlemiyor... Cansız nesneleri ikna edemezsin!"
+					}
+				]
+			},
+			{
+				"id": "success-str",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "happy",
+				"content": "Harika! Kayayı kenara ittin. Fiziksel gücün yerinde.\n\nPeki ya karmaşık bir şifreyi çözmen gerekseydi? O zaman **Zeka (Intelligence)** kullanırdın.",
+				"nextStep": "conclusion"
+			},
+			{
+				"id": "fail-cha",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "giggle",
+				"content": "Hahaha! Deneme güzeldi ama kayalar pek konuşkan değildir. Bu tür fiziksel engeller için **Güç (Strength)** kullanmalısın.",
+				"nextStep": "conclusion"
+			},
+			{
+				"id": "conclusion",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "neutral",
+				"content": "Unutma, her sınıfın önem verdiği yetenekler farklıdır:\n\n*   **Savaşçılar** Güç sever.\n*   **Hırsızlar** Çeviklik sever.\n*   **Büyücüler** Zeka sever.\n\nKendi kahramanını yaratırken buna dikkat et!",
+				"nextStep": "end"
+			}
+		]
+	}
+}

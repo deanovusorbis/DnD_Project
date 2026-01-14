@@ -1,0 +1,119 @@
+{
+	"id": "basics-saving-throws",
+	"category": "basics",
+	"name": "Kurtarma Zarları",
+	"icon": "🛡️",
+	"difficulty": "intermediate",
+	"description": "Tehlike sana geldiğinde ne yaparsın? Saving Throw (Kurtarma Zarı) mekaniğini öğren.",
+	"relatedDataId": "saving-throws",
+	"scenario": {
+		"title": "Ejderha Nefesi",
+		"description": "Bir ejderhanın inine giriyorsun. Alevlerden, tuzaklardan ve zehirlerden kaçmak için reflekslerine ve dayanıklılığına güven.",
+		"estimatedTime": 12,
+		"learningObjectives": [
+			"Saving Throw nedir ve ne zaman atılır?",
+			"Ability Check ile farkı nedir?",
+			"DC (Zorluk Derecesi) kavramı"
+		],
+		"steps": [
+			{
+				"id": "intro",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "scared",
+				"content": "Dikkat et! Burası tuzaklarla dolu. \n\nŞimdiye kadar sen dünyaya etki ettin (Saldırdın, araştırdın). Ama bazen dünya SANA etki eder. İşte o zaman **Saving Throw (Kurtarma Zarı)** atarsın!",
+				"nextStep": "dex-save"
+			},
+			{
+				"id": "dex-save",
+				"type": "info",
+				"content": "🤸 **Dexterity (Çeviklik) Saving Throw**\n\nEn sık kullanılan kurtarma zarıdır.\n*   Bir ateş topundan kaçmak 🔥\n*   Yıkılan tavandan sıyrılmak 🏚️\n*   Ejderha nefesinden sakınmak 🐉\n\nBaşarılı olursan genellikle **YARI hasar** alırsın.",
+				"nextStep": "con-save"
+			},
+			{
+				"id": "con-save",
+				"type": "info",
+				"content": "🤢 **Constitution (Dayanıklılık) Saving Throw**\n\nVücudunun direncini ölçer.\n*   Zehre direnmek ☠️\n*   Soğuğa dayanmak ❄️\n*   Hastalıktan korunmak 🦠",
+				"nextStep": "challenge-trap"
+			},
+			{
+				"id": "challenge-trap",
+				"type": "challenge",
+				"content": "⚠️ **Senaryo**: Yürürken bir ipe takıldın ve tavandan üzerine asit dökülüyor!\n\nNe yaparsın?",
+				"choices": [
+					{
+						"id": "dodge",
+						"text": "🤸 Hemen kenara sıçra! (DEX Save)",
+						"nextStep": "success-dex",
+						"feedback": "Hızlı reflekslerin seni kurtardı! Sadece kıyafetin biraz yandı."
+					},
+					{
+						"id": "resist",
+						"text": "💪 Olduğun yerde dur ve dayan! (CON Save)",
+						"nextStep": "fail-con",
+						"feedback": "Asit tenini yaktı! Asit fiziksel bir şeydir, dayanmak yerine kaçmalıydın."
+					}
+				]
+			},
+			{
+				"id": "success-dex",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "happy",
+				"content": "Harika refleksler! Dexterity Save yaptın ve tam hasar almaktan kurtuldun. Unutma: Ani fiziksel tehlikelerden kaçmak için DEX kullanılır.",
+				"nextStep": "challenge-poison"
+			},
+			{
+				"id": "fail-con",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "worried",
+				"content": "Aah! Canın yandı. Asit, ateş veya düşen kayalar gibi şeylerde 'dayanmak' değil, 'kaçmak' (DEX) gerekir.",
+				"nextStep": "challenge-poison"
+			},
+			{
+				"id": "challenge-poison",
+				"type": "challenge",
+				"content": "🕷️ **Senaryo**: Odanın ilerisinde yeşil bir gaz bulutu var. İçinden geçmek zorundasın. Nefesini tutuyorsun ama gaz derine işliyor.\n\nBu ne tür bir kurtarma zarıdır?",
+				"choices": [
+					{
+						"id": "make-con-save",
+						"text": "🤢 Bünyeni zorla ve dayan (CON Save)",
+						"nextStep": "success-con",
+						"feedback": "Kesinlikle! Zehir, hastalık ve gazlar için bünye (CON) önemlidir."
+					},
+					{
+						"id": "make-str-save",
+						"text": "💪 Gazı ellerinle it (STR Save)",
+						"nextStep": "fail-str",
+						"feedback": "Gazı yumruklayamazsın! :)"
+					}
+				]
+			},
+			{
+				"id": "success-con",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "neutral",
+				"content": "Öksürerek de olsa geçtin. Bünyen (Constitution) sağlammış! Büyücüler bile konsantrasyonlarını korumak için CON Save atarlar, unutma.",
+				"nextStep": "end"
+			},
+			{
+				"id": "fail-str",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "giggle",
+				"content": "Gaz senin kaslarını umursamadı ve ciğerlerine doldu! Zehir ve hastalıklara karşı her zaman CON kullanılır.",
+				"nextStep": "end"
+			},
+			{
+				"id": "end",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "neutral",
+				"content": "Tehlike her an gelebilir. Reflekslerini (DEX) ve Bünyeni (CON) sağlam tut!",
+				"nextStep": "end"
+			}
+		]
+	}
+}

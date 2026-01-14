@@ -1,0 +1,84 @@
+{
+	"id": "basics-combat",
+	"category": "basics",
+	"name": "Savaş Temelleri",
+	"icon": "⚔️",
+	"difficulty": "intermediate",
+	"description": "Savaş başladığında ne yapabilirsin? Aksiyon, Bonus Aksiyon ve Hareket ekonomisini öğren.",
+	"relatedDataId": "combat",
+	"scenario": {
+		"title": "İlk Kan",
+		"description": "Bir antrenman kuklasına karşı savaş tekniklerini sına. Tur tabanlı savaş sistemini öğren.",
+		"estimatedTime": 15,
+		"learningObjectives": [
+			"Aksiyon (Action) türlerini öğrenmek",
+			"Bonus Aksiyon kavramını anlamak",
+			"Tur (Turn) ve Round farkını bilmek"
+		],
+		"steps": [
+			{
+				"id": "intro",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "serious",
+				"content": "D&D'de savaşlar kaotik değil, sırayladır. Herkesin bir **Turu (Turn)** vardır.\n\nSenin turunda yapabileceğin 3 temel şey var:\n1.  **Hareket (Move):** Yürümek, koşmak.\n2.  **Aksiyon (Action):** Ana eylem (Saldırmak, Büyü yapmak).\n3.  **Bonus Aksiyon:** Varsa, küçük/hızlı eylem.",
+				"nextStep": "action-expl"
+			},
+			{
+				"id": "action-expl",
+				"type": "info",
+				"content": "⚔️ **Aksiyon (Action)**\n\nTurunun en önemli parçasıdır. Şunları yapabilirsin:\n*   **Attack:** Silahla saldırmak.\n*   **Cast a Spell:** Büyü yapmak (genellikle).\n*   **Dash:** İki katı hızla koşmak.\n*   **Hide:** Gizlenmeye çalışmak.",
+				"nextStep": "bonus-expl"
+			},
+			{
+				"id": "bonus-expl",
+				"type": "info",
+				"content": "⚡ **Bonus Aksiyon**\n\nHer turda en fazla 1 tane kullanabilirsin, AMA sadece yeteneğin varsa!\n\nÖrneğin:\n*   Bir Hırsız (Rogue) 'Cunning Action' ile bonus aksiyon olarak Gizlenebilir.\n*   İki elinde silah varsa, ikincisiyle bonus aksiyon olarak vurabilirsin.",
+				"nextStep": "combat-sim"
+			},
+			{
+				"id": "combat-sim",
+				"type": "challenge",
+				"content": "♟️ **Senaryo**: Karşında bir Goblin var. Elinde kılıcın var.\n\nBu turda ne yaparsın?",
+				"choices": [
+					{
+						"id": "attack-move",
+						"text": "⚔️ Goblin'in yanına git (Hareket) ve Saldır (Aksiyon)",
+						"nextStep": "success",
+						"feedback": "Mükemmel! Hareketini ve Aksiyonunu verimli kullandın."
+					},
+					{
+						"id": "double-attack",
+						"text": "⚔️ İki kere kılıçla tam güç saldır!",
+						"nextStep": "fail",
+						"feedback": "Dur bakalım! 5. seviye bir Savaşçı değilsen, turda genellikle sadece 1 standart aksiyonun vardır."
+					}
+				]
+			},
+			{
+				"id": "success",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "happy",
+				"content": "Çok güzel! Yanına gittin ve vurdun. Turun bitti.\n\nŞimdi sıra Goblinde... O da sana vuracak, sonra sıra tekrar sana gelecek. İşte buna **Round** (Tur Döngüsü) diyoruz.",
+				"nextStep": "end"
+			},
+			{
+				"id": "fail",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "thinking",
+				"content": "Heyecanını anlıyorum ama kurallar var! Standart bir turda sadece 1 **Aksiyon** hakkın var. İki kere saldırmak için özel yeteneklere ihtiyacın olacak.",
+				"nextStep": "end"
+			},
+			{
+				"id": "end",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "neutral",
+				"content": "Savaşta sakin kal ve kaynaklarını (Aksiyonlarını) akıllıca yönet. Zafer strateji kuranındır!\n\nHadi şimdi diğer eğitimlere dönelim.",
+				"nextStep": "end"
+			}
+		]
+	}
+}

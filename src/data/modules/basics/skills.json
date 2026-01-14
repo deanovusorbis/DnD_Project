@@ -1,0 +1,98 @@
+{
+	"id": "basics-skills",
+	"category": "basics",
+	"name": "Beceriler (Skills)",
+	"icon": "🕵️",
+	"difficulty": "beginner",
+	"description": "Algı, İkna, Gizlilik... Hangi beceri ne işe yarar? Proficiency (Ustalık) bonusu nedir?",
+	"relatedDataId": "skills",
+	"scenario": {
+		"title": "Gizli Geçit",
+		"description": "Eski bir kütüphanede gizli bir geçit arıyorsun. Doğru beceriyi kullanarak kapıyı bulabilir misin?",
+		"estimatedTime": 12,
+		"learningObjectives": [
+			"Ability Check vs Skill Check farkını anlamak",
+			"Proficiency (Ustalık) bonusunun etkisini görmek",
+			"Temel becerileri (Perception, Investigation, Stealth) tanımak"
+		],
+		"steps": [
+			{
+				"id": "intro",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "mysterious",
+				"content": "Şşşt! Sessiz ol. Bu kütüphanede gizli bir geçit olduğu söyleniyor.\n\nSadece güçlü veya zeki olmak yetmez, doğru **Beceriye (Skill)** sahip olmalısın.",
+				"nextStep": "proficiency-expl"
+			},
+			{
+				"id": "proficiency-expl",
+				"type": "info",
+				"content": "🎓 **Proficiency (Ustalık)**\n\nHer karakter bazı konularda eğitimlidir. Buna 'Proficiency' denir.\n\nEğer bir beceride ustaysan (Proficient), zara **Proficiency Bonusunu** (+2 başlar) eklersin.\n\n*   **Örnek:** 'Stealth' (Gizlilik) yeteneğinde ustaysan, saklanırken daha yüksek zar atarsın!",
+				"nextStep": "skill-types"
+			},
+			{
+				"id": "skill-types",
+				"type": "info",
+				"content": "🔍 **Benzer Ama Farklı Beceriler**\n\n*   **Perception (Algı-WIS):** Etrafına bakmak, sesleri dinlemek, kokuyu fark etmek. (Duyu)\n*   **Investigation (Araştırma-INT):** Bir şeyi detaylı incelemek, nasıl çalıştığını çözmek. (Mantık)\n*   **Insight (Sezgi-WIS):** Birinin yalan söyleyip söylemediğini anlamak. (Sosyal)",
+				"nextStep": "challenge"
+			},
+			{
+				"id": "challenge",
+				"type": "challenge",
+				"content": "📚 **Senaryo**: Önünde devasa bir kitaplık var. Gizli kapının burada olduğunu biliyorsun ama kolu bulamıyorsun.\n\nNe yaparsın?",
+				"choices": [
+					{
+						"id": "investigate",
+						"text": "🔍 Kitapları tek tek incele ve mekanizmayı ara (Investigation)",
+						"nextStep": "success",
+						"feedback": "Mantıklı! Kitapların arkasındaki gizli kolu buldun. Zeka işi!"
+					},
+					{
+						"id": "perception",
+						"text": "👁️ Rüzgar esintisini hissetmeye çalış (Perception)",
+						"nextStep": "success-alt",
+						"feedback": "Harika! Hava akımının geldiği çatlağı fark ettin. Duyuların çok keskin!"
+					},
+					{
+						"id": "athletics",
+						"text": "💪 Kitaplığı var gücünle it! (Athletics)",
+						"nextStep": "fail",
+						"feedback": "Kitaplık devrildi ve çok ses çıktı! Gizli geçit açılmadı. Her şey kaba kuvvetle çözülmez."
+					}
+				]
+			},
+			{
+				"id": "success",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "happy",
+				"content": "Mekanizmayı çözdün ve kapı sessizce açıldı. İşte **Araştırma (Investigation)** becerisi budur!\n\nDedektiflik işleri için birebirdir.",
+				"nextStep": "end"
+			},
+			{
+				"id": "success-alt",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "happy",
+				"content": "Hava akımını takip ettin ve doğru kitabı çektin. **Algı (Perception)** en sık kullanılan beceridir, gözünü dört aç!",
+				"nextStep": "end"
+			},
+			{
+				"id": "fail",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "scared",
+				"content": "Gürültüye muhafızlar geldi! Bazen kaba kuvvet işe yaramaz. Bir sonraki sefere zihnini kullan.",
+				"nextStep": "end"
+			},
+			{
+				"id": "end",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "neutral",
+				"content": "Karakterini yaratırken hangi becerilerde **Proficient** olacağını iyi seç. Onlar senin süper güçlerin olacak!",
+				"nextStep": "end"
+			}
+		]
+	}
+}

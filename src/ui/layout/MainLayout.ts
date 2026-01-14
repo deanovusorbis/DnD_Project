@@ -26,7 +26,7 @@ export class MainLayout {
 				<nav class="app-nav">
 					<button class="nav-btn" data-target="home">ANA SAYFA</button>
 					<button class="nav-btn" data-target="list">Karakterler</button>
-					<button class="nav-btn" data-target="combat">Savaş</button>
+					<button class="nav-btn" data-target="modules">Eğitim Modülleri</button>
 					<button class="nav-btn" data-target="profile">Profil</button>
 				</nav>
 				<div class="header-right">

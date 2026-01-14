@@ -1,0 +1,90 @@
+{
+	"id": "basics-equipment",
+	"category": "basics",
+	"name": "Ekipman ve AC",
+	"icon": "🛡️",
+	"difficulty": "beginner",
+	"description": "Zırhın seni nasıl korur? AC (Zırh Sınıfı) nedir? Silahlar nasıl çalışır?",
+	"relatedDataId": "equipment",
+	"scenario": {
+		"title": "Demircinin Atölyesi",
+		"description": "Savaşa hazırlan! Zırhlarını kuşan ve silahını seç. AC mantığını öğren.",
+		"estimatedTime": 10,
+		"learningObjectives": [
+			"AC (Armor Class) nedir?",
+			"Hafif vs Ağır Zırh farkı",
+			"Silah özellikleri (Finesse, Heavy, Two-Handed)"
+		],
+		"steps": [
+			{
+				"id": "intro",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "happy",
+				"content": "Bir maceracı ekipmanı olmadan hiçtir! Bugün en önemli sayılardan birini öğreneceğiz: **AC (Armor Class / Zırh Sınıfı)**.\n\nAC, düşmanın sana vurmasının ne kadar zor olduğunu belirler.",
+				"nextStep": "ac-expl"
+			},
+			{
+				"id": "ac-expl",
+				"type": "info",
+				"content": "🛡️ **Armor Class (AC)**\n\n*   **Hedef Sayı:** Düşmanın saldırı zarı SENİN AC'ne eşit veya yüksek gelirse, hasar alırsın.\n*   **AC 10:** Zırhsız, sıradan bir insan.\n*   **AC 15:** Deri zırh giymiş çevik bir savaşçı.\n*   **AC 18+:** Plaka zırh ve kalkanlı bir şövalye (Tank).",
+				"nextStep": "armor-types"
+			},
+			{
+				"id": "armor-types",
+				"type": "info",
+				"content": "👕 **Zırh Türleri**\n\n1.  **Light Armor (Deri):** Hafiftir. DEX (Çeviklik) bonusunun hepsini AC'ye eklersin.\n2.  **Heavy Armor (Plaka):** Çok korunaklıdır ama ağırdır. DEX bonusun eklenmez. Yavaşlatabilir.",
+				"nextStep": "challenge-armor"
+			},
+			{
+				"id": "challenge-armor",
+				"type": "challenge",
+				"content": "🥋 **Senaryo**: Sen çok çevik bir Hırsızsın (DEX skorun çok yüksek). Hangi zırhı giymelisin?",
+				"choices": [
+					{
+						"id": "light-armor",
+						"text": "🧥 Light Armor (Hafif Zırh)",
+						"nextStep": "success-light",
+						"feedback": "Doğru! Yüksek DEX bonusunu kullanarak çok yüksek AC elde edersin."
+					},
+					{
+						"id": "heavy-armor",
+						"text": "🛡️ Heavy Armor (Ağır Zırh)",
+						"nextStep": "fail-heavy",
+						"feedback": "Yanlış seçim! Ağır zırh DEX bonusunu yok sayar. Ayrıca hırsızlar genelde ağır zırh giyemez!"
+					}
+				]
+			},
+			{
+				"id": "success-light",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "happy",
+				"content": "Mükemmel seçim! Çevikliğin sayesinde darbelerden kaçarak korunuyorsun. İlle de demir yığınına girmene gerek yok.",
+				"nextStep": "weapon-expl"
+			},
+			{
+				"id": "fail-heavy",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "thinking",
+				"content": "Ağır zırh seni yavaşlattı ve gizliliğini bozdu. Çevik karakterler hafif zırh ile daha iyi korunur.",
+				"nextStep": "weapon-expl"
+			},
+			{
+				"id": "weapon-expl",
+				"type": "info",
+				"content": "⚔️ **Silah Özellikleri**\n\nHer silahın 'etiketleri' vardır:\n*   **Finesse:** İster STR, ister DEX ile kullanabilirsin (Örn: Hançer).\n*   **Heavy:** Küçük ırklar (Halfling) kullanırken zorlanır.\n*   **Two-Handed:** Kullanmak için iki elin de boş olmalı (Kalkan kullanamazsın).",
+				"nextStep": "end"
+			},
+			{
+				"id": "end",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "excited",
+				"content": "Doğru zırhı giy ve silahını tanı. Unutma: En yüksek AC değil, karakterine en uygun AC en iyisidir!",
+				"nextStep": "end"
+			}
+		]
+	}
+}

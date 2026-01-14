@@ -12,22 +12,25 @@ import { MainLayout } from './ui/layout/MainLayout.ts';
 // View Imports
 import { CharacterBuilderView } from './ui/views/CharacterBuilderView.ts';
 import { HomeView } from './ui/views/HomeView.ts';
-import { CombatView } from './ui/views/CombatView.ts';
+import { ModulesView } from './ui/views/ModulesView.ts';
+import { ModulePlayView } from './ui/views/ModulePlayView.ts';
 import { TraitsView } from './ui/views/TraitsView.ts';
 import { CharacterListView } from './ui/views/CharacterListView.ts';
 import { CharacterSheetView } from './ui/views/CharacterSheetView.ts';
 import { ProfileView } from './ui/views/ProfileView.ts';
 import { CharacterManager } from './engine/character/character-manager.ts';
+import { moduleLoader } from './data/modules/module-loader.ts';
 
 class App {
   private layout: MainLayout;
   private engine: GameEngine;
-  private currentView: 'home' | 'builder' | 'combat' | 'list' | 'sheet' | 'profile' = 'home';
+  private currentView: 'home' | 'builder' | 'modules' | 'module-play' | 'list' | 'sheet' | 'profile' = 'home';
 
   private views: {
     home: HomeView;
     builder: CharacterBuilderView;
-    combat: CombatView;
+    modules: ModulesView;
+    modulePlay: ModulePlayView | null;
     traits: TraitsView;
     list: CharacterListView;
     sheet: CharacterSheetView | null;
@@ -59,7 +62,15 @@ class App {
 
       builder: new CharacterBuilderView(mainElement, (view) => this.navigateTo(view as any)),
 
-      combat: new CombatView(mainElement, this.engine),
+      modules: new ModulesView(mainElement, (view, moduleId) => {
+        if (view === 'module-play' && moduleId) {
+          this.playModule(moduleId);
+        } else {
+          this.navigateTo(view as any);
+        }
+      }),
+
+      modulePlay: null, // Created dynamically when needed
 
       traits: new TraitsView(traitsElement),
 
@@ -113,16 +124,22 @@ class App {
     });
   }
 
-  private navigateTo(view: 'home' | 'builder' | 'combat' | 'list' | 'sheet' | 'profile'): void {
+  private navigateTo(view: 'home' | 'builder' | 'modules' | 'module-play' | 'list' | 'sheet' | 'profile'): void {
     this.currentView = view;
     // Clear main element (handled by views mostly, but good practice if needed)
+    const mainElement = this.layout.getMain();
+    if (mainElement) {
+      mainElement.style.cssText = '';
+    }
 
     if (view === 'home') {
       this.views.home.render();
     } else if (view === 'builder') {
       this.views.builder.render();
-    } else if (view === 'combat') {
-      this.views.combat.render();
+    } else if (view === 'modules') {
+      this.views.modules.render();
+    } else if (view === 'module-play' && this.views.modulePlay) {
+      this.views.modulePlay.render();
     } else if (view === 'list') {
       this.views.list.render();
     } else if (view === 'sheet' && this.views.sheet) {
@@ -176,6 +193,29 @@ class App {
       // ... clear other fields if needed
     });
     this.navigateTo('builder');
+  }
+
+  private playModule(moduleId: string): void {
+    const module = moduleLoader.getModule(moduleId);
+    if (module) {
+      const mainElement = this.layout.getMain();
+      if (mainElement) {
+        this.views.modulePlay = new ModulePlayView(
+          mainElement,
+          module,
+          () => {
+            // On complete
+            useGameStore.getState().addNotification('Modül tamamlandı! 🎉', 'success');
+            this.navigateTo('modules');
+          },
+          () => {
+            // On exit
+            this.navigateTo('modules');
+          }
+        );
+        this.navigateTo('module-play');
+      }
+    }
   }
 }
 

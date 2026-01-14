@@ -4,16 +4,16 @@
  */
 
 export class HomeView {
-	private container: HTMLElement;
-	private onNavigate: (view: string) => void;
+  private container: HTMLElement;
+  private onNavigate: (view: string) => void;
 
-	constructor(container: HTMLElement, onNavigate: (view: string) => void) {
-		this.container = container;
-		this.onNavigate = onNavigate;
-	}
+  constructor(container: HTMLElement, onNavigate: (view: string) => void) {
+    this.container = container;
+    this.onNavigate = onNavigate;
+  }
 
-	public render(): void {
-		this.container.innerHTML = `
+  public render(): void {
+    this.container.innerHTML = `
       <div class="home-view" style="height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
         
         <div class="hero-section" style="margin-bottom: 3rem; animation: fadeIn 1s ease-out;">
@@ -59,8 +59,8 @@ export class HomeView {
             <p style="margin: 0; font-size: 0.9rem; color: var(--color-text-muted);">Kayıtlı kahramanlarına göz at.</p>
           </button>
 
-          <!-- Card 3: Combat -->
-          <button class="home-card" data-action="combat" style="
+          <!-- Card 3: Learning Modules -->
+          <button class="home-card" data-action="modules" style="
             background: rgba(20, 20, 25, 0.7); 
             border: 1px solid var(--color-border); 
             padding: 2rem; 
@@ -71,41 +71,41 @@ export class HomeView {
             text-align: center;
             display: flex; flex-direction: column; align-items: center; gap: 1rem;
           ">
-            <div style="font-size: 3rem; color: var(--color-accent-red);">🔥</div>
-            <h3 style="margin: 0; color: var(--color-text-heading);">Savaş Simülasyonu</h3>
-            <p style="margin: 0; font-size: 0.9rem; color: var(--color-text-muted);">Taktiksel yeteneklerini test et.</p>
+            <div style="font-size: 3rem; color: #fbbf24;">🎓</div>
+            <h3 style="margin: 0; color: var(--color-text-heading);">Eğitim Modülleri</h3>
+            <p style="margin: 0; font-size: 0.9rem; color: var(--color-text-muted);">D&D dünyasını keşfet ve öğren.</p>
           </button>
 
         </div>
       </div>
     `;
 
-		// Add Hover Effects via JS (or improved CSS later)
-		const cards = this.container.querySelectorAll('.home-card');
-		cards.forEach(card => {
-			card.addEventListener('mouseenter', () => {
-				(card as HTMLElement).style.transform = 'translateY(-10px)';
-				(card as HTMLElement).style.borderColor = 'var(--color-accent-gold)';
-				(card as HTMLElement).style.boxShadow = '0 0 30px rgba(197, 160, 89, 0.2)';
-			});
-			card.addEventListener('mouseleave', () => {
-				(card as HTMLElement).style.transform = 'translateY(0)';
-				(card as HTMLElement).style.borderColor = 'var(--color-border)';
-				(card as HTMLElement).style.boxShadow = 'none';
-			});
-			card.addEventListener('click', () => {
-				const action = (card as HTMLElement).getAttribute('data-action');
-				if (action === 'create') {
-					// Special case: Create character logic needs to be triggered
-					// Ideally we pass a 'create' action, but 'builder' view expects state reset.
-					// For now, let's navigate to 'builder' but we might need a distinct callback.
-					// The App class handles 'create' via a separate method usually.
-					// Hack: Navigate to builder directly for UI demo, standard flow handles reset.
-					this.onNavigate('builder');
-				} else if (action) {
-					this.onNavigate(action);
-				}
-			});
-		});
-	}
+    // Add Hover Effects via JS (or improved CSS later)
+    const cards = this.container.querySelectorAll('.home-card');
+    cards.forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        (card as HTMLElement).style.transform = 'translateY(-10px)';
+        (card as HTMLElement).style.borderColor = 'var(--color-accent-gold)';
+        (card as HTMLElement).style.boxShadow = '0 0 30px rgba(197, 160, 89, 0.2)';
+      });
+      card.addEventListener('mouseleave', () => {
+        (card as HTMLElement).style.transform = 'translateY(0)';
+        (card as HTMLElement).style.borderColor = 'var(--color-border)';
+        (card as HTMLElement).style.boxShadow = 'none';
+      });
+      card.addEventListener('click', () => {
+        const action = (card as HTMLElement).getAttribute('data-action');
+        if (action === 'create') {
+          // Special case: Create character logic needs to be triggered
+          // Ideally we pass a 'create' action, but 'builder' view expects state reset.
+          // For now, let's navigate to 'builder' but we might need a distinct callback.
+          // The App class handles 'create' via a separate method usually.
+          // Hack: Navigate to builder directly for UI demo, standard flow handles reset.
+          this.onNavigate('builder');
+        } else if (action) {
+          this.onNavigate(action);
+        }
+      });
+    });
+  }
 }

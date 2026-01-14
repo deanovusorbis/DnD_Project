@@ -1,0 +1,60 @@
+/* Collapsed State Logic */
+.rule-hint.collapsed .rule-hint-body {
+	display: none;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes slideUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideDown {
+	from {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* MODULE SPECIFIC STYLES */
+.module-tab {
+	transition: all 0.3s ease;
+}
+
+.module-tab:hover {
+	color: var(--color-accent-gold) !important;
+}
+
+.choice-button {
+	animation: slideUp 0.3s ease-out;
+}
+
+.module-step {
+	animation: fadeIn 0.5s ease-out;
+}
+
+.view-header {
+	animation: slideDown 0.4s ease-out;
+}

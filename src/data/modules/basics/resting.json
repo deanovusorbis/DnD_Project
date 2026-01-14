@@ -1,0 +1,84 @@
+{
+	"id": "basics-resting",
+	"category": "basics",
+	"name": "Dinlenme ve Şifa",
+	"icon": "💤",
+	"difficulty": "beginner",
+	"description": "Macera yorucudur. Kısa (Short) ve Uzun (Long) dinlenme arasındaki farkı öğren.",
+	"relatedDataId": "resting",
+	"scenario": {
+		"title": "Kamp Ateşi",
+		"description": "Zorlu bir savaştan sonra yaralarını sarmanın vakti geldi. Nasıl iyileşeceğini öğren.",
+		"estimatedTime": 10,
+		"learningObjectives": [
+			"Short Rest ve Hit Dice kullanımını öğrenmek",
+			"Long Rest ile tam iyileşmeyi anlamak",
+			"Büyü ve yeteneklerin yenilenmesi"
+		],
+		"steps": [
+			{
+				"id": "intro",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "neutral",
+				"content": "Phew! O savaş zordu, değil mi? Yaralandın ve büyülerim bitti diyorsun.\n\nMerak etme, her maceracı dinlenmeye ihtiyaç duyar. İki tür dinlenme vardır: **Kısa (Short)** ve **Uzun (Long)**.",
+				"nextStep": "short-rest"
+			},
+			{
+				"id": "short-rest",
+				"type": "info",
+				"content": "🥪 **Kısa Dinlenme (Short Rest)**\n\n*   En az 1 saatlik moladır.\n*   Yaralarını sarmak için **Hit Dice (Can Zarı)** harcarsın.\n*   Büyücülerin (Warlock) büyüleri ve Savaşçıların (Fighter) bazı yetenekleri yenilenir.",
+				"nextStep": "long-rest"
+			},
+			{
+				"id": "long-rest",
+				"type": "info",
+				"content": "⛺ **Uzun Dinlenme (Long Rest)**\n\n*   En az 8 saatlik uyku ve hafif aktivitedir.\n*   **Canın (HP) tamamen dolar.**\n*   **Harcanan Hit Dice'ların yarısı geri gelir.**\n*   **Tüm Büyü Slotların (ve çoğu yeteneğin) yenilenir.**\n*   Günde sadece 1 kez yapılabilir!",
+				"nextStep": "challenge"
+			},
+			{
+				"id": "challenge",
+				"type": "challenge",
+				"content": "🩹 **Senaryo**: Zindanın ortasındasın. Yaralısın (HP: 5/20). Önünde hala odalar var. 8 saat uyumak tehlikeli olabilir.\n\nNe yaparsın?",
+				"choices": [
+					{
+						"id": "take-short",
+						"text": "🥪 Kapıyı kilitle ve 1 saat dinlen (Short Rest)",
+						"nextStep": "success-short",
+						"feedback": "Mantıklı! Hızlıca yaralarını sarıp devam edebilirsin."
+					},
+					{
+						"id": "take-long",
+						"text": "💤 Tulumu ser ve 8 saat uyu (Long Rest)",
+						"nextStep": "fail-long",
+						"feedback": "Zindanın ortasında mı?! Sen uyurken goblinler seni bulabilir! Çok riskli."
+					}
+				]
+			},
+			{
+				"id": "success-short",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "happy",
+				"content": "Birkaç Hit Dice harcadın ve canın 15/20 oldu. Yola devam etmeye hazırsın!\n\nZindan temizlenmeden, güvenli bir oda bulmadan Uzun Dinlenme yapmak tehlikelidir.",
+				"nextStep": "end"
+			},
+			{
+				"id": "fail-long",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "scared",
+				"content": "Uyandığında etrafın sarılmıştı! Zindan temizlenmeden, güvenli bölge oluşturmadan asla uzun uykuya yatma.",
+				"nextStep": "end"
+			},
+			{
+				"id": "end",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "neutral",
+				"content": "Macera, kaynak yönetimidir. Canını, büyülerini ve zamanını iyi yöneten kahramanlar eve sağ döner. 🏠",
+				"nextStep": "end"
+			}
+		]
+	}
+}

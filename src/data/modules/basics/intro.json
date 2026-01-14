@@ -1,0 +1,97 @@
+{
+	"id": "game-intro",
+	"category": "basics",
+	"name": "D&D'ye Giriş",
+	"icon": "🎲",
+	"difficulty": "beginner",
+	"description": "Dungeons & Dragons dünyasına ilk adımını at. Lucrea ile tanış ve oyunun temel mantığını öğren.",
+	"relatedDataId": "intro",
+	"scenario": {
+		"title": "Maceraya Başlangıç",
+		"description": "Her büyük hikaye bir adımla başlar. Bu modülde rehberin Lucrea ile tanışacak ve D&D'nin nasıl bir oyun olduğunu öğreneceksin.",
+		"estimatedTime": 10,
+		"learningObjectives": [
+			"Oyunun temel mantığını kavramak",
+			"Rehberin Lucrea ile tanışmak",
+			"Zar atma mekaniğini öğrenmek",
+			"Rol yapma kavramını anlamak"
+		],
+		"steps": [
+			{
+				"id": "intro",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "happy",
+				"content": "Merhaba genç maceracı! Ben Lucrea, bu diyarlarda gezinen bir cadıyım. 🔮\n\nSeni burada görmek ne güzel! Sanırım sen de kendi efsaneni yazmak, ejderhalarla savaşmak veya gizemli zindanları keşfetmek istiyorsun.\n\nAma önce... hazır mısın? Bu yolculuk cesaret ister!",
+				"nextStep": "explain-dnd"
+			},
+			{
+				"id": "explain-dnd",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "talking",
+				"content": "Dungeons & Dragons, sadece bir oyun değil, anlatılan bir hikayedir. Ve bu hikayenin kahramanı SENSİN.\n\nBen senin rehberin olacağım. Bazen sana ipuçları vereceğim, bazen de kuralları hatırlatacağım.\n\nUnutma, burada 'kaybetmek' diye bir şey yok. Sadece beklenmedik hikaye dönüşleri var!",
+				"nextStep": "intro-choice"
+			},
+			{
+				"id": "intro-choice",
+				"type": "choice",
+				"speaker": "mascot",
+				"emotion": "questioning",
+				"content": "İlk dersimiz şu: Seçimler...\n\nBu dünyada yaptğin her seçim hikayeyi değiştirir. Peki sen nasıl bir kahraman olmak istersin?",
+				"choices": [
+					{
+						"id": "brave",
+						"text": "⚔️ Cesur: Tehlikenin üzerine yürürüm!",
+						"nextStep": "path-brave",
+						"feedback": "Harika bir ruh! Cesaret, kahramanların en büyük silahıdır."
+					},
+					{
+						"id": "clever",
+						"text": "📚 Zeki: Önce düşünür, sonra hareket ederim.",
+						"nextStep": "path-clever",
+						"feedback": "Bilgece... Kas gücü her zaman kazanmaz, ama zeka her kapıyı açar."
+					},
+					{
+						"id": "charming",
+						"text": "💬 Karizmatik: Sözlerim kılıçtan keskindir.",
+						"nextStep": "path-charming",
+						"feedback": "Ooo! Kelimelerle dans eden biri. Bazen bir gülümseme orduları durdurabilir."
+					}
+				]
+			},
+			{
+				"id": "path-brave",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "excited",
+				"content": "Cesaretini sevdim! Belki de Savaşçı (Fighter) veya Barbar (Barbarian) yolu tam sana göredir. Ama acele etme, daha öğrenecek çok şey var.",
+				"nextStep": "end"
+			},
+			{
+				"id": "path-clever",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "wink",
+				"content": "Zeka, büyücülerin (Wizard) ve araştırmacıların en büyük dostudur. Bu dünyada sırlar boldur ve onları çözecek zihinlere ihtiyacımız var.",
+				"nextStep": "end"
+			},
+			{
+				"id": "path-charming",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "happy",
+				"content": "Karizma... Ozanların (Bard) ve Büyücülerin (Sorcerer) gücü. Hikayeni anlatırken herkes seni dinleyecek gibi görünüyor!",
+				"nextStep": "end"
+			},
+			{
+				"id": "end",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "happy",
+				"content": "Harika bir başlangıç yaptık! 🎉\n\nŞimdi, 'Tür Modülleri' sekmesine gidip, bu dünyada kim olabileceğini keşfetmeye ne dersin? İnsanlar, elfler, cüceler... hepsi seni bekliyor!\n\nOrada görüşürüz!",
+				"nextStep": null
+			}
+		]
+	}
+}

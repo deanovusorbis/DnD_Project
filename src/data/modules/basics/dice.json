@@ -1,0 +1,86 @@
+{
+	"id": "basics-dice",
+	"category": "basics",
+	"name": "Zarların Dünyası",
+	"icon": "🎲",
+	"difficulty": "beginner",
+	"description": "D&D sadece d20'den ibaret değildir! Zarları tanı ve ne zaman 'Avantajlı' atacağını öğren.",
+	"relatedDataId": "dice",
+	"scenario": {
+		"title": "Kaderin Zarları",
+		"description": "Lucrea'nın Zar Bahçesi'nde farklı geometrik şekillerin -yani zarların- ne anlama geldiğini keşfet.",
+		"estimatedTime": 10,
+		"learningObjectives": [
+			"d20 sistemini anlamak",
+			"Hasar zarlarını (d4, d6, d8...) tanımak",
+			"Avantaj ve Dezavantaj mekaniğini kavramak"
+		],
+		"steps": [
+			{
+				"id": "intro",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "happy",
+				"content": "Zarlar bizim kaderimizi belirler! Ama hangisi ne işe yarar?\n\nEn önemlisi **d20** (20 yüzlü zar). Neredeyse her şey için bunu atarız:\n*   Saldırırken ⚔️\n*   Bir şeyi başarırken 🤸\n*   Dayanırken 🛡️",
+				"nextStep": "damage-dice"
+			},
+			{
+				"id": "damage-dice",
+				"type": "info",
+				"content": "🩸 **Diğer Zarlar**\n\nGenellikle **hasar** veya etki belirlemek için kullanılırlar:\n\n*   **d12:** En büyük balta hasarı\n*   **d8:** Kılıç hasarı\n*   **d6:** Kısa kılıç veya Ateş Topu hasarı\n*   **d4:** Hançer hasarı (Minik üçgen piramit)",
+				"nextStep": "advantage-intro"
+			},
+			{
+				"id": "advantage-intro",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "excited",
+				"content": "Şimdi en sevdiğim kurala gelelim: **Avantaj (Advantage)**!\n\nEğer durum senin lehine ise (örneğin düşman seni görmüyorsa), DM sana 'Avantajlı at' der.\n\nBu durumda **2 tane d20** atarsın ve **YÜKSEK** olanı alırsın! Şansın ikiye katlanır! 🍀",
+				"nextStep": "choice-adv"
+			},
+			{
+				"id": "choice-adv",
+				"type": "challenge",
+				"content": "🎲 **Senaryo**: Gizlice düşmana yaklaştın. DM 'Saldır, avantajlısın!' dedi.\n\nİki zar attın:\n1. Zar: **5**\n2. Zar: **17**\n\nSonuç ne olur?",
+				"choices": [
+					{
+						"id": "result-17",
+						"text": "Sonuç 17'dir!",
+						"nextStep": "success",
+						"feedback": "Kesinlikle! Avantajlıyken her zaman yüksek olanı alırız."
+					},
+					{
+						"id": "result-11",
+						"text": "Ortalaması 11'dir?",
+						"nextStep": "fail",
+						"feedback": "Hayır, ortalama almayız. En yüksek olanı seçeriz!"
+					}
+				]
+			},
+			{
+				"id": "success",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "happy",
+				"content": "Bravo! Dezavantaj (Disadvantage) ise tam tersidir: İki zar atarsın ve **DÜŞÜK** olanı almak zorundasın. 😱\n\nZarların efendisi olma yolunda ilerliyorsun!",
+				"nextStep": "end"
+			},
+			{
+				"id": "fail",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "worried",
+				"content": "Matematik dersi değil bu! 😄 Avantaj demek, en iyi sonucun geçerli olması demektir. Yani 17'yi cebine koyarsın!",
+				"nextStep": "end"
+			},
+			{
+				"id": "end",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "neutral",
+				"content": "Unutma: Başarıp başaramadığını görmek için d20, ne kadar can yaktığını görmek için diğerleri.\n\nBol şans!",
+				"nextStep": "end"
+			}
+		]
+	}
+}

@@ -1,0 +1,106 @@
+{
+	"id": "basics-roleplay",
+	"category": "basics",
+	"name": "Rol Yapma ve Kişilik",
+	"icon": "🎭",
+	"difficulty": "beginner",
+	"description": "Karakterin sadece rakamlardan ibaret değildir. Alignment (Yönelim) ve Kişilik Özelliklerini öğren.",
+	"relatedDataId": "roleplay",
+	"scenario": {
+		"title": "Ahlaki İkilemler",
+		"description": "Zor kararlar vermen gereken bir senaryo. Karakterinin ahlaki pusulasını (Alignment) keşfet.",
+		"estimatedTime": 15,
+		"learningObjectives": [
+			"Alignment (Lawful-Chaotic, Good-Evil) eksenini anlamak",
+			"Ideals, Bonds ve Flaws kavramları",
+			"Inspiration (İlham) kazanmanın yolları"
+		],
+		"steps": [
+			{
+				"id": "intro",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "mysterious",
+				"content": "Sayılar ve zarlar tamam. Ama D&D'nin kalbi **Rol Yapmaktır (Roleplay)**.\n\nKarakterin hırsızlık yapar mı? Kurallara uyar mı? Masumları korur mu? Bunları **Alignment (Yönelim)** belirler.",
+				"nextStep": "alignment-chart"
+			},
+			{
+				"id": "alignment-chart",
+				"type": "info",
+				"content": "⚖️ **Alignment Tablosu**\n\nİki eksen vardır:\n1.  **Ahlak:** Good (İyi), Neutral (Nötr), Evil (Kötü)\n2.  **Düzen:** Lawful (Kurallı), Neutral, Chaotic (Kaotik)\n\n*   **Lawful Good:** Asil şövalye. 🛡️\n*   **Chaotic Neutral:** Özgür ruh, sadece kafasına eseni yapar. 🌪️\n*   **Chaotic Evil:** Yıkım ve kaos seven kötü. 😈",
+				"nextStep": "challenge-decision"
+			},
+			{
+				"id": "challenge-decision",
+				"type": "challenge",
+				"content": "💰 **Senaryo**: Yerde bir cüzdan buldun. Sahibi az ilerideki zengin tüccar. Ama köşedeki dilenci çok aç görünüyor.\n\nKarakterin ne yapar?",
+				"choices": [
+					{
+						"id": "lawful-good",
+						"text": "🛡️ Cüzdanı sahibine geri ver (Lawful Good)",
+						"nextStep": "result-lg",
+						"feedback": "Dürüst ve onurlu bir davranış. Yasalar bunu gerektirir."
+					},
+					{
+						"id": "chaotic-good",
+						"text": " Robin Hood'luk yap! Parayı dilenciye ver (Chaotic Good)",
+						"nextStep": "result-cg",
+						"feedback": "Yasalara aykırı (Kaotik) ama sonuçta iyilik yaptın (Good)."
+					},
+					{
+						"id": "neutral-evil",
+						"text": "😈 Cüzdanı cebine at ve uzaklaş (Neutral Evil)",
+						"nextStep": "result-ne",
+						"feedback": "Bencilce bir hareket. Kötü karakterler kendilerini düşünür."
+					}
+				]
+			},
+			{
+				"id": "result-lg",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "happy",
+				"content": "Tüccar sana teşekkür etti. Bu davranışınla **Lawful Good** bir Paladin gibi davrandın.\n\nDürüstlük senin **İdealin (Ideal)** olabilir.",
+				"nextStep": "personality-traits"
+			},
+			{
+				"id": "result-cg",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "giggle",
+				"content": "Dilenci çok sevindi, tüccar ise üzgün. Sen kuralları değil, vicdanını dinledin. Tam bir **Chaotic Good** hareketi!\n\nÖzgürlük senin **İdealin (Ideal)** olabilir.",
+				"nextStep": "personality-traits"
+			},
+			{
+				"id": "result-ne",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "serious",
+				"content": "Kısa vadede kârlısın. Ama bu tür eylemler seni **Evil** (Kötü) yapar. Takım arkadaşların sana güvenmeyebilir!",
+				"nextStep": "personality-traits"
+			},
+			{
+				"id": "personality-traits",
+				"type": "info",
+				"content": "📝 **Kişilik Detayları**\n\nKarakterini derinleştiren 3 şey:\n1.  **Ideal:** Neye inanıyorsun? (Adalet, Güç, Özgürlük)\n2.  **Bond (Bağ):** Kimi/Neyi önemsiyorsun? (Ailem, Köyüm, Kılıcım)\n3.  **Flaw (Kusur):** Zayıf noktan ne? (Kibirli, Korkak, Açgözlü)",
+				"nextStep": "inspiration-expl"
+			},
+			{
+				"id": "inspiration-expl",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "sparkle",
+				"content": "Eğer oyun sırasında karakterinin kusurlarını (Flaw) veya ideallerini (Ideal) güzelce oynarsan, DM sana **Inspiration (İlham)** verir!\n\nBu ilhamı sonra kritik bir zarda Avantaj almak için kullanabilirsin. Yani iyi rol yapmak kazandırır! 🎭",
+				"nextStep": "end"
+			},
+			{
+				"id": "end",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "happy",
+				"content": "İşte D&D'nin ruhu budur. Sadece zar atmak değil, bir başkası olabilmek...\n\nArtık gerçekten hazırsın. Maceran başlasın! 🌟",
+				"nextStep": "end"
+			}
+		]
+	}
+}

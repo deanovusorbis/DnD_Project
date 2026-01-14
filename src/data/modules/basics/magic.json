@@ -1,0 +1,84 @@
+{
+	"id": "basics-magic",
+	"category": "basics",
+	"name": "Büyü 101",
+	"icon": "✨",
+	"difficulty": "intermediate",
+	"description": "Mistik sanatlara giriş. Cantrip nedir? Spell Slot nedir? Büyü nasıl yapılır?",
+	"relatedDataId": "magic",
+	"scenario": {
+		"title": "Büyücünün Çırağı",
+		"description": "Lucrea sana büyünün temellerini öğretiyor. Basit numaralar ve güçlü patlamalar arasındaki farkı öğren.",
+		"estimatedTime": 15,
+		"learningObjectives": [
+			"Cantrip (Sınırsız Büyü) mantığını anlamak",
+			"Spell Slot (Büyü Haznesi) yönetimini öğrenmek",
+			"Konsantrasyon kavramına giriş"
+		],
+		"steps": [
+			{
+				"id": "intro",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "sparkle",
+				"content": "Büyü... Evrenin dokusunu değiştirme sanatı! ✨\n\nHer büyücü iki tür büyü bilir:\n1.  **Cantrip:** Basit, sınırsız el çabukluğu.\n2.  **Levelled Spells:** Güçlü, yorucu büyüler.",
+				"nextStep": "cantrip-expl"
+			},
+			{
+				"id": "cantrip-expl",
+				"type": "info",
+				"content": "🪄 **Cantrip (Sıfırıncı Seviye)**\n\n*   İstediğin kadar atabilirsin. Sınır yok!\n*   Genellikle basit saldırılar (Fire Bolt) veya ufak etkiler (Mage Hand) içerir.\n*   Savaşta 'hiçbir şeyim kalmadı' dediğinde cantriplerin imdadına yetişir.",
+				"nextStep": "slot-expl"
+			},
+			{
+				"id": "slot-expl",
+				"type": "info",
+				"content": "🔋 **Spell Slots (Büyü Hazneleri)**\n\n*   Güçlü büyüler (1. Seviye ve üstü) enerji harcar.\n*   Bu enerjiye **Spell Slot** denir.\n*   1. Seviye bir büyücü günde sadece 2 kez bu güçlü büyüleri yapabilir!\n*   Dinlenince enerjin geri dolar.",
+				"nextStep": "challenge"
+			},
+			{
+				"id": "challenge",
+				"type": "challenge",
+				"content": "🧙‍♂️ **Senaryo**: Karanlık bir mağaradasın. Önünde bir Goblin var. Sadece 1 tane 1. Seviye Spell Slot'un kaldı.\n\nNe yaparsın?",
+				"choices": [
+					{
+						"id": "cantrip-firebolt",
+						"text": "🔥 Fire Bolt (Cantrip) at",
+						"nextStep": "success-cantrip",
+						"feedback": "Akıllıca! Tek bir Goblin için değerli Slotunu harcamadın."
+					},
+					{
+						"id": "spell-magicmissile",
+						"text": "🚀 Magic Missile (1. Seviye) ile yok et!",
+						"nextStep": "success-slot",
+						"feedback": "Goblin kesin öldü ama... Tek slotun gitti! Ya içeride daha büyük bir canavar varsa?"
+					}
+				]
+			},
+			{
+				"id": "success-cantrip",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "happy",
+				"content": "Fire Bolt ile Goblini etkisiz hale getirdin. Ve hala güçlü büyünü saklıyorsun. Gerçek bir büyücü, kaynaklarını yönetmeyi bilendir!",
+				"nextStep": "end"
+			},
+			{
+				"id": "success-slot",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "worried",
+				"content": "Goblin toza dönüştü! Ama enerjini harcadın. Eğer mağaranın derinliklerinde bir Troll çıkarsa, sadece cantriplerine güvenmek zorunda kalacaksın. Dikkatli ol!",
+				"nextStep": "end"
+			},
+			{
+				"id": "end",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "neutral",
+				"content": "Büyücülük sadece 'bum' diye patlatmak değildir; ne zaman 'bum' diyeceğini bilmektir. 🔮",
+				"nextStep": "end"
+			}
+		]
+	}
+}

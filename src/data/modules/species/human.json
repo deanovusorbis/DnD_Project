@@ -1,0 +1,175 @@
+{
+	"id": "human-basics",
+	"category": "species",
+	"name": "İnsan",
+	"icon": "👤",
+	"difficulty": "beginner",
+	"description": "İnsanların çok yönlülüğünü ve uyum yeteneklerini keşfet. D&D dünyasındaki en yaygın ırklardan biri olan insanların özelliklerini öğren.",
+	"relatedDataId": "human",
+	"scenario": {
+		"title": "Çok Yönlü Kahraman",
+		"description": "Bir köy meydanında, yetenekli bir insan maceracı olarak yolculuğuna başlıyorsun. Cadı rehberin sana insanların en büyük gücünü öğretecek: Uyum yeteneği.",
+		"estimatedTime": 18,
+		"learningObjectives": [
+			"İnsanların Becerikli (Resourceful) özelliğini anlamak",
+			"Yetenekli (Skillful) trait'inin nasıl çalıştığını öğrenmek",
+			"Çok Yönlü (Versatile) özelliğinin avantajlarını keşfetmek",
+			"İnsanların neden yeni oyuncular için ideal olduğunu kavramak"
+		],
+		"steps": [
+			{
+				"id": "intro",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "neutral",
+				"content": "İnsanlar, Faerûn'un en genç ve en kısa ömürlü ırklarından biri olsa da, en uyumlu ve hırslı olanlarıdır. Krallıklar kurar, keşifler yapar ve tarihi şekillendirirler. Hadi insanların özelliklerini yakından tanıyalım.",
+				"nextStep": "human-traits"
+			},
+			{
+				"id": "human-traits",
+				"type": "info",
+				"content": "📍 **İnsan Özellikleri**\n\n*   **Yetenek Artışı:** Tüm yetenek skorların (Strength, Dexterity, vb.) 1 artar.\n*   **Yaş:** Genç yaşta olgunlaşır ve nadiren 100 yılı görürler.\n*   **Boyut:** Orta (Medium) boyuttadırlar.",
+				"nextStep": "choice-skill"
+			},
+			{
+				"id": "choice-skill",
+				"type": "choice",
+				"speaker": "mascot",
+				"emotion": "thinking",
+				"content": "İşte burada insanların **Yetenekli (Skillful)** özelliği devreye giriyor!\n\nİnsanlar, 1. seviyede seçtikleri bir yetenekte (skill) ustalık kazanırlar. Sen hangi yeteneği seçmek istersin?",
+				"choices": [
+					{
+						"id": "medicine",
+						"text": "🏥 Tıp (Medicine) - Yaralılara yardım etmek istiyorum",
+						"nextStep": "medicine-path",
+						"feedback": "Mükemmel seçim! Tıp becerisi, maceralarında çok işine yarayacak."
+					},
+					{
+						"id": "investigation",
+						"text": "🔍 Araştırma (Investigation) - Problemleri çözmeyi seviyorum",
+						"nextStep": "investigation-path",
+						"feedback": "Harika! Araştırma becerisi, gizemleri çözmende yardımcı olacak."
+					},
+					{
+						"id": "persuasion",
+						"text": "💬 İkna (Persuasion) - İnsanlarla konuşmayı tercih ederim",
+						"nextStep": "persuasion-path",
+						"feedback": "Çok iyi! İkna becerisi, savaşmadan sorunları çözebilir."
+					}
+				]
+			},
+			{
+				"id": "medicine-path",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"content": "Yaralı çiftçiye yaklaşıyorsun. Tıp bilgin sayesinde yarasını temizliyor ve sargı yapıyorsun.\n\n**Çiftçi**: \"Çok teşekkür ederim! Sen gerçek bir kahramansın!\"\n\n✨ **Öğrenme Notu**: İnsanların Yetenekli özelliği, onlara herhangi bir skill'de uzmanlaşma şansı verir. Bu esneklik, farklı macera stillerine uyum sağlamalarını kolaylaştırır.",
+				"nextStep": "resourceful-intro"
+			},
+			{
+				"id": "investigation-path",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"content": "Tüccarın hesap defterini inceliyorsun. Araştırma becerinle hızlıca hatayı buluyorsun.\n\n**Tüccar**: \"İnanılmaz! Saatlerce uğraştım ama sen dakikalar içinde çözdün!\"\n\n✨ **Öğrenme Notu**: İnsanların Yetenekli özelliği, onlara herhangi bir skill'de uzmanlaşma şansı verir. Bu esneklik, farklı macera stillerine uyum sağlamalarını kolaylaştırır.",
+				"nextStep": "resourceful-intro"
+			},
+			{
+				"id": "persuasion-path",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"content": "Köy koruyucularıyla konuşuyorsun. İkna becerinle onlara yardım etmek istediğini anlatıyorsun.\n\n**Koruyucu**: \"Konuşman çok etkileyici! Seni aramıza katmaktan mutluluk duyarız.\"\n\n✨ **Öğrenme Notu**: İnsanların Yetenekli özelliği, onlara herhangi bir skill'de uzmanlaşma şansı verir. Bu esneklik, farklı macera stillerine uyum sağlamalarını kolaylaştırır.",
+				"nextStep": "resourceful-intro"
+			},
+			{
+				"id": "resourceful-intro",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "excited",
+				"content": "Harika iş çıkardın! Şimdi sana insanların bir başka özelliğinden bahsedeyim: **Becerikli (Resourceful)**\n\nBu özellik sayesinde, her Uzun Dinlenme (Long Rest) sonrasında otomatik olarak bir **Kahramanca İlham (Heroic Inspiration)** kazanırsın!\n\n💡 **Kahramanca İlham nedir?** Zor bir durumda, bir zar atışına +1d6 bonus ekleyebileceğin özel bir güç!",
+				"nextStep": "inspiration-challenge"
+			},
+			{
+				"id": "inspiration-challenge",
+				"type": "challenge",
+				"content": "🎲 **Senaryo**: Köyden ayrılırken, dar bir köprüden geçmen gerekiyor. Köprü eski ve tehlikeli görünüyor.\n\n**DM**: \"Çeviklik (Acrobatics) kontrolü yap. Hedef: 12\"\n\nZarını atıyorsun... **Sonuç: 10** 😰\n\nNormal şartlarda başarısız olurdun, ama **Kahramanca İlham**ını kullanabilirsin!",
+				"nextStep": "inspiration-choice"
+			},
+			{
+				"id": "inspiration-choice",
+				"type": "choice",
+				"speaker": "mascot",
+				"emotion": "worried",
+				"content": "Kahramanca İlhamını kullanmak ister misin?",
+				"choices": [
+					{
+						"id": "use-inspiration",
+						"text": "✨ Evet, Kahramanca İlham kullan! (+1d6)",
+						"nextStep": "inspiration-success",
+						"feedback": "Akıllıca karar! İlhamını kullanıyorsun..."
+					},
+					{
+						"id": "save-inspiration",
+						"text": "💾 Hayır, daha sonra için sakla",
+						"nextStep": "inspiration-fail",
+						"feedback": "Cesur bir seçim, ama riskli..."
+					}
+				]
+			},
+			{
+				"id": "inspiration-success",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"content": "İlhamını kullanıyorsun ve +1d6 atıyorsun... **Sonuç: +4!**\n\n**Toplam: 10 + 4 = 14** ✅ Başarılı!\n\nKöprüden zarif bir şekilde geçiyorsun!\n\n✨ **Öğrenme Notu**: Becerikli özelliği, insanlara her gün yeni bir şans verir. Bu, onları uzun maceralarda çok dayanıklı yapar!",
+				"nextStep": "versatile-intro"
+			},
+			{
+				"id": "inspiration-fail",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"content": "İlhamını kullanmamaya karar veriyorsun...\n\n**Sonuç: 10** ❌ Başarısız!\n\nKöprüden geçerken sendeliyorsun ve suya düşüyorsun! Islak oluyorsun ama zarar görmüyorsun.\n\n💭 **Ders**: Bazen İlhamını kullanmak akıllıca olabilir! Ama merak etme, yarın yeni bir tane kazanacaksın.",
+				"nextStep": "versatile-intro"
+			},
+			{
+				"id": "versatile-intro",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "smug",
+				"content": "Son olarak, insanların en güçlü özelliği: **Çok Yönlü (Versatile)**\n\nBu özellik sayesinde, 1. seviyede bir **Köken Hüneri (Origin Feat)** seçebilirsin!\n\n🎯 **Feat nedir?** Karakterine özel yetenekler kazandıran güçlü bonuslar! Örneğin:\n- **Becerikli (Skilled)**: 3 ek skill proficiency\n- **Savaşçı (Tough)**: Ekstra can puanı\n- **Dikkatli (Alert)**: İnisiyatifte bonus",
+				"nextStep": "feat-choice"
+			},
+			{
+				"id": "feat-choice",
+				"type": "choice",
+				"speaker": "mascot",
+				"content": "Eğer gerçek bir karakter yaratıyor olsaydın, hangi Feat'i seçerdin?",
+				"choices": [
+					{
+						"id": "skilled",
+						"text": "📚 Becerikli (Skilled) - Daha fazla yetenek öğrenmek istiyorum",
+						"nextStep": "conclusion",
+						"feedback": "Mükemmel! Bu feat, seni gerçek bir çok yönlü uzman yapar."
+					},
+					{
+						"id": "tough",
+						"text": "💪 Savaşçı (Tough) - Daha dayanıklı olmak istiyorum",
+						"nextStep": "conclusion",
+						"feedback": "Harika seçim! Daha fazla can, daha uzun hayatta kalma demek."
+					},
+					{
+						"id": "alert",
+						"text": "👁️ Dikkatli (Alert) - Tehlikeleri önceden fark etmek istiyorum",
+						"nextStep": "conclusion",
+						"feedback": "Çok akıllıca! Sürprizlerden kaçınmak her zaman iyidir."
+					}
+				]
+			},
+			{
+				"id": "conclusion",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "excited",
+				"content": "🎉 **Tebrikler!** İnsan ırkının temellerini öğrendin!\n\n📝 **Özet**:\n✅ **Becerikli**: Her gün Kahramanca İlham kazan\n✅ **Yetenekli**: Bir skill'de uzmanlaş\n✅ **Çok Yönlü**: Bir Köken Hüneri kazan\n\n💡 **Neden İnsanlar Yeni Oyuncular İçin İdeal?**\n- Basit ve anlaşılır özellikler\n- Her oyun stiline uyum sağlar\n- Feat seçimi ile kişiselleştirme\n- Günlük İlham ile hata toleransı\n\nArtık kendi insan karakterini yaratmaya hazırsın! 🌟",
+				"nextStep": "end"
+			}
+		]
+	}
+}
