@@ -24,9 +24,9 @@
   "traits": [
     {
       "id": "darkvision-orc",
-      "name": "Darkvision",
+      "name": "Karanlık Görüş (Darkvision)",
       "source": "2024",
-      "description": "You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light.",
+      "description": "Yeraltı yaşamına veya gölgelere alışkın olduğunuz için karanlıkta ve loş ışıkta üstün görüşe sahipsiniz. 120 feet menzilinde loş ışığı parlak ışık gibi, karanlığı ise loş ışık gibi görebilirsiniz.",
       "mechanicType": "passive",
       "level": 1,
       "grantsDarkvision": 120

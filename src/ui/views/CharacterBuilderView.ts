@@ -80,66 +80,52 @@ export class CharacterBuilderView {
 		this.container.appendChild(header);
 
 
-		// Progress Stepper with Navigation
+
+		// Progress Stepper - Cinematic Wizard
 		const steps = ['general', 'species', 'class', 'background', 'abilities', 'proficiencies', 'equipment', 'details'];
 		const currentStepIndex = steps.indexOf(step);
-
-		// Create clickable stepper
-		const stepperContainer = document.createElement('div');
-		stepperContainer.style.marginBottom = 'var(--space-lg)';
-
-		const stepperNav = document.createElement('div');
-		stepperNav.style.display = 'grid';
-		stepperNav.style.gridTemplateColumns = `repeat(${steps.length}, 1fr)`;
-		stepperNav.style.gap = 'var(--space-xs)';
-		stepperNav.style.marginBottom = 'var(--space-sm)';
-		stepperNav.style.width = '100%';
 
 		// Determine unlocked steps based on state
 		const cState = state.characterCreation;
 		const unlockedSteps = [0]; // General always unlocked
-		if (cState.characterName) unlockedSteps.push(1); // Species unlocked if name set
-		if (cState.selectedSpecies) unlockedSteps.push(2); // Class unlocked
-		if (cState.selectedClass) unlockedSteps.push(3); // Background unlocked
-		if (cState.selectedBackground) unlockedSteps.push(4); // Abilities unlocked
-		if (cState.abilityScores && Object.keys(cState.abilityScores).length > 0) unlockedSteps.push(5); // Proficiencies unlocked
-		if (cState.skillChoices && cState.skillChoices.length > 0) unlockedSteps.push(6); // Equipment unlocked
-		if (cState.startingGold !== undefined) unlockedSteps.push(7); // Details unlocked
-		if (cState.step === 'details' && cState.backstory) unlockedSteps.push(8); // Review unlocked (loose check)
+		if (cState.characterName) unlockedSteps.push(1);
+		if (cState.selectedSpecies) unlockedSteps.push(2);
+		if (cState.selectedClass) unlockedSteps.push(3);
+		if (cState.selectedBackground) unlockedSteps.push(4);
+		if (cState.abilityScores && Object.keys(cState.abilityScores).length > 0) unlockedSteps.push(5);
+		if (cState.skillChoices && cState.skillChoices.length > 0) unlockedSteps.push(6);
+		if (cState.startingGold !== undefined) unlockedSteps.push(7);
+		if (cState.step === 'details' && cState.backstory) unlockedSteps.push(8);
 
+		const stepperContainer = document.createElement('div');
+		stepperContainer.className = 'wizard-steps';
 
 		steps.forEach((s, idx) => {
-			const stepBtn = document.createElement('button');
-			stepBtn.className = idx === currentStepIndex ? 'btn btn-primary btn-sm' : 'btn btn-secondary btn-sm';
-			stepBtn.style.width = '100%';
-			stepBtn.style.whiteSpace = 'nowrap';
-			stepBtn.style.overflow = 'hidden';
-			stepBtn.style.textOverflow = 'ellipsis';
-			stepBtn.style.padding = '6px 4px';
-
-			stepBtn.innerText = `${idx + 1}. ${getStepLabel(s)}`;
-
+			const isCompleted = idx < currentStepIndex;
+			const isActive = idx === currentStepIndex;
 			const isUnlocked = idx <= currentStepIndex || unlockedSteps.includes(idx) || idx < unlockedSteps.length;
-			stepBtn.disabled = !isUnlocked;
 
-			stepBtn.onclick = () => {
+			const stepItem = document.createElement('button');
+			stepItem.className = `step-item ${isActive ? 'active' : ''} ${isCompleted ? 'completed' : ''}`;
+			stepItem.disabled = !isUnlocked;
+
+			stepItem.innerHTML = `
+				<div class="step-indicator">
+					${isCompleted ? '✓' : idx + 1}
+				</div>
+				<div class="step-label">${getStepLabel(s)}</div>
+			`;
+
+			stepItem.onclick = () => {
 				if (isUnlocked) {
 					useGameStore.getState().updateCharacterCreation({ step: s as any });
 					this.render();
 				}
 			};
-			stepperNav.appendChild(stepBtn);
+
+			stepperContainer.appendChild(stepItem);
 		});
 
-		const progress = createProgressBar({
-			value: currentStepIndex + 1,
-			max: steps.length,
-			variant: 'info',
-			showValue: false
-		});
-
-		stepperContainer.appendChild(stepperNav);
-		stepperContainer.appendChild(progress);
 		this.container.appendChild(stepperContainer);
 
 		// Active Step Content

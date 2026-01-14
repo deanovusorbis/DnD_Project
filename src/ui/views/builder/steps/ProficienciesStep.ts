@@ -13,6 +13,15 @@ import {
 } from '../../../../utils/translations/index.ts';
 import { SkillName, SKILL_ABILITY_MAP } from '../../../../types/core.types.ts';
 
+// Helper to get all available skills
+const ALL_SKILLS: SkillName[] = [
+	'acrobatics', 'animal_handling', 'arcana', 'athletics',
+	'deception', 'history', 'insight', 'intimidation',
+	'investigation', 'medicine', 'nature', 'perception',
+	'performance', 'persuasion', 'religion', 'sleight_of_hand',
+	'stealth', 'survival'
+];
+
 export function renderProficienciesStep(parent: HTMLElement, onStepComplete: () => void): void {
 	const state = useGameStore.getState();
 	const cState = state.characterCreation;
@@ -30,9 +39,15 @@ export function renderProficienciesStep(parent: HTMLElement, onStepComplete: () 
 	const inherentSkills = new Set<SkillName>();
 
 	// From Species
+	let speciesChoiceCount = 0;
 	species?.traits?.forEach(trait => {
-		if (trait.grantsProficiency?.skills) {
+		// Fixed skills
+		if (trait.grantsProficiency?.skills && !trait.grantsProficiency.skills.includes('choice')) {
 			trait.grantsProficiency.skills.forEach((s: any) => inherentSkills.add(s as SkillName));
+		}
+		// Choices
+		if (trait.mechanicType === 'choice' && trait.grantsProficiency?.skills?.includes('choice')) {
+			speciesChoiceCount++;
 		}
 	});
 
@@ -50,8 +65,24 @@ export function renderProficienciesStep(parent: HTMLElement, onStepComplete: () 
 	const toolCount: number = isToolChoices ? toolsData.count : 0;
 	const guaranteedTools: string[] = Array.isArray(toolsData) ? toolsData : [];
 
-	// Initial selection from state or empty
-	let selectedSkills = cState.skillChoices || [];
+	// 3. State Hydration (Split Class vs Species selections)
+	const allSelected = cState.skillChoices || [];
+
+	// Try to fill Class slots first with valid class options
+	let classSelected: SkillName[] = [];
+	let speciesSelected: SkillName[] = [];
+
+	const tempClassParams = allSelected.filter(s => classSkillOptions.includes(s) && !inherentSkills.has(s));
+	// Take up to limit
+	classSelected = tempClassParams.slice(0, classSkillCount);
+
+	// Remaining non-inherent selections go to Species (if they fit)
+	// OR if we have species choices, we treat the leftovers as potential species choices
+	const usedByClass = new Set(classSelected);
+	const leftovers = allSelected.filter(s => !usedByClass.has(s) && !inherentSkills.has(s));
+	speciesSelected = leftovers.slice(0, speciesChoiceCount);
+
+	// Local State Wrappers
 	let selectedTools = cState.toolChoices || [];
 	let selectedLanguages = cState.languageChoices || [];
 
@@ -73,6 +104,7 @@ export function renderProficienciesStep(parent: HTMLElement, onStepComplete: () 
 	const availableLanguages = Object.keys(languageNames).filter(l => !knownLanguages.has(l));
 
 
+	// -- RENDER --
 	const container = document.createElement('div');
 	container.style.display = 'flex';
 	container.style.flexDirection = 'column';
@@ -88,13 +120,13 @@ export function renderProficienciesStep(parent: HTMLElement, onStepComplete: () 
 	`;
 	container.appendChild(header);
 
-	// Grid for Skills
+	// Skills Grid
 	const skillsGrid = document.createElement('div');
 	skillsGrid.style.display = 'grid';
 	skillsGrid.style.gridTemplateColumns = '1fr 1fr';
 	skillsGrid.style.gap = 'var(--space-md)';
 
-	// Inherent Skills & Tools Card
+	// A. Inherent Skills Card
 	const inherentCard = createCard({
 		title: 'Kazanılmış Yetenekler',
 		content: `
@@ -128,17 +160,17 @@ export function renderProficienciesStep(parent: HTMLElement, onStepComplete: () 
 	});
 	skillsGrid.appendChild(inherentCard);
 
-	// Class Choice Card
-	const choiceCard = document.createElement('div');
-	choiceCard.className = 'card';
-	choiceCard.style.padding = 'var(--space-md)';
-	choiceCard.style.background = 'var(--color-bg-secondary)';
-	choiceCard.style.borderRadius = 'var(--radius-md)';
-	choiceCard.style.border = '1px solid var(--color-border)';
+	// B. Class Choice Card
+	const classCard = document.createElement('div');
+	classCard.className = 'card';
+	classCard.style.padding = 'var(--space-md)';
+	classCard.style.background = 'var(--color-bg-secondary)';
+	classCard.style.borderRadius = 'var(--radius-md)';
+	classCard.style.border = '1px solid var(--color-border)';
 
-	const updateChoiceCard = () => {
-		const remaining = classSkillCount - selectedSkills.length;
-		choiceCard.innerHTML = `
+	const renderClassCard = () => {
+		const remaining = classSkillCount - classSelected.length;
+		classCard.innerHTML = `
 			<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
 				<h4 style="margin: 0; color: var(--color-accent-gold);">${characterClass.name} Beceri Seçimleri</h4>
 				<span style="font-size: 0.85rem; padding: 2px 8px; border-radius: 4px; background: ${remaining === 0 ? 'var(--color-success)' : 'var(--color-bg-tertiary)'}; color: white;">
@@ -148,8 +180,10 @@ export function renderProficienciesStep(parent: HTMLElement, onStepComplete: () 
 			<div style="display: grid; grid-template-columns: 1fr; gap: 8px;">
 				${classSkillOptions.map(skill => {
 			const isInherited = inherentSkills.has(skill as SkillName);
-			const isSelected = selectedSkills.includes(skill as SkillName);
-			const isDisabled = isInherited || (!isSelected && selectedSkills.length >= classSkillCount);
+			const isSelected = classSelected.includes(skill as SkillName);
+			// Disabled if inherited, or (not selected AND limit reached), or (selected elsewhere in species)
+			const isSpeciesSelected = speciesSelected.includes(skill as SkillName);
+			const isDisabled = isInherited || isSpeciesSelected || (!isSelected && classSelected.length >= classSkillCount);
 
 			const abilityKey = SKILL_ABILITY_MAP[skill as SkillName];
 			const description = skillDescriptions[skill] || '';
@@ -166,26 +200,17 @@ export function renderProficienciesStep(parent: HTMLElement, onStepComplete: () 
 							cursor: ${isDisabled ? 'not-allowed' : 'pointer'}; 
 							opacity: ${isInherited ? '0.6' : '1'}; 
 							transition: all 0.2s;
-						" 
-						onmouseover="this.style.background='var(--color-bg-tertiary)'" 
-						onmouseout="this.style.background='${isInherited ? 'rgba(255,255,255,0.03)' : (isSelected ? 'var(--color-bg-tertiary)' : 'transparent')}'">
+						">
 							<div style="display: flex; align-items: center; gap: 8px;">
 								<input type="checkbox" value="${skill}" ${isSelected ? 'checked' : ''} ${isDisabled ? 'disabled' : ''} style="cursor: pointer;">
 								<span style="font-size: 1rem; font-weight: 600; color: ${isSelected ? 'var(--color-accent-gold)' : 'var(--color-text-primary)'}">
 									${translateSkillName(skill)}
 								</span>
-								<span style="
-									margin-left: auto; 
-									font-size: 0.75rem; 
-									padding: 2px 6px; 
-									border-radius: 4px; 
-									background: var(--color-bg-primary); 
-									color: var(--color-accent-blue);
-									font-weight: 600;
-								">
+								<span style="margin-left: auto; font-size: 0.75rem; padding: 2px 6px; border-radius: 4px; background: var(--color-bg-primary); color: var(--color-accent-blue); font-weight: 600;">
 									${abilityKey}
 								</span>
 								${isInherited ? '<small style="font-size: 0.7rem; color: var(--color-text-dim);">(Zaten Var)</small>' : ''}
+								${isSpeciesSelected ? '<small style="font-size: 0.7rem; color: var(--color-text-dim);">(Tür Seçimi)</small>' : ''}
 							</div>
 							<div style="font-size: 0.8rem; color: var(--color-text-secondary); font-style: italic; margin-left: 28px;">
 								${description}
@@ -196,20 +221,115 @@ export function renderProficienciesStep(parent: HTMLElement, onStepComplete: () 
 			</div>
 		`;
 
-		// Re-attach event listeners
-		choiceCard.querySelectorAll('input').forEach(input => {
+		classCard.querySelectorAll('input').forEach(input => {
 			input.onchange = (e) => {
 				const val = (e.target as HTMLInputElement).value as SkillName;
 				if ((e.target as HTMLInputElement).checked) {
-					if (selectedSkills.length < classSkillCount) {
-						selectedSkills = [...selectedSkills, val];
-					}
+					if (classSelected.length < classSkillCount) classSelected.push(val);
 				} else {
-					selectedSkills = selectedSkills.filter(s => s !== val);
+					classSelected = classSelected.filter(s => s !== val);
 				}
-				updateChoiceCard();
-				updateNextButton();
+				saveSelection(); // Update state
+				refreshAll();
 			};
+		});
+	};
+	skillsGrid.appendChild(classCard);
+	container.appendChild(skillsGrid);
+
+
+	// C. Species Choice Card (If applicable)
+	let speciesCard: HTMLDivElement | null = null;
+	if (speciesChoiceCount > 0) {
+		speciesCard = document.createElement('div');
+		speciesCard.className = 'card';
+		speciesCard.style.padding = 'var(--space-md)';
+		speciesCard.style.background = 'var(--color-bg-secondary)';
+		speciesCard.style.borderRadius = 'var(--radius-md)';
+		speciesCard.style.border = '1px solid var(--color-border)';
+		speciesCard.style.marginTop = 'var(--space-md)';
+
+		container.appendChild(speciesCard);
+	}
+
+	const renderSpeciesCard = () => {
+		if (!speciesCard) return;
+		const remaining = speciesChoiceCount - speciesSelected.length;
+
+		speciesCard.innerHTML = `
+			<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+				<h4 style="margin: 0; color: var(--color-accent-green);">${translateSkillName(species?.name || 'Tür')} Ekstra Uzmanlık</h4>
+				<span style="font-size: 0.85rem; padding: 2px 8px; border-radius: 4px; background: ${remaining === 0 ? 'var(--color-success)' : 'var(--color-bg-tertiary)'}; color: white;">
+					${remaining > 0 ? `${remaining} seçim kaldı` : 'Tamamlandı'}
+				</span>
+			</div>
+			<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px;">
+				${Array.from({ length: speciesChoiceCount }).map((_, idx) => {
+			const currentVal = speciesSelected[idx] || '';
+
+			// Available options: Not inherent, not class selected, not selected in other species slots
+			const options = ALL_SKILLS.filter(s =>
+				!inherentSkills.has(s) &&
+				!classSelected.includes(s) &&
+				(!speciesSelected.includes(s) || s === currentVal)
+			);
+
+			return `
+						<div style="display: flex; flex-direction: column; gap: 4px;">
+							<label style="font-size: 0.85rem; color: var(--color-text-secondary);">Seçim ${idx + 1}</label>
+							<select data-idx="${idx}" style="
+								padding: 8px; 
+								border-radius: var(--radius-sm); 
+								border: 1px solid var(--color-border); 
+								background: var(--color-bg-tertiary); 
+								color: var(--color-text-primary);
+							">
+								<option value="">Seçiniz...</option>
+								${options.map(opt => `
+									<option value="${opt}" ${currentVal === opt ? 'selected' : ''}>
+										${translateSkillName(opt)} (${SKILL_ABILITY_MAP[opt]})
+									</option>
+								`).join('')}
+							</select>
+						</div>
+					`;
+		}).join('')}
+			</div>
+		`;
+
+		speciesCard.querySelectorAll('select').forEach(select => {
+			select.onchange = (e) => {
+				const idx = parseInt(select.getAttribute('data-idx') || '0');
+				const val = (e.target as HTMLSelectElement).value as SkillName;
+
+				// Update specific index
+				const newSelection = [...speciesSelected];
+				if (val) {
+					newSelection[idx] = val;
+				} else {
+					newSelection.splice(idx, 1); // Remove if empty
+				}
+				speciesSelected = newSelection.filter(Boolean); // Clean holes
+
+				saveSelection();
+				refreshAll();
+			};
+		});
+	};
+
+
+	const refreshAll = () => {
+		renderClassCard();
+		renderSpeciesCard();
+		updateNextButton();
+	};
+
+	// Save to store
+	const saveSelection = () => {
+		useGameStore.getState().updateCharacterCreation({
+			skillChoices: [...classSelected, ...speciesSelected],
+			toolChoices: selectedTools,
+			languageChoices: selectedLanguages
 		});
 	};
 
@@ -274,6 +394,7 @@ export function renderProficienciesStep(parent: HTMLElement, onStepComplete: () 
 					} else {
 						selectedTools = selectedTools.filter(t => t !== val);
 					}
+					saveSelection();
 					updateToolCard();
 					updateNextButton();
 				};
@@ -351,6 +472,7 @@ export function renderProficienciesStep(parent: HTMLElement, onStepComplete: () 
 				} else {
 					selectedLanguages = selectedLanguages.filter(l => l !== val);
 				}
+				saveSelection();
 				updateLangCard();
 				updateNextButton();
 			};
@@ -359,9 +481,6 @@ export function renderProficienciesStep(parent: HTMLElement, onStepComplete: () 
 
 	container.appendChild(langCard);
 	updateLangCard();
-
-	skillsGrid.appendChild(choiceCard);
-	container.appendChild(skillsGrid);
 
 	// Footer Actions
 	const footer = document.createElement('div');
@@ -380,32 +499,26 @@ export function renderProficienciesStep(parent: HTMLElement, onStepComplete: () 
 		}
 	});
 
-	const updateNextButton = () => {
-		const skillsComplete = selectedSkills.length >= classSkillCount;
-		const toolsComplete = toolOptions.length === 0 || selectedTools.length >= toolCount;
-		const languagesComplete = selectedLanguages.length >= maxLanguageChoices;
-		nextBtn.disabled = !skillsComplete || !toolsComplete || !languagesComplete;
-	};
-
 	const nextBtn = createButton({
 		label: 'Devam Et (Ekipman) ➡️',
 		variant: 'primary',
 		disabled: true,
 		onClick: () => {
-			useGameStore.getState().updateCharacterCreation({
-				step: 'equipment',
-				skillChoices: selectedSkills,
-				toolChoices: selectedTools,
-				languageChoices: selectedLanguages
-			});
 			onStepComplete();
 		}
 	});
 
-	// Initial check
+	const updateNextButton = () => {
+		const skillsComplete = classSelected.length >= classSkillCount && speciesSelected.length >= speciesChoiceCount;
+		const toolsComplete = toolOptions.length === 0 || selectedTools.length >= toolCount;
+		const languagesComplete = selectedLanguages.length >= maxLanguageChoices;
+		nextBtn.disabled = !skillsComplete || !toolsComplete || !languagesComplete;
+	};
+
+	// Initial render
+	renderClassCard();
+	renderSpeciesCard();
 	updateNextButton();
-
-
 
 	footer.appendChild(backBtn);
 	footer.appendChild(nextBtn);
@@ -418,8 +531,7 @@ export function renderProficienciesStep(parent: HTMLElement, onStepComplete: () 
 		concept: 'Yetenek Zar Atışları',
 		description: 'Uzman olduğun bir yeteneği kullandığında, d20 zarına "Yeterlilik Bonusu"nu (Proficiency Bonus) eklersin. Seviye 1\'de bu bonus +2\'dir.'
 	});
-	container.appendChild(hint);
+	container.insertBefore(hint, container.firstChild);
 
 	parent.appendChild(container);
-	updateChoiceCard();
 }

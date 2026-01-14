@@ -1,0 +1,122 @@
+[
+  {
+    "id": "crystal",
+    "name": "Kristal",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "1 lb.",
+    "cost": {
+      "quantity": 10,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "orb",
+    "name": "Küre",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "3 lb.",
+    "cost": {
+      "quantity": 20,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "rod",
+    "name": "Değnek",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "2 lb.",
+    "cost": {
+      "quantity": 10,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "staff-also-a-quarterstaff",
+    "name": "Asa (aynı zamanda Sopa)",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "4 lb.",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "wand",
+    "name": "Sihirli Değnek",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "1 lb.",
+    "cost": {
+      "quantity": 10,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "sprig-of-mistletoe",
+    "name": "Ökseotu Dalı",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "-",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "wooden-staff-also-a-quarterstaff",
+    "name": "Tahta Asa (aynı zamanda Sopa)",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "4 lb.",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "yew-wand",
+    "name": "Porsuk Ağacı Değnek",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "1 lb.",
+    "cost": {
+      "quantity": 10,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "buyu-parsomeni-hilebaz",
+    "name": "Büyü Parşömeni (Hilebaz)",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "-",
+    "cost": {
+      "quantity": 30,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "buyu-parsomeni-seviye-1",
+    "name": "Büyü Parşömeni (Seviye 1)",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "-",
+    "cost": {
+      "quantity": 50,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  }
+]

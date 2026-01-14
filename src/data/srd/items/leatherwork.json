@@ -1,0 +1,26 @@
+[
+  {
+    "id": "bagpipes",
+    "name": "Gayda",
+    "type": "tools",
+    "rarity": "Common",
+    "weight": "6 lb.",
+    "cost": {
+      "quantity": 30,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "drum",
+    "name": "Davul",
+    "type": "tools",
+    "rarity": "Common",
+    "weight": "3 lb.",
+    "cost": {
+      "quantity": 6,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  }
+]

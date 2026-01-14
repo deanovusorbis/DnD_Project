@@ -1,0 +1,206 @@
+[
+  {
+    "id": "ale-mug",
+    "name": "Bira (kupa)",
+    "type": "food, drink, lodging",
+    "rarity": "Common",
+    "weight": "-",
+    "cost": {
+      "quantity": 0.04,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "bread-loaf",
+    "name": "Ekmek (somun)",
+    "type": "food, drink, lodging",
+    "rarity": "Common",
+    "weight": "-",
+    "cost": {
+      "quantity": 0.02,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "cheese-wedge",
+    "name": "Peynir (dilim)",
+    "type": "food, drink, lodging",
+    "rarity": "Common",
+    "weight": "-",
+    "cost": {
+      "quantity": 0.1,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "han-konaklama-sefil",
+    "name": "Han Konaklama (Sefil)",
+    "type": "food, drink, lodging",
+    "rarity": "Common",
+    "weight": "-",
+    "cost": {
+      "quantity": 0.07,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "han-konaklama-fakir",
+    "name": "Han Konaklama (Fakir)",
+    "type": "food, drink, lodging",
+    "rarity": "Common",
+    "weight": "-",
+    "cost": {
+      "quantity": 0.1,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "han-konaklama-mutevazi",
+    "name": "Han Konaklama (Mütevazı)",
+    "type": "food, drink, lodging",
+    "rarity": "Common",
+    "weight": "-",
+    "cost": {
+      "quantity": 0.5,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "han-konaklama-konforlu",
+    "name": "Han Konaklama (Konforlu)",
+    "type": "food, drink, lodging",
+    "rarity": "Common",
+    "weight": "-",
+    "cost": {
+      "quantity": 0.8,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "han-konaklama-varlikli",
+    "name": "Han Konaklama (Varlıklı)",
+    "type": "food, drink, lodging",
+    "rarity": "Common",
+    "weight": "-",
+    "cost": {
+      "quantity": 2,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "han-konaklama-aristokrat",
+    "name": "Han Konaklama (Aristokrat)",
+    "type": "food, drink, lodging",
+    "rarity": "Common",
+    "weight": "-",
+    "cost": {
+      "quantity": 4,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "yemek-sefil",
+    "name": "Yemek (Sefil)",
+    "type": "food, drink, lodging",
+    "rarity": "Common",
+    "weight": "-",
+    "cost": {
+      "quantity": 0.01,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "yemek-fakir",
+    "name": "Yemek (Fakir)",
+    "type": "food, drink, lodging",
+    "rarity": "Common",
+    "weight": "-",
+    "cost": {
+      "quantity": 0.02,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "yemek-mutevazi",
+    "name": "Yemek (Mütevazı)",
+    "type": "food, drink, lodging",
+    "rarity": "Common",
+    "weight": "-",
+    "cost": {
+      "quantity": 0.1,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "yemek-konforlu",
+    "name": "Yemek (Konforlu)",
+    "type": "food, drink, lodging",
+    "rarity": "Common",
+    "weight": "-",
+    "cost": {
+      "quantity": 0.2,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "yemek-varlikli",
+    "name": "Yemek (Varlıklı)",
+    "type": "food, drink, lodging",
+    "rarity": "Common",
+    "weight": "-",
+    "cost": {
+      "quantity": 0.3,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "yemek-aristokrat",
+    "name": "Yemek (Aristokrat)",
+    "type": "food, drink, lodging",
+    "rarity": "Common",
+    "weight": "-",
+    "cost": {
+      "quantity": 0.6,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "wine-common-bottle",
+    "name": "Şarap, Sıradan (şişe)",
+    "type": "food, drink, lodging",
+    "rarity": "Common",
+    "weight": "-",
+    "cost": {
+      "quantity": 0.2,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "wine-fine-bottle",
+    "name": "Şarap, Kaliteli (şişe)",
+    "type": "food, drink, lodging",
+    "rarity": "Common",
+    "weight": "-",
+    "cost": {
+      "quantity": 10,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  }
+]

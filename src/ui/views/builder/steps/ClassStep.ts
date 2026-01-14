@@ -120,5 +120,5 @@ export function renderClassStep(parent: HTMLElement, onStepComplete: () => void)
 		concept: 'Karakter Gelişimi',
 		description: 'Sınıfınız, karakterinizin dünyadaki mesleğidir. Hangi silahları kullanabileceğinizi, büyü yapıp yapamayacağınızı ve savaş alanındaki rolünüzü sınıfınız belirler.'
 	});
-	parent.appendChild(hint);
+	parent.insertBefore(hint, parent.firstChild);
 }

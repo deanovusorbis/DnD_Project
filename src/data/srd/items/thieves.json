@@ -1,0 +1,50 @@
+[
+  {
+    "id": "çivi-tuzak",
+    "name": "Çivi (Tuzak)",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "2 lb.",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "yag",
+    "name": "Yağ",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "1 lb.",
+    "cost": {
+      "quantity": 0.1,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "temel-zehir",
+    "name": "Temel Zehir",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "-",
+    "cost": {
+      "quantity": 100,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "demir-çiviler",
+    "name": "Demir Çiviler",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "5 lb.",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  }
+]

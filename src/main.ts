@@ -10,26 +10,28 @@ import { registry } from './engine/core/registry.ts';
 import { MainLayout } from './ui/layout/MainLayout.ts';
 
 // View Imports
-import { SidebarView } from './ui/views/SidebarView.ts';
 import { CharacterBuilderView } from './ui/views/CharacterBuilderView.ts';
+import { HomeView } from './ui/views/HomeView.ts';
 import { CombatView } from './ui/views/CombatView.ts';
 import { TraitsView } from './ui/views/TraitsView.ts';
 import { CharacterListView } from './ui/views/CharacterListView.ts';
 import { CharacterSheetView } from './ui/views/CharacterSheetView.ts';
+import { ProfileView } from './ui/views/ProfileView.ts';
 import { CharacterManager } from './engine/character/character-manager.ts';
 
 class App {
   private layout: MainLayout;
   private engine: GameEngine;
-  private currentView: 'builder' | 'combat' | 'list' | 'sheet' = 'list';
+  private currentView: 'home' | 'builder' | 'combat' | 'list' | 'sheet' | 'profile' = 'home';
 
   private views: {
-    sidebar: SidebarView;
+    home: HomeView;
     builder: CharacterBuilderView;
     combat: CombatView;
     traits: TraitsView;
     list: CharacterListView;
     sheet: CharacterSheetView | null;
+    profile: ProfileView;
   };
 
   constructor() {
@@ -43,15 +45,17 @@ class App {
 
     // 3. Initialize Views
     const mainElement = this.layout.getMain();
-    const sidebarElement = this.layout.getSidebar();
     const traitsElement = this.layout.getTraits();
 
-    if (!mainElement || !sidebarElement || !traitsElement) {
+    if (!mainElement || !traitsElement) {
       throw new Error('Critical UI Elements missing');
     }
 
     this.views = {
-      sidebar: new SidebarView(sidebarElement, (view) => this.navigateTo(view as any)),
+      home: new HomeView(mainElement, (view) => {
+        if (view === 'create') this.createCharacter();
+        else this.navigateTo(view as any);
+      }),
 
       builder: new CharacterBuilderView(mainElement, (view) => this.navigateTo(view as any)),
 
@@ -65,22 +69,41 @@ class App {
         () => this.createCharacter()
       ),
 
-      sheet: null // Created dynamically when needed
+
+
+      sheet: null, // Created dynamically when needed
+
+      profile: new ProfileView(mainElement)
     };
 
     // 4. Setup State Subscriptions
     this.setupSubscriptions();
 
-    // 5. Initial Navigation
+    // 5. Setup Action Listeners (Nav)
+    this.setupNavigation();
+
+    // 6. Initial Navigation
     // Check if we have saved characters
-    const hasCharacters = CharacterManager.getAllCharacters().length > 0;
-    this.navigateTo(hasCharacters ? 'list' : 'builder');
+    // const hasCharacters = CharacterManager.getAllCharacters().length > 0;
+    // this.navigateTo(hasCharacters ? 'list' : 'builder');
+    this.navigateTo('home');
+  }
+
+  private setupNavigation(): void {
+    const navButtons = document.querySelectorAll('.nav-btn');
+    navButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const target = (e.target as HTMLElement).getAttribute('data-target');
+        if (target) {
+          this.navigateTo(target as any);
+        }
+      });
+    });
   }
 
   private setupSubscriptions(): void {
     // Update sidebar whenever the game state changes
     useGameStore.subscribe((_state) => {
-      this.views.sidebar.render();
       this.views.traits.render(); // Update traits when state changes
 
       // If the current view needs refreshing on state change, do it here
@@ -90,11 +113,13 @@ class App {
     });
   }
 
-  private navigateTo(view: 'builder' | 'combat' | 'list' | 'sheet'): void {
+  private navigateTo(view: 'home' | 'builder' | 'combat' | 'list' | 'sheet' | 'profile'): void {
     this.currentView = view;
     // Clear main element (handled by views mostly, but good practice if needed)
 
-    if (view === 'builder') {
+    if (view === 'home') {
+      this.views.home.render();
+    } else if (view === 'builder') {
       this.views.builder.render();
     } else if (view === 'combat') {
       this.views.combat.render();
@@ -102,10 +127,22 @@ class App {
       this.views.list.render();
     } else if (view === 'sheet' && this.views.sheet) {
       this.views.sheet.render();
+    } else if (view === 'profile') {
+      this.views.profile.render();
+    }
+
+
+    // Update Layout (Sidebar Visibility)
+    const appElement = document.getElementById('app');
+    if (appElement) {
+      if (view === 'builder') {
+        appElement.classList.remove('layout-full-width');
+      } else {
+        appElement.classList.add('layout-full-width');
+      }
     }
 
     // Highlight active nav in sidebar (sidebar rerender will handle this)
-    this.views.sidebar.render();
     this.views.traits.render(); // Update traits panel
   }
 

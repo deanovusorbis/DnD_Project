@@ -1,0 +1,50 @@
+[
+  {
+    "id": "dulcimer",
+    "name": "Santur",
+    "type": "tools",
+    "rarity": "Common",
+    "weight": "10 lb.",
+    "cost": {
+      "quantity": 25,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "pan-flute",
+    "name": "Pan Flüt",
+    "type": "tools",
+    "rarity": "Common",
+    "weight": "2 lb.",
+    "cost": {
+      "quantity": 12,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "shawm",
+    "name": "Zurna",
+    "type": "tools",
+    "rarity": "Common",
+    "weight": "1 lb.",
+    "cost": {
+      "quantity": 2,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "viol",
+    "name": "Viyol",
+    "type": "tools",
+    "rarity": "Common",
+    "weight": "1 lb.",
+    "cost": {
+      "quantity": 30,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  }
+]

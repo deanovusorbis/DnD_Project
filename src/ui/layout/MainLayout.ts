@@ -5,7 +5,6 @@
 
 export class MainLayout {
 	private container: HTMLElement;
-	private sidebarElement: HTMLElement | null = null;
 	private mainElement: HTMLElement | null = null;
 	private traitsElement: HTMLElement | null = null;
 
@@ -21,13 +20,19 @@ export class MainLayout {
 	public render(): void {
 		this.container.innerHTML = `
 			<header class="app-header">
-				<h1>D&D Deneyimsel Öğrenme Platformu</h1>
-				<div id="header-actions"></div>
+				<div class="header-left">
+					<h1>D&D Deneyimsel Öğrenme Platformu</h1>
+				</div>
+				<nav class="app-nav">
+					<button class="nav-btn" data-target="home">ANA SAYFA</button>
+					<button class="nav-btn" data-target="list">Karakterler</button>
+					<button class="nav-btn" data-target="combat">Savaş</button>
+					<button class="nav-btn" data-target="profile">Profil</button>
+				</nav>
+				<div class="header-right">
+					<div id="header-actions"></div>
+				</div>
 			</header>
-			
-			<aside class="app-sidebar" id="app-sidebar">
-				<!-- Sidebar content will be injected here -->
-			</aside>
 			
 			<main class="app-main" id="app-main">
 				<!-- Main view content will be injected here -->
@@ -42,7 +47,6 @@ export class MainLayout {
 			</footer>
 		`;
 
-		this.sidebarElement = document.getElementById('app-sidebar');
 		this.mainElement = document.getElementById('app-main');
 		this.traitsElement = document.getElementById('app-traits');
 	}
@@ -60,20 +64,6 @@ export class MainLayout {
 		}
 	}
 
-	/**
-	 * Sets the content of the sidebar area
-	 */
-	public setSidebarContent(content: string | HTMLElement): void {
-		if (!this.sidebarElement) return;
-		if (typeof content === 'string') {
-			this.sidebarElement.innerHTML = content;
-		} else {
-			this.sidebarElement.innerHTML = '';
-			this.sidebarElement.appendChild(content);
-		}
-	}
-
-	public getSidebar(): HTMLElement | null { return this.sidebarElement; }
 	public getMain(): HTMLElement | null { return this.mainElement; }
 	public getTraits(): HTMLElement | null { return this.traitsElement; }
 }

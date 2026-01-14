@@ -1,0 +1,1444 @@
+[
+  {
+    "id": "arrows-20",
+    "name": "Oklar (20)",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "1 lb.",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "crossbow-bolts-20",
+    "name": "Arbalet Oku (20)",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "1 1/2 lb.",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "bullets-sling-20",
+    "name": "Sapan Taşı (20)",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "1 1/2 lb.",
+    "cost": {
+      "quantity": 0.04,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "blowgun-needles-50",
+    "name": "Üfleme İğnesi (50)",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "1 lb.",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "backpack",
+    "name": "Sırt Çantası",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "5 lb",
+    "cost": {
+      "quantity": 2,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "1 fit küp hacimde 30 lb taşır; eyer çantası olarak kullanılabilir."
+  },
+  {
+    "id": "bedroll",
+    "name": "Yatak",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "5 lb",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "Bir yaratık uyuyabilir; aşırı soğuğa karşı kurtarmalarda otomatik başarı."
+  },
+  {
+    "id": "blanket",
+    "name": "Battaniye",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "3 lb",
+    "cost": {
+      "quantity": 5,
+      "unit": "SP"
+    },
+    "source": "User List",
+    "description": "Aşırı soğuğa karşı kurtarmalarda Avantaj sağlar."
+  },
+  {
+    "id": "block-and-tackle",
+    "name": "Makara Sistemi",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "5 lb",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "Kaldırma kapasitesini 4 katına çıkarır."
+  },
+  {
+    "id": "bottle-glass",
+    "name": "Şişe, Cam",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "2 lb",
+    "cost": {
+      "quantity": 2,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "1.5 pint sıvı taşır."
+  },
+  {
+    "id": "candle",
+    "name": "Mum",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "—",
+    "cost": {
+      "quantity": 1,
+      "unit": "CP"
+    },
+    "source": "User List",
+    "description": "1 saat yanar; 5 ft parlak, 5 ft loş ışık yayar."
+  },
+  {
+    "id": "case-crossbow-bolt",
+    "name": "Arbalet Oku Çantası",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "1 lb.",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "case-map-or-scroll",
+    "name": "Harita veya Parşömen Kutusu",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "1 lb.",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "chain-10-feet",
+    "name": "Zincir (3 metre)",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "10 lb.",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "chest",
+    "name": "Sandık",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "25 lb",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "12 fit küp hacim taşır."
+  },
+  {
+    "id": "climbers-kit",
+    "name": "Tırmanış Kiti",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "12 lb",
+    "cost": {
+      "quantity": 25,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "Çapa görevi görür, 25 ft'ten fazla düşmeyi engeller."
+  },
+  {
+    "id": "clothes-travelers",
+    "name": "Yolcu Kıyafetleri",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "4 lb.",
+    "cost": {
+      "quantity": 2,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "crowbar",
+    "name": "Levye",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "5 lb",
+    "cost": {
+      "quantity": 2,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "Kaldıraç gerektiren Str zarlarında Avantaj sağlar."
+  },
+  {
+    "id": "flask",
+    "name": "Matara (Küçük)",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "1 lb",
+    "cost": {
+      "quantity": 2,
+      "unit": "CP"
+    },
+    "source": "User List",
+    "description": "1 pint sıvı taşır."
+  },
+  {
+    "id": "grappling-hook",
+    "name": "Kancalı İp",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "4 lb",
+    "cost": {
+      "quantity": 2,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "50 ft mesafeye tutturmak için DC 13 Dex (Akrobasi)."
+  },
+  {
+    "id": "healers-kit",
+    "name": "Şifacı Kiti",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "3 lb",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "10 kullanım; Tıp zarı atmadan bilinci kapalı yaratığı stabilize eder."
+  },
+  {
+    "id": "hunting-trap",
+    "name": "Avcı Tuzağı",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "25 lb",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "DC 13 Dex kurtarması veya 1d4 delici hasar + Hız 0. Kaçış DC 13 Str."
+  },
+  {
+    "id": "ink",
+    "name": "Mürekkep",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "—",
+    "cost": {
+      "quantity": 10,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "1 ons, ~500 sayfa."
+  },
+  {
+    "id": "ink-pen",
+    "name": "Mürekkep Kalemi",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "—",
+    "cost": {
+      "quantity": 2,
+      "unit": "CP"
+    },
+    "source": "User List",
+    "description": "Mürekkep ile kullanılır."
+  },
+  {
+    "id": "jug",
+    "name": "Testi",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "4 lb",
+    "cost": {
+      "quantity": 2,
+      "unit": "CP"
+    },
+    "source": "User List",
+    "description": "1 galon sıvı taşır."
+  },
+  {
+    "id": "ladder-10-feet",
+    "name": "Merdiven (3 metre)",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "25 lb.",
+    "cost": {
+      "quantity": 0.1,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "lantern-bullseye",
+    "name": "Fener (Odaklı)",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "2 lb",
+    "cost": {
+      "quantity": 10,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "60 ft koni parlak, 60 ft loş ışık."
+  },
+  {
+    "id": "lantern-hooded",
+    "name": "Fener (Kapaklı)",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "2 lb",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "30 ft parlak, 30 ft loş ışık; kapak indirilirse 5 ft loş."
+  },
+  {
+    "id": "lock",
+    "name": "Kilit",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "1 lb",
+    "cost": {
+      "quantity": 10,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "Açmak için DC 15 El Çabukluğu."
+  },
+  {
+    "id": "mirror",
+    "name": "Ayna",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "1/2 lb.",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "paper",
+    "name": "Kağıt",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "—",
+    "cost": {
+      "quantity": 2,
+      "unit": "SP"
+    },
+    "source": "User List",
+    "description": "Yaprak başına 250 kelime."
+  },
+  {
+    "id": "parchment",
+    "name": "Parşömen",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "—",
+    "cost": {
+      "quantity": 1,
+      "unit": "SP"
+    },
+    "source": "User List",
+    "description": "Yaprak başına 250 kelime."
+  },
+  {
+    "id": "pole-10-feet",
+    "name": "Sırık (3 metre)",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "7 lb.",
+    "cost": {
+      "quantity": 0.05,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "pot-iron",
+    "name": "Tencere (Demir)",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "10 lb",
+    "cost": {
+      "quantity": 2,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "1 galon taşır."
+  },
+  {
+    "id": "quiver",
+    "name": "Sadak",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "1 lb",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "20 ok taşır."
+  },
+  {
+    "id": "rations",
+    "name": "Erzak",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "2 lb",
+    "cost": {
+      "quantity": 5,
+      "unit": "SP"
+    },
+    "source": "User List",
+    "description": "Seyahat yiyeceği."
+  },
+  {
+    "id": "rope-50-feet",
+    "name": "Halat (15 metre)",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "5 lb.",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "sack",
+    "name": "Çuval",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "0.5 lb",
+    "cost": {
+      "quantity": 1,
+      "unit": "CP"
+    },
+    "source": "User List",
+    "description": "1 fit küp hacimde 30 lb taşır."
+  },
+  {
+    "id": "shovel",
+    "name": "Kürek",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "5 lb",
+    "cost": {
+      "quantity": 2,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "1 saatte 5 fit küp kazar."
+  },
+  {
+    "id": "signal-whistle",
+    "name": "Düdük",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "—",
+    "cost": {
+      "quantity": 5,
+      "unit": "CP"
+    },
+    "source": "User List",
+    "description": "600 ft mesafeye kadar duyulur."
+  },
+  {
+    "id": "spyglass",
+    "name": "Dürbün",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "1 lb",
+    "cost": {
+      "quantity": 1000,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "Nesneleri 2 kat büyütür."
+  },
+  {
+    "id": "tent",
+    "name": "Çadır",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "20 lb.",
+    "cost": {
+      "quantity": 2,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "tinderbox",
+    "name": "Çakmak Taşı",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "1 lb",
+    "cost": {
+      "quantity": 5,
+      "unit": "SP"
+    },
+    "source": "User List",
+    "description": "Küçük bir kapta çakmak taşı, çelik ve kav (genellikle yağa batırılmış kuru bez) bulunur. Bir Mum, Lamba, Fener veya Meşaleyi (veya yakıtı açıkta olan başka bir şeyi) yakmak için Bonus Aksiyon gerektirir. Başka herhangi bir ateş yakmak 1 dakika sürer."
+  },
+  {
+    "id": "torch",
+    "name": "Meşale",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "1 lb",
+    "cost": {
+      "quantity": 1,
+      "unit": "CP"
+    },
+    "source": "User List",
+    "description": "1 saat boyunca yanar; 20 ft yarıçapında Parlak Işık ve ilave 20 ft boyunca Loş Işık yayar. Saldırı aksiyonu aldığınızda, Meşaleyi Basit Yakın Dövüş silahı olarak kullanabilirsiniz. İsabet halinde hedef 1 Ateş hasarı alır."
+  },
+  {
+    "id": "vial",
+    "name": "Tüp",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "—",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "4 ons'a kadar sıvı alır."
+  },
+  {
+    "id": "waterskin",
+    "name": "Matara",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "5 lb",
+    "cost": {
+      "quantity": 2,
+      "unit": "SP"
+    },
+    "source": "User List",
+    "description": "4 pint'e kadar sıvı alır. Yeterli su içmezseniz dehidrasyon (susuzluk) riskiyle karşılaşırsınız (bkz. kural sözlüğü)."
+  },
+  {
+    "id": "padded-armor",
+    "name": "Dolgulu Zırh",
+    "type": "armor",
+    "rarity": "Common",
+    "weight": "8 lb.",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "leather-armor",
+    "name": "Deri Zırh",
+    "type": "armor",
+    "rarity": "Common",
+    "weight": "10 lb.",
+    "cost": {
+      "quantity": 10,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "studded-leather-armor",
+    "name": "Çivili Deri Zırh",
+    "type": "armor",
+    "rarity": "Common",
+    "weight": "13 lb.",
+    "cost": {
+      "quantity": 45,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "hide-armor",
+    "name": "Post Zırh",
+    "type": "armor",
+    "rarity": "Common",
+    "weight": "12 lb.",
+    "cost": {
+      "quantity": 10,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "crossbow-light",
+    "name": "Hafif Arbalet",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "5 lb.",
+    "cost": {
+      "quantity": 25,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "crossbow-hand",
+    "name": "El Arbaleti",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "3 lb.",
+    "cost": {
+      "quantity": 75,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "crossbow-heavy",
+    "name": "Ağır Arbalet",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "18 lb.",
+    "cost": {
+      "quantity": 50,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "acid",
+    "name": "Asit",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "1 lb",
+    "cost": {
+      "quantity": 25,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "Kullanım: Bir saldırı yerine asit şişesi fırlatın. Menzil: 20 ft. Kurtarma: Çeviklik (DC = 8 + Dex + Ustalık). Etki: Başarısız olursa hedef 2d6 asit hasarı alır."
+  },
+  {
+    "id": "alchemists-fire",
+    "name": "Simyacı Ateşi",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "1 lb",
+    "cost": {
+      "quantity": 50,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "Kullanım: Bir saldırı yerine simyacı ateşi fırlatın. Menzil: 20 ft. Kurtarma: Çeviklik (DC = 8 + Dex + Ustalık). Etki: Başarısız olursa hedef 1d4 ateş hasarı alır ve yanmaya başlar."
+  },
+  {
+    "id": "antitoxin",
+    "name": "Antitoksin",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "—",
+    "cost": {
+      "quantity": 50,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "Kullanım: Bonus Aksiyon olarak için. Etki: 1 saat boyunca Zehirlenme durumuna karşı veya durumu sonlandırmak için yapılan kurtarma atışlarında avantaj kazanın."
+  },
+  {
+    "id": "arrows",
+    "name": "Oklar",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "1 lb",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "bundleSize": 20,
+    "description": "Yaylar için cephane."
+  },
+  {
+    "id": "bolts",
+    "name": "Tatar Okları",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "1.5 lb",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "bundleSize": 20,
+    "description": "Arbaletler için cephane."
+  },
+  {
+    "id": "bullets-firearm",
+    "name": "Mermiler (Ateşli Silah)",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "2 lb",
+    "cost": {
+      "quantity": 3,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "bundleSize": 10,
+    "description": "Ateşli silahlar için cephane."
+  },
+  {
+    "id": "bullets-sling",
+    "name": "Sapan Taşları",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "1.5 lb",
+    "cost": {
+      "quantity": 4,
+      "unit": "CP"
+    },
+    "source": "User List",
+    "bundleSize": 20,
+    "description": "Sapan için cephane."
+  },
+  {
+    "id": "needles",
+    "name": "İğneler",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "1 lb",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "bundleSize": 50,
+    "description": "Üfleme borusu için cephane."
+  },
+  {
+    "id": "ball-bearings",
+    "name": "Bilye",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "2 lb",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "10 ft kare alanı kaplar, DC 10 Dex veya Yere Düşme (Prone)."
+  },
+  {
+    "id": "barrel",
+    "name": "Fıçı",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "70 lb",
+    "cost": {
+      "quantity": 2,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "40 galon sıvı veya 4 fit küp kuru mal taşır."
+  },
+  {
+    "id": "basket",
+    "name": "Sepet",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "7 lb",
+    "cost": {
+      "quantity": 4,
+      "unit": "SP"
+    },
+    "source": "User List",
+    "description": "2 fit küp hacimde 40 lb taşır."
+  },
+  {
+    "id": "bell",
+    "name": "Çan",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "1 lb",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "Çalındığında 60 ft mesafeye kadar duyulur."
+  },
+  {
+    "id": "book",
+    "name": "Kitap",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "5 lb",
+    "cost": {
+      "quantity": 25,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "Kurgu/kurgu dışı; eğer doğru bilgi içeriyorsa ilgili Int zarlarına +5 bonus."
+  },
+  {
+    "id": "bucket",
+    "name": "Kova",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "2 lb",
+    "cost": {
+      "quantity": 5,
+      "unit": "CP"
+    },
+    "source": "User List",
+    "description": "0.5 fit küp hacim taşır."
+  },
+  {
+    "id": "burglars-pack",
+    "name": "Hırsız Paketi",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "16 lb",
+    "cost": {
+      "quantity": 16,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "İçerik: Sırt Çantası, Bilye, Çan, Mumlar, Levye, Kapaklı Fener, Yağ, Erzak, İp, Çakmak Taşı, Matara."
+  },
+  {
+    "id": "caltrops",
+    "name": "Çivili Toplar",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "2 lb",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "5 ft kare alanı kaplar, DC 15 Dex veya 1 hasar + Hız 0."
+  },
+  {
+    "id": "chain",
+    "name": "Zincir",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "10 lb",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "Kavrama/Kısıtlama, Kaçış DC 18 Dex, Kırma DC 20 Str."
+  },
+  {
+    "id": "clothes-fine",
+    "name": "Kıyafet, Şık",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "6 lb",
+    "cost": {
+      "quantity": 15,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "Resmi etkinlikler için gereklidir."
+  },
+  {
+    "id": "clothes-traveler",
+    "name": "Kıyafet, Gezgin",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "4 lb",
+    "cost": {
+      "quantity": 2,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "Dayanıklı seyahat kıyafeti."
+  },
+  {
+    "id": "component-pouch",
+    "name": "Bileşen Kesesi",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "2 lb",
+    "cost": {
+      "quantity": 25,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "Ücretsiz büyü bileşenlerini tutar."
+  },
+  {
+    "id": "costume",
+    "name": "Kostüm",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "4 lb",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "Taklit (impersonation) zarlarında Avantaj sağlar."
+  },
+  {
+    "id": "diplomats-pack",
+    "name": "Diplomat Paketi",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "39 lb",
+    "cost": {
+      "quantity": 39,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "İçerik: Sandık, Şık Kıyafet, Mürekkep, Kalemler, Lamba, Kaplar, Yağ, Kağıt, Parşömen, Parfüm, Çakmak Taşı."
+  },
+  {
+    "id": "dungeoneers-pack",
+    "name": "Zindancı Paketi",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "55 lb",
+    "cost": {
+      "quantity": 12,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "İçerik: Sırt Çantası, Çivili Toplar, Levye, Yağ, Erzak, İp, Çakmak Taşı, Meşaleler, Matara."
+  },
+  {
+    "id": "entertainers-pack",
+    "name": "Gösteri Paketi",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "38.5 lb",
+    "cost": {
+      "quantity": 40,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "İçerik: Sırt Çantası, Yatak, Çan, Odaklı Fener (Bullseye), Kostümler, Ayna, Yağ, Erzak, Çakmak Taşı, Matara."
+  },
+  {
+    "id": "explorers-pack",
+    "name": "Kâşif Paketi",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "55 lb",
+    "cost": {
+      "quantity": 10,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "İçerik: Sırt Çantası, Yatak, Yağ, Erzak, İp, Çakmak Taşı, Meşaleler, Matara."
+  },
+  {
+    "id": "holy-water",
+    "name": "Kutsal Su",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "1 lb",
+    "cost": {
+      "quantity": 25,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "Saldırı aksiyonu, 20 ft menzil; Şeytan/Ölümsüzlere karşı Dex kurtarması veya 2d8 radyan hasar."
+  },
+  {
+    "id": "ladder",
+    "name": "Merdiven",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "25 lb",
+    "cost": {
+      "quantity": 1,
+      "unit": "SP"
+    },
+    "source": "User List",
+    "description": "10 ft boyunda."
+  },
+  {
+    "id": "lamp",
+    "name": "Lamba",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "1 lb",
+    "cost": {
+      "quantity": 5,
+      "unit": "SP"
+    },
+    "source": "User List",
+    "description": "15 ft parlak, 30 ft loş ışık."
+  },
+  {
+    "id": "magnifying-glass",
+    "name": "Büyüteç",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "—",
+    "cost": {
+      "quantity": 100,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "Detaylı incelemelerde Avantaj sağlar."
+  },
+  {
+    "id": "manacles",
+    "name": "Kelepçe",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "6 lb",
+    "cost": {
+      "quantity": 2,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "Kaçış DC 20 Dex, Kırma DC 25 Str. Hedefi kısıtlar (Restrains)."
+  },
+  {
+    "id": "map",
+    "name": "Harita",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "—",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "Navigasyon için Hayatta Kalma zarlarına +5 bonus."
+  },
+  {
+    "id": "mirror-steel",
+    "name": "Ayna (Çelik)",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "0.5 lb",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "Çelik, sinyal vermek için kullanılabilir."
+  },
+  {
+    "id": "net",
+    "name": "Ağ",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "3 lb",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "Saldırı aksiyonu, 15 ft menzil; Dex kurtarması veya Kısıtlanmış. Kaçış DC 10 Str veya yok etme (AC 10, 5 HP)."
+  },
+  {
+    "id": "oil",
+    "name": "Yağ",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "1 lb",
+    "cost": {
+      "quantity": 1,
+      "unit": "SP"
+    },
+    "source": "User List",
+    "description": "Yakıt; yaratığı/nesneyi kaplar veya 5 ft kareye dökülür. Lamba/Fenerde 6 saat yanar."
+  },
+  {
+    "id": "perfume",
+    "name": "Parfüm",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "1 lb",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "1 saat boyunca kayıtsız (Indifferent) insansılara karşı İkna zarlarında Avantaj."
+  },
+  {
+    "id": "poison-basic",
+    "name": "Temel Zehir",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "—",
+    "cost": {
+      "quantity": 100,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "Bonus Aksiyon, silah/cephane kapla, +1d4 zehir hasarı, 1 dk sürer."
+  },
+  {
+    "id": "pole",
+    "name": "Sırık",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "7 lb",
+    "cost": {
+      "quantity": 5,
+      "unit": "CP"
+    },
+    "source": "User List",
+    "description": "10 ft uzunluğunda, zıplama zarlarında Avantaj sağlar."
+  },
+  {
+    "id": "potion-of-healing",
+    "name": "İyileştirme İksiri",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "0.5 lb",
+    "cost": {
+      "quantity": 50,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "Bonus Aksiyon, 2d4+2 CP iyileşir."
+  },
+  {
+    "id": "pouch",
+    "name": "Kese",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "1 lb",
+    "cost": {
+      "quantity": 5,
+      "unit": "SP"
+    },
+    "source": "User List",
+    "description": "0.2 fit küp hacimde 6 lb taşır."
+  },
+  {
+    "id": "priests-pack",
+    "name": "Rahip Paketi",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "22 lb",
+    "cost": {
+      "quantity": 33,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "İçerik: Sırt Çantası, Battaniye, Kutsal Su, Lamba, Erzak, Cübbe, Çakmak Taşı."
+  },
+  {
+    "id": "ram-portable",
+    "name": "Koçbaşı (Taşınabilir)",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "35 lb",
+    "cost": {
+      "quantity": 4,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "Kapı kırma Str zarlarına +4 bonus, yardım ile Avantaj."
+  },
+  {
+    "id": "robe",
+    "name": "Cübbe",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "4 lb",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "Mesleki/törensel kıyafet."
+  },
+  {
+    "id": "rope",
+    "name": "İp",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "10 lb",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "Bağlamak için DC 10 El Çabukluğu, Kırmak için DC 20 Str, Kaçmak için DC 15 Dex."
+  },
+  {
+    "id": "scholars-pack",
+    "name": "Bilgin Paketi",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "10 lb",
+    "cost": {
+      "quantity": 40,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "İçerik: Sırt Çantası, Kitap, Mürekkep, Kalem, Lamba, Yağ, Parşömen, Çakmak Taşı."
+  },
+  {
+    "id": "spell-scroll-cantrip",
+    "name": "Büyü Parşömeni (Sıfırıncı Seviye)",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "—",
+    "cost": {
+      "quantity": 30,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "Büyü yap, DC 13 kurtarma, +5 saldırı bonusu."
+  },
+  {
+    "id": "spell-scroll-lvl-1",
+    "name": "Büyü Parşömeni (1. Seviye)",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "—",
+    "cost": {
+      "quantity": 50,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "Büyü yap, DC 13 kurtarma, +5 saldırı bonusu."
+  },
+  {
+    "id": "spikes-iron",
+    "name": "Demir Çiviler",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "5 lb",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "bundleSize": 10,
+    "description": "10'lu paket, Hafif Çekiç ile çakılır."
+  },
+  {
+    "id": "string",
+    "name": "Sicim",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "—",
+    "cost": {
+      "quantity": 1,
+      "unit": "SP"
+    },
+    "source": "User List",
+    "description": "10 ft uzunluğunda."
+  },
+  {
+    "id": "tent-two-person",
+    "name": "Çadır (İki Kişilik)",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "20 lb",
+    "cost": {
+      "quantity": 2,
+      "unit": "GP"
+    },
+    "source": "User List",
+    "description": "Barınma sağlar."
+  },
+  {
+    "id": "arcane-focus-crystal",
+    "name": "Büyü Odağı (Kristal)",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "1 lb",
+    "cost": {
+      "quantity": 10,
+      "unit": "GP"
+    },
+    "description": "İşlev: Büyücüler, Warlocklar ve Sihirbazlar için büyü odağı olarak kullanılır.",
+    "source": "User List"
+  },
+  {
+    "id": "arcane-focus-orb",
+    "name": "Büyü Odağı (Küre)",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "3 lb",
+    "cost": {
+      "quantity": 20,
+      "unit": "GP"
+    },
+    "description": "İşlev: Büyücüler, Warlocklar ve Sihirbazlar için büyü odağı olarak kullanılır.",
+    "source": "User List"
+  },
+  {
+    "id": "arcane-focus-rod",
+    "name": "Büyü Odağı (Çubuk)",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "2 lb",
+    "cost": {
+      "quantity": 10,
+      "unit": "GP"
+    },
+    "description": "İşlev: Büyücüler, Warlocklar ve Sihirbazlar için büyü odağı olarak kullanılır.",
+    "source": "User List"
+  },
+  {
+    "id": "arcane-focus-staff",
+    "name": "Büyü Odağı (Değnek)",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "4 lb",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "description": "İşlev: Büyücüler, Warlocklar ve Sihirbazlar için büyü odağı olarak kullanılır. Genellikle büyülü enerjiyle rezonans kurmak için oyulmuştur.",
+    "source": "User List"
+  },
+  {
+    "id": "arcane-focus-wand",
+    "name": "Büyü Odağı (Asa)",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "1 lb",
+    "cost": {
+      "quantity": 10,
+      "unit": "GP"
+    },
+    "description": "İşlev: Büyücüler, Warlocklar ve Sihirbazlar için büyü odağı olarak kullanılır.",
+    "source": "User List"
+  },
+  {
+    "id": "druidic-focus-sprig-of-mistletoe",
+    "name": "Druid Odağı (Ökseotu Dalı)",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "—",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "description": "İşlev: Druidler ve Rangerlar için ilkel büyüyü kanalize eder. Genellikle kurdelelerle bağlanmıştır.",
+    "source": "User List"
+  },
+  {
+    "id": "druidic-focus-wooden-staff",
+    "name": "Druid Odağı (Tahta Değnek)",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "4 lb",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "description": "İşlev: Druidler ve Rangerlar için ilkel büyüyü kanalize eder. Doğal motiflerle oyulmuştur.",
+    "source": "User List"
+  },
+  {
+    "id": "druidic-focus-yew-wand",
+    "name": "Druid Odağı (Porsuk Ağacı Asa)",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "1 lb",
+    "cost": {
+      "quantity": 10,
+      "unit": "GP"
+    },
+    "description": "İşlev: Druidler ve Rangerlar için ilkel büyüyü kanalize eder.",
+    "source": "User List"
+  },
+  {
+    "id": "holy-symbol-amulet",
+    "name": "Kutsal Sembol (Muska)",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "1 lb",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "description": "İşlev: Rahipler ve Paladinler için ilahi büyüyü kanalize eder.",
+    "source": "User List"
+  },
+  {
+    "id": "holy-symbol-emblem",
+    "name": "Kutsal Sembol (Amblem)",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "—",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "description": "İşlev: Rahipler ve Paladinler için ilahi büyüyü kanalize eder. Genellikle bir kalkan veya cübbe üzerine işlenir.",
+    "source": "User List"
+  },
+  {
+    "id": "holy-symbol-reliquary",
+    "name": "Kutsal Sembol (Röliker)",
+    "type": "adventuring-gear",
+    "rarity": "Common",
+    "weight": "2 lb",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "description": "İşlev: Rahipler ve Paladinler için ilahi büyüyü kanalize eder. İçinde kutsal bir emanet barındıran küçük bir kutudur.",
+    "source": "User List"
+  }
+]

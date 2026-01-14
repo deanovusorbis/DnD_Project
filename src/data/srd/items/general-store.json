@@ -1,0 +1,50 @@
+[
+  {
+    "id": "dice",
+    "name": "Zar",
+    "type": "tools",
+    "rarity": "Common",
+    "weight": "-",
+    "cost": {
+      "quantity": 0.1,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "dragonchess",
+    "name": "Ejderha Satrancı",
+    "type": "tools",
+    "rarity": "Common",
+    "weight": "-",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "playing-cards",
+    "name": "İskambil Kağıtları",
+    "type": "tools",
+    "rarity": "Common",
+    "weight": "-",
+    "cost": {
+      "quantity": 0.5,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "three-dragon-ante",
+    "name": "Üç Ejderha Ante",
+    "type": "tools",
+    "rarity": "Common",
+    "weight": "-",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  }
+]

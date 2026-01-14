@@ -1,0 +1,458 @@
+[
+  {
+    "id": "club",
+    "name": "Sopa",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "2 lb.",
+    "cost": {
+      "quantity": 1,
+      "unit": "SP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "dagger",
+    "name": "Hançer",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "1 lb.",
+    "cost": {
+      "quantity": 2,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "greatclub",
+    "name": "Büyük Sopa",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "10 lb.",
+    "cost": {
+      "quantity": 2,
+      "unit": "SP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "handaxe",
+    "name": "El Baltası",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "2 lb.",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "javelin",
+    "name": "Cirit",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "2 lb.",
+    "cost": {
+      "quantity": 5,
+      "unit": "SP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "light-hammer",
+    "name": "Hafif Çekiç",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "2 lb.",
+    "cost": {
+      "quantity": 2,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "mace",
+    "name": "Gürz",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "4 lb.",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "quarterstaff",
+    "name": "Asa",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "4 lb.",
+    "cost": {
+      "quantity": 2,
+      "unit": "SP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "sickle",
+    "name": "Orak",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "2 lb.",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "spear",
+    "name": "Mızrak",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "3 lb.",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "dart",
+    "name": "Dart",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "1/4 lb.",
+    "cost": {
+      "quantity": 5,
+      "unit": "CP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "light-crossbow",
+    "name": "Hafif Arbalet",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "5 lb.",
+    "cost": {
+      "quantity": 25,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "shortbow",
+    "name": "Kısa Yay",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "2 lb.",
+    "cost": {
+      "quantity": 25,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "sling",
+    "name": "Sapan",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "-",
+    "cost": {
+      "quantity": 1,
+      "unit": "SP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "battleaxe",
+    "name": "Savaş Baltası",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "4 lb.",
+    "cost": {
+      "quantity": 10,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "flail",
+    "name": "Döven",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "2 lb.",
+    "cost": {
+      "quantity": 10,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "glaive",
+    "name": "Palalı Mızrak",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "6 lb.",
+    "cost": {
+      "quantity": 20,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "greataxe",
+    "name": "Büyük Balta",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "7 lb.",
+    "cost": {
+      "quantity": 30,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "greatsword",
+    "name": "Büyük Kılıç",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "6 lb.",
+    "cost": {
+      "quantity": 50,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "halberd",
+    "name": "Baltalı Mızrak",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "6 lb.",
+    "cost": {
+      "quantity": 20,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "lance",
+    "name": "Süvari Mızrağı",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "6 lb.",
+    "cost": {
+      "quantity": 10,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "longsword",
+    "name": "Uzun Kılıç",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "3 lb.",
+    "cost": {
+      "quantity": 15,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "maul",
+    "name": "Balyoz",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "10 lb.",
+    "cost": {
+      "quantity": 10,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "morningstar",
+    "name": "Sabah Yıldızı",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "4 lb.",
+    "cost": {
+      "quantity": 15,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "pike",
+    "name": "Kargı",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "18 lb.",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "rapier",
+    "name": "İnce Kılıç",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "2 lb.",
+    "cost": {
+      "quantity": 25,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "scimitar",
+    "name": "Pala",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "3 lb.",
+    "cost": {
+      "quantity": 25,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "shortsword",
+    "name": "Kısa Kılıç",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "2 lb.",
+    "cost": {
+      "quantity": 10,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "trident",
+    "name": "Üçlü Çatal",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "4 lb.",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "warhammer",
+    "name": "Savaş Çekici",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "2 lb.",
+    "cost": {
+      "quantity": 15,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "war-pick",
+    "name": "Savaş Kazması",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "2 lb.",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "whip",
+    "name": "Kamçı",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "3 lb.",
+    "cost": {
+      "quantity": 2,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "blowgun",
+    "name": "Üfleme Borusu",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "1 lb.",
+    "cost": {
+      "quantity": 10,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "hand-crossbow",
+    "name": "El Arbaleti",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "3 lb.",
+    "cost": {
+      "quantity": 75,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "heavy-crossbow",
+    "name": "Ağır Arbalet",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "18 lb.",
+    "cost": {
+      "quantity": 50,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "longbow",
+    "name": "Uzun Yay",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "2 lb.",
+    "cost": {
+      "quantity": 50,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "musket",
+    "name": "Misket Tüfeği",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "10 lb.",
+    "cost": {
+      "quantity": 500,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "pistol",
+    "name": "Tabanca",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "3 lb.",
+    "cost": {
+      "quantity": 250,
+      "unit": "GP"
+    },
+    "source": "User List"
+  }
+]

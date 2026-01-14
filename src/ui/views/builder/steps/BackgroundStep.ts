@@ -272,5 +272,5 @@ export function renderBackgroundStep(parent: HTMLElement, onStepComplete: () => 
 		concept: 'Karakter Hikayesi',
 		description: '2024 kurallarına göre, yetenek bonuslarınız artık ırk yerine geçmişten gelir. Geçmişinizin sunduğu 3 yetenek arasından +2/+1 veya +1/+1/+1 dağıtabilirsiniz.'
 	});
-	parent.appendChild(hint);
+	parent.insertBefore(hint, parent.firstChild);
 }

@@ -1,0 +1,528 @@
+[
+  {
+    "id": "alchemists-supplies",
+    "name": "Simyacı Malzemeleri",
+    "type": "tool",
+    "toolType": "Artisan's Tools",
+    "ability": "Intelligence",
+    "description": "Bir maddeyi tanımla (DC 15) veya ateş yak (DC 15).",
+    "crafting": [
+      "Asit",
+      "Simyacı Ateşi",
+      "Bileşen Kesesi",
+      "Yağ",
+      "Kağıt",
+      "Parfüm"
+    ],
+    "rarity": "Common",
+    "weight": "8 lb",
+    "cost": {
+      "quantity": 50,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "brewers-supplies",
+    "name": "Bira Yapım Malzemeleri",
+    "type": "tool",
+    "toolType": "Artisan's Tools",
+    "ability": "Intelligence",
+    "description": "Zehirli içeceği tespit et (DC 15) veya alkol türünü tanı (DC 10).",
+    "crafting": [
+      "Antitoksin"
+    ],
+    "rarity": "Common",
+    "weight": "9 lb",
+    "cost": {
+      "quantity": 20,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "calligraphers-supplies",
+    "name": "Hattat Malzemeleri",
+    "type": "tool",
+    "toolType": "Artisan's Tools",
+    "ability": "Dexterity",
+    "description": "Sahteciliği önleyici süslemeler yaz (DC 15).",
+    "crafting": [
+      "Mürekkep",
+      "Büyü Parşömeni"
+    ],
+    "rarity": "Common",
+    "weight": "5 lb",
+    "cost": {
+      "quantity": 10,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "carpenters-tools",
+    "name": "Marangoz Aletleri",
+    "type": "tool",
+    "toolType": "Artisan's Tools",
+    "ability": "Strength",
+    "description": "Bir kapıyı/kutuyu mühürle (DC 20) veya kanırtarak aç (DC 20).",
+    "crafting": [
+      "Sopa",
+      "Büyük Sopa",
+      "Değnek",
+      "Fıçı",
+      "Sandık",
+      "Merdiven",
+      "Sırık",
+      "Koçbaşı",
+      "Meşale"
+    ],
+    "rarity": "Common",
+    "weight": "6 lb",
+    "cost": {
+      "quantity": 8,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "cartographers-tools",
+    "name": "Haritacı Aletleri",
+    "type": "tool",
+    "toolType": "Artisan's Tools",
+    "ability": "Wisdom",
+    "description": "Küçük bir alanın haritasını çıkar (DC 15).",
+    "crafting": [
+      "Harita"
+    ],
+    "rarity": "Common",
+    "weight": "6 lb",
+    "cost": {
+      "quantity": 15,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "cobblers-tools",
+    "name": "Kunduracı Aletleri",
+    "type": "tool",
+    "toolType": "Artisan's Tools",
+    "ability": "Dexterity",
+    "description": "Ayakkabıyı modifiye et; bir sonraki Çeviklik (Akrobasi) zarına Avantaj kazandır (DC 10).",
+    "crafting": [
+      "Tırmanış Kiti"
+    ],
+    "rarity": "Common",
+    "weight": "5 lb",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "cooks-utensils",
+    "name": "Aşçı Gereçleri",
+    "type": "tool",
+    "toolType": "Artisan's Tools",
+    "ability": "Wisdom",
+    "description": "Lezzeti artır (DC 10) veya bozuk/zehirli yiyeceği tespit et (DC 15).",
+    "crafting": [
+      "Erzak"
+    ],
+    "rarity": "Common",
+    "weight": "8 lb",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "glassblowers-tools",
+    "name": "Cam Üfleme Aletleri",
+    "type": "tool",
+    "toolType": "Artisan's Tools",
+    "ability": "Intelligence",
+    "description": "Bir cam nesnenin son 24 saat içinde ne taşıdığını anla (DC 15).",
+    "crafting": [
+      "Şişe",
+      "Büyüteç",
+      "Dürbün",
+      "Tüp"
+    ],
+    "rarity": "Common",
+    "weight": "5 lb",
+    "cost": {
+      "quantity": 30,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "jewelers-tools",
+    "name": "Kuyumcu Aletleri",
+    "type": "tool",
+    "toolType": "Artisan's Tools",
+    "ability": "Intelligence",
+    "description": "Bir mücevherin değerini belirle (DC 15).",
+    "crafting": [
+      "Büyü Odağı",
+      "Kutsal Sembol"
+    ],
+    "rarity": "Common",
+    "weight": "2 lb",
+    "cost": {
+      "quantity": 25,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "leatherworkers-tools",
+    "name": "Dericilik Aletleri",
+    "type": "tool",
+    "toolType": "Artisan's Tools",
+    "ability": "Dexterity",
+    "description": "Deriye desen işle (DC 10).",
+    "crafting": [
+      "Sapan",
+      "Kırbaç",
+      "Post Zırh",
+      "Deri Zırh",
+      "Zımbalı Deri Zırh",
+      "Sırt Çantası",
+      "Kaplar",
+      "Parşömen",
+      "Kese",
+      "Sadak",
+      "Matara"
+    ],
+    "rarity": "Common",
+    "weight": "5 lb",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "masons-tools",
+    "name": "Duvarcı Aletleri",
+    "type": "tool",
+    "toolType": "Artisan's Tools",
+    "ability": "Strength",
+    "description": "Taşa sembol veya delik oy (DC 10).",
+    "crafting": [
+      "Makara Sistemi"
+    ],
+    "rarity": "Common",
+    "weight": "8 lb",
+    "cost": {
+      "quantity": 10,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "painters-supplies",
+    "name": "Ressam Malzemeleri",
+    "type": "tool",
+    "toolType": "Artisan's Tools",
+    "ability": "Wisdom",
+    "description": "Tanınabilir bir görsel resmet (DC 10).",
+    "crafting": [
+      "Druid Odağı",
+      "Kutsal Sembol"
+    ],
+    "rarity": "Common",
+    "weight": "—",
+    "cost": {
+      "quantity": 10,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "potters-tools",
+    "name": "Çömlekçi Aletleri",
+    "type": "tool",
+    "toolType": "Artisan's Tools",
+    "ability": "Intelligence",
+    "description": "Bir seramik nesnenin son 24 saat içinde ne taşıdığını anla (DC 15).",
+    "crafting": [
+      "Testi",
+      "Lamba"
+    ],
+    "rarity": "Common",
+    "weight": "—",
+    "cost": {
+      "quantity": 10,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "smiths-tools",
+    "name": "Demirci Aletleri",
+    "type": "tool",
+    "toolType": "Artisan's Tools",
+    "ability": "Strength",
+    "description": "Bir kapıyı veya kutuyu kanırtarak aç (DC 20).",
+    "crafting": [
+      "Yakın Dövüş Silahları",
+      "Orta Zırh",
+      "Ağır Zırh",
+      "Bilye",
+      "Kova",
+      "Çivili Toplar",
+      "Zincir",
+      "Levye",
+      "Mermiler",
+      "Kancalı İp",
+      "Demir Tencere",
+      "Çiviler"
+    ],
+    "rarity": "Common",
+    "weight": "8 lb",
+    "cost": {
+      "quantity": 20,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "tinkers-tools",
+    "name": "Tamirci Aletleri",
+    "type": "tool",
+    "toolType": "Artisan's Tools",
+    "ability": "Dexterity",
+    "description": "1 dakika içinde dağılacak Ufak (Tiny) boyutunda hurda bir eşya monte et (DC 20).",
+    "crafting": [
+      "Tüfek",
+      "Tabanca",
+      "Fenerler",
+      "Tuzak",
+      "Kilit",
+      "Kelepçe",
+      "Ayna",
+      "Kürek",
+      "Düdük",
+      "Çakmak Taşı"
+    ],
+    "rarity": "Common",
+    "weight": "10 lb",
+    "cost": {
+      "quantity": 50,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "weavers-tools",
+    "name": "Dokumacı Aletleri",
+    "type": "tool",
+    "toolType": "Artisan's Tools",
+    "ability": "Dexterity",
+    "description": "Yırtık onar (DC 10) veya Ufak bir desen dik (DC 10).",
+    "crafting": [
+      "Zırh",
+      "Sepet",
+      "Yatak",
+      "Battaniye",
+      "Kıyafet",
+      "Ağ",
+      "İp",
+      "Çuval",
+      "Sicim",
+      "Çadır"
+    ],
+    "rarity": "Common",
+    "weight": "5 lb",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "woodcarvers-tools",
+    "name": "Oymacı Aletleri",
+    "type": "tool",
+    "toolType": "Artisan's Tools",
+    "ability": "Dexterity",
+    "description": "Ahşaba desen oy (DC 10).",
+    "crafting": [
+      "Sopa",
+      "Büyük Sopa",
+      "Değnek",
+      "Menzilli Silahlar",
+      "Büyü Odağı",
+      "Oklar",
+      "Tatar Oku",
+      "Mürekkep Kalemi",
+      "İğneler"
+    ],
+    "rarity": "Common",
+    "weight": "5 lb",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "disguise-kit",
+    "name": "Kılık Değiştirme Kiti",
+    "type": "tool",
+    "toolType": "Adventure Tools",
+    "ability": "Charisma",
+    "description": "Makyaj uygula (DC 10).",
+    "crafting": [
+      "Kostüm"
+    ],
+    "rarity": "Common",
+    "weight": "3 lb",
+    "cost": {
+      "quantity": 25,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "forgery-kit",
+    "name": "Sahtecilik Kiti",
+    "type": "tool",
+    "toolType": "Adventure Tools",
+    "ability": "Dexterity",
+    "description": "10 kelimeye kadar el yazısı taklit et (DC 15) veya mum mühür kopyala (DC 20).",
+    "crafting": [],
+    "rarity": "Common",
+    "weight": "5 lb",
+    "cost": {
+      "quantity": 15,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "gaming-set",
+    "name": "Oyun Seti",
+    "type": "tool",
+    "toolType": "Adventure Tools",
+    "ability": "Wisdom",
+    "description": "Hileyi fark et (DC 10) veya oyunu kazan (DC 20).",
+    "crafting": [
+      "Zar",
+      "Ejderha Satrancı",
+      "İskambil Kağıtları",
+      "Üç Ejderha Oyunu"
+    ],
+    "rarity": "Common",
+    "weight": "—",
+    "cost": {
+      "quantity": 1,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "herbalism-kit",
+    "name": "Otacılık Kiti",
+    "type": "tool",
+    "toolType": "Adventure Tools",
+    "ability": "Intelligence",
+    "description": "Bir bitkiyi tanımla (DC 10).",
+    "crafting": [
+      "Antitoksin",
+      "Mum",
+      "Şifacı Kiti",
+      "İyileştirme İksiri"
+    ],
+    "rarity": "Common",
+    "weight": "3 lb",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "musical-instrument",
+    "name": "Müzik Aleti",
+    "type": "tool",
+    "toolType": "Adventure Tools",
+    "ability": "Charisma",
+    "description": "Bilinen bir melodi çal (DC 10) veya şarkı doğaçla (DC 15).",
+    "crafting": [
+      "Tulum",
+      "Davul",
+      "Santur",
+      "Yan Flüt",
+      "Boru",
+      "Ud",
+      "Lir",
+      "Pan Flüt",
+      "Zurna",
+      "Viyol"
+    ],
+    "rarity": "Common",
+    "weight": "2 lb",
+    "cost": {
+      "quantity": 10,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "navigators-tools",
+    "name": "Seyrüsefer Aletleri",
+    "type": "tool",
+    "toolType": "Adventure Tools",
+    "ability": "Wisdom",
+    "description": "Rota çiz (DC 10) veya yıldızlara bakarak konum belirle (DC 15).",
+    "crafting": [],
+    "rarity": "Common",
+    "weight": "2 lb",
+    "cost": {
+      "quantity": 25,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "poisoners-kit",
+    "name": "Zehir Kiti",
+    "type": "tool",
+    "toolType": "Adventure Tools",
+    "ability": "Intelligence",
+    "description": "Zehirlenmiş nesneyi tespit et (DC 10).",
+    "crafting": [
+      "Temel Zehir"
+    ],
+    "rarity": "Common",
+    "weight": "2 lb",
+    "cost": {
+      "quantity": 50,
+      "unit": "GP"
+    },
+    "source": "User List"
+  },
+  {
+    "id": "thieves-tools",
+    "name": "Hırsız Aletleri",
+    "type": "tool",
+    "toolType": "Adventure Tools",
+    "ability": "Dexterity",
+    "description": "Kilit aç (DC 15) veya tuzak etkisizleştir (DC 15).",
+    "crafting": [],
+    "rarity": "Common",
+    "weight": "1 lb",
+    "cost": {
+      "quantity": 25,
+      "unit": "GP"
+    },
+    "source": "User List"
+  }
+]

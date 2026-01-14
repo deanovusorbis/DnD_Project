@@ -178,8 +178,10 @@ export function renderSpeciesStep(parent: HTMLElement, onStepComplete: () => voi
 	const hint = createRuleHint({
 		ruleId: 'species-choice',
 		title: 'Tür Seçimi',
-		concept: 'Temel',
-		description: 'Türünüz, karakterinizin fiziksel özelliklerini belirler.'
+		concept: 'Temel Özellikler',
+		description: 'Türünüz, karakterinizin fiziksel özelliklerini (boy, hız, görüş yeteneği) ve bazı doğuştan gelen yeteneklerini belirler. Seçtiğiniz türe göre daha dayanıklı, daha çevik veya daha zeki olabilirsiniz.'
 	});
-	parent.appendChild(hint);
+	container.insertBefore(hint, grid);
+
+	parent.appendChild(container);
 }

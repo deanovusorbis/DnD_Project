@@ -1,0 +1,38 @@
+[
+  {
+    "id": "bullets-firearm-10",
+    "name": "Mermi, Ateşli Silah (10)",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "2 lb.",
+    "cost": {
+      "quantity": 3,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "misket-tufegi",
+    "name": "Misket Tüfeği",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "10 lb.",
+    "cost": {
+      "quantity": 500,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "tabanca",
+    "name": "Tabanca",
+    "type": "weapons",
+    "rarity": "Common",
+    "weight": "3 lb.",
+    "cost": {
+      "quantity": 250,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  }
+]

@@ -85,7 +85,7 @@ export function renderAbilityFooter(parent: HTMLElement, isComplete: boolean, on
 	actionContainer.style.borderTop = '1px solid var(--color-border)';
 
 	const nextButton = createButton({
-		label: 'Devam Et (Ekipman) ➡️',
+		label: 'Devam Et (Uzmanlıklar) ➡️',
 		variant: 'primary',
 		size: 'md',
 		disabled: !isComplete,

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "acid-vial",
+    "name": "Asit (şişe)",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "1 lb.",
+    "cost": {
+      "quantity": 25,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "simyaci-atesi",
+    "name": "Simyacı Ateşi",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "1 lb.",
+    "cost": {
+      "quantity": 50,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "antitoxin-vial",
+    "name": "Panzehir (şişe)",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "-",
+    "cost": {
+      "quantity": 50,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  }
+]

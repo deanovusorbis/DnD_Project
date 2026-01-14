@@ -1,0 +1,110 @@
+[
+  {
+    "id": "amulet-worn-or-held",
+    "name": "Tılsım (giyilen veya tutulan)",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "1 lb.",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "emblem-borne-on-fabric-or-a-shield",
+    "name": "Amblem (kumaş veya kalkan üzerinde)",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "-",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "reliquary-held",
+    "name": "Röliker (elde tutulan)",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "2 lb.",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "kutsal-su",
+    "name": "Kutsal Su",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "1 lb.",
+    "cost": {
+      "quantity": 25,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "parfum",
+    "name": "Parfüm",
+    "type": "adventuring gear",
+    "rarity": "Common",
+    "weight": "-",
+    "cost": {
+      "quantity": 5,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "flute",
+    "name": "Flüt",
+    "type": "tools",
+    "rarity": "Common",
+    "weight": "1 lb.",
+    "cost": {
+      "quantity": 2,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "horn",
+    "name": "Boru",
+    "type": "tools",
+    "rarity": "Common",
+    "weight": "2 lb.",
+    "cost": {
+      "quantity": 3,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "lute",
+    "name": "Lavta",
+    "type": "tools",
+    "rarity": "Common",
+    "weight": "2 lb.",
+    "cost": {
+      "quantity": 12,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  },
+  {
+    "id": "lyre",
+    "name": "Lir",
+    "type": "tools",
+    "rarity": "Common",
+    "weight": "2 lb.",
+    "cost": {
+      "quantity": 20,
+      "unit": "GP"
+    },
+    "source": "PHB 2024"
+  }
+]
