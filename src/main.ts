@@ -23,7 +23,6 @@ import { moduleLoader } from './data/modules/module-loader.ts';
 
 class App {
   private layout: MainLayout;
-  private engine: GameEngine;
   private currentView: 'home' | 'builder' | 'modules' | 'module-play' | 'list' | 'sheet' | 'profile' = 'home';
 
   private views: {
@@ -39,7 +38,7 @@ class App {
 
   constructor() {
     // 1. Initialize Engine & Registry
-    this.engine = new GameEngine();
+    new GameEngine();
     registry.initialize(); // Ensure data is loaded
 
     // 2. Initialize Layout
