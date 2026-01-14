@@ -1,8 +1,8 @@
 {
   "id": "druid",
   "name": "Druid",
-  "source": "srd",
-  "description": "A priest of the Old Faith, wielding the powers of nature and adopting animal forms.",
+  "source": "phb24",
+  "description": "Doğanın güçlerini kullanan ve hayvan formlarını benimseyen Eski İnanç rahibi.",
   "hitDie": "d8",
   "primaryAbility": [
     "WIS"
@@ -61,17 +61,40 @@
     }
   },
   "startingEquipment": {
-    "guaranteed": [
+    "choices": [
       {
-        "itemId": "leather_armor",
-        "quantity": 1
-      },
-      {
-        "itemId": "explorers_pack",
-        "quantity": 1
+        "id": "starting-pack",
+        "options": [
+          {
+            "description": "(A) Leather Armor, Druidic Focus, Explorer's Pack, Herbalism Kit, and 9 GP",
+            "items": [
+              {
+                "itemId": "leather_armor",
+                "quantity": 1
+              },
+              {
+                "itemId": "druidic_focus",
+                "quantity": 1
+              },
+              {
+                "itemId": "explorers_pack",
+                "quantity": 1
+              },
+              {
+                "itemId": "herbalism_kit",
+                "quantity": 1
+              }
+            ],
+            "gold": 9
+          },
+          {
+            "description": "(B) 50 GP",
+            "items": [],
+            "gold": 50
+          }
+        ]
       }
-    ],
-    "choices": []
+    ]
   },
   "spellcasting": {
     "hasSpellcasting": true,
@@ -104,112 +127,254 @@
   "features": [
     {
       "id": "druidic",
-      "name": "Druidic",
-      "source": "srd",
-      "description": "You know Druidic, the secret language of druids.",
+      "name": "Druidik (Druidic)",
+      "source": "phb24",
+      "description": "Druidlerin gizli dili olan Druidik'i bilirsiniz. Bu kadim dili öğrenirken hayvanlarla iletişim kurma büyüsünün kilidini de açtınız; Speak with Animals büyüsünü her zaman hazırlanmış sayılırsınız.\n\nDruidik'i gizli mesajlar bırakmak için kullanabilirsiniz. Siz ve Druidik bilenler böyle bir mesajı otomatik olarak fark edersiniz. Diğerleri mesajın varlığını başarılı DC 15 Intelligence (Investigation) kontrolü ile fark eder ancak büyü olmadan deşifre edemezler.",
       "level": 1,
       "featureType": "passive"
     },
     {
+      "id": "primal-order",
+      "name": "Kadim Düzen (Primal Order)",
+      "source": "phb24",
+      "description": "Kendinizi aşağıdaki kutsal rollerden birine adadınız:\n\nBüyücü (Magician): Druid büyü listesinden bir ekstra cantrip bilirsiniz. Ayrıca doğaya mistik bağlantınız Intelligence (Arcana veya Nature) kontrollerine bonus verir. Bonus Wisdom modifikasyonunuza eşittir (minimum +1).\n\nKoruyucu (Warden): Savaş için eğitilmiş olarak Martial silahlar ile proficiency ve Medium zırh ile eğitim kazanırsınız.",
+      "level": 1,
+      "featureType": "choice"
+    },
+    {
+      "id": "spellcasting-druid",
+      "name": "Büyü Yapma (Spellcasting)",
+      "source": "phb24",
+      "description": "Doğanın mistik güçlerini çalışarak büyü yapmayı öğrendiniz.\n\nCantrip'ler: Druid büyü listesinden seçtiğiniz iki cantrip bilirsiniz (Druidcraft ve Produce Flame önerilir). Druid seviyesi kazandığınızda cantrip'lerden birini başka bir Druid cantrip ile değiştirebilirsiniz. Seviye 4 ve 10'da birer cantrip daha öğrenirsiniz.\n\nBüyü Slotları: Uzun Dinlenme bittiğinde tüm harcanan slotları yenilersiniz.\n\nHazırlanan Büyüler (Seviye 1+): Başlangıçta Druid büyü listesinden dört adet seviye 1 büyü seçin (Animal Friendship, Cure Wounds, Faerie Fire, Thunderwave önerilir). Druid seviyesi kazandıkça hazırlanan büyü sayınız artar. Uzun Dinlenme bittiğinde hazırlanan büyüleri değiştirebilirsiniz.\n\nBüyü Yapma Yeteneği: Wisdom.\n\nBüyü Odağı: Druidic Focus kullanabilirsiniz.",
+      "level": 1,
+      "featureType": "passive"
+    },
+    {
+      "id": "wild-companion",
+      "name": "Vahşi Yoldaş (Wild Companion)",
+      "source": "phb24",
+      "description": "Size yardım etmek için hayvan formu alan bir doğa ruhunu çağırabilirsiniz. Magic aksiyon olarak bir büyü slotu veya Wild Shape kullanımı harcayarak Find Familiar büyüsünü Material bileşenler olmadan yapabilirsiniz.\n\nBüyüyü bu şekilde yaptığınızda familiar Fey'dir ve Uzun Dinlenme bittiğinde kaybolur.",
+      "level": 2,
+      "featureType": "active"
+    },
+    {
       "id": "wild-shape",
-      "name": "Wild Shape",
-      "source": "srd",
-      "description": "You can use your action to magically assume the shape of a beast that you have seen before.",
+      "name": "Vahşi Şekil (Wild Shape)",
+      "source": "phb24",
+      "description": "Doğanın gücü bir hayvan formu almanızı sağlar. Bonus Aksiyon olarak bu özellik için öğrendiğiniz bir Beast formuna şekil değiştirebilirsiniz. Druid seviyenizin yarısı kadar saat boyunca o formda kalırsınız veya Wild Shape'i tekrar kullanana, Incapacitated durumuna girene veya ölene kadar. Bonus Aksiyon olarak formdan erken çıkabilirsiniz.\n\nKullanım Sayısı: Wild Shape'i iki kez kullanabilirsiniz. Kısa Dinlenme bittiğinde bir harcanan kullanım, Uzun Dinlenme bittiğinde tüm harcanan kullanımlar yenilenir. Belirli Druid seviyelerine ulaştığınızda ek kullanımlar kazanırsınız.\n\nBilinen Formlar: Bu özellik için maksimum Challenge Rating 1/4 olan ve Fly Speed'i olmayan Beast stat bloklarından seçilen dört Beast formu biliyorsunuz (Rat, Riding Horse, Spider, Wolf önerilir). Uzun Dinlenme bittiğinde bilinen formlardan birini uygun başka bir formla değiştirebilirsiniz.\n\nBelirli Druid seviyelerine ulaştığınızda bilinen form sayınız ve bu formlar için maksimum CR artar. Seviye 8'den başlayarak Fly Speed'i olan form alabilirsiniz.\n\nDönüşürken Kurallar:\n- Geçici Can Puanları: Wild Shape formu aldığınızda Druid seviyenize eşit Geçici Can Puanı kazanırsınız.\n- Oyun İstatistikleri: Oyun istatistikleriniz Beast'in stat bloğuyla değiştirilir ama yaratık tipinizi, Can Puanlarınızı, Can Puanı Zarlarınızı, Intelligence/Wisdom/Charisma skorlarınızı, sınıf özelliklerini, dilleri ve hünerleri korursunuz.\n- Büyü Yapma Yok: Büyü yapamazsınız ama şekil değiştirme Konsantrasyonunuzu kesmez.\n- Nesneler: Ekipmanınız yere düşer, yeni formla birleşir veya onun tarafından giyilir (seçiminize göre).",
       "level": 2,
       "featureType": "resource",
       "resource": {
-        "name": "Wild Shape",
+        "name": "Vahşi Şekil",
         "maxCount": 2,
         "recoversOn": "short"
       }
+    },
+    {
+      "id": "druid-subclass",
+      "name": "Druid Alt Sınıfı",
+      "source": "phb24",
+      "description": "Seçtiğiniz bir Druid alt sınıfında (subclass) uzmanlaşırsınız.",
+      "level": 3,
+      "featureType": "choice"
+    },
+    {
+      "id": "asi-4",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 4,
+      "featureType": "choice"
+    },
+    {
+      "id": "wild-resurgence",
+      "name": "Vahşi Dirilme (Wild Resurgence)",
+      "source": "phb24",
+      "description": "Turlarınızın her birinde bir kez, Wild Shape kullanımınız kalmadıysa bir büyü slotu harcayarak (aksiyon gerekmez) kendinize bir kullanım verebilirsiniz.\n\nAyrıca bir Wild Shape kullanımı harcayarak (aksiyon gerekmez) kendinize seviye 1 büyü slotu verebilirsiniz, ancak bunu Uzun Dinlenme bitirene kadar tekrar yapamazsınız.",
+      "level": 5,
+      "featureType": "passive",
+      "improvesFeature": "wild-shape"
+    },
+    {
+      "id": "subclass-feature-6",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Druid alt sınıfınızdan bir özellik kazanırsınız.",
+      "level": 6,
+      "featureType": "passive"
+    },
+    {
+      "id": "elemental-fury",
+      "name": "Elementel Öfke (Elemental Fury)",
+      "source": "phb24",
+      "description": "Elementlerin gücü içinizden akar. Seçtiğiniz aşağıdaki seçeneklerden birini kazanırsınız:\n\nGüçlü Büyü Yapma (Potent Spellcasting): Herhangi bir Druid cantrip ile verdiğiniz hasara Wisdom modifikasyonunuzu eklersiniz.\n\nKadim Darbe (Primal Strike): Turlarınızda bir kez, bir silahla veya Wild Shape'te Beast formunun saldırısıyla saldırı atışıyla bir yaratığa isabet ettirdiğinizde hedefe ekstra 1d8 Cold, Fire, Lightning veya Thunder hasar (isabet ettiğinizde seçersiniz) verebilirsiniz.",
+      "level": 7,
+      "featureType": "choice"
+    },
+    {
+      "id": "asi-8",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 8,
+      "featureType": "choice"
+    },
+    {
+      "id": "subclass-feature-10",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Druid alt sınıfınızdan bir özellik kazanırsınız.",
+      "level": 10,
+      "featureType": "passive"
+    },
+    {
+      "id": "asi-12",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 12,
+      "featureType": "choice"
+    },
+    {
+      "id": "subclass-feature-14",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Druid alt sınıfınızdan bir özellik kazanırsınız.",
+      "level": 14,
+      "featureType": "passive"
+    },
+    {
+      "id": "improved-elemental-fury",
+      "name": "Gelişmiş Elementel Öfke (Improved Elemental Fury)",
+      "source": "phb24",
+      "description": "Elemental Fury için seçtiğiniz seçenek daha güçlü hale gelir:\n\nGüçlü Büyü Yapma (Potent Spellcasting): Menzili 10 feet veya daha fazla olan bir Druid cantrip yaptığınızda büyünün menzili 300 feet artar.\n\nKadim Darbe (Primal Strike): Primal Strike'ın ekstra hasarı 2d8'e yükselir.",
+      "level": 15,
+      "featureType": "passive",
+      "improvesFeature": "elemental-fury"
+    },
+    {
+      "id": "asi-16",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 16,
+      "featureType": "choice"
+    },
+    {
+      "id": "beast-spells",
+      "name": "Hayvan Büyüleri (Beast Spells)",
+      "source": "phb24",
+      "description": "Wild Shape kullanırken Beast formunda büyü yapabilirsiniz, belirli bir maliyeti olan veya Material bileşenini tüketen Material bileşeni olan büyüler hariç.",
+      "level": 18,
+      "featureType": "passive",
+      "improvesFeature": "wild-shape"
+    },
+    {
+      "id": "epic-boon-druid",
+      "name": "Epik Lütuf (Epic Boon)",
+      "source": "phb24",
+      "description": "Bir Epik Lütuf veya seçebileceğiniz başka bir hüner kazanırsınız. Boon of Dimensional Travel önerilir.",
+      "level": 19,
+      "featureType": "choice"
+    },
+    {
+      "id": "archdruid",
+      "name": "Başdruid (Archdruid)",
+      "source": "phb24",
+      "description": "Doğanın canlılığı içinizde sürekli çiçek açar, size şu faydaları verir:\n\nHerdemyeşil Wild Shape (Evergreen Wild Shape): Girişim (Initiative) zarı attığınızda ve Wild Shape kullanımınız kalmadıysa bir harcanan kullanım yenilersiniz.\n\nDoğa Büyücüsü (Nature Magician): Wild Shape kullanımlarını büyü slotuna çevirebilirsiniz (aksiyon gerekmez). Harcanmamış Wild Shape kullanımlarınızdan birkaç tanesini seçin ve tek bir büyü slotuna çevirin, her kullanım 2 büyü seviyesi katk sağlar. Örneğin iki Wild Shape kullanımını çevirirseniz seviye 4 büyü slotu üretirsiniz. Bu faydayı kullandıktan sonra Uzun Dinlenme bitirene kadar tekrar yapamazsınız.\n\nUzun Ömür (Longevity): Kullandığınız kadim büyü daha yavaş yaşlanmanıza neden olur. Geçen her on yıl için vücudunuz sadece bir yıl yaşlanır.",
+      "level": 20,
+      "featureType": "passive"
     }
   ],
   "subclasses": [
     {
       "id": "circle-of-the-land",
-      "name": "Circle of the Land",
+      "name": "Toprak Çemberi (Circle of the Land)",
       "source": "phb24",
-      "description": "The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites.",
+      "description": "Toprak Çemberi, kadim bilgi ve ritüelleri koruyan mistiklerden ve bilgelerden oluşur. Bu Druidler kutsal ağaç çemberleri veya dikili taşlar içinde toplanarak Druidik dilinde kadim sırları fısıldarlar. Çemberin en bilge üyeleri toplulukların baş rahipleri olarak görev yaparlar.",
       "parentClassId": "druid",
       "subclassFeatureLevel": 3,
       "features": [
         {
           "id": "circle-of-the-land-spells",
-          "name": "Circle of the Land Spells",
-          "description": "Whenever you finish a Long Rest, choose one type of land: arid, polar, temperate, or tropical. You have the spells listed for your Druid level and lower prepared.",
+          "name": "Toprak Çemberi Büyüleri (Circle of the Land Spells)",
+          "description": "Uzun Dinlenme bittiğinde bir toprak tipi seçin: kurak (arid), kutup (polar), ılıman (temperate) veya tropik (tropical). Seçilen tipe karşılık gelen tabloya bakın; Druid seviyeniz ve altı için listelenen büyüleri hazırlanmış sayılırsınız.\n\nKurak Toprak: Blur, Burning Hands, Fire Bolt (Lv3), Fireball (Lv5), Blight (Lv7), Wall of Stone (Lv9)\nKutup Toprak: Fog Cloud, Hold Person, Ray of Frost (Lv3), Sleet Storm (Lv5), Ice Storm (Lv7), Cone of Cold (Lv9)\nIlıman Toprak: Misty Step, Shocking Grasp, Sleep (Lv3), Lightning Bolt (Lv5), Freedom of Movement (Lv7), Tree Stride (Lv9)\nTropik Toprak: Acid Splash, Ray of Sickness, Web (Lv3), Stinking Cloud (Lv5), Polymorph (Lv7), Insect Plague (Lv9)",
           "level": 3,
           "featureType": "passive"
         },
         {
           "id": "lands-aid",
-          "name": "Land's Aid",
-          "description": "As a Magic action, you can expend a use of your Wild Shape and choose a point within 60 feet. 10-foot-radius Sphere: creatures make CON save or take 2d6 Necrotic damage (half on success). One creature regains 2d6 HP.",
+          "name": "Toprağın Yardımı (Land's Aid)",
+          "description": "Magic aksiyon olarak Wild Shape kullanımı harcayıp 60 fit içinde bir nokta seçebilirsiniz. O noktayı merkez alan 10 fit yarıçaplı Sphere içinde bir an için canlılık veren çiçekler ve yaşam emen dikenler belirir. Sphere içindeki seçtiğiniz her yaratık büyü kurtarma DC'nize karşı Constitution kurtarma atışı yapmalıdır, başarısız olursa 2d6 Necrotic hasar alır, başarılı olursa yarı hasar alır. O alandaki seçtiğiniz bir yaratık 2d6 Can Puanı kazanır.\n\nDruid seviyesi 10 (3d6) ve 14'te (4d6) hasar ve iyileşme 1d6 artar.",
           "level": 3,
-          "featureType": "action"
+          "featureType": "active"
         },
         {
-          "id": "natural-recovery-enhanced",
-          "name": "Natural Recovery",
-          "description": "Cast one level 1+ Circle Spell without a slot once per Long Rest. Also, recover spell slots on a Short Rest (combined level <= half druid level).",
+          "id": "natural-recovery",
+          "name": "Doğal İyileşme (Natural Recovery)",
+          "source": "phb24",
+          "description": "Circle Spells özelliğinizden hazırladığınız seviye 1+ büyülerden birini büyü slotu harcamadan yapabilirsiniz ve bunu Uzun Dinlenme bitirene kadar tekrar yapamazsınız.\n\nAyrıca Kısa Dinlenme bittiğinde harcanan büyü slotlarını iyileştirmeyi seçebilirsiniz. Büyü slotları Druid seviyenizin yarısına (yukarı yuvarla) eşit veya daha az toplam seviyeye sahip olabilir ve hiçbiri seviye 6+ olamaz. Örneğin seviye 6 Druid iseniz 3 seviyeye kadarki slotları iyileştirebilirsiniz. Bir seviye 3 slot, bir seviye 2 ve bir seviye 1 slot veya üç seviye 1 slot iyileştirebilirsiniz. Bu özellikle slotları iyileştirdikten sonra Uzun Dinlenme bitirene kadar tekrar yapamazsınız.",
           "level": 6,
           "featureType": "passive"
         },
         {
           "id": "natures-ward",
-          "name": "Nature's Ward",
-          "description": "Immune to Poisoned condition. Resistance to a damage type based on your land choice: Arid (Fire), Polar (Cold), Temperate (Lightning), Tropical (Poison).",
+          "name": "Doğanın Koruması (Nature's Ward)",
+          "description": "Poisoned durumuna karşı bağışıksınız ve Circle Spells özelliğindeki mevcut toprak seçiminizle ilişkili bir hasar tipine Direnç kazanırsınız:\n\nKurak: Fire\nKutup: Cold\nIlıman: Lightning\nTropik: Poison",
           "level": 10,
           "featureType": "passive"
         },
         {
           "id": "natures-sanctuary",
-          "name": "Nature's Sanctuary",
-          "description": "As a Magic action, expend Wild Shape to create a 15-foot Cube of spectral trees within 120 feet (1 minute). Allies have Half Cover and your Nature's Ward resistance while inside.",
+          "name": "Doğanın Sığınağı (Nature's Sanctuary)",
+          "description": "Magic aksiyon olarak Wild Shape kullanımı harcayarak 120 fit içinde zeminde 15 fit Cube içinde hayalet ağaçlar ve sarmaşıklar belirtebilirsiniz. 1 dakika boyunca veya Incapacitated durumuna girene veya ölene kadar orada kalırlar. Siz ve müttefikleriniz o alandayken Half Cover sahibi olursunuz ve müttefikleriniz oradayken Nature's Ward'ınızın mevcut Direncini kazanırlar.\n\nBonus Aksiyon olarak Cube'u 120 fit içinde zemine 60 fit kadar hareket ettirebilirsiniz.",
           "level": 14,
-          "featureType": "action"
+          "featureType": "active"
         }
       ]
     },
     {
       "id": "circle-of-the-moon",
-      "name": "Circle of the Moon",
+      "name": "Ay Çemberi (Circle of the Moon)",
       "source": "phb24",
-      "description": "Druids of the Circle of the Moon are fierce guardians of the wilds and masters of Wild Shape.",
+      "description": "Ay Çemberi Druidleri kendilerini dönüştürmek için ay büyüsünden yararlanırlar. Düzenleri haberleri paylaşmak ve ritüeller yapmak için ayın altında toplanır.\n\nAy gibi değişken olan bu çemberin bir Druidi bir gece büyük bir kedi olarak dolaşabilir, ertesi gün ağaç tepelerinin üzerinde kartal olarak süzülebilir ve sonra izinsiz giren bir canavarı kovmak için ayı olarak çalılıkları kırabilir. Vahşi, Druid'in kanındadır.",
       "parentClassId": "druid",
       "subclassFeatureLevel": 3,
       "features": [
         {
           "id": "circle-of-the-moon-spells",
-          "name": "Circle of the Moon Spells",
-          "description": "Always have certain spells prepared (Cure Wounds, Moonbeam, etc.). You can cast them while in Wild Shape.",
+          "name": "Ay Çemberi Büyüleri (Circle of the Moon Spells)",
+          "description": "Belirli Druid seviyelerine ulaştığınızda listelenen büyüleri her zaman hazırlanmış sayılırsınız. Ayrıca bu özellikten gelen büyüleri Wild Shape formundayken yapabilirsiniz.\n\nSeviye 3: Cure Wounds, Moonbeam, Starry Wisp\nSeviye 5: Conjure Animals\nSeviye 7: Fount of Moonlight\nSeviye 9: Mass Cure Wounds",
           "level": 3,
           "featureType": "passive"
         },
         {
           "id": "circle-forms",
-          "name": "Circle Forms",
-          "description": "Improved Wild Shape: Max CR = Level/3. AC = 13 + Wis modifier (if higher). Gain Temp HP = 3x Druid level.",
+          "name": "Çember Formları (Circle Forms)",
+          "description": "Wild Shape formu aldığınızda ay büyüsü kanalı açabilirsiniz, size şu faydaları verir:\n\nChallenge Rating: Form için maksimum CR, Druid seviyenize bölü 3'e (aşağı yuvarla) eşittir.\n\nArmor Class: Formdan çıkana kadar AC değeriniz Beast'in AC'sinden yüksekse 13 artı Wisdom modifikasyonunuza eşittir.\n\nGeçici Can Puanları: Druid seviyenizin üç katı kadar Geçici Can Puanı kazanırsınız.",
           "level": 3,
-          "featureType": "passive"
+          "featureType": "passive",
+          "improvesFeature": "wild-shape"
         },
         {
           "id": "improved-circle-forms",
-          "name": "Improved Circle Forms",
-          "description": "In Wild Shape: Attacks can deal Radiant damage. Add Wisdom modifier to Constitution saving throws.",
+          "name": "Gelişmiş Çember Formları (Improved Circle Forms)",
+          "description": "Wild Shape formundayken şu faydaları kazanırsınız:\n\nAy Parıltısı (Lunar Radiance): Wild Shape formundaki her saldırınız normal hasar tipini veya Radiant hasarı verebilir. Bu seçimi her saldırıda isabet ettiğinizde yaparsınız.\n\nArtmış Dayanıklılık (Increased Toughness): Constitution kurtarma atışlarınıza Wisdom modifikasyonunuzu ekleyebilirsiniz.",
           "level": 6,
-          "featureType": "passive"
+          "featureType": "passive",
+          "improvesFeature": "circle-forms"
         },
         {
           "id": "moonlight-step",
-          "name": "Moonlight Step",
-          "description": "As a Bonus Action, teleport up to 30 feet. Advantage on next attack roll this turn. Uses = Wis modifier.",
+          "name": "Ay Işığı Adımı (Moonlight Step)",
+          "description": "Büyüsel olarak kendinizi taşıyarak ay ışığı patlaması arasında yeniden ortaya çıkarsınız. Bonus Aksiyon olarak görebildiğiniz boş bir alana 30 fit kadar ışınlanabilirsiniz ve bu tur sona ermeden önce yapacağınız bir sonraki saldırı atışında avantaj kazanırsınız.\n\nBu özelliği Wisdom modifikasyonunuza eşit sayıda (minimum bir kez) kullanabilirsiniz ve Uzun Dinlenme bittiğinde tüm harcanan kullanımları yenilersiniz. Ayrıca geri kazanmak istediğiniz her kullanım için seviye 2+ büyü slotu harcayarak (aksiyon gerekmez) kullanımları yenileyebilirsiniz.",
           "level": 10,
-          "featureType": "bonus_action"
+          "featureType": "active"
         },
         {
           "id": "lunar-form",
-          "name": "Lunar Form",
-          "description": "Extra 2d10 Radiant damage once per turn in Wild Shape. Can teleport one willing creature with Moonlight Step.",
+          "name": "Ay Formu (Lunar Form)",
+          "description": "Ayın gücü size nüfuz eder, size şu faydaları verir:\n\nGelişmiş Ay Parıltısı (Improved Lunar Radiance): Tur başına bir kez, Wild Shape formunun saldırısıyla isabet ettirdiğiniz bir hedefe ekstra 2d10 Radiant hasar verebilirsiniz.\n\nPaylaşılan Ay Işığı (Shared Moonlight): Moonlight Step kullandığınızda istekli bir yaratığı da ışınlayabilirsiniz. O yaratık 10 fit yakınınızda olmalıdır ve onu varış noktanızın 10 fit yakınında görebildiğiniz boş bir alana ışınlarsınız.",
           "level": 14,
           "featureType": "passive"
         }
@@ -217,44 +382,44 @@
     },
     {
       "id": "circle-of-the-sea",
-      "name": "Circle of the Sea",
+      "name": "Deniz Çemberi (Circle of the Sea)",
       "source": "phb24",
-      "description": "Druids of the Circle of the Sea draw on the tempestuous power of the oceans.",
+      "description": "Deniz Çemberi Druidleri okyanusların ve fırtınaların çalkantılı güçlerinden yararlanırlar. Bazıları kendilerini doğanın gazabının somutlaşması olarak görür ve doğaya zarar verenlere karşı intikam ararlar. Diğerleri akıntıların ve dalgaların akışına uyum sağlayarak, akıntıların ve dalgaların akışını takip ederek ve rüzgarların anlaşılmaz fısıltılarını ve kükremelerini dinleyerek doğayla mistik birliği ararlar.",
       "parentClassId": "druid",
       "subclassFeatureLevel": 3,
       "features": [
         {
           "id": "circle-of-the-sea-spells",
-          "name": "Circle of the Sea Spells",
-          "description": "Always have certain spells prepared (Fog Cloud, Gust of Wind, Ray of Frost, Shatter, Thunderwave at Level 3, etc.).",
+          "name": "Deniz Çemberi Büyüleri (Circle of the Sea Spells)",
+          "description": "Belirli Druid seviyelerine ulaştığınızda listelenen büyüleri her zaman hazırlanmış sayılırsınız.\n\nSeviye 3: Fog Cloud, Gust of Wind, Ray of Frost, Shatter, Thunderwave\nSeviye 5: Lightning Bolt, Water Breathing\nSeviye 7: Control Water, Ice Storm\nSeviye 9: Conjure Elemental, Hold Monster",
           "level": 3,
           "featureType": "passive"
         },
         {
           "id": "wrath-of-the-sea",
-          "name": "Wrath of the Sea",
-          "description": "As a Bonus Action, spend Wild Shape to manifest a 5-foot (10ft at lvl 6) Emanation for 10 minutes. As a Bonus Action, target takes Cold damage (Wis mod d6) and Large or smaller creatures are pushed 15ft.",
+          "name": "Denizin Gazabı (Wrath of the Sea)",
+          "description": "Bonus Aksiyon olarak Wild Shape kullanımı harcayarak etrafınızı çevreleyen okyanus spreyşeklinde 5 fit Emanation belirtebilirsiniz. 10 dakika sürer veya kapatırsanız (aksiyon gerekmez), tekrar belirtirseniz veya Incapacitated durumuna girerseniz erken biter.\n\nEmanation'ı belirttiğinizde ve sonraki turlarınızda Bonus Aksiyon olarak Emanation içinde görebildiğiniz başka bir yaratık seçebilirsiniz. Hedef büyü kurtarma DC'nize karşı Constitution kurtarma atışında başarılı olmalıdır veya Cold hasar alır ve yaratık Large veya daha küçükse sizden 15 fit kadar itilir. Bu hasarı belirlemek için Wisdom modifikasyonunuza (minimum bir zar) eşit sayıda d6 atın.",
           "level": 3,
-          "featureType": "bonus_action"
+          "featureType": "active"
         },
         {
           "id": "aquatic-affinity",
-          "name": "Aquatic Affinity",
-          "description": "Wrath of the Sea emanation size increases to 10 feet. Gain Swim Speed equal to your Speed.",
+          "name": "Su Yakınlığı (Aquatic Affinity)",
+          "description": "Wrath of the Sea ile oluşturulan Emanation'ın boyutu 10 fit'e yükselir.\n\nAyrıca Hızınıza eşit bir Swim Speed kazanırsınız.",
           "level": 6,
           "featureType": "passive"
         },
         {
           "id": "stormborn",
-          "name": "Stormborn",
-          "description": "While Wrath of the Sea is active: Gain Fly Speed. Resistance to Cold, Lightning, and Thunder damage.",
+          "name": "Fırtına Doğumlu (Stormborn)",
+          "description": "Wrath of the Sea etkinken iki fayda daha kazanırsınız:\n\nUçuş (Flight): Hızınıza eşit bir Fly Speed kazanırsınız.\n\nDirenç (Resistance): Cold, Lightning ve Thunder hasara karşı Direnç kazanırsınız.",
           "level": 10,
           "featureType": "passive"
         },
         {
           "id": "oceanic-gift",
-          "name": "Oceanic Gift",
-          "description": "Manifest Wrath of the Sea around a willing creature within 60 feet. Spend two Wild Shape uses to manifest it around both yourself and the creature.",
+          "name": "Okyanus Armağanı (Oceanic Gift)",
+          "description": "Wrath of the Sea Emanation'ını kendinizin etrafında belirtmek yerine 60 fit içindeki istekli bir yaratığın etrafında belirtebilirsiniz. O yaratık Emanation'ın tüm faydalarını kazanır ve bunun için büyü kurtarma DC'nizi ve Wisdom modifikasyonunuzu kullanır.\n\nAyrıca belirtirken bir yerine iki Wild Shape kullanımı harcarsanız Emanation'ı hem diğer yaratığın hem de kendinizin etrafında belirtebilirsiniz.",
           "level": 14,
           "featureType": "passive"
         }
@@ -262,44 +427,45 @@
     },
     {
       "id": "circle-of-the-stars",
-      "name": "Circle of the Stars",
+      "name": "Yıldızlar Çemberi (Circle of the Stars)",
       "source": "phb24",
-      "description": "The Circle of the Stars allows druids to draw on the power of starlight.",
+      "description": "Yıldızlar Çemberi zamandan beri göksel desenleri izlemiş ve takımyıldızlar arasında gizlenmiş sırları keşfetmiştir. Bu çemberin Druidleri bu sırları anlayarak kozmosun güçlerini kullanmaya çalışırlar.",
       "parentClassId": "druid",
       "subclassFeatureLevel": 3,
       "features": [
         {
           "id": "star-map",
-          "name": "Star Map",
-          "description": "Gain a star chart (spellcasting focus). Guidance and Guiding Bolt prepared. Cast Guiding Bolt without a slot (Wis mod times/Long Rest).",
+          "name": "Yıldız Haritası (Star Map)",
+          "description": "Göksel çalışmalarınızın parçası olarak bir yıldız haritası oluşturdunuz. Tiny bir nesnedir ve Druid büyüleriniz için Büyü Odağı olarak kullanabilirsiniz. Formunu belirleyin (tomar, taş tablet, ayı derisi, vb.).\n\nHaritayı tutarken Guidance ve Guiding Bolt büyülerini hazırlanmış sayılırsınız ve Guiding Bolt'u büyü slotu harcamadan yapabilirsiniz. Bunu Wisdom modifikasyonunuza eşit sayıda (minimum bir kez) yapabilirsiniz ve Uzun Dinlenme bittiğinde tüm harcanan kullanımları yenilersiniz.\n\nHaritayı kaybederseniz 1 saatlik bir tören yaparak büyüsel olarak yenisini yaratabilirsiniz.",
           "level": 3,
           "featureType": "passive"
         },
         {
           "id": "starry-form",
-          "name": "Starry Form",
-          "description": "Bonus Action: spend Wild Shape to take a luminous form (10 mins). Choose Archer (Bonus Action ranged spell attack), Chalice (extra healing), or Dragon (better concentration/INT/WIS checks).",
+          "name": "Yıldızlı Form (Starry Form)",
+          "description": "Bonus Aksiyon olarak Wild Shape özelliği kullanımı harcayarak şekil değiştirmek yerine yıldızlı form alabilirsiniz.\n\nYıldızlı formunuzdayken oyun istatistiklerinizi korursunuz ama vücudunuz ışıldamaya başlar, eklemleriniz yıldızlar gibi parlar ve yıldız haritasında olduğu gibi parlayan çizgiler onları birbirine bağlar. Bu form 10 fit yarıçapında Parlak Işık ve ek 10 fit için Loş Işık yayar. Form 10 dakika sürer.\n\nYıldızlı formunuzu her aldığınızda vücudunuzda hangi takımyıldızın parladığını seçin:\n\nOkçu (Archer): Bir okçu takımyıldızı belirir. Bu formu etkinleştirdiğinizde ve sürerken sonraki turlarınızda Bonus Aksiyon olarak 60 fit içindeki bir yaratığı hedefleyen parlayan ok fırlatan uzak büyü saldırısı yapabilirsiniz. İsabet ettiğinde saldırı 1d8 artı Wisdom modifikasyonunuza eşit Radiant hasar verir.\n\nKadeh (Chalice): Hayat veren bir kadeh takımyıldızı belirir. Büyü slotu kullanarak bir yaratığa Can Puanı restore eden bir büyü yaptığınızda siz veya 30 fit içindeki başka bir yaratık 1d8 artı Wisdom modifikasyonunuza eşit Can Puanı kazanabilir.\n\nEjderha (Dragon): Bilge bir ejderha takımyıldızı belirir. Intelligence veya Wisdom kontrolü yaptığınızda veya Konsantrasyonu korumak için Constitution kurtarma atışı yaptığınızda d20'de 9 veya daha düşük atışı 10 olarak sayabilirsiniz.",
           "level": 3,
-          "featureType": "bonus_action"
+          "featureType": "active"
         },
         {
           "id": "cosmic-omen",
-          "name": "Cosmic Omen",
-          "description": "After a Long Rest, roll a die. Even (Weal): reaction to add 1d6 to a d20 test. Odd (Woe): reaction to subtract 1d6 from a d20 test. Uses = Wis mod.",
+          "name": "Kozmik Alâmet (Cosmic Omen)",
+          "description": "Uzun Dinlenme bittiğinde Yıldız Haritanıza alâmetler için danışabilir ve bir zar atabilirsiniz. Bir sonraki Uzun Dinlenmenizi bitirene kadar zarda çift veya tek sayı atmanıza göre özel bir Reaksiyon erişimi kazanırsınız:\n\nMüjde (Weal - çift): 30 fit içinde görebildiğiniz bir yaratık D20 Testi yapmak üzereyken Reaksiyon alıp 1d6 atabilir ve atılan sayıyı toplama ekleyebilirsiniz.\n\nBelâ (Woe - tek): 30 fit içinde görebildiğiniz bir yaratık D20 Testi yapmak üzereyken Reaksiyon alıp 1d6 atabilir ve atılan sayıyı toplamdan çıkarabilirsiniz.\n\nBu Reaksiyonu Wisdom modifikasyonunuza eşit sayıda (minimum bir kez) kullanabilirsiniz ve Uzun Dinlenme bittiğinde tüm harcanan kullanımları yenilersiniz.",
           "level": 6,
-          "featureType": "reaction"
+          "featureType": "active"
         },
         {
           "id": "twinkling-constellations",
-          "name": "Twinkling Constellations",
-          "description": "Starry Form improves: Archer/Chalice (2d8), Dragon (Fly speed 20ft, hover). Change constellation at start of turn.",
+          "name": "Parlayan Takımyıldızlar (Twinkling Constellations)",
+          "description": "Starry Form'unuzun takımyıldızları gelişir. Okçu ve Kadeh'in 1d8'i 2d8 olur ve Ejderha etkinken 20 fit Fly Speed'e sahip olursunuz ve havada asılı kalabilirsiniz (hover).\n\nAyrıca Starry Form'unuzdayken turlarınızın başında vücudunuzda hangi takımyıldızın parladığını değiştirebilirsiniz.",
           "level": 10,
-          "featureType": "passive"
+          "featureType": "passive",
+          "improvesFeature": "starry-form"
         },
         {
           "id": "full-of-stars",
-          "name": "Full of Stars",
-          "description": "While in Starry Form, gain Resistance to Bludgeoning, Piercing, and Slashing damage.",
+          "name": "Yıldızlarla Dolu (Full of Stars)",
+          "description": "Starry Form'unuzdayken kısmen maddi olmayan hale gelirsiniz, size Bludgeoning, Piercing ve Slashing hasara karşı Direnç verir.",
           "level": 14,
           "featureType": "passive"
         }
@@ -328,16 +494,6 @@
       "Caster",
       "Healer",
       "Utility"
-    ],
-    "keyDecisionPoints": [
-      {
-        "level": 3,
-        "decision": "Druid Circle - defines your focus and power source"
-      },
-      {
-        "level": 1,
-        "decision": "Prepared spells - daily adaptation to nature"
-      }
     ]
   }
 }

@@ -1,8 +1,8 @@
 {
   "id": "sorcerer",
   "name": "Sorcerer",
-  "source": "srd",
-  "description": "A spellcaster who draws on inherent magic from a gift or bloodline.",
+  "source": "phb24",
+  "description": "Bir armağan veya soy hattından gelen doğuştan büyüye dayanan bir büyücü.",
   "hitDie": "d6",
   "primaryAbility": [
     "CHA"
@@ -48,77 +48,74 @@
     }
   },
   "startingEquipment": {
-    "guaranteed": [
+    "choices": [
       {
-        "itemId": "explorers_pack",
-        "quantity": 1
+        "id": "starting-pack",
+        "options": [
+          {
+            "description": "(A) Spear, 2 Daggers, Arcane Focus, Dungeoneer's Pack, and 28 GP",
+            "items": [
+              {
+                "itemId": "spear",
+                "quantity": 1
+              },
+              {
+                "itemId": "dagger",
+                "quantity": 2
+              },
+              {
+                "itemId": "arcane_focus",
+                "quantity": 1
+              },
+              {
+                "itemId": "dungeoneers_pack",
+                "quantity": 1
+              }
+            ],
+            "gold": 28
+          },
+          {
+            "description": "(B) 50 GP",
+            "items": [],
+            "gold": 50
+          }
+        ]
       }
-    ],
-    "choices": []
+    ]
   },
   "spellcasting": {
     "hasSpellcasting": true,
     "spellcastingAbility": "CHA",
     "spellcastingType": "full",
-    "cantripsKnown": [
-      4,
-      4,
-      4,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      6,
-      6,
-      6,
-      6,
-      6,
-      6,
-      6,
-      6,
-      6,
-      6,
-      6
-    ],
-    "spellsKnown": [
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      12,
-      13,
-      13,
-      14,
-      14,
-      15,
-      15,
-      15,
-      15
-    ]
+    "ritualCasting": false
   },
   "features": [
     {
-      "id": "sorcerous-origin",
-      "name": "Sorcerous Origin",
-      "source": "srd",
-      "description": "Choose a sorcerous origin, which describes the source of your innate magical power.",
+      "id": "spellcasting-sorcerer",
+      "name": "Büyü Yapma (Spellcasting)",
+      "source": "phb24",
+      "description": "Doğuştan büyünüzden yararlanarak büyü yapabilirsiniz.\n\nCantrip'ler: Seçtiğiniz dört Sorcerer cantrip bilirsiniz (Light, Prestidigitation, Shocking Grasp ve Sorcerous Burst önerilir). Sorcerer seviyesi kazandığınızda cantrip'lerinizden birini seçtiğiniz başka bir Sorcerer cantrip ile değiştirebilirsiniz. Sorcerer seviyeleri 4 ve 10'a ulaştığınızda seçtiğiniz başka bir Sorcerer cantrip öğrenirsiniz.\n\nBüyü Slotları: Uzun Dinlenme bittiğinde tüm harcanan slotları yenilersiniz.\n\nHazırlanan Büyüler (Seviye 1+): Başlangıçta iki adet seviye 1 Sorcerer büyüsü seçin (Burning Hands ve Detect Magic önerilir). Sorcerer seviyesi kazandığınızda listenizdeki bir büyüyü büyü slotlarınız olan başka bir Sorcerer büyüsüyle değiştirebilirsiniz.\n\nBüyü Yapma Yeteneği: Charisma.\n\nBüyü Odağı: Arcane Focus kullanabilirsiniz.",
       "level": 1,
-      "featureType": "choice"
+      "featureType": "passive"
+    },
+    {
+      "id": "innate-sorcery",
+      "name": "Doğuştan Büyü (Innate Sorcery)",
+      "source": "phb24",
+      "description": "Geçmişinizdeki bir olay size silinmez bir iz bırakarak kaynayan büyüyle doldurdu. Bonus Aksiyon olarak o büyüyü 1 dakika boyunca serbest bırakabilirsiniz, bu süre boyunca şu faydaları kazanırsınız:\n\nSorcerer büyülerinizin büyü kurtarma DC'si 1 artar.\nYaptığınız Sorcerer büyülerinin saldırı atışlarında avantaj kazanırsınız.\n\nBu özelliği iki kez kullanabilirsiniz ve Uzun Dinlenme bittiğinde tüm harcanan kullanımlarını yenilersiniz.",
+      "level": 1,
+      "featureType": "resource",
+      "resource": {
+        "name": "Doğuştan Büyü",
+        "maxCount": 2,
+        "recoversOn": "long"
+      }
     },
     {
       "id": "font-of-magic",
-      "name": "Font of Magic",
-      "source": "srd",
-      "description": "You tap into a deep wellspring of magic within yourself. This wellspring is represented by sorcery points.",
+      "name": "Büyü Pınarı (Font of Magic)",
+      "source": "phb24",
+      "description": "İçinizdeki büyü kaynağına dokunabilirsiniz. Bu kaynak çeşitli büyüsel etkiler yaratmanızı sağlayan Sorcery Points ile temsil edilir.\n\n2 Sorcery Point'iniz var ve daha yüksek seviyelere ulaştıkça daha fazlasını kazanırsınız. Seviyeniz için tabloda gösterilen sayıdan daha fazla Sorcery Point'e sahip olamazsınız. Uzun Dinlenme bittiğinde tüm harcanan Sorcery Point'leri yenilersiniz.\n\nSorcery Point'lerinizi Metamagic gibi diğer özelliklerle birlikte şu seçenekleri beslemek için kullanabilirsiniz:\n\nBüyü Slotlarını Sorcery Pointlere Çevirme: Slotun seviyesine eşit sayıda Sorcery Point kazanmak için büyü slotu harcayabilirsiniz (aksiyon gerekmez).\n\nBüyü Slotu Yaratma: Bonus Aksiyon olarak harcamadığınız Sorcery Point'leri bir büyü slotuna dönüştürebilirsiniz. Maliyet belirlenen seviyeye göre değişir (maksimum seviye 5). Bu özellikle yarattığınız büyü slotları Uzun Dinlenme bittiğinde kaybolur.",
       "level": 2,
       "featureType": "resource",
       "resource": {
@@ -129,94 +126,318 @@
     },
     {
       "id": "metamagic",
-      "name": "Metamagic",
-      "source": "srd",
-      "description": "You gain the ability to twist your spells to suit your needs.",
+      "name": "Metabüyü (Metamagic)",
+      "source": "phb24",
+      "description": "Büyünüz içinizden aktığı için büyülerinizi ihtiyaçlarınıza uyacak şekilde değiştirebilirsiniz. Metamagic seçeneklerinden seçtiğiniz iki tanesini kazanırsınız. Yaptığınız büyüleri geçici olarak değiştirmek için seçilen seçenekleri kullanırsınız. Bir seçeneği kullanmak için harcadığı Sorcery Point sayısı kadar harcamalısınız.\n\nBir büyü yaptığınızda üzerinde sadece bir Metamagic seçeneği kullanabilirsiniz (seçeneklerde aksi belirtilmedikçe).\n\nSorcerer seviyesi kazandığınızda Metamagic seçeneklerinizden birini bilmediğiniz biriyle değiştirebilirsiniz. Sorcerer seviyesi 10'da iki seçenek daha, 17'de iki seçenek daha kazanırsınız.\n\nDikkatli Büyü (Careful Spell) [1 SP]: Kurtarma atışı gerektiren büyü yaptığınızda Charisma modifikasyonunuza kadar yaratığı koruyabilirsiniz. Seçilen yaratıklar otomatik başarılı olur.\n\nUzak Büyü (Distant Spell) [1 SP]: En az 5 fit menzilli büyüde menzili iki katına, Touch menzilli büyüde 30 fit'e çıkarırsınız.\n\nGüçlendirilmiş Büyü (Empowered Spell) [1 SP]: Büyü hasarı attığınızda Charisma modifikasyonunuza kadar hasar zarını tekrar atabilirsiniz.\n\nUzatılmış Büyü (Extended Spell) [1 SP]: 1 dakika+ süresli büyüde süreyi iki katına (max 24 saat) çıkarırsınız.\n\nYükseltilmiş Büyü (Heightened Spell) [2 SP]: Kurtarma atışı gerektiren büyüde bir hedefe dezavantaj verirsiniz.\n\nHızlandırılmış Büyü (Quickened Spell) [2 SP]: Action casting time'lı büyüyü Bonus Action'a çevirirsiniz.\n\nArayan Büyü (Seeking Spell) [1 SP]: Büyü k için saldırı atışı ıskalarsanız d20'yi tekrar atabilirsiniz.\n\nİnce Büyü (Subtle Spell) [1 SP]: Verbal, Somatic veya Material bileşenler olmadan büyü yaparsınız.\n\nDönüştürülmüş Büyü (Transmuted Spell) [1 SP]: Belirli hasar tiplerini (Acid/Cold/Fire/Lightning/Poison/Thunder) değiştirirsiniz.\n\nİkizlenmiş Büyü (Twinned Spell) [1 SP]: Daha yüksek seviyede ek yaratık hedefleyebilen büyünün seviyesini 1 artırırsınız.",
+      "level": 2,
+      "featureType": "choice"
+    },
+    {
+      "id": "sorcerer-subclass",
+      "name": "Sorcerer Alt Sınıfı",
+      "source": "phb24",
+      "description": "Seçtiğiniz bir Sorcerer alt sınıfında (subclass) uzmanlaşırsınız.",
       "level": 3,
       "featureType": "choice"
+    },
+    {
+      "id": "asi-4",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 4,
+      "featureType": "choice"
+    },
+    {
+      "id": "sorcerous-restoration",
+      "name": "Büyüsel İyileşme (Sorcerous Restoration)",
+      "source": "phb24",
+      "description": "Kısa Dinlenme bittiğinde harcanan Sorcery Point'leri yenileyebilirsiniz ancak Sorcerer seviyenizin yarısından (aşağı yuvarla) fazla olamaz. Bu özelliği kullandıktan sonra Uzun Dinlenme bitirene kadar tekrar yapamazsınız.",
+      "level": 5,
+      "featureType": "resource"
+    },
+    {
+      "id": "subclass-feature-6",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Sorcerer alt sınıfınızdan bir özellik kazanırsınız.",
+      "level": 6,
+      "featureType": "passive"
+    },
+    {
+      "id": "sorcery-incarnate",
+      "name": "Büyü Bedeni (Sorcery Incarnate)",
+      "source": "phb24",
+      "description": "Innate Sorcery kullanımınız kalmamışsa onu etkinleştirmek için Bonus Aksiyon aldığınızda 2 Sorcery Point harcayarak kullanabilirsiniz.\n\nAyrıca Innate Sorcery özelliğiniz etkinken yaptığınız her büyüde en fazla iki Metamagic seçeneği kullanabilirsiniz.",
+      "level": 7,
+      "featureType": "passive",
+      "improvesFeature": "innate-sorcery"
+    },
+    {
+      "id": "asi-8",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 8,
+      "featureType": "choice"
+    },
+    {
+      "id": "metamagic-10",
+      "name": "Metabüyü (Metamagic)",
+      "source": "phb24",
+      "description": "Metamagic seçeneklerinden seçtiğiniz iki tanesini daha kazanırsınız.",
+      "level": 10,
+      "featureType": "choice"
+    },
+    {
+      "id": "asi-12",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 12,
+      "featureType": "choice"
+    },
+    {
+      "id": "subclass-feature-14",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Sorcerer alt sınıfınızdan bir özellik kazanırsınız.",
+      "level": 14,
+      "featureType": "passive"
+    },
+    {
+      "id": "asi-16",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 16,
+      "featureType": "choice"
+    },
+    {
+      "id": "metamagic-17",
+      "name": "Metabüyü (Metamagic)",
+      "source": "phb24",
+      "description": "Metamagic seçeneklerinden seçtiğiniz iki tanesini daha kazanırsınız.",
+      "level": 17,
+      "featureType": "choice"
+    },
+    {
+      "id": "subclass-feature-18",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Sorcerer alt sınıfınızdan bir özellik kazanırsınız.",
+      "level": 18,
+      "featureType": "passive"
+    },
+    {
+      "id": "epic-boon-sorcerer",
+      "name": "Epik Lütuf (Epic Boon)",
+      "source": "phb24",
+      "description": "Bir Epik Lütuf veya seçebileceğiniz başka bir hüner kazanırsınız. Boon of Dimensional Travel önerilir.",
+      "level": 19,
+      "featureType": "choice"
+    },
+    {
+      "id": "arcane-apotheosis",
+      "name": "Gizemli Doruk (Arcane Apotheosis)",
+      "source": "phb24",
+      "description": "Innate Sorcery özelliğiniz etkinken turlarınızın her birinde bir Metamagic seçeneği ni Sorcery Point harcamadan kullanabilirsiniz.",
+      "level": 20,
+      "featureType": "passive"
     }
   ],
   "subclasses": [
     {
-      "id": "draconic-bloodline",
-      "name": "Draconic Bloodline",
-      "source": "srd",
-      "description": "Your innate magic comes from draconic magic that was mingled with your blood or that of your ancestors.",
-      "parentClassId": "sorcerer",
-      "subclassFeatureLevel": 1,
-      "features": [
-        {
-          "id": "dragon-ancestor",
-          "name": "Dragon Ancestor",
-          "source": "srd",
-          "description": "You choose one type of dragon as your ancestor.",
-          "level": 1,
-          "featureType": "choice"
-        },
-        {
-          "id": "draconic-resilience",
-          "name": "Draconic Resilience",
-          "source": "srd",
-          "description": "Your hit point maximum increases by 1, and it increases by 1 again whenever you gain a level in this class.",
-          "level": 1,
-          "featureType": "passive"
-        }
-      ]
-    },
-    {
       "id": "aberrant-sorcery",
-      "name": "Aberrant Sorcery",
-      "source": "user",
-      "description": "You harbor a psychic wind from the Far Realm or another plane of madness.",
+      "name": "Anormal Büyü (Aberrant Sorcery)",
+      "source": "phb24",
+      "description": "Bir yabancı etki zihninize dokunaklarını sarmış, size psionik güç vermiştir. Artık o güçle diğer zihinlere dokunabilir ve etrafınızdaki dünyayı değiştirebilirsiniz.",
       "parentClassId": "sorcerer",
-      "subclassFeatureLevel": 1,
+      "subclassFeatureLevel": 3,
       "features": [
         {
           "id": "psionic-spells",
-          "name": "Psionic Spells",
-          "description": "You learn additional spells that count as sorcerer spells for you.",
-          "level": 1,
+          "name": "Psionik Büyüler (Psionic Spells)",
+          "description": "Belirli Sorcerer seviyelerine ulaştığınızda listelenen büyüleri her zaman hazırlanmış sayılırsınız.\n\nSeviye 3: Arms of Hadar, Calm Emotions, Detect Thoughts, Dissonant Whispers, Mind Sliver\nSeviye 5: Hunger of Hadar, Sending\nSeviye 7: Evard's Black Tentacles, Summon Aberration\nSeviye 9: Rary's Telepathic Bond, Telekinesis",
+          "level": 3,
           "featureType": "passive"
-        }
-      ]
-    },
-    {
-      "id": "clockwork-sorcery",
-      "name": "Clockwork Sorcery",
-      "source": "user",
-      "description": "You have tapped into the cosmic force of order, the clockwork precision of Mechanus.",
-      "parentClassId": "sorcerer",
-      "subclassFeatureLevel": 1,
-      "features": [
+        },
         {
-          "id": "restore-balance",
-          "name": "Restore Balance",
-          "description": "You can use your reaction to neutralize advantage or disadvantage on a roll.",
-          "level": 1,
+          "id": "telepathic-speech",
+          "name": "Telepatik Konuşma (Telepathic Speech)",
+          "description": "Zihniniz ve başkasının zihni arasında telepatik bağlantı kurabilirsiniz. Bonus Aksiyon olarak 30 fit içinde görebildiğiniz bir yaratık seçin. Siz ve seçilen yaratık birbirinizin Charisma modifikasyonunuz kadar mil (minimum 1 mil) içindeyken telepatik iletişim kurabilirsiniz.\n\nTelepatik bağlantı Sorcerer seviyenize eşit dakika sürer. Farklı bir yaratıkla bağlantı kurmak için bu yeteneği kullanırsanız erken biter.",
+          "level": 3,
+          "featureType": "active"
+        },
+        {
+          "id": "psionic-sorcery",
+          "name": "Psionik Büyü (Psionic Sorcery)",
+          "source": "phb24",
+          "description": "Psionic Spells özelliğinizden herhangi bir seviye 1+ büyü yaptığınızda normal şekilde büyü slotu harcayarak veya büyünün seviyesine eşit Sorcery Point harcayarak yapabilirsiniz. Sorcery Point kullanarak yaparsanız Verbal veya Somatic bileşen gerektirmez ve büyü tarafından tüketilmedikçe veya belirtilen maliyeti olmadıkça Material bileşen gerektirmez.",
+          "level": 6,
+          "featureType": "passive"
+        },
+        {
+          "id": "psychic-defenses",
+          "name": "Psişik Savunmalar (Psychic Defenses)",
+          "description": "Psychic hasara karşı Direnç kazanırsınız ve Charmed veya Frightened durumundan kaçınmak veya sonlandırmak için kurtarma atışlarında avantaj kazanırsınız.",
+          "level": 6,
+          "featureType": "passive"
+        },
+        {
+          "id": "revelation-in-flesh",
+          "name": "Bedende Vahiy (Revelation in Flesh)",
+          "description": "İçinizdeki gizli anormal gerçeği serbest bırakabilirsiniz. Bonus Aksiyon olarak vücudunuzu 10 dakika boyunca büyüsel olarak değiştirmek için 1 veya daha fazla Sorcery Point harcayabilirsiniz. Harcadığınız her Sorcery Point için şu faydalardan birini kazanırsınız:\n\nSu Adaptasyonu: Hızınızın iki katı Swim Speed kazanırsınız ve su altında nefes alabilirsiniz.\n\nParıldayan Uçuş: Hızınıza eşit Fly Speed kazanırsınız ve havada asılı kalabilirsiniz.\n\nGörünmezi Görme: Total Cover arkasında olmayan 60 fit içindeki Invisible yaratıkları görebilirsiniz.\n\nKurt Benzeri Hareket: Vücudunuz 1 inç kadar dar alanlardan geçebilir ve hareketsizlik kısıtlamalarından kaçabilirsiniz.",
+          "level": 14,
+          "featureType": "active"
+        },
+        {
+          "id": "warping-implosion",
+          "name": "Bozucu Patlama (Warping Implosion)",
+          "description": "Uzay-büken bir anomali serbest bırakabilirsiniz. Magic aksiyon olarak 120 fit içinde görebildiğiniz boş bir alana ışınlanırsınız. Kaybolduğunuzdan hemen sonra ayrıldığınız alanın 30 fit içindeki her yaratık büyü kurtarma DC'nize karşı Strength kurtarma atışı yapmalıdır. Başarısız olursa yaratık 3d10 Force hasar alır ve ayrıldığınız alana doğru çekilir. Başarılı olursa yarı hasar alır.\n\nBu özelliği kullandıktan sonra Uzun Dinlenme bitirene kadar tekrar yapamazsınız. Alternatif olarak kullanımı yenilemek için 5 Sorcery Point harcayabilirsiniz (aksiyon gerekmez).",
+          "level": 18,
           "featureType": "active"
         }
       ]
     },
     {
-      "id": "wild-magic-sorcery",
-      "name": "Wild Magic Sorcery",
-      "source": "user",
-      "description": "Your magic comes from the wild forces of chaos that underlie the order of creation.",
+      "id": "clockwork-sorcery",
+      "name": "Mekanizma Büyüsü (Clockwork Sorcery)",
+      "source": "phb24",
+      "description": "Kozmik düzen gücü sizi büyüyle doldurmuştur. O güç Mechanus'tan veya ona benzer bir alemden -tamamen mekanizma verimliliğiyle şekillenmiş bir varoluş düzleminden- kaynaklanır.",
       "parentClassId": "sorcerer",
-      "subclassFeatureLevel": 1,
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "clockwork-spells",
+          "name": "Mekanizma Büyüleri (Clockwork Spells)",
+          "description": "Belirli Sorcerer seviyelerine ulaştığınızda listelenen büyüleri her zaman hazırlanmış sayılırsınız.\n\nSeviye 3: Aid, Alarm, Lesser Restoration, Protection from Evil and Good\nSeviye 5: Dispel Magic, Protection From Energy\nSeviye 7: Freedom of Movement, Summon Construct\nSeviye 9: Greater Restoration, Wall of Force\n\nAyrıca Sorcerer büyülerinizden herhangi birini yaparken düzene bağlantınız tezahür eder (hayalet çarklar, saat ibreleri gözlerinizde döner, pirinç parıltı vb.).",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "restore-balance",
+          "name": "Dengeyi Restore Etme (Restore Balance)",
+          "description": "Mutlak düzen düzlemine bağlantınız kaotik anları dengelemenizi sağlar. 60 fit içinde görebildiğiniz bir yaratık avantaj veya dezavantajla d20 atmak üzereyken atışın avantaj ve dezavantajdan etkilenmesini önlemek için Reaksiyon alabilirsiniz.\n\nBu özelliği Charisma modifikasyonunuza (minimum bir kez) eşit sayıda kullanabilirsiniz ve Uzun Dinlenme bittiğinde tüm harcanan kullanımları yenilersiniz.",
+          "level": 3,
+          "featureType": "active"
+        },
+        {
+          "id": "bastion-of-law",
+          "name": "Kanun Kalesi (Bastion of Law)",
+          "description": "Bir yaratığa parıldayan düzen kalkanıyla donatmak için varoluşun büyük denklemine dokunabilirsiniz. Magic aksiyon olarak 30 fit içinde görebildiğiniz kendiniz veya başka bir yaratık etrafında büyülü koruma yaratmak için 1-5 Sorcery Point harcayabilirsiniz. Koruma harcanan Sorcery Point sayısı kadar d8 ile temsil edilir. Koruma altındaki yaratık hasar aldığında o zarlardan sayı harcayabilir, atabilir ve alınan hasarı atılan toplam kadar azaltabilir.\n\nKoruma Uzun Dinlenme bitene veya bu özelliği  tekrar kullanana kadar sürer.",
+          "level": 6,
+          "featureType": "active"
+        },
+        {
+          "id": "trance-of-order",
+          "name": "Düzen Transı (Trance of Order)",
+          "description": "Bilincini Mechanus'un sonsuz hesaplamalarıyla hizalama yeteneği kazanırsınız. Bonus Aksiyon olarak 1 dakika boyunca bu duruma girebilirsiniz. Süre boyunca size karşı saldırı atışları avantajdan faydalananamaz ve bir D20 Test yaptığınızda d20'de 9 veya daha düşük atışı 10 olarak sayabilirsiniz.\n\nBu özelliği kullandıktan sonra Uzun Dinlenme bitirene kadar tekrar yapamazsınız. Alternatif olarak kullanımı yenilemek için 5 Sorcery Point harcayabilirsiniz (aksiyon gerekmez).",
+          "level": 14,
+          "featureType": "active"
+        },
+        {
+          "id": "clockwork-cavalcade",
+          "name": "Mekanizma Geçit Töreni (Clockwork Cavalcade)",
+          "description": "Etrafınızdaki düzensizliği temizlemek için bir an düzen ruhlarını çağırırsınız. Magic aksiyon olarak sizden başlayan 30 fit Cube içinde ruhları çağırırsınız. Ruhlar modron veya seçtiğiniz Construct gibi görünür, maddi olmayan ve zarar görmezdir. Kaybolmadan önce Cube içinde şu etkileri yaratırlar. Bu aksiyonu kullandıktan sonra Uzun Dinlenme bitirene kadar tekrar yapamazsınız. Alternatif olarak kullanımı yenilemek için 7 Sorcery Point harcayabilirsiniz (aksiyon gerekmez).\n\nİyileşme: Ruhlar Cube içindeki seçtiğiniz yaratıklar arasında istediğiniz gibi bölünen 100 Can Puanına kadar restore eder.\n\nTamir: Tamamen Cube içindeki hasarlı nesneler anında tamir edilir.\n\nDağıtma: Cube içindeki seçtiğiniz yaratık ve nesnelerdeki seviye 6 ve altı her büyü sona erer.",
+          "level": 18,
+          "featureType": "active"
+        }
+      ]
+    },
+    {
+      "id": "draconic-sorcery",
+      "name": "Ejderha Büyüsü (Draconic Sorcery)",
+      "source": "phb24",
+      "description": "Doğuştan büyünüz bir ejderhanın armağanından gelir. Belki ölümle yüz yüze bir kadim ejderha büyüsel gücünün bir kısmını size veya atanıza bağışladı.",
+      "parentClassId": "sorcerer",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "draconic-resilience",
+          "name": "Ejderha Dayanıklılığı (Draconic Resilience)",
+          "description": "Vücudunuzdaki büyü ejderha armağanınızın fiziksel özelliklerini ortaya çıkarır. Can Puanı maximumunuz 3 artar ve başka Sorcerer seviyesi kazandığınızda 1 daha artar.\n\nVücudunuzun bir kısmı da ejderha benzeri pullarla kaplıdır. Zırh giymediğinizde temel Armor Class 10 artı Dexterity ve Charisma modifikasyonlarınıza eşittir.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "draconic-spells",
+          "name": "Ejderha Büyüleri (Draconic Spells)",
+          "description": "Belirli Sorcerer seviyelerine ulaştığınızda listelenen büyüleri her zaman hazırlanmış sayılırsınız.\n\nSeviye 3: Alter Self, Chromatic Orb, Command, Dragon's Breath\nSeviye 5: Fear, Fly\nSeviye 7: Arcane Eye, Charm Monster\nSeviye 9: Legend Lore, Summon Dragon",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "elemental-affinity",
+          "name": "Elementel Yakınlık (Elemental Affinity)",
+          "description": "Ejderha büyünüzün ejderhalarla ilişkili bir hasar tipine yakınlığı vardır. O tiplerden birini seçin: Acid, Cold, Fire, Lightning veya Poison.\n\nO hasar tipine karşı Direnç kazanırsınız ve o tipte hasar veren büyü yaptığınızda o büyünün bir hasar atışına Charisma modifikasyonunuzu ekleyebilirsiniz.",
+          "level": 6,
+          "featureType": "choice"
+        },
+        {
+          "id": "dragon-wings",
+          "name": "Ejderha Kanatları (Dragon Wings)",
+          "description": "Bonus Aksiyon olarak sırtınızda ejderha kanatlarının belirmesine sebep olabilirsiniz. Kanatlar 1 saat boyunca veya onları bitirene kadar (aksiyon gerekmez) sürer. Süre boyunca 60 fit Fly Speed sahibi olursunuz.\n\nBu özelliği kullandıktan sonra Uzun Dinlenme bitirene kadar tekrar yapamazsınız. Alternatif olarak kullanımı yenilemek için 3 Sorcery Point harcayabilirsiniz (aksiyon gerekmez).",
+          "level": 14,
+          "featureType": "active"
+        },
+        {
+          "id": "dragon-companion",
+          "name": "Ejderha Yoldaşı (Dragon Companion)",
+          "description": "Summon Dragon'u Material bileşen olmadan yapabilirsiniz. Ayrıca büyü slotu olmadan bir kez yapabilirsiniz ve Uzun Dinlenme bittiğinde bu şekilde yapma yeteneğinizi yenilersiniz.\n\nBüyüyü yapmaya başladığınızda Konsantrasyon gerektirmeyecek şekilde değiştirebilirsiniz. Bunu yaparsanız o yapma için büyünün süresi 1 dakika olur.",
+          "level": 18,
+          "featureType": "passive"
+        }
+      ]
+    },
+    {
+      "id": "wild-magic-sorcery",
+      "name": "Vahşi Büyü (Wild Magic Sorcery)",
+      "source": "phb24",
+      "description": "Doğuştan büyünüz yaratılışın düzeninin altında yatan kaos güçlerinden kaynaklanır. Siz veya bir atanız ham büyüye maruz kalmış olabilirsiniz. Kaynağı ne olursa olsun bu büyü içinizde çalkalanır, herhangi bir çıkış bekler.",
+      "parentClassId": "sorcerer",
+      "subclassFeatureLevel": 3,
       "features": [
         {
           "id": "wild-magic-surge",
-          "name": "Wild Magic Surge",
-          "description": "Your spellcasting can unleash surges of untamed magic.",
-          "level": 1,
+          "name": "Vahşi Büyü Patlaması (Wild Magic Surge)",
+          "description": "Büyü yapmanız evcilleştirilmemiş büyü patlamalarını serbest bırakabilir. Tur başına bir kez, büyü slotu ile Sorcerer büyüsü yaptıktan hemen sonra 1d20 atabilirsiniz. 20 atarsanız Wild Magic Surge tablosunda atış yaparak büyüsel etki yaratırsınız.\n\nBüyüsel etki bir büyüyse Metamagic'inizden etkilenmeyecek kadar vahşidir.",
+          "level": 3,
           "featureType": "passive"
+        },
+        {
+          "id": "tides-of-chaos",
+          "name": "Kaos Dalgaları (Tides of Chaos)",
+          "description": "D20 atmadan önce bir D20 Test'te kendinize avantaj vermek için kaosu manipüle edebilirsiniz. Bunu yaptıktan sonra bir Sorcerer büyüsünü büyü slotu ile yapmadan veya Uzun Dinlenme bitirmeden bu özelliği tekrar kullanamazsınız.\n\nUzun Dinlenme bitirmeden büyü slotu ile Sorcerer büyüsü yaparsanız otomatik olarak Wild Magic Surge tablosunda atış yaparsınız.",
+          "level": 3,
+          "featureType": "active"
+        },
+        {
+          "id": "bend-luck",
+          "name": "Şansı Bükme (Bend Luck)",
+          "description": "Vahşi büyünüzü kullanarak kaderi bükme yeteneğiniz var. Görebildiğiniz başka bir yaratık bir D20 Test için d20 attıktan hemen sonra Reaksiyon alabilir ve 1d4 atmak için 1 Sorcery Point harcayabilirsiniz. Atılan sayıyı d20 atışına bonus veya ceza (seçiminize göre) olarak uygulayabilirsiniz.",
+          "level": 6,
+          "featureType": "active"
+        },
+        {
+          "id": "controlled-chaos",
+          "name": "Kontrollü Kaos (Controlled Chaos)",
+          "description": "Vahşi büyünüzün patlamalarını biraz kontrol edebilirsiniz. Wild Magic Surge tablosunda atış yaptığınızda iki kez atabilir ve her iki sayıyı da kullanabilirsiniz.",
+          "level": 14,
+          "featureType": "passive"
+        },
+        {
+          "id": "tamed-surge",
+          "name": "Evcilleştirilmiş Patlama (Tamed Surge)",
+          "description": "Büyü slotu ile Sorcerer büyüsü yaptıktan hemen sonra o tabloda atmak yerine Wild Magic Surge tablosundan seçtiğiniz bir etki yaratabilirsiniz. Tablodaki son satır hariç herhangi bir etki seçebilirsiniz ve seçilen etki atış içeriyorsa yapmalısınız.\n\nBu özelliği kullandıktan sonra Uzun Dinlenme bitirene kadar tekrar yapamazsınız.",
+          "level": 18,
+          "featureType": "active"
         }
       ]
     }
   ],
   "subclassName": "Sorcerous Origin",
-  "subclassLevel": 1,
+  "subclassLevel": 3,
   "asiLevels": [
     4,
     8,

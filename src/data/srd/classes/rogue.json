@@ -1,8 +1,8 @@
 {
   "id": "rogue",
   "name": "Rogue",
-  "source": "srd",
-  "description": "A scoundrel who uses stealth and trickery to overcome obstacles and enemies.",
+  "source": "phb24",
+  "description": "Engelleri ve düşmanları aşmak için gizlilik ve hilebazlık kullanan bir haydut.",
   "hitDie": "d8",
   "primaryAbility": [
     "DEX"
@@ -57,100 +57,36 @@
     }
   },
   "startingEquipment": {
-    "guaranteed": [
-      {
-        "itemId": "leather_armor",
-        "quantity": 1
-      },
-      {
-        "itemId": "dagger",
-        "quantity": 2
-      },
-      {
-        "itemId": "thieves_tools",
-        "quantity": 1
-      }
-    ],
     "choices": [
       {
-        "id": "weapon-choice",
+        "id": "starting-pack",
         "options": [
           {
-            "description": "A rapier",
+            "description": "(A) Leather Armor, 2 Daggers, Thieves' Tools, Burglar's Pack, and 8 GP",
             "items": [
               {
-                "itemId": "rapier",
-                "quantity": 1
-              }
-            ]
-          },
-          {
-            "description": "A shortsword",
-            "items": [
-              {
-                "itemId": "shortsword",
-                "quantity": 1
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "ranged-choice",
-        "options": [
-          {
-            "description": "A shortbow and quiver of 20 arrows",
-            "items": [
-              {
-                "itemId": "shortbow",
+                "itemId": "leather_armor",
                 "quantity": 1
               },
               {
-                "itemId": "arrow",
-                "quantity": 20
-              }
-            ]
-          },
-          {
-            "description": "A shortsword",
-            "items": [
+                "itemId": "dagger",
+                "quantity": 2
+              },
               {
-                "itemId": "shortsword",
+                "itemId": "thieves_tools",
                 "quantity": 1
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "pack-choice",
-        "options": [
-          {
-            "description": "A burglar's pack",
-            "items": [
+              },
               {
                 "itemId": "burglars_pack",
                 "quantity": 1
               }
-            ]
+            ],
+            "gold": 8
           },
           {
-            "description": "A dungeoneer's pack",
-            "items": [
-              {
-                "itemId": "dungeoneers_pack",
-                "quantity": 1
-              }
-            ]
-          },
-          {
-            "description": "An explorer's pack",
-            "items": [
-              {
-                "itemId": "explorers_pack",
-                "quantity": 1
-              }
-            ]
+            "description": "(B) 100 GP",
+            "items": [],
+            "gold": 100
           }
         ]
       }
@@ -161,141 +97,215 @@
   },
   "features": [
     {
-      "id": "expertise-rogue",
-      "name": "Expertise",
-      "source": "srd",
-      "description": "Choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves' tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.",
+      "id": "expertise-rogue-1",
+      "name": "Uzmanlık (Expertise)",
+      "source": "phb24",
+      "description": "Beceri proficiency'lerinizden seçtiğiniz ikisinde Expertise kazanırsınız. Proficiency sahibi olduğunuzda Sleight of Hand ve Stealth önerilir.\n\nRogue seviyesi 6'da beceri proficiency'lerinizden seçtiğiniz iki tanesinde daha Expertise kazanırsınız.",
       "level": 1,
-      "featureType": "choice",
-      "teachingNotes": {
-        "conceptsTaught": [
-          "expertise",
-          "skill_specialization"
-        ],
-        "practiceScenario": "expertise-demo"
-      }
+      "featureType": "choice"
     },
     {
       "id": "sneak-attack",
-      "name": "Sneak Attack",
-      "source": "srd",
-      "description": "You know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. You don't need advantage if another enemy of the target is within 5 feet of it.",
+      "name": "Gizli Saldırı (Sneak Attack)",
+      "source": "phb24",
+      "description": "İnce darbeyi nasıl yapacağınızı ve bir düşmanın dikkat dağınıklığından nasıl yararlanacağınızı bilirsiniz. Tur başına bir kez, saldırı atışında avantajınız varsa ve saldırı Finesse veya Ranged silah kullanıyorsa isabet ettirdiğiniz bir yaratığa ekstra 1d6 hasar verebilirsiniz. Ekstra hasarın tipi silahın tipiyle aynıdır.\n\nMüttefiklerinizden en az biri hedefin 5 fit içindeyse, müttefikin Incapacitated durumu yoksa ve saldırı atışında dezavantajınız yoksa saldırı atışında avantaja ihtiyacınız yoktur.\n\nEkstra hasar Rogue seviyeleri kazandıkça artar.",
       "level": 1,
-      "featureType": "passive",
-      "teachingNotes": {
-        "conceptsTaught": [
-          "sneak_attack",
-          "advantage_usage",
-          "positioning"
-        ],
-        "practiceScenario": "sneak-attack-tutorial"
-      }
+      "featureType": "passive"
     },
     {
       "id": "thieves-cant",
-      "name": "Thieves' Cant",
-      "source": "srd",
-      "description": "You have learned thieves' cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation.",
+      "name": "Hırsızlar Argosu (Thieves' Cant)",
+      "source": "phb24",
+      "description": "Hile yeteneklerinizi uyguladığınız topluluklarda çeşitli diller öğrendiniz. Thieves' Cant ve dil tablolarından seçtiğiniz bir başka dil bilirsiniz.",
       "level": 1,
       "featureType": "passive"
     },
     {
+      "id": "weapon-mastery-rogue",
+      "name": "Silah Ustalığı (Weapon Mastery)",
+      "source": "phb24",
+      "description": "Silahlarla eğitiminiz proficiency sahibi olduğunuz seçtiğiniz iki çeşit silahın (Dagger ve Shortbow gibi) ustalık özelliklerini kullanmanızı sağlar.\n\nUzun Dinlenme bittiğinde seçtiğiniz silah çeşitlerini değiştirebilirsiniz. Örneğin Scimitar ve Shortsword'un ustalık özelliklerini kullanmaya geçebilirsiniz.",
+      "level": 1,
+      "featureType": "choice"
+    },
+    {
       "id": "cunning-action",
-      "name": "Cunning Action",
-      "source": "srd",
-      "description": "Your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns to take the Dash, Disengage, or Hide action.",
+      "name": "Kurnaz Aksiyon (Cunning Action)",
+      "source": "phb24",
+      "description": "Hızlı düşünceniz v e çevikliğiniz hızlı hareket etmenize ve aksiyon almanıza izin verir. Turunuzda şu aksiyonlardan birini Bonus Aksiyon olarak alabilirsiniz: Dash, Disengage veya Hide.",
       "level": 2,
-      "featureType": "passive",
-      "grantsAction": {
-        "name": "Cunning Action",
-        "actionType": "bonus_action",
-        "effect": "dash_or_disengage_or_hide"
-      },
-      "teachingNotes": {
-        "conceptsTaught": [
-          "bonus_action",
-          "action_economy",
-          "tactical_movement"
-        ],
-        "practiceScenario": "cunning-action-tutorial"
-      }
-    },
-    {
-      "id": "uncanny-dodge",
-      "name": "Uncanny Dodge",
-      "source": "srd",
-      "description": "When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.",
-      "level": 5,
-      "featureType": "active",
-      "grantsAction": {
-        "name": "Uncanny Dodge",
-        "actionType": "reaction",
-        "effect": "halve_damage"
-      },
-      "teachingNotes": {
-        "conceptsTaught": [
-          "reactions",
-          "damage_mitigation"
-        ],
-        "practiceScenario": "uncanny-dodge-demo"
-      }
-    },
-    {
-      "id": "evasion",
-      "name": "Evasion",
-      "source": "srd",
-      "description": "When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed, and only half damage if you fail.",
-      "level": 7,
-      "featureType": "passive",
-      "teachingNotes": {
-        "conceptsTaught": [
-          "evasion",
-          "saving_throw_modification"
-        ],
-        "practiceScenario": "evasion-demo"
-      }
-    },
-    {
-      "id": "reliable-talent",
-      "name": "Reliable Talent",
-      "source": "srd",
-      "description": "Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.",
-      "level": 11,
       "featureType": "passive"
     },
     {
-      "id": "blindsense",
-      "name": "Blindsense",
-      "source": "srd",
-      "description": "If you are able to hear, you are aware of the location of any hidden or invisible creature within 10 feet of you.",
+      "id": "rogue-subclass",
+      "name": "Rogue Alt Sınıfı",
+      "source": "phb24",
+      "description": "Seçtiğiniz bir Rogue alt sınıfında (subclass) uzmanlaşırsınız.",
+      "level": 3,
+      "featureType": "choice"
+    },
+    {
+      "id": "steady-aim",
+      "name": "Sabit Nişan (Steady Aim)",
+      "source": "phb24",
+      "description": "Bonus Aksiyon olarak mevcut turda bir sonraki saldırı atışınızda kendinize avantaj verebilirsiniz. Bu özelliği sadece bu tur hareket etmediyseniz kullanabilirsiniz ve kullandıktan sonra Hızınız mevcut tur sonuna kadar 0 olur.",
+      "level": 3,
+      "featureType": "active"
+    },
+    {
+      "id": "asi-4",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 4,
+      "featureType": "choice"
+    },
+    {
+      "id": "cunning-strike",
+      "name": "Kurnaz Darbe (Cunning Strike)",
+      "source": "phb24",
+      "description": "Sneak Attack'inizi kullanmanın kurnaz yollarını geliştirdiniz. Sneak Attack hasarı verdiğinizde şu Cunning Strike etkilerinden birini ekleyebilirsiniz. Her etkinin zar maliyeti vardır, bu Sneak Attack hasar zarlarından vazgeçmeniz gereken sayıdır. Zarı atmadan önce çıkarırsınız ve etki saldırının hasarı verildikten hemen sonra oluşur.\n\nCunning Strike etkisi kurtarma atışı gerektiriyorsa DC 8 artı Dexterity modifikasyonunuz ve Proficiency Bonusunuza eşittir.\n\nZehir (Poison) (Maliyet: 1d6): Darbeye toksin eklersiniz, hedefi Constitution kurtarma atışı yapmaya zorlarsınız. Başarısız olursa hedef 1 dakika boyunca Poisoned durumuna girer. Turlarının her birinin sonunda Poisoned hedef atışı tekrarlar ve başarılı olursa etki sona erer. Bu etkiyi kullanmak için Poisoner's Kit taşımalısınız.\n\nTakılma (Trip) (Maliyet: 1d6): Hedef Large veya daha küçükse Dexterity kurtarma atışında başarılı olmalıdır veya Prone durumuna girer.\n\nGeri Çekilme (Withdraw) (Maliyet: 1d6): Saldırıdan hemen sonra Opportunity Attack'e sebep olmadan Hızınızın yarısı kadar hareket edersiniz.",
+      "level": 5,
+      "featureType": "passive"
+    },
+    {
+      "id": "uncanny-dodge",
+      "name": "Esrarengiz Kaçınma (Uncanny Dodge)",
+      "source": "phb24",
+      "description": "Görebildiğiniz bir saldırgan saldırı atışıyla size isabet ettirdiğinde saldırının size karşı hasarını yarıya indirmek (aşağı yuvarla) için Reaksiyon alabilirsiniz.",
+      "level": 5,
+      "featureType": "active"
+    },
+    {
+      "id": "expertise-rogue-6",
+      "name": "Uzmanlık (Expertise)",
+      "source": "phb24",
+      "description": "Beceri proficiency'lerinizden seçtiğiniz ikisinde Expertise kazanırsınız.",
+      "level": 6,
+      "featureType": "choice"
+    },
+    {
+      "id": "evasion",
+      "name": "Kaçınma (Evasion)",
+      "source": "phb24",
+      "description": "Belirli tehlikelerden çevik şekilde kaçabilirsiniz. Sadece yarı hasar almak için Dexterity kurtarma atışı yapmanızı gerektiren bir etkiye maruz kaldığınızda, kurtarma atışında başarılı olursanız hiç hasar almazsınız, başarısız olursanız sadece yarı hasar alırsınız. Incapacitated durumu varsa bu özelliği kullanamazsınız.",
+      "level": 7,
+      "featureType": "passive"
+    },
+    {
+      "id": "reliable-talent",
+      "name": "Güvenilir Yetenek (Reliable Talent)",
+      "source": "phb24",
+      "description": "Beceri veya tool proficiency'lerinizden birini kullanan bir yetenek kontrolü yaptığınızda d20 atışında 9 veya daha düşük atarsanız 10 olarak sayabilirsiniz.",
+      "level": 7,
+      "featureType": "passive"
+    },
+    {
+      "id": "asi-8",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 8,
+      "featureType": "choice"
+    },
+    {
+      "id": "subclass-feature-9",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Rogue alt sınıfınızdan bir özellik kazanırsınız.",
+      "level": 9,
+      "featureType": "passive"
+    },
+    {
+      "id": "asi-10",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 10,
+      "featureType": "choice"
+    },
+    {
+      "id": "improved-cunning-strike",
+      "name": "Gelişmiş Kurnaz Darbe (Improved Cunning Strike)",
+      "source": "phb24",
+      "description": "Sneak Attack hasarı verdiğinizde artık en fazla iki Cunning Strike etkisi kullanabilir, her etki için zar maliyeti ödersiniz.",
+      "level": 11,
+      "featureType": "passive",
+      "improvesFeature": "cunning-strike"
+    },
+    {
+      "id": "asi-12",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 12,
+      "featureType": "choice"
+    },
+    {
+      "id": "subclass-feature-13",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Rogue alt sınıfınızdan bir özellik kazanırsınız.",
+      "level": 13,
+      "featureType": "passive"
+    },
+    {
+      "id": "devious-strikes",
+      "name": "Hileci Darbeler (Devious Strikes)",
+      "source": "phb24",
+      "description": "Sneak Attack'inizi hilece kullanmanın yeni yollarını pratik yaptınız. Şu etkiler artık Cunning Strike seçenekleriniz arasındadır:\n\nSersemletme (Daze) (Maliyet: 2d6): Hedef Constitution kurtarma atışında başarılı olmalıdır veya bir sonraki turunda şunlardan sadece birini yapabilir: hareket etmek veya aksiyon almak veya Bonus Aksiyon almak.\n\nBayıltma (Knock Out) (Maliyet: 6d6): Hedef Constitution kurtarma atışında başarılı olmalıdır veya 1 dakika boyunca veya herhangi bir hasar alana kadar Unconscious durumuna girer. Unconscious hedef turlarının her birinin sonunda atışı tekrarlar ve başarılı olursa etki sona erer.\n\nGizleme (Obscure) (Maliyet: 3d6): Hedef Dexterity kurtarma atışında başarılı olmalıdır veya bir sonraki turunun sonuna kadar Blinded durumuna girer.",
       "level": 14,
       "featureType": "passive"
     },
     {
       "id": "slippery-mind",
-      "name": "Slippery Mind",
-      "source": "srd",
-      "description": "You have acquired greater mental strength. You gain proficiency in Wisdom saving throws.",
+      "name": "Kaygan Zihin (Slippery Mind)",
+      "source": "phb24",
+      "description": "Kurnaz zihniniz olağanüstü şekilde kontrolü zordur. Wisdom ve Charisma kurtarma atışlarında proficiency kazanırsınız.",
       "level": 15,
       "featureType": "passive"
     },
     {
+      "id": "asi-16",
+      "name": "Yetenek Skoru Artışı veya Hüner",
+      "source": "phb24",
+      "description": "Bir yetenek skorunuzu 2 veya iki yetenek skorunuzu 1 artırın ya da bir Hüner (Feat) kazanın.",
+      "level": 16,
+      "featureType": "choice"
+    },
+    {
+      "id": "subclass-feature-17",
+      "name": "Alt Sınıf Özelliği",
+      "source": "phb24",
+      "description": "Rogue alt sınıfınızdan bir özellik kazanırsınız.",
+      "level": 17,
+      "featureType": "passive"
+    },
+    {
       "id": "elusive",
-      "name": "Elusive",
-      "source": "srd",
-      "description": "You are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you while you aren't incapacitated.",
+      "name": "Ele Avuca Sığmaz (Elusive)",
+      "source": "phb24",
+      "description": "O kadar kaçınıcısınız ki saldırganlar size karşı nadiren üstünlük kazanır. Incapacitated durumu olmadığınız sürece size karşı hiçbir saldırı atışı avantajlı olamaz.",
       "level": 18,
       "featureType": "passive"
     },
     {
+      "id": "epic-boon-rogue",
+      "name": "Epik Lütuf (Epic Boon)",
+      "source": "phb24",
+      "description": "Bir Epik Lütuf veya seçebileceğiniz başka bir hüner kazanırsınız. Boon of the Night Spirit önerilir.",
+      "level": 19,
+      "featureType": "choice"
+    },
+    {
       "id": "stroke-of-luck",
-      "name": "Stroke of Luck",
-      "source": "srd",
-      "description": "You have an uncanny knack for succeeding when you need to. If your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20.",
+      "name": "Şans Darbesi (Stroke of Luck)",
+      "source": "phb24",
+      "description": "İhtiyacınız olduğunda başarılı olma konusunda harika bir maharetiniz var. Bir D20 Test'te başarısız olursanız atışı 20'ye çevirebilirsiniz.\n\nBu özelliği kullandıktan sonra Kısa veya Uzun Dinlenme bitirene kadar tekrar kullanamazsınız.",
       "level": 20,
       "featureType": "resource",
       "resource": {
-        "name": "Stroke of Luck",
+        "name": "Şans Darbesi",
         "maxCount": 1,
         "recoversOn": "short"
       }
@@ -303,112 +313,187 @@
   ],
   "subclasses": [
     {
-      "id": "thief",
-      "name": "Thief",
-      "source": "srd",
-      "description": "You hone your skills in the larcenous arts. Burglars, bandits, cutpurses, and other criminals typically follow this archetype.",
+      "id": "arcane-trickster",
+      "name": "Gizemli Hilekâr (Arcane Trickster)",
+      "source": "phb24",
+      "description": "Bazı Rogue'lar ince ayarlanmış gizlilik ve çeviklik becerilerini büyülerle geliştirir, ticaretlerinde yardımcı olması için büyülü hileler öğrenirler. Bazı Arcane Trickster'lar yeteneklerini yankesicilik ve hırsızlık olarak kullanırken diğerleri şakacılardır.",
       "parentClassId": "rogue",
       "subclassFeatureLevel": 3,
       "features": [
         {
-          "id": "fast-hands",
-          "name": "Fast Hands",
-          "source": "srd",
-          "description": "You can use the bonus action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves' tools to disarm a trap or open a lock, or take the Use an Object action.",
+          "id": "spellcasting-arcane-trickster",
+          "name": "Büyü Yapma (Spellcasting)",
+          "description": "Büyü yapmayı öğrendiniz.\n\nCantrip'ler: Üç cantrip bilirsiniz: Mage Hand ve Wizard büyü listesinden seçtiğiniz iki başka cantrip (Mind Sliver ve Minor Illusion önerilir). Rogue seviyesi kazandığınızda Mage Hand hariç cantrip'lerinizden birini seçtiğiniz başka bir Wizard cantrip ile değiştirebilirsiniz. Rogue seviyesi 10'a ulaştığınızda seçtiğiniz başka bir Wizard cantrip öğrenirsiniz.\n\nBüyü Slotları: Uzun Dinlenme bittiğinde tüm harcanan slotları yenilersiniz.\n\nHazırlanan Büyüler (Seviye 1+): Başlangıçta üç adet seviye 1 Wizard büyüsü seçin (Charm Person, Disguise Self ve Fog Cloud önerilir). Rogue seviyesi kazandığınızda listenizdeki bir büyüyü büyü slotlarınız olan başka bir Wizard büyüsüyle değiştirebilirsiniz.\n\nBüyü Yapma Yeteneği: Intelligence.\n\nBüyü Odağı: Arcane Focus kullanabilirsiniz.",
           "level": 3,
           "featureType": "passive"
         },
         {
-          "id": "second-story-work",
-          "name": "Second-Story Work",
-          "source": "srd",
-          "description": "You gain the ability to climb faster than normal; climbing no longer costs you extra movement. In addition, when you make a running jump, the distance you cover increases by a number of feet equal to your Dexterity modifier.",
+          "id": "mage-hand-legerdemain",
+          "name": "Mage Hand Hokkabazlığı (Mage Hand Legerdemain)",
+          "description": "Mage Hand yaptığınızda Bonus Aksiyon olarak yapabilir ve hayalet eli Invisible yapabilirsiniz. Eli Bonus Aksiyon olarak kontrol edebilir ve onun aracılığıyla Dexterity (Sleight of Hand) kontrolleri yapabilirsiniz.",
           "level": 3,
           "featureType": "passive"
         },
         {
-          "id": "supreme-sneak",
-          "name": "Supreme Sneak",
-          "source": "srd",
-          "description": "You have advantage on a Dexterity (Stealth) check if you move no more than half your speed on the same turn.",
+          "id": "magical-ambush",
+          "name": "Büyüsel Pusu (Magical Ambush)",
+          "description": "Bir yaratığa büyü yaptığınızda Invisible durumu varsa yaratık aynı turda büyüye karşı yaptığı herhangi bir kurtarma atışında dezavantaja sahiptir.",
           "level": 9,
           "featureType": "passive"
         },
         {
-          "id": "use-magic-device",
-          "name": "Use Magic Device",
-          "source": "srd",
-          "description": "You have learned enough about the workings of magic that you can improvise the use of items even when they are not intended for you. You ignore all class, race, and level requirements on the use of magic items.",
+          "id": "versatile-trickster",
+          "name": "Çok Yönlü Hilekâr (Versatile Trickster)",
+          "description": "Mage Hand'inizle hedeflerin dikkatini dağıtma yeteneği kazanırsınız. Cunning Strike'ınızın Trip seçeneğini bir yaratıkta kullandığınızda o seçeneği hayalet elin 5 fit içindeki başka bir yaratıkta da kullanabilirsiniz.",
           "level": 13,
           "featureType": "passive"
         },
         {
-          "id": "thiefs-reflexes",
-          "name": "Thief's Reflexes",
-          "source": "srd",
-          "description": "You can take two turns during the first round of any combat. You take your first turn at your normal initiative and your second turn at your initiative minus 10.",
+          "id": "spell-thief",
+          "name": "Büyü Hırsızı (Spell Thief)",
+          "description": "Bir büyü yapan olarak nasıl büyü yapacağının bilgisini büyüsel olarak çalma yeteneği kazanırsınız.\n\nBir yaratık sizi hedef alan veya sizi alanına dahil eden bir büyü yaptıktan hemen sonra yaratığı Intelligence kurtarma atışı yapmaya zorlamak için Reaksiyon alabilirsiniz (DC büyü kurtarma DC'nize eşittir). Başarısız olursa size karşı büyünün etkisini geçersiz kılarsınız ve en az seviye 1 ve yapabileceğiniz bir seviyedeyse (Wizard büyüsü olması gerekmez) büyünün bilgisini çalarsınız. Sonraki 8 saat boyunca büyüyü hazırlanmış sayılırsınız. Yaratık 8 saat geçene kadar büyüyü yapamaz.\n\nBu özellikle bir büyü çaldıktan sonra Uzun Dinlenme bitirene kadar tekrar kullanamazsınız.",
           "level": 17,
-          "featureType": "passive"
-        }
-      ],
-      "teachingNotes": {
-        "playstyle": "Classic rogue focused on skills, agility, and utility",
-        "complexity": "beginner",
-        "synergies": [
-          "Skill checks",
-          "Exploration",
-          "Utility"
-        ]
-      }
-    },
-    {
-      "id": "arcane-trickster",
-      "name": "Arcane Trickster",
-      "source": "srd",
-      "description": "You enhance your sneaking and agility with magic, learning illusions and enchantment spells.",
-      "parentClassId": "rogue",
-      "subclassFeatureLevel": 3,
-      "features": [
-        {
-          "id": "spellcasting-rogue",
-          "name": "Spellcasting",
-          "description": "You gain the ability to cast spells.",
-          "level": 3,
-          "featureType": "passive"
+          "featureType": "active"
         }
       ]
     },
     {
       "id": "assassin",
-      "name": "Assassin",
-      "source": "srd",
-      "description": "You focus your training on the grim art of death.",
+      "name": "Suikastçı (Assassin)",
+      "source": "phb24",
+      "description": "Bir Suikastçının eğitimi düşmanları ölümcül verimlilikle ortadan kaldırmak için gizlilik, zehir ve kılık değiştirme kullanmaya odaklanır. Bu yolu izleyen bazı Rogue'lar kiralık katiller, casuslar veya ödül avcıları olsa da bu alt sınıfın yetenekleri çeşitli canavarca düşmanlarla yüzleşen maceracılar için eşit derecede kullanışlıdır.",
       "parentClassId": "rogue",
       "subclassFeatureLevel": 3,
       "features": [
         {
           "id": "assassinate",
-          "name": "Assassinate",
-          "description": "You are at your deadliest when you get the drop on your enemies. You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet.",
+          "name": "Suikast (Assassinate)",
+          "description": "Bir hedefi pusuya düşürmede ustasınız, size şu faydaları verir:\n\nInitiative: Initiative atışlarında avantaj kazanırsınız.\n\nŞaşırtıcı Darbeler (Surprising Strikes): Her savaşın ilk turunda henüz tur almamış herhangi bir yaratığa karşı saldırı atışlarında avantaj kazanırsınız. O tur Sneak Attack herhangi bir hedefe isabet ederse hedef silahın tipinde Rogue seviyenize eşit ekstra hasar alır.",
           "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "assassins-tools",
+          "name": "Suikastçının Araçları (Assassin's Tools)",
+          "description": "Bir Disguise Kit ve Poisoner's Kit kazanır ve onlarla proficiency sahibi olursunuz.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "infiltration-expertise",
+          "name": "Sızma Uzmanlığı (Infiltration Expertise)",
+          "description": "Sızmalarınıza yardımcı olan şu tekniklerde uzmansınız:\n\nUsta Taklit (Masterful Mimicry): En az 1 saat incelediyseniz başka bir kişinin konuşmasını, el yazısını veya her ikisini de hatasızca taklit edebilirsiniz.\n\nGezgin Nişan (Roving Aim): Steady Aim kullanarak Hızınız 0'a düşmez.",
+          "level": 9,
+          "featureType": "passive"
+        },
+        {
+          "id": "envenom-weapons",
+          "name": "Silahları Zehirleme (Envenom Weapons)",
+          "description": "Cunning Strike'ınızın Poison seçeneğini kullandığınızda hedef kurtarma atışında başarısız olduğunda ayrıca 2d6 Poison hasarı alır. Bu hasar Poison hasarına Resistance'ı göz ardı eder.",
+          "level": 13,
+          "featureType": "passive"
+        },
+        {
+          "id": "death-strike",
+          "name": "Ölüm Darbesi (Death Strike)",
+          "description": "Bir savaşın ilk turunda Sneak Attack ile isabet ettirdiğinizde hedef Constitution kurtarma atışında (DC 8 artı Dexterity modifikasyonunuz ve Proficiency Bonusunuz) başarılı olmalıdır veya saldırının hasarı hedefe karşı iki katına çıkar.",
+          "level": 17,
           "featureType": "passive"
         }
       ]
     },
     {
       "id": "soulknife",
-      "name": "Soulknife",
-      "source": "user",
-      "description": "You strike with minds rather than muscles, manifesting your power as blades of psychic energy.",
+      "name": "Ruh Bıçağı (Soulknife)",
+      "source": "phb24",
+      "description": "Bir Soulknife zihinle darbe yapar, hem fiziksel hem psişik engelleri keserek geçer. Bu Rogue'lar içlerinde psionik güç keşfeder ve onu hırsızlık işlerini yapmak için kanalıza rlar. Bir Soulknife olarak psionik yetenekleriniz çocukluğunuzdan beri sizi rahatsız etmiş, tam potansiyellerini sadece macera stresini yaşadıkça ortaya çıkarmış olabilir. Veya psişik adeptler grubunu aramış ve gücünüzü nasıl ortaya çıkaracağınızı öğrenmek için yıllar harcamış olabilirsiniz.",
       "parentClassId": "rogue",
       "subclassFeatureLevel": 3,
       "features": [
         {
+          "id": "psionic-power",
+          "name": "Psionik Güç (Psionic Power)",
+          "description": "İçinizde bir psionik enerji kaynağı bulundurursunuz. Bu alt sınıftan sahip olduğunuz belirli güçleri besleyen Psionic Energy Dice ile temsil edilir. Belirli Rogue seviyelerine ulaştığınızda sahip olduğunuz zar sayısı ve zar boyutu değişir.\n\nBu alt sınıftan bir Psionic Energy Die kullanan özellikler sadece bu alt sınıftaki zarları kullanır. Bazı güçleriniz Psionic Energy Die harcar ve zarlarınız bittiğinde güç kullanamazsınız. Kısa Dinlenme bittiğinde harcanan Psionic Energy Dice'ınızdan birini, Uzun Dinlenme bittiğinde hepsini yenilersiniz.\n\nPsi-Destekli Maharetham (Psi-Bolstered Knack): Proficiency sahibi olduğunuz beceri veya tool kullanan yetenek kontrolünde başarısız olursanız bir Psionic Energy Die atabilir ve atılan sayıyı kontrole ekleyebilir, potansiyel olarak başarısızlığı başarıya çevirirsiniz. Zar sadece atış başarılıysa harcanır.\n\nPsişik Fısıltılar (Psychic Whispers): Kendiniz ve başkaları arasında telepatik iletişim kurabilirsiniz. Magic aksiyon olarak Proficiency Bonusunuza kadar görebildiğiniz bir veya daha fazla yaratık seçin ve bir Psionic Energy Die atın. Atılan sayıya eşit saat boyunca seçilen yaratıklar sizinle telepatik konuşabilir ve siz onlarla telepatik konuşabilirsiniz. Mesaj göndermek veya almak için (aksiyon gerekmez) siz ve diğer yaratık birbirinizin 1 mil içinde olmalısınız. Yaratık istediği zaman (aksiyon gerekmez) telepatik bağlantıyı sonlandırabilir. Her Uzun Dinlenmeden sonra ilk kez bu gücü kullandığınızda Psionic Energy Die harcamazsınız. Diğer tüm zamanlarda zarı harcarsınız.",
+          "level": 3,
+          "featureType": "resource",
+          "resource": {
+            "name": "Psionic Energy Dice",
+            "maxCount": 4,
+            "recoversOn": "long"
+          }
+        },
+        {
           "id": "psychic-blades",
-          "name": "Psychic Blades",
-          "description": "You can manifest shimmering blades of psychic energy from your hands.",
+          "name": "Psişik Bıçaklar (Psychic Blades)",
+          "description": "Parlayan psişik enerji bıçaklarını ortaya çıkarabilirsiniz. Attack aksiyonu aldığınızda veya Opportunity Attack yaptığınızda boş elinizde bir Psychic Blade ortaya çıkarabilir ve o bıçakla saldırı yapabilirsiniz. Büyüsel bıçak şu özelliklere sahiptir:\n\nSimple Melee Weapon, 1d6 Psychic hasar, Finesse, Thrown (60/120 ft.), Mastery: Vex (bu özelliği kullanabilirsiniz ve Weapon Mastery ile kullanabileceğiniz özellik sayısına dahil değildir).\n\nBıçak hedefine isabet ettikten veya ıskalamakladuktan hemen sonra kaybolur ve hasar verirse iz bırakmaz.\n\nTurunuzda bıçakla saldırdıktan sonra diğer eliniz onu yaratmak için boşsa aynı turda Bonus Aksiyon olarak ikinci bir psişik bıçakla yakın dövüş veya uzak saldırı yapabilirsiniz. Bu bonus saldırının hasar zarı 1d6 yerine 1d4'tür.",
           "level": 3,
           "featureType": "active"
+        },
+        {
+          "id": "soul-blades",
+          "name": "Ruh Bıçakları (Soul Blades)",
+          "description": "Artık Psychic Blade'lerinizle şu güçleri kullanabilirsiniz:\n\nKilitlenmiş Darbeler (Homing Strikes): Psychic Blade ile saldırı atışı yapar ve hedefi ıskalarsanız bir Psionic Energy Die atabilir ve atılan sayıyı saldırı atışına ekleyebilirsiniz. Bu saldırının isabet etmesine sebep olursa zar harcanır.\n\nPsişik Işınlanma (Psychic Teleportation): Bonus Aksiyon olarak bir Psychic Blade ortaya çıkarır, bir Psionic Energy Die harcayıp atarsınız ve bıçağı görebildiğiniz boş bir alana atılan sayının 10 katı feet kadar uzağa fırlatırsınız. Sonra o alana ışınlanırsınız ve bıçak kaybolur.",
+          "level": 9,
+          "featureType": "passive"
+        },
+        {
+          "id": "psychic-veil",
+          "name": "Psişik Örtü (Psychic Veil)",
+          "description": "Kendinizi maskelemek için psişik statik bir örtü dokuyabilirsiniz. Magic aksiyon olarak 1 saat boyunca veya bu etkiyi bitirene kadar (aksiyon gerekmez) Invisible durumu kazanırsınız. Bu görünmezlik bir yaratığa hasar verdiğinizden veya bir yaratığı kurtarma atışı yapmaya zorladığınızdan hemen sonra erken biter.\n\nBu özelliği kullandıktan sonra Uzun Dinlenme bitirene kadar tekrar yapamazsınız. Alternatif olarak kullanımını yenilemek için bir Psionic Energy Die harcayabilirsiniz (aksiyon gerekmez).",
+          "level": 13,
+          "featureType": "active"
+        },
+        {
+          "id": "rend-mind",
+          "name": "Zihin Yırtma (Rend Mind)",
+          "description": "Psychic Blade'lerinizi bir yaratığın zihninden süpürebilirsiniz. Psychic Blade'lerinizi bir yaratığa Sneak Attack hasarı vermek için kullandığınızda o hedefi Wisdom kurtarma atışı yapmaya (DC 8 artı Dexterity modifikasyonunuz ve Proficiency Bonusunuz) zorlayabilirsiniz. Kurtarma başarısız olursa hedef 1 dakika boyunca Stunned durumuna girer. Stunned hedef turlarının her birinin sonunda atışı tekrarlar ve başarılı olursa etki sona erer.\n\nBu özelliği kullandıktan sonra Uzun Dinlenme bitirene kadar tekrar yapamazsınız. Alternatif olarak kullanımını yenilemek için üç Psionic Energy Dice harcayabilirsiniz (aksiyon gerekmez).",
+          "level": 17,
+          "featureType": "active"
+        }
+      ]
+    },
+    {
+      "id": "thief",
+      "name": "Hırsız (Thief)",
+      "source": "phb24",
+      "description": "Hırsız, define avcısı ve kaşif karışımı bir kişi olarak maceracının örneğisiniz. Çevikliğinizi ve gizliliğinizi geliştirmenin yanı sıra harabelere dalmak ve orada bulduğunuz büyülü eşyalardan maksimum fayda sağlamak için kullanışlı yetenekler kazanırsınız.",
+      "parentClassId": "rogue",
+      "subclassFeatureLevel": 3,
+      "features": [
+        {
+          "id": "fast-hands",
+          "name": "Hızlı Eller (Fast Hands)",
+          "description": "Bonus Aksiyon olarak şunlardan birini yapabilirsiniz:\n\nSleight of Hand: Thieves' Tools ile bir kilidi açmak veya bir tuzağı etkisiz hale getirmek veya cep hırsızlığı yapmak için Dexterity (Sleight of Hand) kontrolü yapın.\n\nNesne Kullanma (Use an Object): Utilize aksiyonunu alın veya o aksiyonu gerektiren büyülü bir eşyayı kullanmak için Magic aksiyonunu alın.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "second-story-work",
+          "name": "İkinci Kat İşi (Second-Story Work)",
+          "description": "Özellikle ulaşılması zor yerlere girmeğı öğrendiniz, size şu faydaları verir:\n\nTırmanıcı (Climber): Hızınıza eşit Climb Speed kazanırsınız.\n\nAtlayıcı (Jumper): Sıçrama mesafenizi Strength yerine Dexterity kullanarak belirleyebilirsiniz.",
+          "level": 3,
+          "featureType": "passive"
+        },
+        {
+          "id": "supreme-sneak",
+          "name": "Üstün Gizlenme (Supreme Sneak)",
+          "description": "Şu Cunning Strike seçeneğini kazanırsınız:\n\nGizli Saldırı (Stealth Attack) (Maliyet: 1d6): Hide aksiyonunun Invisible durumuna sahipseniz turu Three-Quarters Cover veya Total Cover arkasında bitirirseniz bu saldırı size düşürmez.",
+          "level": 9,
+          "featureType": "passive"
+        },
+        {
+          "id": "use-magic-device",
+          "name": "Büyülü Eşya Kullan (Use Magic Device)",
+          "description": "Büyülü eşyaların kullanımını maksimize etmeyi öğrendiniz, size şu faydaları verir:\n\nAttunement: Aynı anda dört büyülü eşyaya kadar attune olabilirsiniz.\n\nŞarjlar (Charges): Şarj harcayan büyülü eşya özelliği kullandığınızda 1d6 atın. 6 atarsanız özelliği şarj harcamadan kullanırsınız.\n\nParşömenler (Scrolls): Herhangi bir Spell Scroll kullanabilirsiniz, büyü için büyü yapma yeteneğiniz Intelligence'dır. Büyü cantrip veya seviye 1 büyüyse güvenilir şekilde yapabilirsiniz. Parşömen daha yüksek seviye büyü içeriyorsa önce Intelligence (Arcana) kontrolünde başarılı olmalısınız (DC 10 artı büyünün seviyesi). Başarılı kontrolde parşömenden büyüyü yaparsınız. Başarısız kontrolde parşömen toz olur.",
+          "level": 13,
+          "featureType": "passive"
+        },
+        {
+          "id": "thiefs-reflexes",
+          "name": "Hırsızın Refleksleri (Thief's Reflexes)",
+          "description": "Pusu kurmada ve tehlikeden hızla kaçmada ustasınız. Herhangi bir savaşın ilk turunda iki tur alabilirsiniz. İlk turunuzu normal Initiative'inizde, ikinci turunuzu Initiative'inizden 10 çıkarılmış halde alırsınız.",
+          "level": 17,
+          "featureType": "passive"
         }
       ]
     }
@@ -436,16 +521,6 @@
       "Scout",
       "Skill expert",
       "Single-target damage"
-    ],
-    "keyDecisionPoints": [
-      {
-        "level": 1,
-        "decision": "Expertise selection - your specializations"
-      },
-      {
-        "level": 3,
-        "decision": "Roguish Archetype - your thematic focus"
-      }
     ]
   }
 }
