@@ -5,7 +5,6 @@
 
 import { useGameStore } from '../../engine/core/store.ts';
 import { registry } from '../../engine/core/registry.ts';
-import { createProgressBar } from '../components/ProgressBar.ts';
 import {
 	getStepLabel
 } from '../../utils/translations/index.ts';
