@@ -9,7 +9,7 @@
 	"scenario": {
 		"title": "İlk Kan",
 		"description": "Bir antrenman kuklasına karşı savaş tekniklerini sına. Tur tabanlı savaş sistemini öğren.",
-		"estimatedTime": 15,
+		"estimatedTime": 7,
 		"learningObjectives": [
 			"Aksiyon (Action) türlerini öğrenmek",
 			"Bonus Aksiyon kavramını anlamak",

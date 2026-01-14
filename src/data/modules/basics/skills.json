@@ -9,7 +9,7 @@
 	"scenario": {
 		"title": "Gizli Geçit",
 		"description": "Eski bir kütüphanede gizli bir geçit arıyorsun. Doğru beceriyi kullanarak kapıyı bulabilir misin?",
-		"estimatedTime": 12,
+		"estimatedTime": 6,
 		"learningObjectives": [
 			"Ability Check vs Skill Check farkını anlamak",
 			"Proficiency (Ustalık) bonusunun etkisini görmek",

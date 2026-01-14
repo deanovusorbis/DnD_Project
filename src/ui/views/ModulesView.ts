@@ -165,17 +165,32 @@ export class ModulesView {
 	private renderClassModules(container: HTMLElement): void {
 		container.innerHTML = '';
 
-		const comingSoon = document.createElement('div');
-		comingSoon.style.cssText = `
-			text-align: center;
-			padding: 4rem 2rem;
-			color: var(--color-text-secondary);
+		const grid = document.createElement('div');
+		grid.className = 'module-grid';
+		grid.style.cssText = `
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+			gap: 2rem;
+			padding: 0 2rem;
+			margin-top: 2rem;
 		`;
-		comingSoon.innerHTML = `
-			<h3 style="font-size: 2rem; margin-bottom: 1rem;">🔨 Yakında</h3>
-			<p>Sınıf modülleri şu anda geliştirilme aşamasında.</p>
-		`;
-		container.appendChild(comingSoon);
+
+		// Get all classes from registry
+		const allClasses = registry.getAllClasses();
+
+		allClasses.forEach(cls => {
+			const card = this.createModuleCard({
+				id: cls.id,
+				name: cls.name,
+				description: cls.description,
+				icon: '', // Removed emoji
+				difficulty: cls.teachingNotes?.complexity || 'intermediate',
+				category: 'class'
+			});
+			grid.appendChild(card);
+		});
+
+		container.appendChild(grid);
 	}
 
 	private createModuleCard(module: {
@@ -185,17 +200,31 @@ export class ModulesView {
 		icon: string;
 		difficulty: string;
 		category: string;
+		scenario?: { estimatedTime?: number };
 	}): HTMLElement {
+		// Check completion status
+		const completedKey = 'dnd_completed_modules';
+		const completedList = JSON.parse(localStorage.getItem(completedKey) || '[]');
+		// Check both raw ID and potential '-basics' variant
+		const isCompleted = completedList.includes(module.id) || completedList.includes(`${module.id}-basics`);
+
+		// Determine duration
+		const duration = module.scenario?.estimatedTime
+			? `${module.scenario.estimatedTime}`
+			: '5-10';
+
 		const card = document.createElement('div');
 		card.className = 'module-card';
 		card.style.cssText = `
-			background: rgba(20, 20, 25, 0.7);
-			border: 1px solid var(--color-border);
+			background: ${isCompleted ? 'rgba(30, 40, 30, 0.8)' : 'rgba(20, 20, 25, 0.7)'};
+			border: 1px solid ${isCompleted ? '#4ade80' : 'var(--color-border)'};
 			border-radius: var(--radius-lg);
 			padding: 1.5rem;
 			cursor: pointer;
 			transition: all 0.3s;
 			backdrop-filter: blur(10px);
+			position: relative;
+			overflow: hidden;
 		`;
 
 		const difficultyColor =
@@ -203,9 +232,8 @@ export class ModulesView {
 				module.difficulty === 'intermediate' ? '#fbbf24' :
 					'#f87171';
 
-		card.innerHTML = `
-			<div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
-				<div style="font-size: 3rem;">${module.icon}</div>
+		let badgeHTML = document.createElement('span');
+		badgeHTML.innerHTML = `
 				<span style="
 					padding: 0.35rem 0.85rem;
 					background: ${difficultyColor}22;
@@ -217,8 +245,33 @@ export class ModulesView {
 					line-height: 1;
 					text-transform: uppercase;
 				">${this.getDifficultyLabel(module.difficulty)}</span>
+		`;
+
+		if (isCompleted) {
+			badgeHTML.innerHTML = `
+				<span style="
+					padding: 0.35rem 0.85rem;
+					background: rgba(74, 222, 128, 0.2);
+					color: #4ade80;
+					border: 1px solid #4ade80;
+					border-radius: var(--radius-sm);
+					font-size: 0.85rem;
+					font-weight: 700;
+					letter-spacing: 0.5px;
+					line-height: 1;
+					text-transform: uppercase;
+					display: flex;
+					align-items: center;
+					gap: 0.5rem;
+				">✓ TAMAMLANDI</span>
+			`;
+		}
+
+		card.innerHTML = `
+			<div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+				${badgeHTML.innerHTML}
 			</div>
-			<h3 style="margin: 0 0 0.5rem 0; color: var(--color-text-heading);">${module.name}</h3>
+			<h3 style="margin: 0 0 0.5rem 0; color: ${isCompleted ? '#4ade80' : 'var(--color-text-heading)'};">${module.name}</h3>
 			<p style="
 				margin: 0;
 				font-size: 0.9rem;
@@ -229,16 +282,28 @@ export class ModulesView {
 				-webkit-box-orient: vertical;
 				overflow: hidden;
 				text-overflow: ellipsis;
-				height: 6em; /* Fixed height for alignment */
+				height: 6em;
 			">
 				${module.description}
 			</p>
 			<div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--color-border);">
 				<span style="font-size: 0.85rem; color: var(--color-text-secondary);">
-					⏱️ ~15-20 dakika
+					⏱️ ~${duration} dakika ${isCompleted ? '(Tamamlandı)' : ''}
 				</span>
 			</div>
 		`;
+
+		// Add subtle glow for completed items
+		if (isCompleted) {
+			const glow = document.createElement('div');
+			glow.style.cssText = `
+				position: absolute;
+				top: 0; left: 0; width: 100%; height: 100%;
+				background: radial-gradient(circle at top right, rgba(74, 222, 128, 0.1), transparent 60%);
+				pointer-events: none;
+			`;
+			card.appendChild(glow);
+		}
 
 		// Hover effects
 		card.addEventListener('mouseenter', () => {
@@ -255,8 +320,14 @@ export class ModulesView {
 
 		// Click handler
 		card.addEventListener('click', () => {
-			// Try to find the corresponding module
-			const moduleId = `${module.id}-basics`;
+			let moduleId = module.id;
+
+			// For species modules, we append '-basics' to find the learning module
+			// For basic concept modules, the ID is already correct (e.g. 'game-intro')
+			if (module.category !== 'basics') {
+				moduleId = `${module.id}-basics`;
+			}
+
 			const learningModule = moduleLoader.getModule(moduleId);
 
 			if (learningModule && this.onNavigate) {

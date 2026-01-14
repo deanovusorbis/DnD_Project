@@ -27,7 +27,7 @@ export class CharacterListView {
 
 		this.container.innerHTML = `
 			<div style="max-width: 900px; margin: 0 auto; padding: var(--space-xl);">
-				<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-xl);">
+				<div style="display: flex; justify-content: center; align-items: center; margin-bottom: var(--space-xl);">
 					<h1 style="color: var(--color-accent-gold); margin: 0;">🎭 Karakterlerim</h1>
 				</div>
 				<div id="character-list-container"></div>

@@ -205,7 +205,7 @@ class App {
           () => {
             // On complete
             useGameStore.getState().addNotification('Modül tamamlandı! 🎉', 'success');
-            this.navigateTo('modules');
+            this.navigateTo('home');
           },
           () => {
             // On exit

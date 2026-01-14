@@ -9,7 +9,7 @@
 	"scenario": {
 		"title": "Demircinin Atölyesi",
 		"description": "Savaşa hazırlan! Zırhlarını kuşan ve silahını seç. AC mantığını öğren.",
-		"estimatedTime": 10,
+		"estimatedTime": 5,
 		"learningObjectives": [
 			"AC (Armor Class) nedir?",
 			"Hafif vs Ağır Zırh farkı",

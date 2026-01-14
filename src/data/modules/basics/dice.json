@@ -8,79 +8,332 @@
 	"relatedDataId": "dice",
 	"scenario": {
 		"title": "Kaderin Zarları",
-		"description": "Lucrea'nın Zar Bahçesi'nde farklı geometrik şekillerin -yani zarların- ne anlama geldiğini keşfet.",
-		"estimatedTime": 10,
+		"description": "Lucrea zarların sırlarını açıklarken, Anlatıcı sürpriz bir macera hazırlıyor.",
+		"estimatedTime": 5,
 		"learningObjectives": [
 			"d20 sistemini anlamak",
-			"Hasar zarlarını (d4, d6, d8...) tanımak",
+			"Hasar zarlarını tanımak",
 			"Avantaj ve Dezavantaj mekaniğini kavramak"
 		],
 		"steps": [
 			{
-				"id": "intro",
+				"id": "intro-1",
 				"type": "dialogue",
-				"speaker": "mascot",
+				"speaker": "lucrea",
 				"emotion": "happy",
-				"content": "Zarlar bizim kaderimizi belirler! Ama hangisi ne işe yarar?\n\nEn önemlisi **d20** (20 yüzlü zar). Neredeyse her şey için bunu atarız:\n*   Saldırırken ⚔️\n*   Bir şeyi başarırken 🤸\n*   Dayanırken 🛡️",
-				"nextStep": "damage-dice"
+				"content": "Tekrar hoş geldin! Bugün zarlardan bahsedeceğiz.",
+				"nextStep": "intro-2"
 			},
 			{
-				"id": "damage-dice",
+				"id": "intro-2",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "excited",
+				"content": "Zarlar bizim kaderimizi belirler! Ama hangisi ne işe yarar?",
+				"nextStep": "lucrea-shows-dice"
+			},
+			{
+				"id": "lucrea-shows-dice",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "talking",
+				"content": "*Bir torba zar çıkarır* Bak, burada bir sürü farklı şekil var!",
+				"nextStep": "show-d20"
+			},
+			{
+				"id": "show-d20",
 				"type": "info",
-				"content": "🩸 **Diğer Zarlar**\n\nGenellikle **hasar** veya etki belirlemek için kullanılırlar:\n\n*   **d12:** En büyük balta hasarı\n*   **d8:** Kılıç hasarı\n*   **d6:** Kısa kılıç veya Ateş Topu hasarı\n*   **d4:** Hançer hasarı (Minik üçgen piramit)",
+				"content": "🎲 **d20 - Yirmi Yüzlü Zar**",
+				"nextStep": "d20-intro"
+			},
+			{
+				"id": "d20-intro",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "talking",
+				"content": "En önemlisi **d20** (20 yüzlü zar). Neredeyse her şey için bunu atarız.",
+				"nextStep": "d20-uses-1"
+			},
+			{
+				"id": "d20-uses-1",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "talking",
+				"content": "Saldırırken ⚔️, bir şeyi başarırken 🤸, dayanırken 🛡️... Hep d20!",
+				"nextStep": "narrator-suggests"
+			},
+			{
+				"id": "narrator-suggests",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Lucrea, belki bunu bir senaryo içinde göstermek daha etkili olur. Ne dersin?",
+				"nextStep": "lucrea-protests"
+			},
+			{
+				"id": "lucrea-protests",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "worried",
+				"content": "Ama daha diğer zarları anlatmadım!",
+				"nextStep": "narrator-reassures"
+			},
+			{
+				"id": "narrator-reassures",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Merak etme, yol boyunca açıklama yapabilirsin. Bir senaryo hazırladım.",
+				"nextStep": "lucrea-agrees"
+			},
+			{
+				"id": "lucrea-agrees",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "happy",
+				"content": "Tamam! Ama 'Avantaj' konusunu ben anlatacağım!",
+				"nextStep": "scene-ambush"
+			},
+			{
+				"id": "scene-ambush",
+				"type": "info",
+				"content": "🌲 **Orman Pususu**",
+				"nextStep": "scenario-1"
+			},
+			{
+				"id": "scenario-1",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Karanlık bir ormanda yürüyorsun. Önünde bir haydut duruyor, seni fark etmemiş.",
+				"nextStep": "scenario-2"
+			},
+			{
+				"id": "scenario-2",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Gizlice yaklaştın. Saldırmak için mükemmel bir pozisyondasın.",
+				"nextStep": "lucrea-interrupts"
+			},
+			{
+				"id": "lucrea-interrupts",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "excited",
+				"content": "Aa dur dur! Şimdi sıra bende!",
 				"nextStep": "advantage-intro"
 			},
 			{
 				"id": "advantage-intro",
 				"type": "dialogue",
-				"speaker": "mascot",
+				"speaker": "lucrea",
 				"emotion": "excited",
-				"content": "Şimdi en sevdiğim kurala gelelim: **Avantaj (Advantage)**!\n\nEğer durum senin lehine ise (örneğin düşman seni görmüyorsa), DM sana 'Avantajlı at' der.\n\nBu durumda **2 tane d20** atarsın ve **YÜKSEK** olanı alırsın! Şansın ikiye katlanır! 🍀",
+				"content": "İşte en sevdiğim kural: **Avantaj (Advantage)**!",
+				"nextStep": "advantage-explain-1"
+			},
+			{
+				"id": "advantage-explain-1",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "talking",
+				"content": "Durum senin lehine ise, **2 tane d20** atarsın ve **YÜKSEK** olanı alırsın!",
+				"nextStep": "advantage-explain-2"
+			},
+			{
+				"id": "advantage-explain-2",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "happy",
+				"content": "Şansın ikiye katlanır! 🍀",
+				"nextStep": "narrator-continues"
+			},
+			{
+				"id": "narrator-continues",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Düşman seni görmüyor. Bu durumda **Avantajlı** atacaksın!",
 				"nextStep": "choice-adv"
 			},
 			{
 				"id": "choice-adv",
 				"type": "challenge",
-				"content": "🎲 **Senaryo**: Gizlice düşmana yaklaştın. DM 'Saldır, avantajlısın!' dedi.\n\nİki zar attın:\n1. Zar: **5**\n2. Zar: **17**\n\nSonuç ne olur?",
+				"content": "🎲 İki zar attın: **5** ve **17**. Sonuç ne olur?",
 				"choices": [
 					{
 						"id": "result-17",
 						"text": "Sonuç 17'dir!",
-						"nextStep": "success",
-						"feedback": "Kesinlikle! Avantajlıyken her zaman yüksek olanı alırız."
+						"nextStep": "success-1",
+						"feedback": "Kesinlikle!"
 					},
 					{
 						"id": "result-11",
 						"text": "Ortalaması 11'dir?",
-						"nextStep": "fail",
-						"feedback": "Hayır, ortalama almayız. En yüksek olanı seçeriz!"
+						"nextStep": "fail-1",
+						"feedback": "Hayır, ortalama almayız!"
 					}
 				]
 			},
 			{
-				"id": "success",
+				"id": "success-1",
 				"type": "dialogue",
-				"speaker": "mascot",
-				"emotion": "happy",
-				"content": "Bravo! Dezavantaj (Disadvantage) ise tam tersidir: İki zar atarsın ve **DÜŞÜK** olanı almak zorundasın. 😱\n\nZarların efendisi olma yolunda ilerliyorsun!",
-				"nextStep": "end"
-			},
-			{
-				"id": "fail",
-				"type": "dialogue",
-				"speaker": "mascot",
-				"emotion": "worried",
-				"content": "Matematik dersi değil bu! 😄 Avantaj demek, en iyi sonucun geçerli olması demektir. Yani 17'yi cebine koyarsın!",
-				"nextStep": "end"
-			},
-			{
-				"id": "end",
-				"type": "dialogue",
-				"speaker": "mascot",
+				"speaker": "narrator",
 				"emotion": "neutral",
-				"content": "Unutma: Başarıp başaramadığını görmek için d20, ne kadar can yaktığını görmek için diğerleri.\n\nBol şans!",
+				"content": "17 ile hayduta başarılı bir saldırı yaptın!",
+				"nextStep": "lucrea-celebrates"
+			},
+			{
+				"id": "lucrea-celebrates",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "excited",
+				"content": "Bravo! Gördün mü? Avantaj sayesinde 5 yerine 17 kullandın!",
+				"nextStep": "narrator-asks"
+			},
+			{
+				"id": "narrator-asks",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Peki hasar ne kadar?",
+				"nextStep": "lucrea-remembers"
+			},
+			{
+				"id": "lucrea-remembers",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "surprised",
+				"content": "Aa doğru! Diğer zarları anlatmamıştım!",
+				"nextStep": "damage-dice-1"
+			},
+			{
+				"id": "damage-dice-1",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "talking",
+				"content": "Diğer zarlar genellikle **hasar** belirlemek için kullanılır.",
+				"nextStep": "show-damage-dice"
+			},
+			{
+				"id": "show-damage-dice",
+				"type": "info",
+				"content": "🎲 **Hasar Zarları** 🎲\n\nd12 ◆ d10 ◆ d8 ◆ d6 ◆ d4",
+				"nextStep": "damage-dice-2"
+			},
+			{
+				"id": "damage-dice-2",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "talking",
+				"content": "**d12:** En büyük balta hasarı. **d8:** Kılıç hasarı. **d6:** Kısa kılıç. **d4:** Hançer.",
+				"nextStep": "narrator-rolls"
+			},
+			{
+				"id": "narrator-rolls",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Kılıcınla vurdun. d8 atıyorsun... **6** geldi! Haydut yere yıkıldı.",
+				"nextStep": "lucrea-proud"
+			},
+			{
+				"id": "lucrea-proud",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "happy",
+				"content": "İşte! d20 ile **başarıp başaramadığını**, diğer zarlarla **ne kadar hasar verdiğini** öğrenirsin!",
+				"nextStep": "disadvantage-intro"
+			},
+			{
+				"id": "disadvantage-intro",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "talking",
+				"content": "Bir de Dezavantaj (Disadvantage) var.",
+				"nextStep": "disadvantage-explain"
+			},
+			{
+				"id": "disadvantage-explain",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "worried",
+				"content": "İki zar atarsın ve **DÜŞÜK** olanı almak zorundasın. 😱",
+				"nextStep": "narrator-teases"
+			},
+			{
+				"id": "narrator-teases",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Mesela Lucrea'nın açıklamalarını dinlemeden maceraya atlarsan... Dezavantajlı atarsın.",
+				"nextStep": "lucrea-offended"
+			},
+			{
+				"id": "lucrea-offended",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "annoyed",
+				"content": "HEY! Bunu BEN söylemiştim zaten!",
+				"nextStep": "narrator-laughs"
+			},
+			{
+				"id": "narrator-laughs",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Biliyorum. Sadece iyi bir öğretmen olduğunu vurgulamak istedim.",
+				"nextStep": "lucrea-blushes"
+			},
+			{
+				"id": "lucrea-blushes",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "shy",
+				"content": "Aa... gerçekten mi düşünüyorsun? *Utanarak gülümser*",
+				"nextStep": "narrator-confirms"
+			},
+			{
+				"id": "narrator-confirms",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Evet. Şimdi devam edelim mi?",
+				"nextStep": "conclusion-1"
+			},
+			{
+				"id": "conclusion-1",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "happy",
+				"content": "Zarların efendisi olma yolunda ilerliyorsun!",
+				"nextStep": "lucrea-farewell"
+			},
+			{
+				"id": "lucrea-farewell",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "happy",
+				"content": "Bol şans! Zarlar hep senin yanında olsun!",
 				"nextStep": "end"
+			},
+			{
+				"id": "fail-1",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "giggle",
+				"content": "Matematik dersi değil bu! 😄",
+				"nextStep": "fail-2"
+			},
+			{
+				"id": "fail-2",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "talking",
+				"content": "Avantaj demek, en iyi sonucun geçerli olması demektir. Yani 17'yi cebine koyarsın!",
+				"nextStep": "narrator-asks"
 			}
 		]
 	}
 }
+

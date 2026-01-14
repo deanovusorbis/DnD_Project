@@ -9,7 +9,7 @@
 	"scenario": {
 		"title": "Kamp Ateşi",
 		"description": "Zorlu bir savaştan sonra yaralarını sarmanın vakti geldi. Nasıl iyileşeceğini öğren.",
-		"estimatedTime": 10,
+		"estimatedTime": 5,
 		"learningObjectives": [
 			"Short Rest ve Hit Dice kullanımını öğrenmek",
 			"Long Rest ile tam iyileşmeyi anlamak",

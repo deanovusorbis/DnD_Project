@@ -7,76 +7,552 @@
 	"description": "Karakterini tanımlayan 6 temel özellik nedir? STR, DEX, CON... Hangi durumda hangisi kullanılır?",
 	"relatedDataId": "abilities",
 	"scenario": {
-		"title": "Güç mü, Zeka mı?",
-		"description": "Lucrea ile zihinsel bir zindana giriyorsun. Karşına çıkan her engel, farklı bir yeteneğini test edecek.",
-		"estimatedTime": 12,
+		"title": "Yetenek Puanları",
+		"description": "Lucrea 6 temel yeteneği öğretirken, Anlatıcı sürprizlerle dolu bir macera hazırlıyor.",
+		"estimatedTime": 8,
 		"learningObjectives": [
-			"6 Temel Yeteneği (Ability Scores) öğrenmek",
-			"Fiziksel ve Zihinsel özellikleri ayırt etmek",
-			"Modifier (Düzenleyici) mantığını kavramak"
+			"6 Temel Yeteneği öğrenmek",
+			"Her yeteneğin ne zaman kullanıldığını anlamak",
+			"Karakterinin güçlü ve zayıf yönlerini keşfetmek"
 		],
 		"steps": [
 			{
-				"id": "intro",
+				"id": "intro-1",
 				"type": "dialogue",
-				"speaker": "mascot",
+				"speaker": "lucrea",
 				"emotion": "talking",
-				"content": "Hoş geldin! Bugün karakterinin 'iskeletini' oluşturan sayıları konuşacağız: **Yetenek Puanları (Ability Scores)**.\n\nHer karakterin 6 temel özelliği vardır. Bunlar senin ne kadar güçlü, ne kadar zeki veya ne kadar dayanıklı olduğunu belirler.",
-				"nextStep": "str-dex-con"
+				"content": "Tekrar hoş geldin! Bugün karakterinin 'iskeletini' oluşturan sayıları konuşacağız.",
+				"nextStep": "intro-2"
 			},
 			{
-				"id": "str-dex-con",
+				"id": "intro-2",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "excited",
+				"content": "Her karakterin 6 temel özelliği vardır: **Yetenek Puanları (Ability Scores)**.",
+				"nextStep": "narrator-suggests"
+			},
+			{
+				"id": "narrator-suggests",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Lucrea, bir öneri: Bu sefer teoriden önce pratik yapsak nasıl olur?",
+				"nextStep": "lucrea-surprised"
+			},
+			{
+				"id": "lucrea-surprised",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "surprised",
+				"content": "Aa! Şimdiden mi? Ama daha açıklamadım bile!",
+				"nextStep": "narrator-explains"
+			},
+			{
+				"id": "narrator-explains",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Bazen en iyi öğretmen deneyimdir. Yol boyunca açıklama yapabilirsin.",
+				"nextStep": "lucrea-agrees"
+			},
+			{
+				"id": "lucrea-agrees",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "excited",
+				"content": "Ooo, macera zamanı! Tamam, ama ben rehber olacağım!",
+				"nextStep": "narrator-amused"
+			},
+			{
+				"id": "narrator-amused",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Tabii ki. Ben sadece sahneyi kuracağım.",
+				"nextStep": "scene-temple"
+			},
+			{
+				"id": "scene-temple",
 				"type": "info",
-				"content": "💪 **Fiziksel Özellikler**\n\n1.  **Güç (Strength - STR):** Kas gücü. Balta savurmak, kapı kırmak, tırmanmak.\n2.  **Çeviklik (Dexterity - DEX):** Refleksler ve denge. Ok atmak, gizlenmek, ipte yürümek.\n3.  **Dayanıklılık (Constitution - CON):** Sağlık ve direnç. Zehire dayanmak, yorulmadan koşmak.",
-				"nextStep": "int-wis-cha"
+				"content": "🏛️ **Unutulmuş Tapınak**",
+				"nextStep": "story-intro-1"
 			},
 			{
-				"id": "int-wis-cha",
-				"type": "info",
-				"content": "🧠 **Zihinsel Özellikler**\n\n4.  **Zeka (Intelligence - INT):** Kitabi bilgi ve hafıza. Büyü araştırmak, tarih bilmek.\n5.  **Bilgelik (Wisdom - WIS):** Sezgi ve farkındalık. Yalanı anlamak, iz sürmek.\n6.  **Karizma (Charisma - CHA):** Kişilik gücü. İkna etmek, korkutmak, liderlik etmek.",
-				"nextStep": "challenge-1"
+				"id": "story-intro-1",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Karanlık, nemli bir odada uyanıyorsun.",
+				"nextStep": "story-intro-2"
 			},
 			{
-				"id": "challenge-1",
+				"id": "story-intro-2",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Etrafta antik sütunlar ve duvarlarda solmuş freskler var. Tek çıkış yolu önündeki kapalı kapı.",
+				"nextStep": "lucrea-str-intro"
+			},
+			{
+				"id": "lucrea-str-intro",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "talking",
+				"content": "Tamam, ilk özellik: **Güç (Strength - STR)**. Kas gücünü temsil eder.",
+				"nextStep": "lucrea-str-explain"
+			},
+			{
+				"id": "lucrea-str-explain",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "talking",
+				"content": "Kapı kırmak, ağır zırh taşımak, düşmanı itmek... Fiziksel güç gerektiren her şey için kullanılır.",
+				"nextStep": "room-1"
+			},
+			{
+				"id": "room-1",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Karşında devasa, demir işlemeli bir taş kapı duruyor. Üzerinde parlayan kadim rünler var.",
+				"nextStep": "lucrea-observes"
+			},
+			{
+				"id": "lucrea-observes",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "thinking",
+				"content": "Hmm... Bu kapıyı kırmayı deneyebilirsin, ama...",
+				"nextStep": "lucrea-notices-runes"
+			},
+			{
+				"id": "lucrea-notices-runes",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "excited",
+				"content": "Bekle! Şu rünler... Kadim bir dilde yazılmış gibi görünüyor! Belki bir şifre?",
+				"nextStep": "lucrea-hints-1"
+			},
+			{
+				"id": "lucrea-hints-1",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "talking",
+				"content": "Burada **Güç (Strength)** veya **Zeka (Intelligence)** kullanabilirsin!",
+				"nextStep": "lucrea-int-quick"
+			},
+			{
+				"id": "lucrea-int-quick",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "neutral",
+				"content": "Zeka: Kitabi bilgi, mantık, hafıza. Şifre çözmek için kullanılır.",
+				"nextStep": "lucrea-rune-hint"
+			},
+			{
+				"id": "lucrea-rune-hint",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "happy",
+				"content": "Eğer bu rünlerin anlamını çözebilirsen, belki kapı kendiliğinden açılır!",
+				"nextStep": "choice-1"
+			},
+			{
+				"id": "choice-1",
 				"type": "challenge",
-				"content": "🚧 **Senaryo**: Yolunda devasa bir kaya parçası var. Onu yerinden oynatman gerekiyor.\n\nHangi yeteneğini kullanırsın?",
+				"content": "🚪 **Kapalı Kapı** - Ne yapacaksın?",
 				"choices": [
 					{
-						"id": "use-str",
-						"text": "💪 GÜÇ (Strength) ile itmek",
-						"nextStep": "success-str",
-						"feedback": "Doğru! Saf kas gücü gerektiren işler için STR kullanılır."
+						"id": "c1-str",
+						"text": "💪 GÜÇ: Omzunla kapıya yüklen!",
+						"nextStep": "res-str-1",
+						"feedback": "Kaba kuvvet!"
 					},
 					{
-						"id": "use-cha",
-						"text": "💬 KARİZMA (Charisma) ile kayaya bağırmak",
-						"nextStep": "fail-cha",
-						"feedback": "Kaya seni dinlemiyor... Cansız nesneleri ikna edemezsin!"
+						"id": "c1-int",
+						"text": "🧠 ZEKA: Rünlerin şifresini çöz.",
+						"nextStep": "res-int-1",
+						"feedback": "Akıllıca!"
 					}
 				]
 			},
 			{
-				"id": "success-str",
+				"id": "res-str-1",
 				"type": "dialogue",
-				"speaker": "mascot",
-				"emotion": "happy",
-				"content": "Harika! Kayayı kenara ittin. Fiziksel gücün yerinde.\n\nPeki ya karmaşık bir şifreyi çözmen gerekseydi? O zaman **Zeka (Intelligence)** kullanırdın.",
-				"nextStep": "conclusion"
-			},
-			{
-				"id": "fail-cha",
-				"type": "dialogue",
-				"speaker": "mascot",
-				"emotion": "giggle",
-				"content": "Hahaha! Deneme güzeldi ama kayalar pek konuşkan değildir. Bu tür fiziksel engeller için **Güç (Strength)** kullanmalısın.",
-				"nextStep": "conclusion"
-			},
-			{
-				"id": "conclusion",
-				"type": "dialogue",
-				"speaker": "mascot",
+				"speaker": "narrator",
 				"emotion": "neutral",
-				"content": "Unutma, her sınıfın önem verdiği yetenekler farklıdır:\n\n*   **Savaşçılar** Güç sever.\n*   **Hırsızlar** Çeviklik sever.\n*   **Büyücüler** Zeka sever.\n\nKendi kahramanını yaratırken buna dikkat et!",
+				"content": "BAM! Tüm gücünle kapıya yüklendin. Taş çatırdadı ve kapı açıldı!",
+				"nextStep": "lucrea-str-comment"
+			},
+			{
+				"id": "lucrea-str-comment",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "happy",
+				"content": "İşte bu! **Güç** skorun sayesinde fiziksel engeli aştın. Savaşçılar bu yeteneği çok sever!",
+				"nextStep": "scene-corridor"
+			},
+			{
+				"id": "res-int-1",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Rünleri inceliyorsun... Ah! Bu kadim bir dilde yazılmış bir bulmaca!",
+				"nextStep": "res-int-2"
+			},
+			{
+				"id": "res-int-2",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Şifreyi çözdün! Rünler parladı ve kapı kendiliğinden açıldı.",
+				"nextStep": "lucrea-int-comment"
+			},
+			{
+				"id": "lucrea-int-comment",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "happy",
+				"content": "Harika! **Zeka** skorun işe yaradı! Büyücüler bu yeteneğe güvenir.",
+				"nextStep": "scene-corridor"
+			},
+			{
+				"id": "scene-corridor",
+				"type": "info",
+				"content": "🏃 **Tuzaklı Koridor**",
+				"nextStep": "corridor-1"
+			},
+			{
+				"id": "corridor-1",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Kapıdan geçince uzun, karanlık bir koridora girdin. Aniden yerdeki taşlar çöktü!",
+				"nextStep": "corridor-2"
+			},
+			{
+				"id": "corridor-2",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Duvarlardan zehirli oklar fırlamaya başladı!",
+				"nextStep": "lucrea-panics"
+			},
+			{
+				"id": "lucrea-panics",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "worried",
+				"content": "EYVAH! Bu biraz fazla hızlı değil mi?!",
+				"nextStep": "narrator-calm"
+			},
+			{
+				"id": "narrator-calm",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Sakin ol Lucrea. Sen açıkla, ben beklerim.",
+				"nextStep": "lucrea-breathes"
+			},
+			{
+				"id": "lucrea-breathes",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "talking",
+				"content": "*Derin nefes alır* Tamam tamam... İki seçenek var!",
+				"nextStep": "lucrea-dex-intro"
+			},
+			{
+				"id": "lucrea-dex-intro",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "talking",
+				"content": "Birincisi: **Çeviklik (Dexterity - DEX)**. Refleksler ve denge!",
+				"nextStep": "lucrea-dex-explain"
+			},
+			{
+				"id": "lucrea-dex-explain",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "neutral",
+				"content": "Akrobasi yapmak, tuzaklardan kaçmak için kullanılır. Hızlı reflekslerle oklardan kaçabilirsin!",
+				"nextStep": "lucrea-con-intro"
+			},
+			{
+				"id": "lucrea-con-intro",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "talking",
+				"content": "İkincisi: **Dayanıklılık (Constitution - CON)**. Sağlık ve direnç!",
+				"nextStep": "lucrea-con-explain"
+			},
+			{
+				"id": "lucrea-con-explain",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "neutral",
+				"content": "Zehire direnç, yorgunluğa dayanma için kullanılır. Oklar seni vursa bile dayanabilirsin!",
+				"nextStep": "choice-2"
+			},
+			{
+				"id": "choice-2",
+				"type": "challenge",
+				"content": "Tuzaklardan nasıl kurtulacaksın?",
+				"choices": [
+					{
+						"id": "c2-dex",
+						"text": "🦶 ÇEVİKLİK: Taklalar atarak kaç!",
+						"nextStep": "res-dex-1",
+						"feedback": "Hızlı refleksler!"
+					},
+					{
+						"id": "c2-con",
+						"text": "🛡️ DAYANIKLILIK: Dişini sık ve koş!",
+						"nextStep": "res-con-1",
+						"feedback": "Sağlam bünye!"
+					}
+				]
+			},
+			{
+				"id": "res-dex-1",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Vuu! Dans eder gibi oklardan kaçtın!",
+				"nextStep": "lucrea-dex-comment"
+			},
+			{
+				"id": "lucrea-dex-comment",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "excited",
+				"content": "İnanılmaz! **Çeviklik** skorun sayesinde tek bir yara almadan kurtuldun! Hırsızlar bu yeteneğe güvenir.",
+				"nextStep": "scene-guardian"
+			},
+			{
+				"id": "res-con-1",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Birkaç ok seni sıyırdı ama koşmaya devam ettin!",
+				"nextStep": "lucrea-con-comment"
+			},
+			{
+				"id": "lucrea-con-comment",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "happy",
+				"content": "Vay be! Vücudun o kadar dirençli ki yaralar seni yavaşlatmadı bile! **Dayanıklılık** skorun seni ayakta tuttu.",
+				"nextStep": "scene-guardian"
+			},
+			{
+				"id": "scene-guardian",
+				"type": "info",
+				"content": "👻 **Son Bekçi**",
+				"nextStep": "guardian-1"
+			},
+			{
+				"id": "guardian-1",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Koridorun sonunda geniş bir salona vardın.",
+				"nextStep": "guardian-2"
+			},
+			{
+				"id": "guardian-2",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Çıkış kapısının önünde, havada süzülen yarı saydam bir Ruh Bekçisi duruyor.",
+				"nextStep": "guardian-3"
+			},
+			{
+				"id": "guardian-3",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Bekçi sana bakıyor. Gözleri derin ve hüzünlü. Sanki yüzyıllardır burada yalnız bekliyor...",
+				"nextStep": "lucrea-observes-guardian"
+			},
+			{
+				"id": "lucrea-observes-guardian",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "thinking",
+				"content": "Hmm... Bu bekçi saldırgan görünmüyor. Sadece... üzgün.",
+				"nextStep": "lucrea-wis-intro"
+			},
+			{
+				"id": "lucrea-wis-intro",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "talking",
+				"content": "Burada farklı bir yaklaşım lazım. Yine iki yol var!",
+				"nextStep": "lucrea-wis-explain-1"
+			},
+			{
+				"id": "lucrea-wis-explain-1",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "talking",
+				"content": "Birincisi: **Bilgelik (Wisdom - WIS)**. Sezgi ve farkındalık!",
+				"nextStep": "lucrea-wis-explain-2"
+			},
+			{
+				"id": "lucrea-wis-explain-2",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "neutral",
+				"content": "Çevreyi algılama, yalanı anlama, iz sürme için kullanılır. Bekçinin gerçek niyetini sezebilirsin!",
+				"nextStep": "lucrea-cha-explain-1"
+			},
+			{
+				"id": "lucrea-cha-explain-1",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "talking",
+				"content": "İkincisi: **Karizma (Charisma - CHA)**. Kişilik gücü ve sosyal etkileşim!",
+				"nextStep": "lucrea-cha-explain-2"
+			},
+			{
+				"id": "lucrea-cha-explain-2",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "neutral",
+				"content": "İkna etme, korkutma, yalan söyleme için kullanılır. Bekçiyi sözlerinle etkileyebilirsin!",
+				"nextStep": "choice-3"
+			},
+			{
+				"id": "choice-3",
+				"type": "challenge",
+				"content": "Bekçiyi nasıl geçeceksin?",
+				"choices": [
+					{
+						"id": "c3-wis",
+						"text": "👁️ BİLGELİK: Niyetini sez ve saygıyla yaklaş.",
+						"nextStep": "res-wis-1",
+						"feedback": "Gözlem ve sezgi!"
+					},
+					{
+						"id": "c3-cha",
+						"text": "💬 KARİZMA: Onu ikna et veya korkut.",
+						"nextStep": "res-cha-1",
+						"feedback": "Sözlerin gücü!"
+					}
+				]
+			},
+			{
+				"id": "res-wis-1",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Bekçinin aslında yalnız olduğunu hissettin. Ona dostça bir baş selamı verdin.",
+				"nextStep": "res-wis-2"
+			},
+			{
+				"id": "res-wis-2",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Ruh saygınla karşılık verdi ve çekilerek sana yol verdi.",
+				"nextStep": "lucrea-wis-comment"
+			},
+			{
+				"id": "lucrea-wis-comment",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "happy",
+				"content": "Mükemmel! **Bilgelik** sezgilerini güçlendirdi! Rahipler ve Druidler bu yeteneği kullanır.",
+				"nextStep": "conclusion-1"
+			},
+			{
+				"id": "res-cha-1",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Öyle etkileyici bir konuşma yaptın ki, ruh bile sana saygı duydu!",
+				"nextStep": "res-cha-2"
+			},
+			{
+				"id": "res-cha-2",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Bekçi kenara çekildi ve sana yol verdi.",
+				"nextStep": "lucrea-cha-comment"
+			},
+			{
+				"id": "lucrea-cha-comment",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "smug",
+				"content": "İşte bu! **Karizma** kişilik gücünü gösterdi! Ozanlar ve Büyücüler bu yeteneğe güvenir.",
+				"nextStep": "conclusion-1"
+			},
+			{
+				"id": "conclusion-1",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Tapınaktan sağ salim çıktın.",
+				"nextStep": "lucrea-celebrates"
+			},
+			{
+				"id": "lucrea-celebrates",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "excited",
+				"content": "Tebrikler! Gördün mü? Macerada her türlü yeteneğe ihtiyaç duyacaksın!",
+				"nextStep": "lucrea-breathes-end"
+			},
+			{
+				"id": "lucrea-breathes-end",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "giggle",
+				"content": "*Derin nefes alır* Vay be! Kalbim hâlâ çarpıyor!",
+				"nextStep": "narrator-teases"
+			},
+			{
+				"id": "narrator-teases",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Lucrea, sen bir rehbersin. Tapınak senaryosu seni mi korkuttu?",
+				"nextStep": "lucrea-defensive"
+			},
+			{
+				"id": "lucrea-defensive",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "annoyed",
+				"content": "Korkmadım! Sadece... heyecanlandım, o kadar!",
+				"nextStep": "narrator-smiles"
+			},
+			{
+				"id": "narrator-smiles",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Tabii. Her neyse, iyi iş çıkardın.",
+				"nextStep": "lucrea-admits"
+			},
+			{
+				"id": "lucrea-admits",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "happy",
+				"content": "Teşekkürler! Aslında... bu yöntem gerçekten işe yaradı. Belki seni dinlemeliyim bazen.",
+				"nextStep": "lucrea-final"
+			},
+			{
+				"id": "lucrea-final",
+				"type": "dialogue",
+				"speaker": "lucrea",
+				"emotion": "talking",
+				"content": "Karakterini yaratırken bu yetenekleri akıllıca seç. Güçlü bir savaşçı mı, zeki bir büyücü mü, yoksa karizmatik bir ozan mı olmak istersin?",
 				"nextStep": "end"
 			}
 		]

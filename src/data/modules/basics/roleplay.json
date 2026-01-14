@@ -9,7 +9,7 @@
 	"scenario": {
 		"title": "Ahlaki İkilemler",
 		"description": "Zor kararlar vermen gereken bir senaryo. Karakterinin ahlaki pusulasını (Alignment) keşfet.",
-		"estimatedTime": 15,
+		"estimatedTime": 7,
 		"learningObjectives": [
 			"Alignment (Lawful-Chaotic, Good-Evil) eksenini anlamak",
 			"Ideals, Bonds ve Flaws kavramları",

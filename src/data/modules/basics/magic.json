@@ -9,7 +9,7 @@
 	"scenario": {
 		"title": "Büyücünün Çırağı",
 		"description": "Lucrea sana büyünün temellerini öğretiyor. Basit numaralar ve güçlü patlamalar arasındaki farkı öğren.",
-		"estimatedTime": 15,
+		"estimatedTime": 6,
 		"learningObjectives": [
 			"Cantrip (Sınırsız Büyü) mantığını anlamak",
 			"Spell Slot (Büyü Haznesi) yönetimini öğrenmek",

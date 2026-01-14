@@ -9,7 +9,7 @@
 	"scenario": {
 		"title": "Ejderha Nefesi",
 		"description": "Bir ejderhanın inine giriyorsun. Alevlerden, tuzaklardan ve zehirlerden kaçmak için reflekslerine ve dayanıklılığına güven.",
-		"estimatedTime": 12,
+		"estimatedTime": 6,
 		"learningObjectives": [
 			"Saving Throw nedir ve ne zaman atılır?",
 			"Ability Check ile farkı nedir?",
