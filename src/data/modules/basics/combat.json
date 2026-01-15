@@ -4,79 +4,326 @@
 	"name": "Savaş Temelleri",
 	"icon": "⚔️",
 	"difficulty": "intermediate",
-	"description": "Savaş başladığında ne yapabilirsin? Aksiyon, Bonus Aksiyon ve Hareket ekonomisini öğren.",
+	"description": "Thorn ile taktiksel savaş. Disengage ile kaç, Reaksiyon ile cezalandır, Bonus Aksiyon ile şaşır.",
 	"relatedDataId": "combat",
 	"scenario": {
-		"title": "İlk Kan",
-		"description": "Bir antrenman kuklasına karşı savaş tekniklerini sına. Tur tabanlı savaş sistemini öğren.",
-		"estimatedTime": 7,
+		"title": "Taktiksel Hata",
+		"description": "Kaba kuvvet işe yaramadığında taktik konuşur. Thorn'un tuzağına düşme.",
+		"estimatedTime": 15,
 		"learningObjectives": [
-			"Aksiyon (Action) türlerini öğrenmek",
-			"Bonus Aksiyon kavramını anlamak",
-			"Tur (Turn) ve Round farkını bilmek"
+			"Disengage (Ayrılma) ile güvenli kaçış",
+			"İnisiyatif (Refleks) Hesabı",
+			"Fırsat Saldırısı ve Bonus Aksiyon Kaynağı"
 		],
 		"steps": [
 			{
 				"id": "intro",
 				"type": "dialogue",
 				"speaker": "mascot",
-				"emotion": "serious",
-				"content": "D&D'de savaşlar kaotik değil, sırayladır. Herkesin bir **Turu (Turn)** vardır.\n\nSenin turunda yapabileceğin 3 temel şey var:\n1.  **Hareket (Move):** Yürümek, koşmak.\n2.  **Aksiyon (Action):** Ana eylem (Saldırmak, Büyü yapmak).\n3.  **Bonus Aksiyon:** Varsa, küçük/hızlı eylem.",
-				"nextStep": "action-expl"
+				"emotion": "talking",
+				"content": "Savaş sadece kılıç sallamak değildir. Bazen kaçmak en iyi saldırıdır.",
+				"nextStep": "explain-turn"
 			},
 			{
-				"id": "action-expl",
-				"type": "info",
-				"content": "⚔️ **Aksiyon (Action)**\n\nTurunun en önemli parçasıdır. Şunları yapabilirsin:\n*   **Attack:** Silahla saldırmak.\n*   **Cast a Spell:** Büyü yapmak (genellikle).\n*   **Dash:** İki katı hızla koşmak.\n*   **Hide:** Gizlenmeye çalışmak.",
-				"nextStep": "bonus-expl"
+				"id": "explain-turn",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "talking",
+				"content": "Basitçe: **Turn** senin sıran, **Round** herkesin sırası (6 saniye).",
+				"nextStep": "thorn-enter"
 			},
 			{
-				"id": "bonus-expl",
-				"type": "info",
-				"content": "⚡ **Bonus Aksiyon**\n\nHer turda en fazla 1 tane kullanabilirsin, AMA sadece yeteneğin varsa!\n\nÖrneğin:\n*   Bir Hırsız (Rogue) 'Cunning Action' ile bonus aksiyon olarak Gizlenebilir.\n*   İki elinde silah varsa, ikincisiyle bonus aksiyon olarak vurabilirsin.",
-				"nextStep": "combat-sim"
+				"id": "thorn-enter",
+				"type": "dialogue",
+				"speaker": "thorn",
+				"emotion": "neutral",
+				"content": "Derse başlıyoruz.",
+				"nextStep": "lucrea-reaction-shock"
 			},
 			{
-				"id": "combat-sim",
+				"id": "lucrea-reaction-shock",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "surprised",
+				"content": "Hiii! Bu ses... Olamaz! Kalbim duracak!",
+				"nextStep": "narrator-intro"
+			},
+			{
+				"id": "narrator-intro",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Thorn arenaya giriyor. 'Demir Eğitmen' lakaplı efsane.",
+				"nextStep": "lucrea-reaction-fan"
+			},
+			{
+				"id": "lucrea-reaction-fan",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "excited",
+				"content": "İnanmıyorum! Bu O! THORN! Canlı kanlı karşımda!",
+				"nextStep": "lucrea-reaction-shy"
+			},
+			{
+				"id": "lucrea-reaction-shy",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "shy",
+				"content": "Şey... Saçım iyi mi? Çok mu sırıttım? Neyse, odaklan Lucrea!",
+				"nextStep": "thorn-init-demand"
+			},
+			{
+				"id": "thorn-init-demand",
+				"type": "dialogue",
+				"speaker": "thorn",
+				"emotion": "neutral",
+				"content": "Hala konuşuyorsun. İnisiyatif at. Reflekslerini görelim.",
+				"nextStep": "lucrea-explain-init"
+			},
+			{
+				"id": "lucrea-explain-init",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "worried",
+				"content": "Hemen **İnisiyatif** (Refleks Testi) atmalıyız! Kimin önce başlayacağını bu belirler.",
+				"nextStep": "lucrea-explain-formula"
+			},
+			{
+				"id": "lucrea-explain-formula",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "talking",
+				"content": "Formül basit: **D20 Zarı + Dexterity (Çeviklik)** puanı.",
+				"nextStep": "init-result-user"
+			},
+			{
+				"id": "init-result-user",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "talking",
+				"content": "Senin zarın 12 geldi... +2 Çeviklik... Sonuç **14**.",
+				"nextStep": "init-result-thorn"
+			},
+			{
+				"id": "init-result-thorn",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "neutral",
+				"content": "Thorn'un zarı... Eyvah. Toplam **21**.",
+				"nextStep": "thorn-turn-start"
+			},
+			{
+				"id": "thorn-turn-start",
+				"type": "dialogue",
+				"speaker": "thorn",
+				"emotion": "smug",
+				"content": "Hızlıyım. İlk Tur benim. İzle.",
+				"nextStep": "thorn-move"
+			},
+			{
+				"id": "thorn-move",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Thorn hızla yanına geliyor (Move).",
+				"nextStep": "thorn-dodge"
+			},
+			{
+				"id": "thorn-dodge",
+				"type": "dialogue",
+				"speaker": "thorn",
+				"emotion": "talking",
+				"content": "Ve Aksiyonumla **Dodge (Kaçınma)** alıyorum.",
+				"nextStep": "lucrea-warn-dodge"
+			},
+			{
+				"id": "lucrea-warn-dodge",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "worried",
+				"content": "Dikkat! Dodge aldığı için ona saldırmak çok zor (Dezavantajlı).",
+				"nextStep": "player-turn"
+			},
+			{
+				"id": "player-turn",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "thinking",
+				"content": "Sıra sende! Ama dibindesin... Eğer direkt kaçarsan sırtına vurur (Fırsat Saldırısı)!",
+				"nextStep": "lucrea-suggest-disengage"
+			},
+			{
+				"id": "lucrea-suggest-disengage",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "excited",
+				"content": "Taktik zamanı! **Disengage (Ayrılma)** Aksiyonu kullan! Böylece güvenle kaçabilirsin.",
+				"nextStep": "player-choice"
+			},
+			{
+				"id": "player-choice",
 				"type": "challenge",
-				"content": "♟️ **Senaryo**: Karşında bir Goblin var. Elinde kılıcın var.\n\nBu turda ne yaparsın?",
+				"content": "Thorn dibinde ve Dodge'lu. Ne yapacaksın?",
 				"choices": [
 					{
-						"id": "attack-move",
-						"text": "⚔️ Goblin'in yanına git (Hareket) ve Saldır (Aksiyon)",
-						"nextStep": "success",
-						"feedback": "Mükemmel! Hareketini ve Aksiyonunu verimli kullandın."
+						"id": "act-disengage",
+						"text": "🛡️ Disengage (Ayrılma) - Güvenli Kaçış",
+						"nextStep": "res-disengage",
+						"feedback": "Harika seçim! Hasar almadan uzaklaştın."
 					},
 					{
-						"id": "double-attack",
-						"text": "⚔️ İki kere kılıçla tam güç saldır!",
-						"nextStep": "fail",
-						"feedback": "Dur bakalım! 5. seviye bir Savaşçı değilsen, turda genellikle sadece 1 standart aksiyonun vardır."
+						"id": "act-attack",
+						"text": "⚔️ Saldır (Attack)",
+						"nextStep": "res-fail-attack",
+						"feedback": "Saldırdın (Aksiyon bitti). Artık Disengage alamazsın..."
+					},
+					{
+						"id": "act-dash",
+						"text": "🏃 Koş (Dash)",
+						"nextStep": "res-fail-dash",
+						"feedback": "Hızlandın ama korunmadın. Fırsat Saldırısı yedin!"
 					}
 				]
 			},
 			{
-				"id": "success",
+				"id": "res-fail-attack",
 				"type": "dialogue",
-				"speaker": "mascot",
-				"emotion": "happy",
-				"content": "Çok güzel! Yanına gittin ve vurdun. Turun bitti.\n\nŞimdi sıra Goblinde... O da sana vuracak, sonra sıra tekrar sana gelecek. İşte buna **Round** (Tur Döngüsü) diyoruz.",
-				"nextStep": "end"
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Saldırdın ve ıskaladın (Dodge yüzünden).",
+				"nextStep": "lucrea-fail-attack-expl"
 			},
 			{
-				"id": "fail",
+				"id": "lucrea-fail-attack-expl",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "worried",
+				"content": "Eyvah! Aksiyonunu saldırıya harcadın. Şimdi hareket edersen vurur, etmezsen yanındasın. Kötü durum.",
+				"nextStep": "thorn-turn-2-intro"
+			},
+			{
+				"id": "res-fail-dash",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Arkanı döndüğün an Thorn sana vurdu! (Fırsat Saldırısı).",
+				"nextStep": "thorn-turn-2-intro"
+			},
+			{
+				"id": "res-disengage",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Disengage aldın ve sakince geri çekildin. Thorn sana vuramadan uzaklaştın.",
+				"nextStep": "thorn-turn-2-intro"
+			},
+			{
+				"id": "thorn-turn-2-intro",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "talking",
+				"content": "İkinci Tur! Thorn tekrar geliyor.",
+				"nextStep": "thorn-move-2"
+			},
+			{
+				"id": "thorn-move-2",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Thorn bu sefer hızla yanına gelip normal bir saldırı yapıyor.",
+				"nextStep": "thorn-attack-2"
+			},
+			{
+				"id": "thorn-attack-2",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Kılıçlar çarpışıyor! Berabere.",
+				"nextStep": "thorn-leave-unsafe"
+			},
+			{
+				"id": "thorn-leave-unsafe",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Thorn saldırı yaptığı için Aksiyonu bitti. Ama yine de yürüyüp gidiyor (Disengage yok!)",
+				"nextStep": "lucrea-reaction"
+			},
+			{
+				"id": "lucrea-reaction",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "excited",
+				"content": "HATA YAPTI! Disengage almadı! Şimdi senin sıran: **Reaksiyon (Fırsat Saldırısı)!**",
+				"nextStep": "reaction-choice"
+			},
+			{
+				"id": "reaction-choice",
+				"type": "challenge",
+				"content": "Thorn savunmasızca menzilinden çıkıyor. Cezalandır!",
+				"choices": [
+					{
+						"id": "react-hit",
+						"text": "⚡ VUR! (Opportunity Attack)",
+						"nextStep": "res-react-hit",
+						"feedback": "Zamanlama mükemmel!"
+					}
+				]
+			},
+			{
+				"id": "res-react-hit",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Kılıcını Thorn'un zırhına indiriyorsun! Başardın!",
+				"nextStep": "thorn-bonus-surprise"
+			},
+			{
+				"id": "thorn-bonus-surprise",
+				"type": "dialogue",
+				"speaker": "thorn",
+				"emotion": "smug",
+				"content": "Fena değil. Ama ders bitmedi.",
+				"nextStep": "thorn-bonus-act"
+			},
+			{
+				"id": "thorn-bonus-act",
+				"type": "dialogue",
+				"speaker": "narrator",
+				"emotion": "neutral",
+				"content": "Thorn aniden dönüp kalkanıyla sert bir hamle yapıyor! (Shield Bash).",
+				"nextStep": "lucrea-bonus-panic"
+			},
+			{
+				"id": "lucrea-bonus-panic",
+				"type": "dialogue",
+				"speaker": "mascot",
+				"emotion": "surprised",
+				"content": "Aaa! Turu bitmemiş miydi?! Bu ne?!",
+				"nextStep": "thorn-explain-bonus"
+			},
+			{
+				"id": "thorn-explain-bonus",
+				"type": "dialogue",
+				"speaker": "thorn",
+				"emotion": "neutral",
+				"content": "Bu **Bonus Aksiyon**. Sadece özel bir Yeteneğin (Feat) veya sınıfın varsa yapabilirsin.",
+				"nextStep": "lucrea-bonus-feat"
+			},
+			{
+				"id": "lucrea-bonus-feat",
 				"type": "dialogue",
 				"speaker": "mascot",
 				"emotion": "thinking",
-				"content": "Heyecanını anlıyorum ama kurallar var! Standart bir turda sadece 1 **Aksiyon** hakkın var. İki kere saldırmak için özel yeteneklere ihtiyacın olacak.",
-				"nextStep": "end"
+				"content": "Ah, doğru! 'Shield Master' yeteneği! Demek Bonus Aksiyonlar yeteneklerden geliyor!",
+				"nextStep": "conclusion"
 			},
 			{
-				"id": "end",
+				"id": "conclusion",
 				"type": "dialogue",
 				"speaker": "mascot",
-				"emotion": "neutral",
-				"content": "Savaşta sakin kal ve kaynaklarını (Aksiyonlarını) akıllıca yönet. Zafer strateji kuranındır!\n\nHadi şimdi diğer eğitimlere dönelim.",
+				"emotion": "happy",
+				"content": "Vay canına! Disengage ile kaçtık, Reaksiyon ile vurduk, Yetenek ile dayak yedik. Harika ders!",
 				"nextStep": "end"
 			}
 		]

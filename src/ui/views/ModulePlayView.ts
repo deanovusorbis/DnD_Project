@@ -220,7 +220,15 @@ export class ModulePlayView {
 			spriteUrl = '/img/storyteller/storyteller.png';
 		} else {
 			const emotion = (step as any).emotion || 'neutral';
-			spriteUrl = EMOTION_SPRITES[emotion] || EMOTION_SPRITES['neutral'] || '/img/mascot/lucrea-neutral.png';
+			// Try to find specific sprite for character (e.g. 'thorn-neutral')
+			const specificKey = `${step.speaker}-${emotion}`;
+
+			if (EMOTION_SPRITES[specificKey]) {
+				spriteUrl = EMOTION_SPRITES[specificKey];
+			} else {
+				// Fallback to standard emotion keys (mostly for Lucrea/Mascot)
+				spriteUrl = EMOTION_SPRITES[emotion] || EMOTION_SPRITES['neutral'] || '/img/mascot/lucrea-neutral.png';
+			}
 		}
 
 		const sprite = document.createElement('img');
