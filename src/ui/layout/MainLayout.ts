@@ -20,7 +20,8 @@ export class MainLayout {
 	public render(): void {
 		this.container.innerHTML = `
 			<header class="app-header">
-				<div class="header-left">
+				<div class="header-left" style="display: flex; gap: 1rem; align-items: center;">
+					<button class="burger-btn" id="burger-toggle">☰</button>
 					<h1>DICE & DESTINY</h1>
 				</div>
 				<nav class="app-nav">
@@ -33,6 +34,15 @@ export class MainLayout {
 					<div id="header-actions"></div>
 				</div>
 			</header>
+			
+			<!-- Mobile Menu Overlay -->
+			<div class="mobile-menu-overlay" id="mobile-menu">
+				<button class="mobile-nav-btn" data-target="home">ANA SAYFA</button>
+				<button class="mobile-nav-btn" data-target="list">Karakterler</button>
+				<button class="mobile-nav-btn" data-target="modules">Eğitim Modülleri</button>
+				<button class="mobile-nav-btn" data-target="profile">Profil</button>
+				<button class="mobile-nav-btn" id="close-mobile-menu" style="color: var(--color-accent-red); margin-top: 2rem;">KAPAT</button>
+			</div>
 			
 			<main class="app-main" id="app-main">
 				<!-- Main view content will be injected here -->
@@ -49,6 +59,36 @@ export class MainLayout {
 
 		this.mainElement = document.getElementById('app-main');
 		this.traitsElement = document.getElementById('app-traits');
+
+		this.setupMobileMenu();
+	}
+
+	private setupMobileMenu(): void {
+		const burgerBtn = document.getElementById('burger-toggle');
+		const mobileMenu = document.getElementById('mobile-menu');
+		const closeBtn = document.getElementById('close-mobile-menu');
+		const mobileLinks = mobileMenu?.querySelectorAll('.mobile-nav-btn');
+
+		if (burgerBtn && mobileMenu) {
+			burgerBtn.addEventListener('click', () => {
+				mobileMenu.classList.add('active');
+			});
+		}
+
+		if (closeBtn && mobileMenu) {
+			closeBtn.addEventListener('click', () => {
+				mobileMenu.classList.remove('active');
+			});
+		}
+
+		// Close menu when a link is clicked
+		mobileLinks?.forEach(link => {
+			if (link.id !== 'close-mobile-menu') {
+				link.addEventListener('click', () => {
+					mobileMenu?.classList.remove('active');
+				});
+			}
+		});
 	}
 
 	/**

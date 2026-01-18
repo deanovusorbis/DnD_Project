@@ -728,3 +728,184 @@ img {
     font-size: 0.95rem;
   }
 }
+
+/* HOME VIEW STYLES */
+.home-view {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0;
+  /* Add vertical padding for scrolling */
+}
+
+.home-hero {
+  margin-bottom: 3rem;
+  animation: fadeIn 1s ease-out;
+  padding: 0 1rem;
+}
+
+.home-hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 20px rgba(197, 160, 89, 0.5);
+  font-family: var(--font-display);
+  background: linear-gradient(to right, #cfaf69, #e6c88b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.home-card {
+  background: rgba(20, 20, 30, 0.8);
+  border: 1px solid var(--color-border);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all 0.3s;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  height: 100%;
+  /* Ensure full height in grid */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.home-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-accent-gold);
+  box-shadow: 0 10px 30px rgba(197, 160, 89, 0.15);
+  background: rgba(30, 30, 40, 0.9);
+}
+
+.home-card-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-card-title {
+  margin: 0;
+  color: var(--color-text-heading);
+  font-size: 1.5rem;
+  font-family: var(--font-display);
+}
+
+.home-card-desc {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}
+
+/* BURGER MENU & MOBILE NAV */
+.burger-btn {
+  display: none;
+  /* Hidden on desktop */
+  background: transparent;
+  border: none;
+  color: var(--color-text-primary);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 200;
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 150;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.mobile-menu-overlay.active {
+  display: flex !important;
+}
+
+.mobile-nav-btn {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--color-text-secondary);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s;
+}
+
+.mobile-nav-btn:hover,
+.mobile-nav-btn.active {
+  color: var(--color-accent-gold);
+  border-bottom-color: var(--color-accent-gold);
+}
+
+@media (max-width: 768px) {
+  .home-hero-title {
+    font-size: 2.5rem;
+  }
+
+  .burger-btn {
+    display: block;
+  }
+
+  .app-nav {
+    display: none !important;
+    /* Force hide standard nav on mobile */
+  }
+
+  .home-action-grid {
+    grid-template-columns: 1fr;
+    /* Force 1 column on mobile */
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+
+  /* Make home cards smaller on mobile to fit nicely */
+  .home-card {
+    padding: 1.5rem;
+    flex-direction: row;
+    /* Horizontal layout for easier tapping? Or stick to vertical? Vertical is safer for stacking. */
+    align-items: center;
+    text-align: left;
+    /* Align text left if using row */
+    gap: 1.5rem;
+  }
+
+  /* Let's try row layout for mobile cards - looks often better for lists */
+  .home-card {
+    flex-direction: row;
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  .home-card-icon {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+
+  .home-card-title {
+    font-size: 1.25rem;
+  }
+}

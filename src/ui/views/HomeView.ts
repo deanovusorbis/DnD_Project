@@ -14,66 +14,36 @@ export class HomeView {
 
   public render(): void {
     this.container.innerHTML = `
-      <div class="home-view" style="height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+      <div class="home-view">
         
-        <div class="hero-section" style="margin-bottom: 3rem; animation: fadeIn 1s ease-out;">
-          <h1 style="font-size: 3.5rem; margin-bottom: 1rem; text-shadow: 0 0 20px rgba(197, 160, 89, 0.5);">Maceraya Hoş Geldin</h1>
-          <p style="font-size: 1.2rem; color: var(--color-text-secondary); max-width: 600px; margin: 0 auto;">
+        <div class="home-hero">
+          <h1 class="home-hero-title">Maceraya Hoş Geldin</h1>
+          <p class="home-hero-subtitle">
             Zindanların derinliklerine in, efsanevi kahramanlar yarat ve kaderini zarların ucunda belirle.
           </p>
         </div>
 
-        <div class="action-grid home-action-grid">
+        <div class="home-action-grid">
           
           <!-- Card 1: Create -->
-          <button class="home-card" data-action="create" style="
-            background: rgba(20, 20, 25, 0.7); 
-            border: 1px solid var(--color-border); 
-            padding: 2rem; 
-            border-radius: var(--radius-lg); 
-            cursor: pointer; 
-            transition: all 0.3s; 
-            backdrop-filter: blur(10px);
-            text-align: center;
-            display: flex; flex-direction: column; align-items: center; gap: 1rem;
-          ">
-            <div style="font-size: 3rem; color: var(--color-accent-gold);">⚔️</div>
-            <h3 style="margin: 0; color: var(--color-text-heading);">Yeni Karakter</h3>
-            <p style="margin: 0; font-size: 0.9rem; color: var(--color-text-muted);">Sıfırdan bir efsane yarat.</p>
+          <button class="home-card" data-action="create">
+            <div class="home-card-icon" style="color: var(--color-accent-gold);">⚔️</div>
+            <h3 class="home-card-title">Yeni Karakter</h3>
+            <p class="home-card-desc">Sıfırdan bir efsane yarat.</p>
           </button>
 
           <!-- Card 2: Load -->
-          <button class="home-card" data-action="list" style="
-            background: rgba(20, 20, 25, 0.7); 
-            border: 1px solid var(--color-border); 
-            padding: 2rem; 
-            border-radius: var(--radius-lg); 
-            cursor: pointer; 
-            transition: all 0.3s; 
-            backdrop-filter: blur(10px);
-            text-align: center;
-            display: flex; flex-direction: column; align-items: center; gap: 1rem;
-          ">
-            <div style="font-size: 3rem; color: var(--color-accent-blue);">📜</div>
-            <h3 style="margin: 0; color: var(--color-text-heading);">Karakterlerim</h3>
-            <p style="margin: 0; font-size: 0.9rem; color: var(--color-text-muted);">Kayıtlı kahramanlarına göz at.</p>
+          <button class="home-card" data-action="list">
+            <div class="home-card-icon" style="color: var(--color-accent-blue);">📜</div>
+            <h3 class="home-card-title">Karakterlerim</h3>
+            <p class="home-card-desc">Kayıtlı kahramanlarına göz at.</p>
           </button>
 
           <!-- Card 3: Learning Modules -->
-          <button class="home-card" data-action="modules" style="
-            background: rgba(20, 20, 25, 0.7); 
-            border: 1px solid var(--color-border); 
-            padding: 2rem; 
-            border-radius: var(--radius-lg); 
-            cursor: pointer; 
-            transition: all 0.3s; 
-            backdrop-filter: blur(10px);
-            text-align: center;
-            display: flex; flex-direction: column; align-items: center; gap: 1rem;
-          ">
-            <div style="font-size: 3rem; color: #fbbf24;">🎓</div>
-            <h3 style="margin: 0; color: var(--color-text-heading);">Eğitim Modülleri</h3>
-            <p style="margin: 0; font-size: 0.9rem; color: var(--color-text-muted);">D&D dünyasını keşfet ve öğren.</p>
+          <button class="home-card" data-action="modules">
+            <div class="home-card-icon" style="color: #fbbf24;">🎓</div>
+            <h3 class="home-card-title">Eğitim Modülleri</h3>
+            <p class="home-card-desc">D&D dünyasını keşfet ve öğren.</p>
           </button>
 
         </div>

@@ -100,7 +100,7 @@ class App {
   }
 
   private setupNavigation(): void {
-    const navButtons = document.querySelectorAll('.nav-btn');
+    const navButtons = document.querySelectorAll('.nav-btn, .mobile-nav-btn');
     navButtons.forEach(btn => {
       btn.addEventListener('click', (e) => {
         const target = (e.target as HTMLElement).getAttribute('data-target');
