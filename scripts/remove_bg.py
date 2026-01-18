@@ -56,9 +56,9 @@ if __name__ == "__main__":
                         # Post-Process: Erode Alpha Channel to kill white halos
                         try:
                             r, g, b, a = out.split()
-                            # MinFilter(3) shrinks the mask by roughly 1px radius
-                            print(f"  - Eroding edges to remove white halo...")
-                            a = a.filter(ImageFilter.MinFilter(3))
+                            # MinFilter(4) shrinks the mask by 4px radius (Balanced)
+                            print(f"  - Eroding edges to remove white halo (Radius 4)...")
+                            a = a.filter(ImageFilter.MinFilter(4))
                             out = Image.merge("RGBA", (r, g, b, a))
                         except Exception as e:
                             print(f"  - Erosion failed, skipping: {e}")
