@@ -31,6 +31,7 @@ export class MainLayout {
 				</nav>
 				<div class="header-right" style="display: flex; align-items: center; gap: 1rem;">
 					<div id="header-actions"></div>
+					<button class="burger-btn" id="stats-toggle" style="font-size: 1.2rem;">📊</button>
 					<button class="burger-btn" id="burger-toggle">☰</button>
 				</div>
 			</header>
@@ -61,6 +62,18 @@ export class MainLayout {
 		this.traitsElement = document.getElementById('app-traits');
 
 		this.setupMobileMenu();
+		this.setupStatsToggle();
+	}
+
+	private setupStatsToggle(): void {
+		const statsBtn = document.getElementById('stats-toggle');
+		const traitsPanel = document.getElementById('app-traits');
+
+		if (statsBtn && traitsPanel) {
+			statsBtn.addEventListener('click', () => {
+				traitsPanel.classList.toggle('active');
+			});
+		}
 	}
 
 	private setupMobileMenu(): void {
