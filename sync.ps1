@@ -7,7 +7,7 @@ Write-Host "Su anki Branch: $((git branch --show-current).Trim())" -ForegroundCo
 Write-Host ""
 Write-Host "Ne yapmak istiyorsun?"
 Write-Host "1. ARKADASIMIN yaptiklarini al (Pull from Main)"
-Write-Host "2. BENIM yaptiklarimi gonder (Push to Remote Branch)"
+Write-Host "2. BENIM yaptiklarimi gonder (Push to Remote & Main)"
 Write-Host "3. Cikis"
 Write-Host ""
 
@@ -37,8 +37,12 @@ elseif ($choice -eq '2') {
     
     $currentBranch = (git branch --show-current).Trim()
     Write-Host "🚀 '$currentBranch' branch'ine gonderiliyor (Remote)..." -ForegroundColor Yellow
-    # Push to the same branch name on remote
+    # 1. Push to current branch remote
     git push origin HEAD
+    
+    Write-Host "🚀 'Main' branch'ine de gonderiliyor..." -ForegroundColor Yellow
+    # 2. Push to remote main as well
+    git push origin HEAD:main
     
     if ($LASTEXITCODE -eq 0) {
         Write-Host "✅ Degisikliklerin basariyla gonderildi!" -ForegroundColor Green
