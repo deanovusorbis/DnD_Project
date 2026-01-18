@@ -28,22 +28,28 @@ export class HomeView {
           <!-- Card 1: Create -->
           <button class="home-card" data-action="create">
             <div class="home-card-icon" style="color: var(--color-accent-gold);">⚔️</div>
-            <h3 class="home-card-title">Yeni Karakter</h3>
-            <p class="home-card-desc">Sıfırdan bir efsane yarat.</p>
+            <div class="home-card-content">
+              <h3 class="home-card-title">Yeni Karakter</h3>
+              <p class="home-card-desc">Sıfırdan bir efsane yarat.</p>
+            </div>
           </button>
 
           <!-- Card 2: Load -->
           <button class="home-card" data-action="list">
             <div class="home-card-icon" style="color: var(--color-accent-blue);">📜</div>
-            <h3 class="home-card-title">Karakterlerim</h3>
-            <p class="home-card-desc">Kayıtlı kahramanlarına göz at.</p>
+            <div class="home-card-content">
+              <h3 class="home-card-title">Karakterlerim</h3>
+              <p class="home-card-desc">Kayıtlı kahramanlarına göz at.</p>
+            </div>
           </button>
 
           <!-- Card 3: Learning Modules -->
           <button class="home-card" data-action="modules">
             <div class="home-card-icon" style="color: #fbbf24;">🎓</div>
-            <h3 class="home-card-title">Eğitim Modülleri</h3>
-            <p class="home-card-desc">D&D dünyasını keşfet ve öğren.</p>
+            <div class="home-card-content">
+              <h3 class="home-card-title">Eğitim Modülleri</h3>
+              <p class="home-card-desc">D&D dünyasını keşfet ve öğren.</p>
+            </div>
           </button>
 
         </div>

@@ -617,60 +617,53 @@ img {
     gap: 1rem;
   }
 
-  /* Stack Main Layout */
+  /* Stack Main Layout - Natural Scrolling for Mobile */
   #app {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    /* Allow app to grow */
+    min-height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 60px 1fr 40px;
+    grid-template-rows: auto;
+    /* Reset grid rows */
     grid-template-areas:
       "header"
       "main"
       "footer";
-  }
-
-  /* Hide Log Sidebar on Mobile by default */
-  .app-log {
-    display: none;
-    position: fixed;
-    top: 60px;
-    right: 0;
-    bottom: 0;
-    width: 80%;
-    z-index: 900;
-    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.5);
-  }
-
-  .app-log.active {
-    display: flex;
+    overflow: visible;
+    /* Disable app-level clip */
   }
 
   /* Header adjustments */
   .app-header {
+    position: sticky;
+    /* Keep header sticky */
+    top: 0;
     padding: 0 var(--space-md);
     flex-direction: column;
     height: auto;
     gap: 0.5rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-  }
-
-  .header-left h1 {
-    font-size: 1.2rem;
-  }
-
-  .app-nav {
-    display: flex;
-    overflow-x: auto;
     width: 100%;
-    margin-left: 0;
-    padding-bottom: 2px;
-    gap: 0.5rem;
-    -webkit-overflow-scrolling: touch;
-    white-space: nowrap;
   }
 
-  /* Main Content Padding */
+  /* Main Content - No internal scroll */
   .app-main {
+    height: auto;
+    overflow: visible;
     padding: var(--space-md);
+    flex: 1;
+    /* Push footer down */
+  }
+
+  /* Footer - Flows naturally at bottom */
+  .app-footer {
+    padding: 1.5rem;
+    background: #0a0a0c;
+    /* Solid background for legibility */
+    margin-top: auto;
   }
 
   /* Cards */
@@ -900,7 +893,6 @@ img {
     justify-content: flex-start;
     gap: 1.5rem;
     min-height: 100px;
-    /* Ensure minimum touch area */
   }
 
   .home-card-icon {
@@ -908,11 +900,22 @@ img {
     margin-bottom: 0;
     flex-shrink: 0;
     /* Prevent icon from being squished */
+    width: 60px;
+    /* Fixed width for alignment */
+    text-align: center;
+  }
+
+  .home-card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* Take remaining space */
+    gap: 0.25rem;
   }
 
   .home-card-title {
     font-size: 1.25rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0;
   }
 
   .home-card-desc {
