@@ -863,7 +863,14 @@ img {
 
 @media (max-width: 768px) {
   .home-hero-title {
-    font-size: 2.5rem;
+    /* Fluid typography: minimum 2rem, preferred 10vw, max 3.5rem */
+    font-size: clamp(2rem, 10vw, 3.5rem);
+    line-height: 1.2;
+  }
+
+  .home-hero-subtitle {
+    font-size: clamp(0.9rem, 4vw, 1.2rem);
+    padding: 0 1rem;
   }
 
   .burger-btn {
@@ -880,32 +887,36 @@ img {
     /* Force 1 column on mobile */
     padding: 0 1rem;
     max-width: 100%;
-  }
-
-  /* Make home cards smaller on mobile to fit nicely */
-  .home-card {
-    padding: 1.5rem;
-    flex-direction: row;
-    /* Horizontal layout for easier tapping? Or stick to vertical? Vertical is safer for stacking. */
-    align-items: center;
-    text-align: left;
-    /* Align text left if using row */
     gap: 1.5rem;
   }
 
-  /* Let's try row layout for mobile cards - looks often better for lists */
+  /* Mobile Card Styling - robust against distortion */
   .home-card {
+    padding: 1.5rem;
     flex-direction: row;
+    /* Horizontal layout */
+    align-items: center;
     text-align: left;
     justify-content: flex-start;
+    gap: 1.5rem;
+    min-height: 100px;
+    /* Ensure minimum touch area */
   }
 
   .home-card-icon {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 0;
+    flex-shrink: 0;
+    /* Prevent icon from being squished */
   }
 
   .home-card-title {
     font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .home-card-desc {
+    font-size: 0.9rem;
+    line-height: 1.3;
   }
 }
