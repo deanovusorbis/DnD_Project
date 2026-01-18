@@ -31,7 +31,7 @@ export class MainLayout {
 				</nav>
 				<div class="header-right" style="display: flex; align-items: center; gap: 1rem;">
 					<div id="header-actions"></div>
-					<button class="burger-btn" id="stats-toggle" style="font-size: 1.2rem;">📊</button>
+					<button class="burger-btn" id="stats-toggle" style="font-size: 1.2rem; display: none;">📊</button>
 					<button class="burger-btn" id="burger-toggle">☰</button>
 				</div>
 			</header>
@@ -73,6 +73,36 @@ export class MainLayout {
 			statsBtn.addEventListener('click', () => {
 				traitsPanel.classList.toggle('active');
 			});
+		}
+	}
+
+	public toggleStatsButton(visible: boolean): void {
+		const statsBtn = document.getElementById('stats-toggle');
+		if (statsBtn) {
+			// On mobile, we use display: block if visible, none otherwise.
+			// But wait, our CSS for burger-btn is 'display: block' in media query only?
+			// Actually, burger-btn is display: none desktop.
+			// We should set it to 'block' if visible, but ONLY if we are on mobile?
+			// Simpler: Just toggle a 'hidden' class or set display directly.
+			// If we set display: block, it will show on Desktop too!
+			// Solution: Create a specific class for the stats button that respects the media query?
+			// Or just set inline style. If desktop hides .burger-btn via !important or high specificity?
+			// CSS: .burger-btn { display: none } (Desktop).
+			// CSS: @media mobile { .burger-btn { display: block } }
+			// If I add inline style 'display: block', it overrides the Desktop hide!
+			// I should add/remove a class 'visible-on-mobile'.
+			// But easier: The CSS rules handle display. I just need to potentially hide it even on mobile.
+			// Default HTML: style="display: none".
+			// Use logic:
+			if (visible) {
+				statsBtn.style.removeProperty('display'); // Let CSS handle it? 
+				// Problem: If CSS says 'none' (desktop), removing property keeps it 'none'. Correct.
+				// If CSS says 'block' (mobile), removing property keeps it 'block'. Correct.
+				// BUT I set inline 'display: none' in HTML now.
+				// So removeProperty('display') will revert to CSS.
+			} else {
+				statsBtn.style.display = 'none';
+			}
 		}
 	}
 

@@ -153,8 +153,10 @@ class App {
     if (appElement) {
       if (view === 'builder') {
         appElement.classList.remove('layout-full-width');
+        this.layout.toggleStatsButton(true); // Show stats toggle on mobile
       } else {
         appElement.classList.add('layout-full-width');
+        this.layout.toggleStatsButton(false); // Hide stats toggle
       }
     }
 
