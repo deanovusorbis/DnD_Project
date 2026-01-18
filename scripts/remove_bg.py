@@ -40,6 +40,10 @@ if __name__ == "__main__":
         for root, dirs, files in os.walk(args.path):
             for file in files:
                 if file.lower().endswith(('.png', '.jpg', '.jpeg', '.webp')) and not file.endswith('.bak'):
+                    if file in ['lucrea-turnaround.jpg', 'lucrea-emotions.jpg']:
+                        print(f"Skipping excluded file: {file}")
+                        continue
+                        
                     input_path = os.path.join(root, file)
                     print(f"Processing: {input_path}")
                     
