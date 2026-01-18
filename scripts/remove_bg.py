@@ -1,7 +1,7 @@
 import os
 import argparse
 from rembg import remove, new_session
-from PIL import Image
+from PIL import Image, ImageFilter
 
 def process_image(input_path, output_path=None, session=None):
     if not output_path:
@@ -50,17 +50,18 @@ if __name__ == "__main__":
                     try:
                         # Open
                         inp = Image.open(input_path)
-                        # Remove BG using specialized session with Aggressive Alpha Matting
-                        # Erode size 15 to eat into white edges
-                        print(f"  - Removing BG (Aggressive Alpha Matting, Erode=15)...")
-                        out = remove(
-                            inp, 
-                            session=session,
-                            alpha_matting=True,
-                            alpha_matting_foreground_threshold=240,
-                            alpha_matting_background_threshold=10,
-                            alpha_matting_erode_size=15
-                        )
+                        # Remove BG (Standard)
+                        out = remove(inp, session=session)
+                        
+                        # Post-Process: Erode Alpha Channel to kill white halos
+                        try:
+                            r, g, b, a = out.split()
+                            # MinFilter(3) shrinks the mask by roughly 1px radius
+                            print(f"  - Eroding edges to remove white halo...")
+                            a = a.filter(ImageFilter.MinFilter(3))
+                            out = Image.merge("RGBA", (r, g, b, a))
+                        except Exception as e:
+                            print(f"  - Erosion failed, skipping: {e}")
                         
                         if args.overwrite:
                             # Backup
