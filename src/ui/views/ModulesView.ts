@@ -88,9 +88,15 @@ export class ModulesView {
 	private renderBasicModules(container: HTMLElement): void {
 		container.innerHTML = '';
 
+		const title = document.createElement('h3');
+		title.className = 'module-section-title';
+		title.textContent = 'Temel Kavramlar';
+		title.style.color = 'var(--color-accent-gold)';
+		title.style.marginBottom = '1.5rem';
+		container.appendChild(title);
+
 		const grid = document.createElement('div');
 		grid.className = 'module-grid-responsive';
-		// Removed inline styles
 
 		// Get basics modules
 		const basicModules = moduleLoader.getModulesByCategory('basics');
@@ -113,9 +119,15 @@ export class ModulesView {
 	private renderSpeciesModules(container: HTMLElement): void {
 		container.innerHTML = '';
 
+		const title = document.createElement('h3');
+		title.className = 'module-section-title';
+		title.textContent = 'Tür Modülleri';
+		title.style.color = 'var(--color-accent-gold)';
+		title.style.marginBottom = '1.5rem';
+		container.appendChild(title);
+
 		const grid = document.createElement('div');
 		grid.className = 'module-grid-responsive';
-		// Removed inline styles
 
 		// Get all species from registry
 		const allSpecies = registry.getAllSpecies();
@@ -138,9 +150,15 @@ export class ModulesView {
 	private renderClassModules(container: HTMLElement): void {
 		container.innerHTML = '';
 
+		const title = document.createElement('h3');
+		title.className = 'module-section-title';
+		title.textContent = 'Sınıf Modülleri';
+		title.style.color = 'var(--color-accent-gold)';
+		title.style.marginBottom = '1.5rem';
+		container.appendChild(title);
+
 		const grid = document.createElement('div');
 		grid.className = 'module-grid-responsive';
-		// Removed inline styles
 
 		// Get all classes from registry
 		const allClasses = registry.getAllClasses();
