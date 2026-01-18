@@ -655,6 +655,12 @@ img {
     z-index: 1000;
   }
 
+  .header-left h1 {
+    font-size: clamp(1rem, 4vw, 1.25rem);
+    white-space: nowrap;
+    margin: 0;
+  }
+
   /* Footer - Flows naturally at bottom */
   .app-footer {
     padding: 1.5rem;
