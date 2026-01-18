@@ -671,6 +671,22 @@ img {
     /* Push footer down */
   }
 
+  /* RE-ADDED: Hide Log Sidebar on Mobile by default */
+  .app-log {
+    display: none;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    z-index: 900;
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .app-log.active {
+    display: flex;
+  }
+
   /* Footer - Flows naturally at bottom */
   .app-footer {
     padding: 1.5rem;
