@@ -639,15 +639,27 @@ img {
   /* Header adjustments */
   .app-header {
     position: sticky;
-    /* Keep header sticky */
     top: 0;
     padding: 0 var(--space-md);
-    flex-direction: column;
-    height: auto;
+    flex-direction: row;
+    /* Horizontal layout */
+    justify-content: space-between;
+    /* Space out Title and Burger */
+    align-items: center;
+    height: 60px;
+    /* Fixed height for clean stacking */
     gap: 0.5rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
     width: 100%;
+    z-index: 1000;
+  }
+
+  /* Footer - Flows naturally at bottom */
+  .app-footer {
+    padding: 1.5rem;
+    background: #0a0a0c;
+    margin-top: auto;
+    text-align: center;
+    /* Center text on mobile */
   }
 
   /* Main Content - No internal scroll */

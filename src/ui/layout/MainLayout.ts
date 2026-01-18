@@ -20,8 +20,7 @@ export class MainLayout {
 	public render(): void {
 		this.container.innerHTML = `
 			<header class="app-header">
-				<div class="header-left" style="display: flex; gap: 1rem; align-items: center;">
-					<button class="burger-btn" id="burger-toggle">☰</button>
+				<div class="header-left">
 					<h1>DICE & DESTINY</h1>
 				</div>
 				<nav class="app-nav">
@@ -30,8 +29,9 @@ export class MainLayout {
 					<button class="nav-btn" data-target="modules">Eğitim Modülleri</button>
 					<button class="nav-btn" data-target="profile">Profil</button>
 				</nav>
-				<div class="header-right">
+				<div class="header-right" style="display: flex; align-items: center; gap: 1rem;">
 					<div id="header-actions"></div>
+					<button class="burger-btn" id="burger-toggle">☰</button>
 				</div>
 			</header>
 			
