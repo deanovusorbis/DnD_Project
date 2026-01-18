@@ -50,9 +50,17 @@ if __name__ == "__main__":
                     try:
                         # Open
                         inp = Image.open(input_path)
-                        # Remove BG using specialized session
-                        # We turn OFF alpha matting for this model first as it often handles edges better natively
-                        out = remove(inp, session=session)
+                        # Remove BG using specialized session with Aggressive Alpha Matting
+                        # Erode size 15 to eat into white edges
+                        print(f"  - Removing BG (Aggressive Alpha Matting, Erode=15)...")
+                        out = remove(
+                            inp, 
+                            session=session,
+                            alpha_matting=True,
+                            alpha_matting_foreground_threshold=240,
+                            alpha_matting_background_threshold=10,
+                            alpha_matting_erode_size=15
+                        )
                         
                         if args.overwrite:
                             # Backup
