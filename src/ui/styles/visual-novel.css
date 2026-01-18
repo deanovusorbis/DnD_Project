@@ -240,50 +240,70 @@
 }
 
 
-/* Portrait Mode (Mobile Default) - Fallback */
+/* Portrait Mode (Mobile Default) - Optimized for Full Body Assets */
 @media (max-width: 768px) and (orientation: portrait) {
 
 	/* Adjust Sprite Area */
 	.vn-sprite-area {
 		align-items: flex-end;
 		justify-content: center;
-		/* Center sprite on mobile */
 		padding-left: 0;
-		padding-bottom: 220px;
-		/* Ensure space for dialogue */
+		padding-bottom: 0;
+		/* Remove padding to allow sprite to sit at bottom */
+		overflow: hidden;
+		/* Crop the bottom of the sprite if needed */
 	}
 
-	/* Scale down sprite */
+	/* Scale UP sprite to show upper body detail (Zoom Effect) */
 	.vn-character-sprite {
-		height: 40vh;
-		/* Smaller sprite relative to viewport */
+		height: 85vh;
+		/* Make it huge so we see the face/upper body clearly */
+		width: auto;
+		/* Maintain aspect ratio */
+		max-width: none;
+		/* Allow it to be wider than screen if needed (centered) */
 		margin-left: 0;
+		transform: translateY(10%);
+		/* Push it down a bit so we see more head room */
+		mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+		-webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
 	}
 
-	/* Dialogue Box */
+	/* Dialogue Box - Make it taller and cover the legs */
 	.vn-dialogue-container {
-		min-height: 30vh;
-		padding: 1.25rem;
+		min-height: 35vh;
+		/* Taller text area */
+		padding: 1.5rem;
+		background: linear-gradient(to bottom, rgba(15, 15, 20, 0.98) 20%, #0d0d10 100%);
+		border-top: 2px solid var(--color-accent-gold);
 	}
 
 	.vn-speaker-name {
-		font-size: 1rem;
+		font-size: 1.1rem;
+		color: var(--color-accent-gold);
 	}
 
 	.vn-dialogue-text-content {
-		font-size: 1rem;
-		line-height: 1.5;
+		font-size: 1.1rem;
+		/* Larger text for readability */
+		line-height: 1.6;
 	}
 
 	/* Top Bar */
 	.vn-top-bar {
 		padding: 0.5rem 1rem;
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
 	}
 
 	.vn-next-action {
 		right: 1.5rem;
-		bottom: 105%;
-		font-size: 1rem;
+		bottom: 110%;
+		/* Move it slightly higher above text box */
+		font-size: 1.1rem;
+		background: rgba(0, 0, 0, 0.5);
+		/* Add backdrop for better visibility over sprite */
+		padding: 0.25rem 0.5rem;
+		border-radius: 4px;
 	}
 }
 
