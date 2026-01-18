@@ -7,7 +7,7 @@ Write-Host "Su anki Branch: $((git branch --show-current).Trim())" -ForegroundCo
 Write-Host ""
 Write-Host "Ne yapmak istiyorsun?"
 Write-Host "1. ARKADASIMIN yaptiklarini al (Pull from Main)"
-Write-Host "2. BENIM yaptiklarimi gonder (Push to Main)"
+Write-Host "2. BENIM yaptiklarimi gonder (Push to Remote Branch)"
 Write-Host "3. Cikis"
 Write-Host ""
 
@@ -19,7 +19,8 @@ if ($choice -eq '1') {
     git pull origin main
     if ($LASTEXITCODE -eq 0) {
         Write-Host "✅ Guncellemeler basariyla alindi!" -ForegroundColor Green
-    } else {
+    }
+    else {
         Write-Host "❌ Bir hata olustu (Cakisma olabilir)." -ForegroundColor Red
     }
 }
@@ -34,13 +35,15 @@ elseif ($choice -eq '2') {
     git add .
     git commit -m "$msg"
     
-    Write-Host "🚀 'Main'e gonderiliyor..." -ForegroundColor Yellow
-    # HEAD:main means "take my current commit/branch and push it to remote 'main' branch"
-    git push origin HEAD:main
+    $currentBranch = (git branch --show-current).Trim()
+    Write-Host "🚀 '$currentBranch' branch'ine gonderiliyor (Remote)..." -ForegroundColor Yellow
+    # Push to the same branch name on remote
+    git push origin HEAD
     
     if ($LASTEXITCODE -eq 0) {
         Write-Host "✅ Degisikliklerin basariyla gonderildi!" -ForegroundColor Green
-    } else {
+    }
+    else {
         Write-Host "❌ Gonderirken hata olustu." -ForegroundColor Red
     }
 }
