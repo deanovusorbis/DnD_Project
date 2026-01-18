@@ -23,7 +23,7 @@ export class HomeView {
           </p>
         </div>
 
-        <div class="action-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; width: 100%; max-width: 900px;">
+        <div class="action-grid home-action-grid">
           
           <!-- Card 1: Create -->
           <button class="home-card" data-action="create" style="

@@ -29,13 +29,8 @@ export class ModulesView {
 
 		// Category Tabs
 		const tabsContainer = document.createElement('div');
-		tabsContainer.className = 'module-tabs';
-		tabsContainer.style.cssText = `
-			display: flex;
-			gap: 1rem;
-			margin: 2rem 0;
-			border-bottom: 2px solid var(--color-border);
-		`;
+		tabsContainer.className = 'module-tabs-container';
+		// Removed inline styles, using CSS class
 
 		const basicsTab = this.createTab('Temel Kavramlar', 'basics', true);
 		const speciesTab = this.createTab('Tür Modülleri', 'species', false);
@@ -77,26 +72,16 @@ export class ModulesView {
 		tab.className = `module-tab ${active ? 'active' : ''}`;
 		tab.setAttribute('data-category', category);
 		tab.textContent = label;
-		tab.style.cssText = `
-			padding: 1rem 2rem;
-			background: transparent;
-			border: none;
-			border-bottom: 3px solid ${active ? 'var(--color-accent-gold)' : 'transparent'};
-			color: ${active ? 'var(--color-accent-gold)' : 'var(--color-text-secondary)'};
-			font-size: 1.1rem;
-			font-weight: 600;
-			cursor: pointer;
-			transition: all 0.3s;
-		`;
+		// Removed inline styles, using CSS class
 		return tab;
 	}
 
 	private setActiveTab(activeTab: HTMLElement, inactiveTabs: HTMLElement[]): void {
-		activeTab.style.borderBottom = '3px solid var(--color-accent-gold)';
-		activeTab.style.color = 'var(--color-accent-gold)';
+		activeTab.classList.add('active');
+		// Removed inline style overrides
 		inactiveTabs.forEach(tab => {
-			tab.style.borderBottom = '3px solid transparent';
-			tab.style.color = 'var(--color-text-secondary)';
+			tab.classList.remove('active');
+			// Removed inline style overrides
 		});
 	}
 
@@ -104,14 +89,8 @@ export class ModulesView {
 		container.innerHTML = '';
 
 		const grid = document.createElement('div');
-		grid.className = 'module-grid';
-		grid.style.cssText = `
-			display: grid;
-			grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-			gap: 2rem;
-			padding: 0 2rem; /* Added padding as requested by user */
-			margin-top: 2rem;
-		`;
+		grid.className = 'module-grid-responsive';
+		// Removed inline styles
 
 		// Get basics modules
 		const basicModules = moduleLoader.getModulesByCategory('basics');
@@ -135,14 +114,8 @@ export class ModulesView {
 		container.innerHTML = '';
 
 		const grid = document.createElement('div');
-		grid.className = 'module-grid';
-		grid.style.cssText = `
-			display: grid;
-			grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-			gap: 2rem;
-			padding: 0 2rem; /* Added padding as requested by user */
-			margin-top: 2rem;
-		`;
+		grid.className = 'module-grid-responsive';
+		// Removed inline styles
 
 		// Get all species from registry
 		const allSpecies = registry.getAllSpecies();
@@ -166,14 +139,8 @@ export class ModulesView {
 		container.innerHTML = '';
 
 		const grid = document.createElement('div');
-		grid.className = 'module-grid';
-		grid.style.cssText = `
-			display: grid;
-			grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-			gap: 2rem;
-			padding: 0 2rem;
-			margin-top: 2rem;
-		`;
+		grid.className = 'module-grid-responsive';
+		// Removed inline styles
 
 		// Get all classes from registry
 		const allClasses = registry.getAllClasses();
@@ -215,17 +182,11 @@ export class ModulesView {
 
 		const card = document.createElement('div');
 		card.className = 'module-card';
-		card.style.cssText = `
-			background: ${isCompleted ? 'rgba(30, 40, 30, 0.8)' : 'rgba(20, 20, 25, 0.7)'};
-			border: 1px solid ${isCompleted ? '#4ade80' : 'var(--color-border)'};
-			border-radius: var(--radius-lg);
-			padding: 1.5rem;
-			cursor: pointer;
-			transition: all 0.3s;
-			backdrop-filter: blur(10px);
-			position: relative;
-			overflow: hidden;
-		`;
+
+		// Keeping dynamic background check inline or utilizing class 'completed'
+		card.style.background = isCompleted ? 'rgba(30, 40, 30, 0.8)' : 'rgba(20, 20, 25, 0.7)';
+		card.style.border = `1px solid ${isCompleted ? '#4ade80' : 'var(--color-border)'}`;
+		// All other static styles moved to CSS
 
 		const difficultyColor =
 			module.difficulty === 'beginner' ? '#4ade80' :
@@ -314,7 +275,7 @@ export class ModulesView {
 
 		card.addEventListener('mouseleave', () => {
 			card.style.transform = 'translateY(0)';
-			card.style.borderColor = 'var(--color-border)';
+			card.style.borderColor = isCompleted ? '#4ade80' : 'var(--color-border)';
 			card.style.boxShadow = 'none';
 		});
 

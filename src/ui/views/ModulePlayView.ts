@@ -15,9 +15,11 @@ const EMOTION_SPRITES: Record<string, string> = {
 	'shy': '/img/lucrea/lucrea-shy.png',
 	'laughing': '/img/lucrea/lucrea-laughing.png',
 	'giggle': '/img/lucrea/lucrea-laughing.png',
-	// New NPC Characters (Placeholders for future sprites)
+	// NPC Characters
 	'thorn-neutral': '/img/npc/thorn/thorn-neutral.png',
 	'thorn-talking': '/img/npc/thorn/thorn-talking.png',
+	'thorn-angry': '/img/npc/thorn/thorn-angry.png',
+	'thorn-smug': '/img/npc/thorn/thorn-smug.png',
 	'elara-neutral': '/img/npc/elara/elara-neutral.png',
 	'elara-talking': '/img/npc/elara/elara-talking.png',
 	'shadow-neutral': '/img/npc/shadow/shadow-neutral.png',
@@ -49,6 +51,18 @@ export class ModulePlayView {
 		// Bind input handler
 		this.boundHandleInput = this.handleInput.bind(this);
 		document.addEventListener('keydown', this.boundHandleInput);
+
+		// Bind global click handler for "Tap to Advance"
+		// We use the container itself as the touch surface
+		this.container.onclick = (e) => {
+			// Don't trigger if clicking on interactive elements that should handle themselves
+			// (Buttons already prevent propagation, but good to be safe)
+			const target = e.target as HTMLElement;
+			if (target.tagName === 'BUTTON' || target.getAttribute('role') === 'button') {
+				return;
+			}
+			this.handleActionTrigger();
+		};
 
 		// Wrap exit/complete to clear listener
 		const originalExit = this.onExit;
@@ -111,23 +125,8 @@ export class ModulePlayView {
 
 	public render(): void {
 		this.container.innerHTML = '';
-		this.container.style.cssText = `
-			position: fixed;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			z-index: 1000;
-			display: flex;
-			flex-direction: column;
-			background: linear-gradient(to bottom, #2a2a35 0%, #1a1a25 100%);
-			padding: 0;
-			margin: 0;
-			width: 100%;
-			height: 100%;
-			box-sizing: border-box;
-			user-select: none; /* Prevent highlighting */
-		`;
+		this.container.className = 'vn-container-fixed';
+		// Removed inline styles
 
 		const currentStep = this.module.scenario.steps.find(s => s.id === this.currentStepId);
 		if (!currentStep) return;
@@ -136,14 +135,22 @@ export class ModulePlayView {
 		const topBar = this.createTopBar();
 		this.container.appendChild(topBar);
 
+		// Apply background
+		const bgImage = currentStep.backgroundImage || this.module.scenario.backgroundImage;
+		if (bgImage) {
+			this.container.style.backgroundImage = `url('${bgImage}')`;
+			this.container.style.backgroundSize = 'cover';
+			this.container.style.backgroundPosition = 'center';
+			this.container.style.backgroundRepeat = 'no-repeat';
+		} else {
+			// Default gradient
+			this.container.style.background = 'linear-gradient(to bottom, #2a2a35 0%, #1a1a25 100%)';
+		}
+
 		// Main VN area
 		const vnArea = document.createElement('div');
-		vnArea.style.cssText = `
-			width: 100%;
-			height: 100%;
-			position: relative;
-			overflow: hidden;
-		`;
+		vnArea.className = 'vn-view-area';
+		// Removed inline styles
 
 		// Character sprite area
 		const spriteArea = this.createSpriteArea(currentStep);
@@ -159,32 +166,17 @@ export class ModulePlayView {
 
 	private createTopBar(): HTMLElement {
 		const topBar = document.createElement('div');
-		topBar.style.cssText = `
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			padding: 0.75rem 1.5rem;
-			background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			z-index: 100;
-			box-sizing: border-box;
-		`;
+		topBar.className = 'vn-top-bar';
+		// Removed inline styles
 
 		const title = document.createElement('div');
-		title.style.cssText = `
-			font-family: var(--font-display);
-			color: var(--color-accent-gold);
-			font-size: 1rem;
-		`;
+		title.className = 'vn-top-title';
 		title.textContent = this.module.scenario.title;
 
 		const exitBtn = document.createElement('button');
 		exitBtn.className = 'btn btn-secondary';
 		exitBtn.textContent = '← Çıkış';
-		exitBtn.style.cssText = 'padding: 0.4rem 1rem; font-size: 0.9rem;';
+		exitBtn.style.cssText = 'padding: 0.4rem 1rem; font-size: 0.9rem;'; // Minimal override OK
 		exitBtn.onclick = () => {
 			this.showExitConfirmation();
 		};
@@ -196,24 +188,8 @@ export class ModulePlayView {
 
 	private createSpriteArea(step: ModuleStep): HTMLElement {
 		const spriteArea = document.createElement('div');
-		spriteArea.style.cssText = `
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			display: flex;
-			align-items: flex-end;
-			justify-content: flex-start;
-			padding-left: 2rem;
-			padding-bottom: 250px; /* Accounts for taller dialogue box */
-			box-sizing: border-box;
-			background: 
-				radial-gradient(ellipse at 30% 50%, rgba(139, 92, 8, 0.15) 0%, transparent 50%),
-				radial-gradient(ellipse at 70% 30%, rgba(197, 160, 89, 0.1) 0%, transparent 40%),
-				linear-gradient(to bottom, #2a2a35 0%, #1a1a25 100%);
-			z-index: 1;
-		`;
+		spriteArea.className = 'vn-sprite-area';
+		// Removed inline styles
 
 		let spriteUrl: string;
 		if (!step.speaker || step.speaker === 'narrator') {
@@ -232,17 +208,10 @@ export class ModulePlayView {
 		}
 
 		const sprite = document.createElement('img');
+		sprite.className = 'vn-character-sprite';
 		sprite.src = spriteUrl;
 		sprite.alt = step.speaker || 'Character';
-		sprite.style.cssText = `
-			height: 380px;
-			max-height: 100%;
-			width: auto;
-			object-fit: contain;
-			filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5));
-			animation: vnFadeIn 0.5s ease-out;
-			margin-left: 1rem;
-		`;
+		// Removed inline styles
 
 		spriteArea.appendChild(sprite);
 		return spriteArea;
@@ -250,35 +219,13 @@ export class ModulePlayView {
 
 	private createDialogueBox(step: ModuleStep): HTMLElement {
 		const dialogueContainer = document.createElement('div');
-		dialogueContainer.className = 'dialogue-container'; // Add class for selection
-		dialogueContainer.style.cssText = `
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			width: 100%;
-			min-height: 250px;
-			background: linear-gradient(to bottom, rgba(15, 15, 20, 0.98) 0%, rgba(10, 10, 15, 0.98) 100%);
-			border-top: 3px solid var(--color-accent-gold);
-			padding: 2rem;
-			display: flex;
-			flex-direction: column;
-			gap: 1rem;
-			box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.6);
-			box-sizing: border-box;
-			z-index: 100;
-		`;
+		dialogueContainer.className = 'dialogue-container vn-dialogue-container'; // Keep legacy class for selection logic if needed, add new class
+		// Removed inline styles but kept logic
 
 		// Speaker name
 		const speakerName = document.createElement('div');
-		speakerName.style.cssText = `
-			font-family: var(--font-display);
-			color: var(--color-accent-gold);
-			font-size: 1.2rem;
-			font-weight: 700;
-			text-transform: uppercase;
-			letter-spacing: 1px;
-			margin-bottom: 0.5rem;
-		`;
+		speakerName.className = 'vn-speaker-name';
+		// Removed inline styles
 
 		let displayName = 'Anlatıcı';
 		if (step.speaker === 'mascot') {
@@ -291,16 +238,8 @@ export class ModulePlayView {
 
 		// Dialogue text container
 		const dialogueText = document.createElement('div');
-		dialogueText.className = 'dialogue-text'; // Add class for selection
-		dialogueText.style.cssText = `
-			color: var(--color-text-primary);
-			font-size: 1.05rem;
-			line-height: 1.7;
-			flex: 1;
-			overflow: hidden;
-			cursor: pointer;
-		`;
-		dialogueContainer.appendChild(dialogueText);
+		dialogueText.className = 'dialogue-text vn-dialogue-text-content'; // Add new class
+		// Removed logical styles, kept tracking attr
 
 		// Hint Text
 		const hint = document.createElement('div');
@@ -400,42 +339,15 @@ export class ModulePlayView {
 	}
 
 	private createActions(step: ModuleStep): HTMLElement | null {
+		// Use inline style for actions container as it is simple flex
 		const actionsContainer = document.createElement('div');
-		actionsContainer.style.cssText = `
-			display: flex;
-			gap: 1rem;
-			justify-content: flex-end;
-			margin-top: 1rem;
-		`;
+		actionsContainer.className = 'vn-actions-container';
 
 		if (step.type === 'choice' || step.type === 'challenge') {
 			const continueBtn = document.createElement('div');
+			continueBtn.className = 'vn-next-action';
 			continueBtn.textContent = 'Devam Et ▼';
 			continueBtn.setAttribute('role', 'button');
-			continueBtn.style.cssText = `
-				position: absolute;
-				bottom: 100%;
-				right: 2rem;
-				margin-bottom: 1rem;
-				color: var(--color-accent-gold);
-				font-family: var(--font-display);
-				font-size: 1.1rem;
-				font-weight: bold;
-				cursor: pointer;
-				user-select: none;
-				transition: transform 0.2s;
-				text-shadow: 0 2px 4px rgba(0,0,0,0.8);
-				animation: float 2s ease-in-out infinite;
-			`;
-
-			continueBtn.onmouseenter = () => {
-				continueBtn.style.transform = 'translateY(-3px)';
-				continueBtn.style.color = '#fff';
-			};
-			continueBtn.onmouseleave = () => {
-				continueBtn.style.transform = 'translateY(0)';
-				continueBtn.style.color = 'var(--color-accent-gold)';
-			};
 
 			continueBtn.onclick = (e) => {
 				e.stopPropagation();
@@ -446,32 +358,9 @@ export class ModulePlayView {
 		} else if (step.nextStep) {
 			// Floating text style
 			const nextBtn = document.createElement('div');
+			nextBtn.className = 'vn-next-action';
 			nextBtn.textContent = 'Devam Et ▼';
-			nextBtn.setAttribute('role', 'button'); // Mark as button for click handler check
-			nextBtn.style.cssText = `
-				position: absolute;
-				bottom: 100%;
-				right: 2rem;
-				margin-bottom: 1rem;
-				color: var(--color-accent-gold);
-				font-family: var(--font-display);
-				font-size: 1.1rem;
-				font-weight: bold;
-				cursor: pointer;
-				user-select: none;
-				transition: transform 0.2s;
-				text-shadow: 0 2px 4px rgba(0,0,0,0.8);
-				animation: float 2s ease-in-out infinite;
-			`;
-
-			nextBtn.onmouseenter = () => {
-				nextBtn.style.transform = 'translateY(-3px)';
-				nextBtn.style.color = '#fff';
-			};
-			nextBtn.onmouseleave = () => {
-				nextBtn.style.transform = 'translateY(0)';
-				nextBtn.style.color = 'var(--color-accent-gold)';
-			};
+			nextBtn.setAttribute('role', 'button');
 
 			nextBtn.onclick = (e) => {
 				e.stopPropagation(); // Prevent bubbling to container click
@@ -483,44 +372,16 @@ export class ModulePlayView {
 		} else {
 			// Finish button - now floating text style
 			const finishBtn = document.createElement('div');
+			finishBtn.className = 'vn-next-action';
 			finishBtn.innerText = 'Tamamla ✓';
 			finishBtn.setAttribute('role', 'button');
-			finishBtn.style.cssText = `
-				position: absolute;
-				bottom: 100%;
-				right: 2rem;
-				margin-bottom: 1rem;
-				color: #4ade80; /* Green for completion */
-				font-family: var(--font-display);
-				font-size: 1.2rem;
-				font-weight: bold;
-				cursor: pointer;
-				user-select: none;
-				transition: transform 0.2s;
-				text-shadow: 0 0 10px rgba(74, 222, 128, 0.4);
-				animation: float 2s ease-in-out infinite;
-			`;
-
-			finishBtn.onmouseenter = () => {
-				finishBtn.style.transform = 'translateY(-3px) scale(1.05)';
-				finishBtn.style.color = '#86efac';
-				finishBtn.style.textShadow = '0 0 15px rgba(74, 222, 128, 0.6)';
-			};
-			finishBtn.onmouseleave = () => {
-				finishBtn.style.transform = 'translateY(0) scale(1)';
-				finishBtn.style.color = '#4ade80';
-				finishBtn.style.textShadow = '0 0 10px rgba(74, 222, 128, 0.4)';
-			};
+			finishBtn.style.color = '#4ade80'; // Override for green
 
 			finishBtn.onclick = (e) => {
 				e.stopPropagation();
 				this.handleCompletion();
 			};
 
-			// We return it directly as an element, similar to nextBtn, 
-			// but we need to verify where createActions appends things.
-			// createActions typically appends to a container if it's not returning the element directly.
-			// The original code appended to actionsContainer. Let's return the element directly to match nextBtn logic for positioning.
 			return finishBtn;
 		}
 	}
@@ -827,87 +688,7 @@ export class ModulePlayView {
 		});
 	}
 
-	private showFeedback(message: string, onContinue: () => void): void {
-		const overlay = document.createElement('div');
-		overlay.style.cssText = `
-			position: fixed;
-			top: 0; left: 0; width: 100%; height: 100%;
-			background: rgba(0, 0, 0, 0.7);
-			backdrop-filter: blur(5px);
-			z-index: 2000;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			animation: fadeIn 0.3s;
-		`;
 
-		const box = document.createElement('div');
-		box.style.cssText = `
-			background: linear-gradient(135deg, rgba(30, 30, 35, 0.95), rgba(20, 20, 25, 0.98));
-			border: 1px solid var(--color-accent-gold);
-			border-radius: 12px;
-			padding: 2.5rem;
-			max-width: 500px;
-			width: 90%;
-			text-align: center;
-			box-shadow: 0 0 30px rgba(197, 160, 89, 0.15);
-			animation: slideUp 0.4s ease-out forwards;
-		`;
-
-		const msg = document.createElement('p');
-		msg.textContent = message;
-		msg.style.cssText = `
-			font-size: 1.2rem;
-			margin-bottom: 2rem;
-			line-height: 1.6;
-			color: var(--color-text-primary);
-			font-family: var(--font-body);
-		`;
-		box.appendChild(msg);
-
-		const btn = document.createElement('button');
-		btn.textContent = 'DEVAM ET';
-		btn.style.cssText = `
-			background: rgba(197, 160, 89, 0.1);
-			color: var(--color-accent-gold);
-			border: 1px solid var(--color-accent-gold);
-			padding: 0.8rem 3rem;
-			font-family: var(--font-display);
-			font-size: 1rem;
-			letter-spacing: 2px;
-			font-weight: 700;
-			cursor: pointer;
-			transition: all 0.3s ease;
-			text-transform: uppercase;
-			border-radius: 4px;
-		`;
-
-		btn.onmouseenter = () => {
-			btn.style.background = 'var(--color-accent-gold)';
-			btn.style.color = '#000';
-			btn.style.boxShadow = '0 0 20px rgba(197, 160, 89, 0.4)';
-			btn.style.transform = 'translateY(-2px)';
-		};
-
-		btn.onmouseleave = () => {
-			btn.style.background = 'rgba(197, 160, 89, 0.1)';
-			btn.style.color = 'var(--color-accent-gold)';
-			btn.style.boxShadow = 'none';
-			btn.style.transform = 'translateY(0)';
-		};
-
-		btn.onclick = () => {
-			overlay.style.opacity = '0';
-			setTimeout(() => {
-				document.body.removeChild(overlay);
-				onContinue();
-			}, 300);
-		};
-		box.appendChild(btn);
-
-		overlay.appendChild(box);
-		document.body.appendChild(overlay);
-	}
 
 	private handleNext(nextStepId: string): void {
 		if (nextStepId === 'end') {

@@ -22,11 +22,13 @@ export interface ModuleStep {
 	choices?: ModuleChoice[];
 	nextStep?: string; // For linear progression
 	image?: string; // Optional image path
+	backgroundImage?: string; // Optional background override
 }
 
 export interface ModuleScenario {
 	title: string;
 	description: string;
+	backgroundImage?: string; // Default background for the scenario
 	steps: ModuleStep[];
 	learningObjectives: string[];
 	estimatedTime: number; // in minutes

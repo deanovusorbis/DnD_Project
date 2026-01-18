@@ -21,7 +21,7 @@ export class MainLayout {
 		this.container.innerHTML = `
 			<header class="app-header">
 				<div class="header-left">
-					<h1>D&D Deneyimsel Öğrenme Platformu</h1>
+					<h1>D&D Öğrenme Platformu</h1>
 				</div>
 				<nav class="app-nav">
 					<button class="nav-btn" data-target="home">ANA SAYFA</button>
@@ -43,7 +43,7 @@ export class MainLayout {
 			</section>
 			
 			<footer class="app-footer">
-				<p>D&D Deneyimsel Öğrenme Platformu • SRD 5.2.1 Uyumlu • ❤️ ile yapıldı</p>
+				<p>D&D Öğrenme Platformu • SRD 5.2.1 Uyumlu • ❤️ ile yapıldı</p>
 			</footer>
 		`;
 

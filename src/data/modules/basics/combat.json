@@ -9,6 +9,7 @@
 	"scenario": {
 		"title": "Taktiksel Hata",
 		"description": "Kaba kuvvet işe yaramadığında taktik konuşur. Thorn'un tuzağına düşme.",
+		"backgroundImage": "/img/bg.png",
 		"estimatedTime": 15,
 		"learningObjectives": [
 			"Disengage (Ayrılma) ile güvenli kaçış",
@@ -44,7 +45,7 @@
 				"id": "lucrea-reaction-shock",
 				"type": "dialogue",
 				"speaker": "mascot",
-				"emotion": "surprised",
+				"emotion": "worried",
 				"content": "Hiii! Bu ses... Olamaz! Kalbim duracak!",
 				"nextStep": "narrator-intro"
 			},
@@ -76,7 +77,7 @@
 				"id": "thorn-init-demand",
 				"type": "dialogue",
 				"speaker": "thorn",
-				"emotion": "neutral",
+				"emotion": "talking",
 				"content": "Hala konuşuyorsun. İnisiyatif at. Reflekslerini görelim.",
 				"nextStep": "lucrea-explain-init"
 			},
@@ -253,7 +254,7 @@
 				"id": "lucrea-reaction",
 				"type": "dialogue",
 				"speaker": "mascot",
-				"emotion": "excited",
+				"emotion": "happy",
 				"content": "HATA YAPTI! Disengage almadı! Şimdi senin sıran: **Reaksiyon (Fırsat Saldırısı)!**",
 				"nextStep": "reaction-choice"
 			},
@@ -282,7 +283,7 @@
 				"id": "thorn-bonus-surprise",
 				"type": "dialogue",
 				"speaker": "thorn",
-				"emotion": "smug",
+				"emotion": "angry",
 				"content": "Fena değil. Ama ders bitmedi.",
 				"nextStep": "thorn-bonus-act"
 			},
