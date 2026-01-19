@@ -93,7 +93,7 @@
 			}
 		},
 		"Cleric": {
-			"nameTr": "Rahip",
+			"nameTr": "Cleric",
 			"features": {
 				"Spellcasting": {
 					"nameTr": "",

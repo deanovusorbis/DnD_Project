@@ -50,18 +50,11 @@ if __name__ == "__main__":
                     try:
                         # Open
                         inp = Image.open(input_path)
-                        # Remove BG (Standard)
+                        # Remove BG (Standard isnet-anime)
                         out = remove(inp, session=session)
                         
-                        # Post-Process: Erode Alpha Channel to kill white halos
-                        try:
-                            r, g, b, a = out.split()
-                            # MinFilter(4) shrinks the mask by 4px radius (Balanced)
-                            print(f"  - Eroding edges to remove white halo (Radius 4)...")
-                            a = a.filter(ImageFilter.MinFilter(4))
-                            out = Image.merge("RGBA", (r, g, b, a))
-                        except Exception as e:
-                            print(f"  - Erosion failed, skipping: {e}")
+                        # No aggressive post-processing since it ruins details
+                        # We accept the result as is for now
                         
                         if args.overwrite:
                             # Backup

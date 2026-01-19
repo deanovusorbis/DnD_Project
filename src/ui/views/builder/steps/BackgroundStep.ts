@@ -23,11 +23,12 @@ export function renderBackgroundStep(parent: HTMLElement, onStepComplete: () => 
 		// If selected, show ability assignment UI
 		if (isSelected && abilityOptions.length > 0) {
 			abilityAssignmentUI = document.createElement('div');
-			abilityAssignmentUI.style.marginTop = '12px';
-			abilityAssignmentUI.style.padding = '12px';
-			abilityAssignmentUI.style.background = 'var(--color-bg-tertiary)';
-			abilityAssignmentUI.style.borderRadius = 'var(--radius-sm)';
-			abilityAssignmentUI.style.border = '1px solid var(--color-border-dim)';
+			abilityAssignmentUI.style.marginTop = '16px';
+			abilityAssignmentUI.style.padding = '16px';
+			abilityAssignmentUI.style.background = 'linear-gradient(135deg, var(--color-bg-secondary), var(--color-bg-tertiary))';
+			abilityAssignmentUI.style.borderRadius = 'var(--radius-md)';
+			abilityAssignmentUI.style.border = '2px solid var(--color-accent-gold)';
+			abilityAssignmentUI.style.boxShadow = '0 0 12px rgba(194, 165, 108, 0.3)';
 
 			const title = document.createElement('div');
 			title.style.fontWeight = 'bold';
@@ -105,11 +106,14 @@ export function renderBackgroundStep(parent: HTMLElement, onStepComplete: () => 
 
 					const select = document.createElement('select');
 					select.style.flex = '1';
-					select.style.padding = '6px';
-					select.style.borderRadius = '4px';
-					select.style.border = '1px solid var(--color-border)';
-					select.style.background = 'var(--color-bg-secondary)';
+					select.style.padding = '10px 12px';
+					select.style.borderRadius = '6px';
+					select.style.border = '2px solid var(--color-accent-gold)';
+					select.style.background = 'var(--color-bg-primary)';
 					select.style.color = 'var(--color-text-primary)';
+					select.style.fontSize = '1rem';
+					select.style.fontWeight = '500';
+					select.style.cursor = 'pointer';
 
 					const defaultOpt = document.createElement('option');
 					defaultOpt.value = '';
@@ -166,11 +170,14 @@ export function renderBackgroundStep(parent: HTMLElement, onStepComplete: () => 
 
 					const select = document.createElement('select');
 					select.style.flex = '1';
-					select.style.padding = '6px';
-					select.style.borderRadius = '4px';
-					select.style.border = '1px solid var(--color-border)';
-					select.style.background = 'var(--color-bg-secondary)';
+					select.style.padding = '10px 12px';
+					select.style.borderRadius = '6px';
+					select.style.border = '2px solid var(--color-accent-gold)';
+					select.style.background = 'var(--color-bg-primary)';
 					select.style.color = 'var(--color-text-primary)';
+					select.style.fontSize = '1rem';
+					select.style.fontWeight = '500';
+					select.style.cursor = 'pointer';
 
 					const defaultOpt = document.createElement('option');
 					defaultOpt.value = '';
@@ -249,8 +256,13 @@ export function renderBackgroundStep(parent: HTMLElement, onStepComplete: () => 
 	actionContainer.style.marginTop = 'var(--space-xl)';
 	actionContainer.style.display = 'flex';
 	actionContainer.style.justifyContent = 'flex-end';
-	actionContainer.style.paddingTop = 'var(--space-md)';
-	actionContainer.style.borderTop = '1px solid var(--color-border)';
+	actionContainer.style.padding = 'var(--space-lg)';
+	actionContainer.style.background = 'linear-gradient(to right, transparent, var(--color-bg-secondary))';
+	actionContainer.style.borderTop = '2px solid var(--color-accent-gold)';
+	actionContainer.style.borderRadius = 'var(--radius-md)';
+	actionContainer.style.position = 'sticky';
+	actionContainer.style.bottom = '0';
+	actionContainer.style.zIndex = '10';
 
 	const nextButton = createButton({
 		label: 'Devam Et (Yetenek Puanları) ➡️',

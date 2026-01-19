@@ -57,7 +57,7 @@ export const subspeciesNames: Record<string, string> = {
 export const classNames: Record<string, string> = {
 	'Barbarian': 'Barbar',
 	'Bard': 'Bard',
-	'Cleric': 'Rahip',
+	'Cleric': 'Cleric',
 	'Druid': 'Druid',
 	'Fighter': 'Savaşçı',
 	'Monk': 'Keşiş',
